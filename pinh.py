@@ -103,3 +103,58 @@ def pin_labels(src,l1,l2,labels,out,anchor=0.5):
         d.text((x0+w/2,py+h/2),text,font=fl,fill=DK,anchor="mm")
         d.ellipse([tx-11,ty-11,tx+11,ty+11],fill=TC,outline=(252,249,244),width=4)
     im.convert("RGB").save(out,"JPEG",quality=86,optimize=True,progressive=True)
+
+def _brush(w,h,color,seed=3):
+    """Soft paint-brush stroke shape (RGBA), drawn at 3x and downsampled."""
+    import random
+    from PIL import ImageFilter
+    rnd=random.Random(seed); S=3; W2,H2=w*S,h*S
+    m=Image.new("L",(W2,H2),0); d=ImageDraw.Draw(m)
+    pts=[]; n=26
+    for i in range(n+1):  # top edge
+        pts.append((int(W2*0.04+i*(W2*0.92)/n), int(H2*0.10+rnd.uniform(-1,1)*H2*0.05)))
+    for i in range(9):    # right ragged end
+        pts.append((int(W2*0.96+rnd.uniform(0,1)*W2*0.04), int(H2*0.1+(i+1)*H2*0.8/9)))
+    for i in range(n,-1,-1):
+        pts.append((int(W2*0.04+i*(W2*0.92)/n), int(H2*0.90+rnd.uniform(-1,1)*H2*0.05)))
+    for i in range(9,0,-1):
+        pts.append((int(rnd.uniform(0,1)*W2*0.04), int(H2*0.1+i*H2*0.8/9)))
+    d.polygon(pts,fill=255)
+    for k in range(6):  # dry-brush streaks
+        y=rnd.uniform(0.2,0.8)*H2; x0=rnd.uniform(0.6,0.9)*W2
+        d.line([(x0,y),(W2,y+rnd.uniform(-6,6))],fill=0,width=rnd.randint(2,5))
+    m=m.filter(ImageFilter.GaussianBlur(1.2)).resize((w,h),Image.LANCZOS)
+    out=Image.new("RGBA",(w,h),color+(0,)); out.putalpha(m); return out
+
+def pin_grid(tiles,pre,title,tag,footer,out,band=(176,98,52)):
+    """Numbered grid: brush-stroke title on top, 6 numbered idea tiles (2x3), footer strip.
+       tiles=[(img,title,caption,ay),...]"""
+    W,H=1000,1500; CR=(252,249,244); DK=(38,33,30); OL=(78,92,58); TC=(176,98,52)
+    c=Image.new("RGBA",(W,H),CR+(255,)); d=ImageDraw.Draw(c)
+    fp=pf(44,600); d.text((W/2,40),pre,font=fp,fill=DK,anchor="mt")
+    ft=fit(d,title,dm,int(W*0.78),96); tw=d.textlength(title,font=ft)
+    bw,bh=int(tw+140),int(ft.size*1.45); br=_brush(bw,bh,band)
+    by=104; c.alpha_composite(br,(int(W/2-bw/2),by))
+    d=ImageDraw.Draw(c); d.text((W/2,by+bh/2+4),title,font=ft,fill=CR,anchor="mm")
+    fg=pf(26,600); tg="   ·   ".join(tag); d.text((W/2,by+bh+22),tg.upper(),font=fg,fill=OL,anchor="mt")
+    top=by+bh+76; foot=86; G=12; cols,rows=2,3
+    tw_=(W-G*3)//2; th=(H-top-foot-G*(rows+1))//rows
+    for i,(src,t,cap,ay) in enumerate(tiles):
+        r,cc=divmod(i,2); x=G+cc*(tw_+G); y=top+G+r*(th+G)
+        im=_cover(src,tw_,th,ay=ay).convert("RGBA")
+        msk=Image.new("L",(tw_,th),0); ImageDraw.Draw(msk).rounded_rectangle([0,0,tw_,th],radius=18,fill=255)
+        c.paste(im,(x,y),msk)
+        d=ImageDraw.Draw(c)
+        f1=fit(d,t,dm,tw_-120,34); f2=fit(d,cap,lambda s:pf(s,500),tw_-120,23)
+        lw=max(d.textlength(t,font=f1),d.textlength(cap,font=f2))+100; lh=f1.size+f2.size+30
+        ov=Image.new("RGBA",c.size); od=ImageDraw.Draw(ov)
+        od.rounded_rectangle([x+12,y+12,x+12+lw,y+12+lh],radius=16,fill=CR+(238,))
+        c.alpha_composite(ov); d=ImageDraw.Draw(c)
+        cx,cy=x+12+36,y+12+lh/2
+        d.ellipse([cx-24,cy-24,cx+24,cy+24],fill=OL)
+        d.text((cx,cy+1),str(i+1),font=dm(34),fill=CR,anchor="mm")
+        d.text((x+12+72,y+22),t,font=f1,fill=DK,anchor="lt")
+        d.text((x+12+72,y+22+f1.size+6),cap,font=f2,fill=TC,anchor="lt")
+    d.rectangle([0,H-foot,W,H],fill=OL+(255,))
+    ff=pf(32,600); d.text((W/2,H-foot/2),footer,font=ff,fill=CR,anchor="mm")
+    c.convert("RGB").save(out,"JPEG",quality=88,optimize=True,progressive=True)
