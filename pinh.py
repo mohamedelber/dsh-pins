@@ -16,10 +16,12 @@ def pin_h(src,num,l1,l2,sub,out,anchor=0.5,fade=0.52,top=(252,249,244)):
     im=Image.open(src).convert("RGB")
     r=max(W/im.width,H/im.height); im=im.resize((round(im.width*r),round(im.height*r)),Image.LANCZOS)
     x=(im.width-W)//2; y0=int((im.height-H)*anchor); im=im.crop((x,y0,x+W,y0+H)).convert("RGBA")
-    ov=Image.new("RGBA",(W,H)); od=ImageDraw.Draw(ov); fh=int(H*fade)
-    for y in range(fh):
-        t=y/fh; a=0.88 if t<0.5 else 0.88*(1-((t-0.5)/0.5))**2
-        od.line([(0,y),(W,y)],fill=top+(int(255*a),))
+    from PIL import ImageFilter
+    m=Image.new("L",(W,H),0); md=ImageDraw.Draw(m)
+    cy=int(H*0.20); rx=int(W*0.50); ry=int(H*0.24)
+    md.ellipse([W//2-rx,cy-ry,W//2+rx,cy+ry],fill=int(255*0.90))
+    m=m.filter(ImageFilter.GaussianBlur(90))
+    ov=Image.new("RGBA",(W,H),top+(0,)); ov.putalpha(m)
     im=Image.alpha_composite(im,ov); d=ImageDraw.Draw(im); cx=W//2
     OL=(78,92,58); DK=(38,33,30); TC=(176,98,52)
     fn=dm(300); bb=d.textbbox((0,0),num,font=fn,anchor="ls"); nw=bb[2]-bb[0]; nh=bb[3]-bb[1]
