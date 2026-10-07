@@ -1,43 +1,36 @@
 from PIL import Image, ImageDraw, ImageFont
-F="/usr/share/fonts/truetype/google-fonts/"
-def lora(sz,w=700,it=False):
-    f=ImageFont.truetype(F+("Lora-Italic-Variable.ttf" if it else "Lora-Variable.ttf"),sz)
+import os
+FD=os.path.join(os.path.dirname(os.path.abspath(__file__)),"fonts")
+if not os.path.isdir(FD): FD="/home/claude/dsh-pins/fonts"
+def dm(sz): return ImageFont.truetype(os.path.join(FD,"DMSerifDisplay-Regular.ttf"),sz)
+def pf(sz,w=400):
+    f=ImageFont.truetype(os.path.join(FD,"PlayfairDisplay[wght].ttf"),sz)
     try: f.set_variation_by_axes([w])
     except Exception: pass
     return f
-def fit(d,text,font_fn,maxw,start):
-    s=start
-    while s>20:
-        f=font_fn(s)
-        if d.textlength(text,font=f)<=maxw: return f
-        s-=4
-    return font_fn(s)
-def pin_h(src,num,l1,l2,sub,out,fade=0.50,cream=(250,246,240),anchor=1.0):
+def fit(d,t,fn,maxw,s):
+    while s>24 and d.textlength(t,font=fn(s))>maxw: s-=3
+    return fn(s)
+def pin_h(src,num,l1,l2,sub,out,anchor=0.5,fade=0.52,top=(252,249,244)):
     W,H=1000,1500
     im=Image.open(src).convert("RGB")
     r=max(W/im.width,H/im.height); im=im.resize((round(im.width*r),round(im.height*r)),Image.LANCZOS)
-    x=(im.width-W)//2; yy=int((im.height-H)*anchor); im=im.crop((x,yy,x+W,yy+H))
-    ov=Image.new("RGBA",(W,H),(0,0,0,0)); od=ImageDraw.Draw(ov)
-    fh=int(H*fade)
+    x=(im.width-W)//2; y0=int((im.height-H)*anchor); im=im.crop((x,y0,x+W,y0+H)).convert("RGBA")
+    ov=Image.new("RGBA",(W,H)); od=ImageDraw.Draw(ov); fh=int(H*fade)
     for y in range(fh):
-        t=y/fh
-        a=int(255*(0.97 if t<0.55 else 0.97*(1-(t-0.55)/0.45)**1.6))
-        od.line([(0,y),(W,y)],fill=cream+(a,))
-    im=Image.alpha_composite(im.convert("RGBA"),ov); d=ImageDraw.Draw(im)
-    cx=W//2; y=60
-    fn=lora(200,700); tw=d.textlength(num,font=fn)
-    d.text((cx,y),num,font=fn,fill=(95,111,78),anchor="mt")
-    # rays
-    for side in (-1,1):
-        bx=cx+side*(tw/2+28)
-        for dy,ang in ((-40,0.55),(0,0),(40,-0.55)):
-            x0=bx; y0=y+110+dy; x1=x0+side*44; y1=y0-ang*44*1
-            d.line([(x0,y0),(x1,y1)],fill=(200,90,50),width=7)
-    y+=225
-    f1=fit(d,l1,lambda s:lora(s,700),W-110,104)
-    d.text((cx,y),l1,font=f1,fill=(52,46,42),anchor="mt"); y+=f1.size*1.08
-    f2=fit(d,l2,lambda s:lora(s,700),W-110,104)
-    d.text((cx,y),l2,font=f2,fill=(200,90,50),anchor="mt"); y+=f2.size*1.15
-    f3=fit(d,sub,lambda s:lora(s,500,True),W-160,54)
-    d.text((cx,y),sub,font=f3,fill=(52,46,42),anchor="mt")
+        t=y/fh; a=0.88 if t<0.5 else 0.88*(1-((t-0.5)/0.5))**2
+        od.line([(0,y),(W,y)],fill=top+(int(255*a),))
+    im=Image.alpha_composite(im,ov); d=ImageDraw.Draw(im); cx=W//2
+    OL=(78,92,58); DK=(38,33,30); TC=(176,98,52)
+    fn=dm(300); bb=d.textbbox((0,0),num,font=fn,anchor="ls"); nw=bb[2]-bb[0]; nh=bb[3]-bb[1]
+    ny=55; d.text((cx,ny+nh),num,font=fn,fill=OL,anchor="ms")
+    my=ny+nh*0.55
+    for s in (-1,1):
+        bx=cx+s*(nw/2+48)
+        for (dx1,dy1,dx2,dy2) in ((0,-34,44,-62),(0,0,52,0),(0,34,44,62)):
+            d.line([(bx+s*dx1,my+dy1),(bx+s*dx2,my+dy2)],fill=TC,width=6)
+    y=ny+nh+48
+    f1=fit(d,l1,dm,W-80,120); d.text((cx,y),l1,font=f1,fill=DK,anchor="mt"); y+=f1.size*1.0
+    f2=fit(d,l2,dm,W-80,120); d.text((cx,y),l2,font=f2,fill=TC,anchor="mt"); y+=f2.size*1.08
+    f3=fit(d,sub,lambda s:pf(s,500),W-170,60); d.text((cx,y),sub,font=f3,fill=DK,anchor="mt")
     im.convert("RGB").save(out,"JPEG",quality=86,optimize=True,progressive=True)
