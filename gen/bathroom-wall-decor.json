@@ -1,0 +1,65 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-gallery-wall-floating-shelf",
+   "prompt": "A small full bathroom wall styled with a neat gallery of three framed botanical prints above a white oak floating shelf holding rolled white towels, a small plant and a ceramic jar, cream walls above sage green subway tile wainscot, a white bathtub with a linen shower curtain at the edge of the frame, soft natural daylight. All prints show plants only, no words. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "02-oak-slat-accent-wall",
+   "prompt": "A small bathroom with a vertical white oak slat accent wall behind a floating vanity with a white vessel sink, an arched mirror with a thin black frame, a single plug-free wall sconce, cream walls on the sides, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-woven-wall-baskets",
+   "prompt": "Three round woven seagrass wall baskets of different sizes hung in a loose group on a cream bathroom wall beside a white vanity, the bowl-shaped ones holding rolled hand towels, a small towel ring below, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-wall-planters-by-tub",
+   "prompt": "A small bathroom corner by a white bathtub and a frosted window with two wall-mounted cream ceramic planters holding a Boston fern and a trailing plant, sage green tile, a linen bath towel on a hook, bright humid spa feeling, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-ladder-towel-rack",
+   "prompt": "A white oak ladder towel rack leaning against a cream bathroom wall holding folded linen and waffle towels in cream and sage, with a small framed abstract print hung above it and a woven basket on the floor beside it, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "06-picture-ledge-above-tub",
+   "prompt": "A slim oak picture ledge above a white bathtub in a small bathroom holding two leaning framed landscape prints, a small vase with eucalyptus and a flameless candle, white subway tile below and cream wall above, soft daylight. All prints show landscapes only, no words. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "07-oversized-art-small-bath",
+   "prompt": "One large framed abstract print in warm terracotta and cream tones hung above the toilet in a small white bathroom, making the wall a focal point, a slim towel ring and a plant on the tank lid kept minimal, soft daylight. The print has no words. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "08-before-after",
+   "prompt": "Split image, left and right halves, the same small bathroom wall above a toilet and beside a vanity from the same angle. Left side BEFORE: a bare white wall with a crooked small frame, a sagging over-the-toilet wire rack crammed with bottles and rolls. Right side AFTER: a calm wall with a white oak floating shelf holding rolled towels and a plant, two framed botanical prints hung level above it and three woven wall baskets. All bottles have plain labels with no text. Plain unbranded items. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-H-bright",
+   "prompt": "Vertical wide-angle photo of a bright small bathroom with a white oak floating shelf of rolled towels and a plant, two framed botanical prints above it, a white vanity and sage green tile, soft natural daylight. Leave the top third of the image calm and simple (plain wall or soft background) for a text overlay; place the main subject in the lower two thirds. Photorealistic interior photography, Scandinavian farmhouse style, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-D-evening",
+   "prompt": "Vertical close-up of a small bathroom wall at evening with a warm brass wall sconce glowing beside a slim oak picture ledge holding a framed botanical print, a small plant and a flameless candle, a folded sage towel on a hook below, one focal point, cozy spa mood. Photorealistic interior photography, Scandinavian farmhouse style, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
