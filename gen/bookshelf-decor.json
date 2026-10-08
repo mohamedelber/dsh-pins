@@ -1,0 +1,65 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-styled-oak-bookshelf",
+   "prompt": "A white oak bookshelf in a small bright living room styled with books stacked both vertically and horizontally, a few ceramic vases in cream and terracotta, a trailing pothos, a small framed abstract print leaning on one shelf and woven baskets on the bottom shelf, cream wall, natural daylight. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "02-books-by-color",
+   "prompt": "A tall white bookshelf with books arranged by color in a soft gradient from cream to sage green to terracotta to brown, with a few small ceramic objects between groups, a cream wall and soft daylight. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-rule-of-three-shelf",
+   "prompt": "Close-up of one oak bookshelf shelf styled in a triangle: a tall stoneware vase with dried branches on the left, a horizontal stack of three books topped with a small wooden bowl in the middle, and a small framed botanical print leaning on the right, with breathing room around each group, soft daylight. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-baskets-bottom-shelves",
+   "prompt": "The lower half of a white oak bookshelf with matching woven seagrass baskets and lidded linen boxes on the bottom two shelves hiding clutter, neat rows of books above, a soft wool rug on the floor in front, cream wall, daylight. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-ladder-shelf-bedroom",
+   "prompt": "A slim oak ladder bookshelf leaning in the corner of a small bedroom, its narrow top shelves holding a few books, a small plant and a candle jar, wider bottom shelves with a basket and a stack of books, beside a linen-covered bed, cream walls, soft daylight. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "06-sage-back-panel",
+   "prompt": "A white built-in bookshelf with its back panel painted a soft sage green, so cream ceramics, terracotta pots and stacked books stand out against the color, styled with space between objects, soft daylight. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "07-led-shelf-lighting",
+   "prompt": "An oak bookshelf in a living room at dusk with warm LED strip lights glowing softly under each shelf, lighting styled books, ceramic vases and a small plant, a reading armchair with a throw blanket beside it, cozy and calm. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "08-before-after",
+   "prompt": "Split image, left and right halves, same white bookshelf from the same angle. Left side BEFORE: every shelf crammed with books pushed in at random, piles of papers, cables, toys and loose items stacked on top, no breathing room. Right side AFTER: books grouped vertically and in horizontal stacks, a few ceramic vases, a plant, one framed print and woven baskets on the bottom shelf, with empty space on each shelf. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-H-bright",
+   "prompt": "Vertical wide-angle photo of a bright small living room with a white oak bookshelf styled with books, ceramic vases, a trailing plant, a small framed print and woven baskets on the bottom shelf, soft natural daylight. Leave the top third of the image calm and simple (plain wall or soft background) for a text overlay; place the main subject in the lower two thirds. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-D-evening",
+   "prompt": "Vertical close-up of a cozy reading corner at evening with an oak bookshelf softly lit by a warm brass floor lamp, styled books, a cream ceramic vase and a trailing plant, a linen armchair with a knit throw in front, one focal point, cozy and calm. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
