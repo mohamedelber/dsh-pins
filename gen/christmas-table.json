@@ -1,0 +1,65 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-small-round-table-set",
+   "prompt": "A small round white oak dining table in a compact apartment dining nook set for Christmas dinner for four: a cream linen runner, a low centerpiece of fresh cedar and eucalyptus with pinecones, three flameless LED pillar candles inside clear glass hurricanes, cream stoneware plates on woven rattan chargers, sage green linen napkins, brushed brass cutlery and simple clear glasses. A small decorated Christmas tree with warm white lights stands in the corner, cream walls, soft natural daylight from a window. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "02-low-garland-centerpiece",
+   "prompt": "Close-up of a long low Christmas table centerpiece running down a white oak dining table: fresh cedar and eucalyptus garland laid flat on a cream linen runner, with pinecones, dried orange slices and a few small terracotta-red berries tucked in, two low flameless LED pillar candles in clear glass hurricanes, everything below eye level so guests can see across the table, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-place-setting-rosemary",
+   "prompt": "Overhead close-up of one Christmas place setting on a white oak table: a cream stoneware dinner plate on a woven rattan charger, a sage green linen napkin tied with natural jute twine and a fresh rosemary sprig, a small blank kraft paper tag with no writing, brushed brass fork and knife, a clear water glass, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-bistro-table-for-two",
+   "prompt": "A small round bistro table for two beside a window in a cozy small apartment, decorated for Christmas: a small wreath of fresh greenery laid flat around one flameless LED pillar candle in a glass hurricane as the centerpiece, two cream plates with sage napkins, two wooden chairs with sheepskin throws, a few warm white fairy lights in the window, soft afternoon light. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-bud-vases-row",
+   "prompt": "A row of five small mismatched clear glass bud vases down the center of a white oak table on a cream linen runner, each holding a single stem: white ranunculus, eucalyptus, a small pine sprig, red hypericum berries and a white anemone, with cream plates and brass cutlery at the edges, soft daylight, simple and airy. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "06-sideboard-buffet",
+   "prompt": "A narrow white oak sideboard against a cream wall set up as a small Christmas buffet to keep the dining table clear: stacked cream plates, sage napkins in a woven basket, cutlery standing in a stoneware crock, two covered serving dishes on wooden boards, a small vase of fresh greenery and a garland of cedar along the back edge, plain unbranded items, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "07-ornament-bowl-centerpiece",
+   "prompt": "A wide shallow glass bowl filled with matte cream, gold and sage green glass Christmas ornaments and a strand of tiny warm white battery fairy lights as a centerpiece on a white oak dining table, with a cream linen runner and two place settings at the edges, soft evening light, cozy glow. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "08-before-after",
+   "prompt": "Split image before and after of the same small round white oak dining table for Christmas. Left side BEFORE: the table crowded and messy with a tall bulky floral arrangement blocking the view, too many mismatched decorations, a tangle of tinsel, stacked boxes and clutter, no room for plates. Right side AFTER: the same table calm and set for four with a low cedar and eucalyptus centerpiece, flameless LED candles in glass hurricanes, cream plates, sage napkins and brass cutlery, plenty of space. Same room, same camera angle, clear vertical dividing line in the middle. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-H-bright",
+   "prompt": "A small round white oak dining table set for Christmas in a bright Scandinavian apartment, low cedar and eucalyptus centerpiece with pinecones, cream plates, sage linen napkins with rosemary sprigs, flameless LED candles in glass hurricanes, a small decorated tree in the background, bright soft daylight, the table as the single focal point in the lower two thirds, calm light empty wall in the upper third. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-D-evening",
+   "prompt": "A cozy Christmas dinner table for two in a small apartment at evening, warm golden glow from flameless LED pillar candles in glass hurricanes and tiny warm white fairy lights woven through a low cedar garland, cream plates and sage napkins, a softly lit decorated tree blurred in the background, warm cozy evening glow, one focal point. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
