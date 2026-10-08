@@ -1,0 +1,23 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "hero-low",
+   "prompt": "A white oak bookshelf in a small bright living room styled with books stacked both vertically and horizontally, a few ceramic vases in cream and terracotta, a trailing pothos, a small framed abstract print leaning on one shelf and woven baskets on the bottom shelf, cream wall, natural daylight. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "low"
+  },
+  {
+   "name": "hero-medium",
+   "prompt": "A white oak bookshelf in a small bright living room styled with books stacked both vertically and horizontally, a few ceramic vases in cream and terracotta, a trailing pothos, a small framed abstract print leaning on one shelf and woven baskets on the bottom shelf, cream wall, natural daylight. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "hero-high",
+   "prompt": "A white oak bookshelf in a small bright living room styled with books stacked both vertically and horizontally, a few ceramic vases in cream and terracotta, a trailing pothos, a small framed abstract print leaning on one shelf and woven baskets on the bottom shelf, cream wall, natural daylight. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  }
+ ]
+}
