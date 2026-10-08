@@ -1,0 +1,11 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "03-woven-wall-baskets-v2",
+   "prompt": "Real photograph, shot on a full-frame camera with a 35mm lens, natural window light from the left. Three handmade round seagrass wall baskets of different sizes hung in a loose group on a matte cream painted bathroom wall beside a white vanity; the baskets show irregular hand-woven fibers, loose strands, slight color variation and real soft shadows on the wall; two hold rolled white cotton hand towels with visible terry texture. A brushed brass towel ring with a hand towel below. Subtle imperfections, true-to-life textures, no illustration or CGI look. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  }
+ ]
+}
