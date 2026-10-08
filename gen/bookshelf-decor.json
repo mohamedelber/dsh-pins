@@ -44,8 +44,8 @@
    "quality": "medium"
   },
   {
-   "name": "08-before-after",
-   "prompt": "Split image, left and right halves, same white bookshelf from the same angle. Left side BEFORE: every shelf crammed with books pushed in at random, piles of papers, cables, toys and loose items stacked on top, no breathing room. Right side AFTER: books grouped vertically and in horizontal stacks, a few ceramic vases, a plant, one framed print and woven baskets on the bottom shelf, with empty space on each shelf. Books in muted cream, sage green, tan and terracotta covers; all book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "name": "08-before-after-v2",
+   "prompt": "Split image, left and right halves, the same white bookshelf photographed from the same angle. Left side BEFORE: shelves crammed with books in muted colors pushed in at random and stacked sideways, loose papers, tangled cables, a cardboard box and loose small items piled on top, no breathing room. Right side AFTER: the same books grouped vertically and in neat horizontal stacks, a few cream and terracotta ceramic vases, a small plant, one framed botanical print and woven baskets on the bottom shelf, with empty space on each shelf. Every book in both halves has a plain spine with no visible titles, letters, numbers or text; no toys, no electronics with logos. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
    "size": "1024x1024",
    "quality": "medium"
   },
