@@ -1,0 +1,41 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-wall-belt-rack",
+   "prompt": "A white oak wall-mounted belt rack with a row of wooden pegs on a cream wall inside a small walk-in closet, eight leather belts in tan, cognac, dark brown and black hanging neatly by their buckles, a few folded sweaters on a shelf above and a woven basket below, natural daylight. All belts are plain leather or woven fabric with simple plain metal buckles, no logos, monograms, engravings or brand marks. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "02-rolled-belts-drawer",
+   "prompt": "Top-down view of an open shallow white oak dresser drawer fitted with wooden grid dividers, each square holding one neatly rolled leather or woven belt with the buckle on the outside, in tan, brown, black and sage, calm and tidy, soft daylight. All belts are plain leather or woven fabric with simple plain metal buckles, no logos, monograms, engravings or brand marks. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-belt-hanger-closet-rod",
+   "prompt": "A reach-in closet rod with a few cream and sage shirts on wooden hangers and one wooden belt hanger with small metal hooks holding six leather belts hanging straight down, white closet walls, soft natural light, tidy and calm. All belts are plain leather or woven fabric with simple plain metal buckles, no logos, monograms, engravings or brand marks. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-hooks-inside-closet-door",
+   "prompt": "The inside of an open white closet door with a short vertical row of small brass adhesive hooks holding five belts hanging by their buckles, a narrow full-length mirror beside it, cream walls and a white oak floor, soft daylight. All belts are plain leather or woven fabric with simple plain metal buckles, no logos, monograms, engravings or brand marks. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-before-after",
+   "prompt": "A side-by-side before and after split image of the same open dresser drawer seen from above: on the left, a tangled pile of leather and woven belts mixed with socks and loose items; on the right, the same drawer with wooden dividers and each belt neatly rolled in its own square. Exactly two panels divided by a thin vertical line, no labels, no words. All belts are plain leather or woven fabric with simple plain metal buckles, no logos, monograms, engravings or brand marks. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-belt-storage-H",
+   "prompt": "A cozy small walk-in closet at evening with warm LED strip light under a white oak shelf, a white oak wall belt rack with wooden pegs holding several leather belts in tan, cognac and dark brown hanging by their buckles, folded sweaters on the shelf above, one clear focal point, cream walls, soft warm glow. All belts are plain leather with simple plain metal buckles, no logos, monograms or brand marks. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
