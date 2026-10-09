@@ -1,0 +1,65 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-living-room-floating-shelves",
+   "prompt": "Two white oak floating shelves on a warm cream living room wall above a low sideboard, styled with breathing room: a tall stoneware vase with dried branches, a small stack of books topped with a wooden bowl, a trailing pothos in a terracotta pot, a small framed abstract print leaning against the wall and a few cream ceramic objects, soft natural daylight. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "02-kitchen-open-shelf",
+   "prompt": "Close-up of an open white oak kitchen shelf above a counter styled simply: a short stack of cream plates, a row of three clear glass storage jars with pasta, rice and oats, two wooden cutting boards leaning at the back, a small potted herb and a ceramic pitcher with wooden utensils, white tile wall, soft daylight, practical and tidy. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-bathroom-corner-shelves",
+   "prompt": "Three small white oak corner floating shelves in a bright bathroom corner beside a white vanity, holding rolled white hand towels, a small trailing plant, an amber glass bottle and a lidded ceramic jar, sage green tile below, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-bedroom-floating-nightstand",
+   "prompt": "A white oak floating shelf used as a nightstand beside a bed with linen bedding, holding a small ceramic table lamp, two books, a little vase with a eucalyptus stem and a glass of water, a small framed print on the wall above, cream walls, soft morning light. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-color-story-shelf",
+   "prompt": "Close-up of one long white oak wall shelf styled in a calm color story of cream, sage green and terracotta only: a terracotta bud vase, a sage ceramic bowl, cream candle-free stoneware pieces of different heights, two books lying flat and a small plant, objects grouped in threes with empty space between groups, soft daylight. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "06-ladder-shelf-small-space",
+   "prompt": "A slim leaning white oak ladder shelf in a small apartment corner beside a window, styled with a few plants, a small stack of books, a woven basket on the bottom step and one framed photo of a landscape, light and airy, soft daylight. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "07-picture-ledge-mirror",
+   "prompt": "A narrow white oak picture ledge on a living room wall above a bench holding a round mirror leaning against the wall, two framed botanical prints of different sizes overlapping slightly, and a small vase with dried grasses, cream wall, soft daylight. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "08-before-after",
+   "prompt": "Split image before and after of the same two white oak floating shelves on a cream wall. Left side BEFORE: shelves crammed edge to edge with random clutter, mismatched mugs, piles of mail, chargers, too many small knickknacks and tangled cords, messy and crowded. Right side AFTER: the same shelves calmly styled with a vase of branches, a short stack of books with a bowl, a trailing plant and a small framed print, with plenty of empty space. Same wall, same camera angle, clear vertical dividing line in the middle. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-H-bright",
+   "prompt": "Two white oak floating shelves on a cream wall styled with ceramic vases, a trailing pothos, a small stack of books and a framed print, bright soft daylight, the shelves as the single focal point in the lower two thirds, calm light empty wall in the upper third. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-D-evening",
+   "prompt": "Cozy evening living room corner with white oak floating shelves lit by a warm LED strip under each shelf, styled with ceramic vases, plants and a few books, a soft lamp glow nearby, warm cozy evening glow, one focal point. All book spines plain with no visible titles, letters or text. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
