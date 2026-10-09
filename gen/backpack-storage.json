@@ -1,0 +1,65 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-entryway-backpack-hooks",
+   "prompt": "A bright entryway wall with a white oak peg rail holding four plain backpacks in sage, tan, navy and terracotta, hung at two heights so kids can reach the lower pegs, above a white oak bench with woven baskets underneath and a few pairs of sneakers lined up, cream walls, natural daylight. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "02-mudroom-cubbies",
+   "prompt": "A built-in white mudroom bench with three open cubbies above it, each cubby with one sturdy hook holding a plain backpack and a jacket, small blank wooden tags with no writing, woven baskets on the shelf above, a tiled floor and a jute mat, soft daylight. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-coat-closet-backpacks",
+   "prompt": "An open coat closet with coats on hangers on one side, two plain backpacks hanging on wall hooks on the closet side wall, a shelf above holding clear bins with hats and gloves, and a low rack for shoes, tidy and calm, soft light. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-bedroom-desk-hook",
+   "prompt": "A small kid's bedroom corner with a white oak desk and chair by a window, one plain sage backpack hanging on a wall hook beside the desk, a small shelf with books, a desk lamp and a pencil cup, neat and calm, soft daylight. All book spines plain with no visible titles, letters or text. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-over-door-hooks",
+   "prompt": "The back of a cream painted door in a small apartment with a wooden over-the-door hook rack holding two plain backpacks and a canvas tote bag, a small entry with a narrow shoe bench beside it, soft daylight. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "06-launch-pad-station",
+   "prompt": "A neat after-school drop zone on a narrow white oak console by the front door: a tray for keys, a wire basket for papers, two lunch boxes and two reusable water bottles lined up, with two plain backpacks hanging on hooks above, cream wall, soft daylight. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "07-hiking-packs-storage",
+   "prompt": "A tidy utility room wall with a wooden slat wall and sturdy hooks holding two plain hiking backpacks with their straps tightened, a shelf above with clear bins of outdoor gear, and a bench below, soft daylight. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "08-before-after",
+   "prompt": "Split image before and after of the same small entryway by a front door. Left side BEFORE: a messy pile of plain backpacks, jackets and shoes dumped on the floor and on a bench, papers spilling out. Right side AFTER: the same entry with a white oak peg rail holding the backpacks at two heights, shoes lined up under a bench with baskets, calm and tidy. Same room, same camera angle, clear vertical dividing line in the middle. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-H-bright",
+   "prompt": "A bright Scandinavian entryway with a white oak peg rail holding plain backpacks at two heights above a bench with woven baskets, sneakers lined up, bright soft daylight, the backpack wall as the single focal point in the lower two thirds, calm light empty cream wall in the upper third. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-D-evening",
+   "prompt": "A cozy entryway in the evening with plain backpacks and jackets on a white oak peg rail above a bench, warm glow from a small table lamp on a console, woven baskets below, warm cozy evening glow, one focal point. All backpacks are plain and unbranded with no visible logos, patches or lettering. Photorealistic interior photography, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
