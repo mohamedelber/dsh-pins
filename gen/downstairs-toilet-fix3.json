@@ -1,0 +1,11 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "04c-cistern-ledge",
+   "prompt": "A real small cloakroom seen from a slight angle: a white wall-hung toilet fixed to the front of a tiled boxed-in cistern wall about one metre high, a plain white flush plate set into the front face of the boxing above the toilet, a white oak shelf on top of the boxing holding an amber glass soap pump, a small potted plant and a reed diffuser, sage green painted wall above, light stone floor tiles, nothing else in the frame. Realistic proportions: a standard-size toilet about 36 cm wide and 54 cm deep, at true real-world scale relative to the 1-metre-high boxing. Plain white ceramic sanitaryware with smooth, closed sides (no openings, holes, handles or cut-outs in the bowl) and unbranded fittings with no visible logos. Shot like a real estate interior photo with a 24 mm lens at standing eye height, natural daylight, true-to-life materials, no CGI look. British home, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  }
+ ]
+}
