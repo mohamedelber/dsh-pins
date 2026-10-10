@@ -1,0 +1,17 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "pin-02b-bright-sage-cloakroom",
+   "prompt": "A bright small cloakroom in daylight: sage green tongue-and-groove panelling to half height, cream walls above, a smooth rounded white wall-hung toilet with a plain solid ceramic body (no openings, holes or cut-outs in the bowl), a small white wall-hung basin with a brass tap, a round brass mirror, a frosted window with soft light, a small plant on a white oak ledge, fresh and airy. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, clean and calm, one clear focal point, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-04b-under-stairs-glow",
+   "prompt": "A cosy toilet under the stairs at evening, seen from the open doorway: the stair soffit slopes down from left to right; the white close-coupled toilet stands on the LEFT at the tallest end of the space, where the ceiling is high above it and an adult can stand upright; the low right end under the slope holds only a wicker basket of spare toilet rolls; a tiny wall-hung basin with a brass tap on the left side wall next to the toilet; warm white walls, a small brass wall light glowing, wooden floor. Physically realistic proportions and headroom. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, clean and calm, one clear focal point, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
