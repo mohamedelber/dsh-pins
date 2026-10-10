@@ -1,0 +1,17 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01b-downstairs-cloakroom-hero",
+   "prompt": "A real small downstairs cloakroom in a British house, seen from the doorway: on the back wall a boxed-in cistern wall about one metre high with a white oak shelf on top, a white wall-hung toilet fixed to the front of that boxing with a plain white flush plate on the boxing face above the toilet; on the right side wall a small wall-hung basin with a brass tap and a round brass mirror above it; sage green tongue-and-groove panelling to half height, cream walls above, a small frosted window, terracotta hexagon floor tiles, a small trailing plant on the shelf. Realistic proportions: a standard-size toilet about 36 cm wide and a small basin about 40 cm wide, everything at true real-world scale. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Shot like a real estate interior photo with a 24 mm lens at standing eye height, natural daylight, true-to-life materials, slight natural imperfections, no CGI look. British home, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "04b-cistern-ledge",
+   "prompt": "A real small cloakroom: a white wall-hung toilet fixed to the front of a boxed-in cistern wall about one metre high, a plain white flush plate set into the front face of the boxing just above the toilet seat, a white oak shelf on top of the boxing holding an amber glass soap pump, a small potted plant and a reed diffuser, sage green painted wall above, light stone floor tiles. The toilet is in correct proportion to the boxing and the room. Realistic proportions: a standard-size toilet about 36 cm wide and a small basin about 40 cm wide, everything at true real-world scale. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Shot like a real estate interior photo with a 24 mm lens at standing eye height, natural daylight, true-to-life materials, slight natural imperfections, no CGI look. British home, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  }
+ ]
+}
