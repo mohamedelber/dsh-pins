@@ -1,0 +1,83 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-downstairs-cloakroom-hero",
+   "prompt": "A bright small downstairs cloakroom in a British house: a white wall-hung toilet with a concealed cistern boxed in behind a narrow white oak ledge, a compact wall-hung basin with a brass tap, sage green tongue-and-groove panelling to half height, cream walls above, a small round brass mirror, a small frosted window, terracotta hexagon floor tiles and a small trailing plant on the ledge, natural daylight. The room is narrow but nothing overlaps or blocks anything. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "02-under-stairs-loo",
+   "prompt": "A small toilet built into the space under a staircase in a British hallway house: the sloping ceiling follows the stairs, the white close-coupled toilet sits at the tall end where there is full standing headroom, a tiny wall-hung basin beside it on the side wall, warm white walls, a small wall light, a sage hand towel, a wicker basket for spare toilet rolls tucked under the lowest part of the slope, soft warm light. Physically realistic proportions. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-corner-basin",
+   "prompt": "A very small cloakroom with a compact white corner basin fitted into the corner with a brass mini tap, a round brass towel ring on the wall beside it, a small round mirror above, a white close-coupled toilet next to it with clear space in front, cream and sage walls, a herringbone wood-look floor, soft daylight. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-cistern-ledge",
+   "prompt": "Close view of a white wall-hung toilet with the concealed cistern boxed in behind a white oak shelf ledge that holds a pump hand soap bottle in amber glass, a small potted plant and a reed diffuser, a plain white flush plate on the wall above the ledge, sage green painted wall, soft natural light. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-quirky-wallpaper",
+   "prompt": "A small downstairs toilet decorated boldly: large-scale botanical wallpaper with green leaves on a dark background, a white wall-hung toilet, a small wall-hung basin with a brass tap, a brass-framed arched mirror, a brass wall light glowing warmly, a black and white checkerboard floor, a small framed print with an abstract shape, moody and cosy. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "06-narrow-cloakroom",
+   "prompt": "A long narrow cloakroom seen from the open doorway: a slim white wall-hung basin on the left wall near the door with a tall narrow mirror above, a white toilet at the far end of the room facing the door, vertical white panelling, light warm wall colour, a slim wall light, a pale wood floor running lengthwise to make the room feel longer, natural daylight. Nothing blocks the walkway. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "07-small-toilet-storage",
+   "prompt": "A small cloakroom with a shallow recessed niche in the wall above a white toilet holding three rolled hand towels, a glass jar of cotton pads and a small plant, plus a slim white wall cabinet beside the mirror and a lidded wicker basket on the floor holding spare toilet rolls, cream and sage walls, soft daylight. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "08-before-after",
+   "prompt": "A side-by-side before and after split image of the same very small downstairs toilet: on the left, a dated cramped room with a bulky pedestal basin, cluttered window sill, mismatched towels and bare grey walls; on the right, the same room refreshed with a compact wall-hung basin, sage green half-height panelling, a round mirror, a wall light and tidy storage. Exactly two panels divided by a thin vertical line, no labels, no words. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, Scandinavian farmhouse style, clean and calm, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-01-evening-green-panelling",
+   "prompt": "A small downstairs cloakroom at evening: deep forest green panelling, a white wall-hung toilet and a compact wall-hung basin with a brass tap, a round brass mirror, two brass wall lights glowing warm, a small trailing plant, cosy and elegant. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, clean and calm, one clear focal point, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-02-bright-sage-cloakroom",
+   "prompt": "A bright small cloakroom in daylight: sage green tongue-and-groove panelling, cream walls, a white wall-hung toilet, a small white basin with a brass tap, a round mirror, a frosted window with soft light, a plant on a white oak ledge, fresh and airy. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, clean and calm, one clear focal point, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-03-quirky-botanical",
+   "prompt": "A quirky small downstairs toilet: bold large-scale botanical wallpaper on a dark background, a white wall-hung toilet, a brass arched mirror above a small basin, a warm brass wall light, a checkerboard floor, playful and stylish. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, clean and calm, one clear focal point, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-04-under-stairs-glow",
+   "prompt": "A cosy toilet under the stairs at evening: sloping ceiling following the staircase, a white toilet at the tall end with full headroom, a tiny wall-hung basin, warm white walls, a small brass wall light glowing, a basket of spare rolls under the low end of the slope. Physically realistic proportions. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, clean and calm, one clear focal point, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-05-corner-basin-detail",
+   "prompt": "A close view of a tiny white corner basin with a brass mini tap in a small cloakroom, a brass towel ring with a sage linen hand towel, a small round mirror, a sprig of eucalyptus in a little vase, soft daylight, clean and calm. Plain white ceramic sanitaryware and unbranded brass fittings with no visible logos. Photorealistic interior photography, British home, clean and calm, one clear focal point, no people, no text, no logos, no brand names, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
