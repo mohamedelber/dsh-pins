@@ -1,0 +1,11 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "05b-quirky-wallpaper",
+   "prompt": "A real small downstairs toilet in a British home decorated boldly: large-scale botanical leaf wallpaper on a dark green background on the upper walls, white painted panelling on the lower walls to dado height all around the room, a white close-coupled toilet against the back wall, a small wall-hung basin with a brass tap on the side wall, a brass arched mirror above the basin, a brass wall light glowing warmly, a black and white chequerboard floor, moody and cosy. Realistic proportions at true real-world scale: a standard close-coupled toilet about 36 cm wide with its cistern sitting on the back of the pan against the wall, a small basin about 40 cm wide. Plain white ceramic sanitaryware with smooth closed sides and unbranded brass fittings with no visible logos. Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, no brand names, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  }
+ ]
+}
