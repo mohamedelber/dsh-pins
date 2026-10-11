@@ -1,0 +1,12 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "08d-before-messy",
+   "edit_from": "gen/out/utility-room-fix2/01d-hero-no-sink.png",
+   "prompt": "Edit this photo into a realistic BEFORE version of the very same utility room from the same camera position: keep the walls, window, floor, washing machine, tumble dryer and cabinet positions exactly the same, but make it messy and dated: a piles of unfolded laundry heaped on the worktop and on top of the machines, a few plain unlabelled detergent bottles scattered around, the open shelf cluttered, a laundry basket overflowing on the floor, the cabinet doors painted plain dull white instead of sage. No text, no logos, no labels on anything. Photorealistic.",
+   "size": "1024x1024",
+   "quality": "high"
+  }
+ ]
+}
