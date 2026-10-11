@@ -1,0 +1,23 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "05b-family-cubbies",
+   "prompt": "A British boot room with four open cubbies built side by side in painted sage green wood, each cubby with one coat hook holding a coat and a shelf with a wicker basket above. An oak bench seat runs across the cubbies at sitting height with a clear empty seat surface, and below the seat there is open space where pairs of plain wellies stand on the floor. Herringbone brick-effect floor. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded wellington boots with no labels or badges, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04b-boot-room-cupboard",
+   "prompt": "A tall built-in boot room cupboard in a British hallway with its two hinged doors fully open: each door is exactly the height of the cupboard opening, hung on visible hinges on the cupboard frame, and stops at the plinth. Inside, coats hang on hooks, a shelf above holds two wicker baskets of hats and gloves, and plain wellies stand upright on a boot tray on the cupboard floor. No separate upper cupboard. Painted sage green cupboard, cream walls. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded wellington boots with no labels or badges, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "09b-porch-boot-room",
+   "prompt": "An enclosed glazed porch on a British cottage turned into a boot room: painted wooden walls up to window height with glass above, a slim oak bench along one side, three coats on wall hooks, plain wellies on a slate tray, a coir mat at the front door, a potted plant on the windowsill, daylight. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded wellington boots with no labels or badges, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  }
+ ]
+}
