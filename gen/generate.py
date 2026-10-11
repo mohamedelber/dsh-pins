@@ -1,4 +1,4 @@
-# Reads gen/*.json jobs: {"model":"gpt-image-1.5","items":[{"name":"x","prompt":"...","size":"1024x1024","quality":"medium"}]}
+# Reads gen/*.json jobs: {"model":"gpt-image-2.5-sunburst","items":[...]}. Default model gpt-image-2.5-sunburst (cheaper than 1.5). Use quality high only for heroes.
 # Skips items whose output already exists. Writes PNGs to gen/out/<job>/<name>.png
 import json, os, glob, base64, urllib.request, time
 key = os.environ.get("OPENAI_API_KEY")
@@ -29,14 +29,14 @@ for jf in sorted(glob.glob("gen/*.json")):
     for it in spec["items"]:
         out = f"gen/out/{job}/{it['name']}.png"
         if os.path.exists(out): continue
-        model = it.get("model", spec.get("model", "gpt-image-1.5"))
+        model = it.get("model", spec.get("model", "gpt-image-2.5-sunburst"))
         try:
             if it.get("edit_from"):
                 if not os.path.exists(it["edit_from"]):
                     log.write(f"{time.strftime('%F %T')} SKIP {job}/{it['name']} missing {it['edit_from']}\n"); continue
-                res = edit(model, it["prompt"], it.get("size", "1024x1024"), it.get("quality", "medium"), it["edit_from"])
+                res = edit(model, it["prompt"], it.get("size", "1024x1024"), it.get("quality", spec.get("quality", "medium")), it["edit_from"])
             else:
-                res = call(model, it["prompt"], it.get("size", "1024x1024"), it.get("quality", "medium"))
+                res = call(model, it["prompt"], it.get("size", "1024x1024"), it.get("quality", spec.get("quality", "medium")))
             d = res["data"][0]
             if "b64_json" in d:
                 open(out, "wb").write(base64.b64decode(d["b64_json"]))
