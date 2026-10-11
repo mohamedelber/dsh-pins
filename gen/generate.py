@@ -25,6 +25,7 @@ def edit(model, prompt, size, quality, path):
 for jf in sorted(glob.glob("gen/*.json")):
     job = os.path.splitext(os.path.basename(jf))[0]
     spec = json.load(open(jf))
+    if spec.get("disabled"): continue
     os.makedirs(f"gen/out/{job}", exist_ok=True)
     for it in spec["items"]:
         out = f"gen/out/{job}/{it['name']}.png"

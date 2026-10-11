@@ -1,0 +1,32 @@
+{
+ "items": [
+  {
+   "name": "boot-flare-low",
+   "model": "gpt-image-2.5-flare",
+   "prompt": "Photorealistic interior photography, real estate photo of a small British boot room just inside the back door of a country cottage: a built-in painted sage green bench with a plain oak seat, three wicker baskets underneath, a row of simple wall hooks above holding two wax jackets and a canvas bag, two pairs of wellington boots standing on a slate tray on the floor, a herringbone brick-effect floor, a small window with natural daylight, cream walls. Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "low"
+  },
+  {
+   "name": "boot-flare-medium",
+   "model": "gpt-image-2.5-flare",
+   "prompt": "Photorealistic interior photography, real estate photo of a small British boot room just inside the back door of a country cottage: a built-in painted sage green bench with a plain oak seat, three wicker baskets underneath, a row of simple wall hooks above holding two wax jackets and a canvas bag, two pairs of wellington boots standing on a slate tray on the floor, a herringbone brick-effect floor, a small window with natural daylight, cream walls. Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "boot-sunburst-medium",
+   "model": "gpt-image-2.5-sunburst",
+   "prompt": "Photorealistic interior photography, real estate photo of a small British boot room just inside the back door of a country cottage: a built-in painted sage green bench with a plain oak seat, three wicker baskets underneath, a row of simple wall hooks above holding two wax jackets and a canvas bag, two pairs of wellington boots standing on a slate tray on the floor, a herringbone brick-effect floor, a small window with natural daylight, cream walls. Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "boot-sunburst-high",
+   "model": "gpt-image-2.5-sunburst",
+   "prompt": "Photorealistic interior photography, real estate photo of a small British boot room just inside the back door of a country cottage: a built-in painted sage green bench with a plain oak seat, three wicker baskets underneath, a row of simple wall hooks above holding two wax jackets and a canvas bag, two pairs of wellington boots standing on a slate tray on the floor, a herringbone brick-effect floor, a small window with natural daylight, cream walls. Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  }
+ ]
+}
