@@ -1,0 +1,90 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "02-under-stairs-boot-room",
+   "prompt": "A small boot room built into the space under a staircase in a British home: the sloping underside of the stairs is visible, a low painted sage green bench with an oak seat fits under the lowest part, simple coat hooks on the tallest wall holding two coats, wellington boots standing upright on a black rubber boot tray on a terracotta tile floor. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "03-hallway-boot-nook",
+   "prompt": "A narrow British hallway with a slim boot room nook against one wall: a shallow oak bench about 35 cm deep standing on four legs on the floor, a Shaker peg rail above with a coat, a scarf and a dog lead hanging on the pegs, two pairs of wellies on a slate tray, a coir doormat by the back door, plenty of clear walking space. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "04-boot-room-cupboard",
+   "prompt": "A tall built-in boot room cupboard in a British hallway with both hinged doors fully open, the doors attached to the cupboard frame with visible hinges: inside, coats hang on hooks, a shelf above holds two wicker baskets of hats and gloves, and wellies stand upright on a boot tray on the cupboard floor. Painted sage green cupboard, cream walls. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "05-family-cubbies",
+   "prompt": "A British boot room with four open cubbies built side by side in painted sage green wood, each cubby with one coat hook holding a coat, a shelf with a wicker basket above, and a pair of boots on the floor of the cubby, an oak bench seat running across the bottom, a herringbone brick-effect floor. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "06-boot-room-sink",
+   "prompt": "A British boot room with a white ceramic Belfast sink set into a cut-out in a solid oak worktop, the front apron of the sink visible below the worktop edge, a simple brass bridge tap mounted on the wall directly above the basin, sage green base cupboards below, a peg rail with a coat and a tea towel, wellies on a slate tray on the floor. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "07-welly-rack-floor",
+   "prompt": "Close-up of a boot room floor in a British home: a simple wooden welly boot rack standing on dark grey slate floor tiles holding three pairs of wellington boots upright, a coir doormat in front of the back door, the bottom of an oak bench and a wicker basket visible at the edge of the frame. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "08-dog-station",
+   "prompt": "A British boot room corner set up for a dog: an empty round dog bed under an oak bench, two hooks on the wall holding a dog lead and a folded towel, a stainless steel water bowl on a small mat, a wicker basket of dog toys on a shelf, terracotta tile floor. No dog in the image. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "09-porch-boot-room",
+   "prompt": "An enclosed glazed porch on a British cottage turned into a boot room: painted wooden walls up to window height with glass above, a slim oak bench along one side, three coats on wall hooks, wellies on a slate tray, a coir mat at the front door, potted plant on the windowsill, daylight. Photorealistic interior photography, real estate photo, British cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "10-before-messy",
+   "edit_from": "gen/out/model-test/boot-sunburst-high.png",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "Edit this photo into a realistic BEFORE version of the very same boot room from the same camera position: keep the walls, window, door, floor and the bench exactly the same, but make it messy: coats piled on the bench instead of on the hooks, muddy wellies lying on their sides across the floor, the baskets missing so the space under the bench is stuffed with loose shoes and bags, a muddy towel on the floor. No people, no animals, no text, no logos. Photorealistic."
+  },
+  {
+   "name": "pin-01-evening-bench",
+   "prompt": "A sage green boot room bench with an oak seat, three wicker baskets underneath, a Shaker peg rail with two wax jackets, wellies on a slate tray, herringbone brick floor. Photorealistic interior photography for a Pinterest pin, British cottage boot room, warm evening glow from a simple wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-02-under-stairs",
+   "prompt": "A boot room under a staircase with a low bench, coat hooks and wellies on a boot tray, the sloping underside of the stairs visible. Photorealistic interior photography for a Pinterest pin, British cottage boot room, warm evening glow from a simple wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-03-cupboard-open",
+   "prompt": "A tall painted boot room cupboard with both hinged doors open, coats on hooks inside, baskets on a shelf and wellies on a tray at the bottom. Photorealistic interior photography for a Pinterest pin, British cottage boot room, warm evening glow from a simple wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-04-belfast-sink",
+   "prompt": "A boot room with a white Belfast sink set into a cut-out in an oak worktop, a brass wall-mounted tap directly above the basin, sage cupboards below, wellies on the floor. Photorealistic interior photography for a Pinterest pin, British cottage boot room, warm evening glow from a simple wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-05-porch",
+   "prompt": "A glazed cottage porch used as a boot room with a slim oak bench, coats on hooks and wellies on a slate tray, dusk light through the glass. Photorealistic interior photography for a Pinterest pin, British cottage boot room, warm evening glow from a simple wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  }
+ ]
+}
