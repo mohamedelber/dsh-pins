@@ -1,0 +1,17 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01d-hero-no-sink",
+   "prompt": "A real small utility room in a British house: a white front-loading washing machine and a white tumble dryer side by side under a continuous white oak worktop, a sage green shaker base cupboard to their right under the same worktop, sage green shaker wall cabinets above, an open oak shelf with woven baskets, terracotta floor tiles, a small window with daylight. No sink in the room. The washing machine has a round glass door and a detergent drawer; the tumble dryer is clearly different: a solid white round door with no glass window, no detergent drawer and a single plain unmarked dial. Plain unbranded appliances with blank control panels: no logos, no text, no numbers, plain unmarked dials. Realistic proportions at true real-world scale (appliances about 60 cm wide and 85 cm tall under a 90 cm worktop that sits on top of them). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "pin-01d-evening-no-sink",
+   "prompt": "A cosy small utility room at evening: a white washing machine and a white tumble dryer side by side under a continuous oak worktop, sage shaker cabinets above with warm under-cabinet lights glowing onto the worktop, a small plant, a woven basket and folded towels on the worktop. No sink in the frame. The washing machine has a round glass door and a detergent drawer; the tumble dryer is clearly different: a solid white round door with no glass window, no detergent drawer and a single plain unmarked dial. Plain unbranded appliances with blank control panels: no logos, no text, no numbers, plain unmarked dials. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  }
+ ]
+}
