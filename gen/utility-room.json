@@ -1,0 +1,83 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01-small-utility-room-hero",
+   "prompt": "A real small utility room in a British house: a white front-loading washing machine and a matching tumble dryer side by side under a white oak worktop, sage green shaker wall cabinets above, a white ceramic Belfast sink with a brass bridge tap in the worktop to one side, an open shelf with woven baskets, terracotta floor tiles, a small window with daylight. Cabinet doors closed and nothing blocking the appliance doors. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "02-stacked-washer-dryer-cupboard",
+   "prompt": "A narrow utility cupboard in a British hallway with its two white bifold doors fully open: a front-loading washing machine on the bottom with a tumble dryer stacked on top using a stacking kit, a slim shelf above holding detergent in plain glass jars, a tall narrow broom cupboard beside it, cream walls, oak floorboards, soft daylight. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "03-ceiling-pulley-airer",
+   "prompt": "A small British utility room with a traditional wooden ceiling pulley clothes airer raised near the ceiling holding white towels and linen, a rope tied to a brass cleat on the wall, a front-loading washing machine under a worktop below, sage green walls, a window with daylight. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "04-under-stairs-utility",
+   "prompt": "A utility area built under a staircase in a British house: the sloping stair soffit above, a white front-loading washing machine placed under a white oak worktop at the tallest end, a small open shelf with baskets above it, a lidded laundry basket at the low end of the slope, warm white walls, soft warm light, realistic headroom. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "05-belfast-sink-rail",
+   "prompt": "Close view of a white ceramic Belfast sink set into a solid oak worktop in a utility room, a brass bridge tap, a wall rail above with hanging scrubbing brushes, a dustpan and a small cloth, deep green shaker cabinets below, white metro tiles on the wall, soft daylight. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "06-tall-cleaning-cupboard",
+   "prompt": "A small utility room with a tall white shaker cupboard with its door open showing a mop, a broom and an ironing board hanging on hooks inside the door, labelled-free plain storage boxes on shelves, next to a white oak worktop over a front-loading washing machine, cream walls, soft daylight. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "07-utility-storage-baskets",
+   "prompt": "A small utility room with open shelves above a white oak worktop holding plain glass jars of laundry powder and pegs, woven baskets for sorting laundry under the worktop beside a front-loading washing machine, a folding area on the worktop with folded towels, sage walls, soft daylight. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "08-before-after",
+   "prompt": "A side-by-side before and after split image of the same small British utility room: on the left, a cluttered room with piles of laundry on top of a washing machine, bottles everywhere and a dated worktop; on the right, the same room with a new white oak worktop over the washing machine and tumble dryer, sage cabinets, a Belfast sink and tidy baskets. Exactly two panels divided by a thin vertical line, no labels, no words. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale (a washing machine is about 60 cm wide and 85 cm tall, worktops about 90 cm high). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-01-sage-utility-evening",
+   "prompt": "A cosy small utility room at evening: sage green shaker cabinets, a white oak worktop over a white washing machine and tumble dryer, a Belfast sink with a brass tap, warm under-cabinet lights glowing, a small plant and a woven basket. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-02-bright-belfast-sink",
+   "prompt": "A bright small utility room in daylight: a white Belfast sink with a brass bridge tap in an oak worktop, deep green shaker cabinets below, white metro tiles, a window above the sink with a plant on the sill, fresh and calm. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-03-ceiling-airer",
+   "prompt": "A small utility room with a traditional wooden ceiling pulley airer holding white towels and linen near the ceiling, soft daylight from a window, sage walls and an oak worktop below, airy and calm. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-04-hallway-utility-cupboard",
+   "prompt": "A hallway utility cupboard with white bifold doors open showing a front-loading washing machine with a tumble dryer stacked on top, a slim shelf of glass jars above, warm evening light, neat and calm. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "pin-05-under-stairs-utility",
+   "prompt": "A cosy utility nook under the stairs at evening: sloping stair soffit above, a white washing machine under an oak worktop at the tall end, a small shelf with baskets, a warm wall light glowing, realistic headroom. Plain unbranded front-loading appliances with blank control panels: no logos, no text, no numbers, no brand names on any appliance. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
