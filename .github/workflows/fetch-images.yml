@@ -1,0 +1,30 @@
+name: Fetch site images
+on:
+  push:
+    paths:
+      - 'fetch/*.txt'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          mkdir -p fetch/out
+          for f in fetch/*.txt; do
+            while read -r u; do
+              [ -z "$u" ] && continue
+              n=$(basename "$u")
+              [ -f "fetch/out/$n" ] || curl -sSfL -A "Mozilla/5.0" -o "fetch/out/$n" "$u" || echo "fail $u"
+            done < "$f"
+          done
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add fetch/out || true
+          git diff --cached --quiet || git commit -m "Fetched images"
+          git push
