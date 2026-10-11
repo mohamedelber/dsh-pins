@@ -1,0 +1,41 @@
+{
+ "model": "gpt-image-1.5",
+ "items": [
+  {
+   "name": "01c-hero",
+   "prompt": "A real small utility room in a British house: on the left a white ceramic Belfast sink on a sage base cabinet with a brass bridge tap; to its right a white front-loading washing machine and a white tumble dryer side by side under a continuous white oak worktop; sage green shaker wall cabinets above, an open shelf with woven baskets, terracotta floor tiles, a small window with daylight. The Belfast sink sits on its own base cabinet with its front apron exposed; the worktop runs up to both sides of the sink and stops at the sink, with nothing resting on top of the sink rim and no worktop overhanging into the bowl; the tap is mounted on the worktop or wall behind the sink and its spout is over the middle of the bowl. The washing machine has a round glass door and a detergent drawer; the tumble dryer is clearly different: a solid white round door with no glass window, no detergent drawer and a single simple dial. Plain unbranded appliances with blank control panels: no logos, no text, no numbers. Realistic proportions at true real-world scale (appliances about 60 cm wide and 85 cm tall under a 90 cm worktop). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "03c-pulley-airer",
+   "prompt": "A small British utility room with a traditional Victorian ceiling pulley clothes airer: two cast-iron end brackets holding four parallel wooden rails at the same height, raised near the ceiling with white towels and linen hanging on it, two ropes running up over two small ceiling pulleys and down the wall to a brass figure-8 cleat where they are tied off. Below, a white washing machine and a white tumble dryer under an oak worktop, sage green walls, a window with daylight. The washing machine has a round glass door and a detergent drawer; the tumble dryer is clearly different: a solid white round door with no glass window, no detergent drawer and a single simple dial. Plain unbranded appliances with blank control panels: no logos, no text, no numbers. Realistic proportions at true real-world scale (appliances about 60 cm wide and 85 cm tall under a 90 cm worktop). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "05c-belfast-sink",
+   "prompt": "A close view of a white ceramic Belfast sink in a utility room with a brass bridge tap, a brass wall rail above with hanging scrubbing brushes, a dustpan and a cloth, deep green shaker cabinets, white metro tiles, soft daylight. The Belfast sink sits on its own base cabinet with its front apron exposed; the worktop runs up to both sides of the sink and stops at the sink, with nothing resting on top of the sink rim and no worktop overhanging into the bowl; the tap is mounted on the worktop or wall behind the sink and its spout is over the middle of the bowl. Realistic proportions at true real-world scale (appliances about 60 cm wide and 85 cm tall under a 90 cm worktop). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "08c-before-after",
+   "prompt": "A side-by-side split image showing the SAME small British utility room from the IDENTICAL camera position, with the same walls, the same window in the same place, the same floor and a washing machine and a tumble dryer standing in the same positions in both halves. Left half (before): bare walls, an old laminate worktop, piles of laundry on top of the machines, scattered plain bottles, a messy look. Right half (after): a new white oak worktop over the same two machines, sage wall cabinets, an open shelf with baskets, folded towels, tidy and calm. Exactly two panels divided by a thin vertical line, no labels, no words, no logos on any bottle. The washing machine has a round glass door and a detergent drawer; the tumble dryer is clearly different: a solid white round door with no glass window, no detergent drawer and a single simple dial. Plain unbranded appliances with blank control panels: no logos, no text, no numbers. Realistic proportions at true real-world scale (appliances about 60 cm wide and 85 cm tall under a 90 cm worktop). Shot like a real estate interior photo with a 24 mm lens at standing eye height, true-to-life materials, no CGI look. British home, no people, no text, no logos, square 1:1, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "pin-01c-sage-evening",
+   "prompt": "A cosy small utility room at evening: on the left a white Belfast sink on its own sage base cabinet with a brass tap, to its right a white washing machine and a white tumble dryer side by side under an oak worktop, sage shaker wall cabinets above with warm under-cabinet lights glowing, a small plant and a woven basket. The Belfast sink sits on its own base cabinet with its front apron exposed; the worktop runs up to both sides of the sink and stops at the sink, with nothing resting on top of the sink rim and no worktop overhanging into the bowl; the tap is mounted on the worktop or wall behind the sink and its spout is over the middle of the bowl. The washing machine has a round glass door and a detergent drawer; the tumble dryer is clearly different: a solid white round door with no glass window, no detergent drawer and a single simple dial. Plain unbranded appliances with blank control panels: no logos, no text, no numbers. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-03c-pulley-airer",
+   "prompt": "A small utility room with a traditional Victorian ceiling pulley airer: two cast-iron end brackets holding four parallel wooden rails at the same height near the ceiling, white towels and linen hanging, ropes running over two ceiling pulleys down to a brass figure-8 cleat on the wall. Soft daylight from a window, sage walls, an oak worktop over a washing machine below, airy and calm. The washing machine has a round glass door and a detergent drawer; the tumble dryer is clearly different: a solid white round door with no glass window, no detergent drawer and a single simple dial. Plain unbranded appliances with blank control panels: no logos, no text, no numbers. Realistic proportions at true real-world scale. Shot like a real interior photo, true-to-life materials, no CGI look, one clear focal point. British home, no people, no text, no logos, vertical 2:3, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  }
+ ]
+}
