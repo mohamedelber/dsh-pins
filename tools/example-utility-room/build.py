@@ -1,0 +1,113 @@
+import re,json
+exec(open('helpers.py').read())
+IMG=json.load(open('img.json'))
+IMG={int(k):tuple(v) for k,v in IMG.items()}
+PP="https://www.planningportal.co.uk/permission/common-projects/extensions/building-regulations-ventilation"
+CF="https://www.cornwall.gov.uk/fire-and-rescue-service/keeping-safe/fire-safety/fire-safety-at-home/washing-machines-and-tumble-dryers/"
+p("The best small utility room ideas turn a cramped corner into a calm place to wash, dry and store everything that has nowhere else to go. Whether your utility is a narrow room off the kitchen, a cupboard in the hallway or a nook under the stairs, the trick is to plan the appliances first and then use every wall.")
+p("Below you will find a layout guide with the sizes that work, a 6-step plan and 20 ideas for layouts, sinks and worktops, drying, storage and simple updates on a budget, plus a before-and-after makeover and the mistakes to avoid.")
+img(1)
+summary(["<strong>Quick answer:</strong> In a small utility room, fit the washing machine and tumble dryer side by side under a worktop, or stack them in a tall cupboard if the room is narrow. Then add a sink if you can, wall cabinets or open shelves above, a ceiling airer for drying and a tall cupboard for the mop, broom and ironing board.",
+"A standard washing machine is about 60 cm wide, so two appliances and a sink unit need roughly 180 cm of wall; stacked, they fit in a column about 60 cm wide.",
+"A new utility room needs extract ventilation, and a tumble dryer should never be left running overnight or while you are out."],
+"<strong>Time:</strong> a weekend to reorganise, longer for a refit · <strong>Cost:</strong> from a few baskets to a full refit · <strong>Difficulty:</strong> Easy to hard")
+toc("small-utility-room-ideas")
+h2("Small Utility Room Layout Guide")
+p("Most small utility rooms are planned around two machines. Measure the wall length, the depth from the wall and the ceiling height, then pick the layout that fits.")
+diagram(open('z.svg').read(),"Small utility room layout guide: side by side under a worktop needs about 180 cm of wall with a sink unit; stacked needs a column about 60 cm wide. Add an extract fan and vent the dryer outside.")
+p(f"Ventilation is part of the plan, not an extra. The {ext(PP,'Planning Portal')} says any new kitchen, bathroom, utility room or toilet should be provided with a means of extract ventilation. Dryers need care too: {ext(CF,'Cornwall Fire and Rescue Service')} advises cleaning the filter in your dryer after every use, never leaving it unattended or running overnight, and keeping it well ventilated with a vent pipe that is not kinked, blocked or crushed.")
+h2("Quick Pick: Small Utility Room Ideas by Problem")
+table(["Your problem","Best ideas","Budget"],[
+["Room is very narrow","#2, #3, #13","££"],
+["No utility room at all","#3, #4, #5","££–£££"],
+["Nowhere to dry clothes","#9, #10, #11","£–££"],
+["Clutter everywhere","#12, #13, #14, #15, #16","£"],
+["Looks tired","#17, #18, #19, #20","£–££"]])
+h2("How to Plan a Small Utility Room in 6 Steps")
+lst(["<strong>Measure everything.</strong> Wall length, depth, ceiling height, window and door positions.",
+"<strong>Find the water, waste and power.</strong> The washing machine usually goes where it can reach the supply and waste pipes.",
+"<strong>Choose your appliances first.</strong> Side by side, stacked or a washer dryer, and check the manual for the space each one needs.",
+"<strong>Plan fresh air.</strong> An extractor fan, plus an outside vent for a vented dryer.",
+"<strong>Add a worktop and storage.</strong> A surface for sorting and folding, then cupboards and shelves above.",
+"<strong>Finish with the details.</strong> Lighting, a hard-wearing floor and a colour you love."],True)
+h2("Layout Ideas for a Small Utility Room")
+p("These small utility room ideas start with where the machines go, because that decides how much space is left for everything else.")
+h3("1. Put the Washer and Dryer Side by Side Under a Worktop")
+p(f"A continuous worktop over both machines gives you a surface for sorting and folding, and it makes the room look built-in. Leave the gap the appliance manuals ask for at the sides and back, and check the worktop is high enough to clear the machines. Our free {a('washer-dryer-space-calculator','washer and dryer space calculator')} helps you check the fit.")
+h3("2. Stack Them in a Tall Cupboard")
+img(2)
+p("In a narrow utility, stack the tumble dryer on top of the washing machine using the manufacturer's stacking kit, so the pair fits in a column about 60 cm wide. Only stack models that are made to go together, and put the heavier washing machine at the bottom.")
+h3("3. Hide a Utility in a Hallway Cupboard")
+p("No room to spare? A cupboard in the hallway or on the landing can hold a stacked washer and dryer behind bifold doors, with a slim shelf above for detergent. Check that there is power, water and waste nearby, and plan how the cupboard will be ventilated.")
+h3("4. Use the Space Under the Stairs")
+img(4)
+p(f"A washing machine under a worktop fits neatly at the tall end of the space under the stairs, with baskets tucked under the low end. Our {a('under-stairs-storage-ideas','under stairs storage ideas')} show how to use the rest of the slope.")
+h3("5. Combine the Utility With a Downstairs Loo")
+p(f"Many homes squeeze a toilet and a washing machine into one small room. If you are planning this, our {a('downstairs-toilet-ideas','downstairs toilet ideas')} cover the space a loo needs and the ventilation rules to check.")
+h2("Sink and Worktop Ideas")
+p("Even very small utility room ideas can include a sink. A rinse-off spot near the back door saves the kitchen from muddy boots and paws.")
+h3("6. Fit a Belfast Sink")
+img(5)
+p("A deep ceramic Belfast sink is perfect for soaking muddy kit, rinsing paintbrushes and hand-washing. In a very small room, a compact single sink still beats washing muddy boots in the kitchen.")
+h3("7. Keep One Clear Folding Surface")
+img(7)
+p("Keep at least one section of worktop completely clear for folding. Everything else lives in cupboards, baskets or on shelves, so the surface is always ready when the dryer finishes.")
+h3("8. Add a Rail Above the Sink")
+p("A simple wall rail with S-hooks holds scrubbing brushes, a dustpan and cloths where they can drip dry, and it keeps the worktop clear.")
+h2("Drying Ideas for a Small Utility Room")
+p("Drying is where many small utility room ideas fall down, because wet washing takes up far more space than dirty washing. Lift it up and off the floor.")
+h3("9. Hang a Ceiling Pulley Airer")
+img(3)
+p("A traditional pulley airer lifts damp washing up to the ceiling, where warm air rises, and uses no floor space at all. Fix it securely to the ceiling joists and tie the rope off on a wall cleat.")
+h3("10. Add a Fold-Down Drying Rack")
+p("A wall-mounted rack that folds flat when not in use is ideal for delicates and jumpers that should not go in the tumble dryer.")
+h3("11. Choose the Right Type of Dryer")
+p("A vented tumble dryer needs its hose taken outside, through a wall or window. If your utility has no outside wall, a condenser or heat pump dryer may suit better, because it collects the water instead. Either way, follow the manual for the space it needs around it.")
+h2("Small Utility Room Storage Ideas")
+p("Small utility room storage ideas should get everything off the floor and the worktop. Use the full height of the walls and the inside of every door.")
+h3("12. Add a Tall Cleaning Cupboard")
+img(6)
+p("A tall cupboard keeps the mop, broom, vacuum and ironing board out of sight. Hooks on the inside of the door hold the ironing board and dustpan flat.")
+h3("13. Use Open Shelves Above the Worktop")
+p(f"Open shelves with matching jars for laundry powder and pegs keep everyday supplies within reach. Our {a('shelf-spacing-calculator','shelf spacing calculator')} helps you set the height of each shelf.")
+h3("14. Sort Laundry in Baskets Under the Worktop")
+p("Two or three baskets under the worktop, one for lights, darks and towels, make sorting automatic and keep piles off the floor.")
+h3("15. Slot a Pull-Out Into the Gap")
+p("A slim pull-out trolley between the machines or beside the sink holds detergents and sprays in a gap that would otherwise collect dust.")
+h3("16. Use the Inside of Cupboard Doors")
+p(f"Adhesive or screw-in hooks inside cupboard doors hold cloths, a lint brush and the dustpan. For more ideas like this, see our {a('storage-ideas-for-small-spaces','storage ideas for small spaces')}.")
+h2("Easy Updates and Ideas on a Budget")
+p("These utility room ideas on a budget refresh the room without moving any plumbing.")
+h3("17. Paint the Cupboards a Deep Colour")
+p("Sage, forest green or navy cupboards with brass handles make a plain utility feel finished. Use a hard-wearing paint made for kitchen cabinets.")
+h3("18. Choose a Hard-Wearing Floor")
+p("Utility floors take water, mud and heavy machines. Porcelain or quarry tiles and good vinyl are practical, easy to clean choices.")
+h3("19. Refresh Instead of Refitting")
+p("On a budget, a new worktop, painted cupboards, new handles and a few matching baskets can change the room for a fraction of the cost of a refit.")
+h3("20. Add Light Under the Cabinets")
+p("Under-cabinet lights brighten the worktop for sorting stains and make the room feel warmer in the evening. New wiring should be fitted by a qualified electrician.")
+h2("Before and After: A Small Utility Room")
+img(8)
+p("On the left, laundry is piled on the washing machine and bottles cover every surface. On the right, the same room has a new oak worktop over the washer and dryer, sage cabinets, a Belfast sink and tidy baskets, so every item has a place.")
+h2("Common Small Utility Room Mistakes")
+lst(["<strong>Buying units before choosing appliances.</strong> The machines decide the layout.",
+"<strong>Forgetting ventilation.</strong> A new utility room needs extract ventilation, and a vented dryer needs a clear vent pipe to the outside.",
+"<strong>Leaving the dryer running at night.</strong> Clean the filter after every use and never leave it running overnight or while you are out.",
+"<strong>No folding space.</strong> Keep one section of worktop clear.",
+"<strong>Stacking machines without a kit.</strong> Use the manufacturer's stacking kit and compatible models."])
+h2("Small Utility Room FAQ")
+h3("Does a utility room need ventilation?")
+p(f"Yes. The {ext(PP,'Planning Portal')} says a new utility room should be provided with a means of extract ventilation, and a vented tumble dryer also needs its own vent to the outside.")
+h3("Can you put a tumble dryer in a cupboard?")
+p("Often, yes, but check the manual for the space and airflow it needs. A vented dryer needs its hose taken outside, so a condenser or heat pump model is often easier in a cupboard.")
+h3("Can you stack a washer and dryer in a small utility?")
+p("Yes, if the models are designed to be stacked and you use the manufacturer's stacking kit, with the washing machine at the bottom.")
+h3("How do you make a small utility room work?")
+p("Plan the machines first, add a clear worktop for folding, use the full height of the walls for storage and dry clothes on a ceiling airer instead of the floor.")
+h2("Final Thoughts")
+p(f"The best small utility room ideas are simple: machines planned first, one clear worktop, storage up the walls and fresh air. Start with the layout, then add the shelves, baskets and colour. Readers in the US can see our {a('small-laundry-room-ideas','small laundry room ideas')} for American sizes and layouts.")
+ai_note()
+html='\n\n'.join(out)
+open('content.html','w').write(html)
+t=re.sub('<[^>]+>',' ',html)
+print('words',len(t.split()),'kw',t.lower().count('small utility room ideas'),'h3',html.count('<h3'),'img',html.count('wp:image {'),'links',len(re.findall(r'href="https://dailyspacehacks.com/[a-z]',html)))
