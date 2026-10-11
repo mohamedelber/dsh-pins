@@ -158,3 +158,24 @@ def pin_grid(tiles,pre,title,tag,footer,out,band=(176,98,52)):
     d.rectangle([0,H-foot,W,H],fill=OL+(255,))
     ff=pf(32,600); d.text((W/2,H-foot/2),footer,font=ff,fill=CR,anchor="mm")
     c.convert("RGB").save(out,"JPEG",quality=88,optimize=True,progressive=True)
+
+def pin_sq(src,kick,l1,l2,out,band=440,crop=None,ay=0.5):
+    """Square-photo pin: cream title band on top, the photo fills the rest without heavy upscaling."""
+    W,H=1000,1500
+    im=Image.open(src).convert("RGB")
+    if crop: im=im.crop(crop)
+    c=Image.new("RGB",(W,H),(252,249,244))
+    c.paste(_cover_im(im,W,H-band,ay=ay),(0,band))
+    d=ImageDraw.Draw(c); DK=(38,33,30); TC=(176,98,52); MAXW=int(W*0.84)
+    fk=fit(d,kick.upper(),lambda s:pf(s,700),MAXW,44)
+    f1=fit(d,l1,dm,MAXW,112); f2=fit(d,l2,dm,MAXW,112)
+    th=fk.size+22+f1.size*1.02+f2.size
+    y=(band-th)/2
+    d.text((W/2,y),kick.upper(),font=fk,fill=TC,anchor="mt"); y+=fk.size+22
+    d.text((W/2,y),l1,font=f1,fill=DK,anchor="mt"); y+=f1.size*1.02
+    d.text((W/2,y),l2,font=f2,fill=TC,anchor="mt")
+    c.save(out,"JPEG",quality=88,optimize=True,progressive=True)
+
+def _cover_im(im,w,h,ax=0.5,ay=0.5):
+    r=max(w/im.width,h/im.height); im=im.resize((round(im.width*r),round(im.height*r)),Image.LANCZOS)
+    x=int((im.width-w)*ax); y=int((im.height-h)*ay); return im.crop((x,y,x+w,y+h))
