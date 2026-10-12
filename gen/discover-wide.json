@@ -1,0 +1,40 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "under-stairs-storage-wide",
+   "edit_from": "gen/in/under-stairs-storage.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Extend this photo into a wider landscape frame: keep the existing scene, furniture, objects, colours and lighting exactly the same in the centre, and naturally continue the same room a little further on the left and right. Photorealistic interior photography. No text, no logos, no people, no animals."
+  },
+  {
+   "name": "laundry-closet-wide",
+   "edit_from": "gen/in/laundry-closet.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Extend this photo into a wider landscape frame: keep the existing scene, furniture, objects, colours and lighting exactly the same in the centre, and naturally continue the same room a little further on the left and right. Photorealistic interior photography. No text, no logos, no people, no animals."
+  },
+  {
+   "name": "hat-storage-wide",
+   "edit_from": "gen/in/hat-storage.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Extend this photo into a wider landscape frame: keep the existing scene, furniture, objects, colours and lighting exactly the same in the centre, and naturally continue the same room a little further on the left and right. Photorealistic interior photography. No text, no logos, no people, no animals."
+  },
+  {
+   "name": "diy-closet-shelves-wide",
+   "edit_from": "gen/in/diy-closet-shelves.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Extend this photo into a wider landscape frame: keep the existing scene, furniture, objects, colours and lighting exactly the same in the centre, and naturally continue the same room a little further on the left and right. Photorealistic interior photography. No text, no logos, no people, no animals."
+  },
+  {
+   "name": "purse-storage-wide",
+   "edit_from": "gen/in/purse-storage.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Extend this photo into a wider landscape frame: keep the existing scene, furniture, objects, colours and lighting exactly the same in the centre, and naturally continue the same room a little further on the left and right. Photorealistic interior photography. No text, no logos, no people, no animals."
+  }
+ ]
+}
