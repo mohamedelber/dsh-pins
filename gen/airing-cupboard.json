@@ -1,0 +1,59 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-airing-cupboard-hero",
+   "prompt": "A British airing cupboard on an upstairs landing with its single painted cream door wide open on visible hinges. Inside, on the floor at the left, stands one white factory-insulated hot water cylinder with copper pipes running up the back wall. Slatted pine shelves are fixed to the side and back walls on wooden battens; the lowest shelf starts well above the top of the cylinder, leaving clear space around it and its pipes. The shelves hold neatly folded white and sage green towels and bedding in tidy stacks. Photorealistic interior photography, real estate photo of a British home, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no labels with writing, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "02-slatted-shelves-towels",
+   "prompt": "Close-up of slatted pine airing cupboard shelves with small gaps between the slats, supported on wooden battens screwed to a cream wall, holding neat stacks of folded white, oatmeal and sage green towels, flat sheets and a folded duvet cover, soft daylight. Photorealistic interior photography, real estate photo of a British home, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no labels with writing, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "03-bedding-sets-baskets",
+   "prompt": "A neat airing cupboard shelf with bedding sets each folded and stored inside a matching pillowcase in small tidy bundles, beside two open woven seagrass baskets holding rolled hand towels and flannels, on slatted pine shelves, cream walls. Photorealistic interior photography, real estate photo of a British home, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no labels with writing, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "04-full-height-shelves-no-cylinder",
+   "prompt": "A narrow British cupboard on an upstairs landing with its painted sage green door open, fitted from floor to ceiling with evenly spaced white oak slatted shelves on battens, holding folded towels, bedding, spare pillows in cotton bags and a lidded wicker basket, no hot water tank and no boiler inside, cream walls. Photorealistic interior photography, real estate photo of a British home, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no labels with writing, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "05-door-rack-inside",
+   "prompt": "The inside of an open painted cream cupboard door fitted with a shallow white metal over-the-door rack holding a few rolled hand towels, a lint roller and spare toilet rolls, the rack fixed flat to the door, with folded towels on slatted shelves visible inside the cupboard. Photorealistic interior photography, real estate photo of a British home, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no labels with writing, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "06-freestanding-slatted-unit",
+   "prompt": "A freestanding slatted pine shelving unit with four shelves standing on the floor inside a small British cupboard, holding folded towels, bedding and a basket, with clear space on both sides, cream walls, the cupboard door open. Photorealistic interior photography, real estate photo of a British home, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no labels with writing, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "pin-01-evening-airing-cupboard",
+   "prompt": "An open airing cupboard on a landing with slatted pine shelves of neatly folded white and sage towels and bedding above a white insulated hot water cylinder, the shelves starting above the cylinder. Photorealistic interior photography for a Pinterest pin of a British airing cupboard, warm soft evening light from the landing, one clear focal point, the top third of the frame is calm plain cream wall or ceiling with nothing on it, realistic proportions, no people, no text, no logos, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-02-bright-slatted-shelves",
+   "prompt": "A tall cupboard fitted with white oak slatted shelves holding neat stacks of folded towels and bedding and woven baskets, door open, bright and fresh. Photorealistic interior photography for a Pinterest pin of a British airing cupboard, warm soft evening light from the landing, one clear focal point, the top third of the frame is calm plain cream wall or ceiling with nothing on it, realistic proportions, no people, no text, no logos, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-03-bedding-bundles",
+   "prompt": "Slatted airing cupboard shelves with bedding sets folded inside matching pillowcases and baskets of rolled towels. Photorealistic interior photography for a Pinterest pin of a British airing cupboard, warm soft evening light from the landing, one clear focal point, the top third of the frame is calm plain cream wall or ceiling with nothing on it, realistic proportions, no people, no text, no logos, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  }
+ ]
+}
