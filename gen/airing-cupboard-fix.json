@@ -1,0 +1,17 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01b-airing-cupboard-hero",
+   "quality": "high",
+   "size": "1024x1024",
+   "prompt": "A British airing cupboard on an upstairs landing with its single painted cream door wide open, two brass butt hinges clearly visible on the door edge fixed to the door frame. Inside, standing on the floor at the left, is one plain white factory-insulated hot water cylinder with no text on it, with one copper pipe rising from the top of the cylinder and running up the back wall. Three slatted pine shelves span the full width of the cupboard on wooden battens fixed to the side walls, the lowest shelf about 40 cm above the top of the cylinder with a clear visible gap; no pipe touches any shelf. The shelves hold neatly folded white and sage green towels and bedding in tidy stacks. Photorealistic interior photography, real estate photo of a British home, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no labels with writing, no brand names, high detail."
+  },
+  {
+   "name": "pin-01b-evening",
+   "quality": "medium",
+   "size": "1024x1536",
+   "prompt": "Photorealistic interior photography for a Pinterest pin of a British airing cupboard, warm soft evening light, camera low so the top third of the frame is plain cream wall and ceiling with nothing on it. The cupboard door is open; a plain white insulated hot water cylinder stands on the floor with a copper pipe rising from its top, and slatted pine shelves of neatly folded white and sage towels and bedding sit well above it with a clear visible gap of about 40 cm between the cylinder top and the lowest shelf. Realistic proportions, no people, no text, no logos, high detail."
+  }
+ ]
+}
