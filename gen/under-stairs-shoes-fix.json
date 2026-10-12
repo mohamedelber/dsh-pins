@@ -1,0 +1,17 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "04b-shoes-on-wheels",
+   "quality": "medium",
+   "size": "1024x1024",
+   "prompt": "The open space under a straight staircase in a British hallway with no door and no cupboard, a low wooden crate on small castors pulled half out from under the lowest steps onto a terracotta tile floor, holding pairs of trainers and school shoes, the sloping underside of the stairs visible above it, tidy hallway. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail."
+  },
+  {
+   "name": "06b-open-alcove-racks",
+   "quality": "medium",
+   "size": "1024x1024",
+   "prompt": "An open alcove under a straight staircase in a British hallway with no door, painted cream inside, with two simple tiered wooden shoe racks standing on the floor holding pairs of shoes, and a black rubber boot tray with two pairs of plain wellies at the front, the sloping underside of the stairs visible, tidy and clean. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail."
+  }
+ ]
+}
