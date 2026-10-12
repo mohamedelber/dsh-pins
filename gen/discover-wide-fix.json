@@ -1,0 +1,12 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "diy-closet-shelves-wide-b",
+   "edit_from": "gen/out/discover-wide/diy-closet-shelves-wide.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo: remove both white closet doors completely so the closet is a wide open alcove with no doors, and fill where the doors were with the same plain painted wall and wooden floor. Keep the shelves, baskets, hanging rod, clothes, rug, plants and lighting exactly the same. Photorealistic interior photography. No text, no logos, no people."
+  }
+ ]
+}
