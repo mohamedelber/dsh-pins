@@ -1,0 +1,66 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-pull-out-shoe-drawers-hero",
+   "prompt": "The triangular space under a straight staircase in a British hallway fitted with three tall painted sage green pull-out units on visible metal runners, each unit as tall as the stair height above it; the middle unit is pulled out into the hallway, showing pairs of shoes and trainers on angled wooden shelves inside, the other two closed with simple wooden knobs. White oak treads above, cream walls, wooden floorboards. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "02-open-shoe-cubbies",
+   "prompt": "Open white oak cubbies built into the low end of the space under a staircase, each cubby holding one pair of shoes, boots in the taller cubbies near the middle, a jute runner in front, cream walls, sage painted stair spindles above. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "03-bench-shoe-shelf",
+   "prompt": "A built-in oak bench seat under the tall end of a staircase in a British hallway with two open shelves of shoes in pairs below the seat, two coat hooks on the wall beside the bench with one coat, a coir doormat by the front door. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "04-shoes-on-wheels",
+   "prompt": "A low wooden crate on castors pulled half out from a cupboard under the stairs, holding pairs of trainers and shoes, the small cupboard door open on visible hinges, the rest of the hallway tidy, terracotta tile floor. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "05-slim-tilt-out-cabinet",
+   "prompt": "A slim white tilt-out shoe cabinet with two flip-down compartments standing against the wall at the tall end of the space under a staircase, one compartment tilted open showing shoes standing inside, a small tray of keys on top, cream walls, wooden floor. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "06-under-stairs-cupboard-racks",
+   "prompt": "An under stairs cupboard with its door open on visible hinges, inside two simple tiered wooden shoe racks standing on the floor holding pairs of shoes and wellies on a boot tray at the front, the sloping underside of the stairs visible inside, a small LED light, tidy and clean. Photorealistic interior photography, real estate photo of a British terraced house hallway, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded shoes and trainers in matching pairs, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "07-before-messy",
+   "edit_from": "gen/out/under-stairs-shoes/01-pull-out-shoe-drawers-hero.png",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo into a realistic BEFORE version of the very same hallway and staircase from the same camera position: remove the pull-out units so the space under the stairs is an open, dark, empty triangle, with a messy pile of unpaired shoes, trainers and wellies heaped on the floor under the stairs and spilling into the hallway, a crumpled bag on top. Keep the stairs, walls, floor and lighting exactly the same. No people, no text, no logos. Photorealistic."
+  },
+  {
+   "name": "pin-01-evening-drawers",
+   "prompt": "Painted sage green pull-out shoe units built under a straight staircase, one pulled out showing pairs of shoes on angled shelves. Photorealistic interior photography for a Pinterest pin of a British hallway, warm soft evening light from a wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic staircase geometry, no people, no text, no logos, plain unbranded shoes in matching pairs, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-02-bright-cubbies",
+   "prompt": "Open oak cubbies under the low end of a staircase each holding one pair of shoes, bright and fresh. Photorealistic interior photography for a Pinterest pin of a British hallway, warm soft evening light from a wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic staircase geometry, no people, no text, no logos, plain unbranded shoes in matching pairs, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-03-bench-shoes",
+   "prompt": "A built-in oak bench under the stairs with shelves of shoes below and a coat on a hook beside it. Photorealistic interior photography for a Pinterest pin of a British hallway, warm soft evening light from a wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic staircase geometry, no people, no text, no logos, plain unbranded shoes in matching pairs, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  }
+ ]
+}
