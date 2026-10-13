@@ -179,3 +179,24 @@ def pin_sq(src,kick,l1,l2,out,band=440,crop=None,ay=0.5):
 def _cover_im(im,w,h,ax=0.5,ay=0.5):
     r=max(w/im.width,h/im.height); im=im.resize((round(im.width*r),round(im.height*r)),Image.LANCZOS)
     x=int((im.width-w)*ax); y=int((im.height-h)*ay); return im.crop((x,y,x+w,y+h))
+
+def pin_checklist(title1,title2,sub,items,tip,photo,out,photo_ay=0.5,photo_ax=0.5):
+    """Checklist pin (1000x1500): serif title, 4 numbered cards, a sage tip bar, a photo strip and the site name."""
+    W,H=1000,1500; BG=(248,242,235); DK=(38,33,30); OL=(78,92,58); GR=(110,100,92); TC=(200,90,50)
+    c=Image.new("RGB",(W,H),BG); d=ImageDraw.Draw(c)
+    f1=fit(d,title1,lambda s:pf(s,800),880,96); d.text((W/2,55),title1,font=f1,fill=DK,anchor="mt")
+    f2=fit(d,title2,lambda s:pf(s,800),880,96); d.text((W/2,55+f1.size*1.12),title2,font=f2,fill=OL,anchor="mt")
+    y=55+f1.size*1.12+f2.size*1.15
+    fs=pf(38,400); d.text((W/2,y),sub,font=fs,fill=GR,anchor="mt"); y+=fs.size+45
+    for i,(h,t) in enumerate(items):
+        top=int(y+i*160); d.rounded_rectangle([60,top,940,top+138],radius=22,fill=(255,255,255),outline=(220,206,190),width=3)
+        d.ellipse([90,top+29,170,top+109],fill=DK); d.text((130,top+70),str(i+1),font=pf(40,700),fill=(255,255,255),anchor="mm")
+        fh=fit(d,h,lambda s:pf(s,700),700,52); d.text((200,top+18),h,font=fh,fill=DK)
+        ft=fit(d,t,lambda s:pf(s,400),700,34); d.text((200,top+82),t,font=ft,fill=GR)
+    ty=int(y+len(items)*160+10); d.rounded_rectangle([60,ty,940,ty+110],radius=22,fill=(221,229,214))
+    ftp=fit(d,tip,lambda s:pf(s,700),830,36); d.text((W/2,ty+55),tip,font=ftp,fill=DK,anchor="mm")
+    py=ty+140; ph=H-60-py
+    if ph>80:
+        im=Image.open(photo).convert("RGB"); c.paste(_cover_im(im,W,ph,ax=photo_ax,ay=photo_ay),(0,py))
+    d.text((W/2,H-30),"dailyspacehacks.com",font=pf(34,500),fill=TC,anchor="mm")
+    c.save(out,"JPEG",quality=88,optimize=True,progressive=True)
