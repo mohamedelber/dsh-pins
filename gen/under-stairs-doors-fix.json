@@ -1,0 +1,12 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "06b-ledged-door-open-inside",
+   "edit_from": "gen/out/under-stairs-doors/04-ledged-cottage-door.png",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo: keep the same hallway, staircase, camera position and lighting. Open the sage green ledged under stairs cupboard door: it swings out into the hallway on its black T hinges on the left vertical edge, so we see the back of the door with the same angled top edge. Inside the cupboard is now visible and tidy: the sloping underside of the stairs as the ceiling, a small warm LED strip light, three coats on a row of hooks at the tall end, a stick vacuum standing in a wall bracket, and two plain woven baskets on a low shelf at the short end. Keep the door the same size and shape as the opening. No people, no text, no logos. Photorealistic."
+  }
+ ]
+}
