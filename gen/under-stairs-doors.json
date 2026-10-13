@@ -1,0 +1,59 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-angled-shaker-doors",
+   "prompt": "A British terraced house hallway seen from the front door end. A straight flight of stairs rises along the right-hand wall, and the space under it is closed in with a painted timber cupboard front that fills the triangle under the stairs exactly. The front has three made-to-measure shaker doors painted soft sage green with small round brass knobs: the tallest door at the high end, a medium door in the middle and a short door at the low end, and the top edge of every door is cut on an angle that runs parallel to the slope of the stair string above it, with an even narrow gap. Butt hinges on the vertical edge of each door. White oak treads with white spindles above, cream walls, wooden floorboards, a jute runner. Photorealistic interior photography, real estate photo, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1536x1024",
+   "quality": "high"
+  },
+  {
+   "name": "02-sliding-door",
+   "prompt": "The tall end of the space under a straight staircase in a British hallway has a rectangular opening closed by one plain white oak sliding door hanging from a slim black metal top track fixed to the wall above the opening; the door is slid half open and shows a tidy cupboard inside with a vacuum cleaner and coats on hooks. The lower, sloping part under the stairs beside it is closed in with flat painted cream panelling. Cream walls, oak floorboards. Photorealistic interior photography, real estate photo, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "03-hidden-flush-doors",
+   "prompt": "Hidden under stairs cupboard doors in a British hallway: the side of a straight staircase is closed in with smooth flat panels painted exactly the same warm cream colour as the walls, and two handleless push-to-open doors are set into it, visible only as thin even shadow lines; the top edge of each door is angled parallel to the slope of the stairs. A small framed print and a slim console table nearby, oak floorboards, white oak treads above. Photorealistic interior photography, real estate photo, minimalist Scandinavian style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "04-ledged-cottage-door",
+   "prompt": "A cottage-style under stairs cupboard door in a British hallway: a single ledged and braced door made of vertical tongue and groove boards painted pale sage green, with a black iron thumb latch and black T hinges on its vertical edge; the top edge of the door is cut on an angle following the slope of the stairs above, set in a closed-in white painted stair side. Wide oak floorboards, a woven basket, cream walls. Photorealistic interior photography, real estate photo, English cottage style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "05-terracotta-feature-door",
+   "prompt": "A bold under stairs cupboard door painted a warm terracotta colour with a simple brass ring pull, set in the closed-in side of a straight staircase painted cream in a bright British hallway; the door is a single panelled door with its top edge angled to follow the slope of the stairs and hinges on its vertical edge. A sage green stair runner, oak floorboards. Photorealistic interior photography, real estate photo, modern cottage style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "06-open-door-organised-inside",
+   "prompt": "An under stairs cupboard in a British hallway with its single painted sage green door wide open on visible hinges on its vertical edge, showing a tidy inside: the sloping underside of the stairs as the ceiling, a small LED strip light, coats on a row of hooks at the tall end, a stick vacuum on a wall bracket, labelled-free plain baskets on a low shelf at the short end. The door top edge is angled to match the slope. Oak floorboards, cream walls. Photorealistic interior photography, real estate photo, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions and realistic staircase geometry with a straight flight of stairs, clean and calm, no people, no animals, no text, no logos, no brand names, high detail.",
+   "size": "1024x1024",
+   "quality": "high"
+  },
+  {
+   "name": "pin-01-evening-sage-doors",
+   "prompt": "Painted sage green shaker cupboard doors built into the side of a straight staircase in a British hallway, the top edge of each door angled to follow the slope of the stairs, small brass knobs. Photorealistic interior photography for a Pinterest pin, warm soft evening light from a wall light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic staircase geometry, no people, no text, no logos, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-02-hidden-doors",
+   "prompt": "Hidden handleless under stairs cupboard doors painted the same cream as the wall, visible only as thin shadow lines with top edges angled to follow the stairs, a slim oak console in front. Photorealistic interior photography for a Pinterest pin of a bright British hallway, soft daylight, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic staircase geometry, no people, no text, no logos, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  },
+  {
+   "name": "pin-03-ledged-door-open",
+   "prompt": "A pale sage tongue and groove under stairs cupboard door with a black thumb latch standing open, showing a neat cupboard inside with coats on hooks and baskets, the door top angled to follow the slope of the stairs. Photorealistic interior photography for a Pinterest pin of a British cottage hallway, warm soft evening light, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic staircase geometry, no people, no text, no logos, high detail.",
+   "size": "1024x1536",
+   "quality": "high"
+  }
+ ]
+}
