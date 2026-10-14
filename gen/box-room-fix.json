@@ -1,0 +1,12 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "07-before-junk-room",
+   "edit_from": "gen/out/box-room/01-hero-single-bed-shelves.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo into a realistic BEFORE version of the very same small room from the same camera position: it is a cluttered junk room. Remove the bed, shelves, plant and rug; instead stacked cardboard boxes, a folded ironing board leaning on the wall, a clothes airer with laundry, bags and a pile of clothes on the floor, bare floorboards. Keep the walls, window, blind, floor and lighting exactly the same. No people, no text, no logos. Photorealistic."
+  }
+ ]
+}
