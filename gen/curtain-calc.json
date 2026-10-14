@@ -1,0 +1,17 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-curtains-living-room",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A calm British living room with a large sash window dressed with floor-length linen curtains in soft sage green hanging from a slim black metal curtain pole mounted well above the window frame and extending past it on both sides, the curtains drawn open so they rest beside the window and just skim the wooden floor, a cream sofa, a jute rug, a side table with a plant. Photorealistic interior photography, real estate photo, cottage meets Scandinavian style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, curtains hanging straight with natural folds and visible eyelets on the pole, no people, no text, no logos, high detail."
+  },
+  {
+   "name": "pin-01-curtains-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Floor-length sage linen eyelet curtains hanging from a slim black pole mounted high above a tall window, just skimming the floor, beside a cream armchair. Photorealistic interior photography for a Pinterest pin, warm soft evening light from a floor lamp, one clear focal point, the top third of the frame is calm plain cream wall above the curtain pole with nothing on it, realistic proportions, no people, no text, no logos, high detail."
+  }
+ ]
+}
