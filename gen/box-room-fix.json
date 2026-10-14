@@ -7,6 +7,13 @@
    "size": "1536x1024",
    "quality": "medium",
    "prompt": "Edit this photo into a realistic BEFORE version of the very same small room from the same camera position: it is a cluttered junk room. Remove the bed, shelves, plant and rug; instead stacked cardboard boxes, a folded ironing board leaning on the wall, a clothes airer with laundry, bags and a pile of clothes on the floor, bare floorboards. Keep the walls, window, blind, floor and lighting exactly the same. No people, no text, no logos. Photorealistic."
+  },
+  {
+   "name": "06b-nursery-safe",
+   "edit_from": "gen/out/box-room/06-nursery.png",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo: keep the same room, camera, furniture and light. Inside the cot leave only a flat fitted sheet on the mattress: remove the soft toy and the knitted blanket from the cot. Remove the floating shelf with toys, the pot and the books from the wall above the cot, and remove the trailing ivy plant, leaving plain painted wall above the cot. Everything else unchanged. No people, no text, no logos. Photorealistic."
   }
  ]
 }
