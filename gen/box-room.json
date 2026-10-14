@@ -1,0 +1,59 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-single-bed-shelves",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A small British box room set up as a calm bedroom: a white oak single bed pushed against the side wall with two deep drawers underneath, sage green linen bedding, a sash window with a cream Roman blind, two simple oak shelves on the wall above the bed holding a few books and a plant, a small wall light instead of a bedside table, a narrow rug on wooden floorboards. Photorealistic interior photography, real estate photo of a small British box room bedroom in a terraced house, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, a genuinely small room about 2.4 by 2.2 metres, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "02-mid-sleeper-desk",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A white mid-sleeper bed in a small British box room with a simple desk and chair underneath it and a short wooden ladder at the end, the mattress platform at about chest height with a safety rail on all sides, a small shelf of books under the bed, sage green bedding, a window beside it. Photorealistic interior photography, real estate photo of a small British box room bedroom in a terraced house, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, a genuinely small room about 2.4 by 2.2 metres, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "03-bulkhead-wardrobe",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "In the corner of a small British box room the stair bulkhead forms a low boxed-in platform on the floor, about 40 centimetres high and carpeted; a fitted cream wardrobe with two simple doors is built on top of the platform up to the ceiling, with a round wooden knob on each door. A single bed with sage bedding stands along the other wall. Photorealistic interior photography, real estate photo of a small British box room bedroom in a terraced house, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, a genuinely small room about 2.4 by 2.2 metres, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "04-office-daybed",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A small British box room used as a home office and guest room: a white daybed with cushions along one wall, a slim oak desk with a chair under the window, a laptop closed on the desk, a pegboard with a few items above the desk, a reading lamp, wooden floorboards and a cream rug. Photorealistic interior photography, real estate photo of a small British box room bedroom in a terraced house, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, a genuinely small room about 2.4 by 2.2 metres, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "05-built-in-wardrobe-alcove",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A small British box room with a floor-to-ceiling built-in wardrobe painted soft sage green filling one short wall, two tall plain doors with brass knobs, and a single bed with an oak headboard placed along the long wall, a small round mirror, cream walls, wooden floorboards. Photorealistic interior photography, real estate photo of a small British box room bedroom in a terraced house, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, a genuinely small room about 2.4 by 2.2 metres, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "06-nursery",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A small British box room set up as a calm nursery: a white wooden cot against the wall away from the window, a small oak chest of drawers with a changing mat on top, a low armchair, a single floating shelf with a few soft toys, sage and cream textiles, a wool rug on wooden floorboards. Photorealistic interior photography, real estate photo of a small British box room bedroom in a terraced house, cottage meets Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta, natural daylight, realistic proportions, a genuinely small room about 2.4 by 2.2 metres, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "pin-01-evening-box-room",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A cosy small box room bedroom with a single oak bed with drawers underneath, sage green bedding, two wall shelves and a small wall light. Photorealistic interior photography for a Pinterest pin of a small British box room bedroom, warm soft evening light from a bedside lamp, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no text, no logos, high detail."
+  },
+  {
+   "name": "pin-02-mid-sleeper",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A white mid-sleeper bed with a desk and chair underneath and a short ladder, safety rail around the mattress, sage bedding. Photorealistic interior photography for a Pinterest pin of a small British box room bedroom, warm soft evening light from a bedside lamp, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no text, no logos, high detail."
+  },
+  {
+   "name": "pin-03-office-daybed",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A small box room used as a home office and guest room with a white daybed with cushions and a slim oak desk under the window. Photorealistic interior photography for a Pinterest pin of a small British box room bedroom, warm soft evening light from a bedside lamp, one clear focal point, the top third of the frame is calm plain cream wall with nothing on it, realistic proportions, no people, no text, no logos, high detail."
+  }
+ ]
+}
