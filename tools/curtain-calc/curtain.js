@@ -28,9 +28,9 @@ else if(len==='apron'){drop=above+wh+15}
 else if(len==='floor'){drop=poleTop-1}
 else{drop=poleTop+5}
 var total=poleLen*fu,each=total/np;
-if(mount==='out'&&above+3>wc&&wc>0)warn.push('There is very little space above the frame. Consider a ceiling-fixed track, or fit the pole just under the ceiling.');
-if(len==='apron'&&sf<20&&sf>0)warn.push('The sill is close to the floor, so below-sill curtains would almost reach it. Choose floor length instead.');
-if(mount==='in'&&(len==='floor'||len==='puddle'))tips.push('Inside a recess, floor-length curtains only work if nothing blocks the recess below the window.');
+if(mount==='out'?(above+3>wc?wc>0:false):false)warn.push('There is very little space above the frame. Consider a ceiling-fixed track, or fit the pole just under the ceiling.');
+if(len==='apron'?(sf<20?sf>0:false):false)warn.push('The sill is close to the floor, so below-sill curtains would almost reach it. Choose floor length instead.');
+if(mount==='in'?(len==='floor'||len==='puddle'):false)tips.push('Inside a recess, floor-length curtains only work if nothing blocks the recess below the window.');
 $('wn').innerHTML=warn.map(function(x){return '<div class="warn">'+x+'</div>'}).join('');
 $('k1').textContent=f(poleLen);$('k1e').textContent=mount==='in'?'Fits inside the recess':'Window + '+f(ex)+' each side, without finials';
 $('k2').textContent=f(drop);$('k2e').textContent=mount==='in'?'From the top of the track':'From the top of the pole (eyelets) or the ring eye';
@@ -40,36 +40,36 @@ var by='';
 if(reg==='uk'){
  var need=np===2?each:each/2;var w=null;for(var i=0;i<UKW.length;i++){if(UKW[i][1]>=need-2){w=UKW[i];break}}
  var d=null,d0=null;for(var j=0;j<UKD.length;j++){if(UKD[j][1]>=drop-1){d=UKD[j];break}d0=UKD[j]}
- var canLower=mount==='out'&&d0&&(drop-d0[1])<=above-3;
- if(w&&(d||d0)){
+ var canLower=(mount==='out'?(d0?(drop-d0[1])<=above-3:false):false);
+ if(w?(d||d0):false){
   var use=d,lower=0;
-  if(canLower&&(!d||d[1]-drop>drop-d0[1])){use=d0;lower=drop-1-d0[1]+1}
+  if(canLower?(!d||d[1]-drop>drop-d0[1]):false){use=d0;lower=drop-1-d0[1]+1}
   by+='<p><strong>Ready-made pair: '+w[0]+' x '+use[0]+' in</strong> ('+w[1]+' x '+use[1]+' cm), width x drop of each curtain.</p>';
   if(use===d0){by+='<p>Fit the pole '+Math.round(drop-d0[1])+' cm lower ('+Math.round(above-(drop-d0[1]))+' cm above the frame) so this drop ends '+endTxt()+'.</p>'}
   else{var extra=d[1]-drop;
-   if(extra>4)by+='<p>That drop is '+Math.round(extra)+' cm longer than you need. Hem the curtains, use a tape-adjustable heading, or '+(mount==='out'&&len!=='sill'&&above+extra<=wc-3?'raise the pole by '+Math.round(extra)+' cm.':'choose made-to-measure.')+'</p>';}
+   if(extra>4)by+='<p>That drop is '+Math.round(extra)+' cm longer than you need. Hem the curtains, use a tape-adjustable heading, or '+((mount==='out'?(len!=='sill'?above+extra<=wc-3:false):false)?'raise the pole by '+Math.round(extra)+' cm.':'choose made-to-measure.')+'</p>';}
   if(np===1)by+='<p>Ready-made curtains come in pairs. For one curtain, buy a pair and use one, or order a single made-to-measure curtain about '+both(each)+' wide.</p>';
  }else{
   by+='<p><strong>Made-to-measure</strong> is the best fit: about '+both(each)+' wide per curtain and '+both(drop)+' long.</p>';
   if(!w)by+='<p>Your window is wider than the largest ready-made pair. You can also hang two pairs side by side.</p>';
-  if(!d&&!d0)by+='<p>Your drop is outside standard ready-made sizes.</p>';
+  if(!(d||d0))by+='<p>Your drop is outside standard ready-made sizes.</p>';
  }
  var pl=null;for(var k=0;k<UKP.length;k++){if(UKP[k]>=poleLen){pl=UKP[k];break}}
  by+='<p>'+(mount==='in'?'Track: ':'Pole: ')+(pl?'a '+pl+' cm '+(mount==='in'?'track cut to size':'pole')+' (or an extendable one that covers '+Math.round(poleLen)+' cm)':'longer than standard poles, so use a corded track or a jointed pole')+'.</p>';
 }else{
  var ein=each/IN,tin=total/IN,dIn=drop/IN,pIn=poleLen/IN;
- var panels=Math.max(np,Math.ceil(tin/52));if(np===2&&panels%2)panels++;
+ var panels=Math.max(np,Math.ceil(tin/52));if(np===2?panels%2:false)panels++;
  by+='<p><strong>'+panels+' panels about 50 to 54 in wide</strong> give a total width of about '+Math.round(panels*52)+' in, enough for '+fu+'x fullness on a '+Math.round(pIn)+' in rod.</p>';
  if(panels>np){var fx=Math.round(np*52/pIn*10)/10;by+='<p>On a budget, '+np+' panel'+(np>1?'s':'')+' give about '+fx+'x fullness, a flatter look.</p>'}
  var L=null,L0=null;for(var a=0;a<USL.length;a++){if(USL[a]>=dIn-0.5){L=USL[a];break}L0=USL[a]}
  var abIn=above/IN,useL=L;
- if(mount==='out'&&L0&&(dIn-L0)<=abIn-1&&(!L||L-dIn>dIn-L0))useL=L0;
+ if(mount==='out'?(L0?((dIn-L0)<=abIn-1?(!L||L-dIn>dIn-L0):false):false):false)useL=L0;
  if(useL){by+='<p><strong>Panel length: '+useL+' in</strong> (you need '+(Math.round(dIn*2)/2)+' in).</p>';
-  if(useL===L0&&useL!==L){by+='<p>Mount the rod '+(Math.round((dIn-L0)*2)/2)+' in lower ('+(Math.round((abIn-(dIn-L0))*2)/2)+' in above the frame) so these panels end '+endTxt()+'.</p>'}
+  if(useL===L0?useL!==L:false){by+='<p>Mount the rod '+(Math.round((dIn-L0)*2)/2)+' in lower ('+(Math.round((abIn-(dIn-L0))*2)/2)+' in above the frame) so these panels end '+endTxt()+'.</p>'}
   else{var ex2=L-dIn;
-  if(ex2>1.5)by+='<p>That is '+(Math.round(ex2*2)/2)+' in longer than you need. Hem them, or '+(mount==='out'&&len!=='sill'&&abIn+ex2<=wc/IN-1?'raise the rod by '+(Math.round(ex2*2)/2)+' in.':'choose custom-length panels.')+'</p>';}
+  if(ex2>1.5)by+='<p>That is '+(Math.round(ex2*2)/2)+' in longer than you need. Hem them, or '+((mount==='out'?(len!=='sill'?abIn+ex2<=wc/IN-1:false):false)?'raise the rod by '+(Math.round(ex2*2)/2)+' in.':'choose custom-length panels.')+'</p>';}
  }else by+='<p>Your drop is longer than standard panels (up to 120 in), so choose custom-length curtains.</p>';
- var rr=null;for(var b=0;b<USR.length;b++){if(pIn>=USR[b][0]&&pIn<=USR[b][1]){rr=USR[b];break}}
+ var rr=null;for(var b=0;b<USR.length;b++){if(pIn>=USR[b][0]?pIn<=USR[b][1]:false){rr=USR[b];break}}
  by+='<p>Rod: '+(rr?'an adjustable rod that extends from '+rr[0]+' to '+rr[1]+' in':'a custom or extra-long rod with a center support')+'.</p>';
 }
 $('by').innerHTML=by;
