@@ -1,0 +1,65 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-slat-divider",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "An open-plan living room divided from a small dining area by a freestanding floor-to-ceiling partition of vertical white oak slats with gaps between them, so light passes through; on one side a cream linen sofa and a jute rug, on the other side a round oak dining table with four chairs and a pendant light; large window, light wooden floor. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "02-bookcase-divider",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A waist-to-shoulder height open cube bookcase in white oak used as a room divider between a living room and a dining area, standing perpendicular to the wall with its end fixed against the wall, open cubes holding a few books, woven baskets and a small plant, visible from both sides, sofa on one side and dining table beyond. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "03-curtain-bed-nook",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A small studio apartment where a ceiling-mounted curtain track with floor-length cream linen curtains, half drawn, separates a double bed with sage green bedding from the living area with a small sofa in the foreground; plain white ceiling, the curtain track running straight across the ceiling, wooden floor. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "04-folding-screen",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A three-panel folding screen with oak frames and natural cane webbing standing in a bedroom corner, partly hiding a small desk with a chair behind it, the screen standing on the floor in a zigzag shape, bed edge visible in the foreground, soft daylight. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "05-glass-partition",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A black metal framed internal glass partition wall with a matching glazed door separating a compact kitchen from a living room, clear glass panes in a grid, light flowing through, kitchen with white oak cabinets visible behind the glass, sofa and rug in the foreground. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "06-shared-kids-room",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A shared children's bedroom with two single beds on opposite walls, divided in the middle by a low open white oak shelf unit about hip height holding books and baskets, each side with its own bedding in sage and terracotta, a window at the end wall, calm and tidy, no toys on the floor. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "07-office-nook-behind-sofa",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A living room where a narrow oak desk with a chair stands directly behind the back of a cream sofa, creating a small home office zone facing the window, a table lamp and a laptop-free clean desktop with a notebook and a plant, rug under the sofa defining the lounge zone. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "08-plants-divider",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A row of tall potted indoor plants in terracotta and cream planters on a long low oak plant stand, used as a green room divider between a living area and an entry area of a small apartment, plants about head height, light wooden floor. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "pin-01-slat-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A freestanding vertical white oak slat room divider separating a cosy living area with a cream sofa from a dining nook with a round table, seen in the evening. Photorealistic interior photography, Scandinavian farmhouse style, warm evening glow from table lamps, cosy and calm, one clear focal point, the top third of the frame is a calm plain wall or ceiling with no objects, realistic proportions, no people, no animals, no text, no logos, high detail."
+  },
+  {
+   "name": "pin-02-curtain-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A studio apartment in the evening where floor-length cream linen curtains on a ceiling track are half drawn around a bed nook with sage bedding and a glowing bedside lamp, the small living area in the foreground. Photorealistic interior photography, Scandinavian farmhouse style, warm evening glow from table lamps, cosy and calm, one clear focal point, the top third of the frame is a calm plain wall or ceiling with no objects, realistic proportions, no people, no animals, no text, no logos, high detail."
+  }
+ ]
+}
