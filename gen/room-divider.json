@@ -60,6 +60,13 @@
    "size": "1024x1536",
    "quality": "high",
    "prompt": "A studio apartment in the evening where floor-length cream linen curtains on a ceiling track are half drawn around a bed nook with sage bedding and a glowing bedside lamp, the small living area in the foreground. Photorealistic interior photography, Scandinavian farmhouse style, warm evening glow from table lamps, cosy and calm, one clear focal point, the top third of the frame is a calm plain wall or ceiling with no objects, realistic proportions, no people, no animals, no text, no logos, high detail."
+  },
+  {
+   "name": "09-before-studio",
+   "edit_from": "gen/out/room-divider/03-curtain-bed-nook.png",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo into a realistic BEFORE version of the very same studio apartment from the same camera position: remove the ceiling curtain track and both curtains completely so the bed is fully exposed to the living area; the bed is unmade with rumpled bedding, clothes draped over the end of the bed, a laundry basket and a few bags on the floor beside it. Keep the walls, window, floor, sofa, rug and lighting exactly the same. No people, no text, no logos. Photorealistic."
   }
  ]
 }
