@@ -1,0 +1,65 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-side-by-side",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A European laundry hidden in a hallway cupboard: two pairs of white bifold doors folded fully open to the sides, revealing a front-loading washing machine with a round glass door and a white heat pump clothes dryer with a solid door and no glass window, so it looks different from the washer standing side by side on the floor under a continuous light oak benchtop, two white overhead cupboards above, a woven basket on the benchtop, a small white tiled splashback, light timber floor. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "02-stacked-tall-cupboard",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A narrow tall cupboard in a hallway with its single white door open, inside a white heat pump clothes dryer with a solid door and no glass window, so it looks different from the washer sits stacked on top of a front-loading washing machine with a round glass door on a proper stacking kit, beside them a narrow column of open white shelves with folded towels and detergent bottles on a high shelf, light timber floor. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "03-kitchen-laundry",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A kitchen with white handleless cabinetry and a light oak benchtop where one tall cupboard door at the end of the run is open to reveal a front-loading washing machine with a round glass door on the floor with a white heat pump clothes dryer with a solid door and no glass window, so it looks different from the washer stacked above it on a stacking kit, the other kitchen doors closed, a plant on the benchtop. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "04-laundry-tub-benchtop",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "Close view of a European laundry cupboard: a compact stainless steel laundry tub set into a light oak benchtop with a chrome mixer tap, a front-loading washing machine with a round glass door under the benchtop beside it, white subway tile splashback, a pump bottle and a small plant, cupboard doors open at the edges of the frame. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "05-pullout-hampers",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A European laundry cupboard with doors open showing a light oak benchtop over two wide pull-out drawers holding fabric laundry hamper baskets, one drawer pulled out, a front-loading washing machine with a glass door beside the drawers, white cabinetry. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "06-overhead-storage-rail",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "Upper part of a European laundry cupboard: white overhead cupboards with one door open showing labelled woven baskets, a slim chrome hanging rail under the cupboards with a few shirts on wooden hangers, light oak benchtop below with folded towels, the top of a front-loading washing machine with a round glass door visible. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "07-closed-sage-doors",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A hallway in an Australian home with a wall of soft sage green handleless floor-to-ceiling cupboard doors, closed, that hide a laundry, a small vent grille at the top of the doors, a runner rug and a pendant light, nothing suggests a laundry from the outside. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "08-sliding-doors",
+   "size": "1024x1024",
+   "quality": "high",
+   "prompt": "A European laundry in an open living area hidden behind two white sliding doors on a top track, one door slid partly open to reveal a front-loading washing machine with a round glass door under a light oak benchtop, the other half still closed, timber floor and a sofa edge in the foreground. Photorealistic interior photography, real estate photo of a modern Australian home, light and airy coastal Scandinavian style, palette of white, light oak timber, soft sage green and warm terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no logos, no brand names, plain unbranded appliances with plain unmarked dials, high detail."
+  },
+  {
+   "name": "pin-01-laundry-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A European laundry in a hallway cupboard with white bifold doors folded open, a front-loading washing machine with a round glass door and a white heat pump clothes dryer with a solid door and no glass window, so it looks different from the washer side by side under a light oak benchtop with a woven basket and a plant, seen in the evening. Photorealistic interior photography, Australian coastal Scandinavian style, warm evening glow from a pendant light, cosy and calm, one clear focal point, the top third of the frame is a calm plain wall with no objects, realistic proportions, no candles, no people, no text, no logos, high detail."
+  },
+  {
+   "name": "pin-02-closed-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A hallway with soft sage green handleless floor-to-ceiling cupboard doors closed, hiding a laundry, a runner rug and a glowing pendant light, seen in the evening. Photorealistic interior photography, Australian coastal Scandinavian style, warm evening glow from a pendant light, cosy and calm, one clear focal point, the top third of the frame is a calm plain wall with no objects, realistic proportions, no candles, no people, no text, no logos, high detail."
+  }
+ ]
+}
