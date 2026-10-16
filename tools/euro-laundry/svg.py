@@ -50,7 +50,7 @@ a(f'<line x1="{vx}" y1="{top}" x2="{vx}" y2="{FL}" stroke="{A}" stroke-width="3"
 a(f'<text x="{vx+16}" y="{(top+FL)/2-6:.0f}" font-size="19" font-weight="700" fill="{A}">about</text><text x="{vx+16}" y="{(top+FL)/2+18:.0f}" font-size="19" font-weight="700" fill="{A}">1,800 mm</text>')
 # notes
 ny=FL+150
-for i,(h,t) in enumerate([("Depth","Allow about 650–700 mm for hoses and the door"),("Dryer air","Vented dryers must be ducted outside; heat pump dryers need no duct")]):
+for i,(h,t) in enumerate([("Depth","Allow about 650–700 mm for hoses and the door"),("Dryer air","Vented dryers must vent to outside air; heat pump dryers need no duct")]):
     x=60+i*550
     a(f'<rect x="{x}" y="{ny-30}" width="530" height="66" rx="12" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
     a(f'<text x="{x+18}" y="{ny-3}" font-size="18" font-weight="700" fill="{T}">{h}</text><text x="{x+18}" y="{ny+22}" font-size="15" fill="{G}">{t}</text>')
