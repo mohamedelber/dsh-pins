@@ -85,7 +85,7 @@
 <h4>Packing tips</h4>
 <ul class="tips" id="tp"></ul>
 <div class="acts"><button type="button" class="pri" id="cp">Copy my box list</button><button type="button" id="pr">Print</button></div>
-<p class="note">How it works: each room type has a typical mix of box sizes (for example a kitchen needs mostly small and medium boxes plus dish packs, a bedroom more large boxes and a wardrobe box), adjusted for how much you own. Totals land inside the ranges moving companies publish for each home size. Box sizes are typical US moving boxes and vary by store. Results are planning estimates, so check your closets, cupboards and garage before you buy.</p>
+<p class="note">How it works: each room type has a typical mix of box sizes (for example a kitchen needs mostly small and medium boxes plus dish packs, a bedroom more large boxes and a wardrobe box), adjusted for how much you own. Totals land inside the ranges moving companies publish for each home size. Box sizes are typical US moving boxes and vary by store. Results are planning estimates, so check your closets, cabinets and garage before you buy.</p>
 </div>
 <script>
 (function(){
@@ -95,7 +95,7 @@ var MIX={P:[3,4,3,1,0],B:[2,3,2,1,0],L:[3,4,3,1,0],K1:[4,4,1,0,1],K2:[5,5,2,0,2]
 var PRE={studio:[0,1,1,0,0,0,0],'1':[1,1,1,0,0,0,0],'2':[2,1,1,0,0,0,0],'3':[3,1,2,1,0,1,0],'4':[4,2,3,1,1,1,0],'5':[5,2,3,1,1,1,1]};
 var IDS=['bed','liv','bath','din','off','gar','sto'];
 var BOX=[
-['Small box','16 x 12 x 12 in (41 x 30 x 30 cm), 1.5 cu ft','Books, dishes, canned food, tools',1.5],
+['Small box','16.4 x 12.6 x 12.6 in (42 x 32 x 32 cm), 1.5 cu ft','Books, dishes, canned food, tools',1.5],
 ['Medium box','18 x 18 x 16 in (46 x 46 x 41 cm), 3 cu ft','Kitchen items, toys, decor, shoes',3],
 ['Large box','18 x 18 x 24 in (46 x 46 x 61 cm), 4.5 cu ft','Bedding, towels, pillows, lampshades',4.5],
 ['Extra-large box','24 x 18 x 24 in (61 x 46 x 61 cm), 6 cu ft','Comforters, cushions, light bulky items',6],
@@ -141,7 +141,7 @@ var sp=['<strong>Packing tape:</strong> '+tape+' rolls of 2 in (48 mm) tape, abo
 $('sp').innerHTML=sp.map(function(x){return '<li>'+x+'</li>'}).join('');
 var tips=[];
 tips.push('Put heavy things like books in small boxes and light, bulky things like bedding in large boxes, so no box gets too heavy to lift safely.');
-if(q[4])tips.push('Wardrobe boxes save hours: move clothes straight from the closet rail on their hangers.');
+if(q[4])tips.push('Wardrobe boxes save time: move clothes straight from the closet rail on their hangers.');
 if(gar+sto>0)tips.push('Garages and basements vary the most. Look inside before you buy, and clear out what you will not move first.');
 tips.push('Use suitcases, laundry baskets and dresser drawers for soft items to need fewer boxes.');
 $('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');

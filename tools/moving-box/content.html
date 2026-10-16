@@ -1,0 +1,357 @@
+<!-- wp:paragraph -->
+<p>How many boxes do you need to move? This free <strong>moving box calculator</strong> estimates how many small, medium, large, wardrobe and dish boxes your home needs, room by room, plus the packing tape and paper to buy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pick your home size, change the rooms to match yours and say how much stuff you own. A typical two-bedroom apartment is filled in, and the box list updates as you type, so you can copy it or print it before you shop.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-boxes" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.25rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin-bottom:12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc table{width:100%;border-collapse:collapse;font-size:.9rem;margin:0 0 12px}
+.dsh-calc th,.dsh-calc td{border-bottom:1px solid var(--bd);padding:7px 6px;text-align:left;vertical-align:top}
+.dsh-calc th{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc td.n{font-weight:700;text-align:right;white-space:nowrap}
+.dsh-calc h4{margin:6px 0 6px;font-size:1rem}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:6px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--ac);background:#fff;color:var(--ac);border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer}
+.dsh-calc .acts button.pri{background:var(--ac);color:#fff}
+.dsh-calc .wrapt{overflow-x:auto}
+@media (max-width:520px){.dsh-calc{padding:14px}.dsh-calc .hs{display:none}.dsh-calc th,.dsh-calc td{padding:6px 4px;font-size:.82rem}}
+.dsh-calc .note{font-size:.78rem;color:var(--mut);margin:12px 0 0}
+</style>
+<h3>How many moving boxes do you need?</h3>
+<p class="sub">Pick your home size, adjust the rooms and how much stuff you have, and get the number of small, medium, large, wardrobe and dish boxes, plus the packing tape and paper to buy.</p>
+<fieldset><legend>1. Your home</legend>
+<div class="opts" role="group" aria-label="Home size">
+<button type="button" data-h="studio"><b>Studio</b><span>One main room</span></button>
+<button type="button" data-h="1"><b>1 bedroom</b><span>Apartment</span></button>
+<button type="button" data-h="2" class="on"><b>2 bedrooms</b><span>Apartment or small house</span></button>
+<button type="button" data-h="3"><b>3 bedrooms</b><span>House with garage</span></button>
+<button type="button" data-h="4"><b>4 bedrooms</b><span>Family house</span></button>
+<button type="button" data-h="5"><b>5+ bedrooms</b><span>Large house</span></button>
+</div>
+<p class="hint">Change the rooms to match your home. A studio has 0 bedrooms and 1 living area.</p>
+<div class="grid">
+<label>Bedrooms (incl. kids' rooms)<input type="number" inputmode="numeric" min="0" max="10" step="1" id="bed"></label>
+<label>Living or family rooms<input type="number" inputmode="numeric" min="0" max="5" step="1" id="liv"></label>
+<label>Bathrooms<input type="number" inputmode="numeric" min="0" max="6" step="1" id="bath"></label>
+<label>Dining rooms<input type="number" inputmode="numeric" min="0" max="3" step="1" id="din"></label>
+<label>Home offices<input type="number" inputmode="numeric" min="0" max="3" step="1" id="off"></label>
+<label>Garage or shed<input type="number" inputmode="numeric" min="0" max="3" step="1" id="gar"></label>
+<label>Basement, attic or storage room<input type="number" inputmode="numeric" min="0" max="3" step="1" id="sto"></label>
+</div></fieldset>
+<fieldset><legend>2. How much stuff</legend>
+<div class="grid">
+<label>Amount of belongings<select id="amt"><option value="0.7">Minimalist (light packer)</option><option value="1" selected>Average</option><option value="1.35">Lots of stuff (full closets, books, hobbies)</option></select></label>
+<label>Hanging clothes<select id="hang"><option value="0.5">Few (I'll fold most clothes)</option><option value="1" selected>Average</option><option value="1.5">Lots (long closet rails)</option></select></label>
+<label>Spare boxes to add<select id="spare"><option value="0">None</option><option value="0.1" selected>10% extra</option><option value="0.15">15% extra</option></select></label>
+</div></fieldset>
+<div class="res" aria-live="polite">
+<div id="vd" class="verdict"></div>
+<div class="kpis">
+<div class="kpi"><small>Small boxes</small><strong id="k1"></strong><em>Books, dishes, tools</em></div>
+<div class="kpi"><small>Medium boxes</small><strong id="k2"></strong><em>Kitchen, toys, decor</em></div>
+<div class="kpi"><small>Large and XL</small><strong id="k3"></strong><em>Bedding, pillows, lamps</em></div>
+<div class="kpi"><small>Specialty</small><strong id="k4"></strong><em id="k4e"></em></div>
+</div>
+<div class="viz" id="vz" aria-hidden="true"></div>
+<h4>Your box list</h4>
+<table><thead><tr><th>Box</th><th class="hs">Typical size</th><th>Pack</th><th style="text-align:right">Qty</th></tr></thead><tbody id="tb"></tbody></table>
+<h4>Boxes by room</h4>
+<table><thead><tr><th>Room</th><th>Small</th><th>Med</th><th>Large/XL</th><th>Other</th></tr></thead><tbody id="rb"></tbody></table>
+<h4>Packing supplies</h4>
+<ul class="tips" id="sp"></ul>
+<h4>Packing tips</h4>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" class="pri" id="cp">Copy my box list</button><button type="button" id="pr">Print</button></div>
+<p class="note">How it works: each room type has a typical mix of box sizes (for example a kitchen needs mostly small and medium boxes plus dish packs, a bedroom more large boxes and a wardrobe box), adjusted for how much you own. Totals land inside the ranges moving companies publish for each home size. Box sizes are typical US moving boxes and vary by store. Results are planning estimates, so check your closets, cabinets and garage before you buy.</p>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-boxes');if(!R)return;
+function $(i){return document.getElementById(i)}
+var MIX={P:[3,4,3,1,0],B:[2,3,2,1,0],L:[3,4,3,1,0],K1:[4,4,1,0,1],K2:[5,5,2,0,2],K3:[6,6,2,0,2],D:[2,2,1,0,1],T:[2,1,0,0,0],O:[4,3,1,0,0],G:[3,4,4,2,0],S:[3,4,4,2,0]};
+var PRE={studio:[0,1,1,0,0,0,0],'1':[1,1,1,0,0,0,0],'2':[2,1,1,0,0,0,0],'3':[3,1,2,1,0,1,0],'4':[4,2,3,1,1,1,0],'5':[5,2,3,1,1,1,1]};
+var IDS=['bed','liv','bath','din','off','gar','sto'];
+var BOX=[
+['Small box','16.4 x 12.6 x 12.6 in (42 x 32 x 32 cm), 1.5 cu ft','Books, dishes, canned food, tools',1.5],
+['Medium box','18 x 18 x 16 in (46 x 46 x 41 cm), 3 cu ft','Kitchen items, toys, decor, shoes',3],
+['Large box','18 x 18 x 24 in (46 x 46 x 61 cm), 4.5 cu ft','Bedding, towels, pillows, lampshades',4.5],
+['Extra-large box','24 x 18 x 24 in (61 x 46 x 61 cm), 6 cu ft','Comforters, cushions, light bulky items',6],
+['Wardrobe box','About 24 in (61 cm) wide with a hanging bar','Clothes on hangers, straight from the closet',13],
+['Dish pack','About 18 x 18 x 28 in (46 x 46 x 71 cm), double-wall','Plates, glasses and china with dividers',5.25]];
+var summary='';
+function n(i){var v=parseInt($(i).value,10);return isNaN(v)||v<0?0:Math.min(v,10)}
+function calc(){
+var bed=n('bed'),liv=n('liv'),bath=n('bath'),din=n('din'),off=n('off'),gar=n('gar'),sto=n('sto');
+var amt=parseFloat($('amt').value)||1,hang=parseFloat($('hang').value)||1,spare=parseFloat($('spare').value)||0;
+var rooms=[],raw=[0,0,0,0,0];
+function add(name,key,count,ward){if(count<1)return;var m=MIX[key],r=[0,0,0,0,0];for(var i=0;i<5;i++){r[i]=m[i]*count;raw[i]+=r[i]}rooms.push([name,r,ward])}
+var kk=bed<2?'K1':(bed===2?'K2':'K3');
+var wP=Math.max(1,Math.round(2*hang)),wB=bed>1?Math.round((bed-1)*hang):0,wS=Math.max(1,Math.round(hang));
+if(bed>0){add('Main bedroom','P',1,wP);if(bed>1)add(bed===2?'Second bedroom':'Other bedrooms ('+(bed-1)+')','B',bed-1,wB)}
+add(bed===0?'Studio living and sleeping area':(liv>1?'Living and family rooms ('+liv+')':'Living room'),'L',liv,bed===0?wS:0);
+add('Kitchen',kk,1,0);
+add(din>1?'Dining rooms ('+din+')':'Dining room','D',din,0);
+add(bath>1?'Bathrooms ('+bath+')':'Bathroom','T',bath,0);
+add(off>1?'Home offices ('+off+')':'Home office','O',off,0);
+add('Garage or shed','G',gar,0);
+add('Basement, attic or storage','S',sto,0);
+var ward=0;rooms.forEach(function(r){ward+=r[2]});
+if(bed===0?liv===0:false)ward=Math.max(1,Math.round(hang));
+var q=[Math.round(raw[0]*amt),Math.round(raw[1]*amt),Math.round(raw[2]*amt),Math.round(raw[3]*amt),ward,raw[4]];
+var total=0,vol=0;for(var i=0;i<6;i++){total+=q[i];vol+=q[i]*BOX[i][3]}
+var extra=Math.round(total*spare),buy=total+extra;
+var lo=Math.round(total*0.85),hi=Math.round(total*1.15);
+$('vd').textContent='You need about '+total+' moving boxes'+(extra?' (buy '+buy+' with '+Math.round(spare*100)+'% spare)':'')+'. Plan for '+lo+' to '+hi+', depending on how you pack.';
+$('k1').textContent=q[0];$('k2').textContent=q[1];$('k3').textContent=(q[2]+q[3]);$('k4').textContent=(q[4]+q[5]);
+$('k4e').textContent=q[4]+' wardrobe, '+q[5]+' dish pack'+(q[5]===1?'':'s');
+var tb='';for(var j=0;j<6;j++){tb+='<tr><td><strong>'+BOX[j][0]+'</strong></td><td class="hs">'+BOX[j][1]+'</td><td>'+BOX[j][2]+'</td><td class="n">'+q[j]+'</td></tr>'}
+tb+='<tr><td><strong>Total</strong></td><td class="hs">About '+Math.round(vol)+' cu ft of boxes</td><td></td><td class="n">'+total+'</td></tr>';
+$('tb').innerHTML=tb;
+var rb='';rooms.forEach(function(r){var b=r[1];var o=[];if(r[2])o.push(r[2]+' wardrobe');if(b[4])o.push(b[4]+' dish');
+rb+='<tr><td>'+r[0]+'</td><td>'+Math.round(b[0]*amt)+'</td><td>'+Math.round(b[1]*amt)+'</td><td>'+(Math.round(b[2]*amt)+Math.round(b[3]*amt))+'</td><td>'+(o.join(', ')||'-')+'</td></tr>'});
+$('rb').innerHTML=rb;
+var tape=Math.max(2,Math.ceil(buy/15)),paper=(bed<2?10:(bed===2?15:20))+5*din;
+var sp=['<strong>Packing tape:</strong> '+tape+' rolls of 2 in (48 mm) tape, about one roll for every 15 boxes, plus a tape gun.',
+'<strong>Packing paper:</strong> about '+paper+' lb of plain newsprint for dishes, glasses and fragile decor.',
+'<strong>Bubble wrap:</strong> one roll for lamps, frames, mirrors and electronics.',
+'<strong>Markers and labels:</strong> 2 or 3 markers to write the room and contents on two sides of every box.'];
+$('sp').innerHTML=sp.map(function(x){return '<li>'+x+'</li>'}).join('');
+var tips=[];
+tips.push('Put heavy things like books in small boxes and light, bulky things like bedding in large boxes, so no box gets too heavy to lift safely.');
+if(q[4])tips.push('Wardrobe boxes save time: move clothes straight from the closet rail on their hangers.');
+if(gar+sto>0)tips.push('Garages and basements vary the most. Look inside before you buy, and clear out what you will not move first.');
+tips.push('Use suitcases, laundry baskets and dresser drawers for soft items to need fewer boxes.');
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+draw(q);
+summary='My moving box list (dailyspacehacks.com)\n'+$('vd').textContent+'\n'+BOX.map(function(b,k){return b[0]+': '+q[k]}).join('\n')+'\nPacking tape: '+tape+' rolls\nPacking paper: about '+paper+' lb';
+}
+function draw(q){
+var VW=600,VH=205,base=172,s=4.2,x=20,o='<svg viewBox="0 0 '+VW+' '+VH+'" xmlns="http://www.w3.org/2000/svg" font-family="inherit">';
+o+='<rect width="'+VW+'" height="'+VH+'" fill="#FBF6EF"/><line x1="10" y1="'+base+'" x2="'+(VW-10)+'" y2="'+base+'" stroke="#B9AD9F" stroke-width="2"/>';
+var D=[[16,12],[18,16],[18,24],[24,24],[24,46],[18,28]],L=['Small','Medium','Large','XL','Wardrobe','Dish pack'];
+for(var i=0;i<6;i++){var w=D[i][0]*s*0.75,h=D[i][1]*s*0.75,y=base-h,d=Math.min(14,w*0.25);
+o+='<polygon points="'+(x+d)+','+(y-d)+' '+(x+w+d)+','+(y-d)+' '+(x+w)+','+y+' '+x+','+y+'" fill="#E4C69C" stroke="#8C6A45" stroke-width="1.5"/>';
+o+='<polygon points="'+(x+w)+','+y+' '+(x+w+d)+','+(y-d)+' '+(x+w+d)+','+(base-d)+' '+(x+w)+','+base+'" fill="#C9A274" stroke="#8C6A45" stroke-width="1.5"/>';
+o+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#D9B48A" stroke="#8C6A45" stroke-width="1.5"/>';
+o+='<line x1="'+(x+w/2)+'" y1="'+y+'" x2="'+(x+w/2)+'" y2="'+(y+Math.min(h*0.25,12))+'" stroke="#C8B9A4" stroke-width="5"/>';
+o+='<text x="'+(x+w/2)+'" y="'+(y+h*0.6+8)+'" font-size="'+(w>50?24:18)+'" font-weight="700" text-anchor="middle" fill="#342E2A">'+q[i]+'</text>';
+o+='<text x="'+(x+w/2)+'" y="'+(base+22)+'" font-size="13" text-anchor="middle" fill="#6E645C">'+L[i]+'</text>';
+x+=w+d+22}
+o+='</svg>';$('vz').innerHTML=o;
+}
+function setPre(k){var p=PRE[k];IDS.forEach(function(id,i){$(id).value=p[i]});R.querySelectorAll('[data-h]').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-h')===k)})}
+R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){setPre(b.getAttribute('data-h'));calc()})});
+IDS.forEach(function(i){$(i).addEventListener('input',function(){R.querySelectorAll('[data-h]').forEach(function(b){b.classList.remove('on')});calc()})});
+['amt','hang','spare'].forEach(function(i){$(i).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my box list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your box list:',summary)})}catch(e){window.prompt('Copy your box list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+setPre('2');calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How Many Moving Boxes Do I Need?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Most homes need somewhere between 20 and 160 boxes, depending on the number of rooms and how much is in them. The moving supply guide at <a href="https://www.movingplace.com/moving-advice/how-many-moving-boxes-do-i-need" target="_blank" rel="noopener">Moving Place</a> gives these ranges for an average move, and our moving box calculator lands inside them for each home size:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Home size</th><th>Average move (Moving Place)</th><th>Our calculator, average stuff</th></tr></thead><tbody><tr><td>Studio</td><td>20–30 boxes</td><td>25 boxes</td></tr><tr><td>1-bedroom apartment</td><td>30–40 boxes</td><td>37 boxes</td></tr><tr><td>2-bedroom apartment</td><td>50–60 boxes</td><td>50 boxes</td></tr><tr><td>3-bedroom house</td><td>80–100 boxes</td><td>83 boxes</td></tr><tr><td>4-bedroom house</td><td>100–125 boxes</td><td>114 boxes</td></tr><tr><td>5+ bedroom house</td><td>130–160 boxes</td><td>136 boxes</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Light packers can need about a third fewer boxes, and homes with full closets, lots of books or a packed garage can need a third more. A quick rule from a packaging supplier quoted by <a href="https://www.redfin.com/blog/2016/03/moving-soon-this-guide-will-help-you-figure-out-how-many-boxes-you-need.html" target="_blank" rel="noopener">Redfin</a> is 10 to 15 boxes per room, and the same article cites a box seller's advice to buy about 10 percent more than your estimate, so a few spare boxes are always on hand for the last-minute items.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2333,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/moving-box-calculator-01-packed-boxes.jpg" alt="Moving box calculator: stacks of sealed cardboard moving boxes in several sizes and a wardrobe box with shirts on hangers in a bright living room on moving day" class="wp-image-2333"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Moving Box Sizes and What to Pack in Each</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Pack heavy items in small boxes and light items in large ones. A large box full of books is too heavy to lift safely and can split, while a small box of pillows wastes space. These are typical sizes for standard US moving boxes:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<figure class="dsh-diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="mb-t mb-d"><title id="mb-t">Moving box sizes and what to pack in each</title><desc id="mb-d">Six common moving boxes drawn from the front with typical sizes and what to pack in each. Small box, about 16 by 12.5 by 12.5 inches, 1.5 cubic feet: books, dishes, canned food and tools. Medium box, 18 by 18 by 16 inches, 3 cubic feet: kitchen items, toys, decor and shoes. Large box, 18 by 18 by 24 inches, 4.5 cubic feet: bedding, towels and pillows. Extra-large box, 24 by 18 by 24 inches, 6 cubic feet: comforters and light bulky items. Wardrobe box, about 24 inches wide, with a hanging bar: clothes on hangers. Dish pack, about 18 by 18 by 28 inches with double walls and dividers: plates and glasses. Rule: the heavier the item, the smaller the box.</desc><rect width="1200" height="900" fill="#F7F1E9"/><text x="60" y="88" font-size="44" font-weight="700" fill="#342E2A">Moving Box Sizes</text><text x="60" y="130" font-size="22" fill="#6E645C">Typical sizes. The heavier the item, the smaller the box.</text><text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text><line x1="40" y1="600" x2="1160" y2="600" stroke="#342E2A" stroke-width="4"/><polygon points="76,497.6 182.0,497.6 166.0,513.6 60,513.6" fill="#E8CFA6" stroke="#8C6A45" stroke-width="2"/><polygon points="166.0,513.6 182.0,497.6 182.0,584 166.0,600" fill="#C29A6B" stroke="#8C6A45" stroke-width="2"/><rect x="60" y="513.6" width="106.0" height="86.4" fill="#D9B48A" stroke="#8C6A45" stroke-width="2"/><rect x="104.0" y="513.6" width="18" height="25.9" fill="#EFE3CF" opacity=".9"/><text x="113.0" y="636" font-size="21" font-weight="700" fill="#342E2A" text-anchor="middle">Small</text><text x="113.0" y="662" font-size="16" fill="#C85A32" font-weight="700" text-anchor="middle">16.4 x 12.6 x 12.6 in</text><text x="113.0" y="684" font-size="15" fill="#6E645C" text-anchor="middle">1.5 cu ft</text><text x="113.0" y="716" font-size="15" fill="#342E2A" text-anchor="middle">Books</text><text x="113.0" y="738" font-size="15" fill="#342E2A" text-anchor="middle">Dishes</text><text x="113.0" y="760" font-size="15" fill="#342E2A" text-anchor="middle">Canned food</text><text x="113.0" y="782" font-size="15" fill="#342E2A" text-anchor="middle">Tools</text><polygon points="224.0,468.8 343.2,468.8 327.2,484.8 208.0,484.8" fill="#E8CFA6" stroke="#8C6A45" stroke-width="2"/><polygon points="327.2,484.8 343.2,468.8 343.2,584 327.2,600" fill="#C29A6B" stroke="#8C6A45" stroke-width="2"/><rect x="208.0" y="484.8" width="119.2" height="115.2" fill="#D9B48A" stroke="#8C6A45" stroke-width="2"/><rect x="258.6" y="484.8" width="18" height="34.6" fill="#EFE3CF" opacity=".9"/><text x="267.6" y="636" font-size="21" font-weight="700" fill="#342E2A" text-anchor="middle">Medium</text><text x="267.6" y="662" font-size="16" fill="#C85A32" font-weight="700" text-anchor="middle">18 x 18 x 16 in</text><text x="267.6" y="684" font-size="15" fill="#6E645C" text-anchor="middle">3 cu ft</text><text x="267.6" y="716" font-size="15" fill="#342E2A" text-anchor="middle">Kitchen items</text><text x="267.6" y="738" font-size="15" fill="#342E2A" text-anchor="middle">Toys</text><text x="267.6" y="760" font-size="15" fill="#342E2A" text-anchor="middle">Decor</text><text x="267.6" y="782" font-size="15" fill="#342E2A" text-anchor="middle">Shoes</text><polygon points="385.2,411.2 504.4,411.2 488.4,427.2 369.2,427.2" fill="#E8CFA6" stroke="#8C6A45" stroke-width="2"/><polygon points="488.4,427.2 504.4,411.2 504.4,584 488.4,600" fill="#C29A6B" stroke="#8C6A45" stroke-width="2"/><rect x="369.2" y="427.2" width="119.2" height="172.8" fill="#D9B48A" stroke="#8C6A45" stroke-width="2"/><rect x="419.8" y="427.2" width="18" height="40" fill="#EFE3CF" opacity=".9"/><text x="428.8" y="636" font-size="21" font-weight="700" fill="#342E2A" text-anchor="middle">Large</text><text x="428.8" y="662" font-size="16" fill="#C85A32" font-weight="700" text-anchor="middle">18 x 18 x 24 in</text><text x="428.8" y="684" font-size="15" fill="#6E645C" text-anchor="middle">4.5 cu ft</text><text x="428.8" y="716" font-size="15" fill="#342E2A" text-anchor="middle">Bedding</text><text x="428.8" y="738" font-size="15" fill="#342E2A" text-anchor="middle">Towels</text><text x="428.8" y="760" font-size="15" fill="#342E2A" text-anchor="middle">Pillows</text><text x="428.8" y="782" font-size="15" fill="#342E2A" text-anchor="middle">Lampshades</text><polygon points="546.4,411.2 705.4,411.2 689.4,427.2 530.4,427.2" fill="#E8CFA6" stroke="#8C6A45" stroke-width="2"/><polygon points="689.4,427.2 705.4,411.2 705.4,584 689.4,600" fill="#C29A6B" stroke="#8C6A45" stroke-width="2"/><rect x="530.4" y="427.2" width="159.0" height="172.8" fill="#D9B48A" stroke="#8C6A45" stroke-width="2"/><rect x="600.9" y="427.2" width="18" height="40" fill="#EFE3CF" opacity=".9"/><text x="609.9" y="636" font-size="21" font-weight="700" fill="#342E2A" text-anchor="middle">Extra-large</text><text x="609.9" y="662" font-size="16" fill="#C85A32" font-weight="700" text-anchor="middle">24 x 18 x 24 in</text><text x="609.9" y="684" font-size="15" fill="#6E645C" text-anchor="middle">6 cu ft</text><text x="609.9" y="716" font-size="15" fill="#342E2A" text-anchor="middle">Comforters</text><text x="609.9" y="738" font-size="15" fill="#342E2A" text-anchor="middle">Cushions</text><text x="609.9" y="760" font-size="15" fill="#342E2A" text-anchor="middle">Light, bulky</text><text x="609.9" y="782" font-size="15" fill="#342E2A" text-anchor="middle">items</text><polygon points="747.4,238.4 906.4,238.4 890.4,254.4 731.4,254.4" fill="#E8CFA6" stroke="#8C6A45" stroke-width="2"/><polygon points="890.4,254.4 906.4,238.4 906.4,584 890.4,600" fill="#C29A6B" stroke="#8C6A45" stroke-width="2"/><rect x="731.4" y="254.4" width="159.0" height="345.6" fill="#D9B48A" stroke="#8C6A45" stroke-width="2"/><line x1="741.4" y1="284.4" x2="880.4" y2="284.4" stroke="#342E2A" stroke-width="4"/><path d="M759.4,284.4 q-6,-10 0,-14 q6,4 0,14 l-18,18 h36 z" fill="none" stroke="#342E2A" stroke-width="2"/><rect x="743.4" y="302.4" width="32" height="265.6" rx="6" fill="#8FA689" stroke="#7E9578" stroke-width="1.5"/><path d="M793.7,284.4 q-6,-10 0,-14 q6,4 0,14 l-18,18 h36 z" fill="none" stroke="#342E2A" stroke-width="2"/><rect x="777.7" y="302.4" width="32" height="265.6" rx="6" fill="#DCE5D6" stroke="#7E9578" stroke-width="1.5"/><path d="M828.1,284.4 q-6,-10 0,-14 q6,4 0,14 l-18,18 h36 z" fill="none" stroke="#342E2A" stroke-width="2"/><rect x="812.1" y="302.4" width="32" height="265.6" rx="6" fill="#8FA689" stroke="#7E9578" stroke-width="1.5"/><path d="M862.4,284.4 q-6,-10 0,-14 q6,4 0,14 l-18,18 h36 z" fill="none" stroke="#342E2A" stroke-width="2"/><rect x="846.4" y="302.4" width="32" height="265.6" rx="6" fill="#DCE5D6" stroke="#7E9578" stroke-width="1.5"/><text x="810.9" y="636" font-size="21" font-weight="700" fill="#342E2A" text-anchor="middle">Wardrobe</text><text x="810.9" y="662" font-size="16" fill="#C85A32" font-weight="700" text-anchor="middle">about 24 in wide</text><text x="810.9" y="684" font-size="15" fill="#6E645C" text-anchor="middle">with a hanging bar</text><text x="810.9" y="716" font-size="15" fill="#342E2A" text-anchor="middle">Clothes on</text><text x="810.9" y="738" font-size="15" fill="#342E2A" text-anchor="middle">hangers</text><polygon points="948.4,382.4 1067.6,382.4 1051.6,398.4 932.4,398.4" fill="#E8CFA6" stroke="#8C6A45" stroke-width="2"/><polygon points="1051.6,398.4 1067.6,382.4 1067.6,584 1051.6,600" fill="#C29A6B" stroke="#8C6A45" stroke-width="2"/><rect x="932.4" y="398.4" width="119.2" height="201.6" fill="#D9B48A" stroke="#8C6A45" stroke-width="2"/><rect x="983.0" y="398.4" width="18" height="40" fill="#EFE3CF" opacity=".9"/><line x1="932.4" y1="465.6" x2="1051.6" y2="465.6" stroke="#8C6A45" stroke-width="1.5" stroke-dasharray="6 5"/><line x1="932.4" y1="532.8" x2="1051.6" y2="532.8" stroke="#8C6A45" stroke-width="1.5" stroke-dasharray="6 5"/><text x="992.0" y="636" font-size="21" font-weight="700" fill="#342E2A" text-anchor="middle">Dish pack</text><text x="992.0" y="662" font-size="16" fill="#C85A32" font-weight="700" text-anchor="middle">about 18 x 18 x 28 in</text><text x="992.0" y="684" font-size="15" fill="#6E645C" text-anchor="middle">double-wall</text><text x="992.0" y="716" font-size="15" fill="#342E2A" text-anchor="middle">Plates</text><text x="992.0" y="738" font-size="15" fill="#342E2A" text-anchor="middle">Glasses</text><text x="992.0" y="760" font-size="15" fill="#342E2A" text-anchor="middle">with dividers</text><line x1="60" y1="215" x2="690" y2="215" stroke="#C85A32" stroke-width="3"/><polygon points="690,207 706,215 690,223" fill="#C85A32"/><text x="60" y="201" font-size="17" font-weight="700" fill="#C85A32">Small to extra-large: the bigger the box, the lighter the items</text><text x="60" y="880" font-size="14" fill="#6E645C">Typical US moving box sizes (U-Haul). Sizes vary by store; keep every box light enough to lift safely.</text></svg><figcaption>Moving box sizes: small boxes for heavy items like books and dishes, medium and large boxes for kitchen items, toys and bedding, extra-large boxes for light bulky things, a wardrobe box for hanging clothes and a double-wall dish pack for plates and glasses.</figcaption></figure>
+<!-- /wp:html -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Box</th><th>Typical size</th><th>Volume</th><th>Best for</th></tr></thead><tbody><tr><td>Small</td><td>16.4 x 12.6 x 12.6 in (42 x 32 x 32 cm)</td><td>1.5 cu ft</td><td>Books, dishes, canned food, tools</td></tr><tr><td>Medium</td><td>18 x 18 x 16 in (46 x 46 x 41 cm)</td><td>3 cu ft</td><td>Kitchen items, toys, decor, shoes</td></tr><tr><td>Large</td><td>18 x 18 x 24 in (46 x 46 x 61 cm)</td><td>4.5 cu ft</td><td>Bedding, towels, pillows, lampshades</td></tr><tr><td>Extra-large</td><td>24 x 18 x 24 in (61 x 46 x 61 cm)</td><td>6 cu ft</td><td>Comforters, cushions, light bulky items</td></tr><tr><td>Wardrobe</td><td>About 24 in (61 cm) wide</td><td>Varies</td><td>Clothes on hangers</td></tr><tr><td>Dish pack</td><td>18 x 18 x 28 in (46 x 46 x 71 cm)</td><td>5.25 cu ft</td><td>Plates, glasses, china</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The sizes come from <a href="https://www.uhaul.com/MovingSupplies/Boxes/Standard-Sized-Moving-Boxes/Small-Moving-Box?id=3245" target="_blank" rel="noopener">U-Haul</a>, which rates its small box for up to 65 lb (the box's strength limit, not a comfortable lifting weight) and recommends it for books, tools and canned food. Its double-walled <a href="https://www.uhaul.com/MovingSupplies/Boxes/Double-Wall-Boxes/Dish-Barrel-Box?id=2573" target="_blank" rel="noopener">Dish Barrel box</a> measures 18 x 18 x 28 in and is made for dishes, glassware and other fragile items, with a divider kit sold separately. Other stores sell slightly different sizes, so compare the dimensions rather than the names.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2335,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/moving-box-calculator-02-box-sizes.jpg" alt="Four sealed cardboard moving boxes lined up from small to extra-large on a wood floor, with flat boxes leaning against the wall" class="wp-image-2335"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How Many Boxes per Room</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Every room packs differently. Kitchens fill the most boxes for their size because of dishes, glasses and pantry food, while bathrooms need only a few. These are the average counts the moving box calculator uses before adjusting for how much you own:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Room</th><th>Small</th><th>Medium</th><th>Large and XL</th><th>Specialty</th></tr></thead><tbody><tr><td>Main bedroom</td><td>3</td><td>4</td><td>4</td><td>2 wardrobe boxes</td></tr><tr><td>Other bedroom</td><td>2</td><td>3</td><td>3</td><td>1 wardrobe box</td></tr><tr><td>Living room</td><td>3</td><td>4</td><td>4</td><td>–</td></tr><tr><td>Kitchen (2 bedrooms)</td><td>5</td><td>5</td><td>2</td><td>2 dish packs</td></tr><tr><td>Dining room</td><td>2</td><td>2</td><td>1</td><td>1 dish pack</td></tr><tr><td>Bathroom</td><td>2</td><td>1</td><td>–</td><td>–</td></tr><tr><td>Home office</td><td>4</td><td>3</td><td>1</td><td>–</td></tr><tr><td>Garage, basement or attic</td><td>3</td><td>4</td><td>6</td><td>–</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>For hanging clothes, <a href="https://www.movingplace.com/moving-advice/how-many-moving-boxes-do-i-need" target="_blank" rel="noopener">Moving Place</a> suggests about one wardrobe box for every 2 feet (61 cm) of closet rail, and one or two dish packs per kitchen. Our own rule of thumb: if your garage, basement or attic is full, count it as two rooms. Our <a href="https://dailyspacehacks.com/how-to-declutter-your-home/">guide to decluttering your home</a> helps you cut the pile before you pack.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Packing Supplies Checklist</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Boxes are only half the shopping list. Buy these at the same time so packing day does not stop halfway:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Packing tape.</strong> Wide 2 in (48 mm) tape and a tape gun. Plan on roughly one roll for every 15 boxes, because each box needs tape across the bottom and top seams.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Packing paper.</strong> Plain newsprint for wrapping dishes and glasses. Newspaper ink can rub off on plates.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Bubble wrap.</strong> One roll for lamps, frames, mirrors and electronics.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Markers and labels.</strong> Write the room and a short list of contents on two sides of every box, not the top, so you can read them when boxes are stacked.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Furniture pads or blankets.</strong> To protect furniture, mirrors and floors on moving day.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fmoving-box-calculator%2F&amp;media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fsrc%2Fmoving-box%2Fpins%2Fmoving-box-calculator-pin-01.jpg&amp;description=Moving%20box%20calculator%3A%20how%20many%20moving%20boxes%20do%20I%20need%3F" target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/moving-box-calculator-pin-01.jpg" alt="How many moving boxes do I need: a stack of cardboard moving boxes beside a wardrobe box with shirts on hangers" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/src/moving-box/pins/moving-box-calculator-pin-01.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the calculator</p><p style="margin:0 0 1em;">Pin it so the box list is on your phone when you shop for boxes and supplies.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fmoving-box-calculator%2F&amp;media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fsrc%2Fmoving-box%2Fpins%2Fmoving-box-calculator-pin-01.jpg&amp;description=Moving%20box%20calculator%3A%20how%20many%20moving%20boxes%20do%20I%20need%3F" target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Use Fewer Moving Boxes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Declutter first.</strong> Every item you donate is one you do not have to wrap, carry and unpack. Start with closets using our <a href="https://dailyspacehacks.com/closet-clean-out/">closet clean-out checklist</a>.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Pack soft things in what you already own.</strong> Suitcases, duffel bags and laundry baskets hold clothes, towels and bedding.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Leave light items in drawers.</strong> Many movers let you leave clothes in dresser drawers if the dresser is not too heavy to carry. Ask your mover first.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Use wardrobe boxes for hanging clothes.</strong> They hold clothes on their hangers, so you skip folding and the closet is ready to fill on day one.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Eat down the pantry and freezer.</strong> Plan meals for the last two weeks so there is less food to pack.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Once you arrive, unpack the kitchen and bedrooms first. Our guides on <a href="https://dailyspacehacks.com/how-to-organize-kitchen-cabinets/">how to organize kitchen cabinets</a> and <a href="https://dailyspacehacks.com/small-closet-organization-ideas/">small closet organization ideas</a> help you set up the new place, and our <a href="https://dailyspacehacks.com/storage-ideas-for-small-spaces/">storage ideas for small spaces</a> are useful if you are moving somewhere smaller.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Moving Box FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many boxes do I need for a 1-bedroom apartment?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Plan on about 30 to 40 boxes for an average 1-bedroom apartment, or 20 to 30 if you own very little. That is usually around 12 small, 13 medium, 9 large or extra-large, 2 wardrobe boxes and 1 dish pack.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many boxes do I need for a 2-bedroom apartment?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>An average 2-bedroom apartment needs about 50 to 60 boxes. Light packers can manage with about 40, and a home with lots of books, toys or a storage unit can need 65 to 75.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many boxes do I need for a 3-bedroom house?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A 3-bedroom house with a garage typically needs about 80 to 100 boxes. Garages, basements and attics vary the most, so look inside them before you buy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many wardrobe boxes do I need?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A common rule of thumb from <a href="https://www.movingplace.com/moving-advice/how-many-moving-boxes-do-i-need" target="_blank" rel="noopener">Moving Place</a> is about one wardrobe box for every 2 feet (61 cm) of closet rail. Fold what you can into regular boxes and keep wardrobe boxes for shirts, dresses and coats that crease.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Where can I get moving boxes?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You can buy new boxes from moving truck rental companies, home improvement stores and online, or look for used boxes through local buy-and-sell groups and neighbors who just moved. Check used boxes for damp, crushed corners and pests before you pack them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Planning Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Planning the new place? Try our <a href="https://dailyspacehacks.com/curtain-size-calculator/">curtain size calculator</a> for new windows, the <a href="https://dailyspacehacks.com/washer-dryer-space-calculator/">washer and dryer space calculator</a> to check that your machines fit, and the <a href="https://dailyspacehacks.com/shelf-spacing-calculator/">shelf spacing calculator</a> for closets and pantries.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this tool was made: built with the help of AI tools, tested in the browser and published by Mohamed Elber. Results are planning estimates based on box-count ranges published by moving supply companies; box sizes vary by store. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->

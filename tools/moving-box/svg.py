@@ -1,8 +1,8 @@
 import re
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';K1='#D9B48A';K2='#E8CFA6';K3='#C29A6B';KE='#8C6A45'
-desc=("Six common moving boxes drawn from the front with typical sizes and what to pack in each. Small box, 16 by 12 by 12 inches, 1.5 cubic feet: books, dishes, canned food and tools. "
+desc=("Six common moving boxes drawn from the front with typical sizes and what to pack in each. Small box, about 16 by 12.5 by 12.5 inches, 1.5 cubic feet: books, dishes, canned food and tools. "
 "Medium box, 18 by 18 by 16 inches, 3 cubic feet: kitchen items, toys, decor and shoes. Large box, 18 by 18 by 24 inches, 4.5 cubic feet: bedding, towels and pillows. "
-"Extra-large box, 24 by 18 by 24 inches, 6 cubic feet: comforters and light bulky items. Wardrobe box, about 24 inches wide and tall, with a hanging bar: clothes on hangers. "
+"Extra-large box, 24 by 18 by 24 inches, 6 cubic feet: comforters and light bulky items. Wardrobe box, about 24 inches wide, with a hanging bar: clothes on hangers. "
 "Dish pack, about 18 by 18 by 28 inches with double walls and dividers: plates and glasses. Rule: the heavier the item, the smaller the box.")
 s=[];a=s.append
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="mb-t mb-d"><title id="mb-t">Moving box sizes and what to pack in each</title><desc id="mb-d">{desc}</desc>')
@@ -11,7 +11,7 @@ a(f'<text x="60" y="88" font-size="44" font-weight="700" fill="{T}">Moving Box S
 a(f'<text x="60" y="130" font-size="22" fill="{G}">Typical sizes. The heavier the item, the smaller the box.</text>')
 a(f'<text x="1140" y="60" font-size="18" fill="{G}" text-anchor="end">dailyspacehacks.com</text>')
 base=600; k=7.2
-boxes=[("Small","16 x 12 x 12 in","1.5 cu ft",16,12,["Books","Dishes","Canned food","Tools"]),
+boxes=[("Small","16.4 x 12.6 x 12.6 in","1.5 cu ft",16,12,["Books","Dishes","Canned food","Tools"]),
 ("Medium","18 x 18 x 16 in","3 cu ft",18,16,["Kitchen items","Toys","Decor","Shoes"]),
 ("Large","18 x 18 x 24 in","4.5 cu ft",18,24,["Bedding","Towels","Pillows","Lampshades"]),
 ("Extra-large","24 x 18 x 24 in","6 cu ft",24,24,["Comforters","Cushions","Light, bulky","items"]),
