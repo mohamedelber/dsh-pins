@@ -1,0 +1,23 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-packed-boxes",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A bright living room on moving day: neat stacks of plain brown cardboard moving boxes in several sizes, small boxes stacked on top of larger ones, all sealed with tape, a tall wardrobe moving box with a metal hanging bar and a few shirts on hangers inside, a roll of packing tape and a tape dispenser on top of one box, a cream sofa partly wrapped in a moving blanket, light oak floor, white walls, a plant by the window. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and terracotta accents, natural daylight, realistic proportions, boxes are plain kraft cardboard with completely blank surfaces, clean and calm, no people, no text, no writing, no labels with words, no logos, no brand names, high detail."
+  },
+  {
+   "name": "02-box-sizes-lineup",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Four plain brown cardboard moving boxes lined up in a row from smallest to largest on a light oak floor against a white wall: a small cube-shaped box, a medium box, a large box and an extra-large box, each closed and sealed with clear tape, with a few folded flat boxes leaning against the wall and a roll of packing tape on the floor. Photorealistic interior photography, Scandinavian style, soft natural daylight, realistic proportions and correct box perspective, boxes are plain kraft cardboard with completely blank surfaces, clean and calm, no people, no text, no writing, no numbers, no logos, high detail."
+  },
+  {
+   "name": "pin-01-boxes-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A tidy stack of plain brown cardboard moving boxes in three sizes, sealed with tape, beside a tall wardrobe box with shirts on hangers, in an empty bright room with a light oak floor and a sage green wall, warm soft evening light from a window. Photorealistic interior photography for a Pinterest pin, one clear focal point, the top third of the frame is calm plain wall with nothing on it, realistic proportions, boxes are plain kraft cardboard with completely blank surfaces, no people, no text, no writing, no logos, high detail."
+  }
+ ]
+}
