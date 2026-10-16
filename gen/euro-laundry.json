@@ -76,7 +76,29 @@
    "edit_from": "gen/out/euro-laundry/01-hero-side-by-side.png",
    "size": "1536x1024",
    "quality": "medium",
-   "prompt": "Edit this photo into a realistic BEFORE version of the very same hallway alcove from the same camera position: remove the bifold doors, the benchtop, the overhead cupboards and the splashback so it is a bare open alcove with plain walls; the same washing machine stands alone with a laundry basket overflowing with clothes on top of it, detergent bottles and a pile of towels on the floor, a clothes airer with laundry leaning against the wall where the dryer was. Keep the hallway, floor, rug, artwork and lighting exactly the same. No people, no text, no logos. Photorealistic."
+   "prompt": "Edit this photo into a realistic BEFORE version of the very same hallway alcove from the same camera position: remove the bifold doors, the benchtop, the overhead cupboards and the splashback so it is a bare open alcove with plain walls; the same washing machine stands alone with a laundry basket overflowing with clothes on top of it, detergent bottles and a pile of towels on the floor, a clothes airer with laundry leaning against the wall where the dryer was. Keep the hallway, floor, rug, artwork and lighting exactly the same. No people, no text, no logos. Photorealistic.",
+   "disabled": true
+  },
+  {
+   "name": "03b-kitchen-laundry-clean",
+   "edit_from": "gen/out/euro-laundry/03-kitchen-laundry.png",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo: keep everything the same, but remove all the small text and markings under the display panels on both the washing machine and the dryer, leaving plain smooth white panels with only plain round dials. No text, no logos anywhere. Photorealistic."
+  },
+  {
+   "name": "08b-sliding-doors-fix",
+   "edit_from": "gen/out/euro-laundry/08-sliding-doors.png",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo: the laundry opening is closed by two equal-width white sliding doors on one top track, each door half the width of the opening. Show the right door closed over the right half, and the left door slid behind it so the left half of the opening is open, revealing the front-loading washing machine under the oak benchtop and the shelves. Keep the room, sofa, floor, plants and light the same. No people, no text, no logos. Photorealistic."
+  },
+  {
+   "name": "pin-01b-laundry-evening",
+   "edit_from": "gen/out/euro-laundry/pin-01-laundry-evening.png",
+   "size": "1024x1536",
+   "quality": "medium",
+   "prompt": "Edit this photo: remove the pendant light and its cord hanging inside the laundry cupboard, leaving a plain cupboard back wall and ceiling lit softly by the warm light from the hallway. Remove any small text or badges from the washing machine and dryer. Everything else unchanged. No people, no text, no logos. Photorealistic."
   }
  ]
 }
