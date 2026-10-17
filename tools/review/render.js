@@ -20,7 +20,7 @@ for(const [w,h,tag] of [[1280,900,'desk'],[390,844,'mob']]){
   await pg.waitForTimeout(1500);
   await pg.evaluate(()=>{document.querySelectorAll('img[loading=lazy],img[data-lazyloaded],img[data-src]').forEach(i=>{if(i.dataset.src)i.src=i.dataset.src;if(i.dataset.srcset)i.srcset=i.dataset.srcset;i.loading='eager'})});
   await pg.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,120))}window.scrollTo(0,0)});await pg.waitForTimeout(1500);
-  await pg.screenshot({path:`${D}/${k}-${tag}.png`,fullPage:true});
+  {const H=await pg.evaluate(()=>document.body.scrollHeight);await pg.setViewportSize({width:w,height:Math.min(H,16000)});await pg.waitForTimeout(2500);}await pg.screenshot({path:`${D}/${k}-${tag}.png`,fullPage:true});
   const hgt=await pg.evaluate(()=>document.body.scrollHeight);console.log(k,tag,hgt);await pg.close()}
  await c.close()}
 await b.close()})();
