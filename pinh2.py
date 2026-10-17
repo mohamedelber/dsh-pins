@@ -88,3 +88,79 @@ def pin_bold(photo,num_line,title2,tag,sticker,out,ay=0.6):
     d.rounded_rectangle([W/2-190,H-80,W/2+190,H-30],25,fill=CREAM)
     d.text((W/2,H-55),"dailyspacehacks.com",font=mont(26,700),fill=SAGE,anchor="mm")
     c.save(out,"JPEG",quality=88,optimize=True,progressive=True)
+
+# ---- Cozy grid (Oct 17, user liked a "9 Cozy Small Apartment Ideas" pin) ----
+import random, math
+def dmserif(sz): return ImageFont.truetype(os.path.join(FD,"DMSerifDisplay-Regular.ttf"),sz)
+def play(sz,w=500): return _var("PlayfairDisplay[wght].ttf",sz,w)
+PAPER=(246,238,224); BROWN=(58,44,34)
+def _torn(w,h,seed=7,rough=10):
+    """Cream torn-paper blob as RGBA (w x h)."""
+    rnd=random.Random(seed); im=Image.new("RGBA",(w,h),(0,0,0,0)); d=ImageDraw.Draw(im)
+    pts=[]; cx,cy=w/2,h/2; n=140
+    for i in range(n):
+        a=2*math.pi*i/n; rx=w/2-rough*2; ry=h/2-rough*2
+        # superellipse for a soft rectangle
+        ca,sa=math.cos(a),math.sin(a); e=0.32
+        x=cx+rx*math.copysign(abs(ca)**e,ca); y=cy+ry*math.copysign(abs(sa)**e,sa)
+        j=rnd.uniform(-rough,rough); pts.append((x+j*ca,y+j*sa))
+    d.polygon(pts,fill=PAPER+(255,))
+    return im.filter(ImageFilter.GaussianBlur(0.8))
+def _leaf(d,x,y,s=1.0,col=BROWN):
+    d.line([(x,y),(x+28*s,y-120*s)],fill=col,width=3)
+    for k in range(5):
+        t=k/5; px=x+28*s*t; py=y-120*s*t
+        for side in (-1,1):
+            lx=px+side*26*s; ly=py-22*s
+            d.ellipse([min(px,lx)-2,ly-8*s,max(px,lx)+2,ly+10*s],outline=col,width=2)
+def _heart(d,x,y,s=1.0,col=BROWN):
+    pts=[]
+    for i in range(60):
+        t=2*math.pi*i/60; hx=16*math.sin(t)**3; hy=13*math.cos(t)-5*math.cos(2*t)-2*math.cos(3*t)-math.cos(4*t)
+        pts.append((x+hx*s*2.2,y-hy*s*2.2))
+    d.line(pts+[pts[0]],fill=col,width=3)
+def _warm(im,amt=0.12):
+    ov=Image.new("RGB",im.size,(255,196,130)); return Image.blend(im,ov,amt)
+def pin_cozy(imgs9,num,word,title1,title2,sub,labels9,out,warm=0.10,ays=None,seed=7):
+    """3x3 warm photo grid, torn-paper cream badge (big serif number + title + spaced caps subtitle),
+    cream pill labels with dark number circles on tiles 4-9 (1-3 sit under the badge)."""
+    c=Image.new("RGB",(W,H),PAPER); g=8; tw=(W-2*g)//3; th=(H-2*g)//3
+    for i,src in enumerate(imgs9[:9]):
+        x=(i%3)*(tw+g); y=(i//3)*(th+g)
+        im=cover(Image.open(src).convert("RGB"),tw,th,ay=(ays[i] if ays else 0.5))
+        c.paste(_warm(im,warm) if warm else im,(x,y))
+    d=ImageDraw.Draw(c)
+    bw,bh=720,520; bx=(W-bw)//2; by=110
+    # labels
+    for i in range(9):
+        x=(i%3)*(tw+g); y=(i//3)*(th+g)
+        if i<3: continue
+        lab=labels9[i]; words=lab.split(); half=(len(words)+1)//2
+        l1=" ".join(words[:half]); l2=" ".join(words[half:])
+        f=play(25,500)
+        wmax=max(d.textlength(l1,font=f),d.textlength(l2,font=f))
+        pw=int(wmax+92); ph=94 if l2 else 54
+        lx=x+16; ly=(by+bh+18) if i in (3,4,5) else y+22
+        pill=_torn(pw+16,ph+14,seed=seed+i,rough=4); c.paste(pill,(lx-8,ly-7),pill); d=ImageDraw.Draw(c)
+        cx,cy=lx+30,ly+ph/2
+        d.ellipse([cx-21,cy-21,cx+21,cy+21],fill=BROWN); d.text((cx,cy+1),str(i+1),font=play(26,700),fill=PAPER,anchor="mm")
+        d.text((lx+62,ly+(12 if l2 else ph/2)),l1,font=f,fill=BROWN,anchor="la" if l2 else "lm")
+        if l2: d.text((lx+62,ly+47),l2,font=f,fill=BROWN,anchor="la")
+    # badge
+    sh=Image.new("RGBA",(W,H),(0,0,0,0)); sd=ImageDraw.Draw(sh); sd.rounded_rectangle([bx+20,by+24,bx+bw-10,by+bh+10],60,fill=(0,0,0,70))
+    c=Image.alpha_composite(c.convert("RGBA"),sh.filter(ImageFilter.GaussianBlur(18)))
+    t=_torn(bw,bh,seed=seed,rough=12); c.alpha_composite(t,(bx,by)); c=c.convert("RGB"); d=ImageDraw.Draw(c)
+    fnum=dmserif(170); nw=d.textlength(num,font=fnum); fw=dmserif(110); ww=d.textlength(word,font=fw)
+    sx=W/2-(nw+18+ww)/2
+    d.text((sx,by+185),num,font=fnum,fill=INK,anchor="ls"); d.text((sx+nw+18,by+175),word,font=fw,fill=INK,anchor="ls")
+    f1=fitf(d,title1,dmserif,640,92); d.text((W/2,by+285),title1,font=f1,fill=INK,anchor="ms")
+    f2=fitf(d,title2,dmserif,640,92); d.text((W/2,by+285+f1.size*0.92),title2,font=f2,fill=INK,anchor="ms")
+    ys=by+285+f1.size*0.92+58
+    for k,line in enumerate(sub.split("\n")):
+        fs=mont(24,500); sp="  ".join(line) if False else line
+        txt=" ".join(list(line.upper())).replace("   ","    ")
+        fs=fitf(d,txt,lambda s:mont(s,500),600,24)
+        d.text((W/2,ys+k*36),txt,font=fs,fill=INK,anchor="ms")
+    _heart(d,bx+bw-56,by+bh-60,0.7)
+    d.text((W/2,H-18),"dailyspacehacks.com",font=mont(22,600),fill=PAPER,anchor="ms",stroke_width=3,stroke_fill=BROWN)
+    c.save(out,"JPEG",quality=88,optimize=True,progressive=True)
