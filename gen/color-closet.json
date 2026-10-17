@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-rail",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A wide reach-in bedroom closet with no doors, white oak shelf and a single straight metal hanging rail fully supported by brackets at both ends; on the rail about thirty plain shirts, blouses and dresses on matching slim natural wood hangers, all hooks facing the same way, arranged as a smooth color gradient from left to right: white, cream, beige, pink, red, orange, mustard yellow, green, light blue, navy, purple, grey, black. Folded sweaters on the shelf above in color stacks, two woven baskets on the floor beside a pair of shoes. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents for the room, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain garments with no prints or writing, high detail."
+  },
+  {
+   "name": "02-drawer-file-fold",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Top-down view into an open white oak dresser drawer with plain T-shirts folded into small rectangles and stored upright side by side like files in three rows, sorted by color in a gradient: whites, greys, pinks, reds, greens, blues, navy, black; a simple wooden divider between rows; drawer front and wood grain visible. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents for the room, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain garments with no prints or writing, high detail."
+  },
+  {
+   "name": "03-shelf-stacks",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Open white oak closet shelves on a cream wall holding neat stacks of plain folded sweaters, each stack one color family: cream, oatmeal, camel, rust, sage green, denim blue, navy, charcoal; clear acrylic shelf dividers standing upright between stacks keep them straight; two shelves, straight-on view. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents for the room, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain garments with no prints or writing, high detail."
+  },
+  {
+   "name": "04-walk-in",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A small walk-in closet seen from the doorway, white oak built-in hanging rails on both sides with plain clothes on matching wood hangers sorted by color from light to dark, a short bench with a cushion at the far end, soft daylight from a small window, light wood floor with a jute rug. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents for the room, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain garments with no prints or writing, high detail."
+  },
+  {
+   "name": "05-neutral-capsule",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A minimalist closet rail with a neutral capsule wardrobe on matching wood hangers: long coats and dresses on the left, shirts and short tops on the right so the hem line rises to the right, colors going from black and charcoal on the left through grey and camel to beige, cream and white on the right; oak shelf with folded knits above. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents for the room, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain garments with no prints or writing, high detail."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Split image, same closet rail photographed twice side by side from the same angle with a thin white vertical line in the middle: left half BEFORE shows plain clothes in random mixed colors on mismatched plastic and wire hangers facing different ways; right half AFTER shows the same rail with the clothes on matching slim wood hangers sorted in a smooth color gradient from white through pink, red, yellow, green, blue to black. Same rail, same shelf, same lighting. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents for the room, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain garments with no prints or writing, high detail."
+  },
+  {
+   "name": "07-pin-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Tall vertical photo of a closet hanging rail in the lower two thirds with plain shirts and dresses on matching slim wood hangers arranged as a smooth rainbow color gradient from white and pink through red, orange, yellow, green and blue to navy and black; warm evening glow from an LED strip under the shelf; the top third of the image is a calm plain cream wall with nothing on it; one clear focal point, cozy mood. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents for the room, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain garments with no prints or writing, high detail."
+  }
+ ]
+}
