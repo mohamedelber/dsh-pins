@@ -13,7 +13,7 @@ summary(["<strong>Quick answer:</strong> Sort your clothes by category first, su
 toc("color-coded-closet")
 h2("The Color Coded Closet Order")
 p("Most organizers use a version of the same order: light neutrals at one end, the colors of the rainbow in the middle and dark neutrals at the other end. It is easy to remember and it looks like one smooth gradient when the closet door is open.")
-diagram(open('z.svg').read(),"The color coded closet order: light neutrals, then red, orange, yellow, green, blue and purple, then dark neutrals, plus three ways to use it.")
+diagram(re.sub(r'(\d+\.\d)\d+',r'\1',open('z.svg').read()),"The color coded closet order: light neutrals, then red, orange, yellow, green, blue and purple, then dark neutrals, plus three ways to use it.")
 p(f"The rainbow part follows the visible spectrum. The IAU Office of Astronomy for Education's {ext(IAU,'glossary entry on the visible spectrum')} lists violet, indigo, blue, green, yellow, orange and red from shortest to longest wavelength, so hanging red to purple simply runs that list in reverse. If you prefer a light-to-dark look, Marie Kondo's {ext(KM,'closet tip in the KonMari tidy challenge')} suggests hanging longer, heavier items on the left and letting the colors get lighter as you move from left to right.")
 h2("Rainbow, Light to Dark or Category First?")
 table(["Method","How it works","Best for"],[
