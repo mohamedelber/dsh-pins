@@ -200,3 +200,30 @@ def pin_checklist(title1,title2,sub,items,tip,photo,out,photo_ay=0.5,photo_ax=0.
         im=Image.open(photo).convert("RGB"); c.paste(_cover_im(im,W,ph,ax=photo_ax,ay=photo_ay),(0,py))
     d.text((W/2,H-30),"dailyspacehacks.com",font=pf(34,500),fill=TC,anchor="mm")
     c.save(out,"JPEG",quality=88,optimize=True,progressive=True)
+
+def lora(sz,w=600):
+    f=ImageFont.truetype(os.path.join(FD,"Lora[wght].ttf"),sz)
+    try: f.set_variation_by_axes([w])
+    except Exception: pass
+    return f
+def pin_a(imgs,lines,out,band_color=(84,118,88),ays=(0.5,0.5,0.5,0.5)):
+    """Template A (best click rate Oct 17): 2x2 photo grid with a sage-green band in the middle,
+    cream serif title (2-3 lines, descriptive, number + keyword) and the site name."""
+    W,H=1000,1500; G=12; CR=(250,245,235)
+    c=Image.new("RGB",(W,H),(255,255,255)); d=ImageDraw.Draw(c)
+    n=len(lines); fs=72 if n<=2 else 66
+    fnt=lora(fs,600)
+    for t in lines:
+        while d.textlength(t,font=fnt)>900 and fs>40: fs-=3; fnt=lora(fs,600)
+    lh=int(fs*1.22); bh=lh*n+140; by=(H-bh)//2
+    ph=by; pw=(W-G)//2
+    pos=[(0,0),(pw+G,0),(0,by+bh),(pw+G,by+bh)]
+    for i,(x,y) in enumerate(pos):
+        h=ph if i<2 else H-(by+bh)
+        im=Image.open(imgs[i]).convert("RGB"); c.paste(_cover_im(im,pw if x==0 else W-x,h,ay=ays[i]),(x,y))
+    d.rectangle([0,by,W,by+bh],fill=band_color)
+    y=by+50
+    for t in lines:
+        d.text((W/2,y),t,font=fnt,fill=CR,anchor="mt"); y+=lh
+    d.text((W/2,by+bh-50),"dailyspacehacks.com",font=lora(30,400),fill=CR,anchor="mm")
+    c.save(out,"JPEG",quality=88,optimize=True,progressive=True)
