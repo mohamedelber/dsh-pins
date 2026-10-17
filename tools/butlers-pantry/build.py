@@ -45,7 +45,7 @@ lst(["<strong>Decide its job.</strong> Storage, prep, a coffee bar, a serving st
 "<strong>Book licensed trades.</strong> New circuits, outlets and plumbing are jobs for a licensed electrician and plumber, and may need a permit."],True)
 
 h2("Butler's Pantry Layout Ideas")
-p("Start with the shape of the space. These four layouts cover most homes, from a short passage to a full walk-in room.")
+p("Start with the shape of the space. These four butler's pantry ideas cover most homes, from a short passage to a full walk-in room.")
 h3("1. A Single-Wall Pass-Through")
 p("The classic butler's pantry is one run of cabinets in the short passage between the kitchen and the dining room. It needs only about 5 ft (1.5 m) of width, gives you a landing spot for serving dishes and keeps platters, glasses and table linens exactly where you set the table. Open shelves above keep it light, like the pantry below.")
 img(2)
@@ -86,6 +86,7 @@ h3("13. Light the Counter")
 p("Butler's pantries are often windowless. Add ceiling lights for the aisle and LED strips under the shelves or upper cabinets so the counter is not in your own shadow. Lights inside glass cabinets add a soft glow in the evening.")
 
 h2("Butler's Pantry Storage Ideas")
+p("Good storage is what makes a butler's pantry earn its space. These last butler's pantry ideas keep food, dishes and appliances easy to reach.")
 h3("14. Swap Base Doors for Deep Drawers")
 p(f"Full-extension drawers bring everything to you, so nothing gets lost at the back of a deep cabinet. Use them for food in clear containers, pots and heavy small appliances. Our guide to {a('how-to-organize-kitchen-drawers','organizing kitchen drawers')} shows how to divide them.")
 img(7)
