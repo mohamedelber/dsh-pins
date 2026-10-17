@@ -2,7 +2,7 @@ T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='
 cols=[("White","#FFFFFF"),("Cream","#F3E9D2"),("Beige","#D9C3A0"),("Pink","#E8A7B5"),("Red","#C0392B"),("Orange","#E07B39"),("Yellow","#E9C46A"),("Green","#7FA37A"),("Blue","#5B8DB8"),("Navy","#2C3E62"),("Purple","#7D5A8C"),("Grey","#9A9A9A"),("Brown","#7A5536"),("Black","#262626")]
 s=[];a=s.append
 desc=("Recommended color coded closet order on one hanging rail, left to right: "+", ".join(c for c,_ in cols)+
-". Three ways to use it: rainbow order with neutrals at both ends; light to dark, which matches the KonMari advice that colors get lighter from left to right if reversed; and category first, then color inside each category.")
+". Three ways to use it: rainbow order with neutrals at both ends; light to dark, or reversed so colors get lighter from left to right as KonMari advises; and category first, then color inside each category.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="cc-t cc-d"><title id="cc-t">Color coded closet order</title><desc id="cc-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="88" font-size="44" font-weight="700" fill="{T}">The Color Coded Closet Order</text>')
@@ -28,7 +28,7 @@ def brace(x1,x2,label,col):
     a(f'<path d="M{x1} {by} v12 h{x2-x1} v-12" fill="none" stroke="{col}" stroke-width="3"/>')
     a(f'<text x="{(x1+x2)/2}" y="{by+42}" font-size="19" font-weight="700" fill="{col}" text-anchor="middle">{label}</text>')
 brace(x0-34,x0+2*step+34,"light neutrals",G)
-brace(x0+3*step-34,x0+10*step+34,"rainbow order: red, orange, yellow, green, blue, purple",A)
+brace(x0+3*step-34,x0+10*step+34,"colors: pink and red through navy and purple",A)
 brace(x0+11*step-34,x0+13*step+34,"dark neutrals",G)
 # three methods
 my=640
@@ -42,6 +42,6 @@ for i,(t,l1,l2,l3) in enumerate(boxes):
     a(f'<text x="{bx+24}" y="{my+46}" font-size="25" font-weight="700" fill="{A if i==2 else T}">{t}</text>')
     for k,l in enumerate((l1,l2,l3)):
         a(f'<text x="{bx+24}" y="{my+88+k*28}" font-size="19" fill="{G}">{l}</text>')
-a(f'<text x="60" y="868" font-size="16" fill="{G}">Rainbow order follows the visible spectrum (IAU Office of Astronomy for Education). Light-to-dark tip: KonMari.</text>')
+a(f'<text x="60" y="868" font-size="16" fill="{G}">Rainbow order follows the visible spectrum (IAU Office of Astronomy for Education). Lighter-to-the-right tip: KonMari.</text>')
 a('</svg>')
 open('z.svg','w').write('\n'.join(s))
