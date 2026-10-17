@@ -74,7 +74,7 @@ h3("14. Move Takeout Tubs Out of the Food Cabinet")
 p(f"Takeout tubs and margarine tubs are handy for crafts and screws, but they are not made for reheating. {ext(HH,'Harvard Health')} notes that most takeout containers and plastic tubs or jars made to hold margarine are not microwave-safe, and that old, scratched or cracked containers may leach more plasticizers. Move them to the garage or craft box, or recycle them.")
 h3("15. Count What You Really Use")
 p(f"Most homes need enough containers for about three or four days of leftovers and lunches, since the USDA says leftovers keep 3 to 4 days in the fridge. Add a few freezer containers and a couple of large ones for batch cooking. Anything beyond that usually sits unused. For the fridge side, see our {a('fridge-organization','fridge organization')} guide.")
-add('<!--SAVEBOX-->')
+add(open('savebox.html').read())
 h2("Common Tupperware Organization Mistakes")
 lst(["<strong>Buying organizers first.</strong> Do the match test and clear out the extras before you buy a rack or bins.",
 "<strong>Stacking lids flat in a pile.</strong> Flat piles slide and hide the size you need; file them upright.",
