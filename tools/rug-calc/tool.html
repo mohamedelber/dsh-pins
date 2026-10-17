@@ -130,9 +130,9 @@ var rl=g('rl'),rw=g('rw');var RL=Math.max(rl,rw),RS=Math.min(rl,rw);
 var warn=[],tips=[],by='',ideal=null,maxS=0,maxL=0,res=null,kind='rect',draw={};
 if(mode==='living'){
  var sl=g('sl');maxS=RS-61;maxL=RL-61;var idS=RS-91,idL=RL-91;
- var a=pick('rect',idS*0.8,idL*0.8,maxS,maxL);var allLegs=a.fit;
+ var a=pick('rect',idS*0.8,idL*0.8,maxS,maxL);var allLegs=a.fit;if(allLegs?(allLegs.a<(reg==='us'?270:238)):false)allLegs=null;
  var fr=pick('rect',reg==='us'?240:195,Math.max(reg==='us'?300:285,sl+30),maxS,maxL);
- var ct=pick('rect',152,Math.max(244,sl-30),maxS,maxL);
+ var ct=pick('rect',reg==='us'?152:160,Math.max(reg==='us'?244:230,sl-30),maxS,maxL);
  ideal=[idS,idL];res=fr.best||allLegs;
  by+='<p><strong>Front legs on the rug (most popular):</strong> '+(fr.best?lab(fr.best):'a custom size about '+sz(244,Math.max(305,sl+30)))+'. The rug is a little longer than the sofa and tucks under its front legs.</p>';
  by+='<p><strong>All legs on the rug:</strong> '+(allLegs?lab(allLegs):'the room is too small for this look')+'. The largest standard size that still leaves a border of bare floor.</p>';

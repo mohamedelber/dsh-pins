@@ -1,6 +1,6 @@
 import re
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';W1='#D9B48A';W2='#B98A5E'
-desc=("Four rooms drawn from above showing how big a rug should be. Living room: the rug sits under the front legs of the sofa and chairs, with about 12 to 18 inches of bare floor to the walls. "
+desc=("Four rooms drawn from above showing how big a rug should be. Living room: the rug sits under the front legs of the sofa and chairs, with about 18 to 24 inches of bare floor to the walls. "
 "Dining room: the rug extends 24 to 36 inches past every side of the table so pulled-out chairs stay on it. Bedroom: the rug lies across the lower two-thirds of the bed and extends at least 24 inches past each side. "
 "Hallway: a runner stops about 4 to 6 inches from each wall and each end.")
 s=[];a=s.append
@@ -19,7 +19,7 @@ def dim(x1,y1,x2,y2,lab,tx,ty,anchor="middle"):
     a(f'<text x="{tx}" y="{ty}" font-size="16" font-weight="700" fill="{A}" text-anchor="{anchor}">{lab}</text>')
 # living
 x,y,w,h=60,200,500,290
-room(x,y,w,h,"Living room","Front legs on the rug, 12–18 in of floor to the walls")
+room(x,y,w,h,"Living room","Front legs on the rug, 18–24 in of floor to the walls")
 rug(x+60,y+50,w-120,h-100)
 a(f'<rect x="{x+110}" y="{y+h-80}" width="{w-220}" height="70" rx="12" fill="{W2}"/>')  # sofa
 a(f'<rect x="{x+190}" y="{y+110}" width="{w-380}" height="60" rx="8" fill="{W1}"/>')  # table
