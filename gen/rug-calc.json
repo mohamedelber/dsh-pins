@@ -1,0 +1,29 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-living-room-rug",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A bright living room seen from slightly above: a large cream and sage patterned area rug lies flat on a light oak floor, the front legs of a cream three-seat sofa rest on the rug while the back legs stand on the bare floor, a round oak coffee table sits fully on the rug in the middle, two armchairs face the sofa with their front legs on the rug, a clear border of bare wood floor shows between the rug and the walls on every side, a window with sheer curtains, a plant in a terracotta pot. Photorealistic interior photography, real estate photo, modern farmhouse meets Scandinavian style, palette of white oak, cream, soft sage green and warm terracotta accents, natural daylight, realistic proportions, rugs lie completely flat on the floor with straight edges, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "02-dining-rug",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A dining room with a rectangular oak dining table and six chairs standing on a large flat neutral jute rug, the rug extends well beyond the table on every side so that the chairs pulled slightly out still have all four legs on the rug, a border of bare light oak floor around the rug, a simple pendant light above the table, white walls. Photorealistic interior photography, real estate photo, modern farmhouse meets Scandinavian style, palette of white oak, cream, soft sage green and warm terracotta accents, natural daylight, realistic proportions, rugs lie completely flat on the floor with straight edges, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "03-bedroom-rug",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A calm bedroom with a queen bed with white and sage bedding, a large flat cream wool rug laid crosswise under the lower two-thirds of the bed so the rug shows on both sides and at the foot of the bed, two oak nightstands standing on the bare oak floor beside the headboard, a bench at the foot of the bed on the rug. Photorealistic interior photography, real estate photo, modern farmhouse meets Scandinavian style, palette of white oak, cream, soft sage green and warm terracotta accents, natural daylight, realistic proportions, rugs lie completely flat on the floor with straight edges, clean and calm, no people, no animals, no text, no logos, no brand names, high detail."
+  },
+  {
+   "name": "pin-01-rug-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "A cosy living room in the evening with a large flat cream and terracotta rug under the front legs of a sage green sofa and a round oak coffee table, a warm floor lamp glowing, light oak floor border visible around the rug. Photorealistic interior photography for a Pinterest pin, one clear focal point, the top third of the frame is a calm plain cream wall with nothing on it, realistic proportions, no people, no text, no logos, high detail."
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+<div id="dsh-rug" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
+.dsh-calc .buy{flex:1 1 280px}
+.dsh-calc .buy h4{margin:0 0 6px;font-size:1rem}
+.dsh-calc .buy p{margin:0 0 8px;font-size:.92rem}
+.dsh-calc .viz{flex:1 1 240px;max-width:380px;background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .warn{background:var(--badl);color:var(--bad);border-radius:10px;padding:10px 12px;font-size:.9rem;margin:0 0 10px}
+.dsh-calc .tips{margin:12px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:6px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--ac);background:#fff;color:var(--ac);border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer}
+.dsh-calc .acts button.pri{background:var(--ac);color:#fff}
+.dsh-calc .note{font-size:.78rem;color:var(--mut);margin:12px 0 0}
+.dsh-calc .hide{display:none}
+</style>
+<h3>What size rug do you need?</h3>
+<p class="sub">Pick the room, enter a few measurements and get the rug size that fits, plus the closest standard size to buy.</p>
+<div class="row">
+<div class="seg" role="group" aria-label="Where you shop"><button type="button" data-r="us">US sizes</button><button type="button" data-r="uk">UK sizes</button></div>
+<div class="seg" role="group" aria-label="Units"><button type="button" data-u="in">feet and inches</button><button type="button" data-u="cm">cm</button></div>
+</div>
+<fieldset><legend>1. The room</legend>
+<div class="opts" role="group" aria-label="Room">
+<button type="button" data-m="living" class="on"><b>Living room</b><span>Sofa and coffee table</span></button>
+<button type="button" data-m="dining"><b>Dining room</b><span>Rug under the table</span></button>
+<button type="button" data-m="bed"><b>Bedroom</b><span>Rug under the bed</span></button>
+<button type="button" data-m="hall"><b>Hallway</b><span>A runner</span></button>
+</div>
+<div class="grid">
+<label><span id="lrl">Room length (wall to wall)</span><span data-lu="ft"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="rl"></label>
+<label><span id="lrw">Room width (wall to wall)</span><span data-lu="ft"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="rw"></label>
+</div></fieldset>
+<fieldset id="f-living"><legend>2. Your seating</legend>
+<div class="grid"><label>Sofa length<span data-lu="in"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="sl"></label></div>
+<p class="hint">You will get three options: every leg on the rug, front legs on the rug, or a smaller rug under the coffee table only.</p>
+</fieldset>
+<fieldset id="f-dining" class="hide"><legend>2. Your table</legend>
+<div class="opts" role="group" aria-label="Table shape">
+<button type="button" data-t="rect" class="on"><b>Rectangular or square</b></button>
+<button type="button" data-t="round"><b>Round</b></button>
+</div>
+<div class="grid">
+<label><span id="ltl">Table length</span><span data-lu="in"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="tl"></label>
+<label id="ltw">Table width<span data-lu="in"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="tw"></label>
+<label>Chairs<select id="cc"><option value="61">Slim chairs, tight room (24 in / 61 cm each side)</option><option value="76" selected>Standard chairs (30 in / 76 cm each side)</option><option value="91">Large or upholstered chairs (36 in / 91 cm each side)</option></select></label>
+</div></fieldset>
+<fieldset id="f-bed" class="hide"><legend>2. Your bed</legend>
+<div class="grid">
+<label>Bed size<select id="bs"></select></label>
+<label>Rug past the bed, each side<select id="be"><option value="61">At least 24 in (61 cm)</option><option value="76" selected>About 30 in (76 cm)</option><option value="91">About 36 in (91 cm), big rooms</option></select></label>
+<label>Placement<select id="bp"><option value="23" selected>Under the lower two-thirds of the bed</option><option value="full">Under the whole bed</option></select></label>
+</div></fieldset>
+<fieldset id="f-hall" class="hide"><legend>2. Your hallway</legend>
+<p class="hint">Use the room length and width above for the hallway. The runner stops about 5 in (13 cm) short of each wall and end.</p>
+</fieldset>
+<div class="res" aria-live="polite">
+<div id="wn"></div>
+<div id="vd" class="verdict"></div>
+<div class="kpis">
+<div class="kpi"><small id="k1t">Ideal rug size</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small>Largest that fits</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small>Best standard size</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="wrap"><div class="buy"><h4>Your options</h4><div id="by"></div></div><div class="viz" id="vz" aria-hidden="true"></div></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" class="pri" id="cp">Copy my rug size</button><button type="button" id="pr">Print</button></div>
+<p class="note">Rules used: about 18 in (46 cm) of bare floor between the rug and the walls where the room allows, and never less than about 12 in (30 cm) in a living room or bedroom; dining rugs extend 24 to 36 in (61 to 91 cm) past each side of the table so pulled-out chairs stay on the rug; bedroom rugs extend at least 24 in (61 cm) past the sides of the bed; runners stop about 5 in (13 cm) from the walls and ends. Standard sizes vary by shop. Results are planning estimates.</p>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-rug');if(!R)return;
+var IN=2.54,unit='in',reg='us',mode='living',tshape='rect';
+try{var lg=(navigator.language||'').toLowerCase();if(lg.indexOf('en-us')===0){unit='in';reg='us'}else if(lg.indexOf('en')===0){unit='cm';reg='uk'}}catch(e){}
+function $(i){return document.getElementById(i)}
+var FT={rl:1,rw:1};
+function g(i){var v=parseFloat($(i).value);if(isNaN(v)||v<0)v=0;return unit==='in'?(FT[i]?v*30.48:v*IN):v}
+function s(i,cm){$(i).value=unit==='in'?(FT[i]?Math.round(cm/30.48*2)/2:Math.round(cm/IN)):Math.round(cm)}
+function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='in'?' ('+x.getAttribute('data-lu')+')':' (cm)'})}
+function ftin(cm){var t=Math.round(cm/IN),f=Math.floor(t/12),r=t%12;return r?f+"' "+r+'"':f+"'"}
+function f1(cm){return unit==='in'?ftin(cm):Math.round(cm)+' cm'}
+function sz(a,b){return b?(unit==='in'?ftin(a)+' x '+ftin(b):Math.round(a)+' x '+Math.round(b)+' cm'):(f1(a)+' round')}
+function lab(r){return r.round?r.name+' round':r.name}
+function art(t){return /^(8|11|18)/.test(t)?'an ':'a '}
+var US={rect:[[2,3],[3,5],[4,6],[5,8],[6,9],[7.5,9.5],[8,10],[9,12],[10,13],[12,15]],round:[4,6,8,10],run:[[2.5,8],[2.5,10],[2.5,12]]};
+var UK={rect:[[80,150],[120,170],[160,230],[200,290],[240,340],[280,360]],round:[120,160,200,240],run:[[60,200],[70,240],[80,300]]};
+function list(kind){var o=[];
+ if(reg==='us'){if(kind==='round')US.round.forEach(function(d){o.push({a:d*12*IN,b:d*12*IN,round:true,name:d+"'"})});else(kind==='run'?US.run:US.rect).forEach(function(p){o.push({a:p[0]*12*IN,b:p[1]*12*IN,name:(p[0]===2.5?"2' 6\"":(p[0]===7.5?"7' 6\"":p[0]+"'"))+' x '+(p[1]===9.5?"9' 6\"":p[1]+"'")})})}
+ else{if(kind==='round')UK.round.forEach(function(d){o.push({a:d,b:d,round:true,name:d+' cm'})});else(kind==='run'?UK.run:UK.rect).forEach(function(p){o.push({a:p[0],b:p[1],name:p[0]+' x '+p[1]+' cm'})})}
+ return o}
+function pick(kind,minS,minL,maxS,maxL){var L=list(kind),best=null,fit=null;
+ L.forEach(function(r){var okMin=r.a>=minS-3?r.b>=minL-3:false,okMax=r.a<=maxS+2?r.b<=maxL+2:false;
+  if(okMin?okMax:false){if(!best||r.a*r.b<best.a*best.b)best=r}
+  if(okMax){if(!fit||r.a*r.b>fit.a*fit.b)fit=r}});
+ return {best:best,fit:fit}}
+var BEDS={us:[['Twin',97,191],['Twin XL',97,203],['Full',137,191],['Queen',152,203],['King',193,203],['California king',183,213]],uk:[['Single',90,190],['Small double',120,190],['Double',135,190],['King',150,200],['Super king',180,200]]};
+function fillBeds(){var b=BEDS[reg],sel=$('bs'),cur=sel.selectedIndex;sel.innerHTML=b.map(function(x,i){return '<option value="'+i+'">'+x[0]+' ('+(unit==='in'?Math.round(x[1]/IN)+' x '+Math.round(x[2]/IN)+' in':x[1]+' x '+x[2]+' cm')+')</option>'}).join('');sel.selectedIndex=cur>=0?Math.min(cur,b.length-1):(reg==='us'?3:2)}
+var ids=['rl','rw','sl','tl','tw'];var summary='';
+function calc(){
+var rl=g('rl'),rw=g('rw');var RL=Math.max(rl,rw),RS=Math.min(rl,rw);
+var warn=[],tips=[],by='',ideal=null,maxS=0,maxL=0,res=null,kind='rect',draw={};
+if(mode==='living'){
+ var sl=g('sl');maxS=RS-61;maxL=RL-61;var idS=RS-91,idL=RL-91;
+ var a=pick('rect',idS*0.8,idL*0.8,maxS,maxL);var allLegs=a.fit;
+ var fr=pick('rect',reg==='us'?240:195,Math.max(reg==='us'?300:285,sl+30),maxS,maxL);
+ var ct=pick('rect',152,Math.max(244,sl-30),maxS,maxL);
+ ideal=[idS,idL];res=fr.best||allLegs;
+ by+='<p><strong>Front legs on the rug (most popular):</strong> '+(fr.best?lab(fr.best):'a custom size about '+sz(244,Math.max(305,sl+30)))+'. The rug is a little longer than the sofa and tucks under its front legs.</p>';
+ by+='<p><strong>All legs on the rug:</strong> '+(allLegs?lab(allLegs):'the room is too small for this look')+'. The largest standard size that still leaves a border of bare floor.</p>';
+ by+='<p><strong>Coffee table only:</strong> '+(ct.best?lab(ct.best):(reg==='us'?"a 5' x 8' rug":'a 160 x 230 cm rug'))+'. '+(reg==='us'?"At least 5' x 8'":'At least 160 x 230 cm')+' and close to the length of the sofa.</p>';
+ if(sl>RL-61)warn.push('The sofa is almost as long as the room. Check your measurements.');
+ draw={sofa:sl};
+}else if(mode==='dining'){
+ var tl=g('tl'),tw=tshape==='round'?tl:g('tw'),c=parseFloat($('cc').value);
+ var nS=Math.min(tl,tw)+2*c,nL=Math.max(tl,tw)+2*c;ideal=[nS,nL];maxS=RS-20;maxL=RL-20;kind=tshape==='round'?'round':'rect';
+ var p=pick(kind,nS,nL,maxS,maxL);res=p.best;
+ by+='<p>Chairs need about '+f1(c)+' of rug on every side of the table, so the rug should be at least <strong>'+(kind==='round'?f1(nS)+' across':sz(nS,nL))+'</strong>.</p>';
+ if(!p.best){var bigger=pick(kind,nS,nL,9999,9999).best;
+  if(nL>maxL||nS>maxS)warn.push('A rug that size does not fit this room. Choose slim chairs, a smaller table or a custom rug.');
+  by+='<p>'+(bigger?'The next standard size up is '+lab(bigger)+', but it is too big for the room.':'No standard size is big enough, so order a custom rug.')+'</p>'}
+ if(kind==='round')tips.push('A round table looks best on a round or square rug.');
+ draw={table:[Math.min(tl,tw),Math.max(tl,tw)],round:kind==='round'};
+}else if(mode==='bed'){
+ var bd=BEDS[reg][parseInt($('bs').value)||0],bw=bd[1],bl=bd[2],ex=parseFloat($('be').value);
+ var full=$('bp').value==='full';
+ var nW=bw+2*ex,nD=full?bl+ex:bl*2/3+ex;ideal=[Math.min(nW,nD),Math.max(nW,nD)];maxS=RS-61;maxL=RL-61;
+ var p2=pick('rect',ideal[0],ideal[1],maxS,maxL);res=p2.best;
+ by+='<p>For a '+bd[0].toLowerCase()+' bed, the rug should be at least <strong>'+sz(ideal[0],ideal[1])+'</strong>, laid across the bed with '+f1(ex)+' showing on each side'+(full?' and at the foot.':' and under the lower two-thirds of the bed.')+'</p>';
+ if(!p2.best)by+='<p>No standard size fits both rules. Two runners, one on each side of the bed, are a good alternative.</p>';
+ tips.push('Stop the rug short of the nightstands so they stand level on the floor.');
+ draw={bed:[bw,bl],full:full};
+}else{
+ var hw=RS-26,hl=RL-26;ideal=[hw,hl];maxS=hw;maxL=hl;kind='run';
+ var L=list('run'),w=null,lens=[];L.forEach(function(r){if(r.a<=hw+6){if(!w||r.a>w.a)w=r}});
+ var p3=pick('run',0,0,hw+5,hl);res=p3.fit;
+ by+='<p>A runner about <strong>'+sz(hw,hl)+'</strong> leaves 5 in (13 cm) of floor at each side and end.</p>';
+ if(res){var n2=Math.floor(hl/res.b);by+='<p>Standard runner: <strong>'+lab(res)+'</strong>'+(hl-res.b>60?'. For a long hallway, use '+Math.max(2,n2)+' runners in a row, or a custom length.':'.')+'</p>'}
+ else by+='<p>Your hallway is narrower or shorter than standard runners, so look for a slim or custom runner.</p>';
+ tips.push('Keep the runner clear of doors so they open over it.');
+ draw={hall:true};
+}
+if(RS<=0)warn=['Enter the room size.'];
+$('wn').innerHTML=warn.map(function(x){return '<div class="warn">'+x+'</div>'}).join('');
+$('k1').textContent=(ideal?ideal[0]>0:false)?(mode==='dining'?(kind==='round'?f1(ideal[0])+' round':sz(ideal[0],ideal[1])):sz(Math.max(0,ideal[0]),Math.max(0,ideal[1]))):'-';
+$('k1t').textContent=mode==='living'?'Room-size rug':(mode==='hall'?'Runner size':'Smallest rug that works');
+$('k1e').textContent=mode==='living'?'All legs on, about 18 in (46 cm) of floor showing':(mode==='dining'?'So chairs stay on the rug':(mode==='bed'?'Rug showing around the bed':'Floor showing at sides and ends'));
+$('k2').textContent=(maxS>0?maxL>0:false)?sz(maxS,maxL):'-';$('k2e').textContent=mode==='dining'?'Leaves at least 4 in (10 cm) of floor':(mode==='hall'?'Hallway minus the gaps':'Leaves at least 12 in (30 cm) of floor');
+$('k3').textContent=res?lab(res):'Custom size';$('k3e').textContent=(mode==='living'?'Front legs on the rug, ':'')+(reg==='us'?'US standard sizes':'UK standard sizes');
+$('by').innerHTML=by;
+$('vd').textContent=res?('Buy '+art(lab(res))+lab(res)+' rug.'):'A custom-size rug is the best fit.';
+tips.push('Mark the rug size on the floor with painter’s tape before you buy.');
+tips.push('Add a rug pad about 1 in (2.5 cm) smaller than the rug on each side to stop slipping.');
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+viz(RL,RS,res,draw);
+summary='My rug size (dailyspacehacks.com)\n'+$('vd').textContent+'\nIdeal: '+$('k1').textContent+'\nLargest that fits: '+$('k2').textContent;
+}
+function viz(RL,RS,r,dr){
+if(RL<=0){$('vz').innerHTML='';return}
+var VW=320,pad=14,sc=(VW-2*pad)/RL,VH=Math.round(RS*sc+2*pad);
+var o='<svg viewBox="0 0 '+VW+' '+VH+'" xmlns="http://www.w3.org/2000/svg"><rect x="'+pad+'" y="'+pad+'" width="'+(RL*sc)+'" height="'+(RS*sc)+'" fill="#fff" stroke="#342E2A" stroke-width="3"/>';
+var cx=VW/2,cy=VH/2;
+if(r){var w=r.b*sc,h=r.a*sc;if(dr.hall){w=r.b*sc;h=r.a*sc}
+ if(r.round)o+='<circle cx="'+cx+'" cy="'+cy+'" r="'+(r.a*sc/2)+'" fill="#DCE5D6" stroke="#8FA689" stroke-width="2"/>';
+ else o+='<rect x="'+(cx-w/2)+'" y="'+(cy-h/2)+'" width="'+w+'" height="'+h+'" fill="#DCE5D6" stroke="#8FA689" stroke-width="2" stroke-dasharray="5 3"/>';}
+if(dr.sofa){var sw=dr.sofa*sc,sh=86*sc,ry=r?cy+r.a*sc/2:cy+40;o+='<rect x="'+(cx-sw/2)+'" y="'+(ry-sh*0.35)+'" width="'+sw+'" height="'+sh+'" rx="5" fill="#B98A5E"/>';o+='<rect x="'+(cx-50*sc)+'" y="'+(cy-30*sc)+'" width="'+(100*sc)+'" height="'+(55*sc)+'" rx="3" fill="#D9B48A"/>'}
+if(dr.table){var tw=dr.table[1]*sc,th=dr.table[0]*sc;if(dr.round)o+='<circle cx="'+cx+'" cy="'+cy+'" r="'+(tw/2)+'" fill="#D9B48A"/>';else o+='<rect x="'+(cx-tw/2)+'" y="'+(cy-th/2)+'" width="'+tw+'" height="'+th+'" rx="3" fill="#D9B48A"/>'}
+if(dr.bed){var bw=dr.bed[0]*sc,bl=dr.bed[1]*sc,by0=r?(dr.full?cy-r.a*sc/2:cy-r.a*sc/2-bl/3):cy-bl/2;o+='<rect x="'+(cx-bw/2)+'" y="'+Math.max(pad,by0)+'" width="'+bw+'" height="'+bl+'" rx="4" fill="#B98A5E" opacity=".9"/>'}
+if(r)o+='<rect x="'+(pad+6)+'" y="'+(pad+6)+'" width="'+(lab(r).length*7.6+16)+'" height="22" rx="11" fill="#C85A32"/><text x="'+(pad+14)+'" y="'+(pad+21)+'" font-size="13" fill="#fff" font-weight="700">'+lab(r)+'</text>';
+o+='</svg>';$('vz').innerHTML=o}
+function setMode(m){mode=m;R.querySelectorAll('[data-m]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-m')===m)});['living','dining','bed','hall'].forEach(function(k){$('f-'+k).classList.toggle('hide',k!==m)});$('lrl').textContent=m==='hall'?'Hallway length':'Room length (wall to wall)';$('lrw').textContent=m==='hall'?'Hallway width':'Room width (wall to wall)'}
+function setReg(r){reg=r;R.querySelectorAll('[data-r]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-r')===r)});fillBeds()}
+function setUnit(u,conv){var v=ids.map(function(i){return g(i)});unit=u;if(conv)ids.forEach(function(i,k){s(i,v[k])});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===u)});fillBeds();lbl()}
+R.querySelectorAll('[data-m]').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');if(m==='hall'?mode!=='hall':false){s('rl',600);s('rw',100)}else if(mode==='hall'?m!=='hall':false){s('rl',457);s('rw',366)}setMode(m);calc()})});
+R.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){tshape=b.getAttribute('data-t');R.querySelectorAll('[data-t]').forEach(function(x){x.classList.toggle('on',x===b)});$('ltw').style.display=tshape==='round'?'none':'';$('ltl').textContent=tshape==='round'?'Table diameter':'Table length';calc()})});
+R.querySelectorAll('[data-r]').forEach(function(b){b.addEventListener('click',function(){setReg(b.getAttribute('data-r'));calc()})});
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){var u=b.getAttribute('data-u');if(u!==unit){setUnit(u,true);calc()}})});
+ids.forEach(function(i){$(i).addEventListener('input',calc)});['cc','bs','be','bp'].forEach(function(i){$(i).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my rug size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your rug size:',summary)})}catch(e){window.prompt('Copy your rug size:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+var u0=unit;unit='cm';s('rl',457);s('rw',366);s('sl',213);s('tl',183);s('tw',91);
+setUnit(u0,true);setReg(reg);setMode('living');calc();
+})();
+</script>
+</div>
