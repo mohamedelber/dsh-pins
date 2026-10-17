@@ -1,7 +1,7 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';SA='#ECCDA0';W1='#D9B48A';W2='#B98A5E'
 s=[];a=s.append
 desc=("Top-down map of a kitchen drawer organized for food storage containers. Zone A along the back: lids filed upright in a divider, largest at the left. "
-"Zone B front left: rectangular containers nested largest to smallest. Zone C: square containers nested. Zone D: round containers nested. "
+"Zone B middle left: rectangular containers nested largest to smallest. Zone C: square containers nested. Zone D: round containers nested. "
 "Zone E along the front: an everyday set with lids on for lunches and leftovers. Rules: every base needs a matching lid, nest by shape, "
 "file lids upright by size, and keep only what fits.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="tw-t tw-d"><title id="tw-t">The container drawer map</title><desc id="tw-d">{desc}</desc>')
@@ -56,7 +56,7 @@ LX=780
 items=[("A","Lids, filed upright","largest at the left, so the","right size is easy to spot"),
 ("B","Rectangles, nested","biggest at the bottom,","two stacks side by side"),
 ("C","Squares, nested","one shape family","per section"),
-("D","Rounds, nested","bowls and soup tubs","fit inside each other"),
+("D","Rounds, nested","bowls and round boxes","fit inside each other"),
 ("E","Everyday set, lids on","lunch and leftover boxes","you grab most often")]
 ly=200
 for l,t1,t2,t3 in items:
