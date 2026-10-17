@@ -54,15 +54,15 @@ def pin_grid(imgs,num,script_word,title1,title2,labels,out,footer="Save this for
     d.text((nx,52),script_word,font=script(70),fill=SAGE,anchor="lt")
     f1=fitf(d,title1,anton,W-nx-50,92); d.text((nx,132),title1,font=f1,fill=INK,anchor="lt")
     f2=fitf(d,title2,anton,W-nx-50,64); d.text((nx,132+f1.size+8),title2,font=f2,fill=INK,anchor="lt")
-    top=300; g=10; tw=(W-3*g)//2; th=(H-top-80-2*g)//3
+    top=300; g=10; tw=(W-3*g)//2; th=(H-top-90-2*g)//3
     for i,src in enumerate(imgs[:6]):
         x=g+(i%2)*(tw+g); y=top+(i//2)*(th+g)
         c.paste(cover(Image.open(src).convert("RGB"),tw,th),(x,y))
         d.rectangle([x,y+th-58,x+tw,y+th],fill=(33,30,28))
         d.text((x+tw/2+18,y+th-29),labels[i],font=fitf(d,labels[i],lambda s:mont(s,700),tw-90,30),fill=CREAM,anchor="mm")
         badge(d,x+34,y+th-29,i+1,r=24)
-    d.text((W/2,H-42),footer,font=script(46),fill=TERRA,anchor="mm")
-    d.text((W-20,H-14),"dailyspacehacks.com",font=mont(20,600),fill=SAGE,anchor="rb")
+    d.text((W/2,H-52),footer,font=script(42),fill=TERRA,anchor="mm")
+    d.text((W/2,H-8),"dailyspacehacks.com",font=mont(20,600),fill=SAGE,anchor="mb")
     c.save(out,"JPEG",quality=88,optimize=True,progressive=True)
 
 def pin_bold(photo,num_line,title2,tag,sticker,out,ay=0.6):
