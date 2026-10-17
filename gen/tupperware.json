@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-drawer",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A wide deep kitchen drawer pulled fully open below a white oak countertop in a bright kitchen with sage green cabinets, inside the drawer clear glass and clear plastic food storage containers are nested inside each other by size in neat rows, rectangular ones together and round ones together, and their flat lids stand upright like files in a slim wooden divider along the back of the drawer, sorted from large to small; the drawer front is a sage shaker panel with a brass pull. View from slightly above at an angle. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain unbranded containers, high detail."
+  },
+  {
+   "name": "02-cabinet-lid-rack",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Inside a lower kitchen cabinet shown straight on with the cabinet door out of frame, a white wire file-style lid rack on the cabinet floor holds about eight flat plastic container lids standing upright sorted by size, next to it two neat stacks of nested clear rectangular food containers, largest at the bottom; light oak interior shelf above with a few glass jars. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain unbranded containers, high detail."
+  },
+  {
+   "name": "03-matching-glass-set",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "An open white oak pantry shelf holding a matching set of clear glass food storage containers with sage green snap lids already attached, stacked two high in neat rows by size, three sizes only, rectangular, with a small woven basket at one end; plain cream wall. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain unbranded containers, high detail."
+  },
+  {
+   "name": "04-bins-by-use",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A lower kitchen cabinet shelf shown straight on with the door out of frame, holding three clear plastic storage bins with handles side by side: one with small lunch-size containers, one with medium nested containers, one with upright lids; tidy, simple, light oak cabinet interior, soft daylight. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain unbranded containers, high detail."
+  },
+  {
+   "name": "05-pegboard-drawer",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Top-down view into a deep white oak kitchen drawer fitted with a wooden pegboard base and movable round wooden pegs that form compartments; nested clear glass food containers in one compartment, a stack of flat lids standing on edge in another, and round containers in a third; nothing else in the drawer. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain unbranded containers, high detail."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Split image, same kitchen drawer photographed twice side by side from the same angle with a thin white vertical line in the middle: left half BEFORE shows a messy jumble of mismatched plastic food containers and loose lids piled randomly in the open drawer; right half AFTER shows the same drawer neatly organized with containers nested by size and lids standing upright in a divider at the back. Same drawer, same lighting, same sage drawer front. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain unbranded containers, high detail."
+  },
+  {
+   "name": "07-pin-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Tall vertical photo of an open deep kitchen drawer seen from above at an angle, containing clear glass food storage containers nested by size and flat lids standing upright in a wooden divider; warm evening glow from under-cabinet lights, sage cabinets and white oak countertop; the top third of the image is a calm plain cream wall and countertop with nothing on it, one clear focal point, cozy mood. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain unbranded containers, high detail."
+  }
+ ]
+}
