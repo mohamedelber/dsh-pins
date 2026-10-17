@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="tw-t tw-d"><title id="tw-t">The container drawer map</title><desc id="tw-d">Top-down map of a kitchen drawer organized for food storage containers. Zone A along the back: lids filed upright in a divider, largest at the left. Zone B front left: rectangular containers nested largest to smallest. Zone C: square containers nested. Zone D: round containers nested. Zone E along the front: an everyday set with lids on for lunches and leftovers. Rules: every base needs a matching lid, nest by shape, file lids upright by size, and keep only what fits.</desc>
+<rect width="1200" height="900" fill="#F7F1E9"/>
+<text x="60" y="88" font-size="44" font-weight="700" fill="#342E2A">The Container Drawer Map</text>
+<text x="60" y="128" font-size="22" fill="#6E645C">One drawer or cabinet shelf, five zones, no more lid hunting</text>
+<text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text>
+<rect x="46" y="156" width="688" height="628" rx="10" fill="#B98A5E"/>
+<rect x="60" y="170" width="660" height="600" rx="4" fill="#FBF7F1"/>
+<text x="390.0" y="820" font-size="18" fill="#6E645C" text-anchor="middle">front of drawer (you stand here)</text>
+<rect x="80" y="190" width="620" height="120" rx="6" fill="#DCE5D6" stroke="#8FA689" stroke-width="2"/>
+<rect x="100" y="202.0" width="10" height="96" rx="3" fill="#8FA689"/>
+<rect x="130" y="203.5" width="10" height="93" rx="3" fill="#A9BBA4"/>
+<rect x="160" y="205.0" width="10" height="90" rx="3" fill="#8FA689"/>
+<rect x="190" y="206.5" width="10" height="87" rx="3" fill="#A9BBA4"/>
+<rect x="220" y="208.0" width="10" height="84" rx="3" fill="#8FA689"/>
+<rect x="250" y="209.5" width="10" height="81" rx="3" fill="#A9BBA4"/>
+<rect x="300" y="211.0" width="10" height="78" rx="3" fill="#8FA689"/>
+<rect x="330" y="212.5" width="10" height="75" rx="3" fill="#A9BBA4"/>
+<rect x="360" y="214.0" width="10" height="72" rx="3" fill="#8FA689"/>
+<rect x="390" y="215.5" width="10" height="69" rx="3" fill="#A9BBA4"/>
+<rect x="420" y="217.0" width="10" height="66" rx="3" fill="#8FA689"/>
+<rect x="450" y="218.5" width="10" height="63" rx="3" fill="#A9BBA4"/>
+<rect x="500" y="220.0" width="10" height="60" rx="3" fill="#8FA689"/>
+<rect x="530" y="221.5" width="10" height="57" rx="3" fill="#A9BBA4"/>
+<rect x="560" y="223.0" width="10" height="54" rx="3" fill="#8FA689"/>
+<rect x="590" y="224.5" width="10" height="51" rx="3" fill="#A9BBA4"/>
+<line x1="80" y1="328" x2="700" y2="328" stroke="#D9B48A" stroke-width="8" stroke-linecap="round"/>
+<rect x="80.0" y="350" width="193.33333333333334" height="250" rx="6" fill="#FFFFFF" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="293.33333333333337" y="350" width="193.33333333333334" height="250" rx="6" fill="#FFFFFF" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="506.6666666666667" y="350" width="193.33333333333334" height="250" rx="6" fill="#FFFFFF" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="101.66666666666669" y="372.5" width="150.0" height="95.0" rx="12.0" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="116.66666666666669" y="382.0" width="120.0" height="76.0" rx="10.0" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="131.66666666666669" y="391.5" width="90.0" height="57.0" rx="8.0" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="146.66666666666669" y="401.0" width="59.999999999999986" height="37.99999999999999" rx="5.999999999999999" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="101.66666666666669" y="487.5" width="150.0" height="95.0" rx="12.0" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="116.66666666666669" y="497.0" width="120.0" height="76.0" rx="10.0" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="131.66666666666669" y="506.5" width="90.0" height="57.0" rx="8.0" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="146.66666666666669" y="516.0" width="59.999999999999986" height="37.99999999999999" rx="5.999999999999999" fill="none" stroke="#C85A32" stroke-width="4"/>
+<rect x="335.0" y="365.0" width="110.0" height="110.0" rx="12.0" fill="none" stroke="#B98A5E" stroke-width="4"/>
+<rect x="346.0" y="376.0" width="88.0" height="88.0" rx="10.0" fill="none" stroke="#B98A5E" stroke-width="4"/>
+<rect x="357.0" y="387.0" width="66.0" height="66.0" rx="8.0" fill="none" stroke="#B98A5E" stroke-width="4"/>
+<rect x="368.0" y="398.0" width="43.99999999999999" height="43.99999999999999" rx="5.999999999999999" fill="none" stroke="#B98A5E" stroke-width="4"/>
+<rect x="335.0" y="480.0" width="110.0" height="110.0" rx="12.0" fill="none" stroke="#B98A5E" stroke-width="4"/>
+<rect x="346.0" y="491.0" width="88.0" height="88.0" rx="10.0" fill="none" stroke="#B98A5E" stroke-width="4"/>
+<rect x="357.0" y="502.0" width="66.0" height="66.0" rx="8.0" fill="none" stroke="#B98A5E" stroke-width="4"/>
+<circle cx="603.3333333333334" cy="420" r="55.0" fill="none" stroke="#6E645C" stroke-width="4"/>
+<circle cx="603.3333333333334" cy="420" r="42.9" fill="none" stroke="#6E645C" stroke-width="4"/>
+<circle cx="603.3333333333334" cy="420" r="30.800000000000004" fill="none" stroke="#6E645C" stroke-width="4"/>
+<circle cx="603.3333333333334" cy="420" r="18.7" fill="none" stroke="#6E645C" stroke-width="4"/>
+<circle cx="603.3333333333334" cy="535" r="55.0" fill="none" stroke="#6E645C" stroke-width="4"/>
+<circle cx="603.3333333333334" cy="535" r="42.9" fill="none" stroke="#6E645C" stroke-width="4"/>
+<circle cx="603.3333333333334" cy="535" r="30.800000000000004" fill="none" stroke="#6E645C" stroke-width="4"/>
+<rect x="80" y="620" width="620" height="130" rx="6" fill="#ECCDA0" fill-opacity="0.45" stroke="#D9B48A" stroke-width="2"/>
+<rect x="100" y="635" width="120" height="100" rx="10" fill="#FFFFFF" stroke="#C85A32" stroke-width="3"/>
+<rect x="108" y="643" width="104" height="84" rx="7" fill="#DCE5D6"/>
+<rect x="240" y="635" width="120" height="100" rx="10" fill="#FFFFFF" stroke="#C85A32" stroke-width="3"/>
+<rect x="248" y="643" width="104" height="84" rx="7" fill="#DCE5D6"/>
+<rect x="380" y="635" width="120" height="100" rx="10" fill="#FFFFFF" stroke="#C85A32" stroke-width="3"/>
+<rect x="388" y="643" width="104" height="84" rx="7" fill="#DCE5D6"/>
+<rect x="520" y="635" width="120" height="100" rx="10" fill="#FFFFFF" stroke="#C85A32" stroke-width="3"/>
+<rect x="528" y="643" width="104" height="84" rx="7" fill="#DCE5D6"/>
+<circle cx="684" cy="212" r="22" fill="#C85A32"/><text x="684" y="220" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+<circle cx="267.33333333333337" cy="372" r="22" fill="#C85A32"/><text x="267.33333333333337" y="380" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">B</text>
+<circle cx="480.6666666666667" cy="372" r="22" fill="#C85A32"/><text x="480.6666666666667" y="380" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">C</text>
+<circle cx="694.0" cy="372" r="22" fill="#C85A32"/><text x="694.0" y="380" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">D</text>
+<circle cx="684" cy="685.0" r="22" fill="#C85A32"/><text x="684" y="693.0" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">E</text>
+<circle cx="802" cy="200" r="20" fill="#C85A32"/><text x="802" y="207" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+<text x="836" y="207" font-size="23" font-weight="700" fill="#342E2A">Lids, filed upright</text>
+<text x="836" y="236" font-size="18" fill="#6E645C">largest at the left, so the</text>
+<text x="836" y="260" font-size="18" fill="#6E645C">right size is easy to spot</text>
+<circle cx="802" cy="304" r="20" fill="#C85A32"/><text x="802" y="311" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">B</text>
+<text x="836" y="311" font-size="23" font-weight="700" fill="#342E2A">Rectangles, nested</text>
+<text x="836" y="340" font-size="18" fill="#6E645C">biggest at the bottom,</text>
+<text x="836" y="364" font-size="18" fill="#6E645C">two stacks side by side</text>
+<circle cx="802" cy="408" r="20" fill="#C85A32"/><text x="802" y="415" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">C</text>
+<text x="836" y="415" font-size="23" font-weight="700" fill="#342E2A">Squares, nested</text>
+<text x="836" y="444" font-size="18" fill="#6E645C">one shape family</text>
+<text x="836" y="468" font-size="18" fill="#6E645C">per section</text>
+<circle cx="802" cy="512" r="20" fill="#C85A32"/><text x="802" y="519" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">D</text>
+<text x="836" y="519" font-size="23" font-weight="700" fill="#342E2A">Rounds, nested</text>
+<text x="836" y="548" font-size="18" fill="#6E645C">bowls and soup tubs</text>
+<text x="836" y="572" font-size="18" fill="#6E645C">fit inside each other</text>
+<circle cx="802" cy="616" r="20" fill="#C85A32"/><text x="802" y="623" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">E</text>
+<text x="836" y="623" font-size="23" font-weight="700" fill="#342E2A">Everyday set, lids on</text>
+<text x="836" y="652" font-size="18" fill="#6E645C">lunch and leftover boxes</text>
+<text x="836" y="676" font-size="18" fill="#6E645C">you grab most often</text>
+<rect x="780" y="700" width="360" height="86" rx="12" fill="#DCE5D6"/>
+<text x="800" y="734" font-size="19" font-weight="700" fill="#342E2A">Match test: every base</text>
+<text x="800" y="764" font-size="19" font-weight="700" fill="#342E2A">needs a lid, or it goes</text>
+<text x="60" y="868" font-size="16" fill="#6E645C">Works the same on a cabinet shelf: lids at the back, nested bases in the middle, everyday set at the front.</text>
+</svg>
