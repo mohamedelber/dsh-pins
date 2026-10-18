@@ -1,6 +1,6 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';SA='#ECCDA0';W1='#D9B48A';W2='#B98A5E'
 s=[];a=s.append
-desc=("How to size gift wrap storage. Step 1: measure your longest roll; common roll widths are 24, 30 and 36 inches. "
+desc=("How to size gift wrap storage. Step 1: measure your longest roll; typical roll widths include 24, 30 and 36 inches. "
 "Step 2: an upright bin should be at least two thirds as tall as the roll, for example 20 inches or more for a 30-inch roll. "
 "Step 3: a flat under-bed box needs an inside length of at least the roll length plus 1 inch, for example 31 inches or more for a 30-inch roll, and must be lower than the gap under the bed. "
 "Gift bags are filed upright by size and tissue paper is stored flat. Keep wrap at least 3 feet from heaters and out of attics and basements.")
@@ -48,7 +48,7 @@ for i,(L,c,lab) in enumerate([(160,SGL,"24 in"),(200,SA,"30 in"),(240,'#E8B9A3',
     yy=CY+130+i*95
     roll(x+40,yy,L,40,c)
     a(f'<text x="{x+40+L+22}" y="{yy+7}" font-size="20" font-weight="700" fill="{T}">{lab}</text>')
-a(f'<text x="{x+30}" y="{CY+405}" font-size="18" fill="{G}">Common roll widths. Measure</text>')
+a(f'<text x="{x+30}" y="{CY+405}" font-size="18" fill="{G}">Typical roll widths. Measure</text>')
 a(f'<text x="{x+30}" y="{CY+429}" font-size="18" fill="{G}">your longest roll: that is L.</text>')
 
 # card 2: upright bin
