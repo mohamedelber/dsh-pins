@@ -1,0 +1,161 @@
+<div id="dsh-xl" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How many lights does your Christmas tree need?</h3>
+<p class="sub">Two taps: pick your tree height and the look you want. Lights, strands, ornaments, garland and ribbon appear right away.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="ft">feet</button><button type="button" data-u="m">metres</button></div></div>
+<fieldset><legend>1. Tree height</legend>
+<div class="opts hts" role="group" aria-label="Tree height">
+<button type="button" data-h="3"><b>3 ft</b><span>91 cm</span></button>
+<button type="button" data-h="4"><b>4 ft</b><span>122 cm</span></button>
+<button type="button" data-h="5"><b>5 ft</b><span>152 cm</span></button>
+<button type="button" data-h="6"><b>6 ft</b><span>183 cm</span></button>
+<button type="button" data-h="6.5"><b>6.5 ft</b><span>198 cm</span></button>
+<button type="button" data-h="7"><b>7 ft</b><span>213 cm</span></button>
+<button type="button" data-h="7.5"><b>7.5 ft</b><span>229 cm</span></button>
+<button type="button" data-h="8"><b>8 ft</b><span>244 cm</span></button>
+<button type="button" data-h="9"><b>9 ft</b><span>274 cm</span></button>
+<button type="button" data-h="10"><b>10 ft</b><span>305 cm</span></button>
+<button type="button" data-h="12"><b>12 ft</b><span>366 cm</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. The look you want</legend>
+<div class="opts" role="group" aria-label="Brightness">
+<button type="button" data-l="100" class="on"><b>Classic</b><span>100 lights per foot</span></button>
+<button type="button" data-l="150"><b>Full</b><span>150 lights per foot</span></button>
+<button type="button" data-l="200"><b>Extra bright</b><span>200 lights per foot</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: tree shape, strand size, exact height</summary>
+<p class="hint">Tree shape</p>
+<div class="opts" role="group" aria-label="Shape">
+<button type="button" data-s="1" class="on"><b>Full</b><span>Classic wide tree</span></button>
+<button type="button" data-s="0.7"><b>Slim</b><span>Narrow tree</span></button>
+<button type="button" data-s="0.5"><b>Pencil</b><span>Very narrow tree</span></button>
+</div>
+<div class="grid">
+<label><span>Lights per strand</span><select id="ss"><option value="50">50</option><option value="100" selected>100</option><option value="200">200</option><option value="300">300</option><option value="500">500</option><option value="1000">1000</option></select></label>
+<label><span>Exact tree height</span> <span data-lu="h"></span><input type="number" inputmode="decimal" min="1" step="0.5" id="hx" placeholder="optional"></label>
+</div>
+<p class="hint">Slim and pencil trees have much less branch surface, so we scale the numbers down (our estimate). Measure the tree itself, without the stand.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Lights</small><strong id="kl"></strong><em id="kle"></em></div>
+<div class="kpi"><small>Strands</small><strong id="ks"></strong><em id="kse"></em></div>
+<div class="kpi"><small>Ornaments</small><strong id="ko"></strong><em>standard size baubles</em></div>
+<div class="kpi"><small>Garland</small><strong id="kg"></strong><em>wrapped around the tree</em></div>
+<div class="kpi"><small>Ribbon</small><strong id="kr"></strong><em>at least</em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my shopping list</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-xl');if(!R)return;
+var FT=0.3048,unit='ft',H=7,L=100,S=1,summary='';
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
+function n(x){return Math.round(x).toLocaleString('en')}
+function r10(x){return Math.max(10,Math.round(x/10)*10)}
+function hl(h){var f=(Math.round(h*10)/10)+' ft';return unit==='m'?f+' ('+Math.round(h*30.48)+' cm)':f}
+function len(ft){return unit==='m'?Math.round(ft*FT)+' m':n(ft)+' ft'}
+function rib(yd){return unit==='m'?Math.round(yd*3*FT)+' m':n(yd)+' yards'}
+function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='m'?'(cm)':'(ft)'});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
+function setUnit(u){if(u===unit)return;var v=g('hx');unit=u;if(v!==null){$('hx').value=u==='m'?Math.round(v*30.48):Math.round(v/30.48*10)/10}lbl()}
+function mark(){R.querySelectorAll('[data-h]').forEach(function(x){x.classList.toggle('on',parseFloat(x.getAttribute('data-h'))===H)})}
+function svg(h,lights,gar){var W=360,Hh=230,s='<svg viewBox="0 0 '+W+' '+Hh+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Christmas tree with lights">';
+s+='<rect width="'+W+'" height="'+Hh+'" fill="#FBF6EF"/>';
+var th=70+120*Math.min(h,12)/12,cx=150,base=200,top=base-th,hw=th*0.32*(S===1?1:(S===0.7?0.72:0.5));
+s+='<rect x="'+(cx-6)+'" y="'+base+'" width="12" height="14" fill="#B98A5E"/>';
+s+='<polygon points="'+cx+','+top+' '+(cx-hw)+','+base+' '+(cx+hw)+','+base+'" fill="#5E7D57"/>';
+var rows=Math.max(3,Math.round(h*1.2));
+for(var i=1;i<=rows;i++){var y=top+(base-top)*i/(rows+0.5),w=hw*(y-top)/(base-top);s+='<path d="M'+(cx-w)+' '+(y-6)+' Q'+cx+' '+(y+6)+' '+(cx+w)+' '+(y-6)+'" fill="none" stroke="#C85A32" stroke-width="2" opacity="0.7"/>'}
+var dots=Math.min(160,Math.round(lights/20)),seed=7;
+for(var k=0;k<dots;k++){seed=(seed*9301+49297)%233280;var a=seed/233280;seed=(seed*9301+49297)%233280;var b=seed/233280;var yy=top+12+(base-top-16)*Math.sqrt(a),ww=hw*(yy-top)/(base-top)*0.9;s+='<circle cx="'+(cx-ww+2*ww*b)+'" cy="'+yy+'" r="2.2" fill="#FFD66B"/>'}
+s+='<polygon points="'+cx+','+(top-9)+' '+(cx+4)+','+(top-1)+' '+(cx-4)+','+(top-1)+'" fill="#ECCDA0"/>';
+s+='<line x1="'+(cx+hw+22)+'" y1="'+top+'" x2="'+(cx+hw+22)+'" y2="'+base+'" stroke="#342E2A" stroke-width="1.5"/><line x1="'+(cx+hw+16)+'" y1="'+top+'" x2="'+(cx+hw+28)+'" y2="'+top+'" stroke="#342E2A"/><line x1="'+(cx+hw+16)+'" y1="'+base+'" x2="'+(cx+hw+28)+'" y2="'+base+'" stroke="#342E2A"/>';
+s+='<text x="'+(cx+hw+32)+'" y="'+((top+base)/2+4)+'" font-size="13" font-weight="700" fill="#342E2A">'+hl(h)+'</text>';
+s+='<text x="'+(cx+hw+32)+'" y="'+((top+base)/2+22)+'" font-size="11" fill="#6E645C">'+n(lights)+' lights</text>';
+return s+'</svg>'}
+function calc(){var hx=g('hx');var h=(hx===null||hx<=0)?H:(unit==='m'?hx/30.48:hx);if(h>40){h=40}
+var ss=parseInt($('ss').value,10);
+var lights=r10(h*L*S),strands=Math.ceil(lights/ss);
+var o1=h<9?10:12,o2=h<9?15:20,orn1=Math.round(h*o1*S),orn2=Math.round(h*o2*S);
+var gar=Math.round(h*(h<6?7:9)*S),rb=Math.round(h*3*S);
+$('kl').textContent=n(lights);$('kle').textContent=L+' per foot'+(S===1?'':', '+(S===0.7?'slim':'pencil')+' tree');
+$('ks').textContent=strands+' x '+ss;$('kse').textContent=n(strands*ss)+' lights in total';
+$('ko').textContent=orn1+' to '+orn2;$('kg').textContent=len(gar);$('kr').textContent=rib(rb);
+$('vv').textContent='A '+hl(h)+' tree needs about '+n(lights)+' lights: '+strands+' strand'+(strands===1?'':'s')+' of '+ss+'.';
+var tips=[];
+tips.push('Read the box for the maximum number of strands you can connect end to end, and never link more than it allows.');
+tips.push('Plug in and test every strand before it goes on the tree, and throw away strands with frayed or pinched wires.');
+if(L===200){tips.push('200 per foot is a very bright, dense look. Spread the lights deep into the branches so it glows rather than glares.')}
+if(h<6){tips.push('On a small tree, battery micro lights avoid a cable across the floor; check the battery box is easy to reach.')}
+if(h>=9){tips.push('Tall trees use a lot of lights: a few 500 or 1000-light sets mean fewer plugs and connections than many 100-light strands.')}
+tips.push('Keep the tree at least 3 feet (90 cm) from heaters, radiators, fireplaces and candles, and switch the lights off when you go to bed or leave the house.');
+$('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
+$('vz').innerHTML=svg(h,lights,gar);
+summary='Christmas tree '+hl(h)+' ('+L+' lights per foot'+(S===1?'':', '+(S===0.7?'slim':'pencil')+' tree')+'): '+n(lights)+' lights = '+strands+' strands of '+ss+'; '+orn1+'-'+orn2+' ornaments; '+len(gar)+' garland; '+rib(rb)+' ribbon. dailyspacehacks.com/christmas-tree-lights-calculator/'}
+R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){H=parseFloat(b.getAttribute('data-h'));$('hx').value='';mark();calc()})});
+R.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){L=parseInt(b.getAttribute('data-l'),10);R.querySelectorAll('[data-l]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){S=parseFloat(b.getAttribute('data-s'));R.querySelectorAll('[data-s]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
+$('hx').addEventListener('input',function(){var v=g('hx');if(v!==null){R.querySelectorAll('[data-h]').forEach(function(x){x.classList.remove('on')})}else{mark()}calc()});
+$('ss').addEventListener('change',calc);
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my shopping list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your shopping list:',summary)})}catch(e){window.prompt('Copy your shopping list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+var lang=(navigator.language||'en-GB');
+if(lang==='en'||lang.indexOf('en-US')===0){unit='ft';H=7}else{unit='m';H=6}
+lbl();mark();calc();
+})();
+</script>
+</div>

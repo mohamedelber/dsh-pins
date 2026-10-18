@@ -1,0 +1,4 @@
+{"model":"gpt-image-2.5-sunburst","items":[
+{"name":"02-closeup-v2","size":"1024x1024","quality":"medium","edit_from":"gen/out/xmas-lights/02-closeup.png","prompt":"Keep the Christmas tree branches, string lights and ornaments exactly as they are. Replace the entire blurred background with a soft out-of-focus cream wall and a linen sofa: remove every candle, every flame and the fireplace completely. No candles, no fireplace, no text."},
+{"name":"04-pin-v2","size":"1024x1536","quality":"medium","edit_from":"gen/out/xmas-lights/04-pin.png","prompt":"Keep the lit Christmas tree, its lights, ornaments, star topper and knit skirt exactly as they are. Remove the stone fireplace on the right completely and replace it with a plain cream painted wall with a white oak side table holding a small plant. No fireplace, no candles, no text."}
+]}
