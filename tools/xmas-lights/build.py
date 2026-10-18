@@ -13,9 +13,9 @@ p("Pick your tree height and the look you want. You also get a full shopping lis
 add('<!-- wp:html -->\n'+open('tool.html').read()+'\n<!-- /wp:html -->')
 h2("Christmas Tree Lights Chart")
 rows=[]
-for h in [4,5,6,6.5,7,7.5,8,9,10,12]:
+for h in [3,4,5,6,6.5,7,7.5,8,9,10,12]:
     hs=(str(h).rstrip('0').rstrip('.') if isinstance(h,float) else str(h))
-    rows.append([f"{hs} ft ({round(h*30.48)} cm)",f"{round(h*100):,}",f"{round(h*150):,}",f"{round(h*200):,}"])
+    rows.append([f"{hs} ft ({round(h*30.48)} cm)",f"{round(h*100):,}",f"{round(h*150/10)*10:,}",f"{round(h*200):,}"])
 table(["Tree height","Classic (100 per ft)","Full (150 per ft)","Extra bright (200 per ft)"],rows)
 p(f"The 100-per-foot rule is the one you will see most often. Christmas Central says {ext(CC,'decorators typically recommend 100 mini lights for every foot')} of tree height, and Wayfair's {ext(WF,'guide to putting lights on a Christmas tree')} uses the same rule, rising to 150 per foot for an especially full tree. UK garden centre Gates gives a range of {ext(GG,'100 to 150 lights per foot')}, and Angi suggests up to {ext(AN,'200 per foot for high-powered brightness')}. Round up to whole strands, and if you are between two sizes, buy the bigger number: spare lights are easier than a gap.")
 img(1)
@@ -23,7 +23,7 @@ h2("How the Christmas Tree Lights Calculator Works")
 lst([f"<strong>Lights</strong> = tree height in feet x 100, 150 or 200, rounded to the nearest 10.",
 "<strong>Strands</strong> = lights divided by the lights per strand on the box (100 by default), rounded up.",
 f"<strong>Ornaments:</strong> Christmas Central recommends {ext(CC,'10 to 15 standard ornaments per foot')} for trees under 9 ft and 12 to 20 per foot for taller trees.",
-f"<strong>Garland:</strong> about 9 ft of garland for every foot of a large tree, less on a small one (Christmas Central), and up to 10 ft per foot for a layered look ({ext(LE,'Livingetc')}). The calculator uses 9 ft per foot from 6 ft up and 7 ft per foot below that.",
+f"<strong>Garland:</strong> about 9 ft of garland for every foot of a large tree, less on a small one (Christmas Central), and 9 to 10 ft per foot for a layered, lush look ({ext(LE,'Livingetc')}). The calculator uses 9 ft per foot from 6 ft up and 7 ft per foot below that (our estimate).",
 f"<strong>Ribbon:</strong> Balsam Hill's {ext(BH,'tree decorating guide')} suggests at least 3 yards (about 2.7 m) per foot of tree.",
 "<strong>Slim and pencil trees:</strong> they have far less branch surface, so we scale everything by 0.7 and 0.5. This is our own estimate, not a rule from the guides above."])
 h2("How to Put Lights on a Christmas Tree")

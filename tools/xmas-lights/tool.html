@@ -48,7 +48,7 @@
 @media print{.dsh-calc .acts{display:none}}
 </style>
 <h3>How many lights does your Christmas tree need?</h3>
-<p class="sub">Two taps: pick your tree height and the look you want. Lights, strands, ornaments, garland and ribbon appear right away.</p>
+<p class="sub">Pick your tree height and the look you want. Lights, strands, ornaments, garland and ribbon appear right away.</p>
 <div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="ft">feet</button><button type="button" data-u="m">metres</button></div></div>
 <fieldset><legend>1. Tree height</legend>
 <div class="opts hts" role="group" aria-label="Tree height">
@@ -81,7 +81,7 @@
 </div>
 <div class="grid">
 <label><span>Lights per strand</span><select id="ss"><option value="50">50</option><option value="100" selected>100</option><option value="200">200</option><option value="300">300</option><option value="500">500</option><option value="1000">1000</option></select></label>
-<label><span>Exact tree height</span> <span data-lu="h"></span><input type="number" inputmode="decimal" min="1" step="0.5" id="hx" placeholder="optional"></label>
+<label><span>Exact tree height</span> <span data-lu="h"></span><input type="number" inputmode="decimal" min="1" max="40" step="0.5" id="hx" placeholder="optional"></label>
 </div>
 <p class="hint">Slim and pencil trees have much less branch surface, so we scale the numbers down (our estimate). Measure the tree itself, without the stand.</p>
 </details>
@@ -126,7 +126,7 @@ s+='<line x1="'+(cx+hw+22)+'" y1="'+top+'" x2="'+(cx+hw+22)+'" y2="'+base+'" str
 s+='<text x="'+(cx+hw+32)+'" y="'+((top+base)/2+4)+'" font-size="13" font-weight="700" fill="#342E2A">'+hl(h)+'</text>';
 s+='<text x="'+(cx+hw+32)+'" y="'+((top+base)/2+22)+'" font-size="11" fill="#6E645C">'+n(lights)+' lights</text>';
 return s+'</svg>'}
-function calc(){var hx=g('hx');var h=(hx===null||hx<=0)?H:(unit==='m'?hx/30.48:hx);if(h>40){h=40}
+function calc(){var hx=g('hx');var h=(hx===null||hx<=0)?H:(unit==='m'?(hx<5?hx*100:hx)/30.48:hx);if(h>40){h=40}
 var ss=parseInt($('ss').value,10);
 var lights=r10(h*L*S),strands=Math.ceil(lights/ss);
 var o1=h<9?10:12,o2=h<9?15:20,orn1=Math.round(h*o1*S),orn2=Math.round(h*o2*S);
