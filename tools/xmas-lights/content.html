@@ -1,0 +1,331 @@
+<!-- wp:paragraph -->
+<p>How many lights does a Christmas tree need? The usual rule is about 100 lights per foot of tree height, so a 7 ft tree needs around 700 lights, and 150 or even 200 per foot if you like a fuller, brighter look. This <strong>Christmas tree lights calculator</strong> works it out for your tree in two taps, and tells you how many strands to buy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pick your tree height and the look you want. You also get a full shopping list: how many ornaments, how much garland and how much ribbon. Open <em>More options</em> for a slim or pencil tree, a different strand size or an exact height in feet or centimetres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-xl" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How many lights does your Christmas tree need?</h3>
+<p class="sub">Two taps: pick your tree height and the look you want. Lights, strands, ornaments, garland and ribbon appear right away.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="ft">feet</button><button type="button" data-u="m">metres</button></div></div>
+<fieldset><legend>1. Tree height</legend>
+<div class="opts hts" role="group" aria-label="Tree height">
+<button type="button" data-h="3"><b>3 ft</b><span>91 cm</span></button>
+<button type="button" data-h="4"><b>4 ft</b><span>122 cm</span></button>
+<button type="button" data-h="5"><b>5 ft</b><span>152 cm</span></button>
+<button type="button" data-h="6"><b>6 ft</b><span>183 cm</span></button>
+<button type="button" data-h="6.5"><b>6.5 ft</b><span>198 cm</span></button>
+<button type="button" data-h="7"><b>7 ft</b><span>213 cm</span></button>
+<button type="button" data-h="7.5"><b>7.5 ft</b><span>229 cm</span></button>
+<button type="button" data-h="8"><b>8 ft</b><span>244 cm</span></button>
+<button type="button" data-h="9"><b>9 ft</b><span>274 cm</span></button>
+<button type="button" data-h="10"><b>10 ft</b><span>305 cm</span></button>
+<button type="button" data-h="12"><b>12 ft</b><span>366 cm</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. The look you want</legend>
+<div class="opts" role="group" aria-label="Brightness">
+<button type="button" data-l="100" class="on"><b>Classic</b><span>100 lights per foot</span></button>
+<button type="button" data-l="150"><b>Full</b><span>150 lights per foot</span></button>
+<button type="button" data-l="200"><b>Extra bright</b><span>200 lights per foot</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: tree shape, strand size, exact height</summary>
+<p class="hint">Tree shape</p>
+<div class="opts" role="group" aria-label="Shape">
+<button type="button" data-s="1" class="on"><b>Full</b><span>Classic wide tree</span></button>
+<button type="button" data-s="0.7"><b>Slim</b><span>Narrow tree</span></button>
+<button type="button" data-s="0.5"><b>Pencil</b><span>Very narrow tree</span></button>
+</div>
+<div class="grid">
+<label><span>Lights per strand</span><select id="ss"><option value="50">50</option><option value="100" selected>100</option><option value="200">200</option><option value="300">300</option><option value="500">500</option><option value="1000">1000</option></select></label>
+<label><span>Exact tree height</span> <span data-lu="h"></span><input type="number" inputmode="decimal" min="1" step="0.5" id="hx" placeholder="optional"></label>
+</div>
+<p class="hint">Slim and pencil trees have much less branch surface, so we scale the numbers down (our estimate). Measure the tree itself, without the stand.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Lights</small><strong id="kl"></strong><em id="kle"></em></div>
+<div class="kpi"><small>Strands</small><strong id="ks"></strong><em id="kse"></em></div>
+<div class="kpi"><small>Ornaments</small><strong id="ko"></strong><em>standard size baubles</em></div>
+<div class="kpi"><small>Garland</small><strong id="kg"></strong><em>wrapped around the tree</em></div>
+<div class="kpi"><small>Ribbon</small><strong id="kr"></strong><em>at least</em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my shopping list</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-xl');if(!R)return;
+var FT=0.3048,unit='ft',H=7,L=100,S=1,summary='';
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
+function n(x){return Math.round(x).toLocaleString('en')}
+function r10(x){return Math.max(10,Math.round(x/10)*10)}
+function hl(h){var f=(Math.round(h*10)/10)+' ft';return unit==='m'?f+' ('+Math.round(h*30.48)+' cm)':f}
+function len(ft){return unit==='m'?Math.round(ft*FT)+' m':n(ft)+' ft'}
+function rib(yd){return unit==='m'?Math.round(yd*3*FT)+' m':n(yd)+' yards'}
+function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='m'?'(cm)':'(ft)'});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
+function setUnit(u){if(u===unit)return;var v=g('hx');unit=u;if(v!==null){$('hx').value=u==='m'?Math.round(v*30.48):Math.round(v/30.48*10)/10}lbl()}
+function mark(){R.querySelectorAll('[data-h]').forEach(function(x){x.classList.toggle('on',parseFloat(x.getAttribute('data-h'))===H)})}
+function svg(h,lights,gar){var W=360,Hh=230,s='<svg viewBox="0 0 '+W+' '+Hh+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Christmas tree with lights">';
+s+='<rect width="'+W+'" height="'+Hh+'" fill="#FBF6EF"/>';
+var th=70+120*Math.min(h,12)/12,cx=150,base=200,top=base-th,hw=th*0.32*(S===1?1:(S===0.7?0.72:0.5));
+s+='<rect x="'+(cx-6)+'" y="'+base+'" width="12" height="14" fill="#B98A5E"/>';
+s+='<polygon points="'+cx+','+top+' '+(cx-hw)+','+base+' '+(cx+hw)+','+base+'" fill="#5E7D57"/>';
+var rows=Math.max(3,Math.round(h*1.2));
+for(var i=1;i<=rows;i++){var y=top+(base-top)*i/(rows+0.5),w=hw*(y-top)/(base-top);s+='<path d="M'+(cx-w)+' '+(y-6)+' Q'+cx+' '+(y+6)+' '+(cx+w)+' '+(y-6)+'" fill="none" stroke="#C85A32" stroke-width="2" opacity="0.7"/>'}
+var dots=Math.min(160,Math.round(lights/20)),seed=7;
+for(var k=0;k<dots;k++){seed=(seed*9301+49297)%233280;var a=seed/233280;seed=(seed*9301+49297)%233280;var b=seed/233280;var yy=top+12+(base-top-16)*Math.sqrt(a),ww=hw*(yy-top)/(base-top)*0.9;s+='<circle cx="'+(cx-ww+2*ww*b)+'" cy="'+yy+'" r="2.2" fill="#FFD66B"/>'}
+s+='<polygon points="'+cx+','+(top-9)+' '+(cx+4)+','+(top-1)+' '+(cx-4)+','+(top-1)+'" fill="#ECCDA0"/>';
+s+='<line x1="'+(cx+hw+22)+'" y1="'+top+'" x2="'+(cx+hw+22)+'" y2="'+base+'" stroke="#342E2A" stroke-width="1.5"/><line x1="'+(cx+hw+16)+'" y1="'+top+'" x2="'+(cx+hw+28)+'" y2="'+top+'" stroke="#342E2A"/><line x1="'+(cx+hw+16)+'" y1="'+base+'" x2="'+(cx+hw+28)+'" y2="'+base+'" stroke="#342E2A"/>';
+s+='<text x="'+(cx+hw+32)+'" y="'+((top+base)/2+4)+'" font-size="13" font-weight="700" fill="#342E2A">'+hl(h)+'</text>';
+s+='<text x="'+(cx+hw+32)+'" y="'+((top+base)/2+22)+'" font-size="11" fill="#6E645C">'+n(lights)+' lights</text>';
+return s+'</svg>'}
+function calc(){var hx=g('hx');var h=(hx===null||hx<=0)?H:(unit==='m'?hx/30.48:hx);if(h>40){h=40}
+var ss=parseInt($('ss').value,10);
+var lights=r10(h*L*S),strands=Math.ceil(lights/ss);
+var o1=h<9?10:12,o2=h<9?15:20,orn1=Math.round(h*o1*S),orn2=Math.round(h*o2*S);
+var gar=Math.round(h*(h<6?7:9)*S),rb=Math.round(h*3*S);
+$('kl').textContent=n(lights);$('kle').textContent=L+' per foot'+(S===1?'':', '+(S===0.7?'slim':'pencil')+' tree');
+$('ks').textContent=strands+' x '+ss;$('kse').textContent=n(strands*ss)+' lights in total';
+$('ko').textContent=orn1+' to '+orn2;$('kg').textContent=len(gar);$('kr').textContent=rib(rb);
+$('vv').textContent='A '+hl(h)+' tree needs about '+n(lights)+' lights: '+strands+' strand'+(strands===1?'':'s')+' of '+ss+'.';
+var tips=[];
+tips.push('Read the box for the maximum number of strands you can connect end to end, and never link more than it allows.');
+tips.push('Plug in and test every strand before it goes on the tree, and throw away strands with frayed or pinched wires.');
+if(L===200){tips.push('200 per foot is a very bright, dense look. Spread the lights deep into the branches so it glows rather than glares.')}
+if(h<6){tips.push('On a small tree, battery micro lights avoid a cable across the floor; check the battery box is easy to reach.')}
+if(h>=9){tips.push('Tall trees use a lot of lights: a few 500 or 1000-light sets mean fewer plugs and connections than many 100-light strands.')}
+tips.push('Keep the tree at least 3 feet (90 cm) from heaters, radiators, fireplaces and candles, and switch the lights off when you go to bed or leave the house.');
+$('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
+$('vz').innerHTML=svg(h,lights,gar);
+summary='Christmas tree '+hl(h)+' ('+L+' lights per foot'+(S===1?'':', '+(S===0.7?'slim':'pencil')+' tree')+'): '+n(lights)+' lights = '+strands+' strands of '+ss+'; '+orn1+'-'+orn2+' ornaments; '+len(gar)+' garland; '+rib(rb)+' ribbon. dailyspacehacks.com/christmas-tree-lights-calculator/'}
+R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){H=parseFloat(b.getAttribute('data-h'));$('hx').value='';mark();calc()})});
+R.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){L=parseInt(b.getAttribute('data-l'),10);R.querySelectorAll('[data-l]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){S=parseFloat(b.getAttribute('data-s'));R.querySelectorAll('[data-s]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
+$('hx').addEventListener('input',function(){var v=g('hx');if(v!==null){R.querySelectorAll('[data-h]').forEach(function(x){x.classList.remove('on')})}else{mark()}calc()});
+$('ss').addEventListener('change',calc);
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my shopping list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your shopping list:',summary)})}catch(e){window.prompt('Copy your shopping list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+var lang=(navigator.language||'en-GB');
+if(lang==='en'||lang.indexOf('en-US')===0){unit='ft';H=7}else{unit='m';H=6}
+lbl();mark();calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Christmas Tree Lights Chart</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Tree height</th><th>Classic (100 per ft)</th><th>Full (150 per ft)</th><th>Extra bright (200 per ft)</th></tr></thead><tbody><tr><td>4 ft (122 cm)</td><td>400</td><td>600</td><td>800</td></tr><tr><td>5 ft (152 cm)</td><td>500</td><td>750</td><td>1,000</td></tr><tr><td>6 ft (183 cm)</td><td>600</td><td>900</td><td>1,200</td></tr><tr><td>6.5 ft (198 cm)</td><td>650</td><td>975</td><td>1,300</td></tr><tr><td>7 ft (213 cm)</td><td>700</td><td>1,050</td><td>1,400</td></tr><tr><td>7.5 ft (229 cm)</td><td>750</td><td>1,125</td><td>1,500</td></tr><tr><td>8 ft (244 cm)</td><td>800</td><td>1,200</td><td>1,600</td></tr><tr><td>9 ft (274 cm)</td><td>900</td><td>1,350</td><td>1,800</td></tr><tr><td>10 ft (305 cm)</td><td>1,000</td><td>1,500</td><td>2,000</td></tr><tr><td>12 ft (366 cm)</td><td>1,200</td><td>1,800</td><td>2,400</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The 100-per-foot rule is the one you will see most often. Christmas Central says <a href="https://www.christmascentral.com/how-to-decorate-your-christmas-tree/" target="_blank" rel="noopener">decorators typically recommend 100 mini lights for every foot</a> of tree height, and Wayfair's <a href="https://www.wayfair.com/sca/ideas-and-advice/guides/how-to-put-lights-on-a-christmas-tree-T8505" target="_blank" rel="noopener">guide to putting lights on a Christmas tree</a> uses the same rule, rising to 150 per foot for an especially full tree. UK garden centre Gates gives a range of <a href="https://www.gatesgardencentre.co.uk/how-many-christmas-lights-do-i-need/" target="_blank" rel="noopener">100 to 150 lights per foot</a>, and Angi suggests up to <a href="https://www.angi.com/articles/how-to-calculate-christmas-lights-needed.htm" target="_blank" rel="noopener">200 per foot for high-powered brightness</a>. Round up to whole strands, and if you are between two sizes, buy the bigger number: spare lights are easier than a gap.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2612,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/christmas-tree-lights-01-lit-tree-living-room.jpg" alt="Tall Christmas tree lit with warm white lights spread evenly from top to bottom, with copper and cream ornaments, in a bright living room at dusk" class="wp-image-2612"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How the Christmas Tree Lights Calculator Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Lights</strong> = tree height in feet x 100, 150 or 200, rounded to the nearest 10.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Strands</strong> = lights divided by the lights per strand on the box (100 by default), rounded up.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Ornaments:</strong> Christmas Central recommends <a href="https://www.christmascentral.com/how-to-decorate-your-christmas-tree/" target="_blank" rel="noopener">10 to 15 standard ornaments per foot</a> for trees under 9 ft and 12 to 20 per foot for taller trees.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Garland:</strong> about 9 ft of garland for every foot of a large tree, less on a small one (Christmas Central), and up to 10 ft per foot for a layered look (<a href="https://www.livingetc.com/advice/how-to-hang-a-garland-on-a-christmas-tree" target="_blank" rel="noopener">Livingetc</a>). The calculator uses 9 ft per foot from 6 ft up and 7 ft per foot below that.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Ribbon:</strong> Balsam Hill's <a href="https://balsamhill.co.uk/christmas-tree-decorations-ultimate-guide" target="_blank" rel="noopener">tree decorating guide</a> suggests at least 3 yards (about 2.7 m) per foot of tree.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Slim and pencil trees:</strong> they have far less branch surface, so we scale everything by 0.7 and 0.5. This is our own estimate, not a rule from the guides above.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Put Lights on a Christmas Tree</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Test every strand first.</strong> Plug each set in on the floor, so you find dead bulbs before they are on the tree.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Start at the bottom, near the socket.</strong> That way the plug end reaches the wall without an extension lead across the room.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Work deep, then out.</strong> Run the lights along each branch from the trunk to the tip and back. Lights near the trunk make the tree glow from inside.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Work in sections.</strong> Wayfair suggests a vertical method: picture the tree as three or four triangles from top to bottom and light one at a time. A loose spiral with about 3 inches between loops is quicker.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Step back and squint.</strong> Dark patches show up clearly. Move a few lights before you add ornaments.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:image {"id":2614,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/christmas-tree-lights-02-lights-deep-in-branches.jpg" alt="Close-up of Christmas tree branches with warm white mini lights woven deep into the branches and cream baubles, a sofa blurred in the background" class="wp-image-2614"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Do not wrap the wire tightly around single branches. Wayfair notes that real branches can droop under heavy strands, so lightweight LED sets are kinder to a real tree.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Lights for Small, Slim and Tabletop Trees</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2615,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/christmas-tree-lights-03-small-tree-basket.jpg" alt="Small 4 ft Christmas tree in a woven basket with warm micro lights and natural wood ornaments beside a console table" class="wp-image-2615"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>A 4 ft tree still needs about 400 lights for the classic look, which surprises many people. Battery micro lights avoid a cable across the floor, and the thin wire disappears into small branches. A slim or pencil tree fits a narrow corner but has fewer, shorter branches, so you need fewer lights; switch the shape in <em>More options</em> to see the difference. For other small-space holiday ideas, see our <a href="https://dailyspacehacks.com/christmas-mantel-decorating-ideas/">Christmas mantel decorating ideas</a> and <a href="https://dailyspacehacks.com/coffee-table-decor/">coffee table decor ideas</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Christmas Light Safety</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The U.S. Fire Administration's <a href="https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/holiday/" target="_blank" rel="noopener">holiday fire safety advice</a> is short and practical:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Read the manufacturer's instructions for the number of light strands you can connect.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Inspect holiday lights every year before you put them up, and throw away strands with frayed or pinched wires.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Keep the tree at least 3 feet (about 90 cm) from heat sources like fireplaces, radiators, space heaters, candles and heat vents, and keep it clear of exits.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Wayfair adds that you should always turn off the lights on a real tree before you go to sleep or leave the house. Doing the same with an artificial tree costs nothing and is a good habit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fchristmas-tree-lights-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fxmas-lights-checklist.jpg&description=Christmas%20tree%20lights%20cheat%20sheet%3A%20100%20lights%20per%20foot.%206%20ft%20tree%20600%20lights%2C%207%20ft%20700%2C%207.5%20ft%20750%2C%209%20ft%20900" target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/christmas-tree-lights-checklist.jpg" alt="Christmas tree lights cheat sheet: 6 ft tree 600 lights, 7 ft 700, 7.5 ft 750, 9 ft 900; use 150 per foot for a fuller look" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/xmas-lights-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the lights per tree height so you have it when you shop for lights.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fchristmas-tree-lights-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fxmas-lights-checklist.jpg&description=Christmas%20tree%20lights%20cheat%20sheet%3A%20100%20lights%20per%20foot.%206%20ft%20tree%20600%20lights%2C%207%20ft%20700%2C%207.5%20ft%20750%2C%209%20ft%20900" target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Christmas Tree Lights FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many lights do I need for a 7 ft Christmas tree?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A 7 ft tree needs about 700 lights for a classic look, using the rule of 100 lights per foot. For a fuller look use about 1,050 lights (150 per foot), and for an extra bright tree about 1,400 (200 per foot). That is 7, 11 or 14 strands of 100.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many lights do I need for a 6 ft Christmas tree?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Plan about 600 lights for a 6 ft tree, or 900 for a fuller look. With 100-light strands that is 6 or 9 sets. A slim 6 ft tree needs fewer, around 420 for the classic look, because it has less branch surface.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many lights for a 7.5 ft tree?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A 7.5 ft tree needs about 750 lights for the classic 100-per-foot look, about 1,130 for a full look and about 1,500 for extra bright. If your tree is pre-lit, check how many lights it already has before you buy more.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many ornaments and how much garland do I need?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>For a 7 ft tree, plan 70 to 105 standard ornaments (10 to 15 per foot), about 63 ft (19 m) of garland and at least 21 yards (19 m) of ribbon. The calculator above works these out for any tree height.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Holiday Guides</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When the season is over, our <a href="https://dailyspacehacks.com/christmas-decoration-storage/">Christmas decoration storage ideas</a> help you pack the lights so they do not tangle. Setting the table? See our <a href="https://dailyspacehacks.com/christmas-table-decoration-ideas/">Christmas table decoration ideas</a>, and for wrapping, our <a href="https://dailyspacehacks.com/gift-wrap-storage-ideas/">gift wrap storage ideas</a>. Planning the room around the tree? Try our <a href="https://dailyspacehacks.com/rug-size-calculator/">rug size calculator</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->

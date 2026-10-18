@@ -19,7 +19,7 @@ for h in [4,5,6,6.5,7,7.5,8,9,10,12]:
 table(["Tree height","Classic (100 per ft)","Full (150 per ft)","Extra bright (200 per ft)"],rows)
 p(f"The 100-per-foot rule is the one you will see most often. Christmas Central says {ext(CC,'decorators typically recommend 100 mini lights for every foot')} of tree height, and Wayfair's {ext(WF,'guide to putting lights on a Christmas tree')} uses the same rule, rising to 150 per foot for an especially full tree. UK garden centre Gates gives a range of {ext(GG,'100 to 150 lights per foot')}, and Angi suggests up to {ext(AN,'200 per foot for high-powered brightness')}. Round up to whole strands, and if you are between two sizes, buy the bigger number: spare lights are easier than a gap.")
 img(1)
-h2("How the Calculator Works")
+h2("How the Christmas Tree Lights Calculator Works")
 lst([f"<strong>Lights</strong> = tree height in feet x 100, 150 or 200, rounded to the nearest 10.",
 "<strong>Strands</strong> = lights divided by the lights per strand on the box (100 by default), rounded up.",
 f"<strong>Ornaments:</strong> Christmas Central recommends {ext(CC,'10 to 15 standard ornaments per foot')} for trees under 9 ft and 12 to 20 per foot for taller trees.",
@@ -50,7 +50,7 @@ p("A 7 ft tree needs about 700 lights for a classic look, using the rule of 100 
 h3("How many lights do I need for a 6 ft Christmas tree?")
 p("Plan about 600 lights for a 6 ft tree, or 900 for a fuller look. With 100-light strands that is 6 or 9 sets. A slim 6 ft tree needs fewer, around 420 for the classic look, because it has less branch surface.")
 h3("How many lights for a 7.5 ft tree?")
-p("A 7.5 ft tree needs about 750 lights for the classic 100-per-foot look, about 1,130 for a full look and about 1,500 for extra bright. Most 7.5 ft pre-lit trees fall somewhere in this range, so check the box before you add more.")
+p("A 7.5 ft tree needs about 750 lights for the classic 100-per-foot look, about 1,130 for a full look and about 1,500 for extra bright. If your tree is pre-lit, check how many lights it already has before you buy more.")
 h3("How many ornaments and how much garland do I need?")
 p("For a 7 ft tree, plan 70 to 105 standard ornaments (10 to 15 per foot), about 63 ft (19 m) of garland and at least 21 yards (19 m) of ribbon. The calculator above works these out for any tree height.")
 h2("More Holiday Guides")
