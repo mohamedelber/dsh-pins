@@ -1,0 +1,113 @@
+<div id="dsh-calc" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .lay{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.dsh-calc .lay button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .lay button b{display:block;font-size:.95rem}
+.dsh-calc .lay button span{font-size:.8rem;color:var(--mut)}
+.dsh-calc .lay button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .g3{grid-template-columns:repeat(3,1fr)}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.15rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px}
+.dsh-calc .verdict.ok{background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.no{background:var(--badl);color:var(--bad)}
+.dsh-calc table{width:100%;border-collapse:collapse;font-size:.9rem;margin:0}
+.dsh-calc th,.dsh-calc td{padding:8px 6px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}
+.dsh-calc th{font-size:.78rem;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .p{color:#3F5E39;font-weight:700}
+.dsh-calc .f{color:var(--bad);font-weight:700}
+.dsh-calc .tips{margin:12px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:6px}
+.dsh-calc .note{font-size:.78rem;color:var(--mut);margin:12px 0 0}
+</style>
+<h3>Will your washer and dryer fit?</h3>
+<p class="sub">Choose a layout, enter your space and your machines, and see what fits.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="in" class="on">Inches</button><button type="button" data-u="cm">Centimeters</button></div></div>
+<div class="lay" role="group" aria-label="Layout">
+<button type="button" data-l="fs" class="on"><b>Side by side</b><span>Front-load pair</span></button>
+<button type="button" data-l="st"><b>Stacked</b><span>Front-load pair</span></button>
+<button type="button" data-l="tl"><b>Top-load washer</b><span>With a dryer beside it</span></button>
+<button type="button" data-l="cp"><b>Compact stack</b><span>24-inch machines</span></button>
+</div>
+<fieldset><legend>Your space</legend>
+<p class="hint">Measure wall to wall, back wall to the front edge of the space, and floor to the lowest thing above (shelf, cabinet or ceiling).</p>
+<div class="grid">
+<label>Width<input type="number" inputmode="decimal" min="0" step="0.5" id="sw" value="60"></label>
+<label>Depth<input type="number" inputmode="decimal" min="0" step="0.5" id="sd" value="40"></label>
+<label>Height<input type="number" inputmode="decimal" min="0" step="0.5" id="sh" value="96"></label>
+<label>Free floor in front<input type="number" inputmode="decimal" min="0" step="0.5" id="sf" value="48"></label>
+</div></fieldset>
+<fieldset><legend id="m1l">Washer</legend>
+<div class="grid g3">
+<label>Width<input type="number" inputmode="decimal" min="0" step="0.25" id="aw"></label>
+<label>Height<input type="number" inputmode="decimal" min="0" step="0.25" id="ah"></label>
+<label>Depth<input type="number" inputmode="decimal" min="0" step="0.25" id="ad"></label>
+</div></fieldset>
+<fieldset><legend id="m2l">Dryer</legend>
+<div class="grid g3">
+<label>Width<input type="number" inputmode="decimal" min="0" step="0.25" id="bw"></label>
+<label>Height<input type="number" inputmode="decimal" min="0" step="0.25" id="bh"></label>
+<label>Depth<input type="number" inputmode="decimal" min="0" step="0.25" id="bd"></label>
+</div>
+<p class="hint">Typical sizes are filled in. For an exact answer, copy the numbers from your model&#8217;s spec sheet.</p></fieldset>
+<div class="res" aria-live="polite"><div id="dsh-v" class="verdict"></div><table><thead><tr><th>Check</th><th>You need</th><th>You have</th><th>Result</th></tr></thead><tbody id="dsh-t"></tbody></table><ul class="tips" id="dsh-tips"></ul>
+<p class="note">Clearances used: 1 in (2.5 cm) on each side and between machines, 6 in (15 cm) behind for hoses and the vent, about 4 ft (122 cm) in front of front-loaders and 2 ft (61 cm) in front of top-loaders, and 2 ft (61 cm) above a top-load lid, based on the Whirlpool laundry sizing guide. Always follow your model&#8217;s installation instructions.</p></div>
+<script>
+(function(){
+var R=document.getElementById('dsh-calc');if(!R)return;
+var CM=2.54,unit='in',lay='fs';
+var D={fs:{a:[27,39,33],b:[27,39,33],m1:'Washer',m2:'Dryer'},st:{a:[27,39,33],b:[27,39,33],m1:'Washer (bottom)',m2:'Dryer (top)'},tl:{a:[27.5,43,27.5],b:[27,42,28],m1:'Top-load washer',m2:'Dryer'},cp:{a:[24,34,25],b:[24,34,25],m1:'Compact washer (bottom)',m2:'Compact dryer (top)'}};
+var ids=['sw','sd','sh','sf','aw','ah','ad','bw','bh','bd'];
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);if(isNaN(v)||v<0)v=0;return unit==='cm'?v/CM:v}
+function s(i,inch){$(i).value=unit==='cm'?Math.round(inch*CM*10)/10:(Math.round(inch*4)/4)}
+function f(inch){var a=Math.abs(inch);return unit==='cm'?Math.round(a*CM)+' cm':(Math.round(a*2)/2)+' in'}
+function both(inch){return (Math.round(inch*2)/2)+' in ('+Math.round(inch*CM)+' cm)'}
+function fill(){var d=D[lay];s('aw',d.a[0]);s('ah',d.a[1]);s('ad',d.a[2]);s('bw',d.b[0]);s('bh',d.b[1]);s('bd',d.b[2]);$('m1l').textContent=d.m1;$('m2l').textContent=d.m2}
+function calc(){
+var sw=g('sw'),sd=g('sd'),sh=g('sh'),sf=g('sf'),aw=g('aw'),ah=g('ah'),ad=g('ad'),bw=g('bw'),bh=g('bh'),bd=g('bd');
+var stack=(lay==='st'||lay==='cp');
+var nW=stack?Math.max(aw,bw)+2:aw+bw+3;
+var nD=Math.max(ad,bd)+6;
+var nH=stack?ah+bh:Math.max(ah,bh);
+var hLabel=stack?'Height of the stack':'Height of the machines';
+if(lay==='tl'){nH=Math.max(ah+24,bh);hLabel='Height with the lid open'}
+var nF=(lay==='tl')?24:48;
+var rows=[['Width',nW,sw],['Depth',nD,sd],[hLabel,nH,sh],['Free floor in front',nF,sf]];
+var ok=true,html='',worst=0;
+rows.forEach(function(r){var diff=r[2]-r[1],pass=diff>=-0.01;if(!pass){ok=false;worst=Math.max(worst,-diff)}
+html+='<tr><td>'+r[0]+'</td><td>'+f(r[1])+'</td><td>'+f(r[2])+'</td><td class="'+(pass?'p':'f')+'">'+(pass?'Fits, '+f(diff)+' spare':'Short by '+f(-diff))+'</td></tr>'});
+$('dsh-t').innerHTML=html;
+var v=$('dsh-v');v.className='verdict '+(ok?'ok':'no');
+v.textContent=ok?'Good news: this layout fits your space.':'Not quite: at least one measurement is short, by up to '+f(worst)+'.';
+var t=[];
+if(lay==='fs'){t.push('A counter over these machines should sit about 1 in above the taller one, so at least '+both(Math.max(ah,bh)+1)+' from the floor. Support it on cabinets or wall cleats, not on the machines.')}
+if(lay==='st'||lay==='cp'){var left=sh-nH;if(left>=12)t.push('You have about '+f(left)+' above the stack: room for a shallow cabinet or shelf. Keep a few inches clear above the dryer.');else if(left>=0)t.push('There is little room above the stack, so use the wall beside it for shelves or a slim cart instead.');t.push('Use the stacking kit made for your models, and check that your washer and dryer are approved for stacking.')}
+if(lay==='tl'){t.push('Do not put a counter or a low shelf over a top-load washer: the lid needs about 2 ft (61 cm) of clear space to open.')}
+if(!ok&&!stack&&lay!=='tl'){t.push('Short on width? Try the stacked layout, which needs only one machine width plus about 2 in.')}
+if(!ok&&lay==='tl'){t.push('Short on space? A stacked front-load pair or compact 24-inch machines need far less room.')}
+t.push('Check the door path too: measure doorways and halls the machines must pass through.');
+$('dsh-tips').innerHTML=t.map(function(x){return '<li>'+x+'</li>'}).join('');
+}
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){var nu=b.getAttribute('data-u');if(nu===unit)return;var vals=ids.map(function(i){return g(i)});unit=nu;ids.forEach(function(i,k){s(i,vals[k])});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){lay=b.getAttribute('data-l');R.querySelectorAll('[data-l]').forEach(function(x){x.classList.toggle('on',x===b)});fill();calc()})});
+ids.forEach(function(i){$(i).addEventListener('input',calc)});
+fill();calc();
+})();
+</script>
+</div>

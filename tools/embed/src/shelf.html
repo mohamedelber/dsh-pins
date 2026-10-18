@@ -1,0 +1,113 @@
+<div id="dsh-shelf" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .lay{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.dsh-calc .lay button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .lay button b{display:block;font-size:.95rem}
+.dsh-calc .lay button span{font-size:.8rem;color:var(--mut)}
+.dsh-calc .lay button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.15rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px}
+.dsh-calc .verdict.ok{background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.no{background:var(--badl);color:var(--bad)}
+.dsh-calc .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
+.dsh-calc .tbl{flex:1 1 260px}
+.dsh-calc table{width:100%;border-collapse:collapse;font-size:.9rem;margin:0}
+.dsh-calc th,.dsh-calc td{padding:8px 6px;border-bottom:1px solid var(--bd);text-align:left}
+.dsh-calc th{font-size:.78rem;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .viz{flex:0 0 150px;height:260px;position:relative;background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;overflow:hidden}
+.dsh-calc .viz .sh{position:absolute;left:12px;right:12px;background:#D9B48A;border:1px solid #B98A5E;border-radius:2px}
+.dsh-calc .viz .base{position:absolute;left:0;right:0;bottom:0;background:#ECCDA0}
+.dsh-calc .tips{margin:12px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:6px}
+.dsh-calc .note{font-size:.78rem;color:var(--mut);margin:12px 0 0}
+</style>
+<h3>Plan your shelf spacing</h3>
+<p class="sub">Pick where the shelves go, enter your wall and your tallest item, and get the height of every shelf.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="in" class="on">Inches</button><button type="button" data-u="cm">Centimeters</button></div></div>
+<div class="lay" role="group" aria-label="Where">
+<button type="button" data-l="lr" class="on"><b>Above furniture</b><span>Sofa, sideboard or desk</span></button>
+<button type="button" data-l="kt"><b>Kitchen counter</b><span>Open shelves over a counter</span></button>
+<button type="button" data-l="bt"><b>Above a toilet</b><span>Bathroom shelves</span></button>
+<button type="button" data-l="wl"><b>Open wall</b><span>From the floor up</span></button>
+</div>
+<fieldset><legend>Your wall</legend>
+<p class="hint">Measure everything from the floor. The lowest shelf sits the gap you choose above the furniture or counter, and no shelf goes above your top limit.</p>
+<div class="grid">
+<label><span id="lb">Top of furniture</span><input type="number" inputmode="decimal" min="0" step="0.5" id="fb"></label>
+<label>Gap above it<input type="number" inputmode="decimal" min="0" step="0.5" id="gb"></label>
+<label>Highest shelf at most<input type="number" inputmode="decimal" min="0" step="0.5" id="tp"></label>
+<label>Number of shelves<input type="number" inputmode="numeric" min="1" max="8" step="1" id="n"></label>
+</div></fieldset>
+<fieldset><legend>Your shelves and items</legend>
+<div class="grid">
+<label>Shelf thickness<input type="number" inputmode="decimal" min="0" step="0.25" id="th"></label>
+<label>Tallest item on a shelf<input type="number" inputmode="decimal" min="0" step="0.5" id="it"></label>
+<label>Shelf length<input type="number" inputmode="decimal" min="0" step="0.5" id="ln"></label>
+</div>
+<p class="hint">Typical values are filled in. Change them to match your wall.</p></fieldset>
+<div class="res" aria-live="polite"><div id="sv" class="verdict"></div>
+<div class="wrap"><div class="tbl"><table><thead><tr><th>Shelf</th><th>Height from floor</th></tr></thead><tbody id="st"></tbody></table></div><div class="viz" id="vz" aria-hidden="true"></div></div>
+<ul class="tips" id="tips"></ul>
+<p class="note">Rules of thumb used: about 12 in (30 cm) of clear height between decor shelves, or more when your tallest item plus 2 in (5 cm) of air needs it. Results are planning estimates. Mount shelves into studs or wall anchors rated for the load, and follow the instructions that come with your brackets.</p></div>
+<script>
+(function(){
+var R=document.getElementById('dsh-shelf');if(!R)return;
+var CM=2.54,unit='in',lay='lr';
+var D={lr:{fb:30,gb:10,tp:72,n:2,lb:'Top of furniture'},kt:{fb:36,gb:18,tp:84,n:2,lb:'Counter height'},bt:{fb:30,gb:12,tp:78,n:3,lb:'Top of toilet tank'},wl:{fb:0,gb:30,tp:80,n:4,lb:'Floor or baseboard'}};
+var ids=['fb','gb','tp','th','it','ln'];
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);if(isNaN(v)||v<0)v=0;return unit==='cm'?v/CM:v}
+function s(i,inch){$(i).value=unit==='cm'?Math.round(inch*CM*10)/10:(Math.round(inch*4)/4)}
+function f(inch){return unit==='cm'?Math.round(inch*CM)+' cm':(Math.round(inch*4)/4)+' in'}
+function fill(){var d=D[lay];s('fb',d.fb);s('gb',d.gb);s('tp',d.tp);$('n').value=d.n;$('lb').textContent=d.lb}
+function calc(){
+var fb=g('fb'),gb=g('gb'),tp=g('tp'),th=g('th'),it=g('it'),ln=g('ln');
+var n=Math.max(1,Math.min(8,parseInt($('n').value)||1));
+var low=fb+gb;
+var need=it+2;
+var clear=Math.max(need,12);
+var space=th+clear;
+var topH=low+(n-1)*space;
+var ok=topH<=tp+0.01;
+var rows='',pos=[];
+for(var k=0;k<n;k++){var h=low+k*space;pos.push(h);rows+='<tr><td>'+(k===0?'Lowest':(k===n-1?'Top':'Shelf '+(k+1)))+'</td><td>'+f(h)+'</td></tr>'}
+$('st').innerHTML=rows;
+var v=$('sv');v.className='verdict '+(ok?'ok':'no');
+if(n===1){v.textContent=(low<=tp?'One shelf at '+f(low)+' from the floor.':'The shelf would sit above your top limit. Lower the gap or the furniture height.')}
+else if(ok){v.textContent='Space your shelves '+f(space)+' apart (top to top). That leaves '+f(clear)+' of clear height on each, and the top shelf sits at '+f(topH)+'.'}
+else{var fit=Math.max(0,Math.floor((tp-low)/space)+1);v.textContent='Too tall: '+n+' shelves would reach '+f(topH)+', above your limit of '+f(tp)+'. About '+fit+' '+(fit===1?'shelf fits':'shelves fit')+', or choose shorter items.'}
+var vz=$('vz'),H=Math.max(tp+12,96),out='';
+out+='<div class="base" style="height:'+(fb/H*100)+'%"></div>';
+pos.forEach(function(h){out+='<div class="sh" style="bottom:'+(h/H*100)+'%;height:4px"></div>'});
+vz.innerHTML=out;
+var t=[];
+if(lay==='kt')t.push('Keep the lowest shelf high enough to work under it comfortably, and put the dishes you use every day on that shelf.');
+if(lay==='bt')t.push('Leave enough room above the tank to lift the lid for repairs.');
+if(lay==='lr')t.push('Keep the shelves a little narrower than the furniture below so the wall looks balanced.');
+if(ln>=16){var lo=Math.floor(ln/16),hi=lo+1;t.push('If your studs are 16 in (41 cm) apart, a '+f(ln)+' shelf can reach '+lo+' to '+hi+' studs, depending on where it starts. Use a stud finder to check your wall.')}else if(ln>0){t.push('A shelf this short may not reach a stud, so use wall anchors rated for the load.')}
+t.push('Keep heavier items low and close to the brackets.');
+$('tips').innerHTML=t.map(function(x){return '<li>'+x+'</li>'}).join('');
+}
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){var nu=b.getAttribute('data-u');if(nu===unit)return;var vals=ids.map(function(i){return g(i)});unit=nu;ids.forEach(function(i,k){s(i,vals[k])});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){lay=b.getAttribute('data-l');R.querySelectorAll('[data-l]').forEach(function(x){x.classList.toggle('on',x===b)});fill();calc()})});
+ids.concat(['n']).forEach(function(i){$(i).addEventListener('input',calc)});
+s('th',1.5);s('it',10);s('ln',36);fill();calc();
+})();
+</script>
+</div>

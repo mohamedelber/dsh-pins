@@ -1,0 +1,154 @@
+<!-- wp:html -->
+<style>
+body.dsh-embed{background:#fff!important}
+body.dsh-embed .site-header,body.dsh-embed .site-footer,body.dsh-embed .entry-header,body.dsh-embed .entry-footer,body.dsh-embed .comments-area,body.dsh-embed #kt-scroll-up,body.dsh-embed .kadence-scroll-up,body.dsh-embed .post-navigation{display:none!important}
+body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed .content-area,body.dsh-embed .content-wrap,body.dsh-embed .entry-content-wrap,body.dsh-embed .site-main,body.dsh-embed article.entry{margin:0!important;padding:0!important;max-width:none!important;box-shadow:none!important;background:transparent!important;border:0!important}
+body.dsh-embed .entry-content{margin:0!important}
+body.dsh-embed .entry-content>*{max-width:none!important}
+body.dsh-embed .dsh-calc{margin:0!important}
+.dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
+.dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
+.dsh-ef a:hover{text-decoration:underline}
+</style>
+<div id="dsh-wd" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How deep should your wardrobe be?</h3>
+<p class="sub">Two taps: pick the door type and what goes inside. The answer appears right away.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="cm">cm</button><button type="button" data-u="in">inches</button></div></div>
+<fieldset><legend>1. Door type</legend>
+<div class="opts" role="group" aria-label="Doors">
+<button type="button" data-d="hinged" class="on"><b>Hinged doors</b><span>Doors swing open</span></button>
+<button type="button" data-d="sliding"><b>Sliding doors</b><span>Doors run on a track</span></button>
+<button type="button" data-d="open"><b>No doors</b><span>Open wardrobe or rail</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. What goes inside?</legend>
+<div class="opts" role="group" aria-label="Contents">
+<button type="button" data-c="hang" class="on"><b>Hanging clothes</b><span>A rail, side to side</span></button>
+<button type="button" data-c="shelf"><b>Shelves and drawers</b><span>Folded clothes only</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: check the space you have</summary>
+<div class="grid"><label><span>Depth you have (wall to front)</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="hv" placeholder="optional"></label></div>
+<p class="hint">Measure from the back wall to where the front of the wardrobe or doors can come, at the narrowest point (skirting boards and sockets count).</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Recommended depth</small><strong id="kr"></strong><em id="kre">outside, including doors</em></div>
+<div class="kpi"><small>Absolute minimum</small><strong id="km"></strong><em id="kme"></em></div>
+<div class="kpi"><small>Hanger width</small><strong id="kh"></strong><em>a standard adult hanger</em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my wardrobe depth</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-wd');if(!R)return;
+var CM=2.54,unit='cm',door='hinged',cont='hang',summary='';
+var HANG=45.7,TRACK=5,MINH=50.8,PULL=30.2;
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
+function f(x){if(unit==='in'){return Math.round(x/CM)+' in'}return Math.round(x)+' cm'}
+function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='cm'?'(cm)':'(in)'});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
+function setUnit(u){if(u===unit)return;var v=g('hv');unit=u;if(v!==null){$('hv').value=Math.round((u==='cm'?v*CM:v/CM)*10)/10}lbl()}
+function rec(){var t=door==='sliding'?TRACK:0;if(cont==='hang'){return door==='sliding'?71:60}return 55+t}
+function mn(){var t=door==='sliding'?TRACK:0;return cont==='hang'?MINH+t:null}
+function svg(depth,have){var W=360,H=200,s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wardrobe seen from above">';
+var sc=150/Math.max(depth,have?have:0,75),x0=60,y0=30,dw=240,dp=depth*sc;
+s+='<rect width="'+W+'" height="'+H+'" fill="#FBF6EF"/>';
+s+='<rect x="'+(x0-10)+'" y="'+(y0-8)+'" width="'+(dw+20)+'" height="8" fill="#D8CBBB"/>';
+s+='<text x="'+(x0+dw/2)+'" y="'+(y0-12)+'" font-size="11" fill="#6E645C" text-anchor="middle">back wall</text>';
+s+='<rect x="'+x0+'" y="'+y0+'" width="'+dw+'" height="'+dp+'" fill="#FFFFFF" stroke="#B98A5E" stroke-width="2"/>';
+if(cont==='hang'){var cy=y0+(door==='sliding'?(dp-TRACK*sc)/2:dp/2);var hw=HANG*sc;
+for(var k=0;k<7;k++){var hx=x0+30+k*30;s+='<line x1="'+hx+'" y1="'+(cy-hw/2)+'" x2="'+hx+'" y2="'+(cy+hw/2)+'" stroke="#8FA689" stroke-width="5" stroke-linecap="round"/>'}
+s+='<line x1="'+(x0+10)+'" y1="'+cy+'" x2="'+(x0+dw-10)+'" y2="'+cy+'" stroke="#6E645C" stroke-width="2"/>'}
+else{for(var j=0;j<3;j++){s+='<rect x="'+(x0+12+j*76)+'" y="'+(y0+8)+'" width="64" height="'+(dp-16-(door==='sliding'?TRACK*sc:0))+'" fill="#ECCDA0" opacity="0.7"/>'}}
+var fy=y0+dp;
+if(door==='hinged'){s+='<line x1="'+x0+'" y1="'+fy+'" x2="'+(x0+40)+'" y2="'+(fy+40)+'" stroke="#C85A32" stroke-width="3"/><path d="M'+(x0+56)+' '+fy+' A56 56 0 0 1 '+(x0+40)+' '+(fy+40)+'" fill="none" stroke="#C85A32" stroke-dasharray="3 3"/>'}
+if(door==='sliding'){s+='<line x1="'+x0+'" y1="'+(fy-3)+'" x2="'+(x0+dw/2+10)+'" y2="'+(fy-3)+'" stroke="#C85A32" stroke-width="3"/><line x1="'+(x0+dw/2-10)+'" y1="'+(fy+1)+'" x2="'+(x0+dw)+'" y2="'+(fy+1)+'" stroke="#C85A32" stroke-width="3"/>'}
+s+='<line x1="'+(x0+dw+18)+'" y1="'+y0+'" x2="'+(x0+dw+18)+'" y2="'+fy+'" stroke="#342E2A" stroke-width="1.5"/><line x1="'+(x0+dw+12)+'" y1="'+y0+'" x2="'+(x0+dw+24)+'" y2="'+y0+'" stroke="#342E2A"/><line x1="'+(x0+dw+12)+'" y1="'+fy+'" x2="'+(x0+dw+24)+'" y2="'+fy+'" stroke="#342E2A"/>';
+s+='<text x="'+(x0+dw+28)+'" y="'+(y0+dp/2+4)+'" font-size="12" font-weight="700" fill="#342E2A">'+f(depth)+'</text>';
+if(have){var hy=y0+have*sc;s+='<line x1="'+(x0-14)+'" y1="'+hy+'" x2="'+(x0+dw+14)+'" y2="'+hy+'" stroke="#B3432A" stroke-dasharray="6 4"/><text x="'+(x0+4)+'" y="'+(hy-4)+'" font-size="11" fill="#B3432A">your space</text>'}
+return s+'</svg>'}
+function calc(){var r=rec(),m=mn(),hv=g('hv');var have=(hv===null||hv<=0)?null:(unit==='in'?hv*CM:hv);
+var vv=$('vv');vv.className='verdict';
+$('kr').textContent=f(r);$('kre').textContent=door==='open'?'outside':'outside, including doors';$('kh').textContent=f(HANG);
+if(m===null){$('km').textContent='none';$('kme').textContent='shallower is fine for folded clothes'}else{$('km').textContent=f(m);$('kme').textContent='a squeeze: clothes will touch'}
+var tips=[];
+if(have===null){vv.textContent='Plan a wardrobe '+f(r)+' deep'+(door==='sliding'?', including the sliding door track.':'.')}
+else{var inner=have-(door==='sliding'?TRACK:0);
+if(have>=r){vv.textContent='Your '+f(have)+' is enough: plan the wardrobe '+f(r)+' deep.'}
+else if(cont==='shelf'?have<30.5:false){vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for most shelving; use hooks or wall racks.'}
+else if(cont==='shelf'){vv.className='verdict amb';vv.textContent='Your '+f(have)+' is shallower than '+f(r)+', but it still works for folded clothes, shoes and baskets.'}
+else if(inner>=MINH){vv.className='verdict amb';vv.textContent='Very tight: a side-on rail may squeeze into '+f(have)+', but clothes may brush the '+(door==='open'?'front edge':'doors')+'. Slim hangers help.'}
+else if(inner>=PULL){vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for a side-on rail. Use a pull-out (end-on) rail or shelves instead.'}
+else{vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for hanging. Use shelves, hooks or a narrow cupboard.'}}
+if(cont==='hang'){tips.push('A standard adult hanger is about '+f(HANG)+' wide, so the inside of the wardrobe needs to be deeper than that.')}
+if(door==='sliding'){tips.push('Sliding doors run on a track that takes about '+f(TRACK)+' of the depth, so they need a deeper wardrobe than hinged doors.')}
+if(door==='hinged'){tips.push('Hinged doors need floor space to swing open in front of the wardrobe; check the bed or other furniture is not in the way.')}
+if(cont==='hang'){tips.push('Short of depth? A pull-out rail hangs clothes front to back and needs only about '+f(PULL)+' inside.')}
+tips.push('Measure at skirting-board height as well as higher up: the narrowest point decides the depth.');
+$('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
+$('vz').innerHTML=svg(r,have);
+summary='Wardrobe depth ('+door+' doors, '+(cont==='hang'?'hanging clothes':'shelves')+'): recommended '+f(r)+(m===null?'':', tight minimum '+f(m))+(have===null?'':', my space '+f(have))+'. dailyspacehacks.com/wardrobe-depth/'}
+R.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){door=b.getAttribute('data-d');R.querySelectorAll('[data-d]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-c]').forEach(function(b){b.addEventListener('click',function(){cont=b.getAttribute('data-c');R.querySelectorAll('[data-c]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
+$('hv').addEventListener('input',calc);
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my wardrobe depth'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your wardrobe depth:',summary)})}catch(e){window.prompt('Copy your wardrobe depth:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+var lang=(navigator.language||'en-GB');
+if(lang==='en'||lang.indexOf('en-US')===0){unit='in'}else{unit='cm'}
+lbl();calc();
+})();
+</script>
+</div>
+<div class="dsh-ef"><span>Free tool by <a href="https://dailyspacehacks.com/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span><a href="https://dailyspacehacks.com/wardrobe-depth/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>
+<!-- /wp:html -->

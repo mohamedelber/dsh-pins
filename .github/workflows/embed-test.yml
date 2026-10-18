@@ -1,0 +1,45 @@
+name: Embed test
+on:
+  push:
+    paths:
+      - 'tools/embed/test/*.html'
+      - 'tools/embed/test/urls.txt'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  shot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Headers
+        run: |
+          mkdir -p tools/embed/test/out
+          : > tools/embed/test/out/headers.txt
+          while read -r u; do [ -z "$u" ] && continue; case "$u" in \#*) continue;; esac
+            echo "== $u" >> tools/embed/test/out/headers.txt
+            curl -sSIL -A "Mozilla/5.0" "$u" | grep -iE '^(HTTP|x-frame|content-security|x-robots|location|cache)' >> tools/embed/test/out/headers.txt || true
+          done < tools/embed/test/urls.txt
+      - name: Screenshots
+        run: |
+          cd tools/embed/test
+          npm init -y >/dev/null && npm i playwright@1.48.2 >/dev/null && npx playwright install chromium >/dev/null
+          cat > s.js <<'JS'
+          const {chromium}=require('playwright');const fs=require('fs');const path=require('path');
+          (async()=>{const b=await chromium.launch();
+          for(const f of fs.readdirSync('.').filter(x=>x.endsWith('.html'))){
+           for(const [w,tag] of [[1100,'d'],[390,'m']]){const p=await b.newPage({viewport:{width:w,height:900},locale:'en-US'});
+            const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
+            await p.goto('file://'+path.resolve(f));await p.waitForTimeout(6000);
+            await p.screenshot({path:'out/'+f.replace('.html','')+'-'+tag+'.png',fullPage:true});
+            fs.appendFileSync('out/errors.txt',f+' '+tag+' '+JSON.stringify(errs)+'\n');await p.close();}}
+          await b.close();})();
+          JS
+          : > out/errors.txt; node s.js; rm -rf node_modules package*.json s.js
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add tools/embed/test/out
+          git diff --cached --quiet || git commit -m "Embed test output"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done

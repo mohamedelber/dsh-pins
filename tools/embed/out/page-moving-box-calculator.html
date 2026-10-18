@@ -1,0 +1,188 @@
+<!-- wp:html -->
+<style>
+body.dsh-embed{background:#fff!important}
+body.dsh-embed .site-header,body.dsh-embed .site-footer,body.dsh-embed .entry-header,body.dsh-embed .entry-footer,body.dsh-embed .comments-area,body.dsh-embed #kt-scroll-up,body.dsh-embed .kadence-scroll-up,body.dsh-embed .post-navigation{display:none!important}
+body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed .content-area,body.dsh-embed .content-wrap,body.dsh-embed .entry-content-wrap,body.dsh-embed .site-main,body.dsh-embed article.entry{margin:0!important;padding:0!important;max-width:none!important;box-shadow:none!important;background:transparent!important;border:0!important}
+body.dsh-embed .entry-content{margin:0!important}
+body.dsh-embed .entry-content>*{max-width:none!important}
+body.dsh-embed .dsh-calc{margin:0!important}
+.dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
+.dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
+.dsh-ef a:hover{text-decoration:underline}
+</style>
+<div id="dsh-boxes" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.25rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin-bottom:12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc table{width:100%;border-collapse:collapse;font-size:.9rem;margin:0 0 12px}
+.dsh-calc th,.dsh-calc td{border-bottom:1px solid var(--bd);padding:7px 6px;text-align:left;vertical-align:top}
+.dsh-calc th{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc td.n{font-weight:700;text-align:right;white-space:nowrap}
+.dsh-calc h4{margin:6px 0 6px;font-size:1rem}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:6px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--ac);background:#fff;color:var(--ac);border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer}
+.dsh-calc .acts button.pri{background:var(--ac);color:#fff}
+.dsh-calc .wrapt{overflow-x:auto}
+@media (max-width:520px){.dsh-calc{padding:14px}.dsh-calc .hs{display:none}.dsh-calc th,.dsh-calc td{padding:6px 4px;font-size:.82rem}}
+.dsh-calc .note{font-size:.78rem;color:var(--mut);margin:12px 0 0}
+</style>
+<h3>How many moving boxes do you need?</h3>
+<p class="sub">Pick your home size, adjust the rooms and how much stuff you have, and get the number of small, medium, large, wardrobe and dish boxes, plus the packing tape and paper to buy.</p>
+<fieldset><legend>1. Your home</legend>
+<div class="opts" role="group" aria-label="Home size">
+<button type="button" data-h="studio"><b>Studio</b><span>One main room</span></button>
+<button type="button" data-h="1"><b>1 bedroom</b><span>Apartment</span></button>
+<button type="button" data-h="2" class="on"><b>2 bedrooms</b><span>Apartment or small house</span></button>
+<button type="button" data-h="3"><b>3 bedrooms</b><span>House with garage</span></button>
+<button type="button" data-h="4"><b>4 bedrooms</b><span>Family house</span></button>
+<button type="button" data-h="5"><b>5+ bedrooms</b><span>Large house</span></button>
+</div>
+<p class="hint">Change the rooms to match your home. A studio has 0 bedrooms and 1 living area.</p>
+<div class="grid">
+<label>Bedrooms (incl. kids' rooms)<input type="number" inputmode="numeric" min="0" max="10" step="1" id="bed"></label>
+<label>Living or family rooms<input type="number" inputmode="numeric" min="0" max="5" step="1" id="liv"></label>
+<label>Bathrooms<input type="number" inputmode="numeric" min="0" max="6" step="1" id="bath"></label>
+<label>Dining rooms<input type="number" inputmode="numeric" min="0" max="3" step="1" id="din"></label>
+<label>Home offices<input type="number" inputmode="numeric" min="0" max="3" step="1" id="off"></label>
+<label>Garage or shed<input type="number" inputmode="numeric" min="0" max="3" step="1" id="gar"></label>
+<label>Basement, attic or storage room<input type="number" inputmode="numeric" min="0" max="3" step="1" id="sto"></label>
+</div></fieldset>
+<fieldset><legend>2. How much stuff</legend>
+<div class="grid">
+<label>Amount of belongings<select id="amt"><option value="0.7">Minimalist (light packer)</option><option value="1" selected>Average</option><option value="1.35">Lots of stuff (full closets, books, hobbies)</option></select></label>
+<label>Hanging clothes<select id="hang"><option value="0.5">Few (I'll fold most clothes)</option><option value="1" selected>Average</option><option value="1.5">Lots (long closet rails)</option></select></label>
+<label>Spare boxes to add<select id="spare"><option value="0">None</option><option value="0.1" selected>10% extra</option><option value="0.15">15% extra</option></select></label>
+</div></fieldset>
+<div class="res" aria-live="polite">
+<div id="vd" class="verdict"></div>
+<div class="kpis">
+<div class="kpi"><small>Small boxes</small><strong id="k1"></strong><em>Books, dishes, tools</em></div>
+<div class="kpi"><small>Medium boxes</small><strong id="k2"></strong><em>Kitchen, toys, decor</em></div>
+<div class="kpi"><small>Large and XL</small><strong id="k3"></strong><em>Bedding, pillows, lamps</em></div>
+<div class="kpi"><small>Specialty</small><strong id="k4"></strong><em id="k4e"></em></div>
+</div>
+<div class="viz" id="vz" aria-hidden="true"></div>
+<h4>Your box list</h4>
+<table><thead><tr><th>Box</th><th class="hs">Typical size</th><th>Pack</th><th style="text-align:right">Qty</th></tr></thead><tbody id="tb"></tbody></table>
+<h4>Boxes by room</h4>
+<table><thead><tr><th>Room</th><th>Small</th><th>Med</th><th>Large/XL</th><th>Other</th></tr></thead><tbody id="rb"></tbody></table>
+<h4>Packing supplies</h4>
+<ul class="tips" id="sp"></ul>
+<h4>Packing tips</h4>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" class="pri" id="cp">Copy my box list</button><button type="button" id="pr">Print</button></div>
+<p class="note">How it works: each room type has a typical mix of box sizes (for example a kitchen needs mostly small and medium boxes plus dish packs, a bedroom more large boxes and a wardrobe box), adjusted for how much you own. Totals land inside the ranges moving companies publish for each home size. Box sizes are typical US moving boxes and vary by store. Results are planning estimates, so check your closets, cabinets and garage before you buy.</p>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-boxes');if(!R)return;
+function $(i){return document.getElementById(i)}
+var MIX={P:[3,4,3,1,0],B:[2,3,2,1,0],L:[3,4,3,1,0],K1:[4,4,1,0,1],K2:[5,5,2,0,2],K3:[6,6,2,0,2],D:[2,2,1,0,1],T:[2,1,0,0,0],O:[4,3,1,0,0],G:[3,4,4,2,0],S:[3,4,4,2,0]};
+var PRE={studio:[0,1,1,0,0,0,0],'1':[1,1,1,0,0,0,0],'2':[2,1,1,0,0,0,0],'3':[3,1,2,1,0,1,0],'4':[4,2,3,1,1,1,0],'5':[5,2,3,1,1,1,1]};
+var IDS=['bed','liv','bath','din','off','gar','sto'];
+var BOX=[
+['Small box','16.4 x 12.6 x 12.6 in (42 x 32 x 32 cm), 1.5 cu ft','Books, dishes, canned food, tools',1.5],
+['Medium box','18 x 18 x 16 in (46 x 46 x 41 cm), 3 cu ft','Kitchen items, toys, decor, shoes',3],
+['Large box','18 x 18 x 24 in (46 x 46 x 61 cm), 4.5 cu ft','Bedding, towels, pillows, lampshades',4.5],
+['Extra-large box','24 x 18 x 24 in (61 x 46 x 61 cm), 6 cu ft','Comforters, cushions, light bulky items',6],
+['Wardrobe box','About 24 in (61 cm) wide with a hanging bar','Clothes on hangers, straight from the closet',13],
+['Dish pack','About 18 x 18 x 28 in (46 x 46 x 71 cm), double-wall','Plates, glasses and china with dividers',5.25]];
+var summary='';
+function n(i){var v=parseInt($(i).value,10);return isNaN(v)||v<0?0:Math.min(v,10)}
+function calc(){
+var bed=n('bed'),liv=n('liv'),bath=n('bath'),din=n('din'),off=n('off'),gar=n('gar'),sto=n('sto');
+var amt=parseFloat($('amt').value)||1,hang=parseFloat($('hang').value)||1,spare=parseFloat($('spare').value)||0;
+var rooms=[],raw=[0,0,0,0,0];
+function add(name,key,count,ward){if(count<1)return;var m=MIX[key],r=[0,0,0,0,0];for(var i=0;i<5;i++){r[i]=m[i]*count;raw[i]+=r[i]}rooms.push([name,r,ward])}
+var kk=bed<2?'K1':(bed===2?'K2':'K3');
+var wP=Math.max(1,Math.round(2*hang)),wB=bed>1?Math.round((bed-1)*hang):0,wS=Math.max(1,Math.round(hang));
+if(bed>0){add('Main bedroom','P',1,wP);if(bed>1)add(bed===2?'Second bedroom':'Other bedrooms ('+(bed-1)+')','B',bed-1,wB)}
+add(bed===0?'Studio living and sleeping area':(liv>1?'Living and family rooms ('+liv+')':'Living room'),'L',liv,bed===0?wS:0);
+add('Kitchen',kk,1,0);
+add(din>1?'Dining rooms ('+din+')':'Dining room','D',din,0);
+add(bath>1?'Bathrooms ('+bath+')':'Bathroom','T',bath,0);
+add(off>1?'Home offices ('+off+')':'Home office','O',off,0);
+add('Garage or shed','G',gar,0);
+add('Basement, attic or storage','S',sto,0);
+var ward=0;rooms.forEach(function(r){ward+=r[2]});
+if(bed===0?liv===0:false)ward=Math.max(1,Math.round(hang));
+var q=[Math.round(raw[0]*amt),Math.round(raw[1]*amt),Math.round(raw[2]*amt),Math.round(raw[3]*amt),ward,raw[4]];
+var total=0,vol=0;for(var i=0;i<6;i++){total+=q[i];vol+=q[i]*BOX[i][3]}
+var extra=Math.round(total*spare),buy=total+extra;
+var lo=Math.round(total*0.85),hi=Math.round(total*1.15);
+$('vd').textContent='You need about '+total+' moving boxes'+(extra?' (buy '+buy+' with '+Math.round(spare*100)+'% spare)':'')+'. Plan for '+lo+' to '+hi+', depending on how you pack.';
+$('k1').textContent=q[0];$('k2').textContent=q[1];$('k3').textContent=(q[2]+q[3]);$('k4').textContent=(q[4]+q[5]);
+$('k4e').textContent=q[4]+' wardrobe, '+q[5]+' dish pack'+(q[5]===1?'':'s');
+var tb='';for(var j=0;j<6;j++){tb+='<tr><td><strong>'+BOX[j][0]+'</strong></td><td class="hs">'+BOX[j][1]+'</td><td>'+BOX[j][2]+'</td><td class="n">'+q[j]+'</td></tr>'}
+tb+='<tr><td><strong>Total</strong></td><td class="hs">About '+Math.round(vol)+' cu ft of boxes</td><td></td><td class="n">'+total+'</td></tr>';
+$('tb').innerHTML=tb;
+var rb='';rooms.forEach(function(r){var b=r[1];var o=[];if(r[2])o.push(r[2]+' wardrobe');if(b[4])o.push(b[4]+' dish');
+rb+='<tr><td>'+r[0]+'</td><td>'+Math.round(b[0]*amt)+'</td><td>'+Math.round(b[1]*amt)+'</td><td>'+(Math.round(b[2]*amt)+Math.round(b[3]*amt))+'</td><td>'+(o.join(', ')||'-')+'</td></tr>'});
+$('rb').innerHTML=rb;
+var tape=Math.max(2,Math.ceil(buy/15)),paper=(bed<2?10:(bed===2?15:20))+5*din;
+var sp=['<strong>Packing tape:</strong> '+tape+' rolls of 2 in (48 mm) tape, about one roll for every 15 boxes, plus a tape gun.',
+'<strong>Packing paper:</strong> about '+paper+' lb of plain newsprint for dishes, glasses and fragile decor.',
+'<strong>Bubble wrap:</strong> one roll for lamps, frames, mirrors and electronics.',
+'<strong>Markers and labels:</strong> 2 or 3 markers to write the room and contents on two sides of every box.'];
+$('sp').innerHTML=sp.map(function(x){return '<li>'+x+'</li>'}).join('');
+var tips=[];
+tips.push('Put heavy things like books in small boxes and light, bulky things like bedding in large boxes, so no box gets too heavy to lift safely.');
+if(q[4])tips.push('Wardrobe boxes save time: move clothes straight from the closet rail on their hangers.');
+if(gar+sto>0)tips.push('Garages and basements vary the most. Look inside before you buy, and clear out what you will not move first.');
+tips.push('Use suitcases, laundry baskets and dresser drawers for soft items to need fewer boxes.');
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+draw(q);
+summary='My moving box list (dailyspacehacks.com)\n'+$('vd').textContent+'\n'+BOX.map(function(b,k){return b[0]+': '+q[k]}).join('\n')+'\nPacking tape: '+tape+' rolls\nPacking paper: about '+paper+' lb';
+}
+function draw(q){
+var VW=600,VH=205,base=172,s=4.2,x=20,o='<svg viewBox="0 0 '+VW+' '+VH+'" xmlns="http://www.w3.org/2000/svg" font-family="inherit">';
+o+='<rect width="'+VW+'" height="'+VH+'" fill="#FBF6EF"/><line x1="10" y1="'+base+'" x2="'+(VW-10)+'" y2="'+base+'" stroke="#B9AD9F" stroke-width="2"/>';
+var D=[[16,12],[18,16],[18,24],[24,24],[24,46],[18,28]],L=['Small','Medium','Large','XL','Wardrobe','Dish pack'];
+for(var i=0;i<6;i++){var w=D[i][0]*s*0.75,h=D[i][1]*s*0.75,y=base-h,d=Math.min(14,w*0.25);
+o+='<polygon points="'+(x+d)+','+(y-d)+' '+(x+w+d)+','+(y-d)+' '+(x+w)+','+y+' '+x+','+y+'" fill="#E4C69C" stroke="#8C6A45" stroke-width="1.5"/>';
+o+='<polygon points="'+(x+w)+','+y+' '+(x+w+d)+','+(y-d)+' '+(x+w+d)+','+(base-d)+' '+(x+w)+','+base+'" fill="#C9A274" stroke="#8C6A45" stroke-width="1.5"/>';
+o+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#D9B48A" stroke="#8C6A45" stroke-width="1.5"/>';
+o+='<line x1="'+(x+w/2)+'" y1="'+y+'" x2="'+(x+w/2)+'" y2="'+(y+Math.min(h*0.25,12))+'" stroke="#C8B9A4" stroke-width="5"/>';
+o+='<text x="'+(x+w/2)+'" y="'+(y+h*0.6+8)+'" font-size="'+(w>50?24:18)+'" font-weight="700" text-anchor="middle" fill="#342E2A">'+q[i]+'</text>';
+o+='<text x="'+(x+w/2)+'" y="'+(base+22)+'" font-size="13" text-anchor="middle" fill="#6E645C">'+L[i]+'</text>';
+x+=w+d+22}
+o+='</svg>';$('vz').innerHTML=o;
+}
+function setPre(k){var p=PRE[k];IDS.forEach(function(id,i){$(id).value=p[i]});R.querySelectorAll('[data-h]').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-h')===k)})}
+R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){setPre(b.getAttribute('data-h'));calc()})});
+IDS.forEach(function(i){$(i).addEventListener('input',function(){R.querySelectorAll('[data-h]').forEach(function(b){b.classList.remove('on')});calc()})});
+['amt','hang','spare'].forEach(function(i){$(i).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my box list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your box list:',summary)})}catch(e){window.prompt('Copy your box list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+setPre('2');calc();
+})();
+</script>
+</div>
+<div class="dsh-ef"><span>Free tool by <a href="https://dailyspacehacks.com/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span><a href="https://dailyspacehacks.com/moving-box-calculator/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>
+<!-- /wp:html -->
