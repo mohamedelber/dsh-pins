@@ -1,0 +1,330 @@
+<!-- wp:paragraph -->
+<p>How much wallpaper do you need? This free <strong>wallpaper calculator</strong> works it out the way decorators do: it counts the drops (strips) your wall needs, how many drops you get from each roll once you allow for trimming and the pattern repeat, and turns that into the number of rolls to buy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Choose a feature wall or a whole room, type the size and pick the pattern. It works in meters or feet, and you can change the roll size under <em>More options</em> if your wallpaper is not a standard 52 to 53 cm (20.5 in) wide roll.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-wp" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How many rolls of wallpaper do you need?</h3>
+<p class="sub">Choose a feature wall or a whole room, type the size and pick the pattern. The rolls appear right away.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="m">meters</button><button type="button" data-u="ft">feet</button></div></div>
+<fieldset><legend>1. What are you papering?</legend>
+<div class="opts" role="group" aria-label="Area">
+<button type="button" data-a="wall" class="on"><b>One wall</b><span>A feature wall</span></button>
+<button type="button" data-a="room"><b>Whole room</b><span>All four walls</span></button>
+</div>
+<div class="grid">
+<label id="lw"><span id="tw">Wall width</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0" step="0.01" id="ww"></label>
+<label id="lr" class="hide"><span>Room width</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0" step="0.01" id="rw"></label>
+<label><span>Wall height</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0" step="0.01" id="wh"></label>
+</div>
+</fieldset>
+<fieldset><legend>2. Pattern</legend>
+<div class="opts" role="group" aria-label="Pattern repeat">
+<button type="button" data-p="0" class="on"><b>Plain or no match</b><span>No pattern repeat</span></button>
+<button type="button" data-p="27"><b>Small repeat</b><span>up to 27 cm (10.6 in)</span></button>
+<button type="button" data-p="64"><b>Large repeat</b><span>up to 64 cm (25 in)</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: roll size, exact pattern repeat</summary>
+<div class="grid">
+<label><span>Roll width</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.1" id="rlw"></label>
+<label><span>Roll length</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0" step="0.01" id="rll"></label>
+<label><span>Exact pattern repeat</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.1" id="rp" placeholder="optional"></label>
+</div>
+<p class="hint">Roll width, length and pattern repeat are printed on the label. The standard roll is about 52 to 53 cm (20.5 in) wide and 10.05 m (33 ft) long. We add 10 cm (4 in) to every drop for trimming.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Rolls to buy</small><strong id="kr"></strong><em id="kre"></em></div>
+<div class="kpi"><small>Drops (strips)</small><strong id="kd"></strong><em id="kde"></em></div>
+<div class="kpi"><small>Drops per roll</small><strong id="kp"></strong><em id="kpe"></em></div>
+<div class="kpi"><small>Wall area</small><strong id="ka"></strong><em>before doors and windows</em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my wallpaper list</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-wp');if(!R)return;
+var FT=0.3048,IN=2.54,unit='m',area='wall',pat=0,summary='';
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
+function L2m(v){return unit==='ft'?v*FT:v}
+function S2cm(v){return unit==='ft'?v*IN:v}
+function fl(m){return unit==='ft'?(Math.round(m/FT*10)/10)+' ft':(Math.round(m*100)/100)+' m'}
+function fs(cm){return unit==='ft'?(Math.round(cm/IN*10)/10)+' in':Math.round(cm)+' cm'}
+function fa(m2){return unit==='ft'?Math.round(m2/(FT*FT))+' sq ft':(Math.round(m2*10)/10)+' m²'}
+function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){var t=x.getAttribute('data-lu');x.textContent=unit==='ft'?(t==='s'?'(in)':'(ft)'):(t==='s'?'(cm)':'(m)')});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
+function conv(id,f,d){var v=g(id);if(v!==null){$(id).value=Math.round(v*f*Math.pow(10,d))/Math.pow(10,d)}}
+function setUnit(u){if(u===unit)return;var toFt=(u==='ft');unit=u;['ww','rw','wh','rll'].forEach(function(id){conv(id,toFt?1/FT:FT,2)});['rlw','rp'].forEach(function(id){conv(id,toFt?1/IN:IN,1)});lbl()}
+function svg(drops,dpr,rolls){var W=360,H=200,s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wallpaper drops on the wall">';
+s+='<rect width="'+W+'" height="'+H+'" fill="#FBF6EF"/>';
+var n=Math.min(drops,40),x0=20,y0=30,ww=320,hh=130,dw=ww/Math.max(n,1);
+var cols=['#DCE5D6','#ECCDA0','#F3E3D3','#C9D8C3','#E9D6B9'];
+for(var i=0;i<n;i++){var r=Math.floor(i/Math.max(dpr,1));s+='<rect x="'+(x0+i*dw)+'" y="'+y0+'" width="'+(dw-1)+'" height="'+hh+'" fill="'+cols[r%cols.length]+'" stroke="#B98A5E" stroke-width="0.6"/>'}
+s+='<line x1="'+x0+'" y1="'+(y0+hh+1)+'" x2="'+(x0+ww)+'" y2="'+(y0+hh+1)+'" stroke="#6E645C" stroke-width="2"/>';
+s+='<text x="'+x0+'" y="20" font-size="12" font-weight="700" fill="#342E2A">'+drops+' drops'+(drops>40?' (first 40 shown)':'')+'</text>';
+s+='<text x="'+x0+'" y="'+(y0+hh+22)+'" font-size="11" fill="#6E645C">Each color = one roll ('+dpr+' drops per roll)</text>';
+return s+'</svg>'}
+function calc(){var vv=$('vv');vv.className='verdict';
+var w=g('ww'),rwid=g('rw'),h=g('wh'),rlw=g('rlw'),rll=g('rll'),rp=g('rp');
+var tips=[];
+if(w===null||h===null||w<=0||h<=0||(area==='room'?(rwid===null||rwid<=0):false)){vv.className='verdict amb';vv.textContent='Enter the wall size to see how many rolls you need.';['kr','kd','kp','ka'].forEach(function(i){$(i).textContent='-'});$('kre').textContent='';$('kde').textContent='';$('kpe').textContent='';$('vz').innerHTML='';$('tp').innerHTML='';return}
+var Wm=L2m(w),Hm=L2m(h),run=area==='room'?2*(Wm+L2m(rwid)):Wm;
+var rw=(rlw===null||rlw<=0)?52:S2cm(rlw),rl=(rll===null||rll<=0)?10.05:L2m(rll);
+var rep=(rp===null||rp<0)?pat:S2cm(rp);
+var drop=Hm+0.10+rep/100;
+var drops=Math.ceil(run*100/rw-0.0001);
+var dpr=Math.floor(rl/drop+0.0001);
+$('ka').textContent=fa(run*Hm);
+if(dpr<1){vv.className='verdict bad';vv.textContent='Each drop ('+fl(drop)+') is longer than one roll ('+fl(rl)+'). Look for longer rolls or a mural made to measure.';$('kr').textContent='-';$('kd').textContent=drops;$('kp').textContent='0';$('kre').textContent='';$('kde').textContent='';$('kpe').textContent='';$('vz').innerHTML='';$('tp').innerHTML='';return}
+var rolls=Math.ceil(drops/dpr);
+$('kr').textContent=rolls+' + 1 spare';$('kre').textContent='buy '+(rolls+1)+' rolls from the same batch';
+$('kd').textContent=drops;$('kde').textContent=fs(rw)+' wide each';
+$('kp').textContent=dpr;$('kpe').textContent='each drop '+fl(drop)+' with trim'+(rep>0?' and repeat':'');
+vv.textContent='You need '+rolls+' roll'+(rolls===1?'':'s')+' of wallpaper'+(area==='room'?' for the whole room':' for this wall')+'. Buy '+(rolls+1)+' to have a spare.';
+tips.push('Check every roll has the same batch number: colors can differ slightly between batches.');
+if(rep>0){tips.push('A pattern repeat of '+fs(rep)+' wastes some paper on every drop to line the pattern up, which is why you get fewer drops per roll.')}
+if(area==='room'){tips.push('Measure all the way around, including chimney breasts and alcoves. Do not take off doors and windows unless they are very large: the paper above and below them still needs drops.')}else{tips.push('Do not take a door or window off a feature wall: the paper above and below it still needs full-length rolls.')}
+if(rep>=50){tips.push('With a large repeat, one extra roll may not be enough on a big room; consider two.')}
+$('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
+$('vz').innerHTML=svg(drops,dpr,rolls);
+summary='Wallpaper ('+(area==='room'?'whole room':'one wall')+', '+fl(run)+' wide x '+fl(Hm)+' high, '+(rep>0?'repeat '+fs(rep):'no repeat')+', roll '+fs(rw)+' x '+fl(rl)+'): '+drops+' drops, '+dpr+' per roll = '+rolls+' rolls, buy '+(rolls+1)+'. dailyspacehacks.com/wallpaper-calculator/'}
+R.querySelectorAll('[data-a]').forEach(function(b){b.addEventListener('click',function(){area=b.getAttribute('data-a');R.querySelectorAll('[data-a]').forEach(function(x){x.classList.toggle('on',x===b)});$('lr').classList.toggle('hide',area!=='room');$('tw').textContent=area==='room'?'Room length':'Wall width';calc()})});
+R.querySelectorAll('[data-p]').forEach(function(b){b.addEventListener('click',function(){pat=parseFloat(b.getAttribute('data-p'));$('rp').value='';R.querySelectorAll('[data-p]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
+['ww','rw','wh','rlw','rll','rp'].forEach(function(id){$(id).addEventListener('input',function(){if(id==='rp'){var v=g('rp');R.querySelectorAll('[data-p]').forEach(function(x){x.classList.toggle('on',v===null?parseFloat(x.getAttribute('data-p'))===pat:false)})}calc()})});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my wallpaper list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your wallpaper list:',summary)})}catch(e){window.prompt('Copy your wallpaper list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+var lang=(navigator.language||'en-GB');
+if(lang==='en'||lang.indexOf('en-US')===0){unit='ft';$('ww').value=12;$('rw').value=10;$('wh').value=8;$('rlw').value=20.5;$('rll').value=33}else{unit='m';$('ww').value=3.5;$('rw').value=3;$('wh').value=2.4;$('rlw').value=52;$('rll').value=10.05}
+lbl();calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How Many Rolls of Wallpaper Do I Need?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>These charts use standard rolls, 10 cm (4 in) of trim on every drop and the pattern repeat shown. They do not include the spare roll we recommend you add.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Walls 2.4 m high, 52 cm x 10.05 m rolls</th><th>Plain or no repeat</th><th>Large repeat (64 cm)</th></tr></thead><tbody><tr><td>Feature wall 2.5 m wide</td><td>2</td><td>2</td></tr><tr><td>Feature wall 3 m wide</td><td>2</td><td>2</td></tr><tr><td>Feature wall 4 m wide</td><td>2</td><td>3</td></tr><tr><td>Feature wall 5 m wide</td><td>3</td><td>4</td></tr><tr><td>Room 3 x 3 m</td><td>6</td><td>8</td></tr><tr><td>Room 3 x 4 m</td><td>7</td><td>9</td></tr><tr><td>Room 4 x 4 m</td><td>8</td><td>11</td></tr><tr><td>Room 4 x 5 m</td><td>9</td><td>12</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Walls 8 ft high, 20.5 in x 33 ft rolls</th><th>Plain or no repeat</th><th>Large repeat (25 in)</th></tr></thead><tbody><tr><td>Feature wall 10 ft wide</td><td>2</td><td>2</td></tr><tr><td>Feature wall 12 ft wide</td><td>3</td><td>3</td></tr><tr><td>Feature wall 14 ft wide</td><td>3</td><td>3</td></tr><tr><td>Room 10 x 10 ft</td><td>8</td><td>8</td></tr><tr><td>Room 10 x 12 ft</td><td>9</td><td>9</td></tr><tr><td>Room 12 x 12 ft</td><td>10</td><td>10</td></tr><tr><td>Room 12 x 14 ft</td><td>11</td><td>11</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Notice the difference between the two charts. A 2.4 m wall plus trim is 2.5 m per drop, so a 10.05 m roll gives exactly four drops. An 8 ft wall plus 4 in of trim is about 8 ft 4 in, and four of those need just over 33 ft, so a 33 ft roll gives only three full drops. On 8 ft walls, a pattern repeat often costs you nothing extra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2633,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-01-feature-wall.jpg" alt="Bedroom with a sage green leaf-pattern wallpaper feature wall behind a linen bed and two white oak bedside tables" class="wp-image-2633"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How the Wallpaper Calculator Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>It uses the strip method that Bob Vila recommends in his guide on <a href="https://www.bobvila.com/articles/how-to-measure-for-wallpaper/" target="_blank" rel="noopener">how to measure for wallpaper</a>, instead of dividing the wall area by the roll area. Area alone ignores the paper you waste at the top and bottom of every drop.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Drops needed</strong> = the width to cover (one wall, or the distance all the way around the room) divided by the roll width, rounded up.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Length of each drop</strong> = wall height + 10 cm (4 in) for trimming + the pattern repeat. The trim follows Selected Wallpapers, whose calculator allows <a href="https://www.selectedwallpapers.com/pages/european-rolls-vs-double-rolls" target="_blank" rel="noopener">about 2 in (5 cm) on all sides</a>.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Drops per roll</strong> = roll length divided by the drop length, rounded down. A leftover piece shorter than a full drop is waste.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Rolls</strong> = drops needed divided by drops per roll, rounded up. We add one spare roll on top.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>The results match the figures in Dunelm's <a href="https://dunelm.com/info/buying-guides/how-to-measure-wallpaper" target="_blank" rel="noopener">wallpaper measuring guide</a>: with standard 52 cm x 10.05 m rolls and walls about 2.4 m high, a wallpaper with no repeat gives four drops per roll, and a repeat of up to 64 cm gives three.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Measure for Wallpaper</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Measure the width.</strong> For a feature wall, measure from corner to corner. For a whole room, measure all the way around, including chimney breasts and alcoves, as Practical DIY advises.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Measure the height</strong> from the top of the skirting board (baseboard) to the ceiling or coving, in a few places. Use the tallest figure.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Do not take off doors and windows.</strong> Bob Vila advises against deducting them, because you cut the openings out as you hang. Practical DIY only subtracts very large windows or areas that will not be papered.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Read the label</strong> for the roll width, roll length and pattern repeat, and enter them under More options if they are not standard.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:image {"id":2635,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-02-rolls-and-tools.jpg" alt="Four rolls of sage botanical wallpaper on an oak table with a pasting brush, smoothing tool, tape measure and pencil" class="wp-image-2635"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Pattern Repeat Explained</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The pattern repeat is the height after which the design starts again. To line the pattern up across the seams, each drop has to start at the same point in the design, so you lose up to one repeat of paper on every drop. Practical DIY puts it simply: <a href="https://www.practicaldiy.com/decorating/wallpaper/wallpaper_quantity.php" target="_blank" rel="noopener">the larger the vertical repeat, the more rolls you will need</a>, because the waste is greater.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Plain papers, textured papers and designs labeled free match have no repeat to line up. Small repeats of around 27 cm (10.6 in) waste a little; large repeats of 53 or 64 cm (21 to 25 in) can cost you a whole drop per roll, which on a big room adds several rolls.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Wallpaper Roll Sizes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Roll</th><th>Width</th><th>Length</th><th>Covers about</th></tr></thead><tbody><tr><td>Standard UK roll</td><td>52 cm (20.5 in)</td><td>10.05 m (33 ft)</td><td>5.2 m² (56 sq ft)</td></tr><tr><td>European roll</td><td>53 cm (20.9 in)</td><td>10 m (32.8 ft)</td><td>5.3 m² (57 sq ft)</td></tr><tr><td>US double roll</td><td>20.5 to 27 in</td><td>27 to 33 ft</td><td>56 to 70 sq ft</td></tr><tr><td>US single roll</td><td>20.5 to 27 in</td><td>13.5 to 16.5 ft</td><td>28 to 35 sq ft</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Sizes come from Practical DIY (standard UK roll) and <a href="https://www.selectedwallpapers.com/pages/european-rolls-vs-double-rolls" target="_blank" rel="noopener">Selected Wallpapers</a> (European and US rolls). Selected Wallpapers notes that one European roll is roughly one American double roll. Before you order, check whether the price and the label refer to a single or a double roll.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2636,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-03-papered-room.jpg" alt="Living room papered all round in a small terracotta and cream pattern, neatly cut around a white door and a window" class="wp-image-2636"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Before You Buy</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Buy one spare roll</strong>, or two for a large repeat on a big room. Bob Vila suggests one or two more rolls than you think you need, and Practical DIY adds a couple for large repeats.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Check the batch number</strong> on every roll. Dunelm recommends buying extra for complex rooms to ensure batch continuity, because a later batch can be a slightly different shade.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Keep the spare</strong> with its label. It is useful for repairs later.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwallpaper-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwallpaper-checklist.jpg&description=How%20much%20wallpaper%20do%20I%20need%3F%20Feature%20wall%203%20m%3A%202%20rolls.%20Room%203%20x%204%20m%3A%207%20rolls.%20Room%2012%20x%2012%20ft%3A%2010%20rolls.%20Always%20buy%201%20spare%20roll%20from%20the%20same%20batch" target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-checklist.jpg" alt="Wallpaper cheat sheet: feature wall 3 m 2 rolls, room 3 x 4 m 7 rolls, room 12 x 12 ft 10 rolls, large pattern repeat add 1 to 3 rolls" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/wallpaper-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the roll counts so you have them when you order wallpaper.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwallpaper-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwallpaper-checklist.jpg&description=How%20much%20wallpaper%20do%20I%20need%3F%20Feature%20wall%203%20m%3A%202%20rolls.%20Room%203%20x%204%20m%3A%207%20rolls.%20Room%2012%20x%2012%20ft%3A%2010%20rolls.%20Always%20buy%201%20spare%20roll%20from%20the%20same%20batch" target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Wallpaper Calculator FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many rolls of wallpaper do I need for a feature wall?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A feature wall 3 m (about 10 ft) wide and 2.4 m (8 ft) high needs 2 standard rolls with no pattern repeat: six drops, four drops per roll on a 2.4 m wall. A 4 m wall with a large repeat needs 3. Add one spare roll from the same batch.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many rolls of wallpaper for a 12 x 12 room?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A 12 x 12 ft room with 8 ft walls needs about 10 standard 20.5 in x 33 ft rolls: 48 ft of wall all the way around is 29 drops, and each roll gives three drops once you allow for trimming. Buy 11 to have a spare. Doors and windows are not taken off.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many drops do you get from a roll of wallpaper?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A standard 10.05 m roll gives four drops on a wall about 2.4 m high with no pattern repeat, and three drops with a repeat of up to 64 cm. On taller walls or with a large repeat you may only get two or three drops per roll.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Should I subtract doors and windows when measuring for wallpaper?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Usually not. You still need drops above and below doors and windows, and cutting around them wastes paper. Measure the full wall and only subtract very large openings, such as a wide patio door or a wall of windows.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Room Planning Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Decorating a bedroom? Our <a href="https://dailyspacehacks.com/box-room-bedroom-ideas/">box room bedroom ideas</a> and <a href="https://dailyspacehacks.com/small-bedroom-storage-ideas/">small bedroom storage ideas</a> help you plan the rest, and wallpaper is one of the easiest ways to dress up a small <a href="https://dailyspacehacks.com/powder-room-decor-ideas/">powder room</a> or <a href="https://dailyspacehacks.com/downstairs-toilet-ideas/">downstairs toilet</a>. For soft furnishings, try our <a href="https://dailyspacehacks.com/curtain-size-calculator/">curtain size calculator</a> and <a href="https://dailyspacehacks.com/rug-size-calculator/">rug size calculator</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->

@@ -130,7 +130,7 @@ $('kp').textContent=dpr;$('kpe').textContent='each drop '+fl(drop)+' with trim'+
 vv.textContent='You need '+rolls+' roll'+(rolls===1?'':'s')+' of wallpaper'+(area==='room'?' for the whole room':' for this wall')+'. Buy '+(rolls+1)+' to have a spare.';
 tips.push('Check every roll has the same batch number: colors can differ slightly between batches.');
 if(rep>0){tips.push('A pattern repeat of '+fs(rep)+' wastes some paper on every drop to line the pattern up, which is why you get fewer drops per roll.')}
-if(area==='room'){tips.push('Measure all the way round, including chimney breasts and alcoves. Do not take off doors and windows unless they are very large: the paper above and below them still needs drops.')}else{tips.push('Do not take a door or window off a feature wall: the paper above and below it still needs full-length rolls.')}
+if(area==='room'){tips.push('Measure all the way around, including chimney breasts and alcoves. Do not take off doors and windows unless they are very large: the paper above and below them still needs drops.')}else{tips.push('Do not take a door or window off a feature wall: the paper above and below it still needs full-length rolls.')}
 if(rep>=50){tips.push('With a large repeat, one extra roll may not be enough on a big room; consider two.')}
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
 $('vz').innerHTML=svg(drops,dpr,rolls);
