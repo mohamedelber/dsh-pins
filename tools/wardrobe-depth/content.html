@@ -1,0 +1,289 @@
+<!-- wp:paragraph -->
+<p>What is the right <strong>wardrobe depth</strong>? For hanging clothes on a normal side-to-side rail, plan about 60 cm (24 in) deep with hinged doors and about 71 cm (28 in) with sliding doors. This free calculator gives you the answer for your wardrobe in two taps and checks whether the space you have is deep enough.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pick the door type and what goes inside, and the depth appears straight away. Open <em>More options</em> to enter the depth of your alcove or wall, and it tells you whether a standard rail fits, whether it is tight, or whether you need a pull-out rail or shelves instead.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-wd" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How deep should your wardrobe be?</h3>
+<p class="sub">Two taps: pick the door type and what goes inside. The answer appears right away.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="cm">cm</button><button type="button" data-u="in">inches</button></div></div>
+<fieldset><legend>1. Door type</legend>
+<div class="opts" role="group" aria-label="Doors">
+<button type="button" data-d="hinged" class="on"><b>Hinged doors</b><span>Doors swing open</span></button>
+<button type="button" data-d="sliding"><b>Sliding doors</b><span>Doors run on a track</span></button>
+<button type="button" data-d="open"><b>No doors</b><span>Open wardrobe or rail</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. What goes inside?</legend>
+<div class="opts" role="group" aria-label="Contents">
+<button type="button" data-c="hang" class="on"><b>Hanging clothes</b><span>A rail, side to side</span></button>
+<button type="button" data-c="shelf"><b>Shelves and drawers</b><span>Folded clothes only</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: check the space you have</summary>
+<div class="grid"><label><span>Depth you have (wall to front)</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="hv" placeholder="optional"></label></div>
+<p class="hint">Measure from the back wall to where the front of the wardrobe or doors can come, at the narrowest point (skirting boards and sockets count).</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Recommended depth</small><strong id="kr"></strong><em>outside, including doors</em></div>
+<div class="kpi"><small>Tight minimum</small><strong id="km"></strong><em id="kme"></em></div>
+<div class="kpi"><small>Hanger width</small><strong id="kh"></strong><em>a standard adult hanger</em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my wardrobe depth</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-wd');if(!R)return;
+var CM=2.54,unit='cm',door='hinged',cont='hang',summary='';
+var HANG=45.7,TRACK=5,MINH=50.8,PULL=30.2;
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
+function f(x){if(unit==='in'){return (Math.round(x/CM*2)/2)+' in'}return Math.round(x)+' cm'}
+function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='cm'?'(cm)':'(in)'});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
+function setUnit(u){if(u===unit)return;var v=g('hv');unit=u;if(v!==null){$('hv').value=Math.round((u==='cm'?v*CM:v/CM)*10)/10}lbl()}
+function rec(){var t=door==='sliding'?TRACK:0;if(cont==='hang'){return door==='sliding'?71:60}return 55+t}
+function mn(){var t=door==='sliding'?TRACK:0;return cont==='hang'?MINH+t:null}
+function svg(depth,have){var W=360,H=200,s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wardrobe seen from above">';
+var sc=150/Math.max(depth,have?have:0,75),x0=60,y0=30,dw=240,dp=depth*sc;
+s+='<rect width="'+W+'" height="'+H+'" fill="#FBF6EF"/>';
+s+='<rect x="'+(x0-10)+'" y="'+(y0-8)+'" width="'+(dw+20)+'" height="8" fill="#D8CBBB"/>';
+s+='<text x="'+(x0+dw/2)+'" y="'+(y0-12)+'" font-size="11" fill="#6E645C" text-anchor="middle">back wall</text>';
+s+='<rect x="'+x0+'" y="'+y0+'" width="'+dw+'" height="'+dp+'" fill="#FFFFFF" stroke="#B98A5E" stroke-width="2"/>';
+if(cont==='hang'){var cy=y0+(door==='sliding'?(dp-TRACK*sc)/2:dp/2);var hw=HANG*sc;
+for(var k=0;k<7;k++){var hx=x0+30+k*30;s+='<line x1="'+hx+'" y1="'+(cy-hw/2)+'" x2="'+hx+'" y2="'+(cy+hw/2)+'" stroke="#8FA689" stroke-width="5" stroke-linecap="round"/>'}
+s+='<line x1="'+(x0+10)+'" y1="'+cy+'" x2="'+(x0+dw-10)+'" y2="'+cy+'" stroke="#6E645C" stroke-width="2"/>'}
+else{for(var j=0;j<3;j++){s+='<rect x="'+(x0+12+j*76)+'" y="'+(y0+8)+'" width="64" height="'+(dp-16-(door==='sliding'?TRACK*sc:0))+'" fill="#ECCDA0" opacity="0.7"/>'}}
+var fy=y0+dp;
+if(door==='hinged'){s+='<line x1="'+x0+'" y1="'+fy+'" x2="'+(x0+40)+'" y2="'+(fy+40)+'" stroke="#C85A32" stroke-width="3"/><path d="M'+(x0+56)+' '+fy+' A56 56 0 0 1 '+(x0+40)+' '+(fy+40)+'" fill="none" stroke="#C85A32" stroke-dasharray="3 3"/>'}
+if(door==='sliding'){s+='<line x1="'+x0+'" y1="'+(fy-3)+'" x2="'+(x0+dw/2+10)+'" y2="'+(fy-3)+'" stroke="#C85A32" stroke-width="3"/><line x1="'+(x0+dw/2-10)+'" y1="'+(fy+1)+'" x2="'+(x0+dw)+'" y2="'+(fy+1)+'" stroke="#C85A32" stroke-width="3"/>'}
+s+='<line x1="'+(x0+dw+18)+'" y1="'+y0+'" x2="'+(x0+dw+18)+'" y2="'+fy+'" stroke="#342E2A" stroke-width="1.5"/><line x1="'+(x0+dw+12)+'" y1="'+y0+'" x2="'+(x0+dw+24)+'" y2="'+y0+'" stroke="#342E2A"/><line x1="'+(x0+dw+12)+'" y1="'+fy+'" x2="'+(x0+dw+24)+'" y2="'+fy+'" stroke="#342E2A"/>';
+s+='<text x="'+(x0+dw+28)+'" y="'+(y0+dp/2+4)+'" font-size="12" font-weight="700" fill="#342E2A">'+f(depth)+'</text>';
+if(have){var hy=y0+have*sc;s+='<line x1="'+(x0-14)+'" y1="'+hy+'" x2="'+(x0+dw+14)+'" y2="'+hy+'" stroke="#B3432A" stroke-dasharray="6 4"/><text x="'+(x0+4)+'" y="'+(hy-4)+'" font-size="11" fill="#B3432A">your space</text>'}
+return s+'</svg>'}
+function calc(){var r=rec(),m=mn(),hv=g('hv');var have=hv===null?null:(unit==='in'?hv*CM:hv);
+var vv=$('vv');vv.className='verdict';
+$('kr').textContent=f(r);$('kh').textContent=f(HANG);
+if(m===null){$('km').textContent='none';$('kme').textContent='shallower is fine for folded clothes'}else{$('km').textContent=f(m);$('kme').textContent='side-on rail just fits'}
+var tips=[];
+if(have===null){vv.textContent='Plan a wardrobe '+f(r)+' deep'+(door==='sliding'?', including the sliding door track.':'.')}
+else{var inner=have-(door==='sliding'?TRACK:0);
+if(have>=r){vv.textContent='Your '+f(have)+' is enough: plan the wardrobe '+f(r)+' deep.'}
+else if(cont==='shelf'){vv.className='verdict amb';vv.textContent='Your '+f(have)+' is shallower than '+f(r)+', but it still works for folded clothes, shoes and baskets.'}
+else if(inner>=MINH){vv.className='verdict amb';vv.textContent='Tight but possible: a side-on rail fits in '+f(have)+', but clothes may brush the '+(door==='open'?'front edge':'doors')+'. Slim hangers help.'}
+else if(inner>=PULL){vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for a side-on rail. Use a pull-out (end-on) rail or shelves instead.'}
+else{vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for hanging. Use shelves, hooks or a narrow cupboard.'}}
+if(cont==='hang'){tips.push('A standard adult hanger is about '+f(HANG)+' wide, so the inside of the wardrobe needs to be deeper than that.')}
+if(door==='sliding'){tips.push('Sliding doors run on a track that takes about '+f(TRACK)+' of the depth, so they need a deeper wardrobe than hinged doors.')}
+if(door==='hinged'){tips.push('Hinged doors need floor space to swing open in front of the wardrobe; check the bed or other furniture is not in the way.')}
+if(cont==='hang'){tips.push('Short of depth? A pull-out rail hangs clothes front to back and needs only about '+f(PULL)+' inside.')}
+tips.push('Measure at skirting-board height as well as higher up: the narrowest point decides the depth.');
+$('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
+$('vz').innerHTML=svg(r,have);
+summary='Wardrobe depth ('+door+' doors, '+(cont==='hang'?'hanging clothes':'shelves')+'): recommended '+f(r)+(m===null?'':', tight minimum '+f(m))+(have===null?'':', my space '+f(have))+'. dailyspacehacks.com/wardrobe-depth/'}
+R.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){door=b.getAttribute('data-d');R.querySelectorAll('[data-d]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-c]').forEach(function(b){b.addEventListener('click',function(){cont=b.getAttribute('data-c');R.querySelectorAll('[data-c]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
+$('hv').addEventListener('input',calc);
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my wardrobe depth'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your wardrobe depth:',summary)})}catch(e){window.prompt('Copy your wardrobe depth:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+var lang=(navigator.language||'en-GB');
+if(lang==='en'||lang.indexOf('en-US')===0){unit='in'}else{unit='cm'}
+lbl();calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Standard Wardrobe Depth</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Wardrobe</th><th>Depth to plan</th><th>Why</th></tr></thead><tbody><tr><td>Hinged doors, hanging rail</td><td>60 cm (24 in)</td><td>Hangers about 46 cm wide plus room in front and behind</td></tr><tr><td>Sliding doors, hanging rail</td><td>71 cm (28 in)</td><td>66 cm inside plus about 5 cm for the door track</td></tr><tr><td>Open wardrobe or rail, no doors</td><td>60 cm (24 in)</td><td>Same hanging space, nothing to close</td></tr><tr><td>Shelves and drawers only</td><td>55 cm (22 in)</td><td>No hanging rail, so it can be shallower</td></tr><tr><td>Tight minimum for a side-on rail</td><td>about 51 cm (20 in)</td><td>Clothes may brush the doors</td></tr><tr><td>Pull-out (end-on) rail</td><td>from about 30 cm (12 in) inside</td><td>Clothes hang front to back</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>These figures come from two planning guides. London fitted-furniture maker FCI's guide to <a href="https://www.fcilondon.co.uk/blog/how-deep-should-built-in-wardrobes-be" target="_blank" rel="noopener">how deep built-in wardrobes should be</a> gives 600 mm for a hinged-door wardrobe, says anything under 60 cm means you cannot use a standard horizontal hanging rail, allows 55 cm if you are not hanging clothes, and recommends 660 mm plus a running track of about 50 mm for sliding doors. Dimensions.com's <a href="https://www.dimensions.com/element/reach-in-closets" target="_blank" rel="noopener">reach-in closet guide</a> recommends 24 in (61 cm) as a comfortable depth and says closets as shallow as 20 in (50.8 cm) can be used.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2574,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wardrobe-depth-01-hanging-rail.jpg" alt="Wardrobe depth: a built-in wardrobe with a chrome hanging rail of shirts, dresses and knits on wooden hangers hanging side-on, folded jumpers on a lit shelf above and woven baskets below" class="wp-image-2574"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why Wardrobes Are About 60 cm Deep</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>It comes down to the hanger. A standard adult hanger such as IKEA's Bumerang is 18 in (45.7 cm) wide according to <a href="https://www.dimensions.com/element/ikea-bumerang-coat-hanger" target="_blank" rel="noopener">Dimensions.com</a>, and clothes on a side-to-side rail hang at that width. Add the thickness of the back panel and doors and a little air in front and behind so shirts are not crushed, and you arrive at about 60 cm outside. Bulky winter coats need a few centimetres more, so if your wardrobe holds mostly coats, go for the deeper end.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Can a Wardrobe Be 50 cm Deep?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Yes, but not with a normal side-to-side rail and standard hangers. At 50 cm outside, the inside is usually around 45 to 47 cm once the back panel and doors are taken off, which is about the width of the hanger itself, so clothes press against the doors and get creased. In a 50 cm wardrobe you have three better options:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>A pull-out rail.</strong> Clothes hang front to back on a rail that slides out. One made by fittings maker Emuca needs a <a href="https://shop.emuca.com/wardrobes/accessories/self/self-pull-out-wardrobe-rail-62106" target="_blank" rel="noopener">minimum inside depth</a> of just 302 mm.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Slim hangers and short clothes.</strong> Children's clothes and slim hangers can work on a side-on rail in a tight space.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Shelves and drawers.</strong> Use the shallow wardrobe for folded clothes and keep hanging clothes elsewhere.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sliding or Hinged Doors?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2575,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wardrobe-depth-02-sliding-doors.jpg" alt="Bedroom with a floor-to-ceiling sage green sliding door wardrobe on a floor track beside a sash window and a bed with a green throw" class="wp-image-2575"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Sliding doors save floor space in front of the wardrobe, which helps in a narrow bedroom, but the track takes about 5 cm of depth, so the wardrobe itself has to be deeper. Hinged doors need a clear arc of floor to swing open, roughly as wide as each door, but the wardrobe can be shallower. In a box room with the bed close to the wardrobe, measure the door swing before you choose.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Shallow Wardrobe and Alcove Ideas</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2576,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wardrobe-depth-03-shallow-alcove.jpg" alt="Shallow alcove beside a fireplace fitted with white shelves holding folded jumpers, a basket of rolled scarves and shoes on the bottom shelf" class="wp-image-2576"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>If an alcove beside a chimney breast is only 30 to 45 cm deep, turn it into shelving for folded clothes, shoes and baskets, or fit a pull-out rail. Our <a href="https://dailyspacehacks.com/box-room-bedroom-ideas/">box room bedroom ideas</a> and <a href="https://dailyspacehacks.com/small-bedroom-storage-ideas/">small bedroom storage ideas</a> have more ways to fit storage into tight rooms, and our <a href="https://dailyspacehacks.com/loft-storage-ideas/">loft storage ideas</a> cover wardrobes under a sloping ceiling.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Measure for a Wardrobe</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Measure the depth</strong> from the back wall to where the front of the wardrobe can come, at skirting-board height and higher up. Use the smaller figure.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Check what is in the way:</strong> skirting boards, sockets, radiators, coving and window frames.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Measure the width and height</strong>, and the floor space in front for the doors to open.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Enter the depth</strong> under More options in the calculator to see what fits.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwardrobe-depth%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwardrobe-depth-checklist.jpg&description=Wardrobe%20depth%20cheat%20sheet%3A%20hinged%2060%20cm%2C%20sliding%2071%20cm%2C%20shelves%2055%20cm%2C%20pull-out%20rail%20from%2030%20cm" target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wardrobe-depth-checklist.jpg" alt="Wardrobe depth cheat sheet: hinged doors 60 cm, sliding doors 71 cm, shelves only 55 cm, pull-out rail from 30 cm inside" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/wardrobe-depth-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the four standard depths so you have them when you measure or shop.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwardrobe-depth%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwardrobe-depth-checklist.jpg&description=Wardrobe%20depth%20cheat%20sheet%3A%20hinged%2060%20cm%2C%20sliding%2071%20cm%2C%20shelves%2055%20cm%2C%20pull-out%20rail%20from%2030%20cm" target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Wardrobe Depth FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What is the standard depth of a wardrobe?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A standard wardrobe with hinged doors and a side-to-side hanging rail is about 60 cm (24 in) deep. With sliding doors, plan about 71 cm (28 in) because the door track takes extra depth. A wardrobe with only shelves and drawers can be about 55 cm (22 in) deep.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How deep does a wardrobe need to be for hangers?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A standard adult hanger is about 46 cm (18 in) wide, so a wardrobe needs to be deeper than that inside for a side-on rail. Plan around 60 cm outside for comfortable hanging; about 51 cm (20 in) is a tight minimum where clothes may touch the doors.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Is 50 cm deep enough for a wardrobe?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A 50 cm wardrobe is too shallow for a normal side-to-side rail with standard hangers, because the inside is barely wider than the hanger. It works well with a pull-out rail that hangs clothes front to back, with slim hangers for small clothes, or as shelving for folded clothes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How deep is a sliding door wardrobe?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Plan about 71 cm (28 in) for a sliding door wardrobe with a hanging rail: around 66 cm for the hanging space plus about 5 cm for the door track. If your space is shallower, hinged doors or an open wardrobe will give you more usable depth.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Planning Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Planning the whole bedroom? Try our <a href="https://dailyspacehacks.com/curtain-size-calculator/">curtain size calculator</a>, <a href="https://dailyspacehacks.com/rug-size-calculator/">rug size calculator</a> and <a href="https://dailyspacehacks.com/tv-mounting-height-calculator/">TV mounting height calculator</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->
