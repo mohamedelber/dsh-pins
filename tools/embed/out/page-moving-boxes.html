@@ -6,10 +6,12 @@ body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed 
 body.dsh-embed .entry-content{margin:0!important}
 body.dsh-embed .entry-content>*{max-width:none!important}
 body.dsh-embed .dsh-calc{margin:0!important}
+body.dsh-embed .dsh-calc .viz svg{max-height:340px}
 .dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
 .dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
 .dsh-ef a:hover{text-decoration:underline}
 </style>
+<div id="dsh-ew">
 <div id="dsh-boxes" class="dsh-calc">
 <style>
 .dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
@@ -185,4 +187,6 @@ setPre('2');calc();
 </script>
 </div>
 <div class="dsh-ef"><span>Free tool by <a href="https://dailyspacehacks.com/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span><a href="https://dailyspacehacks.com/moving-box-calculator/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>
+</div>
+<script>(function(){var w=document.getElementById('dsh-ew'),last=0;function s(){if(!w)return;var h=Math.ceil(w.getBoundingClientRect().height)+4;if(h!==last){last=h;try{parent.postMessage({dshEmbed:1,h:h},'*')}catch(e){}}}if(window.ResizeObserver){new ResizeObserver(s).observe(w)}window.addEventListener('load',s);setInterval(s,1000);s()})();</script>
 <!-- /wp:html -->

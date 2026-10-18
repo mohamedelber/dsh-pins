@@ -30,12 +30,13 @@ jobs:
           for(const f of fs.readdirSync('.').filter(x=>x.endsWith('.html'))){
            for(const [w,tag] of [[1100,'d'],[390,'m']]){const p=await b.newPage({viewport:{width:w,height:900},locale:'en-US'});
             const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
-            await p.goto('file://'+path.resolve(f));await p.waitForTimeout(6000);
+            await p.goto('file://'+path.resolve(f));for(let k=0;k<12;k++){await p.mouse.wheel(0,2500);await p.waitForTimeout(700)}await p.waitForTimeout(4000);
+            const hs=await p.evaluate(()=>Array.from(document.querySelectorAll('iframe')).map(x=>x.src.split('/').slice(-2,-1)[0]+':'+x.style.height+':'+x.getAttribute('height')));fs.appendFileSync('out/heights.txt',f+' '+tag+' '+hs.join(' ')+'\n');
             await p.screenshot({path:'out/'+f.replace('.html','')+'-'+tag+'.png',fullPage:true});
             fs.appendFileSync('out/errors.txt',f+' '+tag+' '+JSON.stringify(errs)+'\n');await p.close();}}
           await b.close();})();
           JS
-          : > out/errors.txt; node s.js; rm -rf node_modules package*.json s.js
+          : > out/errors.txt; : > out/heights.txt; node s.js; rm -rf node_modules package*.json s.js
       - name: Commit
         run: |
           git config user.name "github-actions"

@@ -2,16 +2,16 @@ import html, json, os
 S = 'https://dailyspacehacks.com/'
 # (main slug, page id, embed slug, title, short line, tool file, height)
 T = [
- ('christmas-tree-lights-calculator', 2617, 'christmas-tree-lights-calculator', 'Christmas Tree Lights Calculator', 'How many lights, ornaments and garland a tree needs.', '../xmas-lights/tool.html'),
- ('wallpaper-calculator', 2638, 'wallpaper-calculator', 'Wallpaper Calculator', 'How many rolls of wallpaper for a wall or a whole room.', '../wallpaper-calc/tool.html'),
- ('storage-unit-size-calculator', 2659, 'storage-unit-size-calculator', 'Storage Unit Size Calculator', 'The right storage unit size for a home or a car.', '../storage-unit/tool.html'),
- ('tv-mounting-height-calculator', 2549, 'tv-mounting-height-calculator', 'TV Mounting Height Calculator', 'How high to mount a TV for comfortable viewing.', '../tv-calc/tool.html'),
- ('wardrobe-depth', 2579, 'wardrobe-depth-calculator', 'Wardrobe Depth Calculator', 'How deep a wardrobe needs to be for hanging clothes.', '../wardrobe-depth/tool.html'),
- ('rug-size-calculator', 2403, 'rug-size-calculator', 'Rug Size Calculator', 'The right rug size for a living room, dining room or bedroom.', '../rug-calc/tool.html'),
- ('curtain-size-calculator', 2257, 'curtain-size-calculator', 'Curtain Size Calculator', 'Curtain width and drop for any window.', '../curtain-calc/tool.html'),
- ('moving-box-calculator', 2337, 'moving-box-calculator', 'Moving Box Calculator', 'How many moving boxes of each size you need.', '../moving-box/tool.html'),
- ('shelf-spacing-calculator', 1890, 'shelf-spacing-calculator', 'Shelf Spacing Calculator', 'How far apart to put floating shelves.', 'src/shelf.html'),
- ('washer-dryer-space-calculator', 1295, 'washer-dryer-space-calculator', 'Washer and Dryer Space Calculator', 'Whether a washer and dryer fit, with clearances.', 'src/washer.html'),
+ ('christmas-tree-lights-calculator', 2617, 'christmas-tree-lights', 'Christmas Tree Lights Calculator', 'How many lights, ornaments and garland a tree needs.', '../xmas-lights/tool.html'),
+ ('wallpaper-calculator', 2638, 'wallpaper-rolls', 'Wallpaper Calculator', 'How many rolls of wallpaper for a wall or a whole room.', '../wallpaper-calc/tool.html'),
+ ('storage-unit-size-calculator', 2659, 'storage-unit-size', 'Storage Unit Size Calculator', 'The right storage unit size for a home or a car.', '../storage-unit/tool.html'),
+ ('tv-mounting-height-calculator', 2549, 'tv-height', 'TV Mounting Height Calculator', 'How high to mount a TV for comfortable viewing.', '../tv-calc/tool.html'),
+ ('wardrobe-depth', 2579, 'wardrobe-size', 'Wardrobe Depth Calculator', 'How deep a wardrobe needs to be for hanging clothes.', '../wardrobe-depth/tool.html'),
+ ('rug-size-calculator', 2403, 'rug-size', 'Rug Size Calculator', 'The right rug size for a living room, dining room or bedroom.', '../rug-calc/tool.html'),
+ ('curtain-size-calculator', 2257, 'curtain-size', 'Curtain Size Calculator', 'Curtain width and drop for any window.', '../curtain-calc/tool.html'),
+ ('moving-box-calculator', 2337, 'moving-boxes', 'Moving Box Calculator', 'How many moving boxes of each size you need.', '../moving-box/tool.html'),
+ ('shelf-spacing-calculator', 1890, 'shelf-spacing', 'Shelf Spacing Calculator', 'How far apart to put floating shelves.', 'src/shelf.html'),
+ ('washer-dryer-space-calculator', 1295, 'washer-dryer-space', 'Washer and Dryer Space Calculator', 'Whether a washer and dryer fit, with clearances.', 'src/washer.html'),
 ]
 H = json.load(open('heights.json')) if os.path.exists('heights.json') else {}
 
@@ -22,6 +22,7 @@ body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed 
 body.dsh-embed .entry-content{margin:0!important}
 body.dsh-embed .entry-content>*{max-width:none!important}
 body.dsh-embed .dsh-calc{margin:0!important}
+body.dsh-embed .dsh-calc .viz svg{max-height:340px}
 .dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
 .dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
 .dsh-ef a:hover{text-decoration:underline}
@@ -30,28 +31,31 @@ body.dsh-embed .dsh-calc{margin:0!important}
 def snippet(t):
     main, pid, es, title, line, f = t
     h = H.get(es, 760)
-    return ('<iframe src="%sembed/%s/" title="%s" width="100%%" height="%d" style="border:0;width:100%%;max-width:760px;display:block" loading="lazy"></iframe>\n'
-            '<p style="font-size:13px;margin:6px 0 0"><a href="%s%s/">%s</a> by Daily Space Hacks</p>') % (S, es, title, h, S, main, title)
+    return ('<iframe class="dsh-embed" src="%sembed-calculators/%s/" title="%s" width="100%%" height="%d" style="border:0;width:100%%;max-width:760px;display:block" loading="lazy"></iframe>\n'
+            '<p style="font-size:13px;margin:6px 0 0"><a href="%s%s/">%s</a> by Daily Space Hacks</p>\n' + HOST) % (S, es, title, h, S, main, title)
+
+RESIZE = "<script>(function(){var w=document.getElementById('dsh-ew'),last=0;function s(){if(!w)return;var h=Math.ceil(w.getBoundingClientRect().height)+4;if(h!==last){last=h;try{parent.postMessage({dshEmbed:1,h:h},'*')}catch(e){}}}if(window.ResizeObserver){new ResizeObserver(s).observe(w)}window.addEventListener('load',s);setInterval(s,1000);s()})();</script>"
+HOST = "<script>window.addEventListener('message',function(e){if(e.origin!=='https://dailyspacehacks.com'||!e.data||!e.data.dshEmbed)return;document.querySelectorAll('iframe.dsh-embed').forEach(function(f){if(f.contentWindow===e.source)f.style.height=e.data.h+'px'})});</script>"
 
 def embed_page(t):
     main, pid, es, title, line, f = t
     tool = open(f).read().strip()
     foot = ('<div class="dsh-ef"><span>Free tool by <a href="%s?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span>'
             '<a href="%s%s/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>') % (S, S, main)
-    return '<!-- wp:html -->\n' + PAGE_CSS + '\n' + tool + '\n' + foot + '\n<!-- /wp:html -->'
+    return '<!-- wp:html -->\n' + PAGE_CSS + '\n<div id="dsh-ew">\n' + tool + '\n' + foot + '\n</div>\n' + RESIZE + '\n<!-- /wp:html -->'
 
 COPY = "var c=this.parentNode.parentNode.querySelector('code'),b=this,d=function(){b.textContent='Copied';b.classList.add('ok');setTimeout(function(){b.textContent='Copy code';b.classList.remove('ok')},2200)};if(navigator.clipboard){navigator.clipboard.writeText(c.textContent).then(d)}else{var r=document.createRange();r.selectNodeContents(c);var w=getSelection();w.removeAllRanges();w.addRange(r);document.execCommand('copy');d()}"
 
 def button(t, hub=False):
     main, pid, es, title, line, f = t
     code = html.escape(snippet(t), quote=False)
-    extra = '' if hub else '<a class="eal" href="%sembed/">All free calculators to embed</a>' % S
+    extra = '' if hub else '<a class="eal" href="%sembed-calculators/">All free calculators to embed</a>' % S
     return ('<div class="dsh-emb"><details><summary><span class="eic" aria-hidden="true">&lt;/&gt;</span>'
             '<span class="etx"><b>Embed this calculator</b><small>Free for your blog or website</small></span><span class="ech" aria-hidden="true"></span></summary>'
             '<div class="ebd"><p>Copy the code and paste it into an HTML block on your site. It is free to use; please keep the credit link under the calculator.</p>'
             '<pre><code>%s</code></pre>'
             '<div class="eac"><button type="button" class="ecp" onclick="%s">Copy code</button>'
-            '<a class="epv" href="%sembed/%s/" target="_blank" rel="noopener nofollow">Preview</a>%s</div></div></details></div>') % (code, COPY, S, es, extra)
+            '<a class="epv" href="%sembed-calculators/%s/" target="_blank" rel="noopener nofollow">Preview</a>%s</div></div></details></div>') % (code, COPY, S, es, extra)
 
 os.makedirs('out', exist_ok=True)
 for t in T:
