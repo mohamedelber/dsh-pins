@@ -70,7 +70,7 @@
 <label><span>Distance from your eyes to the TV</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0.5" step="0.1" id="vd"></label>
 <label><span>Mounting holes to bottom of TV</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="ho" placeholder="optional"></label>
 </div>
-<p class="hint">Measure the last one on the back of the TV, from the centre of the mounting holes to the bottom edge. It gives you the height to fix the wall bracket.</p>
+<p class="hint">Measure the last one on the back of the TV, from the center of the mounting holes to the bottom edge. It gives you the height to fix the wall bracket.</p>
 <label class="chk"><input type="checkbox" id="fp">The TV has to go above a fireplace or furniture</label>
 <div id="ffp" class="grid hide"><label><span>Lowest the bottom of the TV can go</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="mb"></label></div>
 <p id="hfp" class="hint hide">Use the top of the mantel or furniture plus the clearance in your fireplace or TV manual.</p>
@@ -78,10 +78,10 @@
 <div class="res" aria-live="polite">
 <div id="vv" class="verdict"></div>
 <div class="kpis">
-<div class="kpi main"><small>Centre of screen</small><strong id="kc"></strong><em>from the floor</em></div>
+<div class="kpi main"><small>Center of screen</small><strong id="kc"></strong><em>from the floor</em></div>
 <div class="kpi"><small>Bottom edge</small><strong id="kb"></strong><em>from the floor</em></div>
 <div class="kpi"><small>Top edge</small><strong id="kt"></strong><em>from the floor</em></div>
-<div class="kpi hide" id="kbx"><small>Wall bracket</small><strong id="kbr"></strong><em>centre of mounting holes</em></div>
+<div class="kpi hide" id="kbx"><small>Wall bracket</small><strong id="kbr"></strong><em>center of mounting holes</em></div>
 </div>
 <p class="hint">Screen: <span id="ks"></span> (16:9) · Viewing angle: <span id="ka"></span> above eye level</p>
 <div class="viz" id="vz"></div>
@@ -122,7 +122,7 @@ s+='<circle cx="'+(ex+4)+'" cy="'+sy+'" r="2.5" fill="#342E2A"/>';
 s+='<line x1="'+(ex+4)+'" y1="'+sy+'" x2="'+(wx-tvw)+'" y2="'+sy+'" stroke="#8FA689" stroke-dasharray="4 3"/>';
 s+='<line x1="'+(ex+4)+'" y1="'+sy+'" x2="'+(wx-tvw)+'" y2="'+y(o.c)+'" stroke="'+(o.ang>15?'#B3432A':'#C85A32')+'" stroke-width="2"/>';
 s+='<text x="'+(ex+14)+'" y="'+(sy-8)+'" font-size="12" fill="#342E2A">'+o.ang.toFixed(0)+'°</text>';
-s+='<text x="'+(wx-12)+'" y="'+(y(o.c)+4)+'" font-size="11" fill="#342E2A" text-anchor="end">centre '+fs(o.c)+'</text>';
+s+='<text x="'+(wx-12)+'" y="'+(y(o.c)+4)+'" font-size="11" fill="#342E2A" text-anchor="end">center '+fs(o.c)+'</text>';
 s+='<text x="'+(ex)+'" y="'+(fy+18)+'" font-size="11" fill="#6E645C" text-anchor="middle">eyes '+fs(o.eye)+'</text>';
 s+='<text x="'+((ex+wx)/2)+'" y="'+(fy+18)+'" font-size="11" fill="#6E645C" text-anchor="middle">'+fl(o.dist)+'</text>';
 return s+'</svg>'}
@@ -136,21 +136,21 @@ if(fp?bot<mb:false){bot=mb;c=bot+h/2;lifted=true}
 var top=c+h/2;var ang=Math.atan((c-eh)/dist)*180/Math.PI;var angTop=Math.atan((top-eh)/dist)*180/Math.PI;
 var maxc=eh+dist*Math.tan(15*Math.PI/180);
 var vv=$('vv');vv.className='verdict';
-if(ang<=5){vv.textContent='Mount the centre of the screen at '+fs(c)+' from the floor: right at eye level.'}
-else if(ang<=15){vv.className='verdict amb';vv.textContent='Centre at '+fs(c)+'. That is '+ang.toFixed(0)+'° above eye level: within the 15° limit, but lower is more comfortable.'}
-else{vv.className='verdict bad';vv.textContent='Centre at '+fs(c)+' is '+ang.toFixed(0)+'° above eye level, more than the 15° limit. Expect neck strain: lower the TV or use a pull-down mount.'}
+if(ang<=5){vv.textContent='Mount the center of the screen at '+fs(c)+' from the floor: right at eye level.'}
+else if(ang<=15){vv.className='verdict amb';vv.textContent='Center at '+fs(c)+'. That is '+ang.toFixed(0)+'° above eye level: within the 15° limit, but lower is more comfortable.'}
+else{vv.className='verdict bad';vv.textContent='Center at '+fs(c)+' is '+ang.toFixed(0)+'° above eye level, more than the 15° limit. Expect neck strain: lower the TV or use a pull-down mount.'}
 $('kc').textContent=fs(c);$('kb').textContent=fs(bot);$('kt').textContent=fs(top);
 var ho=g('ho');if(ho===null){$('kbx').classList.add('hide')}else{$('kbx').classList.remove('hide');$('kbr').textContent=fs(bot+toIn(ho))}
 $('ks').textContent=fs(w)+' x '+fs(h);$('ka').textContent=ang.toFixed(0)+'°';
 var tips=[];
-tips.push('Highest comfortable centre at this distance (15° limit): '+fs(maxc)+'.');
+tips.push('Highest comfortable center at this distance (15° limit): '+fs(maxc)+'.');
 if(lifted){tips.push('The TV had to go higher than eye level. Sitting further back, or a tilting or pull-down mount, reduces the angle.')}
 if(angTop>15){tips.push('The top of the screen is '+angTop.toFixed(0)+'° above your eyes, so you will look up for the top of the picture.')}
 if(seat==='bed'){tips.push('In bed, people sit at different heights: measure your own eye height while propped up.')}
 tips.push('Before drilling, tape a paper template of the screen to the wall and sit down to check it.');
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
 $('vz').innerHTML=svg({eye:eh,c:c,bot:bot,top:top,dist:dist,ang:ang,fp:fp,mb:mb});
-summary='TV '+d+' in: centre of screen '+fs(c)+', bottom edge '+fs(bot)+', top edge '+fs(top)+(ho===null?'':', wall bracket '+fs(bot+toIn(ho)))+'. Eye height '+fs(eh)+', distance '+fl(dist)+', angle '+ang.toFixed(0)+'°. dailyspacehacks.com/tv-mounting-height-calculator/'}
+summary='TV '+d+' in: center of screen '+fs(c)+', bottom edge '+fs(bot)+', top edge '+fs(top)+(ho===null?'':', wall bracket '+fs(bot+toIn(ho)))+'. Eye height '+fs(eh)+', distance '+fl(dist)+', angle '+ang.toFixed(0)+'°. dailyspacehacks.com/tv-mounting-height-calculator/'}
 function setSeat(s){seat=s;R.querySelectorAll('[data-s]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-s')===s)});sval('eh',unit==='cm'?EYE[s]*CM:EYE[s]);if(s==='stand'){var d=g('vd');if(d===null?true:false)sval('vd',unit==='cm'?1.8:6)}}
 R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){setSeat(b.getAttribute('data-s'));calc()})});
 R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});

@@ -1,0 +1,317 @@
+<!-- wp:paragraph -->
+<p>How high should you mount a TV? This free <strong>TV mounting height calculator</strong> gives you the answer in two taps: pick your TV size and where you sit, and it shows how high the center, bottom and top of the screen should be from the floor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>It works in inches or centimeters, handles sofas, beds and standing spots, and warns you if a fireplace or piece of furniture forces the TV too high. Open <em>More options</em> to enter your own eye height and viewing distance, or the height for the wall bracket.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-tvh" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc .sizes{grid-template-columns:repeat(4,1fr)}
+.dsh-calc .sizes button{text-align:center;padding:10px 4px}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How high should you mount your TV?</h3>
+<p class="sub">Two taps: pick your TV size and where you sit. The answer appears straight away.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="in">inches</button><button type="button" data-u="cm">cm</button></div></div>
+<fieldset><legend>1. TV size</legend>
+<div class="opts sizes" role="group" aria-label="TV size">
+<button type="button" data-t="32"><b>32"</b></button><button type="button" data-t="43"><b>43"</b></button><button type="button" data-t="50"><b>50"</b></button><button type="button" data-t="55" class="on"><b>55"</b></button><button type="button" data-t="65"><b>65"</b></button><button type="button" data-t="75"><b>75"</b></button><button type="button" data-t="85"><b>85"</b></button><button type="button" data-t="c"><b>Other</b></button>
+</div>
+<label id="ltc" class="hide">Your TV size (inches, measured corner to corner)<input type="number" inputmode="decimal" min="10" max="150" step="1" id="tc" value="58"></label>
+</fieldset>
+<fieldset><legend>2. Where do you sit?</legend>
+<div class="opts" role="group" aria-label="Seat">
+<button type="button" data-s="sofa" class="on"><b>Sofa</b><span>Living room</span></button>
+<button type="button" data-s="low"><b>Low sofa</b><span>Or recliner</span></button>
+<button type="button" data-s="bed"><b>Bed</b><span>Sitting up</span></button>
+<button type="button" data-s="stand"><b>Standing</b><span>Kitchen or gym</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: your eye height, distance, bracket, fireplace</summary>
+<div class="grid">
+<label><span>Your eye height (floor to eyes)</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="10" step="0.5" id="eh"></label>
+<label><span>Distance from your eyes to the TV</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0.5" step="0.1" id="vd"></label>
+<label><span>Mounting holes to bottom of TV</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="ho" placeholder="optional"></label>
+</div>
+<p class="hint">Measure the last one on the back of the TV, from the center of the mounting holes to the bottom edge. It gives you the height to fix the wall bracket.</p>
+<label class="chk"><input type="checkbox" id="fp">The TV has to go above a fireplace or furniture</label>
+<div id="ffp" class="grid hide"><label><span>Lowest the bottom of the TV can go</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="mb"></label></div>
+<p id="hfp" class="hint hide">Use the top of the mantel or furniture plus the clearance in your fireplace or TV manual.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Center of screen</small><strong id="kc"></strong><em>from the floor</em></div>
+<div class="kpi"><small>Bottom edge</small><strong id="kb"></strong><em>from the floor</em></div>
+<div class="kpi"><small>Top edge</small><strong id="kt"></strong><em>from the floor</em></div>
+<div class="kpi hide" id="kbx"><small>Wall bracket</small><strong id="kbr"></strong><em>center of mounting holes</em></div>
+</div>
+<p class="hint">Screen: <span id="ks"></span> (16:9) · Viewing angle: <span id="ka"></span> above eye level</p>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my TV height</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-tvh');if(!R)return;
+var CM=2.54,unit='in',seat='sofa',size='55',summary='';
+var EYE={sofa:42,low:38,bed:50,stand:62};
+function $(i){return document.getElementById(i)}
+function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
+function sval(i,v){$(i).value=v===null?'':(Math.round(v*10)/10)}
+function toIn(v){return unit==='cm'?v/CM:v}
+function lenIn(v){return unit==='cm'?v*100/CM:v*12}
+function fs(x){if(unit==='cm'){return Math.round(x*CM)+' cm'}var r=Math.round(x*2)/2;return r+' in'}
+function fl(x){if(unit==='cm'){return (Math.round(x*CM/10)/10)+' m'}var f=Math.floor(x/12),i=Math.round(x-f*12);if(i===12){f=f+1;i=0}return f+' ft '+i+' in'}
+function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){var t=x.getAttribute('data-lu');x.textContent=t==='s'?(unit==='cm'?'(cm)':'(in)'):(unit==='cm'?'(m)':'(ft)')});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
+function setUnit(u){if(u===unit)return;var hs=['eh','ho','mb'].map(function(i){return g(i)});var d=g('vd');unit=u;
+['eh','ho','mb'].forEach(function(i,k){var v=hs[k];if(v===null){sval(i,null);return}sval(i,u==='cm'?v*CM:v/CM)});
+if(d!==null){sval('vd',u==='cm'?d*0.3048:d/0.3048)}lbl()}
+function diag(){if(size==='c'){var c=g('tc');return c===null?55:c}return parseFloat(size)}
+function svg(o){var W=360,H=230,fy=200,sc=150/Math.max(o.top+6,o.eye+10,72);
+function y(h){return fy-h*sc}
+var wx=330,tvw=7,dpx=Math.min(220,Math.max(90,o.dist*sc*0.9));var ex=wx-dpx;
+var s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side view of the viewer and the TV on the wall">';
+s+='<rect x="0" y="0" width="'+W+'" height="'+H+'" fill="#FBF6EF"/>';
+s+='<line x1="10" y1="'+fy+'" x2="'+(W-10)+'" y2="'+fy+'" stroke="#B98A5E" stroke-width="3"/>';
+s+='<rect x="'+wx+'" y="20" width="8" height="'+(fy-20)+'" fill="#E6DCCF"/>';
+if(o.fp){s+='<rect x="'+(wx-40)+'" y="'+y(o.mb)+'" width="40" height="'+(fy-y(o.mb))+'" fill="#D9B48A" opacity="0.6"/>'}
+s+='<rect x="'+(wx-tvw)+'" y="'+y(o.top)+'" width="'+tvw+'" height="'+(y(o.bot)-y(o.top))+'" fill="#342E2A" rx="1"/>';
+var sy=y(o.eye);
+if(seat!=='stand'){s+='<rect x="'+(ex-34)+'" y="'+(y(o.eye-22))+'" width="44" height="'+(fy-y(o.eye-22))+'" rx="6" fill="#DCE5D6" stroke="#8FA689"/>'}
+s+='<circle cx="'+ex+'" cy="'+(sy-2)+'" r="9" fill="#ECCDA0" stroke="#B98A5E"/>';
+s+='<line x1="'+ex+'" y1="'+(sy+7)+'" x2="'+ex+'" y2="'+(seat==='stand'?fy:y(o.eye-22))+'" stroke="#B98A5E" stroke-width="5" stroke-linecap="round"/>';
+s+='<circle cx="'+(ex+4)+'" cy="'+sy+'" r="2.5" fill="#342E2A"/>';
+s+='<line x1="'+(ex+4)+'" y1="'+sy+'" x2="'+(wx-tvw)+'" y2="'+sy+'" stroke="#8FA689" stroke-dasharray="4 3"/>';
+s+='<line x1="'+(ex+4)+'" y1="'+sy+'" x2="'+(wx-tvw)+'" y2="'+y(o.c)+'" stroke="'+(o.ang>15?'#B3432A':'#C85A32')+'" stroke-width="2"/>';
+s+='<text x="'+(ex+14)+'" y="'+(sy-8)+'" font-size="12" fill="#342E2A">'+o.ang.toFixed(0)+'°</text>';
+s+='<text x="'+(wx-12)+'" y="'+(y(o.c)+4)+'" font-size="11" fill="#342E2A" text-anchor="end">center '+fs(o.c)+'</text>';
+s+='<text x="'+(ex)+'" y="'+(fy+18)+'" font-size="11" fill="#6E645C" text-anchor="middle">eyes '+fs(o.eye)+'</text>';
+s+='<text x="'+((ex+wx)/2)+'" y="'+(fy+18)+'" font-size="11" fill="#6E645C" text-anchor="middle">'+fl(o.dist)+'</text>';
+return s+'</svg>'}
+function calc(){var d=diag();var w=d*16/Math.sqrt(337),h=d*9/Math.sqrt(337);
+var eh=g('eh'),vd=g('vd');if(eh===null){eh=unit==='cm'?EYE[seat]*CM:EYE[seat]}else{eh=toIn(eh)}
+var dist=vd===null?108:lenIn(vd);if(dist<12)dist=12;
+var fp=$('fp').checked,mb=g('mb');mb=mb===null?0:toIn(mb);
+var c=eh,bot=c-h/2,lifted=false;
+if(bot<4){bot=4;c=bot+h/2;lifted=true}
+if(fp?bot<mb:false){bot=mb;c=bot+h/2;lifted=true}
+var top=c+h/2;var ang=Math.atan((c-eh)/dist)*180/Math.PI;var angTop=Math.atan((top-eh)/dist)*180/Math.PI;
+var maxc=eh+dist*Math.tan(15*Math.PI/180);
+var vv=$('vv');vv.className='verdict';
+if(ang<=5){vv.textContent='Mount the center of the screen at '+fs(c)+' from the floor: right at eye level.'}
+else if(ang<=15){vv.className='verdict amb';vv.textContent='Center at '+fs(c)+'. That is '+ang.toFixed(0)+'° above eye level: within the 15° limit, but lower is more comfortable.'}
+else{vv.className='verdict bad';vv.textContent='Center at '+fs(c)+' is '+ang.toFixed(0)+'° above eye level, more than the 15° limit. Expect neck strain: lower the TV or use a pull-down mount.'}
+$('kc').textContent=fs(c);$('kb').textContent=fs(bot);$('kt').textContent=fs(top);
+var ho=g('ho');if(ho===null){$('kbx').classList.add('hide')}else{$('kbx').classList.remove('hide');$('kbr').textContent=fs(bot+toIn(ho))}
+$('ks').textContent=fs(w)+' x '+fs(h);$('ka').textContent=ang.toFixed(0)+'°';
+var tips=[];
+tips.push('Highest comfortable center at this distance (15° limit): '+fs(maxc)+'.');
+if(lifted){tips.push('The TV had to go higher than eye level. Sitting further back, or a tilting or pull-down mount, reduces the angle.')}
+if(angTop>15){tips.push('The top of the screen is '+angTop.toFixed(0)+'° above your eyes, so you will look up for the top of the picture.')}
+if(seat==='bed'){tips.push('In bed, people sit at different heights: measure your own eye height while propped up.')}
+tips.push('Before drilling, tape a paper template of the screen to the wall and sit down to check it.');
+$('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
+$('vz').innerHTML=svg({eye:eh,c:c,bot:bot,top:top,dist:dist,ang:ang,fp:fp,mb:mb});
+summary='TV '+d+' in: center of screen '+fs(c)+', bottom edge '+fs(bot)+', top edge '+fs(top)+(ho===null?'':', wall bracket '+fs(bot+toIn(ho)))+'. Eye height '+fs(eh)+', distance '+fl(dist)+', angle '+ang.toFixed(0)+'°. dailyspacehacks.com/tv-mounting-height-calculator/'}
+function setSeat(s){seat=s;R.querySelectorAll('[data-s]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-s')===s)});sval('eh',unit==='cm'?EYE[s]*CM:EYE[s]);if(s==='stand'){var d=g('vd');if(d===null?true:false)sval('vd',unit==='cm'?1.8:6)}}
+R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){setSeat(b.getAttribute('data-s'));calc()})});
+R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
+R.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){size=b.getAttribute('data-t');R.querySelectorAll('[data-t]').forEach(function(x){x.classList.toggle('on',x===b)});$('ltc').classList.toggle('hide',size!=='c');calc()})});
+$('fp').addEventListener('change',function(){var on=$('fp').checked;$('ffp').classList.toggle('hide',!on);$('hfp').classList.toggle('hide',!on);if(on?g('mb')===null:false){sval('mb',unit==='cm'?137:54)}calc()});
+['tc','ho','eh','vd','mb'].forEach(function(i){$(i).addEventListener('input',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my TV height'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your TV height:',summary)})}catch(e){window.prompt('Copy your TV height:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+var lang=(navigator.language||'en-US');
+if(lang.indexOf('en-US')===0){unit='in'}else{unit='cm'}
+lbl();sval('eh',unit==='cm'?EYE.sofa*CM:EYE.sofa);sval('vd',unit==='cm'?2.7:9);
+calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How High Should a TV Be Mounted?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The simple rule is to put the center of the screen at the eye level of the person watching. Home technology trade site CE Pro <a href="https://www.cepro.com/audio-video/how-high-should-a-tv-be-mounted/" target="_blank" rel="noopener">recommends mounting a TV</a> so the center is at eye level when you are seated, and gives about 42 inches (107 cm) from the floor to the center of the screen as a rule of thumb for a typical sofa. That is the starting point the calculator uses for the Sofa option.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If the TV cannot sit at eye level, keep the angle small. CE Pro advises no more than 15 degrees of vertical angle to the viewer, and MantelMount's guide to <a href="https://www.mantelmount.com/blogs/news/the-science-behind-eye-level-tv-viewing" target="_blank" rel="noopener">eye-level TV viewing</a> cites THX guidance to keep the vertical angle within 15 degrees of the center of the screen, treating it as a limit, not a target. The calculator checks this angle for you and turns red when it is exceeded.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2544,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/tv-mounting-height-01-living-room.jpg" alt="Black wall-mounted TV above a floating light oak media console in a bright living room, seen from behind a cream sofa" class="wp-image-2544"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">TV Height Chart for a Sofa</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This chart assumes a 16:9 TV with the center of the screen at 42 in (107 cm), a typical seated eye height on a sofa. Use it as a quick check, then use the calculator above for your own room.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>TV size</th><th>Screen (W x H)</th><th>Bottom edge</th><th>Top edge</th></tr></thead><tbody><tr><td>32"</td><td>28 x 16 in (71 x 40 cm)</td><td>34 in (87 cm)</td><td>50 in (127 cm)</td></tr><tr><td>43"</td><td>37 x 21 in (95 x 54 cm)</td><td>31 in (80 cm)</td><td>53 in (133 cm)</td></tr><tr><td>50"</td><td>44 x 25 in (111 x 62 cm)</td><td>30 in (76 cm)</td><td>54 in (138 cm)</td></tr><tr><td>55"</td><td>48 x 27 in (122 x 68 cm)</td><td>29 in (72 cm)</td><td>55 in (141 cm)</td></tr><tr><td>65"</td><td>57 x 32 in (144 x 81 cm)</td><td>26 in (66 cm)</td><td>58 in (147 cm)</td></tr><tr><td>75"</td><td>65 x 37 in (166 x 93 cm)</td><td>24 in (60 cm)</td><td>60 in (153 cm)</td></tr><tr><td>85"</td><td>74 x 42 in (188 x 106 cm)</td><td>21 in (54 cm)</td><td>63 in (160 cm)</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Bigger screens end up with the bottom edge lower, so check that a 75 or 85 inch TV still clears your media console. If it does not, raise it only as much as you need and check the angle in the calculator.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">TV Height for a Bedroom</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2545,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/tv-mounting-height-02-bedroom.jpg" alt="Wall-mounted black TV above a light oak dresser, seen from the foot of a bed with sage green pillows and a throw" class="wp-image-2545"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>In bed you usually sit higher and lean back, so a bedroom TV often goes a little higher than in a living room. Eye heights in bed vary a lot with the bed and the pillows, so sit where you watch, measure from the floor to your eyes and enter it under More options. For the rest of the room, see our <a href="https://dailyspacehacks.com/small-bedroom-storage-ideas/">small bedroom storage ideas</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Mounting a TV Above a Fireplace</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":2546,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/tv-mounting-height-03-fireplace.jpg" alt="Black TV mounted high above a white fireplace with an oak mantel, tilted slightly down, between built-in shelves" class="wp-image-2546"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>A mantel usually forces the screen well above eye level, which is why CE Pro and MantelMount both point to pull-down or tilting mounts for this spot. Tick the fireplace box in the calculator, enter the lowest the bottom of the TV can go (the top of the mantel plus the clearance in your fireplace and TV manuals) and it shows the real viewing angle. If it is over 15 degrees, a pull-down mount, sitting further back or another wall will be more comfortable. Styling the mantel underneath? See our <a href="https://dailyspacehacks.com/christmas-mantel-decorating-ideas/">Christmas mantel ideas</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Use the Calculator</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Pick your TV size.</strong> It is the diagonal, measured corner to corner, that the TV is sold by.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Pick where you sit.</strong> Sofa, low sofa, bed or standing fills in a typical eye height.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Read the answer.</strong> The center, bottom and top of the screen are measured from the floor.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Fine-tune if you like.</strong> Under More options, enter your own eye height, viewing distance, the mounting-hole height for the bracket and any fireplace limit.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Test before you drill.</strong> Tape a paper template the size of the screen to the wall and sit down to check it.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Mount It Safely</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A wall mount only works if it holds. Use a mount rated for your TV's weight and screen size, fix it into studs or with fixings meant for your wall type, and follow the TV and mount instructions. The U.S. Consumer Product Safety Commission's <a href="https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov" target="_blank" rel="noopener">Anchor It campaign</a> advises mounting flat-screen TVs to the wall or to furniture to stop them toppling over, and anchoring TVs that are not wall-mounted, especially in homes with young children.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Ftv-mounting-height-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Ftv-height-map.jpg&description=How%20high%20to%20mount%20a%20TV%3A%20center%20of%20the%20screen%20at%20seated%20eye%20level" target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/tv-height-map.jpg" alt="How high to mount a TV: center of the screen at eye level above a low media console" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/tv-height-map.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save this guide</p><p style="margin:0 0 1em;">Pin the TV height guide so you have it ready on mounting day.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Ftv-mounting-height-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Ftv-height-map.jpg&description=How%20high%20to%20mount%20a%20TV%3A%20center%20of%20the%20screen%20at%20seated%20eye%20level" target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">TV Mounting Height FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How high should a TV be mounted from the floor?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mount the TV so the center of the screen is at the seated eye level of the main viewer, which is often around 42 inches (107 cm) from the floor for a standard sofa. A 55 inch TV centered there has its bottom edge about 29 inches up and its top edge about 55 inches up.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Where should the center of a TV be?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The center of the screen should line up with your eyes when you sit where you usually watch. If that is not possible, keep the angle from your eyes up to the center of the screen under 15 degrees, which CE Pro and THX guidance treat as the limit for comfortable viewing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Is a TV above a fireplace too high?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Often, yes. A mantel usually pushes the center of the screen well above seated eye level, and the viewing angle can go past 15 degrees. Use the fireplace option in the calculator to check the real angle, and consider a pull-down mount, sitting further back or another wall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How high should a TV be in a bedroom?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A bedroom TV usually goes a little higher than a living room TV because you sit higher in bed. Sit up the way you normally watch, measure from the floor to your eyes and put the center of the screen at that height, or slightly above if you lean back on pillows.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Planning Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Planning the rest of the room? Try our <a href="https://dailyspacehacks.com/rug-size-calculator/">rug size calculator</a>, <a href="https://dailyspacehacks.com/curtain-size-calculator/">curtain size calculator</a> and <a href="https://dailyspacehacks.com/shelf-spacing-calculator/">shelf spacing calculator</a>, or get ideas for the console under the TV in our <a href="https://dailyspacehacks.com/coffee-table-decor/">coffee table decor</a> guide.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->
