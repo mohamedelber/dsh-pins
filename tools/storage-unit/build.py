@@ -26,15 +26,15 @@ lst(["It matches your home size to the guides above: a few boxes 25 sq ft, a stu
 p("These guides assume a sensibly packed unit. If you own large furniture, a piano or lots of garden equipment, go one size up. If you are mainly storing boxes, you can often go one size down.")
 h2("What Size Storage Unit for a Car?")
 p(f"Public Storage's {ext(PS,'guide to storing a car')} suggests a 20 ft space for a sedan or standard-size car and a 16 ft space for a small car, and describes a 10 x 20 ft unit as roughly the size of a small one-car garage. For an SUV, van or truck, it says to measure first. Before you book, measure the car's length, its width including mirrors and its height, compare them with the unit and its door opening, and check that the facility allows a vehicle in that unit.")
-img(2)
 h2("How to Pack a Storage Unit to Fit More")
 lst(["<strong>Use boxes of the same size.</strong> They stack into stable columns and waste less space. Our "+a('moving-box-calculator','moving box calculator')+" tells you how many you need.",
-"<strong>Take furniture apart.</strong> Remove table legs and bed frames, and stand mattresses and sofas on end where they are stable.",
+"<strong>Take furniture apart.</strong> Remove table legs and take bed frames apart, and stand mattresses on their long side against a wall.",
 "<strong>Heavy at the bottom, light on top.</strong> Put books and kitchen boxes low and bedding and lampshades high.",
 "<strong>Keep what you need near the door.</strong> Seasonal items and paperwork go at the front, things you will not need for months at the back.",
 "<strong>Write a list.</strong> Number every box and keep a list on your phone of what is in each one."],True)
-img(3)
+img(2)
 h2("Rent a Smaller Unit: Declutter First")
+img(3)
 p(f"Every item you sell, donate or recycle before you move is one you do not pay to store month after month. Start with our guide on {a('how-to-declutter-your-home','how to declutter your home')}. If you only need room for seasonal things, the space you already have may be enough: see our {a('loft-storage-ideas','loft storage ideas')}, {a('under-stairs-storage-ideas','under stairs storage ideas')} and {a('christmas-decoration-storage','Christmas decoration storage ideas')}.")
 add(open('savebox.html').read())
 h2("Storage Unit Size FAQ")
