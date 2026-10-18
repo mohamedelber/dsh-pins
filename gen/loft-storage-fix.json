@@ -1,0 +1,19 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-fix",
+   "edit_from": "gen/out/loft-storage/01-hero-boarded-loft.png",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Edit this loft photo: add pale chipboard loft boards under the storage boxes on both the left and the right sides, laid on short raised supports above the fluffy insulation, so that every box stands on a board and none sits on bare joists or insulation; keep some fluffy uncompressed insulation visible at the far edges near the eaves. Remove the small badge on the larger suitcase so it is plain. Keep everything else identical: same rafters, same central walkway, same hatch, same light, same boxes, same camera angle. No text, no labels, no logos."
+  },
+  {
+   "name": "06-fix",
+   "edit_from": "gen/out/loft-storage/06-before-after.png",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Edit only the right half of this split image: raise the central walkway of loft boards clearly above the fluffy insulation on short loft legs so a visible gap shows under the boards, and put pale chipboard boards under the clear storage boxes on both sides so no box sits on bare joists or insulation. Keep the left half exactly as it is, keep the thin white vertical divider, same rafters, same gable wall, same hatch, same camera angle. No text, no labels, no logos."
+  }
+ ]
+}
