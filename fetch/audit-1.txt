@@ -1,0 +1,6 @@
+https://dailyspacehacks.com/sitemap_index.xml
+https://dailyspacehacks.com/post-sitemap.xml
+https://dailyspacehacks.com/page-sitemap.xml
+https://dailyspacehacks.com/category-sitemap.xml
+https://dailyspacehacks.com/robots.txt
+https://dailyspacehacks.com/ads.txt
