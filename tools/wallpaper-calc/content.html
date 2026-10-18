@@ -1,9 +1,9 @@
 <!-- wp:paragraph -->
-<p>How much wallpaper do you need? This free <strong>wallpaper calculator</strong> works it out the way decorators do: it counts the drops (strips) your wall needs, how many drops you get from each roll once you allow for trimming and the pattern repeat, and turns that into the number of rolls to buy.</p>
+<p>How much wallpaper do you need? This free <strong>wallpaper calculator</strong> works it out drop by drop: it counts the drops (strips) your wall needs, how many drops you get from each roll once you allow for trimming and the pattern repeat, and turns that into the number of rolls to buy.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Choose a feature wall or a whole room, type the size and pick the pattern. It works in meters or feet, and you can change the roll size under <em>More options</em> if your wallpaper is not a standard 52 to 53 cm (20.5 in) wide roll.</p>
+<p>Choose a feature wall or a whole room, type the size and pick the pattern. It works in meters or feet, and you can change the roll size under <em>More options</em> if your wallpaper is not a standard 52 to 53 cm (20.5 to 21 in) wide roll.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
@@ -140,7 +140,7 @@ vv.textContent='You need '+rolls+' roll'+(rolls===1?'':'s')+' of wallpaper'+(are
 tips.push('Check every roll has the same batch number: colors can differ slightly between batches.');
 if(rep>0){tips.push('A pattern repeat of '+fs(rep)+' wastes some paper on every drop to line the pattern up, which is why you get fewer drops per roll.')}
 if(area==='room'){tips.push('Measure all the way around, including chimney breasts and alcoves. Do not take off doors and windows unless they are very large: the paper above and below them still needs drops.')}else{tips.push('Do not take a door or window off a feature wall: the paper above and below it still needs full-length rolls.')}
-if(rep>=50){tips.push('With a large repeat, one extra roll may not be enough on a big room; consider two.')}
+if(rep>=50){tips.push('With a large repeat, one extra roll may not be enough on a large area; consider two.')}
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
 $('vz').innerHTML=svg(drops,dpr,rolls);
 summary='Wallpaper ('+(area==='room'?'whole room':'one wall')+', '+fl(run)+' wide x '+fl(Hm)+' high, '+(rep>0?'repeat '+fs(rep):'no repeat')+', roll '+fs(rw)+' x '+fl(rl)+'): '+drops+' drops, '+dpr+' per roll = '+rolls+' rolls, buy '+(rolls+1)+'. dailyspacehacks.com/wallpaper-calculator/'}
@@ -188,7 +188,7 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>It uses the strip method that Bob Vila recommends in his guide on <a href="https://www.bobvila.com/articles/how-to-measure-for-wallpaper/" target="_blank" rel="noopener">how to measure for wallpaper</a>, instead of dividing the wall area by the roll area. Area alone ignores the paper you waste at the top and bottom of every drop.</p>
+<p>It uses the strip method from Bob Vila's guide on <a href="https://www.bobvila.com/articles/how-to-measure-for-wallpaper/" target="_blank" rel="noopener">how to measure for wallpaper</a>, instead of dividing the wall area by the roll area. Area alone ignores the paper you waste at the top and bottom of every drop.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
@@ -216,13 +216,13 @@ lbl();calc();
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Measure the width.</strong> For a feature wall, measure from corner to corner. For a whole room, measure all the way around, including chimney breasts and alcoves, as Practical DIY advises.</li>
+<li><strong>Measure the width.</strong> For a feature wall, measure from corner to corner. For a whole room, measure all the way around, including chimney breasts and other projections, as Practical DIY advises.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <li><strong>Measure the height</strong> from the top of the skirting board (baseboard) to the ceiling or coving, in a few places. Use the tallest figure.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Do not take off doors and windows.</strong> Bob Vila advises against deducting them, because you cut the openings out as you hang. Practical DIY only subtracts very large windows or areas that will not be papered.</li>
+<li><strong>Do not take off doors and windows.</strong> Bob Vila's guide says not to deduct them. Practical DIY only subtracts very large windows or areas that will not be papered.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <li><strong>Read the label</strong> for the roll width, roll length and pattern repeat, and enter them under More options if they are not standard.</li>
@@ -238,11 +238,11 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The pattern repeat is the height after which the design starts again. To line the pattern up across the seams, each drop has to start at the same point in the design, so you lose up to one repeat of paper on every drop. Practical DIY puts it simply: <a href="https://www.practicaldiy.com/decorating/wallpaper/wallpaper_quantity.php" target="_blank" rel="noopener">the larger the vertical repeat, the more rolls you will need</a>, because the waste is greater.</p>
+<p>The pattern repeat is the height after which the design starts again. To line the pattern up across the seams, each drop has to start at the same point in the design, so you lose up to one repeat of paper on every drop. Practical DIY notes that, generally, <a href="https://www.practicaldiy.com/decorating/wallpaper/wallpaper_quantity.php" target="_blank" rel="noopener">the larger the vertical repeat, the more rolls you will need</a>, because the waste is greater.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Plain papers, textured papers and designs labeled free match have no repeat to line up. Small repeats of around 27 cm (10.6 in) waste a little; large repeats of 53 or 64 cm (21 to 25 in) can cost you a whole drop per roll, which on a big room adds several rolls.</p>
+<p>Plain papers, textured papers and designs labeled free match have no repeat to line up. Even a small repeat of around 27 cm (10.6 in) can cost you a whole drop per roll on 2.4 m walls, and large repeats of 53 or 64 cm (21 to 25 in) waste more on taller walls. On a big room, that adds several rolls.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -258,7 +258,7 @@ lbl();calc();
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":2636,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-03-papered-room.jpg" alt="Living room papered all round in a small terracotta and cream pattern, neatly cut around a white door and a window" class="wp-image-2636"/></figure>
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-03-papered-room.jpg" alt="Living room papered all around in a small terracotta and cream pattern, neatly cut around a white door and a window" class="wp-image-2636"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -270,7 +270,7 @@ lbl();calc();
 <li><strong>Buy one spare roll</strong>, or two for a large repeat on a big room. Bob Vila suggests one or two more rolls than you think you need, and Practical DIY adds a couple for large repeats.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Check the batch number</strong> on every roll. Dunelm recommends buying extra for complex rooms to ensure batch continuity, because a later batch can be a slightly different shade.</li>
+<li><strong>Check the batch number</strong> on every roll. Practical DIY advises buying only rolls with the same batch or lot number to ensure color matching, and Dunelm recommends buying extra for complex rooms to ensure batch continuity.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <li><strong>Keep the spare</strong> with its label. It is useful for repairs later.</li>
@@ -278,7 +278,7 @@ lbl();calc();
 <!-- /wp:list -->
 
 <!-- wp:html -->
-<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwallpaper-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwallpaper-checklist.jpg&description=How%20much%20wallpaper%20do%20I%20need%3F%20Feature%20wall%203%20m%3A%202%20rolls.%20Room%203%20x%204%20m%3A%207%20rolls.%20Room%2012%20x%2012%20ft%3A%2010%20rolls.%20Always%20buy%201%20spare%20roll%20from%20the%20same%20batch" target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-checklist.jpg" alt="Wallpaper cheat sheet: feature wall 3 m 2 rolls, room 3 x 4 m 7 rolls, room 12 x 12 ft 10 rolls, large pattern repeat add 1 to 3 rolls" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/wallpaper-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the roll counts so you have them when you order wallpaper.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwallpaper-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwallpaper-checklist.jpg&description=How%20much%20wallpaper%20do%20I%20need%3F%20Feature%20wall%203%20m%3A%202%20rolls.%20Room%203%20x%204%20m%3A%207%20rolls.%20Room%2012%20x%2012%20ft%3A%2010%20rolls.%20Always%20buy%201%20spare%20roll%20from%20the%20same%20batch" target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwallpaper-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwallpaper-checklist.jpg&description=How%20much%20wallpaper%20do%20I%20need%3F%20Feature%20wall%203%20m%3A%202%20rolls.%20Room%203%20x%204%20m%3A%207%20rolls.%20Room%2012%20x%2012%20ft%3A%2010%20rolls.%20Always%20buy%201%20spare%20roll%20from%20the%20same%20batch" target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/wallpaper-calculator-checklist.jpg" alt="Wallpaper cheat sheet: feature wall 3 m 2 rolls, room 3 x 4 m 7 rolls, room 12 x 12 ft 10 rolls, large pattern repeat add 0 to 3 rolls" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/wallpaper-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the roll counts so you have them when you order wallpaper.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwallpaper-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwallpaper-checklist.jpg&description=How%20much%20wallpaper%20do%20I%20need%3F%20Feature%20wall%203%20m%3A%202%20rolls.%20Room%203%20x%204%20m%3A%207%20rolls.%20Room%2012%20x%2012%20ft%3A%2010%20rolls.%20Always%20buy%201%20spare%20roll%20from%20the%20same%20batch" target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
 <!-- /wp:html -->
 
 <!-- wp:heading -->
