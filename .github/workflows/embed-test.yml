@@ -32,7 +32,8 @@ jobs:
             const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
             await p.goto('file://'+path.resolve(f));for(let k=0;k<12;k++){await p.mouse.wheel(0,2500);await p.waitForTimeout(700)}await p.waitForTimeout(4000);
             const hs=await p.evaluate(()=>Array.from(document.querySelectorAll('iframe')).map(x=>x.src.split('/').slice(-2,-1)[0]+':'+x.style.height+':'+x.getAttribute('height')));fs.appendFileSync('out/heights.txt',f+' '+tag+' '+hs.join(' ')+'\n');
-            await p.screenshot({path:'out/'+f.replace('.html','')+'-'+tag+'.png',fullPage:true});
+            const nI=await p.locator('iframe').count();for(let i=0;i<nI;i++){if(tag==='m'?i>1:false)break;const el=p.locator('iframe').nth(i);await el.scrollIntoViewIfNeeded();await p.waitForTimeout(1500);await el.screenshot({path:'out/if-'+tag+'-'+i+'.png'})}
+            
             fs.appendFileSync('out/errors.txt',f+' '+tag+' '+JSON.stringify(errs)+'\n');await p.close();}}
           await b.close();})();
           JS
