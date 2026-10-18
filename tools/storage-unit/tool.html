@@ -85,10 +85,10 @@
 <script>
 (function(){
 var R=document.getElementById('dsh-su');if(!R)return;
-var US=[[5,5,'a small closet'],[5,10,'a walk-in closet'],[10,10,'a small bedroom'],[10,15,'a large bedroom'],[10,20,'a one-car garage'],[10,30,'a double garage']];
+var US=[[5,5,'a small closet'],[5,10,'a walk-in closet'],[10,10,'a small bedroom'],[10,15,'a master bedroom'],[10,20,'a one-car garage'],[10,30,'a double garage']];
 var USI=[0,1,2,2,3,4,5];
 var UK=[25,50,75,100,150,200,300];
-var UKL=['a small garden shed','a transit van load','a Luton van load','a single garage','about two Luton van loads','a double garage','three single garages'];
+var UKL=['a small garden shed','a Transit van load','a Luton van load','a single garage','about two Luton van loads','a double garage','three single garages'];
 var NM=['a few boxes','a studio','a 1 bedroom home','a 2 bedroom home','a 3 bedroom home','a 4 bedroom home','a 5+ bedroom home'];
 var w='3',q=1,sys='us',summary='';
 function $(i){return document.getElementById(i)}
@@ -104,27 +104,28 @@ s+='<text x="'+(x0+4)+'" y="'+(y0+a*sc-8)+'" font-size="10" fill="#C85A32">door<
 return s+'</svg>'}
 function lbl(){R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===sys)})}
 function calc(){var vv=$('vv');vv.className='verdict';var tips=[];var ai=$('ai').checked;
-$('fq').classList.toggle('hide',w==='car');
+$('fq').classList.toggle('hide',w==='car'||w==='0');var qq=(w==='0')?1:q;
 if(w==='car'){var u=US[4];$('kb').textContent=sys==='us'?'10 x 20 ft':'10 x 20 ft (200 sq ft)';$('kbe').textContent='enclosed drive-up unit';$('ka').textContent=sys==='us'?'200 sq ft':'18.6 m²';$('kae').textContent='3 x 6 m';$('ks').textContent='a one-car garage';$('kse').textContent='measure your car first';
 vv.textContent='A sedan or standard car usually needs a 20 ft space, such as a 10 x 20 ft unit. Measure your car and the door opening first.';
 tips.push('Measure the car from bumper to bumper, its width including mirrors and its height, and compare them with the unit and its door opening.');
 tips.push('Check that the facility allows vehicles in that unit: not every drive-up unit can be used as a garage.');
-tips.push('A small car may fit a 16 ft vehicle space; an SUV, van or truck needs measuring, and may need a bigger space.');
+tips.push('A small car may fit a 16 ft vehicle space; an SUV, van or oversize truck needs measuring, and may need a bigger space.');
 $('vz').innerHTML=svg(10,20,true);
 summary='Storage unit for a car: 10 x 20 ft (200 sq ft). Measure the car and door opening first. dailyspacehacks.com/storage-unit-size-calculator/'}
-else{var i=parseInt(w,10);if(q<1){i=Math.max(0,i-1)}if(ai){i=Math.min(6,i+1)}
+else{var i=parseInt(w,10);if(qq<1){i=Math.max(0,i-1)}if(ai){i=Math.min(6,i+1)}
 var ui=USI[i],u=US[ui],uk=UK[i];
 if(sys==='us'){$('kb').textContent=u[0]+' x '+u[1]+' ft';$('kbe').textContent=(i===6?'or two units for a very large house':'standard US unit');$('ka').textContent=(u[0]*u[1])+' sq ft';$('kae').textContent=Math.round(u[0]*u[1]*0.0929*10)/10+' m²';$('ks').textContent=u[2];$('kse').textContent='UK stores: about '+uk+' sq ft'}
 else{$('kb').textContent=uk+' sq ft';$('kbe').textContent='UK stores sell rooms by area';$('ka').textContent=Math.round(uk*0.0929*10)/10+' m²';$('kae').textContent='floor area';$('ks').textContent=UKL[i];$('kse').textContent='US unit: '+u[0]+' x '+u[1]+' ft'}
 var nm=NM[parseInt(w,10)];
-vv.textContent='For '+(q<1?'about half of ':'')+nm+(ai?' with a walk-in aisle':'')+', choose '+(sys==='us'?'a '+u[0]+' x '+u[1]+' ft unit':'about '+uk+' sq ft')+'.';
+vv.textContent='For '+(qq<1?'about half of ':'')+nm+(ai?' with a walk-in aisle':'')+', choose '+(sys==='us'?'a '+u[0]+' x '+u[1]+' ft unit':'about '+uk+' sq ft')+'.';
 tips.push('These sizes assume you stack boxes and furniture high. Ask the store how tall its units are: a taller unit holds more.');
 if(!ai){tips.push('Packing it full with no aisle saves money but makes things at the back hard to reach. Tick the aisle option if you will visit often.')}
 tips.push('Use boxes of the same size so they stack safely, put heavy boxes at the bottom and the things you need most near the door.');
 if(i===0){tips.push('For just a few boxes, a locker or a 25 sq ft room is often enough, and much cheaper than a full unit.')}
 if(i>=5){tips.push('For a large house, compare one big unit with two smaller ones: two units can be easier to reach.')}
+if(ai?(i===6?parseInt(w,10)>=5:false):false){tips.push('With an aisle, a large house may need two units.')}
 $('vz').innerHTML=svg(u[0],u[1],false);
-summary='Storage unit for '+(q<1?'about half of ':'')+nm+(ai?' with an aisle':'')+': '+u[0]+' x '+u[1]+' ft (US) or about '+uk+' sq ft (UK). dailyspacehacks.com/storage-unit-size-calculator/'}
+summary='Storage unit for '+(qq<1?'about half of ':'')+nm+(ai?' with an aisle':'')+': '+u[0]+' x '+u[1]+' ft (US) or about '+uk+' sq ft (UK). dailyspacehacks.com/storage-unit-size-calculator/'}
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('')}
 R.querySelectorAll('[data-w]').forEach(function(b){b.addEventListener('click',function(){w=b.getAttribute('data-w');R.querySelectorAll('[data-w]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
 R.querySelectorAll('[data-q]').forEach(function(b){b.addEventListener('click',function(){q=parseFloat(b.getAttribute('data-q'));R.querySelectorAll('[data-q]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
@@ -133,7 +134,7 @@ $('ai').addEventListener('change',calc);
 $('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my storage size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your storage size:',summary)})}catch(e){window.prompt('Copy your storage size:',summary)}});
 $('pr').addEventListener('click',function(){window.print()});
 var lang=(navigator.language||'en-US');
-sys=(lang==='en'||lang.indexOf('en-US')===0||lang.indexOf('en-CA')===0)?'us':'uk';
+sys=(lang.indexOf('en-GB')===0||lang.indexOf('en-IE')===0)?'uk':'us';
 lbl();calc();
 })();
 </script>

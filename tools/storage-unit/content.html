@@ -94,10 +94,10 @@
 <script>
 (function(){
 var R=document.getElementById('dsh-su');if(!R)return;
-var US=[[5,5,'a small closet'],[5,10,'a walk-in closet'],[10,10,'a small bedroom'],[10,15,'a large bedroom'],[10,20,'a one-car garage'],[10,30,'a double garage']];
+var US=[[5,5,'a small closet'],[5,10,'a walk-in closet'],[10,10,'a small bedroom'],[10,15,'a master bedroom'],[10,20,'a one-car garage'],[10,30,'a double garage']];
 var USI=[0,1,2,2,3,4,5];
 var UK=[25,50,75,100,150,200,300];
-var UKL=['a small garden shed','a transit van load','a Luton van load','a single garage','about two Luton van loads','a double garage','three single garages'];
+var UKL=['a small garden shed','a Transit van load','a Luton van load','a single garage','about two Luton van loads','a double garage','three single garages'];
 var NM=['a few boxes','a studio','a 1 bedroom home','a 2 bedroom home','a 3 bedroom home','a 4 bedroom home','a 5+ bedroom home'];
 var w='3',q=1,sys='us',summary='';
 function $(i){return document.getElementById(i)}
@@ -113,27 +113,28 @@ s+='<text x="'+(x0+4)+'" y="'+(y0+a*sc-8)+'" font-size="10" fill="#C85A32">door<
 return s+'</svg>'}
 function lbl(){R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===sys)})}
 function calc(){var vv=$('vv');vv.className='verdict';var tips=[];var ai=$('ai').checked;
-$('fq').classList.toggle('hide',w==='car');
+$('fq').classList.toggle('hide',w==='car'||w==='0');var qq=(w==='0')?1:q;
 if(w==='car'){var u=US[4];$('kb').textContent=sys==='us'?'10 x 20 ft':'10 x 20 ft (200 sq ft)';$('kbe').textContent='enclosed drive-up unit';$('ka').textContent=sys==='us'?'200 sq ft':'18.6 m²';$('kae').textContent='3 x 6 m';$('ks').textContent='a one-car garage';$('kse').textContent='measure your car first';
 vv.textContent='A sedan or standard car usually needs a 20 ft space, such as a 10 x 20 ft unit. Measure your car and the door opening first.';
 tips.push('Measure the car from bumper to bumper, its width including mirrors and its height, and compare them with the unit and its door opening.');
 tips.push('Check that the facility allows vehicles in that unit: not every drive-up unit can be used as a garage.');
-tips.push('A small car may fit a 16 ft vehicle space; an SUV, van or truck needs measuring, and may need a bigger space.');
+tips.push('A small car may fit a 16 ft vehicle space; an SUV, van or oversize truck needs measuring, and may need a bigger space.');
 $('vz').innerHTML=svg(10,20,true);
 summary='Storage unit for a car: 10 x 20 ft (200 sq ft). Measure the car and door opening first. dailyspacehacks.com/storage-unit-size-calculator/'}
-else{var i=parseInt(w,10);if(q<1){i=Math.max(0,i-1)}if(ai){i=Math.min(6,i+1)}
+else{var i=parseInt(w,10);if(qq<1){i=Math.max(0,i-1)}if(ai){i=Math.min(6,i+1)}
 var ui=USI[i],u=US[ui],uk=UK[i];
 if(sys==='us'){$('kb').textContent=u[0]+' x '+u[1]+' ft';$('kbe').textContent=(i===6?'or two units for a very large house':'standard US unit');$('ka').textContent=(u[0]*u[1])+' sq ft';$('kae').textContent=Math.round(u[0]*u[1]*0.0929*10)/10+' m²';$('ks').textContent=u[2];$('kse').textContent='UK stores: about '+uk+' sq ft'}
 else{$('kb').textContent=uk+' sq ft';$('kbe').textContent='UK stores sell rooms by area';$('ka').textContent=Math.round(uk*0.0929*10)/10+' m²';$('kae').textContent='floor area';$('ks').textContent=UKL[i];$('kse').textContent='US unit: '+u[0]+' x '+u[1]+' ft'}
 var nm=NM[parseInt(w,10)];
-vv.textContent='For '+(q<1?'about half of ':'')+nm+(ai?' with a walk-in aisle':'')+', choose '+(sys==='us'?'a '+u[0]+' x '+u[1]+' ft unit':'about '+uk+' sq ft')+'.';
+vv.textContent='For '+(qq<1?'about half of ':'')+nm+(ai?' with a walk-in aisle':'')+', choose '+(sys==='us'?'a '+u[0]+' x '+u[1]+' ft unit':'about '+uk+' sq ft')+'.';
 tips.push('These sizes assume you stack boxes and furniture high. Ask the store how tall its units are: a taller unit holds more.');
 if(!ai){tips.push('Packing it full with no aisle saves money but makes things at the back hard to reach. Tick the aisle option if you will visit often.')}
 tips.push('Use boxes of the same size so they stack safely, put heavy boxes at the bottom and the things you need most near the door.');
 if(i===0){tips.push('For just a few boxes, a locker or a 25 sq ft room is often enough, and much cheaper than a full unit.')}
 if(i>=5){tips.push('For a large house, compare one big unit with two smaller ones: two units can be easier to reach.')}
+if(ai?(i===6?parseInt(w,10)>=5:false):false){tips.push('With an aisle, a large house may need two units.')}
 $('vz').innerHTML=svg(u[0],u[1],false);
-summary='Storage unit for '+(q<1?'about half of ':'')+nm+(ai?' with an aisle':'')+': '+u[0]+' x '+u[1]+' ft (US) or about '+uk+' sq ft (UK). dailyspacehacks.com/storage-unit-size-calculator/'}
+summary='Storage unit for '+(qq<1?'about half of ':'')+nm+(ai?' with an aisle':'')+': '+u[0]+' x '+u[1]+' ft (US) or about '+uk+' sq ft (UK). dailyspacehacks.com/storage-unit-size-calculator/'}
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('')}
 R.querySelectorAll('[data-w]').forEach(function(b){b.addEventListener('click',function(){w=b.getAttribute('data-w');R.querySelectorAll('[data-w]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
 R.querySelectorAll('[data-q]').forEach(function(b){b.addEventListener('click',function(){q=parseFloat(b.getAttribute('data-q'));R.querySelectorAll('[data-q]').forEach(function(x){x.classList.toggle('on',x===b)});calc()})});
@@ -142,7 +143,7 @@ $('ai').addEventListener('change',calc);
 $('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my storage size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your storage size:',summary)})}catch(e){window.prompt('Copy your storage size:',summary)}});
 $('pr').addEventListener('click',function(){window.print()});
 var lang=(navigator.language||'en-US');
-sys=(lang==='en'||lang.indexOf('en-US')===0||lang.indexOf('en-CA')===0)?'us':'uk';
+sys=(lang.indexOf('en-GB')===0||lang.indexOf('en-IE')===0)?'uk':'us';
 lbl();calc();
 })();
 </script>
@@ -155,7 +156,7 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table><thead><tr><th>US unit</th><th>Area</th><th>What it holds</th><th>UK stores</th></tr></thead><tbody><tr><td>5 x 5 ft</td><td>25 sq ft</td><td>A few boxes and small items, such as a desk and chair; about a small closet</td><td>25 sq ft: about a small garden shed</td></tr><tr><td>5 x 10 ft</td><td>50 sq ft</td><td>The contents of a studio apartment</td><td>50 sq ft: a standard studio flat, about a transit van load</td></tr><tr><td>10 x 10 ft</td><td>100 sq ft</td><td>A one or two bedroom apartment; about a regular bedroom</td><td>75 sq ft for a large 1 bedroom; 100 sq ft for a standard 2 bedroom flat or house</td></tr><tr><td>10 x 15 ft</td><td>150 sq ft</td><td>A two or three bedroom home; about a master bedroom</td><td>125 to 150 sq ft for a 3 bedroom house</td></tr><tr><td>10 x 20 ft</td><td>200 sq ft</td><td>A three bedroom home, or one car; about a one-car garage</td><td>200 sq ft for a large 4 bedroom house</td></tr><tr><td>10 x 30 ft</td><td>300 sq ft</td><td>Big homes with several bedrooms; about a double garage</td><td>250 to 300 sq ft for a 5 bedroom house</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><thead><tr><th>US unit</th><th>Area</th><th>What it holds</th><th>UK stores</th></tr></thead><tbody><tr><td>5 x 5 ft</td><td>25 sq ft</td><td>A few boxes and small items, such as a desk and chair; about a small closet</td><td>25 sq ft: about a small garden shed</td></tr><tr><td>5 x 10 ft</td><td>50 sq ft</td><td>The contents of a studio apartment</td><td>50 sq ft: a standard studio flat, about a Transit van load</td></tr><tr><td>10 x 10 ft</td><td>100 sq ft</td><td>A one or two bedroom apartment; about a regular bedroom</td><td>75 sq ft for a large 1 bedroom; 100 sq ft for a standard 2 bedroom flat or house</td></tr><tr><td>10 x 15 ft</td><td>150 sq ft</td><td>A two or three bedroom home; about a master bedroom</td><td>125 to 150 sq ft for a 3 bedroom house</td></tr><tr><td>10 x 20 ft</td><td>200 sq ft</td><td>A three bedroom home, up to four bedrooms' worth (U-Haul), or one car; about a one-car garage</td><td>200 sq ft for a large 4 bedroom house</td></tr><tr><td>10 x 30 ft</td><td>300 sq ft</td><td>Big homes with several bedrooms; about a double garage</td><td>250 to 300 sq ft for a 5 bedroom house</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
@@ -175,7 +176,7 @@ lbl();calc();
 <li>It matches your home size to the guides above: a few boxes 25 sq ft, a studio 50, one bedroom 75 to 100, two bedrooms 100, three bedrooms 150, four bedrooms 200 and five or more 300 sq ft.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>About half</strong> moves you one size down, for example when the big furniture stays behind or goes with you.</li>
+<li><strong>About half</strong> moves you one size down, for example when the big furniture stays behind or goes with you. In the US, 1 and 2 bedrooms share the 10 x 10, so half of a 2 bedroom home stays at 10 x 10.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <li><strong>A walk-in aisle</strong> moves you one size up. This is our own rule of thumb: an aisle down the middle costs floor space but lets you reach the back without unpacking the front.</li>
@@ -194,7 +195,7 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Public Storage's <a href="https://www.publicstorage.com/blog/public-storage/what-size-storage-unit-do-you-need-for-a-car-2026-size-and-pricing-guide.html" target="_blank" rel="noopener">guide to storing a car</a> suggests a 20 ft space for a sedan or standard-size car and a 16 ft space for a small car, and describes a 10 x 20 ft unit as roughly the size of a small one-car garage. For an SUV, van or truck, it says to measure first. Before you book, measure the car's length, its width including mirrors and its height, compare them with the unit and its door opening, and check that the facility allows a vehicle in that unit.</p>
+<p>Public Storage's <a href="https://www.publicstorage.com/blog/public-storage/what-size-storage-unit-do-you-need-for-a-car-2026-size-and-pricing-guide.html" target="_blank" rel="noopener">guide to storing a car</a> suggests a 20 ft space for a sedan or standard-size car and a 16 ft space for a small car, and describes a 10 x 20 ft unit as roughly the size of a small one-car garage. For an SUV, van or oversize truck, it says to measure first. Before you book, measure the car's length, its width including mirrors and its height, compare them with the unit and its door opening, and check that the facility allows a vehicle in that unit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -248,7 +249,7 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A 10 x 10 ft unit (100 sq ft) holds the contents of a typical one or two bedroom apartment, according to RentCafe. Big Yellow in the UK suggests 100 sq ft for a standard two bedroom flat or house. A large two bedroom home with a lot of furniture may need a 10 x 15.</p>
+<p>A 10 x 10 ft unit (100 sq ft) holds the contents of a typical one or two bedroom apartment, according to RentCafe. Big Yellow in the UK suggests 100 sq ft for a standard two bedroom flat or house. RentCafe suggests a 10 x 15 when moving out of an average-sized two bedroom home.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -256,7 +257,7 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Plan a 10 x 15 ft unit (150 sq ft) for a typical three bedroom house, or a 10 x 20 ft unit (200 sq ft) for a large one. RentCafe says a 10 x 20 can easily hold a three bedroom home, and Big Yellow suggests 125 to 150 sq ft.</p>
+<p>Plan a 10 x 15 ft unit (150 sq ft) for a typical three bedroom house, or a 10 x 20 ft unit (200 sq ft) for a large one. RentCafe says a 10 x 20 can easily accommodate the contents of a 3-bedroom home, and Big Yellow suggests 125 to 150 sq ft.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -272,7 +273,7 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A 10 x 10 storage unit has 100 sq ft (about 9.3 m²) of floor space, about the size of a regular bedroom. It typically holds the contents of a one or two bedroom apartment, including a bed, sofa, dresser and boxes.</p>
+<p>A 10 x 10 storage unit has 100 sq ft (about 9.3 m²) of floor space, about the size of a regular bedroom. It typically holds the contents of a one or two bedroom apartment, including a king-size bed and mattress, according to RentCafe.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
