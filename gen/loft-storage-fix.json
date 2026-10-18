@@ -14,6 +14,13 @@
    "size": "1536x1024",
    "quality": "medium",
    "prompt": "Edit only the right half of this split image: raise the central walkway of loft boards clearly above the fluffy insulation on short loft legs so a visible gap shows under the boards, and put pale chipboard boards under the clear storage boxes on both sides so no box sits on bare joists or insulation. Keep the left half exactly as it is, keep the thin white vertical divider, same rafters, same gable wall, same hatch, same camera angle. No text, no labels, no logos."
+  },
+  {
+   "name": "05-fix",
+   "edit_from": "gen/out/loft-storage/05-built-in-shelves.png",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Edit this photo: make every book spine plain with no lettering, no titles, no letters or symbols at all, just solid muted colours. Keep everything else identical: same shelves, same baskets, same plants, same window, same camera angle. No text, no labels, no logos."
   }
  ]
 }
