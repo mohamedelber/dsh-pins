@@ -68,7 +68,7 @@
 <div class="res" aria-live="polite">
 <div id="vv" class="verdict"></div>
 <div class="kpis">
-<div class="kpi main"><small>Recommended depth</small><strong id="kr"></strong><em>outside, including doors</em></div>
+<div class="kpi main"><small>Recommended depth</small><strong id="kr"></strong><em id="kre">outside, including doors</em></div>
 <div class="kpi"><small>Tight minimum</small><strong id="km"></strong><em id="kme"></em></div>
 <div class="kpi"><small>Hanger width</small><strong id="kh"></strong><em>a standard adult hanger</em></div>
 </div>
@@ -83,7 +83,7 @@ var CM=2.54,unit='cm',door='hinged',cont='hang',summary='';
 var HANG=45.7,TRACK=5,MINH=50.8,PULL=30.2;
 function $(i){return document.getElementById(i)}
 function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
-function f(x){if(unit==='in'){return (Math.round(x/CM*2)/2)+' in'}return Math.round(x)+' cm'}
+function f(x){if(unit==='in'){return Math.round(x/CM)+' in'}return Math.round(x)+' cm'}
 function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='cm'?'(cm)':'(in)'});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
 function setUnit(u){if(u===unit)return;var v=g('hv');unit=u;if(v!==null){$('hv').value=Math.round((u==='cm'?v*CM:v/CM)*10)/10}lbl()}
 function rec(){var t=door==='sliding'?TRACK:0;if(cont==='hang'){return door==='sliding'?71:60}return 55+t}
@@ -105,16 +105,17 @@ s+='<line x1="'+(x0+dw+18)+'" y1="'+y0+'" x2="'+(x0+dw+18)+'" y2="'+fy+'" stroke
 s+='<text x="'+(x0+dw+28)+'" y="'+(y0+dp/2+4)+'" font-size="12" font-weight="700" fill="#342E2A">'+f(depth)+'</text>';
 if(have){var hy=y0+have*sc;s+='<line x1="'+(x0-14)+'" y1="'+hy+'" x2="'+(x0+dw+14)+'" y2="'+hy+'" stroke="#B3432A" stroke-dasharray="6 4"/><text x="'+(x0+4)+'" y="'+(hy-4)+'" font-size="11" fill="#B3432A">your space</text>'}
 return s+'</svg>'}
-function calc(){var r=rec(),m=mn(),hv=g('hv');var have=hv===null?null:(unit==='in'?hv*CM:hv);
+function calc(){var r=rec(),m=mn(),hv=g('hv');var have=(hv===null||hv<=0)?null:(unit==='in'?hv*CM:hv);
 var vv=$('vv');vv.className='verdict';
-$('kr').textContent=f(r);$('kh').textContent=f(HANG);
-if(m===null){$('km').textContent='none';$('kme').textContent='shallower is fine for folded clothes'}else{$('km').textContent=f(m);$('kme').textContent='side-on rail just fits'}
+$('kr').textContent=f(r);$('kre').textContent=door==='open'?'outside':'outside, including doors';$('kh').textContent=f(HANG);
+if(m===null){$('km').textContent='none';$('kme').textContent='shallower is fine for folded clothes'}else{$('km').textContent=f(m);$('kme').textContent='a squeeze: clothes will touch'}
 var tips=[];
 if(have===null){vv.textContent='Plan a wardrobe '+f(r)+' deep'+(door==='sliding'?', including the sliding door track.':'.')}
 else{var inner=have-(door==='sliding'?TRACK:0);
 if(have>=r){vv.textContent='Your '+f(have)+' is enough: plan the wardrobe '+f(r)+' deep.'}
+else if(cont==='shelf'?have<30.5:false){vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for most shelving; use hooks or wall racks.'}
 else if(cont==='shelf'){vv.className='verdict amb';vv.textContent='Your '+f(have)+' is shallower than '+f(r)+', but it still works for folded clothes, shoes and baskets.'}
-else if(inner>=MINH){vv.className='verdict amb';vv.textContent='Tight but possible: a side-on rail fits in '+f(have)+', but clothes may brush the '+(door==='open'?'front edge':'doors')+'. Slim hangers help.'}
+else if(inner>=MINH){vv.className='verdict amb';vv.textContent='Very tight: a side-on rail may squeeze into '+f(have)+', but clothes may brush the '+(door==='open'?'front edge':'doors')+'. Slim hangers help.'}
 else if(inner>=PULL){vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for a side-on rail. Use a pull-out (end-on) rail or shelves instead.'}
 else{vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for hanging. Use shelves, hooks or a narrow cupboard.'}}
 if(cont==='hang'){tips.push('A standard adult hanger is about '+f(HANG)+' wide, so the inside of the wardrobe needs to be deeper than that.')}

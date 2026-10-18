@@ -1,0 +1,13 @@
+[["function f(x){if(unit==='in'){return (Math.round(x/CM*2)/2)+' in'}return Math.round(x)+' cm'}","function f(x){if(unit==='in'){return Math.round(x/CM)+' in'}return Math.round(x)+' cm'}"],
+["var have=hv===null?null:(unit==='in'?hv*CM:hv);","var have=(hv===null||hv<=0)?null:(unit==='in'?hv*CM:hv);"],
+["else if(cont==='shelf'){vv.className='verdict amb';","else if(cont==='shelf'?have<30.5:false){vv.className='verdict bad';vv.textContent=f(have)+' is too shallow for most shelving; use hooks or wall racks.'}\nelse if(cont==='shelf'){vv.className='verdict amb';"],
+["'side-on rail just fits'","'a squeeze: clothes will touch'"],
+["'Tight but possible: a side-on rail fits in '","'Very tight: a side-on rail may squeeze into '"],
+["<em>outside, including doors</em>","<em id=\"kre\">outside, including doors</em>"],
+["$('kr').textContent=f(r);","$('kr').textContent=f(r);$('kre').textContent=door==='open'?'outside':'outside, including doors';"],
+["<tr><td>Tight minimum for a side-on rail</td><td>about 51 cm (20 in)</td><td>Clothes may brush the doors</td></tr>","<tr><td>Absolute minimum for a side-on rail</td><td>about 51 cm (20 in) inside, about 56 cm with sliding doors</td><td>FCI advises 60 cm; below that a standard rail is a squeeze and clothes will touch the doors</td></tr>"],
+["<tr><td>Shelves and drawers only</td><td>55 cm (22 in)</td><td>No hanging rail, so it can be shallower</td></tr>","<tr><td>Shelves and drawers only</td><td>55 cm (22 in)</td><td>No hanging rail, so it can be shallower</td></tr><tr><td>Sliding doors, shelves only</td><td>60 cm (24 in)</td><td>55 cm plus about 5 cm for the track</td></tr>"],
+["about 51 cm (20 in) is a tight minimum where clothes may touch the doors.","Dimensions.com says closets as shallow as 51 cm (20 in) can work, but FCI warns anything under 60 cm rules out a standard rail."],
+["These figures come from two planning guides.","These figures come mainly from two planning guides."],
+["so if your wardrobe holds mostly coats, go for the deeper end.","so if your wardrobe holds mostly coats, go for the deeper end; FCI's luxury range is 650 to 680 mm."],
+["alt=\"Wardrobe depth: a built-in wardrobe with","alt=\"A built-in wardrobe with"]]
