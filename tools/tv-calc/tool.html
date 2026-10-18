@@ -48,7 +48,7 @@
 @media print{.dsh-calc .acts{display:none}}
 </style>
 <h3>How high should you mount your TV?</h3>
-<p class="sub">Two taps: pick your TV size and where you sit. The answer appears straight away.</p>
+<p class="sub">Two taps: pick your TV size and where you sit. The answer appears right away.</p>
 <div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="in">inches</button><button type="button" data-u="cm">cm</button></div></div>
 <fieldset><legend>1. TV size</legend>
 <div class="opts sizes" role="group" aria-label="TV size">
@@ -67,13 +67,13 @@
 <details class="more"><summary>More options: your eye height, distance, bracket, fireplace</summary>
 <div class="grid">
 <label><span>Your eye height (floor to eyes)</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="10" step="0.5" id="eh"></label>
-<label><span>Distance from your eyes to the TV</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0.5" step="0.1" id="vd"></label>
+<label><span>Distance from your eyes to the TV, e.g. 9.5</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0.5" step="0.1" id="vd"></label>
 <label><span>Mounting holes to bottom of TV</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="ho" placeholder="optional"></label>
 </div>
 <p class="hint">Measure the last one on the back of the TV, from the center of the mounting holes to the bottom edge. It gives you the height to fix the wall bracket.</p>
 <label class="chk"><input type="checkbox" id="fp">The TV has to go above a fireplace or furniture</label>
 <div id="ffp" class="grid hide"><label><span>Lowest the bottom of the TV can go</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="mb"></label></div>
-<p id="hfp" class="hint hide">Use the top of the mantel or furniture plus the clearance in your fireplace or TV manual.</p>
+<p id="hfp" class="hint hide">Enter your own measurement: the top of the mantel or furniture plus the clearance in your fireplace or TV manual.</p>
 </details>
 <div class="res" aria-live="polite">
 <div id="vv" class="verdict"></div>
@@ -103,8 +103,8 @@ function fl(x){if(unit==='cm'){return (Math.round(x*CM/10)/10)+' m'}var f=Math.f
 function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){var t=x.getAttribute('data-lu');x.textContent=t==='s'?(unit==='cm'?'(cm)':'(in)'):(unit==='cm'?'(m)':'(ft)')});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
 function setUnit(u){if(u===unit)return;var hs=['eh','ho','mb'].map(function(i){return g(i)});var d=g('vd');unit=u;
 ['eh','ho','mb'].forEach(function(i,k){var v=hs[k];if(v===null){sval(i,null);return}sval(i,u==='cm'?v*CM:v/CM)});
-if(d!==null){sval('vd',u==='cm'?d*0.3048:d/0.3048)}lbl()}
-function diag(){if(size==='c'){var c=g('tc');return c===null?55:c}return parseFloat(size)}
+if(d!==null){$('vd').value=Math.round((u==='cm'?d*0.3048:d/0.3048)*100)/100}lbl()}
+function diag(){if(size==='c'){var c=g('tc');return (c===null||c<10)?55:c}return parseFloat(size)}
 function svg(o){var W=360,H=230,fy=200,sc=150/Math.max(o.top+6,o.eye+10,72);
 function y(h){return fy-h*sc}
 var wx=330,tvw=7,dpx=Math.min(220,Math.max(90,o.dist*sc*0.9));var ex=wx-dpx;
@@ -143,25 +143,25 @@ $('kc').textContent=fs(c);$('kb').textContent=fs(bot);$('kt').textContent=fs(top
 var ho=g('ho');if(ho===null){$('kbx').classList.add('hide')}else{$('kbx').classList.remove('hide');$('kbr').textContent=fs(bot+toIn(ho))}
 $('ks').textContent=fs(w)+' x '+fs(h);$('ka').textContent=ang.toFixed(0)+'°';
 var tips=[];
-tips.push('Highest comfortable center at this distance (15° limit): '+fs(maxc)+'.');
-if(lifted){tips.push('The TV had to go higher than eye level. Sitting further back, or a tilting or pull-down mount, reduces the angle.')}
+tips.push('Highest center within the 15° limit at this distance: '+fs(maxc)+'.');
+if(lifted){tips.push('The TV had to go higher than eye level. Sitting farther back, or a tilting or pull-down mount, reduces the angle.')}
 if(angTop>15){tips.push('The top of the screen is '+angTop.toFixed(0)+'° above your eyes, so you will look up for the top of the picture.')}
 if(seat==='bed'){tips.push('In bed, people sit at different heights: measure your own eye height while propped up.')}
-tips.push('Before drilling, tape a paper template of the screen to the wall and sit down to check it.');
+if(bot<24){tips.push('The bottom edge is '+fs(bot)+' up: check it clears your media console.')}tips.push('Before drilling, tape a paper template of the screen to the wall and sit down to check it.');
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
 $('vz').innerHTML=svg({eye:eh,c:c,bot:bot,top:top,dist:dist,ang:ang,fp:fp,mb:mb});
 summary='TV '+d+' in: center of screen '+fs(c)+', bottom edge '+fs(bot)+', top edge '+fs(top)+(ho===null?'':', wall bracket '+fs(bot+toIn(ho)))+'. Eye height '+fs(eh)+', distance '+fl(dist)+', angle '+ang.toFixed(0)+'°. dailyspacehacks.com/tv-mounting-height-calculator/'}
-function setSeat(s){seat=s;R.querySelectorAll('[data-s]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-s')===s)});sval('eh',unit==='cm'?EYE[s]*CM:EYE[s]);if(s==='stand'){var d=g('vd');if(d===null?true:false)sval('vd',unit==='cm'?1.8:6)}}
+function setSeat(s){seat=s;R.querySelectorAll('[data-s]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-s')===s)});sval('eh',unit==='cm'?EYE[s]*CM:EYE[s]);if(s==='stand'){sval('vd',unit==='cm'?1.8:6)}else if(g('vd')===(unit==='cm'?1.8:6)){sval('vd',unit==='cm'?2.74:9)}}
 R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){setSeat(b.getAttribute('data-s'));calc()})});
 R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
 R.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){size=b.getAttribute('data-t');R.querySelectorAll('[data-t]').forEach(function(x){x.classList.toggle('on',x===b)});$('ltc').classList.toggle('hide',size!=='c');calc()})});
-$('fp').addEventListener('change',function(){var on=$('fp').checked;$('ffp').classList.toggle('hide',!on);$('hfp').classList.toggle('hide',!on);if(on?g('mb')===null:false){sval('mb',unit==='cm'?137:54)}calc()});
+$('fp').addEventListener('change',function(){var on=$('fp').checked;$('ffp').classList.toggle('hide',!on);$('hfp').classList.toggle('hide',!on);if(on?g('mb')===null:false){sval('mb',unit==='cm'?165:65)}calc()});
 ['tc','ho','eh','vd','mb'].forEach(function(i){$(i).addEventListener('input',calc)});
 $('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my TV height'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your TV height:',summary)})}catch(e){window.prompt('Copy your TV height:',summary)}});
 $('pr').addEventListener('click',function(){window.print()});
 var lang=(navigator.language||'en-US');
-if(lang.indexOf('en-US')===0){unit='in'}else{unit='cm'}
-lbl();sval('eh',unit==='cm'?EYE.sofa*CM:EYE.sofa);sval('vd',unit==='cm'?2.7:9);
+if(lang==='en'||lang.indexOf('en-US')===0){unit='in'}else{unit='cm'}
+lbl();sval('eh',unit==='cm'?EYE.sofa*CM:EYE.sofa);sval('vd',unit==='cm'?2.74:9);
 calc();
 })();
 </script>
