@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-station",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A small gift wrap station in a reach-in closet with no doors: a white oak countertop at standing height with a pair of scissors and a tape dispenser on it; below the counter on the left a tall open woven basket holding about twelve upright rolls of wrapping paper in solid kraft brown, sage green, cream, terracotta and white with tiny dots; on the right open cubbies with gift bags standing upright like files, sorted from small to large; above the counter a short wooden dowel fixed into two wooden brackets on the side walls holding spools of satin ribbon in matching colors, with the ribbon ends hanging down; one oak shelf above with clear boxes of tissue paper. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain papers and bags with no words or characters, high detail."
+  },
+  {
+   "name": "02-under-bed-box",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A long clear plastic under-bed storage box with a lid pulled half out from under a white oak bed frame, inside about ten rolls of wrapping paper lying flat side by side in solid colors kraft, sage, cream, terracotta and white, plus folded tissue paper at one end; cream bedding and a light wood floor with a jute rug. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain papers with no words or characters, high detail."
+  },
+  {
+   "name": "03-bags-filed",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "An open white oak closet shelf with three cream magazine file holders standing side by side, each holding plain paper gift bags flattened and filed upright by size: small bags in the first, medium in the second, large in the third; bag handles tucked inside; a woven basket of folded tissue paper next to them; straight-on view. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain bags with no words, prints or characters, high detail."
+  },
+  {
+   "name": "04-ribbon-drawer",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Top-down view into an open shallow white oak drawer divided into small square compartments with wooden dividers, each compartment holding spools of satin ribbon, twine and gift tags sorted by color: cream, sage, terracotta, gold, kraft; a pair of scissors and a roll of clear tape in one compartment; drawer front and wood grain visible. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, blank tags, high detail."
+  },
+  {
+   "name": "05-door-back-closet",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A corner of a small closet with a tall slim rolling cart with three wire baskets standing on the floor; the bottom basket holds upright rolls of wrapping paper in solid kraft, sage and cream colors, the middle basket holds folded tissue paper, the top basket holds spools of ribbon; next to it a few long garments hang on a fully supported closet rod with wood hangers; light wood floor. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain papers with no words or characters, high detail."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Split image, the same closet corner photographed twice side by side from the same angle with a thin white vertical line in the middle: left half BEFORE shows crumpled and torn rolls of wrapping paper lying in a tangled pile on the floor with crushed gift bags and loose ribbon; right half AFTER shows the same corner with the rolls standing upright in a tall woven basket, gift bags filed upright in cream magazine holders on a shelf and ribbon spools in a small box. Same wall, same shelf, same floor, same lighting. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain papers and bags with no words or characters, high detail."
+  },
+  {
+   "name": "07-pin-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Tall vertical photo of a cozy gift wrap corner in the lower two thirds: a white oak counter with a tall woven basket of upright wrapping paper rolls in kraft, sage, cream and terracotta beside it, a few wrapped boxes with satin ribbon bows on the counter, a short wooden dowel on two brackets holding ribbon spools; warm evening glow from an LED strip under a shelf, no candles, no open flame; the top third of the image is a calm plain cream wall with nothing on it; one clear focal point. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, plain papers with no words or characters, high detail."
+  }
+ ]
+}
