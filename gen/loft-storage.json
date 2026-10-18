@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero-boarded-loft",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Inside a tidy British house loft under a pitched roof with exposed timber rafters and a central walkway of pale chipboard loft boards raised a few centimetres above thick yellow mineral wool insulation, which is visible uncompressed at the edges between the joists; along the boards neat rows of identical clear lidded plastic storage boxes and two plain suitcases; a bright LED batten light fixed to a rafter; the open square loft hatch with its timber frame in the foreground floor. Photorealistic interior photography, real estate photo, natural light mixed with warm LED light, palette of pale timber, cream and sage green accents, realistic proportions and real building construction, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, high detail."
+  },
+  {
+   "name": "02-eaves-drawers",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A loft conversion bedroom in a British house with a sloping ceiling; built into the low knee wall under the slope a row of white shaker-style pull-out drawers with simple wooden knobs, flush with the wall; a white oak floor, a cream wool rug, the edge of a bed with sage green linen, a roof window letting in daylight. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, high detail."
+  },
+  {
+   "name": "03-low-shelving",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A boarded British loft with a low freestanding wooden shelving unit standing on the loft boards between rafters, holding identical clear plastic boxes with lids, a stack of folded blankets in a cotton bag and two woven baskets; pale chipboard loft boards, timber rafters and roof membrane visible above, an LED batten light. Photorealistic interior photography, real estate photo, natural light, palette of pale timber, cream and sage green, realistic proportions and real building construction, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, high detail."
+  },
+  {
+   "name": "04-eaves-cupboard-inside",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "View into the inside of a low eaves cupboard in a loft conversion, the door out of frame: a triangular space under the sloping roof with plasterboard lining painted white, a simple plywood floor, woven baskets and clear lidded boxes lined up from tallest at the front to smallest at the back where the slope gets low, a battery LED puck light on the slope. Photorealistic interior photography, real estate photo, palette of white, pale timber, cream and sage green, realistic proportions and real building construction, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, high detail."
+  },
+  {
+   "name": "05-built-in-shelves",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "A small loft conversion landing in a British house with a sloping ceiling; white built-in bookshelves fitted under the slope, the shelves stepping down in height to follow the roof line, holding books, baskets and a plant; a pale oak floor and a small sage green runner, daylight from a roof window. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, natural daylight, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, high detail."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Split image, the same British loft photographed twice side by side from the same angle with a thin white vertical line in the middle: left half BEFORE shows cardboard boxes, bin bags and old items piled directly on squashed yellow insulation between the joists, dim and messy; right half AFTER shows the same loft with a walkway of pale loft boards raised over fluffy uncompressed insulation and neat rows of identical clear lidded storage boxes, bright LED batten light. Same rafters, same roof, same lighting angle. Photorealistic interior photography, real estate photo, realistic proportions and real building construction, no people, no animals, no text, no labels, no logos, no brand names, high detail."
+  },
+  {
+   "name": "07-pin-evening",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Tall vertical photo of a cosy loft conversion room at evening: in the lower two thirds a sloping ceiling with a row of white built-in eaves drawers in the low knee wall, a white oak floor, a cream wool rug and a woven basket, warm glow from a small table lamp, no candles, no open flame; the top third of the image is a calm plain white sloping ceiling with nothing on it; one clear focal point. Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, palette of white oak, cream, sage green and soft terracotta accents, realistic proportions, clean and calm, no people, no animals, no text, no labels, no logos, no brand names, high detail."
+  }
+ ]
+}
