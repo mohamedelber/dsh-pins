@@ -1,0 +1,6 @@
+== https://dailyspacehacks.com/embed-calculators/christmas-tree-lights/
+HTTP/2 200 
+content-security-policy: upgrade-insecure-requests
+== https://dailyspacehacks.com/christmas-tree-lights-calculator/
+HTTP/2 200 
+content-security-policy: upgrade-insecure-requests
