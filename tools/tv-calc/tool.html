@@ -40,49 +40,50 @@
 .dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
 .dsh-calc .hide{display:none}
+.dsh-calc .sizes{grid-template-columns:repeat(4,1fr)}
+.dsh-calc .sizes button{text-align:center;padding:10px 4px}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
 @media print{.dsh-calc .acts{display:none}}
 </style>
 <h3>How high should you mount your TV?</h3>
-<p class="sub">Enter your TV size, where you sit and how far away you sit. The calculator puts the middle of the screen at your eye level and checks the viewing angle.</p>
-<div class="row">
-<div class="seg" role="group" aria-label="Units"><button type="button" data-u="in">inches and feet</button><button type="button" data-u="cm">cm and metres</button></div>
+<p class="sub">Two taps: pick your TV size and where you sit. The answer appears straight away.</p>
+<div class="row"><div class="seg" role="group" aria-label="Units"><button type="button" data-u="in">inches</button><button type="button" data-u="cm">cm</button></div></div>
+<fieldset><legend>1. TV size</legend>
+<div class="opts sizes" role="group" aria-label="TV size">
+<button type="button" data-t="32"><b>32"</b></button><button type="button" data-t="43"><b>43"</b></button><button type="button" data-t="50"><b>50"</b></button><button type="button" data-t="55" class="on"><b>55"</b></button><button type="button" data-t="65"><b>65"</b></button><button type="button" data-t="75"><b>75"</b></button><button type="button" data-t="85"><b>85"</b></button><button type="button" data-t="c"><b>Other</b></button>
 </div>
-<fieldset><legend>1. Your TV</legend>
-<div class="grid">
-<label>Screen size (diagonal, inches)<select id="ts"><option>32</option><option>40</option><option>43</option><option>50</option><option selected>55</option><option>60</option><option>65</option><option>70</option><option>75</option><option>77</option><option>83</option><option>85</option><option>98</option><option value="c">Other size</option></select></label>
-<label id="ltc" class="hide">Other size (inches)<input type="number" inputmode="decimal" min="10" max="150" step="1" id="tc" value="58"></label>
-<label><span>Mounting holes to bottom edge</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="ho" placeholder="optional"></label>
-</div>
-<p class="hint">Optional: measure on the back of the TV from the centre of the mounting holes to the bottom edge of the TV, to get the height for the wall bracket.</p>
+<label id="ltc" class="hide">Your TV size (inches, measured corner to corner)<input type="number" inputmode="decimal" min="10" max="150" step="1" id="tc" value="58"></label>
 </fieldset>
-<fieldset><legend>2. Where you watch from</legend>
+<fieldset><legend>2. Where do you sit?</legend>
 <div class="opts" role="group" aria-label="Seat">
-<button type="button" data-s="sofa" class="on"><b>Sofa</b><span>Standard seat</span></button>
-<button type="button" data-s="low"><b>Low sofa or recliner</b><span>Lower seat</span></button>
+<button type="button" data-s="sofa" class="on"><b>Sofa</b><span>Living room</span></button>
+<button type="button" data-s="low"><b>Low sofa</b><span>Or recliner</span></button>
 <button type="button" data-s="bed"><b>Bed</b><span>Sitting up</span></button>
 <button type="button" data-s="stand"><b>Standing</b><span>Kitchen or gym</span></button>
 </div>
-<div class="grid">
-<label><span>Seated eye height (floor to eyes)</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="10" step="0.5" id="eh"></label>
-<label><span>Viewing distance (eyes to screen)</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0.5" step="0.1" id="vd"></label>
-</div>
-<p class="hint">The seat buttons fill in a typical eye height. For the best result, sit where you watch and measure from the floor to your eyes.</p>
 </fieldset>
-<fieldset><legend>3. Above a fireplace or furniture?</legend>
-<label class="chk"><input type="checkbox" id="fp">The TV has to go above a mantel or a piece of furniture</label>
+<details class="more"><summary>More options: your eye height, distance, bracket, fireplace</summary>
+<div class="grid">
+<label><span>Your eye height (floor to eyes)</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="10" step="0.5" id="eh"></label>
+<label><span>Distance from your eyes to the TV</span> <span data-lu="l"></span><input type="number" inputmode="decimal" min="0.5" step="0.1" id="vd"></label>
+<label><span>Mounting holes to bottom of TV</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="ho" placeholder="optional"></label>
+</div>
+<p class="hint">Measure the last one on the back of the TV, from the centre of the mounting holes to the bottom edge. It gives you the height to fix the wall bracket.</p>
+<label class="chk"><input type="checkbox" id="fp">The TV has to go above a fireplace or furniture</label>
 <div id="ffp" class="grid hide"><label><span>Lowest the bottom of the TV can go</span> <span data-lu="s"></span><input type="number" inputmode="decimal" min="0" step="0.5" id="mb"></label></div>
 <p id="hfp" class="hint hide">Use the top of the mantel or furniture plus the clearance in your fireplace or TV manual.</p>
-</fieldset>
+</details>
 <div class="res" aria-live="polite">
 <div id="vv" class="verdict"></div>
 <div class="kpis">
 <div class="kpi main"><small>Centre of screen</small><strong id="kc"></strong><em>from the floor</em></div>
 <div class="kpi"><small>Bottom edge</small><strong id="kb"></strong><em>from the floor</em></div>
 <div class="kpi"><small>Top edge</small><strong id="kt"></strong><em>from the floor</em></div>
-<div class="kpi" id="kbx"><small>Wall bracket</small><strong id="kbr"></strong><em>centre of mounting holes</em></div>
-<div class="kpi"><small>Screen size</small><strong id="ks"></strong><em>width x height (16:9)</em></div>
-<div class="kpi"><small>Viewing angle</small><strong id="ka"></strong><em>eyes to centre of screen</em></div>
+<div class="kpi hide" id="kbx"><small>Wall bracket</small><strong id="kbr"></strong><em>centre of mounting holes</em></div>
 </div>
+<p class="hint">Screen: <span id="ks"></span> (16:9) · Viewing angle: <span id="ka"></span> above eye level</p>
 <div class="viz" id="vz"></div>
 <ul class="tips" id="tp"></ul>
 <div class="acts"><button type="button" id="cp">Copy my TV height</button><button type="button" id="pr">Print</button></div>
@@ -90,7 +91,7 @@
 <script>
 (function(){
 var R=document.getElementById('dsh-tvh');if(!R)return;
-var CM=2.54,unit='in',seat='sofa',summary='';
+var CM=2.54,unit='in',seat='sofa',size='55',summary='';
 var EYE={sofa:42,low:38,bed:50,stand:62};
 function $(i){return document.getElementById(i)}
 function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
@@ -103,7 +104,7 @@ function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){var t=x.getAt
 function setUnit(u){if(u===unit)return;var hs=['eh','ho','mb'].map(function(i){return g(i)});var d=g('vd');unit=u;
 ['eh','ho','mb'].forEach(function(i,k){var v=hs[k];if(v===null){sval(i,null);return}sval(i,u==='cm'?v*CM:v/CM)});
 if(d!==null){sval('vd',u==='cm'?d*0.3048:d/0.3048)}lbl()}
-function diag(){var v=$('ts').value;if(v==='c'){var c=g('tc');return c===null?55:c}return parseFloat(v)}
+function diag(){if(size==='c'){var c=g('tc');return c===null?55:c}return parseFloat(size)}
 function svg(o){var W=360,H=230,fy=200,sc=150/Math.max(o.top+6,o.eye+10,72);
 function y(h){return fy-h*sc}
 var wx=330,tvw=7,dpx=Math.min(220,Math.max(90,o.dist*sc*0.9));var ex=wx-dpx;
@@ -153,7 +154,7 @@ summary='TV '+d+' in: centre of screen '+fs(c)+', bottom edge '+fs(bot)+', top e
 function setSeat(s){seat=s;R.querySelectorAll('[data-s]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-s')===s)});sval('eh',unit==='cm'?EYE[s]*CM:EYE[s]);if(s==='stand'){var d=g('vd');if(d===null?true:false)sval('vd',unit==='cm'?1.8:6)}}
 R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){setSeat(b.getAttribute('data-s'));calc()})});
 R.querySelectorAll('[data-u]').forEach(function(b){b.addEventListener('click',function(){setUnit(b.getAttribute('data-u'));calc()})});
-$('ts').addEventListener('change',function(){$('ltc').classList.toggle('hide',$('ts').value!=='c');calc()});
+R.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){size=b.getAttribute('data-t');R.querySelectorAll('[data-t]').forEach(function(x){x.classList.toggle('on',x===b)});$('ltc').classList.toggle('hide',size!=='c');calc()})});
 $('fp').addEventListener('change',function(){var on=$('fp').checked;$('ffp').classList.toggle('hide',!on);$('hfp').classList.toggle('hide',!on);if(on?g('mb')===null:false){sval('mb',unit==='cm'?137:54)}calc()});
 ['tc','ho','eh','vd','mb'].forEach(function(i){$(i).addEventListener('input',calc)});
 $('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my TV height'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your TV height:',summary)})}catch(e){window.prompt('Copy your TV height:',summary)}});
