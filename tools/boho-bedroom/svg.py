@@ -32,7 +32,7 @@ for n,bw,bl,rn,rw,rd,d,cx in P:
     a(f'<text x="{cx}" y="534" font-size="24" font-weight="700" fill="{T}" text-anchor="middle">{n} <tspan font-weight="400" font-size="18" fill="{G}">{bw} x {bl} in</tspan></text>')
     a(f'<rect x="{cx-100}" y="550" width="200" height="44" rx="22" fill="{A}"/><text x="{cx}" y="579" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">{rn}</text>')
 a(f'<rect x="60" y="626" width="1080" height="64" rx="14" fill="#fff" stroke="{BR}" stroke-width="2"/>')
-a(f'<text x="84" y="666" font-size="19" fill="{T}"><tspan font-weight="700" fill="{A}">Rule of thumb:</tspan> let at least 18 to 24 in of rug show on both sides and at the foot of the bed.</text>')
+a(f'<text x="84" y="666" font-size="19" fill="{T}"><tspan font-weight="700" fill="{A}">Rule of thumb:</tspan> let 18 to 24 in or more of rug show on both sides and at the foot of the bed.</text>')
 a(f'<text x="60" y="734" font-size="20" font-weight="700" fill="{T}">A simple boho palette</text>')
 pal=[("#F3E9DC","Cream"),("#C8643C","Terracotta"),("#A4482A","Rust"),("#9AAE8C","Sage"),("#C9A46A","Rattan"),("#D9BE94","White oak")]
 x=60
