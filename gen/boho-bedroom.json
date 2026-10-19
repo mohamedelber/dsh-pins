@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, warm boho bedroom style with a calm Scandinavian base, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, high detail. Palette: cream, warm white, terracotta, rust, sage green, natural rattan and jute, white oak, soft natural daylight. A boho bedroom: a low white oak bed with rumpled white linen bedding, a terracotta and cream patterned throw blanket and mixed textured cushions, a large round rattan wall decoration above the headboard securely fixed to the wall, a woven jute rug, a rattan pendant lamp, a tall potted plant in a woven basket in the corner, a small wooden stool used as a nightstand with a lamp. Wide view, airy and calm, not cluttered."
+  },
+  {
+   "name": "02-macrame",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, warm boho bedroom style with a calm Scandinavian base, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, high detail. Palette: cream, warm white, terracotta, rust, sage green, natural rattan and jute, white oak, soft natural daylight. Close-up of a cream macrame wall hanging on a wooden dowel hung on a warm white wall above a low bench with a folded rust throw and a small trailing plant in a terracotta pot, soft daylight. Not above a bed."
+  },
+  {
+   "name": "03-canopy",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, warm boho bedroom style with a calm Scandinavian base, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, high detail. Palette: cream, warm white, terracotta, rust, sage green, natural rattan and jute, white oak, soft natural daylight. A boho bed with a light gauzy cream canopy fabric draped from a ceiling-mounted wooden ring or rail above the bed, the fabric falling softly behind the headboard, white linen bedding, a terracotta throw, rattan nightstand with a lamp. No string lights, no candles."
+  },
+  {
+   "name": "04-textiles",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, warm boho bedroom style with a calm Scandinavian base, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, high detail. Palette: cream, warm white, terracotta, rust, sage green, natural rattan and jute, white oak, soft natural daylight. Close-up of a made bed layered with boho textiles: white linen sheets, a rust waffle blanket, a cream fringed throw, and cushions in terracotta, sage and cream with simple woven and tufted textures, no printed patterns of text or logos. Soft daylight."
+  },
+  {
+   "name": "05-plants",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, warm boho bedroom style with a calm Scandinavian base, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, high detail. Palette: cream, warm white, terracotta, rust, sage green, natural rattan and jute, white oak, soft natural daylight. A bright corner of a boho bedroom with a tall fiddle-leaf-fig-style plant in a woven basket, a hanging planter with a trailing plant from a ceiling hook, a rattan armchair with a sheepskin-style throw, and a floor mirror with a rattan frame leaning against the wall and secured. Daylight."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, warm boho bedroom style with a calm Scandinavian base, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, high detail. Palette: cream, warm white, terracotta, rust, sage green, natural rattan and jute, white oak, soft natural daylight. Split image, left and right halves of the same bedroom from the same camera angle, separated by a thin white vertical line down the middle. Left half: a plain, bland bedroom with grey bedding, bare walls and no rug. Right half: the same room styled boho with white linen and a terracotta throw, a round rattan wall decoration above the bed, a jute rug and a plant in a basket."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, warm boho bedroom style with a calm Scandinavian base, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, high detail. Palette: cream, warm white, terracotta, rust, sage green, natural rattan and jute, white oak, soft natural daylight. Vertical photo of a boho bedroom at warm golden hour light: a low bed with white linen and a rust throw in the lower half, a woven jute rug, a plant in a basket beside the bed, a round rattan wall decoration on the wall above the headboard. The top third of the image is a calm, warm, empty wall. One clear focal point, no candles, no string lights, no text."
+  }
+ ]
+}
