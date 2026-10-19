@@ -32,10 +32,10 @@ lst(["<strong>Natural materials:</strong> rattan, cane, jute, linen, cotton and 
 "<strong>Collected pieces:</strong> handmade, vintage or thrifted finds that tell a story."])
 p("You do not need all five at full volume. A calm base with two or three of them looks more grown-up than a room that tries to do everything.")
 h2("The Rug Rule: What Size Rug Goes Under a Boho Bed?")
-p(f"A large natural rug is what makes a boho bedroom feel finished. Rug guides from Ruggable and The Citizenry recommend {SR('rug','18–24 inches of rug visible on each side and at the foot of the bed')}, which works out to an {SR('cit','8 x 10 ft rug for a queen and 9 x 12 ft for a king')}, turned sideways under the bed.")
+p(f"A large natural rug is what makes a boho bedroom feel finished. Ruggable recommends {SR('rug','18–24 inches of rug visible on each side and at the foot of the bed')} (The Citizenry suggests about two feet), which points to an {SR('cit','8 x 10 ft rug for a queen and 9 x 12 ft for a king')}, turned sideways under the bed.")
 diagram(re.sub(r'(\d+\.\d{1,2})\d+',r'\1',open('z.svg').read()),"What size rug goes under the bed: an 8 x 10 ft rug for a queen and a 9 x 12 ft rug for a king, with 18 to 24 in or more showing, plus a simple boho color palette.")
 table(["Bed","Rug size","Rug showing on each side","Tip"],[
-["Queen (60 x 80 in)","8 x 10 ft","30 in","Turn the rug sideways, nightstands on the rug"],
+["Queen (60 x 80 in)","8 x 10 ft","30 in","Turn the rug sideways, front legs of the nightstands on the rug"],
 ["King (76 x 80 in)","9 x 12 ft","34 in","Start the rug at or just under the headboard"],
 ["Any bed, smaller budget","Two runners or small rugs","Placed on each side","Layer a small hide-style or kilim-style rug on top"]])
 p(f"Not sure what fits your floor? Our {a('rug-size-calculator','rug size calculator')} works it out from your room and bed size.")
@@ -43,8 +43,8 @@ h2("Quick Pick: Boho Bedroom Ideas by Situation")
 table(["Your situation","Best ideas","Cost"],[
 ["Change the look this weekend","#2, #3, #4, #10","Low"],
 ["Small bedroom","#16, #17, #18","Low to medium"],
-["Renting","#6, #9, #17, #19","Low"],
-["Have cats or dogs","#12, #15","Low"],
+["Renting","#6, #13, #17, #19","Low"],
+["Have cats or dogs","#12, #18","Low"],
 ["Want a bigger change","#1, #5, #8, #13","Medium"]])
 h2("How to Create a Boho Bedroom in 6 Steps")
 lst(["<strong>Clear and calm the base.</strong> Start with white or cream bedding and remove anything that does not fit the warm, natural look.",
@@ -56,7 +56,7 @@ lst(["<strong>Clear and calm the base.</strong> Start with white or cream beddin
 img(6)
 h2("Boho Bed and Bedding Ideas")
 h3("1. A Low Wood or Rattan Bed")
-p("A low platform bed in light wood, or a headboard in rattan or cane, sets the relaxed tone straight away. If you are keeping your current bed, a slipcovered or upholstered headboard in a natural fabric works too.")
+p("A low platform bed in light wood, or a headboard in rattan or cane, sets the relaxed tone right away. If you are keeping your current bed, a slipcovered or upholstered headboard in a natural fabric works too.")
 h3("2. A White Linen Base")
 p("White or cream linen bedding is the calm backdrop that lets everything else stand out. Linen looks best a little rumpled, so it suits the easy boho look and needs no ironing.")
 h3("3. Layered Throws and Blankets")
@@ -80,7 +80,7 @@ p(f"A couple of shelves give you a place for small plants, a few books and a vin
 h2("Boho Plant Ideas")
 h3("10. A Tall Plant in a Woven Basket")
 img(5)
-p("One tall plant in the corner does more than several small ones. Set the pot on a saucer inside a woven basket so water does not damage the basket or the floor.")
+p("One tall plant in the corner does more than several small ones. Set the pot on a saucer inside a woven basket so water does not damage the basket or the floor. If you have pets, check idea #12 first: the fiddle-leaf fig is mildly toxic to cats and dogs.")
 h3("11. A Hanging Planter")
 p("A trailing plant in a macrame or ceramic hanging planter fills an empty corner without taking floor space. Hang it from a ceiling hook rated for the weight of the pot, soil and water, and not directly over the bed.")
 h3("12. Pet-Safe Plant Picks")
@@ -98,7 +98,7 @@ p(f"A woven pouf or floor cushion gives you a seat without the bulk of a chair, 
 h3("17. Linen Curtains Hung High and Wide")
 p(f"Hang sheer or linen curtains close to the ceiling and a little wider than the window to make the room feel taller and brighter. Use our {a('curtain-size-calculator','curtain size calculator')} to get the width and length right.")
 h3("18. A Rattan Mirror")
-p("A round or arched mirror with a rattan frame bounces light around a small room. If you lean a floor mirror against the wall, secure it to the wall with an anti-tip strap so it cannot fall.")
+p("A round or arched mirror with a rattan frame bounces light around a small room. If you lean a floor mirror against the wall, secure it to the wall with an anti-tip strap so it is much less likely to tip.")
 h3("19. Baskets as Storage")
 p("Woven baskets look boho and hide the clutter: one for extra blankets at the foot of the bed, one for books by the nightstand and a lidded one for anything you would rather not see.")
 h2("The Finishing Touch")

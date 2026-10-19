@@ -39,7 +39,7 @@ x=60
 for c,l in pal:
     a(f'<rect x="{x}" y="752" width="168" height="54" rx="10" fill="{c}" stroke="{BR}" stroke-width="2"/><text x="{x+84}" y="830" font-size="16" fill="{G}" text-anchor="middle">{l}</text>')
     x+=182
-a(f'<text x="60" y="874" font-size="15" fill="{G}">Rug sizes and the 18 to 24 in guide from Ruggable and The Citizenry rug guides. Rug placed sideways under the bed, nightstands on the rug.</text>')
+a(f'<text x="60" y="874" font-size="15" fill="{G}">Rug sizes and the 18 to 24 in guide from Ruggable and The Citizenry rug guides. Rug placed sideways under the bed, front legs of the nightstands on the rug.</text>')
 a('</svg>')
 import re
 open('z.svg','w').write(re.sub(r'(\d+\.\d{1,2})\d+',r'\1','\n'.join(s)))
