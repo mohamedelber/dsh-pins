@@ -1,2 +1,2 @@
-host.html d christmas-tree-lights:1564px:760 wallpaper-rolls:1388px:760 storage-unit-size:1420px:760 tv-height:1298px:760 wardrobe-size:1342px:760 rug-size:1359px:760 curtain-size:1807px:760 moving-boxes:2503px:760 shelf-spacing:1290px:760 washer-dryer-space:1261px:760
-host.html m christmas-tree-lights:2085px:760 wallpaper-rolls:1774px:760 storage-unit-size:1917px:760 tv-height:1583px:760 wardrobe-size:1863px:760 rug-size:2337px:760 curtain-size:3496px:760 moving-boxes:3458px:760 shelf-spacing:2104px:760 washer-dryer-space:1980px:760
+host.html d picture-height:1429px:1400
+host.html m picture-height:2130px:1400
