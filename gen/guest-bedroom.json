@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A welcoming guest bedroom: a queen bed with crisp white linen, a folded sage green throw and two extra pillows, white oak nightstands on both sides each with a small lamp, a carafe of water with a glass and a small vase of fresh greenery on one nightstand, a luggage rack with a folded towel set at the foot of the bed, a window with linen curtains, calm and hotel-like. Wide view."
+  },
+  {
+   "name": "02-luggage",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Close-up of a simple white oak folding luggage rack with canvas straps at the foot of a made guest bed, a neat stack of two folded white bath towels and a washcloth tied with twine on top, a small basket beside it holding travel-size toiletries in plain unbranded bottles. Soft daylight."
+  },
+  {
+   "name": "03-daybed-office",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A guest room that doubles as a home office: a white oak daybed with cream bedding and cushions along one wall, a slim desk with a chair and a task lamp under the window, a low bookshelf, a jute rug. Calm and uncluttered, daylight."
+  },
+  {
+   "name": "04-closet",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. An open guest room closet with a few empty wooden hangers on the rail, one shelf with a folded extra blanket and pillows, an empty drawer pulled slightly open, a small fabric storage bin labeled with nothing. Neat, soft daylight. The closet door is out of frame."
+  },
+  {
+   "name": "05-nightstand",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Close-up of a white oak nightstand in a guest bedroom: a small lamp with a linen shade, a glass carafe of water with a glass, a small dish for jewelry, a phone charging cable plugged into a lamp base, a sprig of eucalyptus in a small vase, a book. Soft morning light, the edge of a white bed visible."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Split image, left and right halves of the same small spare bedroom from the same camera angle, separated by a thin white vertical line down the middle. Left half: a cluttered junk room, boxes, an exercise bike and piles of laundry on a bare mattress. Right half: the same room as a calm guest bedroom, the bed made with white linen and a sage throw, a nightstand with a lamp, floor clear."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Vertical photo of a cozy guest bedroom at warm evening lamp light: a made bed with white linen and a sage green throw in the lower half, a nightstand with a glowing lamp and a carafe of water, folded towels on a small bench at the foot of the bed. The top third of the image is a calm, empty cream wall. One clear focal point, no candles, no text."
+  }
+ ]
+}
