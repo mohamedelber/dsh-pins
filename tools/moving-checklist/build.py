@@ -28,7 +28,7 @@ table(["When","Main jobs"],[
 ["Moving week","Pack the essentials box and a bag for a few days, clean as you go"],
 ["Moving day","Meter readings and photos, last walk-through, check every box arrived"],
 ["First week after","Unpack the kitchen and bathroom, test the alarms, update your license and voter registration"]])
-p("Short on time? The calculator moves the tasks you have missed into a <em>Start now</em> list and drops the nice-to-haves, such as using up the freezer, so you only see what still matters.")
+p("Short on time? The checklist moves the tasks you have missed into a <em>Start now</em> list and drops the nice-to-haves, such as using up the freezer, so you only see what still matters.")
 h2("8 to 6 Weeks Before Moving: Book Movers and Declutter")
 p(f"Booking early gives you a choice of dates and prices. HireAHelper suggests booking movers {ext(HH,'roughly 4 to 8 weeks before your move')}, and earlier in the peak season from May to September. For a move to another US state, the FMCSA's {ext(FM1,'Ready to Move brochure')} advises getting estimates from at least three movers or brokers and checking that the mover has a USDOT number. Its {ext(FM2,'Protect Your Move brochure')} lists a demand for cash or a large deposit before the move as a red flag.")
 p(f"Declutter before you pack, not after: every box you do not move saves packing time and money. Our guide on {a('how-to-declutter-your-home','how to declutter your home')} goes room by room, and the {a('moving-box-calculator','moving box calculator')} tells you how many boxes to order once you know what is going.")
