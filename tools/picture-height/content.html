@@ -108,7 +108,7 @@ function chips(){var a=unit==='cm'?HCM:HIN,o='';for(var k=0;k<a.length;k++){var 
 $('hts').innerHTML=o;R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){H=parseFloat(b.getAttribute('data-h'));$('fh').value='';mark();calc()})});mark()}
 function mark(){var best=null,bd=1e9;R.querySelectorAll('[data-h]').forEach(function(x){var d=Math.abs(parseFloat(x.getAttribute('data-h'))-H);if(d<bd){bd=d;best=x}});var ex=g('fh')!==null;R.querySelectorAll('[data-h]').forEach(function(x){x.classList.toggle('on',ex?false:x===best)})}
 function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='cm'?'(cm)':'(in)'});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
-function setUnit(u){if(u===unit)return;var ids=['fh','hd','fu','gp','fw'],v=ids.map(function(i){var x=g(i);return x===null?null:toIn(x)});unit=u;ids.forEach(function(i,k){sv(i,v[k])});lbl();chips()}
+function setUnit(u){if(u===unit)return;var ids=['fh','hd','fu','gp','fw'],v=ids.map(function(i){var x=g(i);return x===null?null:toIn(x)});unit=u;ids.forEach(function(i,k){sv(i,v[k])});if(g('fh')===null){var a=unit==='cm'?HCM:HIN,bh=a[0];a.forEach(function(q){var qi=unit==='cm'?q/CM:q,bi=unit==='cm'?bh/CM:bh;if(Math.abs(qi-H)<Math.abs(bi-H)){bh=q}});H=unit==='cm'?bh/CM:bh}lbl();chips()}
 function setWhere(w){where=w;R.querySelectorAll('[data-w]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-w')===w)});var f=FUR[w];['lfu','lgp','lfw'].forEach(function(i){$(i).classList.toggle('hide',!f)});$('lel').classList.toggle('hide',!!f);if(f){$('tfu').textContent=f[2];sv('fu',f[0]);sv('gp',f[1])}}
 function svg(o){var W=360,Hh=250,fy=225,top=Math.max(96,o.top+10),sc=200/top;function y(h){return fy-h*sc}
 var cx=170,fw=Math.max(30,Math.min(150,o.h*sc*1.25)),s='<svg viewBox="0 0 '+W+' '+Hh+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Picture on the wall with the nail height">';
@@ -134,7 +134,7 @@ vv.textContent='Put the nail '+fs(nail)+' from the floor. The center of the pict
 var tips=[];
 if(!f){tips.push('Galleries and designers hang art with its center about 57 to 60 in (145 to 152 cm) from the floor, roughly average eye level.')}
 if(f){tips.push('Above furniture, the gap matters more than eye level: about 4 to 10 in (10 to 25 cm) above a sofa, 8 to 10 in (20 to 25 cm) above a headboard and 6 to 12 in (15 to 30 cm) above a mantel.')}
-var fw=g('fw');if(f?fw!==null:false){var w=toIn(fw);tips.push('Pick art about two-thirds as wide as the '+f[3]+': about '+fs(w*2/3)+' wide for this '+fs(w)+' piece.')}
+var fw=g('fw');if(f?fw!==null:false){var w=toIn(fw);tips.push('Pick art about two-thirds as wide as the '+f[3]+': about '+fs(w*2/3)+' wide for this '+fs(w)+' '+f[3]+'.')}
 if(where==='mantel'){tips.push('Above a working fireplace, heat and soot can damage art. Check the clearance in your fireplace manual and avoid valuable originals.')}
 if(where==='bed'){tips.push('Above a bed, use secure hooks for the weight and avoid heavy glass frames over where you sleep.')}
 if(note==='lifted'){tips.push('This frame is very tall, so the calculator keeps its bottom edge about 12 in (30 cm) above the floor.')}
@@ -169,16 +169,12 @@ lbl();chips();calc();
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table><thead><tr><th>Frame height</th><th>Nail with sawtooth or D-rings</th><th>Nail with picture wire</th></tr></thead><tbody><tr><td>12 in (30 cm)</td><td>62 in (158 cm)</td><td>60 in (152 cm)</td></tr><tr><td>16 in (40 cm)</td><td>64 in (162 cm)</td><td>62 in (158 cm)</td></tr><tr><td>20 in (50 cm)</td><td>66 in (168 cm)</td><td>64 in (162 cm)</td></tr><tr><td>24 in (60 cm)</td><td>68 in (172 cm)</td><td>66 in (168 cm)</td></tr><tr><td>30 in (75 cm)</td><td>71 in (180 cm)</td><td>69 in (175 cm)</td></tr><tr><td>36 in (90 cm)</td><td>74 in (188 cm)</td><td>72 in (182 cm)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><thead><tr><th>Frame height</th><th>Nail with sawtooth or D-rings</th><th>Nail with picture wire</th></tr></thead><tbody><tr><td>12 in (30 cm)</td><td>62 in (157 cm)</td><td>60 in (152 cm)</td></tr><tr><td>16 in (40 cm)</td><td>64 in (162 cm)</td><td>62 in (157 cm)</td></tr><tr><td>20 in (50 cm)</td><td>66 in (167 cm)</td><td>64 in (162 cm)</td></tr><tr><td>24 in (60 cm)</td><td>68 in (172 cm)</td><td>66 in (167 cm)</td></tr><tr><td>30 in (75 cm)</td><td>71 in (180 cm)</td><td>69 in (175 cm)</td></tr><tr><td>36 in (90 cm)</td><td>74 in (187 cm)</td><td>72 in (182 cm)</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
 <p>The 57 in rule comes from galleries: Apartment Therapy explains that <a href="https://www.apartmenttherapy.com/faqs-how-high-to-hang-art-229727" target="_blank" rel="noopener">57 inches represents the average human eye height</a> and is used as a standard in many galleries and museums. Some designers go a little higher; in Livingetc, an art advisor recommends <a href="https://www.livingetc.com/advice/picture-hanging-hack" target="_blank" rel="noopener">about 60 inches (150 cm) to the center</a>, and the article calls 57 to 60 in (145 to 152 cm) a good starting point.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:image {"id":2723,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/picture-hanging-height-01-sofa.jpg" alt="A cream linen sofa with sage and rust cushions under one large oak-framed abstract print, with an oak coffee table on a jute rug" class="wp-image-2723"/></figure>
-<!-- /wp:image -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">How the Picture Hanging Height Calculator Works</h2>
@@ -207,6 +203,10 @@ lbl();chips();calc();
 <figure class="wp-block-table"><table><thead><tr><th>Where</th><th>Gap between furniture and frame</th><th>Source</th></tr></thead><tbody><tr><td>Above a sofa</td><td>4 to 10 in (10 to 25 cm)</td><td>Hunker; Livingetc gives 6 to 12 in</td></tr><tr><td>Above a bed</td><td>8 to 10 in (20 to 25 cm) above the headboard</td><td>Rossetti Art</td></tr><tr><td>Above a mantel</td><td>6 to 12 in (15 to 30 cm)</td><td>UGallery</td></tr><tr><td>Above a console or sideboard</td><td>6 to 12 in (15 to 30 cm)</td><td>UGallery (large pieces over furniture)</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
+<!-- wp:image {"id":2723,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/picture-hanging-height-01-sofa.jpg" alt="A cream linen sofa with sage and rust cushions under one large oak-framed abstract print, with an oak coffee table on a jute rug" class="wp-image-2723"/></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph -->
 <p>Hunker's guide to <a href="https://www.hunker.com/12003406/height-to-hang-a-picture-over-a-sofa/" target="_blank" rel="noopener">hanging a picture over a sofa</a> suggests 4 to 8 inches above the couch, with some designers leaving 8 to 10 inches, and art no more than two-thirds the width of the furniture. Rossetti Art suggests <a href="https://rossettiart.com/blogs/news/over-bed-wall-art" target="_blank" rel="noopener">8 to 10 inches above a headboard</a> and art about two-thirds of the headboard width, and UGallery suggests <a href="https://ugallery.com/blogs/articles/how-high-should-i-hang-art" target="_blank" rel="noopener">6 to 12 inches above a mantel</a>. In <a href="https://www.livingetc.com/advice/how-high-to-hang-art-above-furniture" target="_blank" rel="noopener">Livingetc</a>, an art advisor puts the lowest point of the art about 6 to 12 inches above the furniture.</p>
 <!-- /wp:paragraph -->
@@ -227,7 +227,7 @@ lbl();chips();calc();
 <li><strong>Get the nail height</strong> from the calculator above.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Mark the wall.</strong> Measure up from the floor (not from the skirting board or baseboard) and mark the height on a strip of painter's tape. Mark the center of the wall or the furniture too.</li>
+<li><strong>Mark the wall.</strong> Measure up from the floor (not from the baseboard) and mark the height on a strip of painter's tape. Mark the center of the wall or the furniture too.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <li><strong>Check the wall</strong> for hidden pipes and cables before you drill, and pick a hook or anchor rated for the weight of the frame.</li>
@@ -242,7 +242,7 @@ lbl();chips();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Apartment Therapy suggests treating a group or gallery wall as one giant picture: hang it so the center of the whole group sits at 57 in (145 cm), or over furniture use the same gap as for a single piece. Leave 2 to 3 in (5 to 8 cm) between frames, as Hunker suggests; UGallery puts medium pieces 2 to 3 in apart and smaller pieces 1.5 to 2 in apart. Lay the frames out on the floor or tape paper cut-outs to the wall before you drill.</p>
+<p>Apartment Therapy suggests treating a group or gallery wall as one giant picture and hanging its center piece at 57 in (145 cm). Over furniture, use the same gap as for a single piece. Leave 2 to 3 in (5 to 8 cm) between frames, as Hunker suggests; UGallery puts medium pieces 2 to 3 in apart and smaller pieces 1.5 to 2 in apart. Lay the frames out on the floor or tape paper cutouts to the wall before you drill.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":2724,"sizeSlug":"full","linkDestination":"none"} -->

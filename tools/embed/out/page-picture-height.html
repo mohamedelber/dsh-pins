@@ -113,7 +113,7 @@ function chips(){var a=unit==='cm'?HCM:HIN,o='';for(var k=0;k<a.length;k++){var 
 $('hts').innerHTML=o;R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){H=parseFloat(b.getAttribute('data-h'));$('fh').value='';mark();calc()})});mark()}
 function mark(){var best=null,bd=1e9;R.querySelectorAll('[data-h]').forEach(function(x){var d=Math.abs(parseFloat(x.getAttribute('data-h'))-H);if(d<bd){bd=d;best=x}});var ex=g('fh')!==null;R.querySelectorAll('[data-h]').forEach(function(x){x.classList.toggle('on',ex?false:x===best)})}
 function lbl(){R.querySelectorAll('[data-lu]').forEach(function(x){x.textContent=unit==='cm'?'(cm)':'(in)'});R.querySelectorAll('[data-u]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-u')===unit)})}
-function setUnit(u){if(u===unit)return;var ids=['fh','hd','fu','gp','fw'],v=ids.map(function(i){var x=g(i);return x===null?null:toIn(x)});unit=u;ids.forEach(function(i,k){sv(i,v[k])});lbl();chips()}
+function setUnit(u){if(u===unit)return;var ids=['fh','hd','fu','gp','fw'],v=ids.map(function(i){var x=g(i);return x===null?null:toIn(x)});unit=u;ids.forEach(function(i,k){sv(i,v[k])});if(g('fh')===null){var a=unit==='cm'?HCM:HIN,bh=a[0];a.forEach(function(q){var qi=unit==='cm'?q/CM:q,bi=unit==='cm'?bh/CM:bh;if(Math.abs(qi-H)<Math.abs(bi-H)){bh=q}});H=unit==='cm'?bh/CM:bh}lbl();chips()}
 function setWhere(w){where=w;R.querySelectorAll('[data-w]').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-w')===w)});var f=FUR[w];['lfu','lgp','lfw'].forEach(function(i){$(i).classList.toggle('hide',!f)});$('lel').classList.toggle('hide',!!f);if(f){$('tfu').textContent=f[2];sv('fu',f[0]);sv('gp',f[1])}}
 function svg(o){var W=360,Hh=250,fy=225,top=Math.max(96,o.top+10),sc=200/top;function y(h){return fy-h*sc}
 var cx=170,fw=Math.max(30,Math.min(150,o.h*sc*1.25)),s='<svg viewBox="0 0 '+W+' '+Hh+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Picture on the wall with the nail height">';
@@ -139,7 +139,7 @@ vv.textContent='Put the nail '+fs(nail)+' from the floor. The center of the pict
 var tips=[];
 if(!f){tips.push('Galleries and designers hang art with its center about 57 to 60 in (145 to 152 cm) from the floor, roughly average eye level.')}
 if(f){tips.push('Above furniture, the gap matters more than eye level: about 4 to 10 in (10 to 25 cm) above a sofa, 8 to 10 in (20 to 25 cm) above a headboard and 6 to 12 in (15 to 30 cm) above a mantel.')}
-var fw=g('fw');if(f?fw!==null:false){var w=toIn(fw);tips.push('Pick art about two-thirds as wide as the '+f[3]+': about '+fs(w*2/3)+' wide for this '+fs(w)+' piece.')}
+var fw=g('fw');if(f?fw!==null:false){var w=toIn(fw);tips.push('Pick art about two-thirds as wide as the '+f[3]+': about '+fs(w*2/3)+' wide for this '+fs(w)+' '+f[3]+'.')}
 if(where==='mantel'){tips.push('Above a working fireplace, heat and soot can damage art. Check the clearance in your fireplace manual and avoid valuable originals.')}
 if(where==='bed'){tips.push('Above a bed, use secure hooks for the weight and avoid heavy glass frames over where you sleep.')}
 if(note==='lifted'){tips.push('This frame is very tall, so the calculator keeps its bottom edge about 12 in (30 cm) above the floor.')}
