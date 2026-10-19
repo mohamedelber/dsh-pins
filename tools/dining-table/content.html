@@ -81,7 +81,7 @@
 <label><span>Space around the table</span><select id="cl"><option value="36" selected>36 in (91 cm): the usual minimum</option><option value="42">42 in (107 cm): easier to walk behind chairs</option><option value="48">48 in (122 cm): busy room or big chairs</option><option value="60">60 in (152 cm): wheelchair access</option></select></label>
 <label><span>Chairs</span><select id="cs"><option value="0" selected>Standard dining chairs</option><option value="1">Wide chairs or armchairs</option></select></label>
 </div>
-<p class="hint">Measure the room at the narrowest point, and count a sideboard or radiator as part of the wall.</p>
+<p class="hint">Measure the room at the narrowest point, and count a sideboard or radiator as part of the wall. Enter both measurements to check the fit.</p>
 </details>
 <div class="res" aria-live="polite">
 <div id="vv" class="verdict"></div>
@@ -106,6 +106,7 @@ function g(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}
 function toIn(v){return unit==='cm'?v/CM:v}
 function f1(x){if(unit==='cm'){return Math.round(x*CM/5)*5+' cm'}return Math.round(x)+' in'}
 function ft(x){var f=Math.floor(x/12),i=Math.round(x-f*12);if(i===12){f=f+1;i=0}return f+' ft'+(i?' '+i+' in':'')}
+function fc(x){return unit==='cm'?Math.round(x*CM)+' cm':x+' in'}
 function room(w,l){if(unit==='cm'){return (Math.round(w*CM/10)/10)+' x '+(Math.round(l*CM/10)/10)+' m'}return ft(w)+' x '+ft(l)}
 function sz(t){if(t[2]){return f1(t[0])+' round'}if(unit==='cm'){return Math.round(t[0]*CM/5)*5+' x '+Math.round(t[1]*CM/5)*5+' cm'}return Math.round(t[0])+' x '+Math.round(t[1])+' in'}
 function sizes(){if(shape==='round'){var r=ROUND[n];return [[r[0],r[0],1],[r[1],r[1],1]]}if(shape==='square'){var s=SQ[n];return [[s[0],s[0]],[s[1],s[1]]]}return [RECT[n][0],RECT[n][1]]}
@@ -118,24 +119,24 @@ s+='<rect width="'+W+'" height="'+Hh+'" fill="#FBF6EF"/>';
 s+='<rect x="'+x0+'" y="'+y0+'" width="'+(ol*sc)+'" height="'+(ow*sc)+'" fill="#FFFDF9" stroke="'+(rw?'#342E2A':'#B98A5E')+'" stroke-width="'+(rw?3:1.5)+'"'+(rw?'':' stroke-dasharray="6 4"')+'/>';
 var cx=x0+ol*sc/2,cy=y0+ow*sc/2,tw=t[1]*sc,th=t[0]*sc,ch=16*sc,cw=17*sc;
 s+='<rect x="'+(cx-tw/2-c*sc)+'" y="'+(cy-th/2-c*sc)+'" width="'+(tw+2*c*sc)+'" height="'+(th+2*c*sc)+'" fill="none" stroke="#C85A32" stroke-dasharray="4 4" stroke-width="1.2"'+(t[2]?' rx="'+(tw/2+c*sc)+'"':'')+'/>';
-var seats=[];if(t[2]){for(var k=0;k<n;k++){var a=2*Math.PI*k/n,r=tw/2+ch*0.7;seats.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}}else{var ends=(shape==='rect'?n>=6:false)?2:0;var side=Math.ceil((n-ends)/2),lower=n-ends-side;for(var i=0;i<side;i++){seats.push([cx-tw/2+tw*(i+0.5)/side,cy-th/2-ch*0.7])}for(var j=0;j<lower;j++){seats.push([cx-tw/2+tw*(j+0.5)/lower,cy+th/2+ch*0.7])}if(ends){seats.push([cx-tw/2-ch*0.7,cy]);seats.push([cx+tw/2+ch*0.7,cy])}}
+var seats=[];if(t[2]){for(var k=0;k<n;k++){var a=2*Math.PI*k/n,r=tw/2+ch*0.7;seats.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}}else{var cnt=[0,0,0,0];if(shape==='square'){for(var q=0;q<n;q++){cnt[q%4]++}}else{var ends=n>=6?2:0;cnt[0]=Math.ceil((n-ends)/2);cnt[1]=n-ends-cnt[0];cnt[2]=ends/2;cnt[3]=ends/2}for(var i=0;i<cnt[0];i++){seats.push([cx-tw/2+tw*(i+0.5)/cnt[0],cy-th/2-ch*0.7])}for(var j=0;j<cnt[1];j++){seats.push([cx-tw/2+tw*(j+0.5)/cnt[1],cy+th/2+ch*0.7])}for(var m=0;m<cnt[2];m++){seats.push([cx-tw/2-ch*0.7,cy-th/2+th*(m+0.5)/cnt[2]])}for(var o=0;o<cnt[3];o++){seats.push([cx+tw/2+ch*0.7,cy-th/2+th*(o+0.5)/cnt[3]])}}
 seats.forEach(function(p){s+='<rect x="'+(p[0]-cw/2)+'" y="'+(p[1]-cw/2)+'" width="'+cw+'" height="'+cw+'" rx="'+(cw/4)+'" fill="#DCE5D6" stroke="#8FA689"/>'});
 if(t[2]){s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+(tw/2)+'" fill="#D9B48A" stroke="#B98A5E" stroke-width="2"/>'}else{s+='<rect x="'+(cx-tw/2)+'" y="'+(cy-th/2)+'" width="'+tw+'" height="'+th+'" rx="4" fill="#D9B48A" stroke="#B98A5E" stroke-width="2"/>'}
 s+='<text x="'+cx+'" y="'+(cy+4)+'" font-size="12" font-weight="700" text-anchor="middle" fill="#342E2A">'+sz(t)+'</text>';
 s+='<text x="'+(W/2)+'" y="'+(Hh-8)+'" font-size="11" text-anchor="middle" fill="#6E645C">'+(rw?'your room: ':'room needed: ')+room(ow,ol)+'</text>';
 return s+'</svg>'}
 function calc(){var c=parseFloat($('cl').value),wide=$('cs').value==='1';
-var sz2=sizes(),mn=sz2[0],cf=sz2[1];if(wide){cf=[cf[0]+(shape==='rect'?0:6),cf[1]+(shape==='rect'?12:6),cf[2]]}
+var sz2=sizes(),mn=sz2[0],cf=sz2[1];if(wide){cf=[cf[0]+(shape==='rect'?0:6),cf[1]+(shape==='rect'?12:6),cf[2]];mn=[mn[0]+(shape==='rect'?0:6),mn[1]+(shape==='rect'?12:6),mn[2]]}
 var need=[cf[0]+2*c,cf[1]+2*c];
 var a=g('rl'),b=g('rw'),rl=null,rw=null;if(a!==null?b!==null:false){a=toIn(a);b=toIn(b);rl=Math.max(a,b);rw=Math.min(a,b)}
 $('kt').textContent=sz(cf);$('kte').textContent=n+' people, comfortable';$('km').textContent=sz(mn);
-$('kr').textContent=room(need[0],need[1]);$('kre').textContent='with '+f1(c)+' all around';
+$('kr').textContent=room(need[0],need[1]);$('kre').textContent='with '+fc(c)+' all around';
 var vv=$('vv');vv.className='verdict';var tips=[],show=cf;
 if(rl===null){vv.textContent='For '+n+' people, choose a '+(shape==='round'?'round':shape==='square'?'square':'rectangular')+' table about '+sz(cf)+'. The room should be at least '+room(need[0],need[1])+'.'}
 else{var mw=rw-2*c,ml=rl-2*c;
-if(cf[0]<=mw+0.01?cf[1]<=ml+0.01:false){vv.textContent='A '+sz(cf)+' table fits your room, with '+f1(c)+' or more all around.'}
+if(cf[0]<=mw+0.01?cf[1]<=ml+0.01:false){vv.textContent='A '+sz(cf)+' table fits your room, with '+fc(c)+' or more all around.'}
 else if(mn[0]<=mw+0.01?mn[1]<=ml+0.01:false){vv.className='verdict amb';show=mn;vv.textContent='A '+sz(mn)+' table fits, but it is snug for '+n+' people. A comfortable '+sz(cf)+' table needs a room of '+room(need[0],need[1])+'.'}
-else{vv.className='verdict bad';var k=seatsFit(mw,ml);show=null;vv.textContent=(mw>=24?'The largest table that fits is about '+(shape==='round'?f1(Math.min(mw,ml))+' round':(shape==='square'?f1(Math.min(mw,ml))+' square':Math.round(unit==='cm'?mw*CM:mw)+' x '+Math.round(unit==='cm'?ml*CM:ml)+(unit==='cm'?' cm':' in')))+(k?', which seats about '+k+'.':', too small for a dining table.'):'This room is too narrow for a dining table once you leave '+f1(c)+' around it.')+' Try fewer people, a round table, a bench or less space around the table.'}}
+else{vv.className='verdict bad';var k=seatsFit(mw,ml);show=null;vv.textContent=(mw>=24?'The largest table that fits is about '+(shape==='round'?f1(Math.min(mw,ml))+' round':(shape==='square'?f1(Math.min(mw,ml))+' square':(unit==='cm'?Math.round(mw*CM/5)*5:Math.round(mw))+' x '+(unit==='cm'?Math.round(ml*CM/5)*5:Math.round(ml))+(unit==='cm'?' cm':' in')))+(k?', which seats about '+k+'.':', too small for a dining table.'):'This room is too narrow for a dining table once you leave '+fc(c)+' around it.')+' Try fewer people, '+(shape==='round'?'':'a round table, ')+'a bench or less space around the table.'}}
 if(shape==='round'?n>=10:false){tips.push('Round tables for 10 or more get very wide, and the center is hard to reach. A rectangle or oval often works better.')}
 if(shape==='square'?(n===6||n>=10):false){tips.push('Square tables suit 4 or 8 people best. For '+n+', a rectangle usually uses the space better.')}
 if(shape==='rect'?n>=6:false){tips.push('This size assumes a person at each end. Without end seats, add about 24 in (61 cm) to the length.')}
@@ -144,7 +145,7 @@ tips.push('Leave at least 36 in (91 cm) from the table edge to the wall or furni
 if(n>=8){tips.push('Hosting only a few times a year? An extending table can seat '+n+' when needed and stay smaller every day.')}
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('');
 $('vz').innerHTML=show?svg(show,c,rw,rl):svg(mn,c,rw,rl);
-summary='Dining table for '+n+' ('+shape+'): '+sz(cf)+' comfortable, '+sz(mn)+' minimum. Room needed: '+room(need[0],need[1])+' with '+f1(c)+' around the table. dailyspacehacks.com/dining-table-size-calculator/'}
+summary='Dining table for '+n+' ('+shape+'): '+sz(cf)+' comfortable, '+sz(mn)+' minimum. Room needed: '+room(need[0],need[1])+' with '+fc(c)+' around the table. dailyspacehacks.com/dining-table-size-calculator/'}
 R.querySelectorAll('[data-n]').forEach(function(x){x.addEventListener('click',function(){n=parseInt(x.getAttribute('data-n'),10);R.querySelectorAll('[data-n]').forEach(function(y){y.classList.toggle('on',y===x)});calc()})});
 R.querySelectorAll('[data-s]').forEach(function(x){x.addEventListener('click',function(){shape=x.getAttribute('data-s');R.querySelectorAll('[data-s]').forEach(function(y){y.classList.toggle('on',y===x)});calc()})});
 R.querySelectorAll('[data-u]').forEach(function(x){x.addEventListener('click',function(){setUnit(x.getAttribute('data-u'));calc()})});
@@ -169,7 +170,7 @@ lbl();calc();
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>The sizes follow the typical ranges in Raymour &amp; Flanigan's <a href="https://www.raymourflanigan.com/blog/expertise/guides/dining-table-size-guide" target="_blank" rel="noopener">dining table size guide</a>: rectangular tables about 60 to 72 inches long for 4 to 6 people, 84 inches for 6 to 8 and 96 inches for 8 to 10, and round tables 36 to 44 inches across for up to 4 people, 44 to 54 inches for 4 to 6 and 54 to 60 inches for 6 to 8. The guide gives no sizes for 2 or 12 people, or for round tables seating 10 or more, so those rows are our own estimates.</p>
+<p>The sizes follow the typical ranges in Raymour &amp; Flanigan's <a href="https://www.raymourflanigan.com/blog/expertise/guides/dining-table-size-guide" target="_blank" rel="noopener">dining table size guide</a>: rectangular tables about 60 to 72 inches long for 4 to 6 people, 84 inches for 6 to 8 and 96 inches for 8 to 10, and round tables 36 to 44 inches across for up to 4 people, 44 to 54 inches for 4 to 6 and 54 to 60 inches for 6 to 8. The guide gives no rectangle sizes for 2 or 12 people or round sizes for 10 or more, and our 108 in table for 10 is roomier than its 96 in, so those sizes are our own estimates.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":2748,"sizeSlug":"full","linkDestination":"none"} -->
@@ -182,7 +183,7 @@ lbl();calc();
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Space per person.</strong> Dimensions.com gives a <a href="https://dimensions.com/element/dining-room-clearances" target="_blank" rel="noopener">place setting width</a> of at least 24 in (61 cm) per person and 30 in (76 cm) for the most comfortable spacing. The smallest size is based on about 24 in per person, the comfortable size on more.</li>
+<li><strong>Space per person.</strong> Dimensions.com gives a <a href="https://dimensions.com/element/dining-room-clearances" target="_blank" rel="noopener">place setting width</a> of at least 24 in (61 cm) per person and 30 in (76 cm) for the most comfortable spacing. For rectangles, the smallest size allows about 24 in per person and the comfortable size more; round and square sizes follow Raymour &amp; Flanigan's ranges where it gives them.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <li><strong>End seats.</strong> For 6 or more people at a rectangle, the calculator assumes one person at each end. Without end seats, add about 24 in (61 cm) to the length.</li>
@@ -229,7 +230,7 @@ lbl();calc();
 <li><strong>Rectangular tables</strong> fit long, narrow rooms and seat the most people. An extending table can seat extra guests and stay compact every day.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Benches</strong> slide fully under the table, so they save space in a tight room, and children can squeeze up on them.</li>
+<li><strong>Benches</strong> slide fully under the table, so they save space in a tight room, and children can squeeze in.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -285,7 +286,7 @@ lbl();calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A round table 36 to 44 inches (90 to 110 cm) across seats four people. Choose the larger size if you like room for serving dishes, and leave at least 36 inches (91 cm) around it, so the dining area needs to be about 9 to 10 feet (2.7 to 3 m) square.</p>
+<p>A round table 36 to 44 inches (90 to 110 cm) across seats four people. Choose the larger size if you like room for serving dishes, and leave at least 36 inches (91 cm) around it, so the dining area needs to be about 9 ft to 9 ft 8 in (2.7 to 2.9 m) square.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->

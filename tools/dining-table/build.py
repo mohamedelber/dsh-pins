@@ -21,10 +21,10 @@ for n in [2,4,6,8,10,12]:
     mn,cf=RECT[n]; r=ROUND[n]
     rows.append([str(n), rs(cf), f"{r[0]} to {r[1]} in ({c5(r[0])} to {c5(r[1])} cm)", f"{ft(cf[0]+72)} x {ft(cf[1]+72)}"])
 table(["People","Rectangle (comfortable)","Round (diameter)","Room for a rectangle, 36 in all around"],rows)
-p(f"The sizes follow the typical ranges in Raymour &amp; Flanigan's {ext(RF,'dining table size guide')}: rectangular tables about 60 to 72 inches long for 4 to 6 people, 84 inches for 6 to 8 and 96 inches for 8 to 10, and round tables 36 to 44 inches across for up to 4 people, 44 to 54 inches for 4 to 6 and 54 to 60 inches for 6 to 8. The guide gives no sizes for 2 or 12 people, or for round tables seating 10 or more, so those rows are our own estimates.")
+p(f"The sizes follow the typical ranges in Raymour &amp; Flanigan's {ext(RF,'dining table size guide')}: rectangular tables about 60 to 72 inches long for 4 to 6 people, 84 inches for 6 to 8 and 96 inches for 8 to 10, and round tables 36 to 44 inches across for up to 4 people, 44 to 54 inches for 4 to 6 and 54 to 60 inches for 6 to 8. The guide gives no rectangle sizes for 2 or 12 people or round sizes for 10 or more, and our 108 in table for 10 is roomier than its 96 in, so those sizes are our own estimates.")
 img(1)
 h2("How the Dining Table Size Calculator Works")
-lst([f"<strong>Space per person.</strong> Dimensions.com gives a {ext(DM,'place setting width')} of at least 24 in (61 cm) per person and 30 in (76 cm) for the most comfortable spacing. The smallest size is based on about 24 in per person, the comfortable size on more.",
+lst([f"<strong>Space per person.</strong> Dimensions.com gives a {ext(DM,'place setting width')} of at least 24 in (61 cm) per person and 30 in (76 cm) for the most comfortable spacing. For rectangles, the smallest size allows about 24 in per person and the comfortable size more; round and square sizes follow Raymour &amp; Flanigan's ranges where it gives them.",
 "<strong>End seats.</strong> For 6 or more people at a rectangle, the calculator assumes one person at each end. Without end seats, add about 24 in (61 cm) to the length.",
 "<strong>Room size</strong> = the table plus the space you choose on every side: 36 in (91 cm) as the usual minimum, 42 to 48 in (107 to 122 cm) for a busy room or large chairs, or 60 in (152 cm) for wheelchair access.",
 "<strong>Wide chairs or armchairs</strong> add about 12 in (30 cm) to the length of a rectangle and 6 in (15 cm) to a round or square table. This is our own rule of thumb.",
@@ -40,7 +40,7 @@ h2("Round, Square or Rectangular Table?")
 lst(["<strong>Round tables</strong> suit small rooms and square rooms, have no corners to bump into and make conversation easy. Above about 60 in (152 cm) across, the center gets hard to reach.",
 "<strong>Square tables</strong> work best for 4 people, or 8 on a large table. For 6 people, a rectangle usually uses the space better.",
 "<strong>Rectangular tables</strong> fit long, narrow rooms and seat the most people. An extending table can seat extra guests and stay compact every day.",
-"<strong>Benches</strong> slide fully under the table, so they save space in a tight room, and children can squeeze up on them."])
+"<strong>Benches</strong> slide fully under the table, so they save space in a tight room, and children can squeeze in."])
 h2("Before You Buy a Dining Table")
 lst(["<strong>Tape it out.</strong> Mark the table size on the floor with painter's tape, put the chairs around it and walk around it for a day.",
 "<strong>Check the legs.</strong> Legs at the corners leave the long sides free; a pedestal base fits more chairs around a round table.",
@@ -54,7 +54,7 @@ p("A rectangular table about 36 to 40 inches wide and 60 to 72 inches long (90 t
 h3("How much room do you need for a dining table?")
 p("Add at least 36 inches (91 cm) to every side of the table, or 42 to 48 inches (107 to 122 cm) if people walk behind the chairs. A 40 x 72 inch table therefore needs a dining area of about 9 ft 4 in x 12 ft (2.8 x 3.7 m).")
 h3("What size round table seats 4?")
-p("A round table 36 to 44 inches (90 to 110 cm) across seats four people. Choose the larger size if you like room for serving dishes, and leave at least 36 inches (91 cm) around it, so the dining area needs to be about 9 to 10 feet (2.7 to 3 m) square.")
+p("A round table 36 to 44 inches (90 to 110 cm) across seats four people. Choose the larger size if you like room for serving dishes, and leave at least 36 inches (91 cm) around it, so the dining area needs to be about 9 ft to 9 ft 8 in (2.7 to 2.9 m) square.")
 h3("How many people fit at an 8 ft table?")
 p("An 8 ft (96 inch, about 245 cm) rectangular table seats 8 people comfortably, with three on each side and one at each end, and can squeeze in 10 with narrower spacing. Raymour & Flanigan lists 96 inch tables for 8 to 10 people.".replace("&","&amp;"))
 h2("More Room Planning Tools")
