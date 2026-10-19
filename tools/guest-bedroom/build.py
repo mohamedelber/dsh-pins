@@ -10,11 +10,11 @@ SRC={"dim":"https://www.dimensions.com/element/queen-bedroom-layouts",
 "sheets":"https://www.sleepfoundation.org/bedding-information/how-often-should-you-wash-your-sheets"}
 def SR(k,t): return ext(SRC[k],t)
 p("The best guest bedroom ideas make visitors feel at home from the moment they put their bag down: a comfortable bed, a light by the pillow, somewhere to unpack and a few small touches that say you thought about them. You do not need a big room or a big budget, just a plan.")
-p("This guide shows you what size bed fits your spare room, a 6-step setup and 18 guest bedroom ideas for essentials, small rooms, guest room offices and decor. Most of them use things you already own, and every idea works in a small guest bedroom.")
+p("This guide shows you what size bed fits your spare room, a 6-step setup and 18 guest bedroom ideas for essentials, small rooms, guest room offices and decor. Many of them use things you already own, and every idea works in a small guest bedroom.")
 img(1)
 summary(["<strong>Quick answer:</strong> Start with the best bed the room can take, with at least 30 in of walking space around it. Add a nightstand with a lamp, a water carafe and a charger, a luggage rack with fresh towels, and some empty closet space. Finish with blackout curtains, an extra blanket and a calm color palette.",
 "In a small room, a full, twin or daybed often works better than a squeezed-in queen.",
-"Fit a smoke alarm inside the guest room, and check the window can be opened as an escape route if you are turning another room into a bedroom."],
+"Install a smoke alarm inside the guest room, and check that the window opens wide enough to serve as an escape route if you are turning another room into a bedroom."],
 "<strong>Time:</strong> a weekend · <strong>Cost:</strong> about $50 to $300 if you already have a bed · <strong>Difficulty:</strong> Easy")
 toc("guest-bedroom-ideas")
 h2("What Size Bed Fits Your Guest Room?")
@@ -25,7 +25,7 @@ table(["Bed","Mattress size","Smallest room (30 in around)","Best for"],[
 ["Full","54 x 75 in","9 ft 6 in x 8 ft 9 in","One adult, or a couple for a night or two"],
 ["Queen","60 x 80 in","10 ft x 9 ft 2 in","Couples, most guest rooms"],
 ["King","76 x 80 in","11 ft 4 in x 9 ft 2 in","Large rooms, frequent couples"]])
-p("These room sizes are our own calculation: the mattress plus 30 in on both sides and at the foot, with the headboard against a wall. Pushing one side of the bed against a wall saves 30 in of width, which is often the best trick in a small guest bedroom.")
+p("These room sizes are our own calculation: the mattress plus 30 in on both sides and at the foot, with the headboard against a wall. They leave out the nightstand, which is why Dimensions.com puts a queen bedroom at roughly 106 sq ft. Pushing one side of the bed against a wall saves 30 in of width, which is often the best trick in a small guest bedroom.")
 h2("Quick Pick: Guest Bedroom Ideas by Situation")
 table(["Your situation","Best ideas","Cost"],[
 ["Guests arrive this weekend","#2, #4, #5, #17","Free to low"],
@@ -59,7 +59,7 @@ h3("6. Empty Closet Space and Hangers")
 img(4)
 p(f"Leave part of the closet empty, with eight to ten matching hangers and one clear drawer or shelf. For longer stays, this is the difference between living out of a suitcase and settling in. If your linen closet needs a reset to make room, see our {a('linen-closet-organization','linen closet organization')} guide.")
 h2("Small Guest Bedroom Ideas")
-p(f"A small spare room can still be a lovely guest bedroom. Our {a('box-room-bedroom-ideas','box room bedroom ideas')} go further for the tiniest rooms.")
+p(f"A small spare room can still be a lovely guest bedroom. Our {a('box-room-bedroom-ideas','tiny bedroom ideas')} go further for the tiniest rooms.")
 h3("7. A Daybed or Trundle Bed")
 p("A daybed works as a sofa during the day and a twin bed at night, and a trundle underneath turns it into two beds for kids or friends. It takes far less floor space than a full or queen.")
 h3("8. Wall Lights Instead of Lamps")
@@ -72,7 +72,7 @@ h3("10. A Daybed and Desk Combo")
 img(3)
 p("Put a daybed along one wall and a desk under the window, and the room works as an office every day and a guest room when you need it. Clear the desk and give guests one drawer when they arrive.")
 h3("11. A Murphy Bed or Sofa Bed")
-p("A wall bed or a good sofa bed gives back the whole floor for work. A wall bed must be installed securely to the wall following the maker's instructions; with a sofa bed, test the mattress before you buy and leave enough room in front to unfold it.")
+p("A wall bed or a good sofa bed gives back the whole floor for work. A wall bed must be installed securely to the wall following the manufacturer's instructions; with a sofa bed, test the mattress before you buy and leave enough room in front to unfold it.")
 h2("Guest Bedroom Decor Ideas")
 p("Guest room decor should feel calm and welcoming rather than personal, like a good hotel with a little more warmth.")
 h3("12. A Calm, Neutral Palette")
@@ -84,7 +84,7 @@ p(f"A full-length mirror is something guests always look for. Add one or two cal
 h3("15. A Soft Rug by the Bed")
 p(f"A rug by the bed is the first thing guests step on in the morning. Choose one big enough to reach both sides of the bed, and use our {a('rug-size-calculator','rug size calculator')} to pick the size.")
 h3("16. Plants or Fresh Greenery")
-p("A small plant or a few stems of eucalyptus on the nightstand make the room feel cared for. Choose easy, non-fragrant greenery in case a guest has allergies.")
+p("A small plant or a few stems of eucalyptus on the nightstand make the room feel cared for. Eucalyptus has a strong scent, so swap it for low-scent greenery if a guest has allergies or asthma.")
 h2("Thoughtful Touches Guests Remember")
 h3("17. A Welcome Card With the Wi-Fi Password")
 p("A small framed card with the Wi-Fi name and password, your house routines and the time breakfast usually happens saves your guests from asking.")
@@ -93,8 +93,8 @@ p("A basket or tray with a spare toothbrush, toothpaste, travel-size toiletries,
 add(open('savebox.html').read())
 h2("Guest Bedroom Safety Tips")
 lst([f"<strong>Smoke alarms:</strong> NFPA guidance says {SR('smoke','smoke alarms should be installed inside every sleeping room')}, outside each separate sleeping area and on every level. Test the guest room alarm before visitors arrive.",
-f"<strong>Carbon monoxide alarms:</strong> the CPSC advises installing CO alarms {SR('co','in a central location outside each separate sleeping area')}.",
-f"<strong>Escape window:</strong> if you are turning an office or basement room into a bedroom, check the building code. The International Residential Code, as quoted by the City of Billings, requires an emergency escape opening with {SR('egress','a minimum net clear opening of 5.7 square feet')} and a sill no higher than 44 inches; local rules vary.",
+f"<strong>Carbon monoxide alarms:</strong> the CPSC advises installing CO alarms {SR('co','in a central location outside each separate sleeping area')}, and on every level of the home.",
+f"<strong>Escape window:</strong> if you are turning an office or basement room into a bedroom, check the building code. The International Residential Code, as quoted by the City of Billings, requires an emergency escape opening with {SR('egress','a minimum net clear opening of 5.7 square feet')} (5 sq ft at grade floor), at least 24 in high and 20 in wide, with a sill no higher than 44 inches; local rules vary.",
 "<strong>Clear path:</strong> keep the way from the bed to the door clear, and leave a small night light in the hallway for guests who do not know the house."])
 h2("Common Guest Bedroom Mistakes")
 lst(["<strong>Using the guest room as storage.</strong> Guests notice boxes and the exercise bike; give stored things one closed cabinet.",
