@@ -2,6 +2,7 @@ import html, json, os
 S = 'https://dailyspacehacks.com/'
 # (main slug, page id, embed slug, title, short line, tool file, height)
 T = [
+ ('dining-table-size-calculator', 0, 'dining-table', 'Dining Table Size Calculator', 'The right dining table size for 2 to 12 people, and the room it needs.', '../dining-table/tool.html'),
  ('picture-hanging-height-calculator', 0, 'picture-height', 'Picture Hanging Height Calculator', 'How high to hang a picture, with the exact nail height.', '../picture-height/tool.html'),
  ('christmas-tree-lights-calculator', 2617, 'christmas-tree-lights', 'Christmas Tree Lights Calculator', 'How many lights, ornaments and garland a tree needs.', '../xmas-lights/tool.html'),
  ('wallpaper-calculator', 2638, 'wallpaper-rolls', 'Wallpaper Calculator', 'How many rolls of wallpaper for a wall or a whole room.', '../wallpaper-calc/tool.html'),

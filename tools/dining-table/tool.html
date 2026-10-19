@@ -109,15 +109,15 @@ s+='<rect width="'+W+'" height="'+Hh+'" fill="#FBF6EF"/>';
 s+='<rect x="'+x0+'" y="'+y0+'" width="'+(ol*sc)+'" height="'+(ow*sc)+'" fill="#FFFDF9" stroke="'+(rw?'#342E2A':'#B98A5E')+'" stroke-width="'+(rw?3:1.5)+'"'+(rw?'':' stroke-dasharray="6 4"')+'/>';
 var cx=x0+ol*sc/2,cy=y0+ow*sc/2,tw=t[1]*sc,th=t[0]*sc,ch=16*sc,cw=17*sc;
 s+='<rect x="'+(cx-tw/2-c*sc)+'" y="'+(cy-th/2-c*sc)+'" width="'+(tw+2*c*sc)+'" height="'+(th+2*c*sc)+'" fill="none" stroke="#C85A32" stroke-dasharray="4 4" stroke-width="1.2"'+(t[2]?' rx="'+(tw/2+c*sc)+'"':'')+'/>';
-var seats=[];if(t[2]){for(var k=0;k<n;k++){var a=2*Math.PI*k/n,r=tw/2+ch*0.7;seats.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}}else{var ends=(shape==='rect'?n>=6:n>=6)?2:0;if(shape==='square'){ends=0}var side=Math.ceil((n-ends)/2),lower=n-ends-side;for(var i=0;i<side;i++){seats.push([cx-tw/2+tw*(i+0.5)/side,cy-th/2-ch*0.7])}for(var j=0;j<lower;j++){seats.push([cx-tw/2+tw*(j+0.5)/lower,cy+th/2+ch*0.7])}if(ends){seats.push([cx-tw/2-ch*0.7,cy]);seats.push([cx+tw/2+ch*0.7,cy])}}
+var seats=[];if(t[2]){for(var k=0;k<n;k++){var a=2*Math.PI*k/n,r=tw/2+ch*0.7;seats.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}}else{var ends=(shape==='rect'?n>=6:false)?2:0;var side=Math.ceil((n-ends)/2),lower=n-ends-side;for(var i=0;i<side;i++){seats.push([cx-tw/2+tw*(i+0.5)/side,cy-th/2-ch*0.7])}for(var j=0;j<lower;j++){seats.push([cx-tw/2+tw*(j+0.5)/lower,cy+th/2+ch*0.7])}if(ends){seats.push([cx-tw/2-ch*0.7,cy]);seats.push([cx+tw/2+ch*0.7,cy])}}
 seats.forEach(function(p){s+='<rect x="'+(p[0]-cw/2)+'" y="'+(p[1]-cw/2)+'" width="'+cw+'" height="'+cw+'" rx="'+(cw/4)+'" fill="#DCE5D6" stroke="#8FA689"/>'});
 if(t[2]){s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+(tw/2)+'" fill="#D9B48A" stroke="#B98A5E" stroke-width="2"/>'}else{s+='<rect x="'+(cx-tw/2)+'" y="'+(cy-th/2)+'" width="'+tw+'" height="'+th+'" rx="4" fill="#D9B48A" stroke="#B98A5E" stroke-width="2"/>'}
 s+='<text x="'+cx+'" y="'+(cy+4)+'" font-size="12" font-weight="700" text-anchor="middle" fill="#342E2A">'+sz(t)+'</text>';
 s+='<text x="'+(W/2)+'" y="'+(Hh-8)+'" font-size="11" text-anchor="middle" fill="#6E645C">'+(rw?'your room: ':'room needed: ')+room(ow,ol)+'</text>';
 return s+'</svg>'}
 function calc(){var c=parseFloat($('cl').value),wide=$('cs').value==='1';
-var sz2=sizes(),mn=sz2[0],cf=sz2[1];if(wide){cf=[cf[0]+(cf[2]?6:0),cf[1]+(cf[2]?6:(n>=4?12:6)),cf[2]]}
-var need=[cf[0]+2*c,cf[1]+2*c],needMin=[mn[0]+2*c,mn[1]+2*c];
+var sz2=sizes(),mn=sz2[0],cf=sz2[1];if(wide){cf=[cf[0]+(shape==='rect'?0:6),cf[1]+(shape==='rect'?12:6),cf[2]]}
+var need=[cf[0]+2*c,cf[1]+2*c];
 var a=g('rl'),b=g('rw'),rl=null,rw=null;if(a!==null?b!==null:false){a=toIn(a);b=toIn(b);rl=Math.max(a,b);rw=Math.min(a,b)}
 $('kt').textContent=sz(cf);$('kte').textContent=n+' people, comfortable';$('km').textContent=sz(mn);
 $('kr').textContent=room(need[0],need[1]);$('kre').textContent='with '+f1(c)+' all around';
@@ -129,7 +129,7 @@ else if(mn[0]<=mw+0.01?mn[1]<=ml+0.01:false){vv.className='verdict amb';show=mn;
 else{vv.className='verdict bad';var k=seatsFit(mw,ml);show=null;vv.textContent=(mw>=24?'The largest table that fits is about '+(shape==='round'?f1(Math.min(mw,ml))+' round':(shape==='square'?f1(Math.min(mw,ml))+' square':Math.round(unit==='cm'?mw*CM:mw)+' x '+Math.round(unit==='cm'?ml*CM:ml)+(unit==='cm'?' cm':' in')))+(k?', which seats about '+k+'.':', too small for a dining table.'):'This room is too narrow for a dining table once you leave '+f1(c)+' around it.')+' Try fewer people, a round table, a bench or less space around the table.'}}
 if(shape==='round'?n>=10:false){tips.push('Round tables for 10 or more get very wide, and the center is hard to reach. A rectangle or oval often works better.')}
 if(shape==='square'?(n===6||n>=10):false){tips.push('Square tables suit 4 or 8 people best. For '+n+', a rectangle usually uses the space better.')}
-if(shape==='rect'?n>=6:false){tips.push('This size assumes a person at each end. Without end seats, add about 24 in (60 cm) to the length.')}
+if(shape==='rect'?n>=6:false){tips.push('This size assumes a person at each end. Without end seats, add about 24 in (61 cm) to the length.')}
 tips.push('Allow about 24 in (61 cm) of table edge per person, or about 30 in (76 cm) for roomy seating, as Dimensions.com recommends.');
 tips.push('Leave at least 36 in (91 cm) from the table edge to the wall or furniture so chairs can slide back; 42 to 48 in (107 to 122 cm) if people walk behind them.');
 if(n>=8){tips.push('Hosting only a few times a year? An extending table can seat '+n+' when needed and stay smaller every day.')}
