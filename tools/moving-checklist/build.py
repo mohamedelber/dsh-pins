@@ -26,6 +26,7 @@ table(["When","Main jobs"],[
 ["4 weeks before","Forward your mail, book the utilities switch, update your address, pack room by room"],
 ["2 weeks before","Confirm the movers, plan parking, refill prescriptions, take furniture apart"],
 ["Moving week","Pack the essentials box and a bag for a few days, clean as you go"],
+["The day before","Defrost the fridge, charge phones, keep documents and valuables with you"],
 ["Moving day","Meter readings and photos, last walk-through, check every box arrived"],
 ["First week after","Unpack the kitchen and bathroom, test the alarms, update your license and voter registration"]])
 p("Short on time? The checklist moves the tasks you have missed into a <em>Start now</em> list and drops the nice-to-haves, such as using up the freezer, so you only see what still matters.")
@@ -33,7 +34,7 @@ h2("8 to 6 Weeks Before Moving: Book Movers and Declutter")
 p(f"Booking early gives you a choice of dates and prices. HireAHelper suggests booking movers {ext(HH,'roughly 4 to 8 weeks before your move')}, and earlier in the peak season from May to September. For a move to another US state, the FMCSA's {ext(FM1,'Ready to Move brochure')} advises getting estimates from at least three movers or brokers and checking that the mover has a USDOT number. Its {ext(FM2,'Protect Your Move brochure')} lists a demand for cash or a large deposit before the move as a red flag.")
 p(f"Declutter before you pack, not after: every box you do not move saves packing time and money. Our guide on {a('how-to-declutter-your-home','how to declutter your home')} goes room by room, and the {a('moving-box-calculator','moving box calculator')} tells you how many boxes to order once you know what is going.")
 h2("4 Weeks Before Moving: Forward Your Mail and Switch Utilities")
-lst([f"<strong>US mail:</strong> USPS lets you submit a change of address {ext(USPS,'up to 90 days before')} your move. Online, there is a $1.25 identity check fee; allow 7 to 10 business days for it to start. First-Class Mail is forwarded for 12 months.",
+lst([f"<strong>US mail:</strong> USPS lets you submit a change of address {ext(USPS,'up to 90 days before')} your move. Online, there is a $1.25 identity check fee; mail starts arriving within 7 to 10 business days of the start date. First-Class Mail is forwarded for up to 12 months.",
 f"<strong>UK post:</strong> Royal Mail needs {ext(RM,'at least five working days')} to set up Redirection and suggests applying about three weeks before you move. You can redirect post for three, six or twelve months.",
 f"<strong>Taxes:</strong> in the US, you can tell the IRS about a new address with {ext(IRS,'Form 8822')}. In the UK, HMRC asks you to {ext(HMRC,'wait until you have moved')} before telling it your new address, so that task sits in the first week.",
 "<strong>Utilities:</strong> book the switch of electricity, gas, water and internet for both homes now, so nothing is cut off on the day and you are not paying for the old home after you leave."])
@@ -43,7 +44,7 @@ p(f"United Van Lines recommends a {ext(UV,'first-night box')}, so you have the b
 lst(["Bedding and a towel for each person","Phone chargers and a power bank","Toilet paper, soap and toiletries","Medicine and prescriptions","A kettle, mugs, snacks and a few plates","A box cutter, a small tool kit and trash bags","Clothes for the next day"])
 img(3)
 h2("Moving Day Checklist")
-p(f"Citizens Advice recommends you {ext(CA,'read your meters on the day you move out')} and again on the day you move in, and give the readings to the supplier. A photo of each meter shows the date too. If you rent, photograph every room after cleaning; those photos help if there is a dispute about the deposit. Do a last walk-through of every cupboard, the attic or loft, the garage and the shed before you lock up.")
+p(f"Citizens Advice recommends you {ext(CA,'read your meters on the day you move out')} and again on the day you move in, and give the readings to the supplier. A dated photo of each meter is a useful backup. If you rent, photograph every room after cleaning; those photos help if there is a dispute about the deposit. Do a last walk-through of every closet and cabinet, the attic or loft, the garage and the shed before you lock up.")
 p("Keep documents, keys, medicine and valuables with you rather than in the van. At the new home, check that every box and piece of furniture has arrived before the movers leave, and note any damage.")
 h2("First Week in Your New Home")
 lst([f"<strong>Update official records.</strong> In the US, you must {ext(VOTE,'update your voter registration')} when you move, and the deadline for a new driver's license varies by state. In the UK, changing the address on your driving licence with {ext(DVLA,'DVLA is free')}, and you can be fined up to £1,000 if you do not.",
@@ -51,7 +52,7 @@ lst([f"<strong>Update official records.</strong> In the US, you must {ext(VOTE,'
 f"<strong>Pets.</strong> PDSA suggests giving your pet one quiet room on moving day and telling the {ext(PDSA,'microchip company')} your new address and contact details.",
 "<strong>Unpack in order.</strong> Kitchen and bathroom first, then bedrooms, then everything else."])
 h2("How This Moving Checklist Works")
-lst(["<strong>Two taps:</strong> how long until you move and whether you rent or own. Renters get deposit tasks; owners get closing or completion and lock tasks.",
+lst(["<strong>Two taps:</strong> how long until you move and whether you rent or own. Renters get deposit tasks; owners get closing or completion tasks.",
 "<strong>Starting late:</strong> tasks from earlier weeks move into a <em>Start now</em> list at the top, and optional ones are left out.",
 "<strong>More options:</strong> a moving date puts a date on every step; kids, pets, long distance and how you move add or remove tasks; the country switch shows US or UK wording, such as USPS or Royal Mail.",
 "<strong>Your ticks</strong> are saved only in your own browser. Nothing is sent to us.",

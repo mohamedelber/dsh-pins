@@ -44,7 +44,7 @@ def embed_page(t):
     main, pid, es, title, line, f = t
     tool = open(f).read().strip()
     foot = ('<div class="dsh-ef"><span>Free tool by <a href="%s?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span>'
-            '<a href="%s%s/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>') % (S, S, main)
+            '<a href="%s%s/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">%s &rarr;</a></div>') % (S, S, main, 'Full guide and free PDF' if 'checklist' in main else 'Full guide and charts')
     return '<!-- wp:html -->\n' + PAGE_CSS + '\n<div id="dsh-ew">\n' + tool + '\n' + foot + '\n</div>\n' + RESIZE + '\n<!-- /wp:html -->'
 
 COPY = "var c=this.parentNode.parentNode.querySelector('code'),b=this,d=function(){b.textContent='Copied';b.classList.add('ok');setTimeout(function(){b.textContent='Copy code';b.classList.remove('ok')},2200)};if(navigator.clipboard){navigator.clipboard.writeText(c.textContent).then(d)}else{var r=document.createRange();r.selectNodeContents(c);var w=getSelection();w.removeAllRanges();w.addRange(r);document.execCommand('copy');d()}"
