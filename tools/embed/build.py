@@ -2,6 +2,7 @@ import html, json, os
 S = 'https://dailyspacehacks.com/'
 # (main slug, page id, embed slug, title, short line, tool file, height)
 T = [
+ ('moving-checklist-printable', 0, 'moving-checklist', 'Printable Moving Checklist', 'A week-by-week moving checklist that readers can tick off and print.', '../moving-checklist/tool.html'),
  ('dining-table-size-calculator', 0, 'dining-table', 'Dining Table Size Calculator', 'The right dining table size for 2 to 12 people, and the room it needs.', '../dining-table/tool.html'),
  ('picture-hanging-height-calculator', 0, 'picture-height', 'Picture Hanging Height Calculator', 'How high to hang a picture, with the exact nail height.', '../picture-height/tool.html'),
  ('christmas-tree-lights-calculator', 2617, 'christmas-tree-lights', 'Christmas Tree Lights Calculator', 'How many lights, ornaments and garland a tree needs.', '../xmas-lights/tool.html'),
@@ -50,11 +51,12 @@ COPY = "var c=this.parentNode.parentNode.querySelector('code'),b=this,d=function
 
 def button(t, hub=False):
     main, pid, es, title, line, f = t
+    nn = 'checklist' if 'checklist' in main else 'calculator'
     code = html.escape(snippet(t), quote=False)
     extra = '' if hub else '<a class="eal" href="%sembed-calculators/">All free calculators to embed</a>' % S
     return ('<div class="dsh-emb"><details><summary><span class="eic" aria-hidden="true">&lt;/&gt;</span>'
-            '<span class="etx"><b>Embed this calculator</b><small>Free for your blog or website</small></span><span class="ech" aria-hidden="true"></span></summary>'
-            '<div class="ebd"><p>Copy the code and paste it into an HTML block on your site. It is free to use; please keep the credit link under the calculator.</p>'
+            '<span class="etx"><b>Embed this '+nn+'</b><small>Free for your blog or website</small></span><span class="ech" aria-hidden="true"></span></summary>'
+            '<div class="ebd"><p>Copy the code and paste it into an HTML block on your site. It is free to use; please keep the credit link under the '+nn+'.</p>'
             '<pre><code>%s</code></pre>'
             '<div class="eac"><button type="button" class="ecp" onclick="%s">Copy code</button>'
             '<a class="epv" href="%sembed-calculators/%s/" target="_blank" rel="noopener nofollow">Preview</a>%s</div></div></details></div>') % (code, COPY, S, es, extra)
