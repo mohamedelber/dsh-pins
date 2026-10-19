@@ -1,0 +1,29 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{
+"name": "01-hero",
+"size": "1536x1024",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A bright living room with a cream linen three-seat sofa against a warm white wall. One large framed abstract art print in a thin white oak frame with a wide cream mat hangs centered above the sofa, its bottom edge about a hand's width above the sofa back, the frame about two thirds the width of the sofa, perfectly level. Sage green cushions, a terracotta throw, a white oak coffee table, a woven jute rug, a tall plant in the corner. The artwork shows soft abstract shapes only, no letters. Straight-on view, eye level."
+},
+{
+"name": "02-gallery",
+"size": "1024x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A hallway with a neat gallery wall of six framed prints in matching thin white oak frames arranged in a tidy 3 by 2 grid with equal narrow gaps between frames, the whole group centered above a narrow white oak console table with a ceramic vase and a small lamp. The prints show simple botanical line drawings and abstract shapes, no letters. Straight-on view, everything level and evenly spaced."
+},
+{
+"name": "03-tools",
+"size": "1024x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Close-up of a warm white painted wall prepared for hanging a picture: a strip of blue painter's tape with a small pencil cross mark, a brass picture hook with its nail already fixed in the wall at the mark, a yellow tape measure pulled out vertically up the wall, a small spirit level resting on a white oak console below, and a framed botanical print in a white oak frame leaning against the wall on the console. No hands, no people."
+},
+{
+"name": "04-pin",
+"size": "1024x1536",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A calm bedroom in warm evening lamp light. A low upholstered cream headboard bed with linen bedding in white and sage, two white oak nightstands with ceramic lamps glowing. Above the headboard hangs one wide framed landscape art print in a thin white oak frame, centered over the bed, its bottom edge a short distance above the headboard. The top third of the image is calm, plain warm white wall above the artwork. No candles, no text on the art, one focal point."
+}
+]
+}
