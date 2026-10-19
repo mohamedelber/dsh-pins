@@ -1,0 +1,6 @@
+plants: pothos toxic https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/golden-pothos ; fiddle-leaf fig mildly toxic https://www.aspca.org/news/houseplant-safe-your-pets ; non-toxic Boston fern https://www.aspca.org/node/4659 ; parlor palm https://www.aspca.org/node/5217 (spider plant conflict - avoid)
+lights: CPSC turn off when bed/leave, UL tested, check frayed https://www.cpsc.gov/Newsroom/News-Releases/2009/CPSC-Releases-Dos-and-Donts-of-Holiday-Decorating ; ESFI https://www.esfi.org/news/avoid-serious-electrical-and-fire-hazards-decorating-your-home-this-holiday-season/ ; lights-touching-fabric NOT CONFIRMED
+heater 3 ft from drapes, bedding: https://www.cpsc.gov/Newsroom/News-Releases/2026/Keep-Warm-and-Safe-This-Winter-Tips-for-Using-Generators-Furnaces-and-Space-Heaters
+heavy items away from beds: https://www.dhses.ny.gov/earthquake ; stud anchor: https://www.homedepot.com/c/ah/how-to-hang-a-picture/9ba683603be9fa5395fab9009928978
+rug: 18-24 in each side and foot, 8x10 queen, 9x12 king https://ruggable.com/en-CA/blogs/bedroom-and-bedside-rug-ideas-for-cozy-comfort ; https://the-citizenry.com/blogs/design/rug-size-and-style-guide
+boho def: "less formal and more eclectic" https://homesandgardens.com/interior-design/what-is-bohemian-style ; origin https://dictionary.com/browse/bohemian
