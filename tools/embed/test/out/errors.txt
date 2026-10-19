@@ -1,2 +1,2 @@
-host.html d ["Unexpected token ';'"]
-host.html m ["Unexpected token ';'"]
+host.html d []
+host.html m []
