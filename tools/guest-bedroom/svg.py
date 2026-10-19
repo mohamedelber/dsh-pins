@@ -15,8 +15,8 @@ a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="88" font-size="44" font-weight="700" fill="{T}">What Bed Fits Your Guest Room?</text>')
 a(f'<text x="60" y="128" font-size="22" fill="{G}">The smallest room for each bed size, with {C} in of walking space around it</text>')
 a(f'<text x="1140" y="60" font-size="18" fill="{G}" text-anchor="end">dailyspacehacks.com</text>')
-SC=2.45  # px per inch
-base=560; x=55
+SC=2.3  # px per inch
+base=560; x=42
 for i,(n,w,l,rw,rl) in enumerate(rows):
     RW=rw*SC; RL=rl*SC
     y=base-RL
@@ -43,12 +43,12 @@ for i,(n,w,l,rw,rl) in enumerate(rows):
         # dimension arrows for clearance on king
         a(f'<line x1="{x+4}" y1="{y+RL-40}" x2="{bx}" y2="{y+RL-40}" stroke="{A}" stroke-width="2"/><text x="{x+C*SC/2}" y="{y+RL-48}" font-size="14" font-weight="700" fill="{A}" text-anchor="middle">{C} in</text>')
         a(f'<line x1="{bx+w*SC/2}" y1="{by+l*SC+2}" x2="{bx+w*SC/2}" y2="{y+RL-4}" stroke="{A}" stroke-width="2"/><text x="{bx+w*SC/2+8}" y="{by+l*SC+C*SC/2+6}" font-size="14" font-weight="700" fill="{A}">{C} in</text>')
-    x+=RW+20
+    x+=RW+16
 a(f'<rect x="60" y="158" width="1080" height="64" rx="14" fill="#fff" stroke="{BR}" stroke-width="2"/>')
-a(f'<text x="84" y="198" font-size="19" fill="{T}"><tspan font-weight="700" fill="{A}">Rule of thumb:</tspan> a 10 x 10 ft room fits a queen and a nightstand; under 9 ft wide, pick a full, twin or daybed.</text>')
+a(f'<text x="84" y="198" font-size="19" fill="{T}"><tspan font-weight="700" fill="{A}">Rule of thumb:</tspan> about 10 x 10 ft for a queen; in a smaller room, pick a full or twin, or push the bed to a wall.</text>')
 # notes box
 a(f'<rect x="60" y="760" width="1080" height="56" rx="12" fill="{SGL}"/>')
 a(f'<text x="84" y="795" font-size="18" fill="{T}"><tspan font-weight="700">Add room for:</tspan> a nightstand (about 18 to 24 in wide), a dresser or luggage rack, and the swing of the door.</text>')
-a(f'<text x="60" y="852" font-size="15" fill="{G}">Our own calculation: bed size plus {C} in on both sides and at the foot. Headboard against the wall. Standard US mattress sizes.</text>')
+a(f'<text x="60" y="852" font-size="15" fill="{G}">Bed size plus {C} in on both sides and at the foot (the Dimensions.com minimum for a queen bedroom, used for all sizes). Headboard against the wall. Standard US mattress sizes.</text>')
 a('</svg>')
 open('z.svg','w').write('\n'.join(s))
