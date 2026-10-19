@@ -1,7 +1,7 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';SA='#ECCDA0';W1='#D9B48A';W2='#B98A5E'
 s=[];a=s.append
 desc=("Diagram of a four-zone system for storing stuffed animals by how often they are played with. Zone 1, bed buddies: one to three favorites on the bed "
-"(not for babies under 12 months). Zone 2, play zone: this week's toys in one open basket or storage tower at the child's height. Zone 3, rotation bin: "
+"(never in a baby's crib). Zone 2, play zone: this week's toys in one open basket or storage tower at the child's height. Zone 3, rotation bin: "
 "a lidded under-bed or closet bin, swapped every few weeks. Zone 4, keepsake box: clean, dry, labeled and stored indoors, not in the attic. "
 "Toys that fit no zone are donated if clean and safe.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="sa-t sa-d"><title id="sa-t">The 4-zone stuffed animal system</title><desc id="sa-d">{desc}</desc>')
@@ -20,7 +20,7 @@ def bear(cx,cy,r,col,ear='#fff'):
     a(f'<ellipse cx="{cx}" cy="{cy+r*0.28}" rx="{r*0.42}" ry="{r*0.3}" fill="{ear}" fill-opacity="0.75"/>')
     a(f'<circle cx="{cx-r*0.34}" cy="{cy-r*0.15}" r="{r*0.09}" fill="{T}"/><circle cx="{cx+r*0.34}" cy="{cy-r*0.15}" r="{r*0.09}" fill="{T}"/>')
 CW=252; GAP=24; X0=60; Y0=240; CH=486
-cards=[("1","Bed buddies","1 to 3 favorites","On the bed or a bedside shelf","Not for babies under 12 months"),
+cards=[("1","Bed buddies","1 to 3 favorites","On the bed or a bedside shelf","Never in a baby's crib"),
 ("2","Play zone","This week's toys","One basket or tower at kid height","If it does not fit, it rotates"),
 ("3","Rotation bin","The rest","Lidded bin under the bed or in the closet","Swap a few every 2 to 4 weeks"),
 ("4","Keepsake box","Sentimental ones","Clean, dry, labeled box indoors","Not in the attic or basement")]
