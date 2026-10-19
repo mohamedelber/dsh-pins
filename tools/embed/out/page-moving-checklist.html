@@ -166,7 +166,7 @@ function addD(d,n){var x=new Date(d.getTime());x.setDate(x.getDate()+n);return x
 function snap(){var d=mdate();if(!d)return;var now=new Date();now.setHours(0,0,0,0);var w=(d-now)/864e5/7;t=w>=8?8:(w>=6?6:(w>=4?4:(w>=2?2:1)));R.querySelectorAll('[data-t]').forEach(function(x){x.classList.toggle('on',+x.getAttribute('data-t')===t)})}
 function render(){var d=mdate(),groups=[],late=[],total=0,n=0;
 ST.forEach(function(s){var items=[];T.forEach(function(k){if(k[1]!==s[0])return;if(!ok(k[2]))return;var x=txt(k[3]);if(!x)return;items.push([k[0],x,k[2].indexOf('x')>-1])});
-var isLate=W[s[0]]?W[s[0]]>t:false;
+var wk=W[s[0]]||0,isLate=wk>t;
 if(isLate){items.forEach(function(it){if(!it[2])late.push(it)})}else{groups.push([s,items])}});
 var html='';
 function block(title,note,items,cls){if(!items.length)return '';var s='<div class="stg'+(cls?' '+cls:'')+'"><h4><span>'+title+'</span><small>'+note+'</small></h4><ul>';items.forEach(function(it){total++;var on=done[it[0]]?1:0;if(on)n++;s+='<li'+(on?' class="done"':'')+'><label><input type="checkbox" data-id="'+it[0]+'"'+(on?' checked':'')+'><span>'+it[1]+'</span></label></li>'});return s+'</ul></div>'}
