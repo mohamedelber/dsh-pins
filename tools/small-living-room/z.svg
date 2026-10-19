@@ -11,12 +11,12 @@
 <rect x="217.0" y="186" width="190" height="45.6" rx="4" fill="#D9B48A" stroke="#B98A5E" stroke-width="2"/><rect x="239.79" y="182" width="144.4" height="8" fill="#342E2A"/>
 <text x="312" y="249.6" font-size="15" fill="#6E645C" text-anchor="middle">TV on the wall, console below</text>
 <rect x="179.0" y="562" width="266" height="110" rx="14" fill="#8FA689"/><rect x="179.0" y="641.8" width="266" height="32.3" rx="10" fill="#6F8F69"/>
-<rect x="236" y="451.8" width="152" height="72.2" rx="30" fill="#D9B48A" stroke="#B98A5E" stroke-width="2"/>
+<rect x="236" y="439.2" width="152" height="72.2" rx="30" fill="#D9B48A" stroke="#B98A5E" stroke-width="2"/>
 <rect x="95.4" y="387.20" width="102.60" height="102.60" rx="14" fill="#E3C9A8" stroke="#B98A5E" stroke-width="2"/><rect x="95.4" y="387.20" width="26.59" height="102.60" rx="10" fill="#C9A47A"/>
 <circle cx="137.2" cy="630.40" r="16" fill="#fff" stroke="#D8CBBB" stroke-width="3"/><circle cx="137.2" cy="630.40" r="6" fill="#C85A32"/>
 <circle cx="118.2" cy="216.2" r="20" fill="#8FA689"/>
-<line x1="312" y1="524" x2="312" y2="562" stroke="#C85A32" stroke-width="3"/><line x1="304" y1="524" x2="320" y2="524" stroke="#C85A32" stroke-width="3"/><line x1="304" y1="562" x2="320" y2="562" stroke="#C85A32" stroke-width="3"/>
-<rect x="324" y="529.0" width="88" height="28" rx="14" fill="#fff" stroke="#C85A32" stroke-width="2"/><text x="368" y="549.0" font-size="15" font-weight="700" fill="#C85A32" text-anchor="middle">16-18 in</text>
+<line x1="312" y1="511.4" x2="312" y2="562" stroke="#C85A32" stroke-width="3"/><line x1="304" y1="511.4" x2="320" y2="511.4" stroke="#C85A32" stroke-width="3"/><line x1="304" y1="562" x2="320" y2="562" stroke="#C85A32" stroke-width="3"/>
+<rect x="324" y="522.7" width="88" height="28" rx="14" fill="#fff" stroke="#C85A32" stroke-width="2"/><text x="368" y="542.7" font-size="15" font-weight="700" fill="#C85A32" text-anchor="middle">16-18 in</text>
 <path d="M492.5 349.20 L492.5 660.8" stroke="#C85A32" stroke-width="4" stroke-dasharray="10 9" stroke-linecap="round"/><path d="M482.5 646.8 L492.5 662.8 L502.5 646.8 Z" fill="#C85A32"/>
 <rect x="434.5" y="356.79" width="116" height="28" rx="14" fill="#fff" stroke="#C85A32" stroke-width="2"/><text x="492.5" y="376.79" font-size="15" font-weight="700" fill="#C85A32" text-anchor="middle">30-36 in path</text>
 <text x="312" y="417.79" font-size="15" fill="#6E645C" text-anchor="middle">6 x 9 ft rug</text>

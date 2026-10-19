@@ -25,14 +25,14 @@ a(f'<text x="{X(6)}" y="{Y(1.2)+22}" font-size="15" fill="{G}" text-anchor="midd
 # sofa bottom wall
 a(f'<rect x="{X(2.5)}" y="{Y(10)}" width="{7*F}" height="{3*F-4}" rx="14" fill="{SG}"/><rect x="{X(2.5)}" y="{Y(12.1)}" width="{7*F}" height="{0.85*F}" rx="10" fill="#6F8F69"/>')
 # coffee table
-a(f'<rect x="{X(4)}" y="{Y(7.1)}" width="{4*F}" height="{1.9*F}" rx="30" fill="{W1}" stroke="{W2}" stroke-width="2"/>')
+a(f'<rect x="{X(4)}" y="{Y(6.77)}" width="{4*F}" height="{1.9*F}" rx="30" fill="{W1}" stroke="{W2}" stroke-width="2"/>')
 # armchair left
 a(f'<rect x="{X(0.3)}" y="{Y(5.4)}" width="{2.7*F}" height="{2.7*F}" rx="14" fill="#E3C9A8" stroke="{W2}" stroke-width="2"/><rect x="{X(0.3)}" y="{Y(5.4)}" width="{0.7*F}" height="{2.7*F}" rx="10" fill="#C9A47A"/>')
 # floor lamp + plant
 a(f'<circle cx="{X(1.4)}" cy="{Y(11.8)}" r="16" fill="#fff" stroke="{BR}" stroke-width="3"/><circle cx="{X(1.4)}" cy="{Y(11.8)}" r="6" fill="{A}"/>')
 a(f'<circle cx="{X(0.9)}" cy="{Y(0.9)}" r="20" fill="{SG}"/>')
 # dimension: sofa to table
-y1=Y(9); y2=Y(10)
+y1=Y(8.67); y2=Y(10)
 a(f'<line x1="{X(6)}" y1="{y1}" x2="{X(6)}" y2="{y2}" stroke="{A}" stroke-width="3"/><line x1="{X(6)-8}" y1="{y1}" x2="{X(6)+8}" y2="{y1}" stroke="{A}" stroke-width="3"/><line x1="{X(6)-8}" y1="{y2}" x2="{X(6)+8}" y2="{y2}" stroke="{A}" stroke-width="3"/>')
 a(f'<rect x="{X(6)+12}" y="{(y1+y2)/2-14}" width="88" height="28" rx="14" fill="#fff" stroke="{A}" stroke-width="2"/><text x="{X(6)+56}" y="{(y1+y2)/2+6}" font-size="15" font-weight="700" fill="{A}" text-anchor="middle">16-18 in</text>')
 # walkway
