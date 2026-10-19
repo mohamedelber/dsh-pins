@@ -1,2 +1,2 @@
-host.html d dining-table:1386px:1300
-host.html m dining-table:1899px:1300
+host.html d moving-checklist::2400
+host.html m moving-checklist::2400
