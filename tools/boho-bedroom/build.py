@@ -26,7 +26,7 @@ toc("boho-bedroom-ideas")
 h2("What Makes a Bedroom Boho?")
 p(f"Boho is short for bohemian, a word that describes {SR('dict','a person who lives and acts free of regard for conventional rules')}, and the style follows the same spirit. As designer Kathy Kuo puts it, {SR('hg','bohemian design is less formal and more eclectic')} than most decor styles. In a bedroom, that usually comes down to five ingredients:")
 lst(["<strong>Natural materials:</strong> rattan, cane, jute, linen, cotton and wood.",
-"<strong>Layered textiles:</strong> throws, cushions and rugs in different textures.",
+"<strong>Layered textiles:</strong> throws, pillows and rugs in different textures.",
 "<strong>Plants:</strong> a tall plant in a basket and a few smaller ones.",
 "<strong>A warm, earthy palette:</strong> cream with terracotta, rust, sage and honey tones.",
 "<strong>Collected pieces:</strong> handmade, vintage or thrifted finds that tell a story."])
@@ -50,7 +50,7 @@ h2("How to Create a Boho Bedroom in 6 Steps")
 lst(["<strong>Clear and calm the base.</strong> Start with white or cream bedding and remove anything that does not fit the warm, natural look.",
 "<strong>Pick a palette.</strong> Choose cream plus two or three earthy accents, such as terracotta, rust and sage.",
 "<strong>Ground the bed.</strong> Add a big jute or wool rug sized to the bed.",
-"<strong>Layer the textiles.</strong> Add a throw, three to five cushions in mixed textures and linen curtains.",
+"<strong>Layer the textiles.</strong> Add a throw, three to five throw pillows in mixed textures and linen curtains.",
 "<strong>Bring in nature.</strong> Add one tall plant, one or two small ones and a few rattan or wood pieces.",
 "<strong>Light it warmly.</strong> Swap a harsh ceiling light for a woven pendant or lamps with warm-white bulbs."],True)
 img(6)
@@ -62,8 +62,8 @@ p("White or cream linen bedding is the calm backdrop that lets everything else s
 h3("3. Layered Throws and Blankets")
 img(4)
 p("Fold a waffle blanket at the foot of the bed and drape a fringed or woven throw over one corner. Mixing textures, smooth with chunky or flat-weave with fringed, matters more than matching colors.")
-h3("4. Mixed Cushions in Earthy Tones")
-p("Three to five cushions is plenty. Pick one solid, one textured and one pattern in your palette, and vary the sizes so the bed looks layered rather than crowded.")
+h3("4. Mixed Throw Pillows in Earthy Tones")
+p("Three to five throw pillows is plenty. Pick one solid, one textured and one pattern in your palette, and vary the sizes so the bed looks layered rather than crowded.")
 h3("5. A Light Fabric Canopy")
 img(3)
 p(f"A gauzy canopy hung from a ceiling ring or rail makes the bed feel like a cozy nook. Fix the hook into a joist or use a ceiling anchor rated for the weight, and keep the fabric well away from lamps and heaters: the CPSC advises keeping portable heaters {SR('heat','at least three feet away from drapes, furniture, bedding')} and other things that can burn.")
@@ -121,7 +121,7 @@ h2("Boho Bedroom FAQ")
 h3("What is a boho bedroom?")
 p("A boho bedroom is a relaxed, eclectic room built on natural materials like rattan, jute, linen and wood, layered textiles, plants and a warm, earthy palette, with a few handmade or vintage pieces that make it feel personal.")
 h3("How do I make my bedroom boho on a budget?")
-p("Start with textiles: a white or cream duvet cover, a throw and a few cushions in terracotta, rust or sage. Add a plant in a basket, a macrame hanging and warm lighting. Thrift stores are a great source of baskets, frames and vintage pieces.")
+p("Start with textiles: a white or cream duvet cover, a throw and a few pillows in terracotta, rust or sage. Add a plant in a basket, a macrame hanging and warm lighting. Thrift stores are a great source of baskets, frames and vintage pieces.")
 h3("What colors are used in a boho bedroom?")
 p("Most boho bedrooms use a calm base of cream, warm white or beige, with earthy accents like terracotta, rust, mustard, sage and olive, plus the honey tones of rattan and wood.")
 h3("What size rug do I need for a boho bedroom?")
