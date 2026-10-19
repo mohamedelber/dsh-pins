@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="gb-t gb-d"><title id="gb-t">Smallest guest room for each bed size</title><desc id="gb-d">Top-down diagram comparing the smallest guest room for each standard US bed size, with 24 inches of walking space on both sides and at the foot of the bed. Twin bed 38 by 75 inches needs a room about 7'2" wide by 8'3" long. Full bed 54 by 75 inches needs a room about 8'6" wide by 8'3" long. Queen bed 60 by 80 inches needs a room about 9' wide by 8'8" long. King bed 76 by 80 inches needs a room about 10'4" wide by 8'8" long. Add space for a nightstand, a dresser and the door swing.</desc>
+<rect width="1200" height="900" fill="#F7F1E9"/>
+<text x="60" y="88" font-size="44" font-weight="700" fill="#342E2A">What Bed Fits Your Guest Room?</text>
+<text x="60" y="128" font-size="22" fill="#6E645C">The smallest room for each bed size, with 24 in of walking space around it</text>
+<text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text>
+<rect x="55" y="317.45" width="210.70000000000002" height="242.55" rx="4" fill="#FFFDF9" stroke="#B98A5E" stroke-width="4"/>
+<rect x="59" y="321.45" width="202.70000000000002" height="234.55" fill="#DCE5D6" fill-opacity="0.55"/>
+<rect x="113.80000000000001" y="319.45" width="93.10000000000001" height="183.75" rx="8" fill="#fff" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="113.80000000000001" y="319.45" width="93.10000000000001" height="14" rx="6" fill="#D9B48A"/>
+<rect x="123.80000000000001" y="339.45" width="73.10000000000001" height="34" rx="8" fill="#F7F1E9" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="113.80000000000001" y="400.1375" width="93.10000000000001" height="101.06250000000001" rx="6" fill="#8FA689" fill-opacity="0.45"/>
+<text x="160.35000000000002" y="600" font-size="24" font-weight="700" fill="#342E2A" text-anchor="middle">Twin</text>
+<text x="160.35000000000002" y="628" font-size="17" fill="#6E645C" text-anchor="middle">bed 38 x 75 in</text>
+<rect x="74.35000000000002" y="646" width="172" height="58" rx="12" fill="#C85A32"/>
+<text x="160.35000000000002" y="670" font-size="15" fill="#fff" text-anchor="middle">room at least</text>
+<text x="160.35000000000002" y="694" font-size="21" font-weight="700" fill="#fff" text-anchor="middle">7'2" x 8'3"</text>
+<rect x="285.70000000000005" y="317.45" width="249.9" height="242.55" rx="4" fill="#FFFDF9" stroke="#B98A5E" stroke-width="4"/>
+<rect x="289.70000000000005" y="321.45" width="241.9" height="234.55" fill="#DCE5D6" fill-opacity="0.55"/>
+<rect x="344.50000000000006" y="319.45" width="132.3" height="183.75" rx="8" fill="#fff" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="344.50000000000006" y="319.45" width="132.3" height="14" rx="6" fill="#D9B48A"/>
+<rect x="352.50000000000006" y="339.45" width="54.150000000000006" height="34" rx="8" fill="#F7F1E9" stroke="#D8CBBB" stroke-width="2"/><rect x="414.6500000000001" y="339.45" width="54.150000000000006" height="34" rx="8" fill="#F7F1E9" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="344.50000000000006" y="400.1375" width="132.3" height="101.06250000000001" rx="6" fill="#8FA689" fill-opacity="0.45"/>
+<text x="410.65000000000003" y="600" font-size="24" font-weight="700" fill="#342E2A" text-anchor="middle">Full</text>
+<text x="410.65000000000003" y="628" font-size="17" fill="#6E645C" text-anchor="middle">bed 54 x 75 in</text>
+<rect x="324.65000000000003" y="646" width="172" height="58" rx="12" fill="#C85A32"/>
+<text x="410.65000000000003" y="670" font-size="15" fill="#fff" text-anchor="middle">room at least</text>
+<text x="410.65000000000003" y="694" font-size="21" font-weight="700" fill="#fff" text-anchor="middle">8'6" x 8'3"</text>
+<rect x="555.6" y="305.2" width="264.6" height="254.8" rx="4" fill="#FFFDF9" stroke="#B98A5E" stroke-width="4"/>
+<rect x="559.6" y="309.2" width="256.6" height="246.8" fill="#DCE5D6" fill-opacity="0.55"/>
+<rect x="614.4" y="307.2" width="147.0" height="196.0" rx="8" fill="#fff" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="614.4" y="307.2" width="147.0" height="14" rx="6" fill="#D9B48A"/>
+<rect x="622.4" y="327.2" width="61.5" height="34" rx="8" fill="#F7F1E9" stroke="#D8CBBB" stroke-width="2"/><rect x="691.9" y="327.2" width="61.5" height="34" rx="8" fill="#F7F1E9" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="614.4" y="393.4" width="147.0" height="107.80000000000001" rx="6" fill="#8FA689" fill-opacity="0.45"/>
+<text x="687.9000000000001" y="600" font-size="24" font-weight="700" fill="#342E2A" text-anchor="middle">Queen</text>
+<text x="687.9000000000001" y="628" font-size="17" fill="#6E645C" text-anchor="middle">bed 60 x 80 in</text>
+<rect x="601.9000000000001" y="646" width="172" height="58" rx="12" fill="#C85A32"/>
+<text x="687.9000000000001" y="670" font-size="15" fill="#fff" text-anchor="middle">room at least</text>
+<text x="687.9000000000001" y="694" font-size="21" font-weight="700" fill="#fff" text-anchor="middle">9' x 8'8"</text>
+<rect x="840.2" y="305.2" width="303.8" height="254.8" rx="4" fill="#FFFDF9" stroke="#B98A5E" stroke-width="4"/>
+<rect x="844.2" y="309.2" width="295.8" height="246.8" fill="#DCE5D6" fill-opacity="0.55"/>
+<rect x="899.0" y="307.2" width="186.20000000000002" height="196.0" rx="8" fill="#fff" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="899.0" y="307.2" width="186.20000000000002" height="14" rx="6" fill="#D9B48A"/>
+<rect x="907.0" y="327.2" width="81.10000000000001" height="34" rx="8" fill="#F7F1E9" stroke="#D8CBBB" stroke-width="2"/><rect x="996.1" y="327.2" width="81.10000000000001" height="34" rx="8" fill="#F7F1E9" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="899.0" y="393.4" width="186.20000000000002" height="107.80000000000001" rx="6" fill="#8FA689" fill-opacity="0.45"/>
+<text x="992.1" y="600" font-size="24" font-weight="700" fill="#342E2A" text-anchor="middle">King</text>
+<text x="992.1" y="628" font-size="17" fill="#6E645C" text-anchor="middle">bed 76 x 80 in</text>
+<rect x="906.1" y="646" width="172" height="58" rx="12" fill="#C85A32"/>
+<text x="992.1" y="670" font-size="15" fill="#fff" text-anchor="middle">room at least</text>
+<text x="992.1" y="694" font-size="21" font-weight="700" fill="#fff" text-anchor="middle">10'4" x 8'8"</text>
+<line x1="844.2" y1="520.0" x2="899.0" y2="520.0" stroke="#C85A32" stroke-width="2"/><text x="869.6" y="512.0" font-size="14" font-weight="700" fill="#C85A32" text-anchor="middle">24 in</text>
+<line x1="992.1" y1="503.2" x2="992.1" y2="556.0" stroke="#C85A32" stroke-width="2"/><text x="1000.1" y="536.6" font-size="14" font-weight="700" fill="#C85A32">24 in</text>
+<rect x="60" y="158" width="1080" height="64" rx="14" fill="#fff" stroke="#D8CBBB" stroke-width="2"/>
+<text x="84" y="198" font-size="19" fill="#342E2A"><tspan font-weight="700" fill="#C85A32">Rule of thumb:</tspan> a 10 x 10 ft room fits a queen and a nightstand; under 9 ft wide, pick a full, twin or daybed.</text>
+<rect x="60" y="760" width="1080" height="56" rx="12" fill="#DCE5D6"/>
+<text x="84" y="795" font-size="18" fill="#342E2A"><tspan font-weight="700">Add room for:</tspan> a nightstand (about 18 to 24 in wide), a dresser or luggage rack, and the swing of the door.</text>
+<text x="60" y="852" font-size="15" fill="#6E645C">Our own calculation: bed size plus 24 in on both sides and at the foot. Headboard against the wall. Standard US mattress sizes.</text>
+</svg>
