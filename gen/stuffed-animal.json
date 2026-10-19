@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded stuffed animals with no tags or printed faces of known characters, generic plush bears, bunnies, elephants and dogs in soft neutral colors, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A bright, tidy child's bedroom corner with a freestanding white oak stuffed animal storage tower about 4 feet tall: an open wooden frame with vertical sage green elastic straps across the front, filled with generic plush toys that can be pulled out between the straps. Beside it a low cream fabric basket with a few plush toys, a white oak toddler bed with a cream quilt and no toys on it, a round jute rug and a large window with linen curtains. Wide view, calm and organized."
+  },
+  {
+   "name": "02-zoo-close",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded stuffed animals with no tags or printed faces of known characters, generic plush bears, bunnies, elephants and dogs in soft neutral colors, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Close-up of a white oak stuffed animal storage tower with vertical sage green elastic bungee straps across the open front, plush bears, bunnies and elephants held behind the straps, one bunny peeking out between two straps. The straps are attached top and bottom to the wooden frame. Cream wall behind, soft daylight."
+  },
+  {
+   "name": "03-beanbag",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded stuffed animals with no tags or printed faces of known characters, generic plush bears, bunnies, elephants and dogs in soft neutral colors, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A large sage green canvas bean bag chair cover with a zipper, filled with stuffed animals so it is soft and full like a floor seat, standing in a reading corner of a kids' room next to a low white oak bookshelf with picture books facing out, a jute rug and a floor cushion. The zipper is half open at the top showing plush toys packed inside."
+  },
+  {
+   "name": "04-underbed",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded stuffed animals with no tags or printed faces of known characters, generic plush bears, bunnies, elephants and dogs in soft neutral colors, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A clear plastic under-bed storage box with a lid and wheels, pulled halfway out from under a white oak twin bed with a cream quilt, the box filled neatly with stuffed animals lying in rows. White oak floor, sage green rug edge, soft daylight. Low camera angle at floor level."
+  },
+  {
+   "name": "05-ledges",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded stuffed animals with no tags or printed faces of known characters, generic plush bears, bunnies, elephants and dogs in soft neutral colors, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A kids' play corner with two long white oak picture ledges screwed to a cream wall above a low cushioned window seat, no bed in the room view. Small plush toys sit in a neat row on each ledge with a front lip that keeps them from falling. Below the window seat, two open woven baskets with more plush toys. Daylight, calm, tidy."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded stuffed animals with no tags or printed faces of known characters, generic plush bears, bunnies, elephants and dogs in soft neutral colors, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Split image, left and right halves of the same child's bedroom corner from the same camera angle, separated by a thin white vertical line down the middle. Left half: a messy heap of stuffed animals spilling across the floor and a toddler bed, cluttered. Right half: the same corner tidy, the stuffed animals stored in a white oak storage tower with sage green elastic straps and one cream fabric basket, floor clear, bed made with no toys on it."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded stuffed animals with no tags or printed faces of known characters, generic plush bears, bunnies, elephants and dogs in soft neutral colors, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Vertical photo of a cozy child's room at warm evening lamp light: a white oak stuffed animal storage tower with sage green elastic straps full of generic plush toys in the lower half of the image, a cream fabric basket beside it, a soft rug. The top third of the image is a calm, empty cream wall. One clear focal point, no candles, no text."
+  }
+ ]
+}
