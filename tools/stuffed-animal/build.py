@@ -2,7 +2,7 @@ import re,json
 exec(open('helpers.py').read())
 IMG={int(k):tuple(v) for k,v in json.load(open('img.json')).items()}
 SRC=json.load(open('src.json'))
-def S(k,t): return ext(SRC[k],t)
+def SR(k,t): return ext(SRC[k],t)
 p("The best stuffed animal storage ideas give every plush toy a home your child can reach, without letting the pile take over the bedroom. Most kids collect far more soft toys than they play with, and they all end up in one heap on the bed or the floor, so cleanup takes forever and the favorites get lost.")
 p("This guide gives you a simple four-zone system, a 6-step clean-out and 16 stuffed animal storage ideas for kids' rooms, walls, small spaces and long-term storage. Every idea works with things you can buy at a big-box store or already have at home, and most need no drilling.")
 img(1)
@@ -13,8 +13,8 @@ summary(["<strong>Quick answer:</strong> Keep one to three favorites on the bed,
 toc("stuffed-animal-storage-ideas")
 h2("The 4-Zone Stuffed Animal System")
 p("Most plush piles grow because every toy is stored the same way, whether it is hugged every night or forgotten for a year. Sorting them by how often they are played with gives each group the right kind of storage: easy to reach for daily favorites, tucked away for the rest.")
-diagram(open('z.svg').read(),"The 4-zone stuffed animal system: bed buddies, an open play zone at kid height, a lidded rotation bin and a keepsake box, with anything left over donated.")
-p(f"Fewer toys out at once can also mean better play. In a University of Toledo study of toddlers given either 4 or 16 toys, {S('rot','children with fewer toys played twice as long with the toys they had')}, and in more sophisticated ways. A rotation bin is a practical way to use that idea: keep a small set in the play zone and swap a few every couple of weeks.")
+diagram(re.sub(r'(\d+\.\d{1,2})\d+',r'\1',open('z.svg').read()),"The 4-zone stuffed animal system: bed buddies, an open play zone at kid height, a lidded rotation bin and a keepsake box, with anything left over donated.")
+p(f"Fewer toys out at once can also mean better play. In a University of Toledo study of toddlers given either 4 or 16 toys, {SR('rot','children with fewer toys played twice as long with the toys they had')}, and in more sophisticated ways. A rotation bin is a practical way to use that idea: keep a small set in the play zone and swap a few every couple of weeks.")
 h2("Quick Pick: Stuffed Animal Storage Ideas by Situation")
 table(["Your situation","Best ideas","Cost"],[
 ["Big collection, small bedroom","#1, #11, #14","Low to medium"],
@@ -28,7 +28,7 @@ lst(["<strong>Gather every plush toy</strong> from the bed, the floor, the car a
 "<strong>Let your child choose the favorites.</strong> Ask which ones they sleep with and play with every week. These go in zones 1 and 2.",
 "<strong>Check the rest.</strong> Set aside toys with torn seams, loose eyes or spilling stuffing, and wash or spot-clean the ones you keep.",
 "<strong>Pick the keepsakes.</strong> Choose a few sentimental ones to keep long term, such as a first teddy or a gift from a grandparent.",
-"<strong>Donate or pass on the extras</strong> that are clean and in good condition. Check what your local charity shop or donation center accepts first.",
+"<strong>Donate or pass on the extras</strong> that are clean and in good condition. Check what your local thrift store or donation center accepts first.",
 "<strong>Give each zone one container:</strong> one basket or tower for play, one lidded bin for rotation and one box for keepsakes."],True)
 img(6)
 h2("Stuffed Animal Storage Ideas for Kids' Rooms")
@@ -64,21 +64,21 @@ h3("11. A Rolling Under-Bed Bin")
 img(4)
 p("A clear, lidded under-bed box on wheels is the perfect rotation bin. It slides out easily, you can see what is inside, and the lid keeps out dust. Measure the gap under the bed before you buy, and leave the bin out of the way of little feet when it is open.")
 h3("12. A Toy Chest or Storage Bench With a Safe Lid")
-p(f"A toy chest or storage bench hides a big pile and gives you a seat, but choose it carefully. The CPSC warns that {S('chest','children can be trapped in storage and toy chests')}. It advises a lid support that keeps a hinged lid open in any position, and ventilation holes that are not blocked by the floor or a wall. An open bench with baskets avoids the lid question entirely.")
+p(f"A toy chest or storage bench hides a big pile and gives you a seat, but choose it carefully. The CPSC warns that {SR('chest','children can be trapped in storage and toy chests')}. It advises a lid support that keeps a hinged lid open in any position, and ventilation holes that are not blocked by the floor or a wall. An open bench with baskets avoids the lid question entirely.")
 h3("13. Labeled Bins on a Closet Shelf")
 p(f"A row of fabric bins on the top shelf of the closet holds the rotation toys out of sight. Label each bin with a picture as well as a word so younger kids know what is inside. The same idea works for the linen closet, as in our {a('linen-closet-organization','linen closet organization')} guide.")
 h3("14. A Toy Rotation Bin System")
 p(f"Divide the rotation toys into two or three bins and swap one bin with the play zone every few weeks. Old toys feel new again, and the play zone never overflows. Our {a('toy-storage-ideas','toy storage ideas')} explain a simple rotation system for all toys, not only plush ones.")
 h2("How to Store Stuffed Animals Long Term")
 h3("15. Clean, Dry and in a Lidded Bin")
-p(f"Before you store stuffed animals for months or years, wash or spot-clean them following the label and let them dry completely. Take the batteries out of talking or musical toys; {S('batt','Duracell advises removing batteries')} from devices you will not use for several months. Pack the toys in a clean, lidded plastic bin, label it and keep it in a cool, dry room indoors. The GW Museum and The Textile Museum point out that {S('tex','attics and basements usually have no climate control')} and the biggest swings in temperature and humidity, and that most moth and carpet beetle problems start in stored textiles.")
+p(f"Before you store stuffed animals for months or years, wash or spot-clean them following the label and let them dry completely. Take the batteries out of talking or musical toys; {SR('batt','Duracell advises removing batteries')} from devices you will not use for several months. Pack the toys in a clean, lidded plastic bin, label it and keep it in a cool, dry room indoors. The GW Museum and The Textile Museum point out that {SR('tex','attics and basements usually have no climate control')} and the biggest swings in temperature and humidity, and that most moth and carpet beetle problems start in stored textiles.")
 h3("16. A Keepsake Box for the Few That Matter")
 p("Keep a small keepsake box for the stuffed animals that carry real memories. Wrap each one in acid-free tissue paper, rather than squeezing them into a vacuum bag, so they keep their shape. For the rest, take a photo of your child with their favorites before you pass them on: the memory takes no space at all.")
 add(open('savebox.html').read())
 h2("Stuffed Animal Safety Tips")
-lst([f"<strong>Babies:</strong> the NIH Safe to Sleep campaign says to {S('sleep','keep soft objects, toys and loose bedding out of your baby’s sleep area')}, so stuffed animals belong on a shelf, not in the crib.",
-f"<strong>Dust mite allergies:</strong> KidsHealth advises {S('mite','washing washable soft toys in hot water')} above 130°F (54°C), or freezing them in a sealed bag for at least 5 hours, and keeping the collection small for allergic kids.",
-f"<strong>Tall storage:</strong> anchor towers, bookcases and dressers to the wall, as the CPSC's {S('anchor','Anchor It campaign')} recommends, because children climb.",
+lst([f"<strong>Babies:</strong> the NIH Safe to Sleep campaign says to {SR('sleep','keep soft objects, toys and loose bedding out of your baby’s sleep area')}, so stuffed animals belong on a shelf, not in the crib.",
+f"<strong>Dust mite allergies:</strong> KidsHealth advises {SR('mite','washing washable soft toys in hot water')} above 130°F (54°C), or freezing them in a sealed bag for at least 5 hours, and keeping the collection small for allergic kids.",
+f"<strong>Tall storage:</strong> anchor towers, bookcases and dressers to the wall, as the CPSC's {SR('anchor','Anchor It campaign')} recommends, because children climb.",
 "<strong>Worn toys:</strong> check seams, eyes and noses now and then, and retire toys that are coming apart."])
 h2("Common Stuffed Animal Storage Mistakes")
 lst(["<strong>Buying storage before you sort.</strong> Do the clean-out first, then buy containers for what is left.",
