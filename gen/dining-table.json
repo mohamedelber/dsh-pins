@@ -1,0 +1,29 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{
+"name": "01-hero",
+"size": "1536x1024",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A bright dining room with a rectangular white oak dining table seating six: two simple oak chairs with cream linen seats on each long side and one at each end, all chairs tucked in neatly. Plenty of open floor around the table, at least an arm's length from the walls on every side. A linen runner with a ceramic vase of olive branches, a simple paper pendant light above the table, a low sideboard against the far wall, a woven jute rug larger than the table. Wide view showing the whole table, all six chairs and the space around it."
+},
+{
+"name": "02-round",
+"size": "1024x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A small dining nook with a round white oak pedestal table seating four, four oak chairs with sage green cushions evenly spaced around it, a round jute rug under the table, a window with linen curtains, a ceramic bowl of lemons in the center of the table. Space to walk around the table. View from slightly above showing all four chairs."
+},
+{
+"name": "03-extending",
+"size": "1024x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A long rectangular white oak dining table set for eight people with cream linen napkins, simple white plates, glasses and a low centerpiece of greenery, three chairs on each long side and one at each end, a long bench is not used. Warm daylight, terracotta jug, plenty of space behind the chairs. No candles."
+},
+{
+"name": "04-pin",
+"size": "1024x1536",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A calm dining room in warm evening light with a round white oak table and four oak chairs with cream seats, a woven pendant light glowing above the table, a vase of dried grasses on the table, a sideboard with a lamp behind. The top third of the image is calm plain warm wall. No candles, one focal point."
+}
+]
+}
