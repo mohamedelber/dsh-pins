@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, a converted two-car garage turned into a cozy hangout room, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters, no neon signs, plain unbranded appliances, high detail. Palette: warm white oak and walnut wood, charcoal grey, cognac leather, cream, sage green accents, warm natural and lamp light. Wide view of a garage man cave: smooth grey sealed concrete floor, a large area rug, a cognac leather sofa facing a TV mounted on a vertical wood slat accent wall, a low wooden media console, a small bar counter with two stools on one side, the closed insulated white garage door visible at the back, warm pendant lights, a potted plant. Calm and tidy."
+  },
+  {
+   "name": "02-bar",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a converted two-car garage turned into a cozy hangout room, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters, no neon signs, plain unbranded appliances, high detail. Palette: warm white oak and walnut wood, charcoal grey, cognac leather, cream, sage green accents, warm natural and lamp light. A simple home bar along a garage wall: a wooden counter with a butcher-block top, two metal-and-wood bar stools, open wooden shelves above holding plain clear glasses and plain white mugs, a small plain under-counter fridge with a solid door, warm wall sconces. No bottles, no labels."
+  },
+  {
+   "name": "03-game",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a converted two-car garage turned into a cozy hangout room, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters, no neon signs, plain unbranded appliances, high detail. Palette: warm white oak and walnut wood, charcoal grey, cognac leather, cream, sage green accents, warm natural and lamp light. A game area in a converted garage: a compact pool table with green cloth and a wooden frame, cues in a plain wall rack, a pendant light above the table, sealed grey concrete floor, a leather armchair in the corner, a wood slat wall. Balls neatly racked."
+  },
+  {
+   "name": "04-storage-wall",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a converted two-car garage turned into a cozy hangout room, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters, no neon signs, plain unbranded appliances, high detail. Palette: warm white oak and walnut wood, charcoal grey, cognac leather, cream, sage green accents, warm natural and lamp light. One garage wall organized with a light wood workbench, a pegboard above holding plain hand tools on hooks, closed grey metal cabinets on both sides, clear plastic lidded bins on a high shelf, a task light over the bench. Neat, everything stored, floor clear."
+  },
+  {
+   "name": "05-lounge-corner",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a converted two-car garage turned into a cozy hangout room, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters, no neon signs, plain unbranded appliances, high detail. Palette: warm white oak and walnut wood, charcoal grey, cognac leather, cream, sage green accents, warm natural and lamp light. Cozy corner of a garage man cave: interlocking dark rubber floor tiles with a large cream wool rug on top, a cognac leather recliner, a side table with a lamp, a floor-standing bookcase, a white ductless mini-split heat pump unit mounted high on the wall, an insulated finished drywall wall painted warm white."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a converted two-car garage turned into a cozy hangout room, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters, no neon signs, plain unbranded appliances, high detail. Palette: warm white oak and walnut wood, charcoal grey, cognac leather, cream, sage green accents, warm natural and lamp light. Split image, left and right halves of the same two-car garage from the same camera angle, separated by a thin white vertical line down the middle. Left half: a cluttered garage with cardboard boxes, a bicycle and bare concrete. Right half: the same garage finished as a man cave with a rug, a leather sofa, a TV on a wood slat wall and pendant lights."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, a converted two-car garage turned into a cozy hangout room, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters, no neon signs, plain unbranded appliances, high detail. Palette: warm white oak and walnut wood, charcoal grey, cognac leather, cream, sage green accents, warm natural and lamp light. Vertical photo of a garage man cave in warm evening light: a cognac leather sofa with a wool throw on a large rug in the lower half, a wood slat wall with a mounted TV switched off, a small bar counter with stools to the side, warm pendant lights. The top third of the image is a calm, plain, warm wall. One clear focal point, no candles, no fireplace, no text."
+  }
+ ]
+}
