@@ -1,2 +1,2 @@
-host.html d picture-height:1429px:1400
-host.html m picture-height:2130px:1400
+host.html d dining-table:1386px:1300
+host.html m dining-table:1899px:1300
