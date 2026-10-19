@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="sa-t sa-d"><title id="sa-t">The 4-zone stuffed animal system</title><desc id="sa-d">Diagram of a four-zone system for storing stuffed animals by how often they are played with. Zone 1, bed buddies: one to three favorites on the bed (not for babies under 12 months). Zone 2, play zone: this week's toys in one open basket or storage tower at the child's height. Zone 3, rotation bin: a lidded under-bed or closet bin, swapped every few weeks. Zone 4, keepsake box: clean, dry, labeled and stored indoors, not in the attic. Toys that fit no zone are donated if clean and safe.</desc>
+<rect width="1200" height="900" fill="#F7F1E9"/>
+<text x="60" y="88" font-size="44" font-weight="700" fill="#342E2A">The 4-Zone Stuffed Animal System</text>
+<text x="60" y="128" font-size="22" fill="#6E645C">Store plush toys by how often they are played with, not all in one pile</text>
+<text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text>
+<rect x="60" y="168" width="1080" height="44" rx="22" fill="#DCE5D6"/>
+<text x="90" y="198" font-size="19" font-weight="700" fill="#3F5E39">Played with every day</text>
+<text x="1110" y="198" font-size="19" font-weight="700" fill="#3F5E39" text-anchor="end">Kept for memories</text>
+<path d="M420 190 L780 190" stroke="#8FA689" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/><path d="M776 180 L792 190 L776 200 Z" fill="#8FA689"/>
+<rect x="60" y="240" width="252" height="486" rx="16" fill="#FFFFFF" stroke="#D8CBBB" stroke-width="2"/>
+<circle cx="96" cy="278" r="22" fill="#C85A32"/><text x="96" y="286" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="128" y="286" font-size="24" font-weight="700" fill="#342E2A">Bed buddies</text>
+<rect x="76" y="320" width="220" height="200" rx="12" fill="#FBF6EF"/>
+<rect x="94" y="380" width="16" height="120" rx="4" fill="#B98A5E"/>
+<rect x="104" y="440" width="162" height="44" rx="8" fill="#FFFDF9" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="104" y="478" width="162" height="12" fill="#D9B48A"/>
+<rect x="116" y="424" width="58" height="24" rx="10" fill="#fff" stroke="#D8CBBB" stroke-width="2"/>
+<circle cx="185.6" cy="404.4" r="7.199999999999999" fill="#ECCDA0"/><circle cx="214.4" cy="404.4" r="7.199999999999999" fill="#ECCDA0"/>
+<circle cx="200" cy="420" r="20" fill="#ECCDA0"/>
+<ellipse cx="200" cy="425.6" rx="8.4" ry="6.0" fill="#fff" fill-opacity="0.75"/>
+<circle cx="193.2" cy="417.0" r="1.7999999999999998" fill="#342E2A"/><circle cx="206.8" cy="417.0" r="1.7999999999999998" fill="#342E2A"/>
+<circle cx="231.2" cy="414.3" r="5.3999999999999995" fill="#C9D7C4"/><circle cx="252.8" cy="414.3" r="5.3999999999999995" fill="#C9D7C4"/>
+<circle cx="242" cy="426" r="15" fill="#C9D7C4"/>
+<ellipse cx="242" cy="430.2" rx="6.3" ry="4.5" fill="#fff" fill-opacity="0.75"/>
+<circle cx="236.9" cy="423.75" r="1.3499999999999999" fill="#342E2A"/><circle cx="247.1" cy="423.75" r="1.3499999999999999" fill="#342E2A"/>
+<text x="80" y="560" font-size="21" font-weight="700" fill="#C85A32">1 to 3 favorites</text>
+<text x="80" y="596" font-size="18" fill="#342E2A">On the bed or a bedside</text>
+<text x="80" y="622" font-size="18" fill="#342E2A">shelf</text>
+<line x1="80" y1="644" x2="292" y2="644" stroke="#D8CBBB" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="80" y="674" font-size="17" fill="#6E645C">Not for babies under 12</text>
+<text x="80" y="699" font-size="17" fill="#6E645C">months</text>
+<rect x="336" y="240" width="252" height="486" rx="16" fill="#FFFFFF" stroke="#D8CBBB" stroke-width="2"/>
+<circle cx="372" cy="278" r="22" fill="#8FA689"/><text x="372" y="286" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="404" y="286" font-size="24" font-weight="700" fill="#342E2A">Play zone</text>
+<rect x="352" y="320" width="220" height="200" rx="12" fill="#FBF6EF"/>
+<rect x="392.0" y="340" width="140" height="168" rx="6" fill="none" stroke="#B98A5E" stroke-width="8"/>
+<circle cx="408.48" cy="367.52" r="5.76" fill="#ECCDA0"/><circle cx="431.52" cy="367.52" r="5.76" fill="#ECCDA0"/>
+<circle cx="420.0" cy="380" r="16" fill="#ECCDA0"/>
+<ellipse cx="420.0" cy="384.48" rx="6.72" ry="4.8" fill="#fff" fill-opacity="0.75"/>
+<circle cx="414.56" cy="377.6" r="1.44" fill="#342E2A"/><circle cx="425.44" cy="377.6" r="1.44" fill="#342E2A"/>
+<circle cx="450.48" cy="367.52" r="5.76" fill="#C9D7C4"/><circle cx="473.52" cy="367.52" r="5.76" fill="#C9D7C4"/>
+<circle cx="462.0" cy="380" r="16" fill="#C9D7C4"/>
+<ellipse cx="462.0" cy="384.48" rx="6.72" ry="4.8" fill="#fff" fill-opacity="0.75"/>
+<circle cx="456.56" cy="377.6" r="1.44" fill="#342E2A"/><circle cx="467.44" cy="377.6" r="1.44" fill="#342E2A"/>
+<circle cx="492.48" cy="367.52" r="5.76" fill="#E8C4B0"/><circle cx="515.52" cy="367.52" r="5.76" fill="#E8C4B0"/>
+<circle cx="504.0" cy="380" r="16" fill="#E8C4B0"/>
+<ellipse cx="504.0" cy="384.48" rx="6.72" ry="4.8" fill="#fff" fill-opacity="0.75"/>
+<circle cx="498.56" cy="377.6" r="1.44" fill="#342E2A"/><circle cx="509.44" cy="377.6" r="1.44" fill="#342E2A"/>
+<circle cx="408.48" cy="427.52" r="5.76" fill="#ECCDA0"/><circle cx="431.52" cy="427.52" r="5.76" fill="#ECCDA0"/>
+<circle cx="420.0" cy="440" r="16" fill="#ECCDA0"/>
+<ellipse cx="420.0" cy="444.48" rx="6.72" ry="4.8" fill="#fff" fill-opacity="0.75"/>
+<circle cx="414.56" cy="437.6" r="1.44" fill="#342E2A"/><circle cx="425.44" cy="437.6" r="1.44" fill="#342E2A"/>
+<circle cx="450.48" cy="427.52" r="5.76" fill="#C9D7C4"/><circle cx="473.52" cy="427.52" r="5.76" fill="#C9D7C4"/>
+<circle cx="462.0" cy="440" r="16" fill="#C9D7C4"/>
+<ellipse cx="462.0" cy="444.48" rx="6.72" ry="4.8" fill="#fff" fill-opacity="0.75"/>
+<circle cx="456.56" cy="437.6" r="1.44" fill="#342E2A"/><circle cx="467.44" cy="437.6" r="1.44" fill="#342E2A"/>
+<circle cx="430.2" cy="466.3" r="5.3999999999999995" fill="#ECCDA0"/><circle cx="451.8" cy="466.3" r="5.3999999999999995" fill="#ECCDA0"/>
+<circle cx="441.0" cy="478" r="15" fill="#ECCDA0"/>
+<ellipse cx="441.0" cy="482.2" rx="6.3" ry="4.5" fill="#fff" fill-opacity="0.75"/>
+<circle cx="435.9" cy="475.75" r="1.3499999999999999" fill="#342E2A"/><circle cx="446.1" cy="475.75" r="1.3499999999999999" fill="#342E2A"/>
+<circle cx="474.48" cy="463.52" r="5.76" fill="#E8C4B0"/><circle cx="497.52" cy="463.52" r="5.76" fill="#E8C4B0"/>
+<circle cx="486.0" cy="476" r="16" fill="#E8C4B0"/>
+<ellipse cx="486.0" cy="480.48" rx="6.72" ry="4.8" fill="#fff" fill-opacity="0.75"/>
+<circle cx="480.56" cy="473.6" r="1.44" fill="#342E2A"/><circle cx="491.44" cy="473.6" r="1.44" fill="#342E2A"/>
+<line x1="406.0" y1="344" x2="406.0" y2="504" stroke="#8FA689" stroke-width="4"/>
+<line x1="434.0" y1="344" x2="434.0" y2="504" stroke="#8FA689" stroke-width="4"/>
+<line x1="462.0" y1="344" x2="462.0" y2="504" stroke="#8FA689" stroke-width="4"/>
+<line x1="490.0" y1="344" x2="490.0" y2="504" stroke="#8FA689" stroke-width="4"/>
+<line x1="518.0" y1="344" x2="518.0" y2="504" stroke="#8FA689" stroke-width="4"/>
+<text x="356" y="560" font-size="21" font-weight="700" fill="#5E7A57">This week's toys</text>
+<text x="356" y="596" font-size="18" fill="#342E2A">One basket or tower at</text>
+<text x="356" y="622" font-size="18" fill="#342E2A">kid height</text>
+<line x1="356" y1="644" x2="568" y2="644" stroke="#D8CBBB" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="356" y="674" font-size="17" fill="#6E645C">If it does not fit, it</text>
+<text x="356" y="699" font-size="17" fill="#6E645C">rotates</text>
+<rect x="612" y="240" width="252" height="486" rx="16" fill="#FFFFFF" stroke="#D8CBBB" stroke-width="2"/>
+<circle cx="648" cy="278" r="22" fill="#B98A5E"/><text x="648" y="286" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="680" y="286" font-size="24" font-weight="700" fill="#342E2A">Rotation bin</text>
+<rect x="628" y="320" width="220" height="200" rx="12" fill="#FBF6EF"/>
+<rect x="642" y="360" width="192" height="40" rx="8" fill="#FFFDF9" stroke="#D8CBBB" stroke-width="2"/>
+<rect x="642" y="400" width="192" height="12" fill="#D9B48A"/>
+<rect x="650" y="412" width="10" height="90" fill="#B98A5E"/><rect x="816" y="412" width="10" height="90" fill="#B98A5E"/>
+<rect x="668" y="440" width="162" height="58" rx="6" fill="#EAF1F5" fill-opacity="0.9" stroke="#9FB3BF" stroke-width="2"/>
+<rect x="664" y="434" width="170" height="10" rx="4" fill="#C9D6DD"/>
+<circle cx="684.64" cy="461.86" r="4.68" fill="#ECCDA0"/><circle cx="703.36" cy="461.86" r="4.68" fill="#ECCDA0"/>
+<circle cx="694" cy="472" r="13" fill="#ECCDA0"/>
+<ellipse cx="694" cy="475.64" rx="5.46" ry="3.9" fill="#fff" fill-opacity="0.75"/>
+<circle cx="689.58" cy="470.05" r="1.17" fill="#342E2A"/><circle cx="698.42" cy="470.05" r="1.17" fill="#342E2A"/>
+<circle cx="720.64" cy="461.86" r="4.68" fill="#C9D7C4"/><circle cx="739.36" cy="461.86" r="4.68" fill="#C9D7C4"/>
+<circle cx="730" cy="472" r="13" fill="#C9D7C4"/>
+<ellipse cx="730" cy="475.64" rx="5.46" ry="3.9" fill="#fff" fill-opacity="0.75"/>
+<circle cx="725.58" cy="470.05" r="1.17" fill="#342E2A"/><circle cx="734.42" cy="470.05" r="1.17" fill="#342E2A"/>
+<circle cx="756.64" cy="461.86" r="4.68" fill="#E8C4B0"/><circle cx="775.36" cy="461.86" r="4.68" fill="#E8C4B0"/>
+<circle cx="766" cy="472" r="13" fill="#E8C4B0"/>
+<ellipse cx="766" cy="475.64" rx="5.46" ry="3.9" fill="#fff" fill-opacity="0.75"/>
+<circle cx="761.58" cy="470.05" r="1.17" fill="#342E2A"/><circle cx="770.42" cy="470.05" r="1.17" fill="#342E2A"/>
+<circle cx="792.64" cy="461.86" r="4.68" fill="#ECCDA0"/><circle cx="811.36" cy="461.86" r="4.68" fill="#ECCDA0"/>
+<circle cx="802" cy="472" r="13" fill="#ECCDA0"/>
+<ellipse cx="802" cy="475.64" rx="5.46" ry="3.9" fill="#fff" fill-opacity="0.75"/>
+<circle cx="797.58" cy="470.05" r="1.17" fill="#342E2A"/><circle cx="806.42" cy="470.05" r="1.17" fill="#342E2A"/>
+<circle cx="682" cy="502" r="5" fill="#6E645C"/><circle cx="818" cy="502" r="5" fill="#6E645C"/>
+<text x="632" y="560" font-size="21" font-weight="700" fill="#B98A5E">The rest</text>
+<text x="632" y="596" font-size="18" fill="#342E2A">Lidded bin under the bed</text>
+<text x="632" y="622" font-size="18" fill="#342E2A">or in the closet</text>
+<line x1="632" y1="644" x2="844" y2="644" stroke="#D8CBBB" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="632" y="674" font-size="17" fill="#6E645C">Swap a few every 2 to 4</text>
+<text x="632" y="699" font-size="17" fill="#6E645C">weeks</text>
+<rect x="888" y="240" width="252" height="486" rx="16" fill="#FFFFFF" stroke="#D8CBBB" stroke-width="2"/>
+<circle cx="924" cy="278" r="22" fill="#6E645C"/><text x="924" y="286" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="956" y="286" font-size="24" font-weight="700" fill="#342E2A">Keepsake box</text>
+<rect x="904" y="320" width="220" height="200" rx="12" fill="#FBF6EF"/>
+<rect x="930.0" y="390" width="168" height="110" rx="6" fill="#D9B48A"/>
+<path d="M922.0 390 L944.0 360 L1084.0 360 L1106.0 390 Z" fill="#ECCDA0"/>
+<circle cx="981.04" cy="369.96" r="6.4799999999999995" fill="#E8C4B0"/><circle cx="1006.96" cy="369.96" r="6.4799999999999995" fill="#E8C4B0"/>
+<circle cx="994.0" cy="384" r="18" fill="#E8C4B0"/>
+<ellipse cx="994.0" cy="389.04" rx="7.56" ry="5.3999999999999995" fill="#fff" fill-opacity="0.75"/>
+<circle cx="987.88" cy="381.3" r="1.6199999999999999" fill="#342E2A"/><circle cx="1000.12" cy="381.3" r="1.6199999999999999" fill="#342E2A"/>
+<circle cx="1029.2" cy="374.3" r="5.3999999999999995" fill="#C9D7C4"/><circle cx="1050.8" cy="374.3" r="5.3999999999999995" fill="#C9D7C4"/>
+<circle cx="1040.0" cy="386" r="15" fill="#C9D7C4"/>
+<ellipse cx="1040.0" cy="390.2" rx="6.3" ry="4.5" fill="#fff" fill-opacity="0.75"/>
+<circle cx="1034.9" cy="383.75" r="1.3499999999999999" fill="#342E2A"/><circle cx="1045.1" cy="383.75" r="1.3499999999999999" fill="#342E2A"/>
+<path d="M954.0 392 q30 -18 60 0 q30 -18 60 0" fill="none" stroke="#fff" stroke-width="5"/>
+<rect x="970.0" y="428" width="88" height="40" rx="4" fill="#FFFDF9"/>
+<line x1="982.0" y1="442" x2="1046.0" y2="442" stroke="#D8CBBB" stroke-width="3"/><line x1="982.0" y1="456" x2="1030.0" y2="456" stroke="#D8CBBB" stroke-width="3"/>
+<text x="908" y="560" font-size="21" font-weight="700" fill="#6E645C">Sentimental ones</text>
+<text x="908" y="596" font-size="18" fill="#342E2A">Clean, dry, labeled box</text>
+<text x="908" y="622" font-size="18" fill="#342E2A">indoors</text>
+<line x1="908" y1="644" x2="1120" y2="644" stroke="#D8CBBB" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="908" y="674" font-size="17" fill="#6E645C">Not in the attic or</text>
+<text x="908" y="699" font-size="17" fill="#6E645C">basement</text>
+<rect x="60" y="750" width="1080" height="76" rx="14" fill="#ECCDA0" fill-opacity="0.45" stroke="#D9B48A" stroke-width="2"/>
+<text x="90" y="782" font-size="21" font-weight="700" fill="#342E2A">No zone left? Let it go.</text>
+<text x="90" y="810" font-size="18" fill="#6E645C">Donate clean, undamaged toys; throw away worn ones with loose eyes, torn seams or spilling stuffing.</text>
+<text x="60" y="866" font-size="16" fill="#6E645C">Zone sizes are our own rule of thumb: let the play zone be one basket or tower, and rotate the rest.</text>
+</svg>
