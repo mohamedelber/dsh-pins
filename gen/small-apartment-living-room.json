@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, a small city apartment living room, Scandinavian modern style, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters with writing, plain unbranded TV switched off, high detail. Palette: white oak, cream, warm white walls, sage green, terracotta accents, soft natural daylight. Wide view of a small apartment living room: an apartment-size cream sofa with slim arms and raised legs against the wall, a round oak coffee table, an 8x10 jute rug with the sofa's front legs on it, a wall-mounted TV above a low floating oak console on the opposite wall, sheer linen curtains hung high and wide, a tall plant, a large round mirror, a slim floor lamp. Airy, calm, plenty of floor showing."
+  },
+  {
+   "name": "02-wall-storage",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a small city apartment living room, Scandinavian modern style, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters with writing, plain unbranded TV switched off, high detail. Palette: white oak, cream, warm white walls, sage green, terracotta accents, soft natural daylight. A small living room wall with floor-to-ceiling white oak shelving around a wall-mounted TV, closed cabinets at the bottom, a few books, baskets and plants on the open shelves, a low cream armchair in front. Tidy and minimal."
+  },
+  {
+   "name": "03-nesting-tables",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a small city apartment living room, Scandinavian modern style, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters with writing, plain unbranded TV switched off, high detail. Palette: white oak, cream, warm white walls, sage green, terracotta accents, soft natural daylight. Close view of a small apartment living room corner: a set of two round oak nesting coffee tables partly pulled apart in front of a cream sofa, a woven tray with a small plant and two books, a sage throw on the sofa, a jute rug."
+  },
+  {
+   "name": "04-mirror-light",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a small city apartment living room, Scandinavian modern style, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters with writing, plain unbranded TV switched off, high detail. Palette: white oak, cream, warm white walls, sage green, terracotta accents, soft natural daylight. A narrow apartment living room with a large arched floor mirror securely fixed to the wall opposite a window reflecting daylight, a slim cream loveseat, a small round side table with a lamp, a wall-mounted swing-arm sconce, light walls, sheer curtains."
+  },
+  {
+   "name": "05-dining-nook",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a small city apartment living room, Scandinavian modern style, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters with writing, plain unbranded TV switched off, high detail. Palette: white oak, cream, warm white walls, sage green, terracotta accents, soft natural daylight. Corner of a small apartment living room with a compact round pedestal dining table for two and two light wood chairs by a window, a pendant light above, a bench along the wall with cushions, the edge of a sofa visible. Bright daylight."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, a small city apartment living room, Scandinavian modern style, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters with writing, plain unbranded TV switched off, high detail. Palette: white oak, cream, warm white walls, sage green, terracotta accents, soft natural daylight. Split image, left and right halves of the same small apartment living room from the same camera angle, separated by a thin white vertical line down the middle. Left half: a cramped room with a bulky dark sectional, a big heavy coffee table, a small rug and clutter on the floor. Right half: the same room with an apartment-size cream sofa, a round oak coffee table, a large jute rug, a wall-mounted TV and clear floor space."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, a small city apartment living room, Scandinavian modern style, realistic proportions, clean and uncluttered, no people, no text, no labels, no logos, no brand names, no posters with writing, plain unbranded TV switched off, high detail. Palette: white oak, cream, warm white walls, sage green, terracotta accents, soft natural daylight. Vertical photo of a cozy small apartment living room in warm evening light: a cream sofa with sage and terracotta cushions and a knitted throw on a jute rug in the lower half, a round oak coffee table, a lit floor lamp, a tall plant. The top third of the image is a calm, plain, warm wall. One clear focal point, no candles, no fireplace, no text."
+  }
+ ]
+}
