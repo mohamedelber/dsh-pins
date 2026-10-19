@@ -77,7 +77,7 @@ p(f"Hang the rod close to the ceiling and extend it past the window frame so the
 h3("13. Light, Calm Walls")
 p("Warm white, cream or a soft sage on the walls bounces light around. Keep the ceiling white and repeat one or two accent colors in cushions and art.")
 h3("14. A Rug That Is Big Enough")
-p(f"Ruggable's guide says to {SR('rug','ensure that the front legs of your seating fit on the rug')}, and Home Depot suggests {SR('hdrug','a 6' x 9' or 8' x 10' rug size for living room spaces')}. A rug that is too small makes the room look smaller. Our {a('rug-size-calculator','rug size calculator')} works it out for your layout.")
+p(f"Ruggable's guide says to {SR('rug','ensure that the front legs of your seating fit on the rug')}, and Home Depot suggests {SR('hdrug',"a 6' x 9' or 8' x 10' rug size for living room spaces")}. A rug that is too small makes the room look smaller. Our {a('rug-size-calculator','rug size calculator')} works it out for your layout.")
 h3("15. Layered, Wall-Mounted Lighting")
 p("Swap a big floor lamp for a plug-in wall sconce, add a table lamp and keep the ceiling light for cleaning. Light at different heights makes corners feel part of the room.")
 h2("Living Room Ideas That Do Double Duty")
