@@ -3,7 +3,7 @@ s=[];a=s.append
 desc=("Top-down floor plan of an example 20 by 22 foot studio apartment, about 440 square feet, divided into six zones. "
 "A, entry drop zone by the door. B, kitchen along the bottom wall. C, a small round dining table for two near the kitchen. "
 "D, living zone with a sofa on a rug facing a TV console on the right wall. E, sleep zone with a queen bed in the top left corner, "
-"screened from the living zone by an open bookshelf divider. F, a small work desk on the left wall. A 36 inch walkway runs from the door to every zone.")
+"screened from the living zone by an open bookshelf divider. F, a small work desk on the left wall. A 36 inch walkway runs from the door into the middle of the room.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="st-t st-d"><title id="st-t">Studio apartment zone plan</title><desc id="st-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="88" font-size="44" font-weight="700" fill="{T}">The Studio Apartment Zone Plan</text>')
@@ -24,7 +24,7 @@ def zone(x,y,w,h,col,op=0.35): a(f'<rect x="{x}" y="{y}" width="{w}" height="{h}
 zone(X0+8,Y0+8,232,250,SGL,0.8)          # sleep
 zone(X0+272,Y0+8,280,250,SA,0.45)        # living
 zone(X0+8,Y0+272,120,150,'#E8D9EE',0.6)  # work
-zone(X0+140,Y0+410,200,110,'#F4DCCB',0.7) # dining
+zone(X0+140,Y0+380,200,110,'#F4DCCB',0.7) # dining
 zone(X0+8,Y0+H-90,330,82,'#E6E1D8',0.9)   # kitchen
 zone(X0+400,Y0+H-140,152,132,'#EAF1F5',0.9) # entry
 # bed (E)
@@ -43,7 +43,7 @@ a(f'<rect x="{X0+W-30}" y="{Y0+60}" width="24" height="150" rx="3" fill="{W2}"/>
 # work desk (F)
 a(f'<rect x="{X0+12}" y="{Y0+300}" width="56" height="110" rx="4" fill="{W1}"/><circle cx="{X0+92}" cy="{Y0+355}" r="18" fill="#fff" stroke="{BR}" stroke-width="3"/>')
 # dining (C)
-cx,cy=X0+240,Y0+475
+cx,cy=X0+240,Y0+440
 a(f'<circle cx="{cx}" cy="{cy}" r="42" fill="{W1}"/><circle cx="{cx-64}" cy="{cy}" r="16" fill="#fff" stroke="{BR}" stroke-width="3"/><circle cx="{cx+64}" cy="{cy}" r="16" fill="#fff" stroke="{BR}" stroke-width="3"/>')
 # kitchen (B)
 a(f'<rect x="{X0+8}" y="{Y0+H-64}" width="330" height="56" fill="#FFFDF9" stroke="{BR}" stroke-width="2"/>')
@@ -58,7 +58,7 @@ a(f'<rect x="{X0+352}" y="{Y0+392}" width="150" height="30" rx="15" fill="#fff" 
 # markers
 def mk(x,y,l):
     a(f'<circle cx="{x}" cy="{y}" r="20" fill="{T}"/><text x="{x}" y="{y+7}" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">{l}</text>')
-mk(X0+W-80,Y0+H-110,'A'); mk(X0+366,Y0+H-36,'B'); mk(X0+318,Y0+432,'C'); mk(X0+520,Y0+250,'D'); mk(X0+215,Y0+228,'E'); mk(X0+108,Y0+300,'F')
+mk(X0+W-80,Y0+H-110,'A'); mk(X0+366,Y0+H-36,'B'); mk(X0+156,Y0+390,'C'); mk(X0+520,Y0+250,'D'); mk(X0+215,Y0+228,'E'); mk(X0+108,Y0+300,'F')
 # dimension labels
 a(f'<text x="{X0+W/2}" y="{Y0+H+42}" font-size="17" fill="{G}" text-anchor="middle">20 ft (6.1 m)</text>')
 a(f'<text x="{X0-26}" y="{Y0+H/2}" font-size="17" fill="{G}" text-anchor="middle" transform="rotate(-90 {X0-26} {Y0+H/2})">22 ft (6.7 m)</text>')
