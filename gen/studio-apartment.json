@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A bright, small studio apartment seen wide from the entry: a queen bed with cream linen bedding against the far wall, separated from the living area by an open white oak bookshelf divider about 5 feet tall with books, plants and baskets on the shelves. In front, a compact sage green sofa facing a low TV console, a round jute rug defining the living zone, a small round white oak dining table with two chairs near a large window. Light walls, uncluttered, every zone clearly visible."
+  },
+  {
+   "name": "02-curtain-nook",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A studio apartment bed nook partly hidden behind floor-to-ceiling cream linen curtains hung from a ceiling track, one curtain drawn halfway open to show a made bed with sage green bedding. In the foreground a small living area with an armchair and a side table. Soft daylight."
+  },
+  {
+   "name": "03-sofa-zone",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A studio apartment living zone: a compact cream sofa with its back to the bed area, a narrow white oak console table behind the sofa holding a lamp and books, a rectangular jute rug under the sofa and coffee table defining the living area, the edge of a made bed visible behind. Large window, plants, calm."
+  },
+  {
+   "name": "04-drop-leaf",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A small white oak drop-leaf table against a wall in a studio apartment kitchen corner, one leaf raised, two folding chairs, a small pendant light above, open shelves with plates and jars on the wall. Compact and tidy, soft daylight."
+  },
+  {
+   "name": "05-storage-bed",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A white oak platform bed with two wide storage drawers pulled partly open underneath, showing folded sweaters and spare bedding inside, in a small studio apartment. Cream bedding, a sage green throw, a slim bedside shelf, a window with linen curtains. Low angle showing the drawers clearly."
+  },
+  {
+   "name": "06-before-after",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Split image, left and right halves of the same small studio apartment from the same camera angle, separated by a thin white vertical line down the middle. Left half: cluttered, bed unmade in the middle of the room, clothes on a chair, boxes on the floor, no clear zones. Right half: the same room organized into zones: bed against the wall behind an open bookshelf divider, a sofa on a rug, floor clear."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Vertical photo of a cozy studio apartment at warm evening lamp light: a sage green sofa on a jute rug in the lower half, an open white oak bookshelf divider behind it with books and plants, the edge of a made bed visible beyond. The top third of the image is a calm, empty cream wall and ceiling. One clear focal point, no candles, no text."
+  }
+ ]
+}
