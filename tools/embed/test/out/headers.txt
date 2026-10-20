@@ -1,6 +1,6 @@
-== https://dailyspacehacks.com/embed-calculators/recessed-lighting/
+== https://dailyspacehacks.com/embed-calculators/board-and-batten/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/recessed-lighting-calculator/
+== https://dailyspacehacks.com/board-and-batten-calculator/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
