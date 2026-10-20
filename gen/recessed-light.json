@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft warm light. A bright living room in the evening with a flat white ceiling and an even grid of small round flush LED recessed ceiling lights (slim white trims, evenly spaced in neat rows), warm 2700K glow, cream sofa, white oak coffee table, sage green throw, jute rug, the whole room evenly and softly lit with no dark corners, ceiling clearly visible in the upper part of the frame."
+  },
+  {
+   "name": "02-kitchen",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft warm light. A modern farmhouse kitchen with white shaker upper and lower cabinets, quartz countertops, a sage green island, and a straight row of small round flush LED recessed ceiling lights placed above the front edge of the countertops, about a foot out from the upper cabinets, plus a second row over the island; warm white light falling on the counters with no shadows, ceiling visible."
+  },
+  {
+   "name": "03-bedroom",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft warm light. A calm bedroom at dusk with a white ceiling and four small round flush LED recessed ceiling lights set in a neat square, dimmed warm glow, upholstered cream bed with linen bedding, white oak nightstands, sage green accent wall, soft cozy mood, ceiling visible."
+  },
+  {
+   "name": "04-bathroom",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft warm light. A bright modern bathroom with a white ceiling, a small round flush LED recessed light directly above a walk-in glass shower and two more over the white oak vanity, white tile, brass fixtures, sage green towels, clean even light, ceiling visible."
+  },
+  {
+   "name": "05-hallway",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft warm light. A long narrow hallway with a white ceiling and a single straight centered row of small round flush LED recessed ceiling lights evenly spaced down its length, white oak floor, framed art on the walls, runner rug, warm even light."
+  },
+  {
+   "name": "06-art-wall",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft warm light. A living room wall with large framed abstract artwork lit by two small round adjustable recessed ceiling lights placed a couple of feet out from the wall and aimed at the art, creating a soft even wash of light on the wall, white oak console table below, ceramic vase, cream walls, evening mood."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft warm light. A cozy open-plan living and dining room at evening seen from a low angle so the white ceiling with an even grid of small round flush LED recessed lights is clearly visible, warm glow, cream sofa, white oak dining table, sage green accents, plants, a very inviting Pinterest-style photo."
+  }
+ ]
+}
