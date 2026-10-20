@@ -1,0 +1,346 @@
+<!-- wp:paragraph -->
+<p>What is the right desk height? Your desk, or at least your keyboard, should sit at your elbow height, so your elbows bend at about 90 degrees and your forearms are level. For most adults that means about 23 to 30 in (58 to 76 cm) for a sitting desk and about 36 to 47 in (91 to 119 cm) for a standing desk. This free <strong>desk height calculator</strong> works out your numbers in two taps.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pick your height and choose sitting or standing. You get the desk height, the chair seat height and where the top of your screen should be, with a simple side view. Open <em>More options</em> to type your exact height, switch to centimeters or enter your own elbow height for the most accurate result.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-dh" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>What desk height is right for you?</h3>
+<p class="sub">Two taps: pick your height, then sitting or standing. You get the desk height, chair height and where the top of your screen should be.</p>
+<fieldset><legend>1. How tall are you?</legend>
+<div class="opts" role="group" aria-label="Your height">
+<button type="button" data-h="60"><b>5 ft 0 in</b><span>152 cm</span></button>
+<button type="button" data-h="64"><b>5 ft 4 in</b><span>163 cm</span></button>
+<button type="button" data-h="68" class="on"><b>5 ft 8 in</b><span>173 cm</span></button>
+<button type="button" data-h="72"><b>6 ft 0 in</b><span>183 cm</span></button>
+<button type="button" data-h="76"><b>6 ft 4 in</b><span>193 cm</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. Sitting or standing?</legend>
+<div class="opts" role="group" aria-label="Desk type">
+<button type="button" data-m="sit" class="on"><b>Sitting desk</b><span>with an office chair</span></button>
+<button type="button" data-m="stand"><b>Standing desk</b><span>sit-stand or fixed</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: exact height, cm, elbow height</summary>
+<div class="grid">
+<label>Units<select id="un"><option value="in" selected>Inches (US)</option><option value="cm">Centimeters (UK)</option></select></label>
+<label><span id="lH">Your height (in)</span><input type="number" id="hh" min="40" max="230" step="0.5" placeholder="e.g. 66 or 168"></label>
+<label><span id="lE">Or your elbow height (in)</span><input type="number" id="eh" min="15" max="140" step="0.5" placeholder="measure it"></label>
+<label>Shoes<select id="sh"><option value="1" selected>Normal shoes (+1 in)</option><option value="0">Barefoot or socks</option><option value="2">Heels or boots (+2 in)</option></select></label>
+</div>
+<p class="hint">Most accurate: sit with your feet flat and shoulders relaxed, bend your elbows to 90 degrees and measure from the floor to the underside of your forearm. For standing, do the same standing up.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small id="k1t">Desk height</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small id="k2t">Chair seat height</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small>Top of screen</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my desk setup</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-dh');if(!R)return;
+var H=68,mode='sit',summary='',unit='';
+var DS=[[60,23],[64,24],[68,26],[72,27],[76,29]],CH=[[60,14],[64,16],[68,17],[72,18],[76,20]],ST=[[60,36],[62,37],[64,38],[66,39],[68,40.5],[70,42],[72,43.5],[74,44.5],[76,46],[78,47]];
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function lerp(t,h){if(t[0][0]>=h){return t[0][1]+(h-t[0][0])*(t[1][1]-t[0][1])/(t[1][0]-t[0][0])}for(var i=1;i!==t.length;i++){if(t[i][0]>=h){var a=t[i-1],b=t[i];return a[1]+(h-a[0])*(b[1]-a[1])/(b[0]-a[0])}}var n=t.length,c=t[n-2],d=t[n-1];return d[1]+(h-d[0])*(d[1]-c[1])/(d[0]-c[0])}
+function L(x){return unit==='cm'?Math.round(x*2.54)+' cm':(Math.round(x*2)/2)+' in'}
+function rg(a,b){return unit==='cm'?Math.round(a*2.54)+' to '+Math.round(b*2.54)+' cm':(Math.round(a*2)/2)+' to '+(Math.round(b*2)/2)+' in'}
+function hs(h){var f=Math.floor(h/12),i=Math.round(h-f*12);if(i===12){f+=1;i=0}return unit==='cm'?Math.round(h*2.54)+' cm':f+' ft '+i+' in'}
+function setUnit(u){if(u===unit)return;unit=u;var n=u==='cm'?'cm':'in';$('lH').textContent='Your height ('+n+')';$('lE').textContent='Or your elbow height ('+n+')'}
+function viz(desk,chair,eye,stand){var sc=200/90,fl=214,x0=60;
+var s='<svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side view of desk, chair and monitor heights">';
+s+='<rect width="360" height="230" fill="#FBF6EF"/><line x1="10" y1="'+fl+'" x2="350" y2="'+fl+'" stroke="#B98A5E" stroke-width="3"/>';
+var dy=fl-desk*sc;s+='<rect x="150" y="'+dy+'" width="170" height="6" fill="#D9B48A"/><line x1="160" y1="'+(dy+6)+'" x2="160" y2="'+fl+'" stroke="#B98A5E" stroke-width="4"/><line x1="310" y1="'+(dy+6)+'" x2="310" y2="'+fl+'" stroke="#B98A5E" stroke-width="4"/>';
+var ey=fl-eye*sc;s+='<rect x="268" y="'+(ey)+'" width="8" height="'+(30*sc*0.45)+'" fill="#342E2A"/><line x1="272" y1="'+(ey+30*sc*0.45)+'" x2="272" y2="'+dy+'" stroke="#6E645C" stroke-width="3"/>';
+s+='<line x1="120" y1="'+ey+'" x2="268" y2="'+ey+'" stroke="#8FA689" stroke-width="2" stroke-dasharray="5 4"/><text x="196" y="'+(ey-6)+'" font-size="11" text-anchor="middle" fill="#3F5E39">eye level = top of screen</text>';
+if(!stand){var cy=fl-chair*sc;s+='<rect x="'+(x0+20)+'" y="'+cy+'" width="60" height="7" rx="3" fill="#8FA689"/><rect x="'+(x0+20)+'" y="'+(cy-60)+'" width="8" height="60" rx="3" fill="#8FA689"/><line x1="'+(x0+50)+'" y1="'+(cy+7)+'" x2="'+(x0+50)+'" y2="'+(fl-8)+'" stroke="#6E645C" stroke-width="4"/><line x1="'+(x0+30)+'" y1="'+(fl-4)+'" x2="'+(x0+70)+'" y2="'+(fl-4)+'" stroke="#6E645C" stroke-width="4"/>';
+s+='<text x="'+(x0+50)+'" y="'+(cy+22)+'" font-size="10" text-anchor="middle" fill="#342E2A">seat '+L(chair)+'</text>'}
+else{s+='<rect x="40" y="'+(fl-6)+'" width="90" height="6" rx="2" fill="#8FA689"/><text x="85" y="'+(fl-12)+'" font-size="10" text-anchor="middle" fill="#3F5E39">mat</text>'}
+s+='<line x1="335" y1="'+dy+'" x2="335" y2="'+fl+'" stroke="#C85A32" stroke-width="2"/><text x="330" y="'+((dy+fl)/2+4)+'" font-size="12" font-weight="700" text-anchor="end" fill="#C85A32">desk '+L(desk)+'</text>';
+return s+'</svg>'}
+function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='cm'?1/2.54:1;
+var h=num('hh')?num('hh')*f:H;var sh=parseFloat($('sh').value);var eh=num('eh')*f;var hs0=h+sh;
+var stand=mode==='stand';var desk,lo,hi,chair=0,eye;
+if(!stand){var dm=lerp(DS,hs0);if(eh){dm=eh}lo=dm-1;hi=eh?dm:dm+1;desk=dm;chair=lerp(CH,hs0);eye=chair+0.45*h;
+$('k1t').textContent='Sitting desk height';$('k1').textContent=rg(lo,hi);$('k1e').textContent=eh?'from your elbow height':'at your seated elbow height';
+$('k2t').textContent='Chair seat height';$('k2').textContent=rg(chair-1,chair+1);$('k2e').textContent='feet flat, thighs about level';
+vv.textContent='At '+hs(h)+', a sitting desk (or keyboard) about '+rg(lo,hi)+' high lets your elbows rest at about 90 degrees, with your chair seat at about '+rg(chair-1,chair+1)+'.';
+if(desk+0.5>=29){tips.push('A standard 29 to 30 in (74 to 76 cm) desk should suit you. Fine-tune with the chair height.')}
+else{var gap=Math.round(29.5-desk);tips.push('A standard 29 to 30 in (74 to 76 cm) desk is about '+L(gap)+' too high for you. Raise your chair until your elbows are level with the desk and use a footrest, or use a keyboard tray.')}
+tips.push('Keep the keyboard close, with your wrists straight and your shoulders relaxed.');
+summary='Desk setup for '+hs(h)+': sitting desk '+rg(lo,hi)+', chair seat '+rg(chair-1,chair+1)+', top of screen about '+L(eye)+' from the floor. dailyspacehacks.com/desk-height-calculator/'}
+else{var sm=lerp(ST,hs0);if(eh){sm=eh}lo=sm-1;hi=eh?sm:sm+1;desk=sm;eye=0.936*h+sh;
+$('k1t').textContent='Standing desk height';$('k1').textContent=rg(lo,hi);$('k1e').textContent=eh?'from your elbow height':'at your standing elbow height';
+$('k2t').textContent='Sitting height';$('k2').textContent=rg(lerp(DS,hs0)-1,lerp(DS,hs0)+1);$('k2e').textContent='for a sit-stand desk';
+vv.textContent='At '+hs(h)+', set your standing desk to about '+rg(lo,hi)+', so your elbows bend at about 90 degrees with your shoulders relaxed.';
+tips.push('On a sit-stand desk, save both heights as presets. Cornell suggests about 20 minutes sitting, 8 minutes standing and 2 minutes moving.');
+tips.push('Wear the shoes you usually work in when you set the height, and use an anti-fatigue mat on hard floors.');
+summary='Standing desk for '+hs(h)+': '+rg(lo,hi)+', top of screen about '+L(eye)+' from the floor. dailyspacehacks.com/desk-height-calculator/'}
+$('k3').textContent='about '+L(eye);$('k3e').textContent='from the floor, about an arm’s length away';
+tips.push('Put the top of the screen at or slightly below eye level, about an arm’s length away (at least 20 in or 50 cm). Lower it 1 to 2 in if you wear bifocals.');
+tips.push('These are estimates for an average body. Your own elbow height is the best guide: enter it in More options.');
+$('vz').innerHTML=viz(desk,chair,eye,stand);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('')}
+R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){H=parseFloat(b.getAttribute('data-h'));pick('data-h',b.getAttribute('data-h'));$('hh').value='';calc()})});
+R.querySelectorAll('[data-m]').forEach(function(b){b.addEventListener('click',function(){mode=b.getAttribute('data-m');pick('data-m',mode);calc()})});
+['un','hh','eh','sh'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my desk setup'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your desk setup:',summary)})}catch(e){window.prompt('Copy your desk setup:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Desk Height Chart by Your Height</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Your height</th><th>Sitting desk</th><th>Chair seat</th><th>Standing desk</th></tr></thead><tbody><tr><td>5 ft 0 in (152 cm)</td><td>22.5 to 24.5 in (57 to 62 cm)</td><td>13.5 to 15.5 in</td><td>35.5 to 37.5 in (90 to 95 cm)</td></tr><tr><td>5 ft 4 in (163 cm)</td><td>23.5 to 25.5 in (60 to 65 cm)</td><td>15.5 to 17.5 in</td><td>37.5 to 39.5 in (95 to 100 cm)</td></tr><tr><td>5 ft 8 in (173 cm)</td><td>25.5 to 27.5 in (65 to 70 cm)</td><td>16.5 to 18.5 in</td><td>40.5 to 42.5 in (103 to 108 cm)</td></tr><tr><td>6 ft 0 in (183 cm)</td><td>26.5 to 28.5 in (67 to 72 cm)</td><td>17.5 to 19.5 in</td><td>43 to 45 in (109 to 114 cm)</td></tr><tr><td>6 ft 4 in (193 cm)</td><td>28.5 to 30.5 in (72 to 77 cm)</td><td>19.5 to 21.5 in</td><td>45.5 to 47.5 in (116 to 121 cm)</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The chart includes about 1 in for normal shoes. The sitting values follow the <a href="https://www.inchcalculator.com/desk-height-calculator/" target="_blank" rel="noopener">Inch Calculator desk height table</a>, which aligns the desk with your elbows while seated, and the standing values follow the Autonomous height chart. No official body sets a desk height by person height, so treat these as starting points and fine-tune with your own elbow height.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<figure class="dsh-diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="dh-t dh-d"><title id="dh-t">Ergonomic desk height guide</title><desc id="dh-d">Side view of a person sitting at a desk with the ergonomic rules. The desk or keyboard is at elbow height so the elbows bend at about 90 degrees and the forearms are level. The chair is set so the feet are flat on the floor and the thighs are about level. The top of the screen is at or slightly below eye level, about an arm's length away. A table shows desk heights by person height.</desc><rect width="1200" height="900" fill="#F7F1E9"/><text x="60" y="84" font-size="44" font-weight="700" fill="#342E2A">The Right Desk Height</text><text x="60" y="124" font-size="22" fill="#6E645C">Desk at elbow height, feet flat, screen at eye level</text><text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text><line x1="60" y1="780" x2="700" y2="780" stroke="#B98A5E" stroke-width="4"/><rect x="170" y="674.6" width="110" height="12" rx="5" fill="#8FA689"/><rect x="164" y="538.2" width="14" height="136.4" rx="6" fill="#8FA689"/><line x1="225" y1="686.6" x2="225" y2="766" stroke="#6E645C" stroke-width="7"/><line x1="185" y1="772" x2="265" y2="772" stroke="#6E645C" stroke-width="7"/><rect x="360" y="615.7" width="300" height="12" fill="#D9B48A"/><line x1="375" y1="627.7" x2="375" y2="780" stroke="#B98A5E" stroke-width="8"/><line x1="645" y1="627.7" x2="645" y2="780" stroke="#B98A5E" stroke-width="8"/><rect x="600" y="482.4" width="14" height="86.8" fill="#342E2A"/><line x1="607" y1="569.2" x2="607" y2="615.7" stroke="#6E645C" stroke-width="6"/><rect x="580" y="609.7" width="54" height="6" fill="#6E645C"/><line x1="210" y1="656.0" x2="315" y2="656.0" stroke="#E9C46A" stroke-width="22" stroke-linecap="round"/><line x1="315" y1="656.0" x2="315" y2="774" stroke="#E9C46A" stroke-width="22" stroke-linecap="round"/><line x1="210" y1="656.0" x2="204" y2="525.8" stroke="#E9C46A" stroke-width="22" stroke-linecap="round"/><line x1="204" y1="525.8" x2="212" y2="606.4" stroke="#E9C46A" stroke-width="22" stroke-linecap="round"/><line x1="212" y1="606.4" x2="400" y2="606.4" stroke="#E9C46A" stroke-width="22" stroke-linecap="round"/><circle cx="208" cy="482.4" r="38" fill="#E9C46A"/><line x1="305" y1="772" x2="345" y2="772" stroke="#E9C46A" stroke-width="16" stroke-linecap="round"/><rect x="380" y="607.7" width="80" height="8" rx="2" fill="#342E2A"/><line x1="238" y1="482.4" x2="600" y2="482.4" stroke="#8FA689" stroke-width="3" stroke-dasharray="10 8"/><text x="360" y="442.4" font-size="20" font-weight="700" fill="#C85A32" text-anchor="start">Top of screen at eye level</text><text x="360" y="466.4" font-size="16" fill="#6E645C" text-anchor="start">about an arm’s length away</text><text x="392" y="679.7" font-size="20" font-weight="700" fill="#C85A32" text-anchor="start">Desk at elbow height</text><text x="392" y="703.7" font-size="16" fill="#6E645C" text-anchor="start">elbows at about 90°</text><text x="150" y="820" font-size="20" font-weight="700" fill="#C85A32" text-anchor="start">Feet flat, thighs level</text><text x="150" y="844" font-size="16" fill="#6E645C" text-anchor="start">raise the chair, add a footrest</text><rect x="760" y="200" width="380" height="520" rx="18" fill="#fff" stroke="#E6DCCF" stroke-width="2"/><text x="784" y="246" font-size="22" font-weight="700" fill="#342E2A">Desk height by height</text><text x="784" y="286" font-size="15" font-weight="700" fill="#6E645C">You</text><text x="896" y="286" font-size="15" font-weight="700" fill="#6E645C">Sitting</text><text x="1012" y="286" font-size="15" font-weight="700" fill="#6E645C">Standing</text><rect x="772" y="300" width="356" height="56" rx="10" fill="#CFDDCB" fill-opacity="0.5"/><text x="784" y="336" font-size="17" font-weight="700" fill="#342E2A">5 ft 0 in</text><text x="896" y="336" font-size="16" fill="#C85A32" font-weight="700">22.5-24.5 in</text><text x="1012" y="336" font-size="16" fill="#C85A32" font-weight="700">35.5-37.5 in</text><text x="784" y="406" font-size="17" font-weight="700" fill="#342E2A">5 ft 4 in</text><text x="896" y="406" font-size="16" fill="#C85A32" font-weight="700">23.5-25.5 in</text><text x="1012" y="406" font-size="16" fill="#C85A32" font-weight="700">37.5-39.5 in</text><rect x="772" y="440" width="356" height="56" rx="10" fill="#CFDDCB" fill-opacity="0.5"/><text x="784" y="476" font-size="17" font-weight="700" fill="#342E2A">5 ft 8 in</text><text x="896" y="476" font-size="16" fill="#C85A32" font-weight="700">25.5-27.5 in</text><text x="1012" y="476" font-size="16" fill="#C85A32" font-weight="700">40.5-42.5 in</text><text x="784" y="546" font-size="17" font-weight="700" fill="#342E2A">6 ft 0 in</text><text x="896" y="546" font-size="16" fill="#C85A32" font-weight="700">26.5-28.5 in</text><text x="1012" y="546" font-size="16" fill="#C85A32" font-weight="700">43-45 in</text><rect x="772" y="580" width="356" height="56" rx="10" fill="#CFDDCB" fill-opacity="0.5"/><text x="784" y="616" font-size="17" font-weight="700" fill="#342E2A">6 ft 4 in</text><text x="896" y="616" font-size="16" fill="#C85A32" font-weight="700">28.5-30.5 in</text><text x="1012" y="616" font-size="16" fill="#C85A32" font-weight="700">45.5-47.5 in</text><text x="784" y="690" font-size="14" fill="#6E645C">Estimates with normal shoes. Your own</text><text x="784" y="708" font-size="14" fill="#6E645C">elbow height is the best guide.</text></svg><figcaption>The right desk height: the desk or keyboard at elbow height with the elbows at about 90 degrees, feet flat and thighs level, and the top of the screen at eye level about an arm's length away. The table shows sitting and standing desk heights by person height.</figcaption></figure>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Find Your Perfect Desk Height</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3082,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/desk-height-calculator-03-desk-chair-monitor-heights.jpg" alt="Ergonomic chair at a white oak desk with a monitor on a riser, the keyboard near the desk edge and a footrest underneath" class="wp-image-3082"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Set the chair first.</strong> Raise or lower it until your feet rest flat on the floor and your thighs are about level.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Bend your elbows to about 90 degrees</strong> with your shoulders relaxed, and measure from the floor to the underside of your forearm. That is your elbow height.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Put the keyboard at or just below that height.</strong> If the desk is fixed and too high, raise the chair and add a footrest, or use a keyboard tray.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Set the screen</strong> so the top is at or slightly below eye level, about an arm's length away.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>The UK Health and Safety Executive recommends a <a href="https://www.hse.gov.uk/msd/dse/good-posture.htm" target="_blank" rel="noopener">keyboard just below elbow height</a>, and OSHA says <a href="https://www.osha.gov/etools/computer-workstations/positions" target="_blank" rel="noopener">elbows stay in close to the body and are bent between 90 and 120 degrees</a>. For your legs, Mayo Clinic advises: <a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/office-ergonomics/art-20046169" target="_blank" rel="noopener">adjust the height of the chair so that your feet rest flat on the floor</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What Is the Standard Desk Height?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3080,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/desk-height-calculator-01-home-office-desk.jpg" alt="White oak home office desk with a sage green ergonomic chair, a monitor at eye level, a keyboard and a desk lamp by a window" class="wp-image-3080"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Most desks are 28 to 30 in (71 to 76 cm) tall. Cornell University's ergonomics guide puts a typical desk <a href="https://ergo.human.cornell.edu/ergoguide.html" target="_blank" rel="noopener">between 28”-30” above the floor (suitable for most adults)</a>, but Ergoweb points out that <a href="https://ergoweb.com/29-inch-desk-height-revisited/" target="_blank" rel="noopener">29 inches actually represents a one-size-fits-all, significant compromise</a>. For shorter people a standard desk is often too high, which pushes the shoulders up. OSHA's fix: <a href="https://www.osha.gov/etools/computer-workstations/components/desks" target="_blank" rel="noopener">if the work surface cannot be lowered, raise the chair to accommodate the user</a>, then add a footrest so your feet still rest flat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Standing Desk Height</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3081,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/desk-height-calculator-02-standing-desk.jpg" alt="White oak sit-stand desk raised to standing height with a monitor arm, a keyboard and an anti-fatigue mat on the floor" class="wp-image-3081"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>A standing desk follows the same rule: <a href="https://www.bellevuecollege.edu/wp-content/uploads/sites/395/2020/06/Standing-Desk-Setup.pdf" target="_blank" rel="noopener">table height approximately at standing elbow height</a>. Autonomous puts most adults <a href="https://www.autonomous.ai/en-GB/desk-height-calculator" target="_blank" rel="noopener">between 38 and 46 inches (97 to 117 cm)</a> when standing; shorter and taller people fall outside that range, so check your own elbow height. Set the height wearing the shoes you usually work in.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Standing all day is not the goal either. Cornell's research suggests a simple rhythm: sit for 20 minutes, <a href="https://ergo.human.cornell.edu/CUESitStand.html" target="_blank" rel="noopener">then every 20 minutes stand for 8 minutes AND MOVE for 2 minutes</a>. On a sit-stand desk, save your sitting and standing heights as presets so switching takes one tap.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Chair Height</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A good office chair adjusts to your desk, not the other way round. The ANSI/HFES office standard, summarized by the University of California, says the <a href="https://uhs.berkeley.edu/sites/default/files/uc_task_chair_requirements_1.pdf" target="_blank" rel="noopener">seat height is adjustable at least 4.5 inches within the range of 15 - 22 inches from the floor</a>. Once your feet are flat, HSE suggests a <a href="https://www.hse.gov.uk/msd/dse/good-posture.htm" target="_blank" rel="noopener">gap of 2-3 cm between front of seat bottom and back of knee</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Monitor Height and Distance</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3085,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/desk-height-calculator-06-monitor-height.jpg" alt="Monitor on an adjustable arm with the top of the screen at eye level above a keyboard and mouse on a white oak desk" class="wp-image-3085"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>OSHA says <a href="https://www.osha.gov/etools/computer-workstations/components/monitors" target="_blank" rel="noopener">the top of the monitor should be at or slightly below eye level</a>, and Mayo Clinic adds that <a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/office-ergonomics/art-20046169" target="_blank" rel="noopener">the monitor should be no closer to you than 20 inches (about 50 centimeters)</a>, about an arm's length away. If you wear bifocals, lower the screen another 1 to 2 in so you do not tilt your head back. Laptops sit too low for long sessions: put them on a stand and use a separate keyboard and mouse.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Desks for Small Spaces and Kids</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3083,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/desk-height-calculator-04-small-desk-nook.jpg" alt="Small floating white oak desk in a bedroom corner with a cream chair, a laptop on a stand and a shelf above" class="wp-image-3083"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>In a small room, a wall-mounted or floating desk lets you choose the exact height, because you set the brackets yourself. Mount it at your seated elbow height minus the thickness of the keyboard, and keep at least 20 in of leg room underneath.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3084,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/desk-height-calculator-05-kids-desk.jpg" alt="Child's height-adjustable white desk and matching chair with a desk lamp and a pinboard by a window" class="wp-image-3084"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Children need the same posture, just smaller. Cornell notes that <a href="https://ergo.human.cornell.edu/cuchildcomp.html" target="_blank" rel="noopener">young children need a chair that raises them to the correct height for computer use</a> and something stable for their feet. Height-adjustable kids' desks and chairs can grow with them; use the calculator with your child's height and check their elbows.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How the Desk Height Calculator Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Sitting desk:</strong> seated elbow height by person height, based on the Inch Calculator table, with about 1 in added for shoes.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Standing desk:</strong> standing elbow height by person height, based on the Autonomous chart.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Chair seat:</strong> the seat height that keeps your feet flat and thighs level.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Top of screen:</strong> your eye height, estimated from average body proportions. This is our own estimate.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Your elbow height:</strong> if you enter it, the calculator uses it instead of the estimate, which is the most accurate way.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Desk Height in cm (UK)</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In the UK and Europe, most desks are about 72 to 76 cm tall; FlexiSpot UK notes that <a href="https://flexispot.co.uk/blog/how-to-choose-the-ideal-desk-height-buying-guide" target="_blank" rel="noopener">a standard desk height falls within the range of 28 to 30 inches (71-76cm)</a>. HSE's display screen guidance uses the same body-based rules as the US, so choose <em>Centimeters</em> in More options to get every result in cm.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fdesk-height-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fdesk-height-checklist.jpg&description=Desk%20height%20cheat%20sheet%3A%20put%20your%20desk%20at%20elbow%20height%20so%20your%20elbows%20bend%20at%20about%2090%20degrees%2C%20set%20the%20chair%20so%20your%20feet%20are%20flat%2C%20put%20the%20top%20of%20the%20screen%20at%20eye%20level%20an%20arm%E2%80%99s%20length%20away%2C%20and%20set%20a%20standing%20desk%20at%20about%2038%20to%2047%20in." target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/desk-height-checklist.jpg" alt="Desk height cheat sheet" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/desk-height-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the cheat sheet for your next desk setup.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fdesk-height-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fdesk-height-checklist.jpg&description=Desk%20height%20cheat%20sheet%3A%20put%20your%20desk%20at%20elbow%20height%20so%20your%20elbows%20bend%20at%20about%2090%20degrees%2C%20set%20the%20chair%20so%20your%20feet%20are%20flat%2C%20put%20the%20top%20of%20the%20screen%20at%20eye%20level%20an%20arm%E2%80%99s%20length%20away%2C%20and%20set%20a%20standing%20desk%20at%20about%2038%20to%2047%20in." target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Desk Height FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What is the standard desk height?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Most desks are 28 to 30 in (71 to 76 cm) tall. That suits taller people best; shorter people usually need to raise their chair and add a footrest, or use a keyboard tray.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What desk height do I need if I am 5 ft 4 in?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>At about 5 ft 4 in (163 cm), a sitting desk or keyboard about 23.5 to 25.5 in (60 to 65 cm) high and a chair seat about 15.5 to 17.5 in high suit most people. A standing desk should be about 37.5 to 39.5 in (95 to 100 cm).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How high should a standing desk be?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Set it at your standing elbow height, so your elbows bend at about 90 degrees with relaxed shoulders. For most adults that is about 38 to 46 in (97 to 117 cm), measured with your work shoes on.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Should my elbows be level with the desk?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Yes. Your keyboard should be at or just below elbow height, with your forearms roughly level with the floor and your wrists straight.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Free Home Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Setting up a home office? See our <a href="https://dailyspacehacks.com/desk-organization-ideas/">desk organization ideas</a>, plan shelves above the desk with our <a href="https://dailyspacehacks.com/shelf-spacing-calculator/">shelf spacing calculator</a>, and use our <a href="https://dailyspacehacks.com/picture-hanging-height-calculator/">picture hanging height calculator</a> for the art on the wall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->
