@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{
+"name": "l1b-hidden-machines",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A laundry room wall of cream shaker cabinets. In the middle, a tall cabinet nook with two paneled cream doors: the left door is swung fully open, the right door is closed. Inside the open nook, on the floor, a front-loading washing machine with a round glass door on the left and a tumble dryer with a solid white door and no glass window on the right, side by side, clearly two different machines. A wood shelf above the machines inside the nook with a basket. Wall cabinets above, a white oak counter to the right."
+},
+{
+"name": "u1b-narrow-galley",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A long narrow British utility room seen from the doorway. All units are on the left wall only, in this order from front to back: a front-loading washing machine and a front-loading tumble dryer (solid door, no glass window) side by side under a white oak worktop with nothing on the worktop above them; then a separate sage green sink base cupboard with a small white ceramic sink set into the worktop above that cupboard only, the tap at the back with the spout over the bowl; then a tall sage broom cupboard at the far end. The right wall has slim floating oak shelves with jars and towels. A clear walkway about one metre wide, terracotta floor tiles, a window at the far end."
+}
+]
+}
