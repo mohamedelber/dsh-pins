@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A dining room with classic picture frame wainscoting on the lower third of the walls: evenly spaced rectangular moulding boxes of equal width under a chair rail, painted warm white, soft sage green wall above, white oak dining table with cream upholstered chairs, brass chandelier, large window with daylight."
+  },
+  {
+   "name": "02-raised",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A hallway with traditional raised panel wainscoting about 36 inches high: equal raised panels framed by vertical stiles and horizontal rails, a cap moulding on top, painted creamy white, a runner rug on a white oak floor, framed botanical prints above, daylight."
+  },
+  {
+   "name": "03-shaker",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A bedroom wall behind a bed with flat recessed shaker-style wainscoting about two thirds of the wall height, wide flat stiles and rails framing equal flat panels, painted soft sage green, a narrow ledge on top, cream linen bedding, white oak nightstands, brass wall lamps."
+  },
+  {
+   "name": "04-beadboard",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A small bathroom with white beadboard wainscoting about 42 inches high with a simple cap rail, a white pedestal sink, a brass mirror, sage green paint above the beadboard, a woven basket, soft daylight."
+  },
+  {
+   "name": "05-staircase",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A staircase wall with picture frame moulding boxes following the slope of the stairs, painted warm white, white oak treads with a runner, cream walls, soft daylight from a window."
+  },
+  {
+   "name": "06-living",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A living room with tall picture frame moulding: two rows of moulding boxes on the wall behind a cream sofa, the lower boxes under a chair rail, all painted the same warm white as the wall, white oak coffee table, jute rug, plants, brass floor lamp."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A bright entryway with elegant picture frame wainscoting on the lower third of the wall under a chair rail, painted soft sage green, white wall above with a round brass mirror, a white oak console table with a ceramic vase and branches, a runner rug, warm daylight, an inviting Pinterest style photo with the moulding boxes clearly visible."
+  }
+ ]
+}
