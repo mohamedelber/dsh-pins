@@ -8,7 +8,7 @@ TOH="https://www.thisoldhouse.com/kitchens/21016275/how-to-size-a-kitchen-island
 JLC="https://www.jlconline.com/remodeling/guidlines-for-kitchen-island-functionality"
 WR="https://www.wrenkitchens.com/blog/do-you-have-room-for-a-kitchen-island"
 HB="https://www.homebuilding.co.uk/advice/kitchen-island-sizes"
-p("What size kitchen island do you need? Start with the space around it: keep a 42 in work aisle between the island and your counters (48 in if two people cook) and at least 36 in walkways elsewhere. Most kitchens need about 13 ft of width before an island fits, and the average island is about 40 x 80 in. This free <strong>kitchen island size calculator</strong> finds the biggest island that fits your kitchen in two taps.")
+p("What size kitchen island do you need? Start with the space around it: keep a 42 in work aisle between the island and your counters (48 in if two people cook) and at least 36 in walkways elsewhere. Most guides say a kitchen needs about 13 ft of width for an island, though a narrow island with no stools can fit in about 11 to 12 ft, and the average island is about 40 x 80 in. This free <strong>kitchen island size calculator</strong> finds the biggest island that fits your kitchen in two taps.")
 p("Pick your kitchen size and where the cabinets are. You get the largest island that keeps safe walkways, how many stools fit and a top view of the layout. Open <em>More options</em> to type your exact measurements, plan for two cooks, switch to bar height or use meters.")
 add('<!-- wp:html -->\n'+open('tool.html').read()+'\n<!-- /wp:html -->')
 h2("Kitchen Island Size Chart")
@@ -26,12 +26,12 @@ img(4)
 h2("Minimum Kitchen Island Size")
 img(2)
 p(f"Bob Vila says that {ext(BV,'at a minimum, your built-in kitchen island size will need to be four feet by two feet')}, and warns that {ext(BV,'if your kitchen is less than 13 feet wide, it is unlikely that a built-in island will be possible')}. Fixr gives a floor-area check: {ext(FX,'if your kitchen is at least 150 square feet, you should be able to fit an island')}.")
-p("A 2 x 4 ft island works as an extra prep surface, but it is too narrow for seating. If you want stools on one side, plan on about 36 to 42 in of depth.")
+p("A 2 x 4 ft island works as an extra prep surface, but it is too narrow for seating. If you want stools on one side, plan on at least 39 in of depth at counter height (36 in at bar height); 42 in or more is more comfortable.")
 h2("Average Kitchen Island Size")
 p(f"Fixr notes that {ext(FX,'the typical kitchen island dimensions are 40 inches wide by 80 inches long')}, or about 1 x 2 m. Designers also use a simple rule of thumb: Fixr says {ext(FX,'most islands look best when they take up around 10% of the total kitchen square footage')}. This is a style guide, not an NKBA rule, and the calculator shows your percentage so you can judge for yourself.")
 table(["Island","Size","Good for"],[
 ["Small","24 x 48 in (2 x 4 ft)","extra prep space, no seating"],
-["Medium","36 x 72 in (3 x 6 ft)","prep and 2 stools on the end or side"],
+["Medium","36 x 72 in (3 x 6 ft)","prep and 2 to 3 stools at bar height"],
 ["Average","40 x 80 in","prep and 3 stools"],
 ["Large","48 x 96 in (4 x 8 ft) and up","prep, a sink or cooktop and 4 stools"]])
 h2("Kitchen Island Seating: How Much Space per Stool?")
@@ -46,7 +46,7 @@ h2("How Much Overhang for Island Seating?")
 p(f"This Old House recommends {ext(TOH,'a minimum overhang of 15 inches for standard-height counters and a 12-inch overhang for bar-height counters')}. Overhangs past about 10 to 12 in usually need brackets or corbels; the limit depends on the countertop material and thickness, so check with your countertop maker.")
 h2("Island With a Sink or Cooktop")
 img(5)
-p(f"An island with a sink or cooktop needs more length and depth. Bob Vila suggests about 7 ft for an island with either one, and {ext(BV,'at least nine feet long')} for both. For a cooktop, NKBA says {ext(NK,'the countertop should also extend a minimum of 9″ (229 mm) behind the cooking surface')}, so nobody at the stools sits right next to a hot pan.")
+p(f"An island with a sink or cooktop needs more length and depth. Bob Vila suggests about 7 ft for an island with either one, and {ext(BV,'at least nine feet long')} for both. For a cooktop, NKBA says {ext(NK,'the countertop should also extend a minimum of 9″ (229 mm) behind the cooking surface')}, as a safety buffer between the pans and anyone on the other side.")
 h2("Small Kitchen? Try a Cart or a Peninsula")
 img(6)
 p("If the calculator says a fixed island will not fit, a rolling cart about 2 x 3 ft gives you extra prep space and moves out of the way when you need the floor. A peninsula, joined to the end of your counters, needs a walkway on only three sides and often fits where an island does not.")
@@ -58,7 +58,7 @@ lst(["<strong>Cabinets:</strong> 25 in deep (24 in base cabinets plus the counte
 "<strong>Rule of thumb:</strong> we show how much of the floor the island covers, compared with the 10% guide."])
 p("These are planning guidelines, not building codes. Check door swings, appliance doors and windows before you build.")
 h2("Kitchen Island Size in the UK")
-p(f"UK designers work in metres but use similar numbers. Wren says that {ext(WR,'generally the rule of thumb is a 1 metre clearance zone')} around the island, and Homebuilding &amp; Renovating notes that {ext(HB,'the practical minimum size for an island is 1m x 1m')}. For the average, Wren says {ext(WR,'the average size of an island is 1 by 2 metres')}. UK sources disagree on room width: some say a 4.2 m wide room is enough, others say 4.5 to 5 m. Choose <em>Meters</em> in More options to use the calculator in metric.")
+p(f"UK designers work in metres but use similar numbers. Wren says that {ext(WR,'generally the rule of thumb is a 1 metre clearance zone')} around the island, and Homebuilding &amp; Renovating notes that {ext(HB,'the practical minimum size for an island is 1m x 1m')}. For the average, Wren says {ext(WR,'the average size of an island is 1 by 2 metres')}. UK sources disagree on room width: some say a room at least 4.2 m wide, others say 4.5 to 5 m. Choose <em>Meters</em> in More options to use the calculator in metric.")
 add(open('savebox.html').read())
 h2("Kitchen Island Size FAQ")
 h3("How much space do you need around a kitchen island?")

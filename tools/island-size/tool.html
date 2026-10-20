@@ -98,7 +98,7 @@ function ft(x){var f=Math.floor(x/12),i=Math.round(x-f*12);if(i===12){f+=1;i=0}r
 function sz(x){return unit==='m'?(x*0.0254).toFixed(2)+' m':(x>=48?ft(x):Math.round(x)+' in')}
 function dims(a,b){return unit==='m'?(a*0.0254).toFixed(2)+' x '+(b*0.0254).toFixed(2)+' m':ft(a)+' x '+Math.round(b)+' in'}
 function inch(x){return unit==='m'?(x*0.0254).toFixed(2)+' m':Math.round(x)+' in'}
-function setUnit(u){if(u===unit)return;unit=u;var n=u==='m'?'m':'ft';$('lL').textContent='Kitchen length ('+n+')';$('lW').textContent='Kitchen width ('+n+')'}
+function setUnit(u){if(u===unit)return;unit=u;$('kl').min=$('kw').min=u==='m'?'1.5':'5';$('kl').step=$('kw').step=u==='m'?'0.1':'0.5';var n=u==='m'?'m':'ft';$('lL').textContent='Kitchen length ('+n+')';$('lW').textContent='Kitchen width ('+n+')'}
 function plan(L,W,t,Li,Di,ix,iy,seats,seat){var S=Math.min(320/L,170/W),w=L*S,h=W*S,x=(360-w)/2,y=14,d=CD*S;
 var s='<svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top view of the kitchen with cabinets, island and walkways">';
 s+='<rect width="360" height="220" fill="#FBF6EF"/><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#fff" stroke="#342E2A" stroke-width="2"/>';
@@ -112,33 +112,33 @@ s+='<text x="'+(x+w/2)+'" y="'+(y+h+14)+'" font-size="11" font-weight="700" text
 return s+'</svg>'}
 function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];
 var q=ks.split('x'),L=parseFloat(q[0])*12,W=parseFloat(q[1])*12;var f=u==='m'?39.37:12;
-if(num('kl')){L=num('kl')*f}if(num('kw')){W=num('kw')*f}if(W>L){var t0=L;L=W;W=t0}
+if(num('kl')){L=num('kl')*f}if(num('kw')){W=num('kw')*f}
 var A=parseFloat($('ai').value),seat=$('se').value==='side',knee=$('ch').value==='42'?12:15;
 var ends=lay==='one'?72:(lay==='L'?A+36+CD:2*(A+CD));
 var Li=Math.min(120,Math.floor((L-ends)/6)*6);
 var back=36,Di=0,hasSeat=false;
 if(seat){var dS=W-CD-A-44;if(dS>=24+knee){Di=Math.min(48,dS);hasSeat=true}}
 if(!hasSeat){Di=Math.min(48,W-CD-A-back)}
-Di=Math.floor(Di/2)*2;
-var fits=Li>=48;if(Di>=24){}else{fits=false}
+Di=hasSeat?Math.max(24+knee,Math.floor(Di/2)*2):Math.floor(Di/2)*2;
+var fits=Li>=48;if(Di>=24){}else{fits=false}if(Li>=24){if(Di>=48){fits=true}}
 var seats=hasSeat?Math.floor(Li/24):0;
 var ix=lay==='one'?(L-Li)/2:(lay==='L'?CD+A+((L-CD-A-36)-Li)/2:(L-Li)/2),iy=CD+A;
 if(fits){
 $('k1').textContent=dims(Li,Di);$('k1e').textContent=(u==='m'?(Li*Di*0.00064516).toFixed(1)+' m2':Math.round(Li*Di/144)+' sq ft')+' of top'+(hasSeat?', incl. '+inch(knee)+' overhang':'');
-$('k2').textContent=seats?seats+(seats===1?' stool':' stools'):'none on the side';$('k2e').textContent=seats?inch(24)+' per stool, on one long side':'not enough depth for knee space';
+$('k2').textContent=seats?seats+(seats===1?' stool':' stools'):(seat?'none on the side':'none');$('k2e').textContent=seats?inch(24)+' per stool, on the side away from the cabinets':(seat?'not enough depth for knee space':'seating is turned off');
 $('k3').textContent=inch(A)+' work aisle';$('k3e').textContent=hasSeat?inch(44)+' behind the stools':inch(back)+' walkway behind';
 vv.textContent='The biggest island that fits is about '+dims(Li,Di)+(seats?', with '+seats+(seats===1?' stool':' stools'):'')+'. That keeps a '+inch(A)+' work aisle in front of the cabinets.';
-var ratio=Li*Di/(L*W)*100;tips.push('Your island would cover about '+Math.round(ratio)+'% of the kitchen floor. Designers often aim for about 10%, so '+(ratio>12?'a slightly smaller island may feel roomier.':'this is a balanced size.'));
-if(!hasSeat){if(seat){tips.push('For stools on the side you need about '+inch(24+knee)+' of island depth plus '+inch(44)+' behind the stools. Try one or two stools at the end instead.')}}
-if(Li>=120){tips.push('We cap the length at 10 ft: longer tops often need a seam or a second slab. A longer island also makes people walk further around it.')}
-}else{vv.className='verdict amb';$('k1').textContent='too tight';$('k1e').textContent='for a fixed island with these walkways';$('k2').textContent='0';$('k2e').textContent='';$('k3').textContent=inch(A)+' work aisle';$('k3e').textContent='plus 36 in walkways';
+var ratio=Li*Di/(L*W)*100;tips.push('Your island would cover about '+Math.round(ratio)+'% of the kitchen floor. Designers often aim for about 10%, so '+(ratio>12?'a slightly smaller island may feel roomier.':(7>ratio?'the island may look small in a room this big.':'this is a balanced size.')));
+if(!hasSeat){if(seat){tips.push('For stools on the side you need about '+inch(24+knee)+' of island depth plus '+inch(44)+' behind the stools. Or make the island about '+inch(24)+' shorter and put a stool at the end.')}}
+if(Li>=120){tips.push('We cap the length at '+sz(120)+': longer tops often need a seam or a second slab. A longer island also makes people walk further around it.')}
+}else{vv.className='verdict amb';$('k1').textContent='too tight';$('k1e').textContent='for a fixed island with these walkways';$('k2').textContent='0';$('k2e').textContent='';$('k3').textContent=inch(A)+' work aisle';$('k3e').textContent='plus '+inch(36)+' walkways';
 vv.textContent='A fixed island does not fit with safe walkways in this kitchen. Try a rolling cart, a peninsula or a narrow table instead.';
-tips.push('A rolling cart about 2 x 3 ft can work as a mini island if you can still keep about '+inch(36)+' around it.')}
+tips.push('A rolling cart about '+(u==='m'?'0.6 x 0.9 m':'2 x 3 ft')+' can work as a mini island if you can still keep about '+inch(36)+' around it.')}
 tips.push('Allow '+inch(24)+' of counter per stool, and '+inch(knee)+' of knee space under a '+inch(parseFloat($('ch').value))+' high counter.');
-tips.push('Overhangs past about 10 to 12 in usually need brackets or corbels. Check the limit with your countertop maker.');
+if(A===36){tips.push('A '+inch(36)+' work aisle is below the NKBA guide of '+inch(42)+'. It is fine for walking, but tight when you cook.')}tips.push('Overhangs past about '+(u==='m'?'0.25 to 0.30 m':'10 to 12 in')+' usually need brackets or corbels. Check the limit with your countertop maker.');
 $('vz').innerHTML=plan(L,W,lay,fits?Li:0,Di,ix,iy,seats,hasSeat);
 $('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
-summary=fits?'Kitchen island for my '+sz(L)+' x '+sz(W)+' kitchen: about '+dims(Li,Di)+', '+seats+' stools, '+inch(A)+' work aisle. dailyspacehacks.com/kitchen-island-size-calculator/':'My kitchen is too tight for a fixed island; a cart or peninsula works better. dailyspacehacks.com/kitchen-island-size-calculator/'}
+summary=fits?'Kitchen island for my '+sz(L)+' x '+sz(W)+' kitchen: about '+dims(Li,Di)+', '+(seats?seats+(seats===1?' stool':' stools'):'no stools')+', '+inch(A)+' work aisle. dailyspacehacks.com/kitchen-island-size-calculator/':'My kitchen is too tight for a fixed island; a cart or peninsula works better. dailyspacehacks.com/kitchen-island-size-calculator/'}
 R.querySelectorAll('[data-k]').forEach(function(b){b.addEventListener('click',function(){ks=b.getAttribute('data-k');pick('data-k',ks);$('kl').value='';$('kw').value='';calc()})});
 R.querySelectorAll('[data-c]').forEach(function(b){b.addEventListener('click',function(){lay=b.getAttribute('data-c');pick('data-c',lay);calc()})});
 ['un','kl','kw','ai','se','ch'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
