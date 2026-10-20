@@ -55,6 +55,7 @@ img(5)
 h2("Kitchen Island Pendant Spacing")
 img(4)
 p(f"Lightopia's guide says to {ext(LT,'hang pendants 30 to 36 inches above the countertop')} and to {ext(LT,'space pendants 24 to 30 inches apart, measured from the center of one fixture to the center of the next')}, leaving at least 6 in from the end of the island to the center of the first pendant. As a rough guide, a 6 ft island takes 2 to 3 pendants and an 8 ft island takes 3.")
+p(f"Still planning the island itself? Our {a('kitchen-island-size-calculator','kitchen island size calculator')} finds the biggest island that fits your kitchen, so you can space the pendants to match.")
 h2("Chandelier Safety and Installation")
 lst([f"<strong>Weight:</strong> under the National Electrical Code, as explained by EC&amp;M, {ext(EC,'outlet boxes for luminaires can support a luminaire that weighs up to 50 lb')}; a heavier fixture needs a box listed for its weight or separate support.",
 f"<strong>Box rating:</strong> Home Depot notes that {ext(HD,'most ceiling boxes can hold 50 pounds to 75 pounds')}, so check the box before you buy a heavy chandelier.",
