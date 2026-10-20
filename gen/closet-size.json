@@ -2,46 +2,10 @@
  "model": "gpt-image-2.5-sunburst",
  "items": [
   {
-   "name": "01-hero",
-   "size": "1536x1024",
-   "quality": "high",
-   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A spacious double-sided walk-in closet seen from the doorway, looking straight down a clear central aisle about 3 feet wide: white built-in closet system on both long walls with hanging rods of neatly hung clothes on wooden hangers, open shelves of folded sweaters, a row of drawers, shoes on slanted shelves, a runner rug on oak floors, a window with a sheer curtain at the far end, a brass pendant light. The aisle between the two sides is clearly wide enough to walk and turn."
-  },
-  {
-   "name": "02-small-one-wall",
-   "size": "1024x1024",
-   "quality": "medium",
-   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A small walk-in closet about 5 by 5 feet with storage on just one wall: one hanging rod with clothes on matching wooden hangers, a shelf above with woven baskets, a short stack of drawers, and an open walkway in front of the storage. Simple, compact, realistic, a white door frame visible at the edge."
-  },
-  {
-   "name": "03-double-sided",
+   "name": "03b-double-sided",
    "size": "1536x1024",
    "quality": "medium",
-   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A narrow but comfortable double-sided walk-in closet: hanging rods with clothes on both facing walls, upper shelves with linen boxes, a clear aisle down the middle, oak floor, a round brass ceiling light, a full-length mirror on the end wall. Symmetrical view down the aisle."
-  },
-  {
-   "name": "04-l-shape",
-   "size": "1024x1024",
-   "quality": "medium",
-   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. An L-shaped walk-in closet: storage on two walls that meet in a corner, double hanging rods on the long wall (one rod high, one rod low, shirts on both), shelves and drawers on the short wall, a clear open floor area with a small round jute rug and a stool. View from the doorway corner."
-  },
-  {
-   "name": "05-u-shape-island",
-   "size": "1536x1024",
-   "quality": "medium",
-   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A large U-shaped walk-in closet with storage on three walls and a white oak center island with drawers and a stone top, generous walking space all around the island, hanging clothes on wooden hangers, shoe shelves, a brass chandelier, a window. Luxury but calm and realistic."
-  },
-  {
-   "name": "06-double-hang",
-   "size": "1024x1024",
-   "quality": "medium",
-   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. Close view of a closet wall section showing double hang: an upper rod and a lower rod, each with shirts and folded trousers on matching wooden hangers, next to a tall long-hang section with dresses and coats that reach lower, shelves with folded sweaters above. Front-on view, neat and evenly spaced."
-  },
-  {
-   "name": "07-pin",
-   "size": "1024x1536",
-   "quality": "high",
-   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. Vertical photo looking down the aisle of a bright walk-in closet with white built-in storage on both sides, clothes on wooden hangers, folded sweaters on shelves, shoes on slanted shelves, a runner rug, a window with daylight at the far end. The top third of the image is a calm, plain, warm ceiling and wall area. One clear focal point."
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, tidy and organized, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A narrow but comfortable double-sided walk-in closet: hanging rods with clothes on both facing walls, upper shelves with linen boxes, a clear aisle down the middle, oak floor, a round brass ceiling light, a framed abstract art print and a small wall hook on the end wall (no mirror). Symmetrical view down the aisle."
   }
  ]
 }
