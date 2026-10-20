@@ -132,8 +132,8 @@ $('fs-room').classList.toggle('hide',!(room==='living'||room==='bedroom'||room==
 $('fs-table').classList.toggle('hide',room!=='dining');$('fs-isl').classList.toggle('hide',room!=='island');
 R.querySelectorAll('.xr').forEach(function(x){x.classList.toggle('hide',room==='dining'||room==='island')});R.querySelectorAll('.xt').forEach(function(x){x.classList.toggle('hide',room!=='dining')});R.querySelectorAll('.xi').forEach(function(x){x.classList.toggle('hide',room!=='island')});
 var bLo=Math.round(ceil*2.5),bHi=Math.round(ceil*3);
-if(room==='dining'){var p=tb.split('x'),tw=parseFloat(p[0]),tl=parseFloat(p[1]);if(num('tw')){tw=num('tw')}if(num('tl')){tl=num('tl')}if(tl<tw){var t=tl;tl=tw;tw=t}
-var dLo=Math.round(tw/2),dHi=Math.round(Math.min(tw*2/3,tw-12));if(dHi<dLo){dHi=dLo}
+if(room==='dining'){var p=tb.split('x'),tw=parseFloat(p[0]),tl=parseFloat(p[1]);if(num('tw')){tw=num('tw')}if(num('tl')){tl=num('tl')}if(tw>tl){var t=tl;tl=tw;tw=t}
+var dLo=Math.round(tw/2),dHi=Math.round(Math.min(tw*2/3,tw-12));if(dLo>dHi){dHi=dLo}
 var hLo=30+3*Math.max(0,ceil-8),hHi=36+3*Math.max(0,ceil-8);var longT=tl>=tw*1.6;
 $('k1t').textContent='Chandelier width';$('k1').textContent=dLo+' to '+dHi+' in';$('k1e').textContent=cm(dLo)+' to '+cm(dHi)+' across';
 $('k2t').textContent='Fixture height';$('k2').textContent=bLo+' to '+bHi+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling';
@@ -159,15 +159,15 @@ else{var q=rs.split('x'),rl=parseFloat(q[0]),rw=parseFloat(q[1]);if(num('rl')){r
 var d=Math.round(rl+rw);var minB=84;var maxBody=H-minB;var two=ceil>=16;
 $('k1t').textContent='Chandelier width';$('k1').textContent='about '+d+' in';$('k1e').textContent=cm(d)+' across ('+rl+' + '+rw+' ft = '+d+' in)';
 $('k2t').textContent='Fixture height';
-if(maxBody<bLo){$('k2').textContent='up to '+Math.max(0,maxBody)+' in';$('k2e').textContent='low ceiling: choose a flush or semi-flush fixture'}else{$('k2').textContent=bLo+' to '+bHi+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling'}
+if(bLo>maxBody){$('k2').textContent='up to '+Math.max(0,maxBody)+' in';$('k2e').textContent='low ceiling: choose a flush or semi-flush fixture'}else{$('k2').textContent=bLo+' to '+bHi+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling'}
 $('k3t').textContent='Bottom of the fixture';$('k3').textContent=two?'at the 2nd floor level':'at least 7 ft up';$('k3e').textContent=two?'and at least 7 ft above the floor':'84 in above the floor where people walk';
 var nm={living:'living room',bedroom:'bedroom',foyer:'foyer'}[room];
-vv.textContent='For a '+rl+' x '+rw+' ft '+nm+', choose a chandelier about '+d+' in wide'+(maxBody<bLo?' that sits close to the ceiling,':',')+' with its bottom at least 7 ft above the floor.';
-if(maxBody<bLo){tips.push('With a ceiling of '+ceil+' ft there are only '+maxBody+' in between the ceiling and 7 ft, so a tall chandelier will not fit where people walk: choose a flush or semi-flush fixture, or hang it over a table or bed instead.')}
+vv.textContent='For a '+rl+' x '+rw+' ft '+nm+', choose a chandelier about '+d+' in wide'+(bLo>maxBody?' that sits close to the ceiling,':',')+' with its bottom at least 7 ft above the floor.';
+if(bLo>maxBody){tips.push('With a ceiling of '+ceil+' ft there are only '+maxBody+' in between the ceiling and 7 ft, so a tall chandelier will not fit where people walk: choose a flush or semi-flush fixture, or hang it over a table or bed instead.')}
 if(room==='foyer'){tips.push(two?'In a two-story foyer, line the chandelier up with the second-floor landing so it looks right from upstairs too.':'In a one-story entry, keep the bottom at least 7 ft above the floor and clear of the door swing.')}
 if(room==='bedroom'){tips.push('Many people center a bedroom chandelier over the foot of the bed or the middle of the room, so it is not right above their head.')}
 tips.push('The room rule gives a starting point: go a little bigger for a room with tall ceilings or a strong style, a little smaller for a busy room.');
-$('vz').innerHTML=viz(ceil,d,maxBody<bLo?Math.max(6,maxBody):(bLo+bHi)/2,two?H-36:Math.max(84,H-((maxBody<bLo?Math.max(6,maxBody):(bLo+bHi)/2))-12),'room',0);
+$('vz').innerHTML=viz(ceil,d,bLo>maxBody?Math.max(6,maxBody):(bLo+bHi)/2,two?H-36:Math.max(84,H-((bLo>maxBody?Math.max(6,maxBody):(bLo+bHi)/2))-12),'room',0);
 summary=nm.charAt(0).toUpperCase()+nm.slice(1)+' '+rl+' x '+rw+' ft: chandelier about '+d+' in wide, bottom at least 7 ft above the floor (ceiling '+ceil+' ft). dailyspacehacks.com/chandelier-size-calculator/'}
 tips.push('Check the weight: a standard ceiling box supports a fixture up to 50 lb, so a heavier one needs a box listed for its weight. Have an electrician install it if you are unsure.');
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('')}
