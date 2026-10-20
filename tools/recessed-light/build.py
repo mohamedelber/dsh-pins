@@ -39,11 +39,11 @@ table(["Room size","8 ft ceiling","9 ft ceiling","10 ft ceiling"],[
 ["16 x 14 ft","12 (3 rows of 4)","12 (3 rows of 4)","9 (3 rows of 3)"],
 ["20 x 16 ft","20 (4 rows of 5)","16 (4 rows of 4)","12 (3 rows of 4)"],
 ["12 x 4 ft hallway","3 (one row)","3 (one row)","2 (one row)"]])
-p("The chart uses the half-the-ceiling-height rule and rounds to whole rows, so the real spacing can be a few inches wider or closer. Brightness is the second half of the job: the calculator checks the lumens your room needs and suggests the light size to match.")
+p("The chart uses the half-the-ceiling-height rule and rounds to whole rows, so the real spacing can be up to about a foot wider or closer (a 12 x 12 ft room with a 10 ft ceiling gets lights 6 ft apart, not 5 ft). Brightness is the second half of the job: the calculator checks the lumens your room needs and suggests the light size to match.")
 img(1)
 h2("How Far Apart Should Recessed Lights Be?")
-p(f"The most common rule is simple: Home Depot says to {ext(HDB,'divide the height of the ceiling by two to get the distance the lights should be from one another')}. So an 8 ft ceiling gets lights about 4 ft apart and a 10 ft ceiling about 5 ft apart. For high ceilings, Kichler adds a limit: {ext(KIC,"but don't go more than 6 feet apart, or you'll lose the impact")}.")
-p(f"For the walls, RecessedLighting.com says {ext(RLP,'the distance between your lights is always twice (2x) the distance from the wall to the first light')}. That puts the first light about 2 ft from the wall on an 8 ft ceiling. Fixed figures vary: Philips Hue suggests {ext(PH,'about 1.5–2 ft from the wall')}, while Home Depot suggests about 3 ft from the wall {ext(HDB,'to avoid creating shadows that make your ceilings look lower')}. Anything from about 1.5 to 3 ft works; the half-spacing rule keeps the light even.")
+p(f"The most common rule is simple: Home Depot says to {ext(HDB,'divide the height of the ceiling by two to get the distance the lights should be from one another')}. So an 8 ft ceiling gets lights about 4 ft apart and a 10 ft ceiling about 5 ft apart. Kichler adds a limit: {ext(KIC,'but don’t go more than 6 feet apart, or you’ll lose the impact')}.")
+p(f"For the walls, RecessedLighting.com says {ext(RLP,'the distance between your lights is always twice (2x) the distance from the wall to the first light')}. That puts the first light about 2 ft from the wall on an 8 ft ceiling. Fixed figures vary: Philips Hue's layout table gives {ext(PH,'1.5–2 ft (50–60 cm)')} from the wall for an 8 ft ceiling, while Home Depot suggests about 3 ft from the wall {ext(HDB,'to avoid creating shadows that make your ceilings look lower')}. Anything from about 1.5 to 3 ft works; the half-spacing rule keeps the light even.")
 lst(["<strong>Measure the room</strong> and note the ceiling height.",
 "<strong>Find the spacing:</strong> ceiling height divided by 2.",
 "<strong>Count the lights per row:</strong> room length divided by the spacing, rounded to a whole number. Do the same for the width to get the number of rows.",
@@ -57,7 +57,7 @@ table(["Room","Lumens per sq ft","Example: 12 x 14 ft room"],[
 ["Kitchen (general), dining room","30 to 40","about 5,880 lumens"],
 ["Home office","20 to 50","about 6,720 lumens"],
 ["Bathroom","20 to 50 (some guides say 70 to 80)","about 8,400 lumens"]])
-p(f"The living, kitchen, dining and hallway ranges come from a Penn State course page based on guidance from {ext(PSU,'the Illuminating Engineering Society (IES)')}. Sources disagree on bathrooms: IES-based tables give 20 to 50, while Hunker's rule of thumb is {ext(HUN,'70–80 lumens per square foot')}. The calculator uses 50 as a middle value and lets you pick <em>Brighter</em>. Real rooms lose some light to walls and trims, so a little extra and a dimmer is the safe choice. As RecessedLighting.com puts it, {ext(RLN,"Most often you'll be better off installing brighter lights rather than more lights.")}")
+p(f"The living, bedroom, kitchen, dining, office and bathroom ranges come from a Penn State course page based on guidance from {ext(PSU,'the Illuminating Engineering Society (IES)')}; the 5 to 10 hallway range is from Dutton Brown (Penn State gives 5 to 20). Sources disagree on bathrooms: IES-based tables give 20 to 50, while Hunker's rule of thumb is {ext(HUN,'70–80 lumens per square foot')}. The calculator uses 50 as a middle value and lets you pick <em>Brighter</em>. Real rooms lose some light to walls and trims, so a little extra and a dimmer is the safe choice. As RecessedLighting.com puts it, {ext(RLN,'Most often you’ll be better off installing brighter lights rather than more lights.')}")
 h2("4 Inch vs 6 Inch Recessed Lights")
 p(f"Home Depot notes that {ext(HDB,'6-inch fixtures are most common for general lighting purposes')}, while {ext(HDL,'3-inch/4-inch: The smallest sizes of housing, they are used mainly for small areas')}. Typical LED models give about 600 lumens for a 4 in light (Halo HLB4: {ext(HALO4,'600 lm (nominal)')}) and about 900 lumens for a 6 in light (Halo HLB6: {ext(HALO6,'900 lm (nominal)')}). Many brands also sell brighter versions.")
 lst(["<strong>4 in lights:</strong> small rooms, bathrooms, hallways, kitchen task rows and accent lighting.",
@@ -65,7 +65,7 @@ lst(["<strong>4 in lights:</strong> small rooms, bathrooms, hallways, kitchen ta
 f"<strong>High ceilings:</strong> Kichler advises {ext(KIC,'For ceilings higher than 10ft, use 1000 lumens in your downlights to make sure light reaches the floor.')}"])
 h2("Recessed Lighting in the Kitchen")
 img(2)
-p(f"In a kitchen, the row over the counters matters most. Designer Libby Rawers told Livingetc: {ext(LE,"Make sure recessed lighting is placed 12- 18 inches from a cabinet so that there aren't any dark spots")}. Home Depot suggests {ext(HDL,'about 14 to 18 inches of space between the light cannisters and the cabinets')}. Light the rest of the kitchen with the normal grid, and add a row over the island or pendants above it.")
+p(f"In a kitchen, the row over the counters matters most. Libby Rawers of Sharp + Grey Interiors told Livingetc: {ext(LE,'Make sure recessed lighting is placed 12- 18 inches from a cabinet so that there aren’t any dark spots')}. Home Depot suggests {ext(HDL,'about 14 to 18 inches of space between the light cannisters and the cabinets')}. Light the rest of the kitchen with the normal grid, and add a row over the island or pendants above it.")
 h2("Bedrooms, Bathrooms and Hallways")
 img(3)
 p("Bedrooms need soft light, so fewer or dimmer lights work, and lamps do the reading. Keep lights away from the spot right above your head when you lie in bed, and put them on a dimmer.")
@@ -75,7 +75,7 @@ img(5)
 p("In a hallway, one centered row is usually enough. Use the same spacing rule along its length, and add a light at each doorway or turn.")
 h2("Wall Washing and Accent Lights")
 img(6)
-p(f"To light a wall evenly, the rule flips. The Lighting Research Center says wall-wash lights {ext(LRC,'should be spaced as far from each other as they are from the wall')}, and warns that lights {ext(LRC,'mounted closer to the wall than 1 foot 6 inches produce harsh, scalloped patterns of light on the wall')}. For art, RecessedLighting.com says {ext(RLP,'The optimal aiming angle to minimize glare is 30-degrees from the ceiling')}. Use adjustable gimbal lights so you can aim them.")
+p(f"To light a wall evenly, the rule flips. The Lighting Research Center says wall-wash lights {ext(LRC,'should be spaced as far from each other as they are from the wall')}, and warns that lights {ext(LRC,'mounted closer to the wall than 1 foot 6 inches produce harsh, scalloped patterns of light on the wall')}. For art, use adjustable gimbal lights and aim them about 30 degrees from straight down, the angle RecessedLighting.com calls {ext(RLP,'The optimal aiming angle to minimize glare')}.")
 h2("Best Color Temperature for Recessed Lights")
 p(f"WAC Lighting says: {ext(WAC,'For ambient lighting, consider a CCT between 2700K and 3000K.')} Feit Electric recommends {ext(FEIT,'2700K (Soft White) is the best color temperature for bedrooms')} and {ext(FEIT,'3000K to 4000K is the ideal range for kitchens')}. Keep the same color temperature in one room, and in open spaces that share a ceiling, so the light does not look patchy.")
 h2("IC-Rated vs Non-IC Recessed Lights")
@@ -93,9 +93,9 @@ h2("Recessed Lighting FAQ")
 h3("How far apart should recessed lights be on an 8 ft ceiling?")
 p("About 4 ft apart, with the first light about 2 ft from the walls. On a 9 ft ceiling, space them about 4 ft 6 in apart; on a 10 ft ceiling, about 5 ft.")
 h3("How many recessed lights do I need for a 12 x 12 room?")
-p("With an 8 or 9 ft ceiling, about 9 lights in 3 rows of 3, about 4 ft apart and 2 ft from the walls. With a 10 ft ceiling, 4 brighter lights in 2 rows of 2 can work.")
+p("With an 8 or 9 ft ceiling, about 9 lights in 3 rows of 3, about 4 ft apart and 2 ft from the walls. With a 10 ft ceiling, 4 lights in 2 rows of 2, about 6 ft apart and 3 ft from the walls; a kitchen needs high-output lights.")
 h3("How far should recessed lights be from the wall?")
-p("About half the spacing between the lights, which is usually 2 to 3 ft. For wall washing or lighting art, place them closer, about 1.5 to 3 ft from the wall.")
+p("About half the spacing between the lights, which is usually 2 to 3 ft. For wall washing, place them about 1.5 to 3 ft from the wall (never closer than 1.5 ft) and space them as far apart as they are from the wall.")
 h3("Should I use 4 inch or 6 inch recessed lights?")
 p("Use 6 in lights for general light in most rooms and 4 in lights for small rooms, bathrooms, hallways and task or accent lighting. What matters most is the lumens: about 600 to 650 for a typical 4 in light and about 900 for a 6 in light.")
 h2("More Free Home Tools")

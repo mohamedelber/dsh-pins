@@ -135,7 +135,7 @@ if(nx>1){s+='<line x1="88" y1="'+(ly-4)+'" x2="108" y2="'+(ly-4)+'" stroke="#C85
 s+='<line x1="210" y1="'+(ly-4)+'" x2="230" y2="'+(ly-4)+'" stroke="#3F5E39" stroke-width="2" stroke-dasharray="3 2"/><text x="234" y="'+ly+'" font-size="11" font-weight="700" fill="#3F5E39">'+D(sx/2)+' to wall</text>';
 return s+'</svg>'}
 function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='m'?1/0.3048:1;var r=RM[rm];
-var L=r.sz[si][0],W=r.sz[si][1];var tl=num('rl')*f,tw=num('rw')*f;var typed=false;if(tl>=2){if(tw>=2){if(tl>=80){}else if(tw>=80){}else{L=tl;W=tw;typed=true}}}pick('data-s',typed?'':String(si));
+var L=r.sz[si][0],W=r.sz[si][1];var tl=num('rl')*f,tw=num('rw')*f;var typed=false;if(tl>=2){if(tw>=2){if(tl>80){}else if(tw>80){}else{L=tl;W=tw;typed=true}}}pick('data-s',typed?'':String(si));
 var H=parseFloat($('ch').value),bi=parseInt($('br').value,10),lmf=r.lm[bi],ls=$('ls').value;
 var S=Math.min(6,Math.max(3,H/2));var Lg=Math.max(L,W),Ws=Math.min(L,W);
 var nx=Math.max(1,Math.round(Lg/S-0.01)),ny=Math.max(1,Math.round(Ws/S-0.01));if(Lg/nx>6){nx=Math.ceil(Lg/6)}if(Ws/ny>6){ny=Math.ceil(Ws/6)}var n=nx*ny;var sx=Lg/nx,sy=Ws/ny;
@@ -150,16 +150,16 @@ $('k3').textContent=size+(u==='m'?(size==='4 in'?' (10 cm)':' (15 cm)'):'');$('k
 var dl=dim(Lg,Ws),an=(dl.charAt(0)==='8'||dl.indexOf('11')===0||dl.indexOf('18')===0)?'an ':'a ';vv.textContent='For '+an+dl+' '+r.n+' with '+(hs.charAt(0)==='8'?'an ':'a ')+hs+' ceiling, use about '+n+' recessed '+(n===1?'light in the middle of the ceiling.':'lights'+(one?' in one row':' in '+ny+' rows of '+nx)+', about '+sp+' apart and about '+wo+'.');
 tips.push('Rule used: space the lights about half the ceiling height apart ('+D(H/2)+' for your ceiling'+(H/2>6?', capped at '+D(6):'')+') and half that from the walls, so the light overlaps evenly.');
 tips.push('A '+r.n+' needs about '+(u==='m'?Math.round(lmf*10.764)+' lumens per m²':lmf+' lumens per sq ft')+', so about '+lum(target)+' lumens for '+A(area)+'. That is about '+lum(per)+' lumens per light.');
-if(need){vv.className='verdict amb';tips.unshift('Even with high-output lights this layout falls short. Use about '+need+' lights, or add a ceiling fixture or lamps.')}
+if(need){vv.className='verdict amb';tips.unshift('Even at about '+fx.toLocaleString('en-US')+' lumens each, '+n+(n===1?' light gives':' lights give')+' less than the '+lum(target)+' lumens this room needs. Add lights for about '+need+' in total with closer spacing, or add a ceiling fixture or lamps.')}
 if(deliv>target*1.6){tips.push('These lights give about '+lum(deliv)+' lumens in total, more than the room needs. Put them on a dimmer so you can turn them down for the evening.')}else{tips.push('Put the lights on a dimmer so you can turn them down for the evening.')}
 if(tall){tips.push('For ceilings over 10 ft, choose lights of about 1,000 lumens or more so enough light reaches the floor.')}
 tips.push('Choose '+r.k+' light for a '+r.n+'.');
 if(rm==='kit'){tips.push('Over the counters, set a row about 12 to 18 in (30 to 45 cm) out from the upper cabinets, so you do not work in your own shadow.')}
 if(rm==='bath'){tips.push('Over a shower or tub, use a light listed for wet locations (shower trim). In the UK, check the IP rating for each bathroom zone.')}
 if(rm==='hall'){tips.push('In a narrow hallway one centered row is enough. Add a light over any doorway or turn.')}
-if(rm==='liv'){tips.push('To light art or a feature wall, aim an adjustable light about 30 degrees and keep it at least 1.5 ft (45 cm) from the wall.')}
+if(rm==='liv'){tips.push('To light art or a feature wall, aim an adjustable light about 30 degrees from straight down and keep it at least 1.5 ft (45 cm) from the wall.')}
 if(rm==='off'){tips.push('Recessed lights give general light. Add a desk lamp for close reading and work.')}
-tips.push('Above an insulated ceiling, use IC-rated lights. Non-IC lights need about 3 in (8 cm) of clearance from insulation.');
+tips.push('Above an insulated ceiling, use IC-rated lights. Non-IC lights need at least 3 in (7.5 cm) of clearance from insulation.');
 $('vz').innerHTML=plan(Lg,Ws,nx,ny);
 $('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
 summary='Recessed lights for my '+dim(Lg,Ws)+' '+r.n+': '+n+(n===1?' light':' lights, about '+sp+' apart and '+wo)+', '+size+' at about '+fx+' lumens each. dailyspacehacks.com/recessed-lighting-calculator/'}
@@ -196,7 +196,7 @@ calc();
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>The chart uses the half-the-ceiling-height rule and rounds to whole rows, so the real spacing can be a few inches wider or closer. Brightness is the second half of the job: the calculator checks the lumens your room needs and suggests the light size to match.</p>
+<p>The chart uses the half-the-ceiling-height rule and rounds to whole rows, so the real spacing can be up to about a foot wider or closer (a 12 x 12 ft room with a 10 ft ceiling gets lights 6 ft apart, not 5 ft). Brightness is the second half of the job: the calculator checks the lumens your room needs and suggests the light size to match.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":3135,"sizeSlug":"full","linkDestination":"none"} -->
@@ -208,11 +208,11 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The most common rule is simple: Home Depot says to <a href="https://www.homedepot.com/c/ab/recessed-lighting-buying-guide/9ba683603be9fa5395fab904f2192b8" target="_blank" rel="noopener">divide the height of the ceiling by two to get the distance the lights should be from one another</a>. So an 8 ft ceiling gets lights about 4 ft apart and a 10 ft ceiling about 5 ft apart. For high ceilings, Kichler adds a limit: <a href="https://www.kichler.com/tips-guides/indoor-lighting-guide/downlight-recessed-placement-tips" target="_blank" rel="noopener">but don't go more than 6 feet apart, or you'll lose the impact</a>.</p>
+<p>The most common rule is simple: Home Depot says to <a href="https://www.homedepot.com/c/ab/recessed-lighting-buying-guide/9ba683603be9fa5395fab904f2192b8" target="_blank" rel="noopener">divide the height of the ceiling by two to get the distance the lights should be from one another</a>. So an 8 ft ceiling gets lights about 4 ft apart and a 10 ft ceiling about 5 ft apart. Kichler adds a limit: <a href="https://www.kichler.com/tips-guides/indoor-lighting-guide/downlight-recessed-placement-tips" target="_blank" rel="noopener">but don’t go more than 6 feet apart, or you’ll lose the impact</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>For the walls, RecessedLighting.com says <a href="https://blog.recessedlighting.com/recessed-lighting-placement/" target="_blank" rel="noopener">the distance between your lights is always twice (2x) the distance from the wall to the first light</a>. That puts the first light about 2 ft from the wall on an 8 ft ceiling. Fixed figures vary: Philips Hue suggests <a href="https://www.philips-hue.com/en-us/explore-hue/faq/lamps/how-far-should-recessed-lights-be-from-the-wall" target="_blank" rel="noopener">about 1.5–2 ft from the wall</a>, while Home Depot suggests about 3 ft from the wall <a href="https://www.homedepot.com/c/ab/recessed-lighting-buying-guide/9ba683603be9fa5395fab904f2192b8" target="_blank" rel="noopener">to avoid creating shadows that make your ceilings look lower</a>. Anything from about 1.5 to 3 ft works; the half-spacing rule keeps the light even.</p>
+<p>For the walls, RecessedLighting.com says <a href="https://blog.recessedlighting.com/recessed-lighting-placement/" target="_blank" rel="noopener">the distance between your lights is always twice (2x) the distance from the wall to the first light</a>. That puts the first light about 2 ft from the wall on an 8 ft ceiling. Fixed figures vary: Philips Hue's layout table gives <a href="https://www.philips-hue.com/en-us/explore-hue/faq/lamps/how-far-should-recessed-lights-be-from-the-wall" target="_blank" rel="noopener">1.5–2 ft (50–60 cm)</a> from the wall for an 8 ft ceiling, while Home Depot suggests about 3 ft from the wall <a href="https://www.homedepot.com/c/ab/recessed-lighting-buying-guide/9ba683603be9fa5395fab904f2192b8" target="_blank" rel="noopener">to avoid creating shadows that make your ceilings look lower</a>. Anything from about 1.5 to 3 ft works; the half-spacing rule keeps the light even.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
@@ -246,7 +246,7 @@ calc();
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>The living, kitchen, dining and hallway ranges come from a Penn State course page based on guidance from <a href="https://courses.ems.psu.edu/egee102/node/2363" target="_blank" rel="noopener">the Illuminating Engineering Society (IES)</a>. Sources disagree on bathrooms: IES-based tables give 20 to 50, while Hunker's rule of thumb is <a href="https://www.hunker.com/13412735/how-to-calculate-lumens-per-square-foot" target="_blank" rel="noopener">70–80 lumens per square foot</a>. The calculator uses 50 as a middle value and lets you pick <em>Brighter</em>. Real rooms lose some light to walls and trims, so a little extra and a dimmer is the safe choice. As RecessedLighting.com puts it, <a href="https://blog.recessedlighting.com/how-many-recessed-lights/" target="_blank" rel="noopener">Most often you'll be better off installing brighter lights rather than more lights.</a></p>
+<p>The living, bedroom, kitchen, dining, office and bathroom ranges come from a Penn State course page based on guidance from <a href="https://courses.ems.psu.edu/egee102/node/2363" target="_blank" rel="noopener">the Illuminating Engineering Society (IES)</a>; the 5 to 10 hallway range is from Dutton Brown (Penn State gives 5 to 20). Sources disagree on bathrooms: IES-based tables give 20 to 50, while Hunker's rule of thumb is <a href="https://www.hunker.com/13412735/how-to-calculate-lumens-per-square-foot" target="_blank" rel="noopener">70–80 lumens per square foot</a>. The calculator uses 50 as a middle value and lets you pick <em>Brighter</em>. Real rooms lose some light to walls and trims, so a little extra and a dimmer is the safe choice. As RecessedLighting.com puts it, <a href="https://blog.recessedlighting.com/how-many-recessed-lights/" target="_blank" rel="noopener">Most often you’ll be better off installing brighter lights rather than more lights.</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -278,7 +278,7 @@ calc();
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>In a kitchen, the row over the counters matters most. Designer Libby Rawers told Livingetc: <a href="https://www.livingetc.com/advice/how-do-you-layout-recessed-lighting-top-designers-answer-your-questions" target="_blank" rel="noopener">Make sure recessed lighting is placed 12- 18 inches from a cabinet so that there aren't any dark spots</a>. Home Depot suggests <a href="https://www.homedepot.com/c/ah/recessed-lighting-layout/9ba683603be9fa5395fab90c18f7401" target="_blank" rel="noopener">about 14 to 18 inches of space between the light cannisters and the cabinets</a>. Light the rest of the kitchen with the normal grid, and add a row over the island or pendants above it.</p>
+<p>In a kitchen, the row over the counters matters most. Libby Rawers of Sharp + Grey Interiors told Livingetc: <a href="https://www.livingetc.com/advice/how-do-you-layout-recessed-lighting-top-designers-answer-your-questions" target="_blank" rel="noopener">Make sure recessed lighting is placed 12- 18 inches from a cabinet so that there aren’t any dark spots</a>. Home Depot suggests <a href="https://www.homedepot.com/c/ah/recessed-lighting-layout/9ba683603be9fa5395fab90c18f7401" target="_blank" rel="noopener">about 14 to 18 inches of space between the light cannisters and the cabinets</a>. Light the rest of the kitchen with the normal grid, and add a row over the island or pendants above it.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -318,7 +318,7 @@ calc();
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>To light a wall evenly, the rule flips. The Lighting Research Center says wall-wash lights <a href="https://www.lrc.rpi.edu/programs/lightingTransformation/residentialLighting/buildersguide/luminairesRecessed.asp" target="_blank" rel="noopener">should be spaced as far from each other as they are from the wall</a>, and warns that lights <a href="https://www.lrc.rpi.edu/programs/lightingTransformation/residentialLighting/buildersguide/luminairesRecessed.asp" target="_blank" rel="noopener">mounted closer to the wall than 1 foot 6 inches produce harsh, scalloped patterns of light on the wall</a>. For art, RecessedLighting.com says <a href="https://blog.recessedlighting.com/recessed-lighting-placement/" target="_blank" rel="noopener">The optimal aiming angle to minimize glare is 30-degrees from the ceiling</a>. Use adjustable gimbal lights so you can aim them.</p>
+<p>To light a wall evenly, the rule flips. The Lighting Research Center says wall-wash lights <a href="https://www.lrc.rpi.edu/programs/lightingTransformation/residentialLighting/buildersguide/luminairesRecessed.asp" target="_blank" rel="noopener">should be spaced as far from each other as they are from the wall</a>, and warns that lights <a href="https://www.lrc.rpi.edu/programs/lightingTransformation/residentialLighting/buildersguide/luminairesRecessed.asp" target="_blank" rel="noopener">mounted closer to the wall than 1 foot 6 inches produce harsh, scalloped patterns of light on the wall</a>. For art, use adjustable gimbal lights and aim them about 30 degrees from straight down, the angle RecessedLighting.com calls <a href="https://blog.recessedlighting.com/recessed-lighting-placement/" target="_blank" rel="noopener">The optimal aiming angle to minimize glare</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -388,7 +388,7 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>With an 8 or 9 ft ceiling, about 9 lights in 3 rows of 3, about 4 ft apart and 2 ft from the walls. With a 10 ft ceiling, 4 brighter lights in 2 rows of 2 can work.</p>
+<p>With an 8 or 9 ft ceiling, about 9 lights in 3 rows of 3, about 4 ft apart and 2 ft from the walls. With a 10 ft ceiling, 4 lights in 2 rows of 2, about 6 ft apart and 3 ft from the walls; a kitchen needs high-output lights.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -396,7 +396,7 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>About half the spacing between the lights, which is usually 2 to 3 ft. For wall washing or lighting art, place them closer, about 1.5 to 3 ft from the wall.</p>
+<p>About half the spacing between the lights, which is usually 2 to 3 ft. For wall washing, place them about 1.5 to 3 ft from the wall (never closer than 1.5 ft) and space them as far apart as they are from the wall.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
