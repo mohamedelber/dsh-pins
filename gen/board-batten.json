@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A bedroom feature wall behind the bed covered in classic vertical board and batten: flat panels with evenly spaced vertical battens about 16 inches apart, a horizontal top rail with a small ledge at about two thirds of the wall height, the whole paneling painted soft sage green, cream linen bedding, white oak nightstands with brass lamps, plain warm white wall above the paneling."
+  },
+  {
+   "name": "02-dining",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A dining room with white painted board and batten wainscoting on the lower third of the walls: evenly spaced vertical battens, a top rail with a narrow picture ledge, baseboard below, warm white walls above, white oak dining table and woven chairs, a brass chandelier, daylight from a window."
+  },
+  {
+   "name": "03-entry",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A small entryway wall with board and batten painted deep sage green up to about 60 inches high with a top shelf ledge, a row of brass hooks on the top rail holding a coat and a tote bag, a white oak bench below with woven baskets, white oak floor."
+  },
+  {
+   "name": "04-grid",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A home office accent wall with grid board and batten, square panels formed by vertical and horizontal battens, painted warm white, a white oak desk in front, a sage green chair, framed art leaning on the desk, soft daylight."
+  },
+  {
+   "name": "05-nursery",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A calm nursery with cream painted vertical board and batten on the lower half of the wall, a white crib, a sage green rug, a small white oak dresser and soft daylight."
+  },
+  {
+   "name": "06-diy",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. Close-up of a board and batten wall in progress before painting: primed MDF battens evenly spaced and nailed to a painted wall, a spirit level leaning on the wall, a tape measure, a small wooden spacer block and a caulk gun on the white oak floor, drop cloth, natural daylight, no people, no hands."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A cozy living room with a full height vertical board and batten feature wall painted soft sage green behind a cream linen sofa, white oak coffee table, jute rug, brass floor lamp, plants, warm afternoon light, an inviting Pinterest style photo with the paneling clearly visible."
+  }
+ ]
+}
