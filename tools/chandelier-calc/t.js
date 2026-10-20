@@ -1,0 +1,13 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome'}).catch(async()=>await chromium.launch());
+const p=await b.newPage({viewport:{width:420,height:1400}});const errs=[];p.on('pageerror',e=>errs.push(e.message));
+await p.setContent('<html><body style="margin:0;font-family:sans-serif">'+require('fs').readFileSync('tool.html','utf8')+'</body></html>');
+const out=async(n)=>{const t=await p.evaluate(()=>[...document.querySelectorAll('#vv,.kpi')].map(e=>e.innerText.replace(/\n/g,' | ')).join(' || '));console.log(n,':',t)};
+await out('dining');await p.screenshot({path:'a.png',fullPage:true});
+await p.click('[data-t="42x96"]');await out('dining long');
+await p.click('[data-r="living"]');await out('living');
+await p.click('summary');await p.selectOption('#ce','10');await out('living 10ft');
+await p.click('[data-r="foyer"]');await p.selectOption('#ce','18');await out('foyer 18');
+await p.click('[data-r="bedroom"]');await p.selectOption('#ce','8');await out('bedroom 8');await p.screenshot({path:'m.png',fullPage:true});
+await p.click('[data-r="island"]');await out('island 6');await p.click('[data-i="120"]');await out('island 10');await p.click('[data-i="48"]');await out('island 4');
+console.log('errors',errs);await b.close()})();

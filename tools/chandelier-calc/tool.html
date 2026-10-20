@@ -1,0 +1,184 @@
+<div id="dsh-ch" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>What size chandelier do you need?</h3>
+<p class="sub">Two taps: pick the room, then its size or your table. The right diameter, height and hanging height appear right away.</p>
+<fieldset><legend>1. Where will it hang?</legend>
+<div class="opts" role="group" aria-label="Room">
+<button type="button" data-r="dining" class="on"><b>Dining room</b><span>over a table</span></button>
+<button type="button" data-r="living"><b>Living room</b><span>or family room</span></button>
+<button type="button" data-r="bedroom"><b>Bedroom</b><span>main or guest</span></button>
+<button type="button" data-r="foyer"><b>Foyer</b><span>entry or hallway</span></button>
+<button type="button" data-r="island"><b>Kitchen island</b><span>pendants in a row</span></button>
+</div>
+</fieldset>
+<fieldset id="fs-room" class="hide"><legend>2. How big is the room?</legend>
+<div class="opts" role="group" aria-label="Room size">
+<button type="button" data-s="10x10"><b>Small</b><span>about 10 x 10 ft</span></button>
+<button type="button" data-s="12x14" class="on"><b>Medium</b><span>about 12 x 14 ft</span></button>
+<button type="button" data-s="14x16"><b>Large</b><span>about 14 x 16 ft</span></button>
+<button type="button" data-s="16x20"><b>Very large</b><span>about 16 x 20 ft</span></button>
+</div>
+</fieldset>
+<fieldset id="fs-table"><legend>2. Which table?</legend>
+<div class="opts" role="group" aria-label="Table">
+<button type="button" data-t="42x42r"><b>Round 42 in</b><span>seats 4</span></button>
+<button type="button" data-t="48x48r"><b>Round 48 in</b><span>seats 4 to 6</span></button>
+<button type="button" data-t="36x60"><b>36 x 60 in</b><span>seats 4</span></button>
+<button type="button" data-t="40x72" class="on"><b>40 x 72 in</b><span>seats 6</span></button>
+<button type="button" data-t="42x96"><b>42 x 96 in</b><span>seats 8</span></button>
+</div>
+</fieldset>
+<fieldset id="fs-isl" class="hide"><legend>2. How long is the island?</legend>
+<div class="opts hts" role="group" aria-label="Island length">
+<button type="button" data-i="48"><b>4 ft</b></button>
+<button type="button" data-i="72" class="on"><b>6 ft</b></button>
+<button type="button" data-i="96"><b>8 ft</b></button>
+<button type="button" data-i="120"><b>10 ft</b></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: ceiling height, exact sizes</summary>
+<div class="grid">
+<label>Ceiling height<select id="ce"><option value="8" selected>8 ft</option><option value="9">9 ft</option><option value="10">10 ft</option><option value="12">12 ft</option><option value="16">16 ft (two-story)</option><option value="18">18 ft (two-story)</option></select></label>
+<label class="xr">Room length (ft)<input type="number" id="rl" min="4" max="60" step="0.5" placeholder="e.g. 13"></label>
+<label class="xr">Room width (ft)<input type="number" id="rw" min="4" max="60" step="0.5" placeholder="e.g. 11"></label>
+<label class="xt">Table width (in)<input type="number" id="tw" min="20" max="80" step="1" placeholder="e.g. 40"></label>
+<label class="xt">Table length (in)<input type="number" id="tl" min="20" max="160" step="1" placeholder="e.g. 72"></label>
+<label class="xi">Island length (in)<input type="number" id="il" min="24" max="200" step="1" placeholder="e.g. 84"></label>
+</div>
+<p class="hint">Exact numbers replace the buttons above. Leave a box empty to use the button you picked.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small id="k1t">Chandelier width</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small id="k2t">Fixture height</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small id="k3t">Hang it</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my chandelier size</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-ch');if(!R)return;
+var room='dining',rs='12x14',tb='40x72',isl=72,summary='';
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function cm(x){return Math.round(x*2.54)+' cm'}
+function ftin(x){var f=Math.floor(x/12),i=Math.round(x-f*12);if(i===12){f+=1;i=0}return f+' ft'+(i?' '+i+' in':'')}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function viz(ceil,dia,body,bottom,mode,tw){var W=360,H=220,sc=170/(ceil*12),fl=200,cx=180;
+var s='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side view of the chandelier and room">';
+s+='<rect width="'+W+'" height="'+H+'" fill="#FBF6EF"/>';
+var top=fl-ceil*12*sc;s+='<line x1="20" y1="'+top+'" x2="340" y2="'+top+'" stroke="#B98A5E" stroke-width="3"/><line x1="20" y1="'+fl+'" x2="340" y2="'+fl+'" stroke="#B98A5E" stroke-width="3"/>';
+var by=fl-bottom*sc,bh=body*sc,bw=dia*sc;
+s+='<line x1="'+cx+'" y1="'+top+'" x2="'+cx+'" y2="'+(by-bh)+'" stroke="#342E2A" stroke-width="1.5"/>';
+s+='<path d="M'+(cx-bw/2)+' '+(by-bh*0.35)+' Q'+cx+' '+(by-bh*1.1)+' '+(cx+bw/2)+' '+(by-bh*0.35)+' L'+(cx+bw*0.3)+' '+by+' L'+(cx-bw*0.3)+' '+by+' Z" fill="#E9C46A" stroke="#B98A5E" stroke-width="1.5"/>';
+if(mode==='table'){var th=30*sc,ty=fl-th;s+='<rect x="'+(cx-tw*sc/2)+'" y="'+ty+'" width="'+(tw*sc)+'" height="5" fill="#D9B48A"/><line x1="'+(cx-tw*sc/2+6)+'" y1="'+ty+'" x2="'+(cx-tw*sc/2+6)+'" y2="'+fl+'" stroke="#B98A5E" stroke-width="3"/><line x1="'+(cx+tw*sc/2-6)+'" y1="'+ty+'" x2="'+(cx+tw*sc/2-6)+'" y2="'+fl+'" stroke="#B98A5E" stroke-width="3"/>';
+s+='<line x1="'+(cx+bw/2+16)+'" y1="'+by+'" x2="'+(cx+bw/2+16)+'" y2="'+ty+'" stroke="#C85A32" stroke-width="2"/><text x="'+(cx+bw/2+22)+'" y="'+((by+ty)/2+4)+'" font-size="11" font-weight="700" fill="#C85A32">'+Math.round(bottom-30)+' in above table</text>'}
+else{s+='<line x1="'+(cx+bw/2+16)+'" y1="'+by+'" x2="'+(cx+bw/2+16)+'" y2="'+fl+'" stroke="#C85A32" stroke-width="2"/><text x="'+(cx+bw/2+22)+'" y="'+((by+fl)/2+4)+'" font-size="11" font-weight="700" fill="#C85A32">'+ftin(bottom)+' to the floor</text>'}
+s+='<text x="'+cx+'" y="'+(by+16)+'" font-size="11" text-anchor="middle" fill="#342E2A">'+Math.round(dia)+' in wide</text>';
+s+='<text x="24" y="'+(top+14)+'" font-size="10" fill="#6E645C">ceiling '+ceil+' ft</text>';
+return s+'</svg>'}
+function calc(){var vv=$('vv');vv.className='verdict';var tips=[];var ceil=parseFloat($('ce').value);var H=ceil*12;
+$('fs-room').classList.toggle('hide',!(room==='living'||room==='bedroom'||room==='foyer'));
+$('fs-table').classList.toggle('hide',room!=='dining');$('fs-isl').classList.toggle('hide',room!=='island');
+R.querySelectorAll('.xr').forEach(function(x){x.classList.toggle('hide',room==='dining'||room==='island')});R.querySelectorAll('.xt').forEach(function(x){x.classList.toggle('hide',room!=='dining')});R.querySelectorAll('.xi').forEach(function(x){x.classList.toggle('hide',room!=='island')});
+var bLo=Math.round(ceil*2.5),bHi=Math.round(ceil*3);
+if(room==='dining'){var p=tb.split('x'),tw=parseFloat(p[0]),tl=parseFloat(p[1]);if(num('tw')){tw=num('tw')}if(num('tl')){tl=num('tl')}if(tl<tw){var t=tl;tl=tw;tw=t}
+var dLo=Math.round(tw/2),dHi=Math.round(Math.min(tw*2/3,tw-12));if(dHi<dLo){dHi=dLo}
+var hLo=30+3*Math.max(0,ceil-8),hHi=36+3*Math.max(0,ceil-8);var longT=tl>=tw*1.6;
+$('k1t').textContent='Chandelier width';$('k1').textContent=dLo+' to '+dHi+' in';$('k1e').textContent=cm(dLo)+' to '+cm(dHi)+' across';
+$('k2t').textContent='Fixture height';$('k2').textContent=bLo+' to '+bHi+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling';
+$('k3t').textContent='Bottom above the table';$('k3').textContent=hLo+' to '+hHi+' in';$('k3e').textContent=ceil>8?'+3 in for each foot over 8 ft':'standard 8 ft ceiling';
+vv.textContent='For a '+tw+' x '+tl+' in table, choose a chandelier about '+dLo+' to '+dHi+' in wide and hang its bottom '+hLo+' to '+hHi+' in above the tabletop.';
+if(longT){tips.push('Your table is long: a linear chandelier about '+Math.round(tl/3)+' to '+Math.round(tl*2/3)+' in long, or two smaller fixtures, lights it more evenly than one round chandelier.')}
+tips.push('Keep the edge of the chandelier at least 6 in inside the table edge so nobody bumps it when they stand up.');
+tips.push('Center it over the table, not the room, if the table is off-center.');
+$('vz').innerHTML=viz(ceil,(dLo+dHi)/2,(bLo+bHi)/2,30+(hLo+hHi)/2,'table',tw);
+summary='Dining chandelier for a '+tw+' x '+tl+' in table: '+dLo+'-'+dHi+' in wide, '+bLo+'-'+bHi+' in tall, bottom '+hLo+'-'+hHi+' in above the table. dailyspacehacks.com/chandelier-size-calculator/'}
+else if(room==='island'){var L=num('il')?num('il'):isl;var n=Math.max(1,Math.min(6,Math.floor((L-12)/30)+1));
+var gap=n>1?Math.round(Math.min(30,(L-12)/(n-1))):0;var endo=Math.round((L-(n-1)*gap)/2);
+var maxW=n>1?Math.max(8,gap-12):Math.round(Math.min(24,L/3));var hLo2=30+3*Math.max(0,ceil-8),hHi2=36+3*Math.max(0,ceil-8);
+$('k1t').textContent='Pendants';$('k1').textContent=n+(n===1?' pendant':' pendants');$('k1e').textContent=n>1?'about '+gap+' in apart, center to center':'centered over the island';
+$('k2t').textContent='Each pendant';$('k2').textContent='up to about '+maxW+' in wide';$('k2e').textContent='our estimate, leaves a gap between shades';
+$('k3t').textContent='Bottom above the counter';$('k3').textContent=hLo2+' to '+hHi2+' in';$('k3e').textContent=ceil>8?'+3 in for each foot over 8 ft':'standard 8 ft ceiling';
+vv.textContent='For a '+ftin(L)+' island, hang '+n+(n===1?' pendant':' pendants')+(n>1?' about '+gap+' in apart':'')+', with the end pendants about '+endo+' in in from each end and the bottoms '+hLo2+' to '+hHi2+' in above the counter.';
+tips.push('Measure center to center, and keep the center of each end pendant at least 6 in in from the end of the island.');
+tips.push('Clear glass or open shades keep the view across the kitchen open; solid shades give more focused task light.');
+$('vz').innerHTML=viz(ceil,Math.min(maxW,18),12,36+(hLo2+hHi2)/2,'table',L);
+summary='Kitchen island '+Math.round(L)+' in: '+n+' pendants'+(n>1?' about '+gap+' in apart':'')+', bottoms '+hLo2+'-'+hHi2+' in above the counter. dailyspacehacks.com/chandelier-size-calculator/'}
+else{var q=rs.split('x'),rl=parseFloat(q[0]),rw=parseFloat(q[1]);if(num('rl')){rl=num('rl')}if(num('rw')){rw=num('rw')}
+var d=Math.round(rl+rw);var minB=84;var maxBody=H-minB;var two=ceil>=16;
+$('k1t').textContent='Chandelier width';$('k1').textContent='about '+d+' in';$('k1e').textContent=cm(d)+' across ('+rl+' + '+rw+' ft = '+d+' in)';
+$('k2t').textContent='Fixture height';
+if(maxBody<bLo){$('k2').textContent='up to '+Math.max(0,maxBody)+' in';$('k2e').textContent='low ceiling: choose a flush or semi-flush fixture'}else{$('k2').textContent=bLo+' to '+bHi+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling'}
+$('k3t').textContent='Bottom of the fixture';$('k3').textContent=two?'at the 2nd floor level':'at least 7 ft up';$('k3e').textContent=two?'and at least 7 ft above the floor':'84 in above the floor where people walk';
+var nm={living:'living room',bedroom:'bedroom',foyer:'foyer'}[room];
+vv.textContent='For a '+rl+' x '+rw+' ft '+nm+', choose a chandelier about '+d+' in wide'+(maxBody<bLo?' that sits close to the ceiling,':',')+' with its bottom at least 7 ft above the floor.';
+if(maxBody<bLo){tips.push('With a ceiling of '+ceil+' ft there are only '+maxBody+' in between the ceiling and 7 ft, so a tall chandelier will not fit where people walk: choose a flush or semi-flush fixture, or hang it over a table or bed instead.')}
+if(room==='foyer'){tips.push(two?'In a two-story foyer, line the chandelier up with the second-floor landing so it looks right from upstairs too.':'In a one-story entry, keep the bottom at least 7 ft above the floor and clear of the door swing.')}
+if(room==='bedroom'){tips.push('Many people center a bedroom chandelier over the foot of the bed or the middle of the room, so it is not right above their head.')}
+tips.push('The room rule gives a starting point: go a little bigger for a room with tall ceilings or a strong style, a little smaller for a busy room.');
+$('vz').innerHTML=viz(ceil,d,maxBody<bLo?Math.max(6,maxBody):(bLo+bHi)/2,two?H-36:Math.max(84,H-((maxBody<bLo?Math.max(6,maxBody):(bLo+bHi)/2))-12),'room',0);
+summary=nm.charAt(0).toUpperCase()+nm.slice(1)+' '+rl+' x '+rw+' ft: chandelier about '+d+' in wide, bottom at least 7 ft above the floor (ceiling '+ceil+' ft). dailyspacehacks.com/chandelier-size-calculator/'}
+tips.push('Check the weight: a standard ceiling box supports a fixture up to 50 lb, so a heavier one needs a box listed for its weight. Have an electrician install it if you are unsure.');
+$('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('')}
+R.querySelectorAll('[data-r]').forEach(function(b){b.addEventListener('click',function(){room=b.getAttribute('data-r');pick('data-r',room);calc()})});
+R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){rs=b.getAttribute('data-s');pick('data-s',rs);$('rl').value='';$('rw').value='';calc()})});
+R.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){tb=b.getAttribute('data-t').replace('r','');pick('data-t',b.getAttribute('data-t'));$('tw').value='';$('tl').value='';calc()})});
+R.querySelectorAll('[data-i]').forEach(function(b){b.addEventListener('click',function(){isl=parseFloat(b.getAttribute('data-i'));pick('data-i',b.getAttribute('data-i'));$('il').value='';calc()})});
+['ce','rl','rw','tw','tl','il'].forEach(function(id){$(id).addEventListener('input',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my chandelier size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your chandelier size:',summary)})}catch(e){window.prompt('Copy your chandelier size:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
