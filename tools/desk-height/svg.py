@@ -39,7 +39,7 @@ lab(150,fl+40,'Feet flat, thighs level','raise the chair, add a footrest')
 # table
 tx=760; ty=200
 a(f'<rect x="{tx}" y="{ty}" width="380" height="520" rx="18" fill="#fff" stroke="#E6DCCF" stroke-width="2"/>')
-a(f'<text x="{tx+24}" y="{ty+46}" font-size="22" font-weight="700" fill="{T}">Desk height by height</text>')
+a(f'<text x="{tx+24}" y="{ty+46}" font-size="22" font-weight="700" fill="{T}">Desk height by your height</text>')
 a(f'<text x="{tx+24}" y="{ty+86}" font-size="15" font-weight="700" fill="{G}">You</text><text x="{tx+136}" y="{ty+86}" font-size="15" font-weight="700" fill="{G}">Sitting</text><text x="{tx+252}" y="{ty+86}" font-size="15" font-weight="700" fill="{G}">Standing</text>')
 rows=[('5 ft 0 in', '22.5-24.5 in', '35.5-37.5 in'), ('5 ft 4 in', '23.5-25.5 in', '37.5-39.5 in'), ('5 ft 8 in', '25.5-27.5 in', '40.5-42.5 in'), ('6 ft 0 in', '26.5-28.5 in', '43-45 in'), ('6 ft 4 in', '28.5-30.5 in', '45.5-47.5 in')]
 for i,(h,si,st) in enumerate(rows):
