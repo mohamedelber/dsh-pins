@@ -1,12 +1,6 @@
-== https://dailyspacehacks.com/embed-calculators/kitchen-island/
+== https://dailyspacehacks.com/embed-calculators/recessed-lighting/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/kitchen-island-size-calculator/
-HTTP/2 200 
-content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/embed-calculators/desk-height/
-HTTP/2 200 
-content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/desk-height-calculator/
+== https://dailyspacehacks.com/recessed-lighting-calculator/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
