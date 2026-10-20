@@ -1,0 +1,12 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome'});
+const p=await b.newPage({viewport:{width:420,height:1400}});const errs=[];p.on('pageerror',e=>errs.push(e.message));
+await p.setContent('<html><body style="margin:0;font-family:sans-serif">'+require('fs').readFileSync('tool.html','utf8')+'</body></html>');
+const out=async(n)=>{const t=await p.evaluate(()=>[...document.querySelectorAll('#vv,.kpi,#tp')].map(e=>e.innerText.replace(/\n/g,' | ')).join(' || '));console.log(n,':',t)};
+await out('default');await p.screenshot({path:'a.png',fullPage:true});
+await p.click('[data-s="16x20"]');await p.click('[data-d="3"]');await out('16x20 3 doors');
+await p.click('summary');await p.selectOption('#bl','8');await out('8ft boards');
+await p.fill('#pe','180');await out('perimeter 180');await p.fill('#pe','');
+await p.selectOption('#un','m');await out('metric');await p.fill('#rl','4');await p.fill('#rw','3.5');await p.check('#sh');await out('metric 4x3.5 shoe');
+await p.screenshot({path:'m.png',fullPage:true});
+console.log('errors',errs);await b.close()})();
