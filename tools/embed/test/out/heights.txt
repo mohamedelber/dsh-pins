@@ -1,2 +1,2 @@
-host.html d chandelier-size:1436px:1500 chandelier-size-calculator::2400
-host.html m chandelier-size:2115px:1500 chandelier-size-calculator::2400
+host.html d walk-in-closet:1364px:1450 walk-in-closet-size::2400
+host.html m walk-in-closet:2048px:1450 walk-in-closet-size::2400

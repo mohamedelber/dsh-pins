@@ -1,6 +1,6 @@
-== https://dailyspacehacks.com/embed-calculators/chandelier-size/
+== https://dailyspacehacks.com/embed-calculators/walk-in-closet/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/chandelier-size-calculator/
+== https://dailyspacehacks.com/walk-in-closet-size/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
