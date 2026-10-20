@@ -27,25 +27,25 @@ after(P,'and it works out the gaps for you.</p>\n<!-- /wp:paragraph -->',chart)
 SVG=open('z.svg').read()
 def layout():
     h3('Walk-In Pantry Layouts and Aisle Widths')
-    p('Before you choose shelves, check that the walkway still works. '+DIM+' lists 36, 42 and 48 inches as typical walk-in pantry aisle widths, and 60 to 66 inches where a wheelchair needs to turn. Add the depth of the shelves on each shelved side, and you get the minimum width of the room.')
+    p('Before you choose shelves, check that the walkway still works. '+DIM+' lists 36, 42 and 48 inches as typical walk-in pantry aisle widths, and 60 or 66 inches for an accessible aisle, for example for a wheelchair user. Add the depth of the shelves on each shelved side, and you get the minimum width of the room.')
     diagram(SVG,'Walk-in pantry layouts: add the aisle to the shelf depth on each side to find how wide the room needs to be.')
-    p('A U-shape gives the most storage but needs the widest room. A galley, with shelves on two facing walls, suits a long, narrow pantry. If your walk-in is under about 5 feet wide, shelves on one wall, or deep shelves on one side and shallow ones opposite, keep the aisle comfortable.')
+    p('A U-shape gives the most storage but needs the widest room. A galley, with shelves on two facing walls, suits a long, narrow pantry. If your walk-in is under about 68 inches (5 ft 8 in) wide, shelves on one wall, or deep shelves on one side and shallow ones opposite, keep the aisle comfortable.')
 after(P,'<h2 class="wp-block-heading">Walk-In Pantry Shelving Ideas</h2>\n<!-- /wp:heading -->',layout)
 def wire():
     h3('How to Make Wire Pantry Shelves Work')
     img('p1')
     p('Many builder-grade pantries come with white wire shelves. You don&#8217;t have to rip them out; a few cheap fixes make them far easier to live with:')
     lst(['<strong>Add a shelf liner.</strong> A clear or solid liner cut to size gives jars and bottles a flat surface, so nothing tips through the gaps.',
-     '<strong>Use risers and turntables.</strong> A step riser lifts the back row of cans into view, and a turntable stops oils and sauces getting lost in a corner.',
+     '<strong>Use risers and turntables.</strong> A step riser lifts the back row of cans into view, and a turntable keeps oils and sauces from getting lost in a corner.',
      '<strong>Group food in matching bins.</strong> Same-size bins sit flat across the wires and slide out like drawers.',
      '<strong>Put heavy jars on solid shelves.</strong> If you mix shelf types, keep wire for light boxes and bags, and use wood or laminate for glass jars and tins.'])
 after(P,'and wood shelves where they show.</p>\n<!-- /wp:paragraph -->',wire)
 def cleat():
     h3('Step by Step: Build Cleat Pantry Shelves')
     lst(['<strong>Mark the shelf lines.</strong> Use the measurements chart above to set each height, then draw a level line on the back and side walls and mark every stud.',
-     '<strong>Fix the cleats.</strong> Cut 1x2 or 1x3 strips to length and screw them along each line, into at least two studs per strip.',
+     '<strong>Fix the cleats.</strong> Cut 1x2 or 1x3 strips to length and screw them along each line, into studs wherever possible (at least two on long back cleats), with heavy-duty wall anchors where a short side cleat misses a stud.',
      '<strong>Cut the shelves.</strong> Use 3/4 in plywood or pine boards cut to the depth you chose. Where two shelves meet in a corner, overlap them or add a short cleat underneath to carry both.',
-     '<strong>Stiffen long shelves.</strong> Glue and nail a 1x2 strip to the front edge. It hides the plywood layers and helps stop the shelf sagging under jars and cans.',
+     '<strong>Stiffen long shelves.</strong> Glue and nail a 1x2 strip to the front edge. It hides the plywood layers and helps keep the shelf from sagging under jars and cans.',
      '<strong>Finish before loading.</strong> Fill the screw holes, caulk the joints, then prime and paint with a durable semi-gloss or enamel so spills wipe off. Let the paint cure before you load the shelves.'],ordered=True)
 after(P,'explains how to find studs and choose the right fasteners.</p>\n<!-- /wp:paragraph -->',cleat)
 def light():
@@ -62,11 +62,12 @@ def faq():
     h3('How wide should a walk-in pantry be?')
     p('Allow at least 36 inches of clear aisle, or 42 to 48 inches for a roomier walk-in, then add the shelf depth on each shelved side. With 16 inch shelves on two facing walls, the room needs to be about 68 inches wide; with shelves on one wall only, about 52 inches.')
     h3('How high should the top pantry shelf be?')
-    p('Dimensions.com puts a typical top pantry shelf around 84 inches from the floor, but most people can only reach about 69 to 76 inches without a step. Use the top shelf for backups and rarely used items, keep a step stool nearby and store heavy things low.')
+    p('Dimensions.com puts a typical top pantry shelf around 84 inches from the floor, but the comfortable maximum reach is about 69 to 76 inches. Use the top shelf for backups and rarely used items, keep a step stool nearby and store heavy things low.')
 before(P,'<!-- wp:paragraph -->\n<p>Planning open shelves on a wall instead?',faq)
 rep(P,'\n\n<!-- wp:paragraph -->\n<p>Want shelving with a sink, a coffee station and glass-front cabinets too? See our <a href="https://dailyspacehacks.com/butlers-pantry-ideas/">butler\'s pantry ideas</a> for layouts and sizes that fit any home.</p>\n<!-- /wp:paragraph -->','')
 rep(P,'<p>A slim door rack holds spices, small jars and packets,','<p>A slim door rack holds '+a('spice-cabinet-organization','spices')+', small jars and packets,')
 rep(P,'Plywood is strong and budget-friendly. Add','Plywood is strong and budget-friendly, and it is the same material we use in our '+a('diy-closet-shelves','DIY closet shelves')+'. Add')
 rep(P,'a pull-out cabinet or shelves in another spot can work.','a pull-out cabinet or '+a('storage-ideas-for-small-spaces','shelves in another spot')+' can work.')
 rep(P,'Get the shelves right first, and organizing the pantry becomes much easier.</p>','Get the shelves right first, and organizing the pantry becomes much easier. For the rest of the room, see our '+a('kitchen-storage-ideas','kitchen storage ideas')+'.</p>')
+rep(P,'and small appliances need the most.','and large and bulk items need the most.')
 save('ops788.json')

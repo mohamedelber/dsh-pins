@@ -2,7 +2,7 @@ T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';W='#
 s=[];a=s.append
 desc=("Three top-down walk-in pantry plans with 16 inch deep shelves. U-shape: shelves on three walls around a 36 to 48 inch aisle, so the room needs to be at least about 68 inches (5 ft 8 in) wide. "
 "Galley: shelves on two facing walls with the same aisle, also about 68 inches wide. Single wall: shelves on one wall only, about 52 inches wide. "
-"Notes: 36 inches is the minimum aisle, 42 to 48 inches is more comfortable, 60 inches or more for a wheelchair, and the top shelf should stay within about 69 to 76 inches of reach.")
+"Notes: 36 inches is the minimum aisle, 42 to 48 inches is more comfortable, 60 inches or more for a wheelchair, and keep everyday food within about 69 to 76 inches of reach.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="Poppins, sans-serif" role="img" aria-labelledby="wl-t wl-d"><title id="wl-t">Walk-in pantry layouts and aisle widths</title><desc id="wl-d">{desc}</desc>')
 a(f'<rect width="1200" height="820" fill="{BG}"/>')
 a(f'<text x="60" y="84" font-size="44" font-weight="700" fill="{T}">Walk-In Pantry Layouts</text>')
@@ -33,7 +33,7 @@ panel(430,'Galley','LR',68,'At least ~68 in')
 panel(800,'Single wall','R',52,'At least ~52 in')
 a(f'<rect x="60" y="655" width="1080" height="100" rx="14" fill="{SGL}" stroke="{SG}" stroke-width="2"/>')
 a(f'<text x="88" y="696" font-size="19" fill="{T}"><tspan font-weight="700">Aisle:</tspan> 36 in minimum, 42–48 in is more comfortable, 60 in or more for a wheelchair.</text>')
-a(f'<text x="88" y="728" font-size="19" fill="{T}"><tspan font-weight="700">Reach:</tspan> keep the top shelf within about 69–76 in of the floor.</text>')
+a(f'<text x="88" y="728" font-size="19" fill="{T}"><tspan font-weight="700">Reach:</tspan> keep everyday food below about 69–76 in; the top shelf (~84 in) is for backups.</text>')
 a(f'<text x="60" y="795" font-size="15" fill="{G}">Aisle and reach figures: dimensions.com. Room widths are our estimates: aisle + shelf depth on each shelved side.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
