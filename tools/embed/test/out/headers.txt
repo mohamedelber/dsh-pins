@@ -1,5 +1,6 @@
-== https://dailyspacehacks.com/wp-content/uploads/2026/10/moving-checklist-printable.pdf
+== https://dailyspacehacks.com/wainscoting-calculator/
 HTTP/2 200 
-cache-control: public, max-age=31557600
+link: <https://dailyspacehacks.com/wp-json/>; rel="https://api.w.org/"
+link: <https://dailyspacehacks.com/wp-json/wp/v2/pages/3178>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://dailyspacehacks.com/?p=3178>; rel=shortlink
 content-security-policy: upgrade-insecure-requests
-link: <https://dailyspacehacks.com/moving-checklist-printable/>; rel=canonical

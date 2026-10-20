@@ -1,2 +1,2 @@
-host.html d recessed-lighting:1678px:1450 board-and-batten:1703px:1500
-host.html m recessed-lighting:2377px:1450 board-and-batten:2578px:1500
+host.html d recessed-lighting:1678px:1450 board-and-batten:1703px:1500 wainscoting:1507px:1500
+host.html m recessed-lighting:2377px:1450 board-and-batten:2578px:1500 wainscoting:2210px:1500
