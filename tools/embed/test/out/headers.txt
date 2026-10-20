@@ -1,6 +1,12 @@
-== https://dailyspacehacks.com/embed-calculators/baseboard/
+== https://dailyspacehacks.com/embed-calculators/kitchen-island/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/baseboard-calculator/
+== https://dailyspacehacks.com/kitchen-island-size-calculator/
+HTTP/2 200 
+content-security-policy: upgrade-insecure-requests
+== https://dailyspacehacks.com/embed-calculators/desk-height/
+HTTP/2 200 
+content-security-policy: upgrade-insecure-requests
+== https://dailyspacehacks.com/desk-height-calculator/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests

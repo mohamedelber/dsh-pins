@@ -1,2 +1,2 @@
-host.html d baseboard:1333px:1250 baseboard-calculator::2400
-host.html m baseboard:1840px:1250 baseboard-calculator::2400
+host.html d kitchen-island:1333px:1350 desk-height:1383px:1300
+host.html m kitchen-island:1873px:1350 desk-height:2046px:1300
