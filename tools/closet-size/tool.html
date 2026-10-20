@@ -126,27 +126,27 @@ return s+'</svg>'}
 function calc(){var vv=$('vv');vv.className='verdict';var tips=[];
 var D=parseFloat($('dp').value),A=parseFloat($('ai').value),dbl=$('dh').checked,f=dbl?0.6:1,rw=need*12*f,wall=rw+extra*12;
 var cW=num('cw')*12,cL=num('cl')*12;
-var c=size(lay,wall,D,A),t=size(lay,wall,D,24);
+var c=size(lay,wall,D,A),t=size(lay,wall,D,24);c[1]=Math.max(c[1],t[1]);
 var rod=rodOf(lay,c[0],c[1],D);
 $('k1t').textContent=A>=36?'Comfortable size':'Your size';$('k1').textContent=dims(c[0],c[1]);$('k1e').textContent=m(c[0])+' x '+m(c[1])+' m, '+Math.round(c[0]*c[1]/144)+' sq ft';
 $('k2t').textContent='Tight minimum';$('k2').textContent=dims(t[0],t[1]);$('k2e').textContent='with a 24 in walkway';
 $('k3t').textContent='Hanging rod';$('k3').textContent='about '+Math.round(need)+' ft';$('k3e').textContent=(dbl?'double hang on about '+Math.round(rw/12)+' ft of wall':'single hang')+', plus '+extra+' ft of wall for drawers and shoes';
 var shown=c;
 if(cW>0){if(cL>0){var mn=minWL(lay,D,24),okW=cW>=mn[0],okL=cL>=mn[1];var have=rodOf(lay,cW,cL,D);
-var aisle=lay==='one'?cW-D:(lay==='L'?Math.min(cW,cL)-D:(lay==='isl'?(cW-2*D-24)/2:cW-2*D));
+var aisle=lay==='one'?cW-D:(lay==='L'?Math.min(cW,cL)-D:(lay==='isl'?Math.min((cW-2*D-24)/2,(cL-D-48)/2):cW-2*D));
 shown=[cW,cL];
 $('k1t').textContent='Your closet';$('k1').textContent=dims(cW,cL);$('k1e').textContent=m(cW)+' x '+m(cL)+' m';
 $('k3t').textContent='Rod that fits';$('k3').textContent='about '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft';$('k3e').textContent='after '+extra+' ft for drawers; you need about '+Math.round(need)+' ft';
 if(!(okW)||!(okL)){vv.className='verdict bad';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' closet does not fit in '+dims(cW,cL)+': it needs at least '+dims(mn[0],mn[1])+'. Try a layout with fewer walls of storage.'}
-else if(wall>have){vv.className='verdict amb';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' layout fits in '+dims(cW,cL)+' with a walkway of about '+Math.round(aisle)+' in, but after drawers there is only room for about '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft of rod. Add double hang, or try another layout.'}
+else if(wall>have){vv.className='verdict amb';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' layout fits in '+dims(cW,cL)+' with a walkway of about '+Math.round(aisle)+' in, but after drawers there is only room for about '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft of rod. '+(dbl?'Try another layout or a bigger space.':'Add double hang, or try another layout.')}
 else{vv.textContent='Good news: '+NM[lay]+' layout fits in '+dims(cW,cL)+', with a walkway of about '+Math.round(aisle)+' in and room for all '+Math.round(need)+' ft of hanging.'}
-if(!(okW)||!(okL)){$('k3').textContent='does not fit';$('k3e').textContent='try another layout'}
-if(lay==='one'){if(cW>=2*D+30){tips.push('Your closet is wide enough for clothes on both long walls: try the two-wall layout for about twice the hanging space.')}}
-if(aisle>0){if(36>aisle){tips.push('Your walkway is under 36 in: it works, but use shallow shelves or drawers on one side to gain a few inches.')}}
-summary='My '+dims(cW,cL)+' walk-in closet: '+NM[lay].replace(/^an? /,'')+' layout, '+Math.round(have/12)+' ft of rod. dailyspacehacks.com/walk-in-closet-size/'}}
+if(!(okW)||!(okL)){$('k3t').textContent='Hanging rod';$('k3').textContent='does not fit';$('k3e').textContent='try another layout'}
+if(lay==='one'){if(cW>=2*D+30){tips.push('Your closet is wide enough for clothes on both side walls: try the two-wall layout for about twice the hanging space.')}}
+if(okW){if(okL){if(36>aisle){tips.push('Your walkway is under 36 in: it works, but use shallow shelves or drawers on one side to gain a few inches.')}}}
+summary='My '+dims(cW,cL)+' walk-in closet: '+NM[lay].replace(/^an? /,'')+' layout, '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft of rod. dailyspacehacks.com/walk-in-closet-size/'}}
 if(shown===c){vv.textContent='For '+NM[lay]+' walk-in closet with about '+Math.round(need)+' ft of hanging, plan on '+dims(c[0],c[1])+' ('+m(c[0])+' x '+m(c[1])+' m). The smallest that works is '+dims(t[0],t[1])+'.';
 summary='Walk-in closet, '+NM[lay].replace(/^an? /,'')+' layout, '+Math.round(need)+' ft of hanging: comfortable '+dims(c[0],c[1])+', minimum '+dims(t[0],t[1])+'. dailyspacehacks.com/walk-in-closet-size/'}
-if(lay==='isl'){tips.push('Keep at least 36 in of floor all around the island so drawers can open and two people can pass.')}
+if(lay==='isl'){tips.push('Aim for 36 in of floor all around the island so drawers can open and two people can pass; 24 in is the tight minimum.')}
 if(lay==='L'||lay==='U'||lay==='isl'){tips.push('Corners waste space: use a corner shelf unit or turn the rods so they do not overlap.')}
 if(lay==='one'){tips.push('A one-wall walk-in is the easiest fit for a small room or a deep reach-in closet: just 24 in for clothes plus the walkway.')}
 if(!dbl){tips.push('Double hang shirts and trousers on two rods to fit almost twice as much on the same wall. Keep one section for long dresses and coats.')}

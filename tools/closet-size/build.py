@@ -33,7 +33,7 @@ table(["Layout","Tight minimum","Comfortable","How it adds up"],[
 ["L-shape","4 x 4 ft","5 x 5 ft","walkway in front of both walls"],
 ["U-shape","6 ft wide","7 ft wide","same width as two walls, plus a back wall"],
 ["With an island","10 x 10 ft","12 x 12 ft","walkway on every side of the island"]])
-p(f"This Old House says walk-ins {ext(TOH1,'should be at least 6 feet wide to allow for a 2-foot aisle and 2 feet of hanging space on either side')}, and Dimensions.com gives {ext(DIM,'7’ (213 cm) for two sets of comfortable hanger rods')}. For a U-shape, HomeGuide says such closets {ext(HG,'require at least 7 feet wide and 10 feet deep')}.")
+p(f"This Old House says walk-ins {ext(TOH1,'should be at least 6 feet wide to allow for a 2-foot aisle and 2 feet of hanging space on either side')}, and Dimensions.com gives {ext(DIM,'7’ (213 cm) for two sets of comfortable hanger rods')}. For a U-shape, HomeGuide says such closets {ext(HG,'require at least 7 feet wide and 10 feet deep')}, though a small wardrobe can fit in a shorter U.")
 h3("One-Wall Walk-In Closet")
 img(2)
 p("A one-wall closet keeps every rod, shelf and drawer on a single wall. It is the best choice for a narrow space, a deep reach-in closet you want to walk into, or a corner of a bedroom. At 5 ft wide you get 24 in for clothes and a comfortable 36 in walkway.")
@@ -47,7 +47,7 @@ h3("Walk-In Closet With an Island")
 img(5)
 p(f"An island adds drawers and a folding surface, but it needs space on every side. California Closets says that with a center island {ext(CC,'you’ll want at least 36” of clearance on all sides')}, and suggests an island layout in {ext(CC,'larger areas (10’ x 10’ or more)')}. With 36 in walkways all around, plan about 12 x 12 ft.")
 h2("Average Walk-In Closet Size")
-p(f"There is no official national figure, but closet companies agree on a range. Architect Matthew Coates, quoted by Livingetc, says {ext(LE,'a medium walk-in closet usually ranges from 40-70 square feet')} and {ext(LE,'a large walk-in closet can be 100 square feet or more')}. In practice, a closet for one person is often about 6.5 x 8 ft, and a shared main-bedroom closet about 7 x 10 ft.")
+p(f"There is no official national figure, but design sources agree on a range. Architect Matthew Coates, quoted by Livingetc, says {ext(LE,'a medium walk-in closet usually ranges from 40-70 square feet')} and {ext(LE,'a large walk-in closet can be 100 square feet or more')}. In practice, a closet for one person is often about 6.5 x 8 ft, and a shared main-bedroom closet about 7 x 10 ft.")
 h2("Walk-In Closet Dimensions: Depth, Walkway and Rod Height")
 table(["What","Standard size","Notes"],[
 ["Hanging depth","24 in (61 cm)","20 in works at a squeeze"],
