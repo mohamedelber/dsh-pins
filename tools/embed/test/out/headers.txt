@@ -1,6 +1,4 @@
-== https://dailyspacehacks.com/embed-calculators/board-and-batten/
+== https://dailyspacehacks.com/wp-content/uploads/2026/10/moving-checklist-printable.pdf
 HTTP/2 200 
-content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/board-and-batten-calculator/
-HTTP/2 200 
+cache-control: public, max-age=31557600
 content-security-policy: upgrade-insecure-requests
