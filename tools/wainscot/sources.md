@@ -1,0 +1,557 @@
+# Wainscoting calculator: sources
+
+Researched 2026-10-20. Every quote below came from fetching the page with WebFetch. Quotes were pulled out by WebFetch's text extractor, and a few came back cut short (marked "partial"), so search the live page with Ctrl+F before you publish a quote. Competitor calculators (inchcalculator, omnicalculator, calconic, wallpanelplanner) were left out on purpose. Other calculator sites that showed up in searches (everycalculators, calculatequick, calculover, woodworkingadvisor) were also left out.
+
+Key: **[2+]** = backed by 2 or more sources. **[1]** = single source.
+
+Blocked or not reached:
+- The Spruce, Better Homes & Gardens and House Beautiful: domain-filtered searches were rejected by the search proxy, and plain searches returned no page from these sites. They are not used.
+- Bob Vila cost: bobvila.com/articles/wainscoting-cost now serves "19 Wainscoting Ideas That Will Add Character to Your Home". It has no dollar figures, so Bob Vila is used only for styles, height and beadboard.
+- Angi: no Angi per-style cost table was found. Angi figures come from its "types" and "what is" articles. The per-style table is from HomeAdvisor (an Angi brand).
+- Family Handyman: only the wainscoted wall project was reached (no picture-frame article).
+- Fine Homebuilding "A Simple Approach to Raised-Panel Wainscot" is partly paywalled. Only the visible part was read.
+- Sawmill Creek (robots blocked). Wickes "hallway panelling", "DIY wood panelling" and "stairs panelling" web pages, and B&Q's panelling pages, returned only navigation. The Wickes PDF guides were used instead.
+
+## Source list
+- US, layout and trade:
+  - FHB-S = Fine Homebuilding, A Simple Approach to Raised-Panel Wainscot: https://www.finehomebuilding.com/project-guides/finish-trim-carpentry/a-simple-approach-to-raised-panel-wainscot
+  - FHB-84 = Fine Homebuilding, Raised-Panel Wainscot (1984): https://finehomebuilding.com/1984/03/01/raised-panel-wainscot
+  - FHB-ST = Fine Homebuilding, Taking Wainscot Up Stairs (PDF copy): https://cloud.chiefarchitect.com/1/pdf/magazine-articles/taking-wainscot-up-stairs.pdf (web: https://www.finehomebuilding.com/project-guides/finish-trim-carpentry/taking-wainscot-up-stairs)
+  - FHB-E = Fine Homebuilding, An Easy Approach to Wainscot Paneling (shadow boxes): https://finehomebuilding.com/?p=171798
+  - FHB-CR = Fine Homebuilding, The Misused and Confused Chair Rail: https://finehomebuilding.com/?p=107443
+  - FHB-F = Fine Homebuilding forum, chair rail height: https://www.finehomebuilding.com/forum/chair-rail-height
+  - JLC = Journal of Light Construction, An Introduction to Wainscotting (picture frame): https://www.jlconline.com/how-to/interiors/an-introduction-to-wainscotting_o (same article as PDF: https://www.jlconline.com/wp-content/uploads/sites/4/2025/0525b-jlc-ttt.pdf). Counted as one source.
+  - JLC-SP = JLC, Simple Panel Wainscot: https://www.jlconline.com/how-to/interiors/simple-panel-wainscot_o
+  - TIC = This Is Carpentry, Wainscot Layout Made Easy: https://www.thisiscarpentry.com/2008/08/29/wainscot-layout-made-easy/
+  - FH = Family Handyman, How to Build a Wainscoted Wall: https://www.familyhandyman.com/project/how-to-build-a-wainscoted-wall/
+  - TOH-I = This Old House, How to Install Wainscoting: https://www.thisoldhouse.com/walls/how-to-install-wainscoting
+  - TOH-E = This Old House, Easy DIY Wainscoting (picture frame): https://www.thisoldhouse.com/walls/how-to-install-easy-diy-wainscoting
+  - TOH-ID = This Old House, Wainscoting Ideas: https://www.thisoldhouse.com/walls/wainscoting-ideas
+  - TOH-D = This Old House, Wainscoting Designs: https://www.thisoldhouse.com/walls/wainscoting-designs
+  - TOH-BB = This Old House, How to Install Beadboard Wainscoting: https://www.thisoldhouse.com/walls/how-to-install-beadboard-wainscoting
+- US, makers and retailers:
+  - ET-RP = Elite Trimworks, raised panel kit: https://elitetrimworks.com/products/elite-raised-panel-wainscoting
+  - ET-FP = Elite Trimworks, flat panel kit: https://elitetrimworks.com/products/flat-paneled-wainscoting-kit
+  - ET-SH = Elite Trimworks, shaker kit: https://elitetrimworks.com/products/shaker-wainscoting
+  - ET-RW = Elite Trimworks, recessed wall-paneled kit: https://elitetrimworks.com/products/recessed-wall-paneled-wainscot-38
+  - ET-BB = Elite Trimworks, beadboard kit: https://elitetrimworks.com/products/beadboard-wainscoting-kit
+  - ET-IN = Elite Trimworks, introduction: https://elitetrimworks.com/pages/wainscoting-introduction
+  - ET-W = Elite Trimworks, wainscot page: https://elitetrimworks.com/pages/wainscot
+  - ET-WP = Elite Trimworks wall-paneled install guide (PDF, hosted by Architectural Depot): https://cdn.architecturaldepot.com/pdf/installation/wainscot-wall-paneled.pdf
+  - ET-EP = "Elite" paneled install guide (PDF, hosted by Architectural Depot; maker not named in the text): https://cdn.architecturaldepot.com/pdf/installation/wainscot-elite-paneled.pdf
+  - MET = Metrie, how high should wainscoting be: https://www.metrie.com/the-finished-space/en-blog-how-high-should-wainscoting-be
+  - MET-CR = Metrie, chair rail height: https://metrie.com/thefinishedspace/chair-rail-height/
+  - HD-BB = Home Depot, How to Install Beadboard Wainscoting: https://www.homedepot.com/c/ah/how-to-install-beadboard-wainscoting/9ba683603be9fa5395fab90d81eec51
+  - HD-32 = Home Depot, Eucatile 32 x 48 in wainscot panel: https://homedepot.com/p/EUCATILE-3-16-in-x-32-in-x-48-in-White-True-Bead-Wainscot-Panel-975-891/205669197
+  - HD-48 = Home Depot, Eucatile 48 x 96 in beadboard sheet: https://homedepot.com/p/EUCATILE-32-sq-ft-3-16-in-x-48-in-x-96-in-Beadboard-White-True-Bead-Panel-975-759/205669196
+  - HD-KIT = Home Depot, House of Fara 32 in kit: https://www.homedepot.com/p/HOUSE-OF-FARA-5-16-in-x-5-29-32-in-x-32-in-8-lin-ft-MDF-Overlapping-Wainscot-Interior-Paneling-Kit-32MDFKIT/100484658
+  - HD-PL = Home Depot, House of Fara 8 ft planks: https://homedepot.com/p/HOUSE-OF-FARA-5-16-in-x-5-29-32-in-x-8-ft-MDF-Wainscot-Panel-3-Pieces-W96MDF/203579439
+  - HD-PFM = Home Depot, Wellco picture frame moulding 96 in: https://www.homedepot.com/p/Wellco-1-5-in-x-4-5-in-x-96-in-Polyurethane-Classic-Wainscot-Wall-Panel-Moulding-Picture-Frame-Moulding-PPFM1545/333623395
+  - HD-CR = Home Depot, 12 ft chair rail: https://www.homedepot.com/p/Alexandria-Moulding-LWM390-11-16-in-x-2-5-8-in-x-12-ft-Primed-Poplar-Finger-Jointed-Chair-Rail-Moulding-0D390-97144C/206012639
+  - LOW = Lowe's, moulding buying guide: https://www.lowes.com/n/buying-guide/moulding-buying-guide
+  - LOW-WC = Lowe's, 2 in x 8 ft wall panel moulding: https://lowes.com/pd/2-in-x-8-ft-Primed-Wall-Panel-Moulding/50263507
+  - LOW-CR = Lowe's, 12 ft chair rail listing: https://www.lowes.com/pl/moulding/chair-rail-moulding/12-ft/4294518249-3885960074
+  - AMR = Amerhart (millwork distributor), 16 ft panel moulding: https://www.amerhart.com/catalog/moulding-and-millwork/wall-trim/chair-rail-and-panel-moulding/decca-183-primed-pine-916x118x16
+  - WW-W = WOODWEB, waste allowance for running trim: https://woodweb.com/knowledge_base/Waste_Allowance_for_Running_Trim.html
+- US, cost:
+  - HG = HomeGuide: https://homeguide.com/costs/wainscoting-cost
+  - FX = Fixr: https://www.fixr.com/costs/wainscoting-installation
+  - HA = HomeAdvisor (Angi brand): https://www.homeadvisor.com/cost/walls-and-ceilings/install-wainscoting-or-beadboard/
+  - ANGI-T = Angi, types of wainscoting: https://www.angi.com/articles/types-of-wainscoting.htm
+  - ANGI-W = Angi, what is wainscoting: https://www.angi.com/articles/what-is-wainscoting.htm
+  - ANGI-I = Angi, what is wainscoting installation: https://www.angi.com/articles/what-is-wainscoting-installation.htm
+- US, style, height and DIY:
+  - BV-H = Bob Vila, wainscoting height: https://www.bobvila.com/articles/wainscoting-height/
+  - BV-CR = Bob Vila, chair rail height: https://www.bobvila.com/articles/chair-rail-height/
+  - BV-ID = Bob Vila, 19 wainscoting ideas (served at the old cost URL): https://www.bobvila.com/articles/wainscoting-cost/
+  - BV-BB = Bob Vila, how to install beadboard: https://www.bobvila.com/articles/how-to-install-beadboard/ (same text at https://www.bobvila.com/articles/beadboard-wainscoting)
+  - HGTV-PF = HGTV, picture frame molding: https://www.hgtv.com/decorating/diy/how-to-easily-install-picture-frame-molding
+  - HGTV-BB = HGTV, board and batten: https://www.hgtv.com/design/decorating/design-101/how-to-install-board-and-batten-accent-wall
+  - AT = Apartment Therapy, wainscoting height: https://www.apartmenttherapy.com/wainscoting-height-260241
+  - LB = Laurel Bern Interiors: https://laurelberninteriors.com/wainscoting-one-thing-you-must-never-do/
+  - MMS-H = Miss Mustard Seed, proper heights: https://missmustardseed.com/proper-heights-for-wainscoting/
+  - MMS-PF = Miss Mustard Seed, picture frame tutorial: https://missmustardseed.com/picture-frame-molding-tutorial/
+  - TDC = Thrifty Decor Chick: https://thriftydecorchick.com/2009/11/squares-on-my-walls.html
+  - UDH = Ugly Duckling House: https://www.uglyducklinghouse.com/picture-frame-molding-challenges-outlets-windows/
+  - A2D = Addicted 2 Decorating: https://www.addicted2decorating.com/how-to-install-picture-frame-molding-the-easiest-wainscoting-style-ever.html
+  - BLH = Bless'er House, picture frame molding: https://www.blesserhouse.com/diy-picture-frame-molding
+  - HS = HomeServe, install wainscoting: https://homeserve.com/en-us/blog/how-to/install-wainscoting
+- UK:
+  - WK-H = Wickes, stairs and hallway panelling guide (PDF): https://media.wickes.co.uk/is/content/wickes/C1875_121175_TECH_0
+  - WK-SK = Wickes, Cheshire Mouldings Shaker Wall Kit fitting PDF: https://media.wickes.co.uk/is/content/wickes/GPID_5000070014_TECH_0
+  - HOW = Howdens, panel mould and dado wall panelling fitting guide (PDF): https://www.howdens.com/-/media/howdens/assets/clh_asset_products/clh_asset_levela_108973/clh_asset_levelb_110625/ass_25504875.pdf
+  - IH-P = Ideal Home, how to panel a wall: https://www.idealhome.co.uk/diy-and-decorating/how-to-transform-your-walls-with-panelling-diy-50943
+  - IH-D = Ideal Home, hallway dado rail trend: https://www.idealhome.co.uk/all-rooms/hallway/hallway-dado-rail-trend
+  - HBR-D = Homebuilding & Renovating, dado rail ideas: https://www.homebuilding.co.uk/ideas/dado-rail-ideas
+  - HBR-H = Homebuilding & Renovating, half wall panelling: https://www.homebuilding.co.uk/ideas/half-wall-panelling-ideas
+  - HBR = Homebuilding & Renovating, DIY wall panelling: https://www.homebuilding.co.uk/advice/diy-wall-panelling
+  - TS = Toolstation, how to fit a dado rail: https://www.toolstation.com/help-and-advice/how-to-guides/how-to-fit-a-dado-rail
+  - WIKI = Wikipedia, dado rail: https://en.wikipedia.org/wiki/Dado_rail
+  - NW-D = Nature Wall, dado wall panelling kit fitting guide (PDF): https://cdn.shopify.com/s/files/1/0002/2557/4918/files/Dado_Wall_Panelling_Kit_Fitting_Guide.pdf
+  - NW-S = NatureWall square kit fitting guide (B&Q marketplace PDF): https://media.diy.com/is/content/KingfisherDigital/Marketplace/5060594831751_MNL_MP
+  - CUT = CutMy, MDF strips: https://www.cutmy.co.uk/wall-panelling/mdf-strips/
+  - CUT-D = CutMy, custom height shaker dado: https://www.cutmy.co.uk/wall-panelling/custom-height-shaker-dado
+  - SBS = The Skirting Board Shop, MDF wall panelling kit: https://www.theskirtingboardshop.co.uk/mdf-wall-panelling-kit.html
+
+## 1. Wainscoting styles
+- **Raised panel: beveled panels in a stile-and-rail frame; the most traditional style [2+]**
+  - TOH-ID: "Raised panel wainscoting is the most traditional style, dating back to colonial times."
+  - TOH-D: "Typically built like a door, with thick beveled-edged panels held in place by a frame."
+  - BV-ID: "this traditional wainscoting option sports individual beveled square or rectangular wood (or MDF) panels." (partial)
+  - ANGI-W: "Raised-panel wainscoting is classic, formal, and full of detail."
+  - Cost note. HA: raised panels "can also cost twice as much as flat or beadboard panels."
+- **Flat (recessed) panel, also called Shaker: flat panel inside the frame [2+]**
+  - TOH-ID: "Flat panel, or recessed panel, wainscoting offers clean lines popular in Arts and Crafts and Mission-style interiors."
+  - TOH-D: "The Shakers favored this simple, clean look, which also works in contemporary homes." and "Originally, the panels were solid wood cradled in a stile-and-rail frame."
+  - ANGI-W: "The panels sit level with the surrounding trim, so the whole surface looks clean and up-to-date."
+  - Wall-as-panel versions. FH: "The panels are the wall itself." ET-RW: "No panels are needed here, just use the existing wall"
+  - Note: HomeGuide uses "Shaker" for board and batten ("Board and batten paneling costs $10 and $23 per square foot and is also called Shaker paneling."). Most sources use "Shaker" for flat panel. Sources disagree on the label.
+- **Picture frame (shadow box, applied moulding): mitred moulding boxes on a flat wall [2+]**
+  - BV-ID: "It usually consists of a series of frame-like units made of individual strips of beveled wood or MDF molding" (partial)
+  - FHB-E: "I usually make the shadow boxes with 1 1/4 in. base cap molding with mitered corners"
+  - HGTV-PF: the corners are "cut at a 45-degree angle."
+  - Note: Angi, HomeGuide, Fixr and HomeAdvisor do not price picture frame as its own style. HA only says raised panels have a "picture frame-like look."
+- **Beadboard: narrow tongue-and-groove strips with a bead [2+]**
+  - TOH-D: "Thin tongue-and-groove strips, popular in Queen Anne–style homes from the late 1800s."
+  - ANGI-W: "Beadboard wainscoting features narrow vertical boards with evenly spaced grooves (or beads)."
+  - BV-BB: "Typically, beadboard is sold as tongue-and-groove panels or individual boards."
+- **Board and batten (one line; see the board and batten calculator) [2+]**
+  - TOH-D: "Wide planks laid vertically on the wall alternate with narrow strips that cover the joints."
+  - ANGI-W: "With wide vertical boards and thin strips (battens) placed over the seams"
+- **Overlay (extra style used in cost tables) [1]**
+  - ANGI-W: "It layers one panel on top of another, typically a flat base with a smaller, raised detail on top."
+
+## 2. Height rules
+- **One third of the wall height is the classic rule [2+]**
+  - MET: "Traditionally, wainscoting runs about one-third of the wall’s height."
+  - HG: "The standard height of wainscoting is one-third of the wall's height."
+  - AT: "A good general rule for the height of a wainscot is that it be a third of the way up the wall."
+  - BV-H: "wainscoting height should be a third of the wall's height" (it includes the cap and mouldings)
+  - ET-IN: "Wainscoting usually covers the bottom third of the wall"
+  - JLC: "molding (or chair rail) set horizontally at one-third of the wall height up from the floor."
+  - LB: "Generally speaking, one can't go wrong with 'the rule of thirds.'"
+- **In inches: about 32 in on an 8 ft wall, 36 in on a 9 ft wall [2+]**
+  - HG: "This means a room with 8-foot ceilings should have 32-inch-high wainscoting." and "11-foot ceilings should have wainscoting that's 44 inches tall."
+  - BV-H: "Scale down to about 32 inches for rooms with 8-foot walls." and for 9 ft walls "3-foot (or 36-inch) wainscoting will look great"
+  - AT: "In a room that's nine feet tall, for example, this would put the height of the wainscoting at three feet."
+  - BV-BB: "A typical height for wainscoting is 32 or 36 inches."
+  - HD-BB: "Installation is typically 32 to 36 inches off the floor or roughly one-third the room height."
+  - TOH-BB: "The height of wainscoting can vary, but it's commonly installed at 32–36 inches from the floor."
+  - JLC: "usually between 32 and 36 inches from the floor, depending on ceiling height."
+  - ANGI-T: "with most options ranging from 32 to 40 inches in height"
+- **Some sources go higher: 36-42 in is "classic" for This Old House and kit makers [2+]. Sources disagree.**
+  - TOH-I: "Classic wainscotting is between 36 and 42 inches from the ground, while modern wainscotting might be taller."
+  - HG: "The most popular wainscoting panel sizes are 3 to 3.5 feet tall."
+  - ET-RP: "Designed for wainscot heights between 36" and 42"."
+  - ET-FP: "The system supports finished heights between 36" and 42"."
+  - FHB-84: "I wanted its top to be about 41 in. from the floor."
+  - Lower view. LB: "I will let you have your 36″ wainscoting, but it should be less." and "This is one area that better too low is better than too high."
+  - Lower view. FHB-CR: "unless your ceilings are 16-ft. tall, 36 in. is way too high for the chair rail" and "When it comes to chair rail, I always advise customers to err on the side of too low rather than too high."
+  - Lower view. MET-CR: "it's usually better to go a little lower than higher"
+- **Chair rail height: 32-36 in, about a third up [2+]**
+  - MET-CR: carpenters often advise "between 32 and 36 inches off the floor," and "the average chair rail height will be around 32 inches."
+  - BV-CR: "As a general rule, chair rail should be applied one-third of the way up the wall from the floor" and "so for a room with an 8-foot ceiling, installing the chair rail at around 32 inches is a safe bet"
+  - MMS-H: "The typical height of a chair rail is 30-36″ off the floor, depending on the height of the ceilings."
+  - FHB-F (forum): "Bottom of the chair rail should be 32-36 off the floor." and "I like 36" to the top of the chair rail for 9' or 10' ceilings. 34" for 8' ceilings."
+  - LOW: chair rail "typically sits about a third of the way up the wall from the floor" (extractor summary, not a verbatim line; check the live page)
+  - Outlier. FHB-CR cites 18th-century pattern books at about 24 in: "in rooms with 9-ft. to 10-ft. ceilings, this height is actually most appropriate for chair rail"
+- **Taller wainscot: two-thirds, or about 4-6 ft [2+]. No reputable source states "48-60 in" as a range; the numbers below are the closest.**
+  - FX: "Wainscoting should take up roughly ⅔ of the wall." and "Wainscoting is usually relegated to the bottom half or two-thirds of the space."
+  - LB: "Today, wainscoting may go on the lower third of the wall, two-thirds of the wall, or the entire wall."
+  - BV-H: "Running your wainscoting two-thirds of the way up the wall" and for lofted rooms "somewhere in the ballpark of 36 up to 48 inches."
+  - BV-BB: "Another popular option is to cover about ¾ of the wall's height with beadboard"
+  - AT: "Want to shake things up with a much taller wainscot? Try one that covers the bottom two-thirds of the wall." (quoted in the board and batten file; same page)
+  - HGTV-BB: "For our eight-foot wall, we are installing board and batten at a height of five feet."
+  - TOH-ID: "Board and batten wainscoting can extend up to 6 feet or higher," (partial)
+  - ET-BB kit heights: "either 40" or 56" high."
+  - TOH-D (raised panel, tall rooms): add "a center rail to create two rows of panels."
+  - Note: Fixr's "⅔" is the odd one out. Most sources treat one third as the default and two-thirds as a deliberate tall option.
+- **Avoid the halfway point [2+]**
+  - LB: "But the one thing you must never do with your wainscoting is apply it halfway up the wall."
+  - MMS-H: "Don’t cut the room exactly in half."
+  - HGTV-BB: "a good rule of thumb is to place the height either above or below the center of the wall."
+  - Note: HBR-H (UK) calls dado-height panelling "half wall": "half wall panelling tends to refer to cladding which is taken up to the height of a dado rail mid-way up the wall". That is a name, not a rule to place it at exactly half.
+- **Windowsills: line up with the sill when it is near the one-third mark [2+]**
+  - BV-H: if the bottom of the window falls at the one-third mark, "make your wainscoting level with the bottom of the window."
+  - AT: "in many classically inspired homes, the height of the wainscot is the same as the height of the windowsills." (quoted in the board and batten file; same page)
+  - FHB-CR: "try to install the windows so that the window sills are the same height as the chair rail" and "if the window sills are 40 in. from the floor, forgetaboutit!"
+  - JLC-SP: "the chair rail was a continuation of the 5/4 window stool"
+- **Height changes the feel of the room [2+]**
+  - JLC: "shorter wainscoting will enhance the feeling of height in a room" and "a taller setting will create the impression of a lower ceiling."
+  - FX: "The higher it is, the smaller the room may appear."
+- **Bathrooms and kitchens [1]**
+  - BV-H: wainscoting may run to "40 inches from the floor" in a bath (about 4 in above a vanity backsplash), and around a tub it might "rise to 8 inches above the tub's lip."
+
+## 3. Panel layout formula (stiles and rails)
+- **Panel width = (wall width - all stile widths) / number of panels. There is one more stile than panels [2+]**
+  - FHB-S: "I determine the panel width by subtracting the total width of the stiles (vertical pieces) from the length of the wall." and "Then I divide the result by the number of panels."
+  - TOH-I: "Remember that each wall has one more stile than panel"
+  - TOH-E: "Every wall will have one more stile than the wall frame."
+  - TIC: "Every wall of wainscoting has an unequal number of panels and stiles."
+  - IH-P (UK): "Then, take that total number and subtract that from your wall’s total width." and "Finally, divide your new figure by how many panels you’ve decided on."
+  - NW-S (UK): "Take this number and add one to work out how many vertical strips you need e.g. two panel sections = three vertical strips."
+  - So: panel width = (W - (n + 1) x stile) / n.
+- **Rough count first, then round to a whole number and recompute [2+]**
+  - TIC: "If the wall measures 96 in., and the stiles are 3 in. wide, use 93 in. as the working length."
+  - TIC: "choose a panel size that seems appropriate for the room—say 10 in." and "In this case, 10 in. + 3 in. = 13 in., which is the unit measurement."
+  - TIC: "To adjust the panel width, round that fractional quotient to the nearest whole number" and "divide 93 in. by 7."
+  - TIC: "The result will be 13 5/16 in." (stile center spacing; panel = 13.29 - 3 = 10.29 in)
+  - ET-WP: "Calculate the distance that you would like between the stiles."
+  - Check with our formula: n = round((96 - 3) / (10 + 3)) = round(7.15) = 7; panel = (96 - 8 x 3) / 7 = 10.29 in. Matches TIC.
+- **Panel height = wainscot height - baseboard - bottom rail - top rail - cap (when the cap sits on top) [2+]**
+  - FHB-84: "With the stiles and rails 4 in. wide, the panels would show 22½ in. of height."
+  - FHB-84: "This finished height would include an existing 7-in. baseboard that could be left in place" and "a 4-in. wide chair-rail molding that would overlap the top rail of the raised-panel frame"
+  - IH-P (UK): "For your vertical stiles, combine the depth of your base rail with the depth of your top rail."
+  - TOH-E (frames): "After finding the distance between the baseboard and chair-rail molding, subtract 7 inches." and "This accounts for a 3 1/2-inch space top and bottom, or the width of two 1×4 "rails.""
+  - Note: FHB-84's cap overlaps the top rail, so it adds no height. A flat cap set on top of the rail does add height. The calculator should ask.
+- **Stile width: 3-4 in is typical (1x4 = 3.5 in) [2+]**
+  - TOH-I: "Primed 1×4 pine board was used for the rails and stiles."
+  - JLC-SP: "We made the top rail and stiles from 1×4 poplar"
+  - FHB-84: "With the stiles and rails 4 in. wide"
+  - ET-EP: outlets should land "inside the panel avoiding the routered edge," "or inside the 4" stile." (partial)
+  - TIC example: 3 in stiles.
+  - Narrower near windows. FH: "reduce the width of rails and stiles to 2-1/2 in."
+- **Rail width: top rail about 3.5-4.5 in; bottom rail wider, about 5.5-8.5 in [2+]. Sources disagree on whether the bottom rail is wider.**
+  - FH: "Tack the 1×6 top rail even with the 31-1/2-in. mark." and "Nail the bottom 1×6 rail parallel at 9 in. above the floor."
+  - JLC-SP: top rail 1x4; the bottom rail was wider stock, which "allowed us to keep the 3 1/2-inch reveal"
+  - ET-SH: "Shaker Wainscot Upper Rail, 4 ⅜" x ⅝" x 95" long" and "Lower Rail for Shaker Wainscoting, 7 ⅝" x ⅝" x 95" long"
+  - ET-BB: upper rail "4-3/8" x 5/8"" and lower rail "7-5/8" x 5/8""
+  - ET-WP: "Install the 8 1/2" bottom rail just like you would any baseboard."
+  - ET-EP: "The Lower Rail is 8” high"
+  - Same width top and bottom. FHB-84 (4 in all round); TOH-I (1x4 rails); FHB-ST figure callouts "3-in. top rail" and "3-in. bottom rail".
+  - Note: Elite's wide lower rail doubles as the baseboard. FH keeps a separate 1x6 base below its bottom rail. The calculator needs a "bottom rail is the baseboard" toggle.
+- **Cap / chair rail on top [2+]**
+  - FH: materials list "1/2 x 2 cap molding" and "Fit the top cap molding and nail it to the top rails."
+  - TOH-I: "Install bullnose molding on the top rails with wood glue and nails."
+  - FHB-ST callout: "21⁄4-in. bolection cap"
+  - HD-CR: "11/16 in. x 2-5/8 in. x 12 ft." chair rail.
+- **Target panel width: often 18-24 in; real jobs range from about 10 to 30 in [2+]**
+  - ET-WP: "We Recommend 18” to 24" between stiles."
+  - ET-RP / ET-FP panels ship at 24 in and are cut down: "The flat panels are manufactured 24 inches wide so they can be cut on site."
+  - ET-EP: "Each kit includes 4 panels that measure 44”h x 20”w."
+  - FH: "with narrower vertical boards spaced every 30 in. or so."
+  - FHB-84: "The largest section has four panels, each of which is 12¾ in. wide; the smallest section has a single 18-in. wide panel."
+  - TIC example: about 10 in panels.
+- **Panel shape: sources disagree on wide vs tall [2+]**
+  - Wider than tall. FHB-S: "They should be wider than they are tall, and to my eye, an odd number of panels looks best."
+  - Wider than tall. FH: "the panel inside the rails and stiles has a height/width ratio of about 1 to 1.6 (vertical to horizontal)."
+  - Wider than tall (stairs). FHB-ST: "I always want a panel to be at least 4 in. longer than its height," "but the length should be no more than 1.75 times the height."
+  - Taller than wide. JLC-SP: "I prefer an odd number of panels, and I like them to be taller than they are wide"
+  - Square. NW-S (UK): "Ensure the squares are evenly spaced by using the panel width dimension as your vertical panel height dimension."
+  - Note: "odd number of panels" is common (FHB-S, JLC-SP, ET-IN "it has an uneven number of panels mounted along any given side of the room.") but no source says it is required.
+- **Corners: one stile laps the other, so make the lapped one wider by the stock thickness [2+]**
+  - FHB-S: "I take into account that one panel will overlap another in corners and that the lapped stile should be 3/4 in." (partial; it continues "(the thickness of the stile) wider.")
+  - JLC-SP: "make one corner stile 3/4 inch wider than the overlapping one so the reveals remain the same"
+  - ET-EP: "Remember that when you hit a corner you may have to rip down a stile in order for it to fit and to maintain symmetry."
+
+## 4. Picture frame (shadow box) moulding
+- **Box width = (wall width - (boxes + 1) x gap) / boxes, with a gap at each end [2+]**
+  - TOH-E: "Add 1 to the number of frames on a given wall and multiply by your chosen spacing between frames." "Subtract that sum from the total wall length, then divide the remainder by the number of frames." "The result is the outside width of each frame."
+  - A2D: "With five panels, I would have six spaces, and six spaces at 3.5 inches wide gave me a total of 21 inches" then "152 inches (total wall width) – 21 inches (total width needed for spacing) = 131 inches" then "131 inches / 5 panels = 26.2 inches wide for each panel"
+  - TDC: "If we did six boxes, there would be seven three inch sections equalling 21 inches." and "Take the remaining 147 inches and divide it by six boxes -- each box will be 24.5 inches wide."
+  - MMS-PF: "I would subtract 6″ for one box, 9″ for two, 12″ for three, etc."
+  - JLC: "If I go with four boxes, I need to account for the three spaces between them: 120 inches - (3 x 3 inches) = 111 inches." and "To find the width of each box, I divide 111 by 4, which equals 27¾ inches." (JLC first takes 3 in off each corner: "Let’s say the wall is 126 inches long, and I subtract 6 inches for spacing from each corner.")
+  - UDH: "5 boxes have 4 spaces in between, and 4 inches per space = 16 inches total" and "Subtracting the spacing, I now had 100 inches to fit 5 boxes, or 20 inches wide per box."
+  - HOW (UK): "There will be 5 spacings x 150mm = 750mm" and "Divide 2850mm by 4 panels = 713mm panel width"
+  - Check: A2D wall 152, gap 3.5, 5 boxes: (152 - 6 x 3.5) / 5 = 26.2 in. TDC: (168 - 7 x 3) / 6 = 24.5 in. Both match.
+- **Gap between boxes: 3 in is most common; range about 2.75-4 in [2+]. Sources differ: 3 in (JLC, MMS-PF, HGTV-PF, TDC), 3.5 in (A2D, BLH, TOH-E), 4 in (FHB-E, UDH).**
+  - JLC: "I keep a 3-inch-wide block of wood in my pouch to use as a spacer" (partial)
+  - MMS-PF: "I played with 2-4″ and landed on a 3″ space on all sides of each box."
+  - HGTV-PF: "For this tutorial, a 3” spacer was cut out of scrap wood to create a 3” border around each box."
+  - TDC: "I do a standard three inches all the way around."
+  - A2D: "I knew I wanted five panels, and I knew that my spacer was 3 1/2 inches wide."
+  - BLH: "this spacer board is technically 3.5″ wide, which we considered in deciding our measurements later"
+  - FHB-E: "Second, that the space between boxes will be around 4 in."
+  - UDH: "They often range from about 2¾ to 4 inches between each box"
+- **Margins from the chair rail and baseboard: usually the same as the gap (3-4 in) [2+]**
+  - JLC: "I’ll also allow 3 inches up from the baseboard and down from the chair rail."
+  - MMS-PF: "a 3″ space on all sides of each box."
+  - UDH: "I chose a used paint stick to mark a 4″ mark to go around the room, starting at the chair rail."
+  - UDH: "so you can have 4 inches at the top and bottom and only 3 in between the boxes if you like"
+  - TOH-E: subtract 7 in for "a 3 1/2-inch space top and bottom"
+  - JLC: "Consistent spacing is more important between the panels and the chair rail than between the panels and baseboard."
+  - HOW (UK): "Next, measure and mark a straight line 150mm from walls, ceiling and from dado and skirting (Fig 4)."
+  - WK-H (UK): "Next, measure 100mm from the underside of the dado and mark at both ends of the run."
+- **Box width rules of thumb [2+]**
+  - FHB-E: "First, that the average shadow box size will be somewhere around 30 in. to 40 in."
+  - JLC: "I don’t want the boxes to be too narrow, as that gets busy visually and makes it difficult to avoid outlets." and "Large boxes can work, but the look will differ from what most people picture as wainscoting."
+  - MMS-PF: "If the span was a larger one (over 50″), I would decide if I wanted to split it"
+  - Real jobs: 20 in (UDH), 21 5/8-27 3/4 in (JLC), 24.5 in (TDC), 26.2 in (A2D), 35.25-41.75 in (BLH).
+  - Note: FHB-E's 30-40 in is wider than most DIY examples (about 20-27 in). Sources disagree.
+- **Same width on each wall; similar across the room [2+]**
+  - BLH: "you do want them to be the same width per each individual wall."
+  - JLC: "similar is better" (boxes "don't have to all be the same size across the room")
+  - FHB-E: "Take your total wall section measurement and divide by the number of boxes."
+  - FHB-E: "Any wall section smaller, gets one box."
+- **Treat each flat run between breaks as its own section [1]**
+  - FHB-E: "any flat wall space that runs horizontally until a vertical break (corner, window, door, etc)"
+- **Mitre cuts: 45 degrees on a mitre saw [2+]**
+  - HGTV-PF: the corners are "cut at a 45-degree angle." and "This angle is a standard setting on a miter saw (or miter box if a hand saw is being used)."
+  - MMS-PF: "I cut all of the pieces on our mitre saw at a 45° angle, so they would fit together to make a box."
+  - FHB-E: "you'll need a miter saw to make accurate 45-degree cuts"
+  - BLH: "we cut each piece of finger-jointed molding to the measurements of our frames at a 45 degree angle on the miter saw."
+  - TOH-E: "Set the miter saw 45-degrees to the right."
+  - Cut tip. MMS-PF: "Cut one piece, then use it as a template" (extractor summary, not verbatim).
+  - JLC: "As the boxes are the same size for each section, stops can be set on the miter saw to speed up production."
+- **How much moulding: each box is a full perimeter, 2 x (width + height) [derived]**
+  - HGTV-PF: "The vertical pieces will all be the same length, but the horizontal pieces will vary based on the size of the wall and number of desired boxes."
+  - MMS-PF bought by length: "The trim comes in 16′ lengths and if you’re getting a lot" (partial). Her two rooms took about 230 ft (extractor summary).
+  - No fetched source gives a picture-frame linear-foot formula. The perimeter sum plus 10% for mitres (LOW, section 6) is our derived rule.
+- **Moulding sizes used [2+]**
+  - FHB-E: "1 1/4 in. base cap molding"
+  - BLH: "11/16″ x 1 3/8″ finger-jointed molding"
+  - TOH-E: "3⁄4-by-1 3⁄8 primed MDF" and the cap "in 8-foot lengths starting at just under $2 per linear foot."
+  - HD-PFM: "1.5 in. x 4/5 in. x 96 in." for "$22.88"
+- **Nails [2+]**
+  - FHB-E: "1 1/4 in., 18-gauge brad nails to secure them to the wall"
+  - TOH-E: "Drive 23-gauge nails every 5–8 inches along the molding, as shown, or space 18-gauge nails about every 10 inches."
+
+## 5. Beadboard
+- **Sheets: 4 x 8 ft (32 sq ft) and 32 x 48 in wainscot panels [2+]**
+  - HD-48: "Each sheet is 48 in. x 96 in. to cover 32 sq. ft." Price "$29.98".
+  - HD-32: "Each panel is 32 inches high with the bead running vertically, and 48 inches wide." Coverage "10.67 sq ft".
+  - TOH-ID (embossed MDF): "For example, these 5/8-inch-thick sheets typically measure 32-by-48 inches" (partial)
+  - BV-BB: "Beadboard is also sold in sheets of plywood, PVC, and other materials" (partial)
+  - Bead spacing. HD-32: "The spacing is 2 inches on bead center, also referred to as 2" OC."
+- **Wainscot kits: 32 in panels (about 36 in finished), 40 in and 56 in kits, each covering 8 linear ft [2+]**
+  - HD-KIT: "MDF kit includes, 1-piece 8 ft. chair rail, 1-piece 8 ft. base and 16 pieces 32 in. panels." The page gives a finished height of about 36 in and 8 linear ft per kit; $88.28.
+  - ET-BB: "either 40" or 56" high." and "8 linear feet." Price $163.77 (40 in) and $194.67 (56 in).
+  - ET-W: "Many of the attractive kits are limited to the height of 32-38 inches"
+- **Plank widths: about 3.5 in (1x4 T&G) is traditional; kit planks run about 2.5-6 in [2+]**
+  - BV-BB: "Traditional beadboard is typically sold as 1×4 tongue-and-groove boards, which means that each board is about 3 1⁄2 inches wide."
+  - HD-PL: "5/16 in. x 5-29/32 in. x 8 ft." and "Package includes 3 pieces 8 foot (approximatly 12 sq. ft.)"
+  - ET-BB: panels "16" wide x 1/4" thick." with "3" on-centre deep beads." (partial)
+  - TOH-D: example strip widths 2½ in, 5 in and 4¾ in (extractor summary).
+  - TOH-E: "informal 6½-inch beadboard in the kitchen, family room, stairway, and second-floor great room."
+- **Fitting [2+]**
+  - HD-BB: "Cut or plane as much of the last panel or board as needed to make it fit."
+  - HD-BB: "Butt the grooved end of a beadboard panel or board into a corner and nail it in place."
+  - HD-BB: "Due to the thickness of the beadboard panels, your outlet will be slightly recessed and not flush with the face plate."
+  - BV-BB: "For outside corners, miter the pieces on the table saw."
+- **Area shortcut [1]**
+  - HS: "Multiply that total value by 2.66 for 32-inch wainscoting." (32 in = 2.67 ft; for 36 in, "Multiply by 3.")
+
+## 6. Materials and waste
+- **Waste: 10% is the usual allowance; 10-15% for typical jobs; 5% for long, simple runs [2+]. No source found for a flat 15%.**
+  - LOW: "Remember to add 10% to the total length for mitering."
+  - WW-W: "10 to 15% for typical commercial jobs and mid range homes."
+  - WW-W: "5 to 10% for cheap paint grade in large runs and not many miters or very expensive material."
+  - WW-W: for stained trim "you would probably be around the 10% mark."
+- **Moulding lengths: 8 ft, 12 ft and 16 ft [2+]**
+  - LOW-WC: "0.7087-in(18mm) thick x 2-in wide x 8-ft long"
+  - HD-PFM: "1.5 in. x 4/5 in. x 96 in."
+  - HD-CR: "11/16 in. x 2-5/8 in. x 12 ft."
+  - LOW-CR: "RELIABILT 11/16-in T x 2-5/8-in W x 12-ft L Primed Pine 390 Chair Rail Moulding"
+  - AMR: "Decca 183 Primed Pine 9/16" x 1-1/8" x 16'"
+  - MMS-PF: "The trim comes in 16′ lengths and if you’re getting a lot" (partial)
+  - Elite kits: 8 ft, "true 95"" long (ET-SH).
+  - LOW: "Use longer lengths of moulding in large rooms so that fewer cuts will be required."
+  - FH: "buy long boards that will run full length from wall to wall"
+- **Measure each wall; allow for doors and windows [2+]**
+  - LOW: "Measure the length of each wall, taking into account spaces for windows and doors."
+  - JLC: "I usually draw the layout on paper so I don't miss anything."
+  - IH-P (UK): "Grab your tape measure and measure the full width and height of the wall you’re panelling."
+  - CUT-D (UK): "Walls are rarely straight so we recommend measuring in two or three places and taking the smallest measurement."
+- **Materials: primed pine, poplar or MDF [2+]**
+  - TOH-I: "Primed 1×4 pine board was used for the rails and stiles."
+  - TOH-E: "profiles made from primed pine or MDF (medium-density fiberboard)."
+  - FH: "we decided to use moderately priced poplar."
+  - ET-IN: "Medium-density fiberboard (MDF) is a reasonable choice for your wainscoting kit."
+
+## 7. Cost
+- **Installed cost per sq ft by style [2+]. Ranges differ by source.**
+
+  | Style | HomeGuide | Fixr | HomeAdvisor (Angi) |
+  |---|---|---|---|
+  | Flat panel | $10-15 | $9-12 | $7-10 |
+  | Beadboard | $10-20 | $9-23 | $7-20 |
+  | Board and batten | $10-23 | $9-23 | $7-20 |
+  | Raised panel | $12-30 | $12-33 | $10-30 |
+  | Overlay | $15-40 | $12-43 | $10-40 |
+
+  - HG: "Flat panel wainscoting costs $10 to $15 per square foot and is the simplest option." "Beadboard wainscoting costs $10 to $20 per square foot" "Raised panel wainscoting costs $12 to $30 per square foot" "Overlay wainscoting costs $15 and $40 per square foot."
+  - FX table rows: "Flat-Panel | $9 - $12", "Beadboard | $9 - $23", "Raised-Panel | $12 - $33", "Overlay | $12 - $43" (installed, per sq ft)
+  - HA table: "Flat panel | $7–$10", "Raised panel | $10–$30", "Overlay | $10–$40" (extractor table rows)
+  - Overall. HG: "Wainscoting costs $10 to $40 per square foot installed on average". ANGI-T: "Installing wainscoting costs from $7 to $40 per square foot". HA: "The price of wainscoting ranges from $5 to $40 per square foot, depending on the type of panel."
+  - Picture frame is not priced as a style by any of these sources.
+- **Labor [2+]**
+  - HG: "The labor cost to install wainscoting is about $70 to $100 per hour."
+  - FX: "Many contractors charge an hourly rate of $80 to $100 to install the material." and "Others install wainscoting for $2 to $3 per sq.ft."
+  - ANGI-W: "professional labor can add an extra $50 to $130 an hour"
+  - HA: local pros "charge $50 to $125 per hour, with rates increasing with room size and panel style."
+- **Per linear foot [2+]. Only a few sources price by the foot.**
+  - ANGI-T (materials): "On average, you'll pay roughly $2 to $4 per linear foot of this wainscoting material." (MDF); "at roughly $1 to $2 per linear foot compared to the average $5 per linear foot of real wood paneling"; PVC "$2 to $2.50 per linear foot on average"
+  - FX: "beadboard wainscoting, which costs around $9 to $23 per linear foot"
+  - HA (chair rail): "The cost to install trim, such as a chair rail, ranges from $1 to $45 per linear foot, including materials and paint."
+  - TOH-E (cap): "in 8-foot lengths starting at just under $2 per linear foot."
+- **Materials and DIY [2+]. No source gives a DIY $/sq ft rate.**
+  - HG materials: "MDF or plywood | $3 – $12" per sq ft. ANGI-W: "materials, which can cost anywhere from $5 to $40 per square foot"
+  - TOH-E: "MDF and plywood start at $6 per square foot, but mahogany can cost as much as $40 per square foot for materials alone."
+  - FH project cost: "$101–250"; time "Multiple Days"
+  - BV-BB: "$225 to install and paint beadboard wainscoting in an average bathroom (not including cost of tools)."
+  - Kits: Elite 8 ft kits $139-203 (ET-RW, ET-SH, ET-FP, ET-RP); House of Fara 32 in kit $88.28 (HD-KIT).
+  - HG: "DIY wainscoting costs less than professional installation"
+  - Project totals. ANGI-I: "On average, wainscoting installation costs $1,325, ranging from $1,050 to $2,400." (HA's header shows a different range; the page is inconsistent.)
+- **Painting [2+]**
+  - FX: "you can paint them yourself or have them professionally painted at $2 to $5 per sq.ft."
+  - HA: "Paint costs between $25 and $50 per gallon or $0.80 to $1.80 per square foot."
+
+## 8. Tips
+- **Outlets: land them inside a panel or box, or in the middle of a stile, never on an edge [2+]**
+  - JLC: "ideally, these should be inside a panel or in the middle of a stile."
+  - ET-EP: "For electrical outlets, be sure that an outlet falls in the middle of a panel or stile, not around a groove."
+  - ET-WP: "When determining your stile locations, you may want to take the location of your electrical outlets into consideration."
+  - FH: "consider shifting your layout left or right if one of the receptacles falls halfway onto a stile."
+  - FHB-S: "If any electrical boxes fall on a stile or panel edge, I have my electrician move them."
+  - FHB-E: "adjust the size of the space between boxes to shift them slightly one way or another"
+  - Picture frame. JLC: "stop and start the molding on each side of the outlet" or "adjust the layout so that the outlet lands completely in a box." and "I refrain from 'celebrating the switch' and don't wrap the molding around the outlet."
+  - FHB-E: "I build a small box out of 3/4 in. material around the outlet."
+  - UDH: "To compensate, I adjusted the spacing at the top only, using a 2¾” mark instead of the usual 4."
+  - Box extender. ET-EP: "The wainscoting may alter the wall outlet so that an extender is necessary"
+- **Windows: split the panel under the window, or line boxes up with the casing [2+]**
+  - FH: "Divide the panel under the windows with a stile in the middle."
+  - FH: "When it comes to doors and windows, you don’t have much choice but to reduce the panel size."
+  - ET-WP: "Unlike this sample, the stile does not have to go directly in the center of the window sill."
+  - ET-EP: "When you get to a low window, you can either run the top rails right into the window casing and cut the panel to suit."
+  - TOH-E: "Measure the width of the window, including the casing." and "Divide the number in half for a double window."
+  - MMS-PF: boxes under windows were set so "the trim line up with the window frame exactly." (partial)
+- **Start from the center, or the longest plain wall [2+]. Sources disagree.**
+  - JLC: "The center of the space between the two middle boxes will be in the center of the wall." and "If I go with five boxes, each box will be 215/8 inches wide and the middle box will be centered on the wall." ("215/8" is 21 5/8 in the extracted text)
+  - FHB-E: "I then find the center point of this wall section (in inches) by measuring the length and dividing by two."
+  - FH: "Start with the longest wall without doors or windows and establish your panel sizes."
+  - ET-EP: "Find the most level part of the room and start there so that you allow some room to work with"
+  - From the ends. TDC: "I highly suggest starting at each end of the wall, and working in."
+  - From one side (UK). HOW: "From the 150mm lines marked from left hand wall, measure panel width across and draw a vertical line."
+  - Note: with equal panels and a stile (or gap) at both ends, the layout is symmetric whichever way you mark it.
+- **Same panel width on each wall; close across the room [2+]**
+  - JLC-SP: "keep the panels on all four walls as close as possible to the same width"
+  - BLH: "you do want them to be the same width per each individual wall."
+  - FHB-ST: "The length of each panel within a run of stairs will be the same," "but it may differ from run to run based on the number of panels."
+  - ET-WP: "Keep in mind that the panels don't have to necessarily be the same size."
+  - FH: "Keep in mind that you can leave smaller panels in the corners, as long as they’re of equal size on each end."
+- **Corners: butt inside corners, mitre outside corners [2+]**
+  - TOH-I: "Inside corners can be butt joints, but again, outside corners should be mitered."
+  - TOH-I: "Outside corners will require a miter, while inside corners can be cut as butt joints as they'll be hidden later."
+  - ET-WP: "Use 45-degree cuts for corners and 90-degree cuts where the moldings will butt up against a window or door trim."
+  - ET-EP: "In the case of a 90 degree corner, the corners can be butt jointed."
+  - Cap rail. TOH-I: "All joints, inside and outside, should be mitered."
+  - Picture frame. JLC: subtract "6 inches to allow for a 3-inch space (can be blank wall or a rail) out from the corners" (partial)
+- **Level line, not the floor [2+]**
+  - TOH-I: "Before snapping your chalk lines, use a 4-foot level (or longer) to find the floor's highest point along the wall."
+  - JLC: "set up a laser level to check whether my mark is a consistent distance from the floor all around the room."
+  - TOH-BB: "Any run of floor, old or new, invariably has high and low spots—even if the difference is only ⅛ inch."
+- **Draw it first [2+]**
+  - JLC: "As with most carpentry, the first and most important step is layout."
+  - FHB-S: "A full-size layout on the wall lets the author see the wainscot’s proportions and serves as a guide for assembly."
+  - IH-P (UK): "To begin, making a quick sketch of what you want your panel wall to look like is a great way" (partial)
+
+## 9. UK: dado panelling and box panelling (metric)
+- **Dado rail height: about 900 mm to 1 m, or about a third of the wall [2+]**
+  - WK-H: "To set height for dado rail, measure up to your preferred height off top of skirting (typically 900mm to 1000mm)"
+  - HOW: "Measure up approx 1000mm and draw a horizontal line across face of wall."
+  - TS: "Typically 1 metre up from the ground is common and sits at around the same height as a door handle."
+  - IH-D: "A dado rail in a hallway is generally best placed at about one third of the wall height" and "which typically works out around 85 to 100 centimetres from the floor"
+  - IH-D: "while in lower-ceilinged hallways it's best to keep it closer to 85 centimetres"
+  - HBR-D: "aim to fix your rail around a third of this measurement up the wall from the floor" and "Ideally, you want to go lower rather than higher, particularly in rooms with low ceilings"
+  - CUT-D: "Popular in hallways placed at one-third of the wall height."
+  - WIKI: "Modern trends have been towards 36 inches (910 mm),"
+  - NW-D kit example: 1000 mm panelling height.
+  - Stairs. WK-H: "This should be approximately the same height as your stair balustrading handrail."
+  - Note: WK-H measures from the top of the skirting; TS and HOW measure from the floor. That is a 100-150 mm difference. The calculator should say which it uses.
+- **Taller UK options [2+]**
+  - HBR-H: "a 2/3 design can also work best in a living room or dining area where chairs are likely to be pushed against the walls."
+  - HBR-H: "taking the panelling to the 3/4 mark will make the room feel cosier"
+  - WIKI: "the height of the rail is often 1,200 mm (47 in) or even 1,500 mm (59 in) from the floor" (for walls that take heavy wear)
+- **Box panelling spacing: about 100-150 mm gaps; margins usually match the gap [2+]**
+  - WK-H: "In the following example, we are going to show 4 panels on the stairs using a 100mm gap."
+  - WK-H: "Next, measure 100mm from the underside of the dado and mark at both ends of the run."
+  - WK-H: "For the panels, there are no set rules, it is purely down to personal preference how many panels you want"
+  - HOW: "Next, measure and mark a straight line 150mm from walls, ceiling and from dado and skirting (Fig 4)."
+  - HOW: "Please bear in mind that the panels will need spacing equally."
+  - NW-D: "Divide this number by four to calculate the width of each horizontal gap e.g. 690/4 = 172.5mm."
+  - US equivalent: 3 in = 76 mm; 4 in = 102 mm; 150 mm = 5.9 in. UK kit guides use wider gaps than US DIY blogs.
+- **Box (panel) width: same formula in mm [2+]**
+  - HOW: "Wall measures 3600mm long (Fig 3)" then "There will be 5 spacings x 150mm = 750mm" then "Subtract spacings total from wall length 3600 – 750 =2850mm." then "Divide 2850mm by 4 panels = 713mm panel width"
+  - WK-H: "Subtract this number from distance (3479 – 402 = 3077mm)" and "Then divide by 4 panels (3077/4 = 769mm)"
+  - WK-H (two panels): "Subtract 100mm (1 gap) from the distance measured then divide this by 2 to get panel lengths"
+  - HOW (heights): "To work out panel heights, measure vertically between 150mm lines for top panels and bottom panels."
+- **Shaker (strip) panelling: same stile formula as US flat panel [2+]**
+  - WK-SK: "Measure width of panel strip and subtract from wall length." and "Divide this measurement by number of panels preferred going across the wall."
+  - WK-SK: "To calculate actual distance between panel strips, simply subtract width of 1 panel strip from 484mm = 421mm."
+  - NW-S: "Multiply the number of vertical strips e.g. 3 by the width of your strips i.e. 97 or 63." then "Deduct this number from the wall length measurement you noted earlier and then divide the total" "by the amount of panel sections you want."
+  - IH-P: "At this point, you also need to decide what width you want your rails and stiles" (partial)
+- **Typical MDF strip and moulding sizes [2+]**
+  - WK-SK: "6x 1.2m MDF Strips (63mm x 9mm)"
+  - NW-S: "Strip size: 97mm (W) x 1200mm (H) x 9mm (D) OR 63mm (W) x 1200mm (H) x 9mm (D)"
+  - CUT: thicknesses "6, 9 & 12mm"; widths "50, 80, 100 & 120mm"; length "1.2m long"
+  - CUT-D: "We'll cut all the pieces for you from 100mm wide, 6mm thick MDF."
+  - NW-D (box mouldings): "Short moulding size: 530mm (L) x 20mm (W) x 9mm (D)" and "Dado rails: 1200mm (L) x 41mm (W) x 20mm (D)"
+  - SBS: "18mm x 119mm x2.440mtr" skirting and "30mm x 35mm x 2.440mtr" dado rail; panels "8 Panels - 9mm x 294mm x 950mm"
+  - US match: 63 mm is close to a 1x3 (2.5 in = 64 mm); 97 mm is close to a 1x4 (3.5 in = 89 mm) but wider. A 20 mm box moulding is a narrow profile (US picture-frame moulding runs about 1 1/8-2 in).
+- **"Panelling calculator" practice in UK kit guides [2+]**
+  - Kit makers print the arithmetic in their guides rather than leaving it to the buyer (HOW, WK-H, WK-SK, NW-D, NW-S).
+  - NW-D: "Use our calculations below to achieve Dado half-height panelling."
+  - CUT-D: "Choose the desired number of rows (squares going up the wall) for your panelling." and "The dado rail is included in the total height of your panelling."
+  - CUT-D: "We recommend that you use an accurate steel tape measure, not a fabric one."
+  - Odd-count tip. HBR: with an odd number of slats, "it's a good idea to start in the middle."
+- **Mitres and sockets (UK) [2+]**
+  - TS: "Most external corners are 90 degrees, so you'll usually cut each end at a 45° angle."
+  - HBR: "We recommend always using a qualified electrician to remove sockets or switch" (partial)
+
+## Calculator defaults
+All lengths in inches, with a metric toggle (show mm, round to the nearest 1 mm; boxes to the nearest 5 mm). Run each wall (or each flat run between a corner, door or window) on its own (FHB-E, LOW).
+
+### Shared inputs
+- **Ceiling height**: 96 in default (8 ft); 108 and 120 in options; custom.
+- **Wainscot height (top of cap or chair rail, from the floor)**:
+  - One-third of ceiling (default): 32 in at 8 ft, 36 in at 9 ft, 40 in at 10 ft (HG, BV-H, BV-CR, AT).
+  - 36 in (BV-BB, HD-BB, TOH-BB)
+  - 42 in "classic tall" (TOH-I, ET-RP, ET-FP)
+  - Two-thirds of ceiling: 64 in at 8 ft (FX, LB, BV-H; HGTV-BB uses 60 in)
+  - Custom; align to windowsill (BV-H, AT, FHB-CR)
+  - Warning (our rule): if height is within 4 in of half the ceiling height, show "avoid splitting the wall in half" (LB, MMS-H, HGTV-BB).
+  - UK presets: 900 mm and 1000 mm (WK-H, HOW, TS), one-third, 1200 mm (WIKI, HBR-H). Ask whether the height is from the floor (TS, HOW) or from the top of the skirting (WK-H).
+- **Baseboard height**: 5.5 in (1x6) default; "keep existing" with entry field; 0 when the bottom rail is the base (ET-WP, ET-SH).
+- **Cap / chair rail height**: 2.5 in default (HD-CR 2-5/8 in; LOW-CR 2-5/8 in); 0 when the cap overlaps the top rail (FHB-84).
+- **Waste**: 10% default (LOW, WW-W). Options 5% (long simple runs, WW-W) and 15% (many mitres, stained trim, beginners; WW-W "10 to 15%").
+- **Stock length**: 8 ft default; options 12 ft and 16 ft (LOW-WC, HD-CR, AMR, MMS-PF).
+
+### (a) Picture frame boxes
+- **Gap between boxes (g)**: 3 in default (JLC, MMS-PF, HGTV-PF, TDC). Options 2.75, 3.5, 4 in (UDH, A2D, BLH, TOH-E, FHB-E). Metric: 75 mm default, options 100 and 150 mm (WK-H, HOW).
+- **End margin (at corners)**: equal to g by default (TOH-E "Add 1 to the number of frames"; A2D, TDC, MMS-PF, JLC).
+- **Top margin (below chair rail) and bottom margin (above baseboard) (m)**: equal to g by default (JLC, MMS-PF). Allow separate values (UDH: "4 inches at the top and bottom and only 3 in between").
+- **Target box width (t)**: 24 in default. Allowed range 12-48 in. Flag below 14 in ("too narrow... busy", JLC) and above 40 in (FHB-E's upper bound). Suggest splitting runs over 50 in (MMS-PF).
+- **Formulas**:
+  - Box count n = max(1, round((W - g) / (t + g)))
+  - Box width w = (W - (n + 1) x g) / n
+  - Box height h = (wainscot height - cap - baseboard) - 2 x m
+  - Also show n - 1 and n + 1 with their widths, and mark any outlet that lands under a box edge (JLC, FHB-E).
+  - Checks: A2D W 152, g 3.5, t 26: n = round(148.5 / 29.5) = 5, w = 26.2 in (matches). TDC W 168, g 3, t 24: n = round(165 / 27) = 6, w = 24.5 in (matches). HOW W 3600 mm, g 150, t 700: n = round(3450 / 850) = 4, w = 712.5 mm (matches 713).
+- **Two-tier option (tall wainscot)**: add a mid rail. Each tier gets its own h, with the same w (CUT-D rows; HOW top and bottom panels).
+- **Moulding**:
+  - Box moulding LF = n x 2 x (w + h) / 12, then x (1 + waste). Cut list: 2 pieces at w and 2 at h per box, long point to long point, 45 degree mitres (HGTV-PF, MMS-PF, BLH, TOH-E).
+  - Stock count: pack pieces into the chosen stock length (first-fit). Fallback = ceil(LF with waste / stock length). This is our derived rule; no source gives one.
+  - Chair rail LF = W / 12 x (1 + waste), if adding new chair rail.
+
+### (b) Raised or flat panels with stiles and rails
+- **Stile width (s)**: 3.5 in (1x4) default (TOH-I, JLC-SP). Options 3 in (TIC), 4 in (FHB-84, ET-EP), 2.5 in near windows (FH), custom. Corner option: make the lapped corner stile 0.75 in wider (FHB-S, JLC-SP).
+- **Top rail (rt)**: 3.5 in default (1x4: TOH-I, JLC-SP). Options 4.375 in (ET-SH) and 5.5 in (1x6: FH).
+- **Bottom rail (rb)**: 5.5 in default (1x6: FH). Options 3.5 in (TOH-I, same as top), 7.625 in (ET-SH), 8.5 in (ET-WP). Toggle "bottom rail is the baseboard" (ET-WP, ET-SH), which sets baseboard to 0.
+- **Cap**: 2.5 in default (see shared inputs), or 0 if it overlaps the top rail.
+- **Target panel width (t)**: 20 in default (ET-WP 18-24 in; ET-EP 20 in panels). Allowed 10-30 in (TIC about 10 in; FH about 30 in).
+- **Formulas**:
+  - Panel count n = max(1, round((W - s) / (t + s)))
+  - Panel width p = (W - (n + 1) x s) / n
+  - Panel height ph = wainscot height - baseboard - rb - rt - cap
+  - Shape check: show p / ph. Flag below 0.8 or above 1.75 (FHB-ST max 1.75; FH about 1.6; FHB-S wider than tall; JLC-SP taller than wide). Do not block, because sources disagree.
+  - Option: "prefer odd count" (FHB-S, JLC-SP, ET-IN). Round to the nearest odd n.
+  - Check: TIC W 96, s 3, t 10: n = round(93 / 13) = 7, p = (96 - 24) / 7 = 10.29 in (matches). Default example: H 36, base 5.5, rb 5.5, rt 3.5, cap 2.5 gives ph = 19 in; with p near 20 in that is close to square.
+- **Linear feet** (per wall, then x (1 + waste)):
+  - Stiles = (n + 1) x ph
+  - Rails = 2 x W (top + bottom)
+  - Cap = W
+  - Baseboard = W (only if new)
+  - Optional panel moulding inside each panel = n x 2 x (p + ph)
+  - Convert to stock lengths as in mode (a). Flat panel inserts (if not using the wall as the panel): n panels of p x ph; for sheet goods, count 4 x 8 sheets by area x (1 + waste) (HD-48).
+- **Beadboard shortcut** (if style = beadboard): area = W x (H - cap) / 144 sq ft; sheets = ceil(area x 1.10 / 32) for 4 x 8 (HD-48) or / 10.67 for 32 x 48 panels (HD-32); kits = ceil(W / 96) for 8 ft kits (HD-KIT, ET-BB).
+- **Cost display** (installed, per sq ft of wainscot area): flat panel $7-15; beadboard $7-23; raised panel $10-33; overlay $10-43 (HA, FX, HG). Labor $50-130 per hour (HA, ANGI-W, HG, FX). DIY: materials only; show MDF about $2-4 per linear ft (ANGI-T) and kits about $88-203 per 8 ft (HD-KIT, ET kits). Picture frame: no source prices it; show moulding LF x the user's price per foot.
