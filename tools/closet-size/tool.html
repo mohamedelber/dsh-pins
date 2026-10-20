@@ -1,0 +1,164 @@
+<div id="dsh-wc" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How big should your walk-in closet be?</h3>
+<p class="sub">Two taps: pick a layout, then how much you hang. You get the comfortable size, the tight minimum and a floor plan.</p>
+<fieldset><legend>1. Which layout?</legend>
+<div class="opts" role="group" aria-label="Layout">
+<button type="button" data-l="one"><b>One wall</b><span>storage on one side</span></button>
+<button type="button" data-l="two" class="on"><b>Two walls</b><span>facing sides</span></button>
+<button type="button" data-l="L"><b>L-shape</b><span>two walls in a corner</span></button>
+<button type="button" data-l="U"><b>U-shape</b><span>three walls</span></button>
+<button type="button" data-l="isl"><b>With island</b><span>U-shape + center island</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. How much do you hang?</legend>
+<div class="opts" role="group" aria-label="Wardrobe">
+<button type="button" data-w="5"><b>Small</b><span>1 person, light wardrobe</span></button>
+<button type="button" data-w="8" class="on"><b>Average</b><span>1 person</span></button>
+<button type="button" data-w="12"><b>Large</b><span>1 person, lots of clothes</span></button>
+<button type="button" data-w="16"><b>Two people</b><span>shared closet</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: check your closet, aisle, double hang</summary>
+<div class="grid">
+<label>Your closet width (ft)<input type="number" id="cw" min="3" max="30" step="0.5" placeholder="e.g. 7"></label>
+<label>Your closet length (ft)<input type="number" id="cl" min="3" max="30" step="0.5" placeholder="e.g. 9"></label>
+<label>Walkway<select id="ai"><option value="24">24 in (tight)</option><option value="30">30 in</option><option value="36" selected>36 in (comfortable)</option><option value="42">42 in (roomy)</option></select></label>
+<label>Hanging depth<select id="dp"><option value="22">22 in</option><option value="24" selected>24 in (standard)</option></select></label>
+</div>
+<label class="chk"><input type="checkbox" id="dh">Double hang shirts and trousers (two rods, one above the other)</label>
+<p class="hint">Enter both closet sizes to check your own space. Width is the wall with the door; length goes from the door to the back wall.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small id="k1t">Comfortable size</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small id="k2t">Tight minimum</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small id="k3t">Hanging rod</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my closet size</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-wc');if(!R)return;
+var lay='two',need=8,summary='';
+var NM={one:'a one-wall',two:'a two-wall',L:'an L-shaped',U:'a U-shaped',isl:'an island'};
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function up6(x){return Math.ceil(x/6)*6}
+function ft(x){var f=Math.floor(x/12),i=Math.round(x-f*12);if(i===12){f+=1;i=0}return f+' ft'+(i?' '+i+' in':'')}
+function m(x){return (x*0.0254).toFixed(2)}
+function dims(w,l){return ft(w)+' x '+ft(l)}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function rodOf(t,W,L,D){if(t==='one')return L;if(t==='two')return 2*L;if(t==='L')return L+W-D;return 2*L+W-2*D}
+function minWL(t,D,A){if(t==='one')return [D+A,D+A];if(t==='two')return [2*D+A,D+A];if(t==='L')return [D+A,D+A];if(t==='U')return [2*D+A,D+A];return [2*D+2*A+24,D+2*A+48]}
+function size(t,wall,D,A){var mn=minWL(t,D,A),W=mn[0],L=mn[1];
+if(t==='one'){L=Math.max(48,wall)}
+else if(t==='two'){L=Math.max(48,wall/2)}
+else if(t==='L'){var s=wall+D;W=Math.max(W,s/2);L=Math.max(L,s-W)}
+else{L=Math.max(L,(wall-(W-2*D))/2)}
+return [up6(W),up6(L)]}
+function plan(t,W,L,D,A){var S=Math.min(300/W,190/L),ox=(360-W*S)/2,oy=14,w=W*S,h=L*S,d=D*S;
+var s='<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Floor plan of the walk-in closet">';
+s+='<rect width="360" height="240" fill="#FBF6EF"/>';
+s+='<rect x="'+ox+'" y="'+oy+'" width="'+w+'" height="'+h+'" fill="#fff" stroke="#342E2A" stroke-width="3"/>';
+function band(x,y,bw,bh){s+='<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+bh+'" fill="#CFDDCB" stroke="#8FA689" stroke-width="1.5"/>'}
+if(t==='one'){band(ox,oy,d,h)}
+if(t==='two'){band(ox,oy,d,h);band(ox+w-d,oy,d,h)}
+if(t==='L'){band(ox,oy,d,h);band(ox+d,oy,w-d,d)}
+if(t==='U'||t==='isl'){band(ox,oy,d,h);band(ox+w-d,oy,d,h);band(ox+d,oy,w-2*d,d)}
+if(t==='isl'){var iw=24*S,il=48*S;s+='<rect x="'+(ox+w/2-iw/2)+'" y="'+(oy+d+A*S)+'" width="'+iw+'" height="'+il+'" rx="3" fill="#E9D8BE" stroke="#B98A5E" stroke-width="1.5"/>'}
+var dw=Math.min(30*S,w-2*d-4);if(t==='one'||t==='L'){dw=Math.min(30*S,w-d-4)}var dx=(t==='one'||t==='L')?ox+d+(w-d-dw)/2:ox+(w-dw)/2;
+s+='<line x1="'+dx+'" y1="'+(oy+h)+'" x2="'+(dx+dw)+'" y2="'+(oy+h)+'" stroke="#fff" stroke-width="5"/><text x="'+(dx+dw/2)+'" y="'+(oy+h+13)+'" font-size="10" text-anchor="middle" fill="#6E645C">door</text>';
+s+='<text x="'+(ox+w/2)+'" y="'+(oy+h+28)+'" font-size="12" font-weight="700" text-anchor="middle" fill="#C85A32">'+ft(W)+' wide</text>';
+s+='<text x="'+(ox+w+8)+'" y="'+(oy+h/2)+'" font-size="12" font-weight="700" fill="#C85A32" transform="rotate(90 '+(ox+w+8)+' '+(oy+h/2)+')" text-anchor="middle">'+ft(L)+' long</text>';
+s+='<text x="'+(ox+d/2)+'" y="'+(oy+h/2)+'" font-size="9" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 '+(ox+d/2)+' '+(oy+h/2)+')">clothes '+D+' in</text>';
+return s+'</svg>'}
+function calc(){var vv=$('vv');vv.className='verdict';var tips=[];
+var D=parseFloat($('dp').value),A=parseFloat($('ai').value),dbl=$('dh').checked,f=dbl?0.6:1,wall=need*12*f;
+var cW=num('cw')*12,cL=num('cl')*12;
+var c=size(lay,wall,D,A),t=size(lay,wall,D,24);
+var rod=rodOf(lay,c[0],c[1],D);
+$('k1t').textContent=A>=36?'Comfortable size':'Your size';$('k1').textContent=dims(c[0],c[1]);$('k1e').textContent=m(c[0])+' x '+m(c[1])+' m, '+Math.round(c[0]*c[1]/144)+' sq ft';
+$('k2t').textContent='Tight minimum';$('k2').textContent=dims(t[0],t[1]);$('k2e').textContent='with a 24 in walkway';
+$('k3t').textContent='Hanging rod';$('k3').textContent='about '+Math.round(need)+' ft';$('k3e').textContent=dbl?'on about '+Math.round(wall/12)+' ft of wall (double hang)':'single hang, on '+Math.round(wall/12)+' ft of wall';
+var shown=c;
+if(cW>0){if(cL>0){var mn=minWL(lay,D,24),okW=cW>=mn[0],okL=cL>=mn[1];var have=rodOf(lay,cW,cL,D);
+var aisle=lay==='one'?cW-D:(lay==='L'?Math.min(cW,cL)-D:(lay==='isl'?(cW-2*D-24)/2:cW-2*D));
+shown=[cW,cL];
+$('k1t').textContent='Your closet';$('k1').textContent=dims(cW,cL);$('k1e').textContent=m(cW)+' x '+m(cL)+' m';
+$('k3t').textContent='Rod that fits';$('k3').textContent='about '+Math.round(have/12*(dbl?1/f:1))+' ft';$('k3e').textContent='you need about '+Math.round(need)+' ft';
+if(!(okW)||!(okL)){vv.className='verdict bad';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' closet does not fit in '+dims(cW,cL)+': it needs at least '+dims(mn[0],mn[1])+'. Try a layout with fewer walls of storage.'}
+else if(wall>have){vv.className='verdict amb';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' layout fits in '+dims(cW,cL)+' with a walkway of about '+Math.round(aisle)+' in, but there is only room for about '+Math.round(have/12*(dbl?1/f:1))+' ft of rod. Add double hang or shelves, or choose a bigger layout.'}
+else{vv.textContent='Good news: '+NM[lay]+' layout fits in '+dims(cW,cL)+', with a walkway of about '+Math.round(aisle)+' in and room for all '+Math.round(need)+' ft of hanging.'}
+if(!(okW)||!(okL)){$('k3').textContent='does not fit';$('k3e').textContent='try another layout'}
+if(lay==='one'){if(cW>=2*D+30){tips.push('Your closet is wide enough for clothes on both long walls: try the two-wall layout for about twice the hanging space.')}}
+if(aisle>0){if(36>aisle){tips.push('Your walkway is under 36 in: it works, but use shallow shelves or drawers on one side to gain a few inches.')}}
+summary='My '+dims(cW,cL)+' walk-in closet: '+NM[lay].replace(/^an? /,'')+' layout, '+Math.round(have/12)+' ft of rod. dailyspacehacks.com/walk-in-closet-size/'}}
+if(shown===c){vv.textContent='For '+NM[lay]+' walk-in closet with about '+Math.round(need)+' ft of hanging, plan on '+dims(c[0],c[1])+' ('+m(c[0])+' x '+m(c[1])+' m). The smallest that works is '+dims(t[0],t[1])+'.';
+summary='Walk-in closet, '+NM[lay].replace(/^an? /,'')+' layout, '+Math.round(need)+' ft of hanging: comfortable '+dims(c[0],c[1])+', minimum '+dims(t[0],t[1])+'. dailyspacehacks.com/walk-in-closet-size/'}
+if(lay==='isl'){tips.push('Keep at least 36 in of floor all around the island so drawers can open and two people can pass.')}
+if(lay==='L'||lay==='U'||lay==='isl'){tips.push('Corners waste space: use a corner shelf unit or turn the rods so they do not overlap.')}
+if(lay==='one'){tips.push('A one-wall walk-in is the easiest fit for a small room or a deep reach-in closet: just 24 in for clothes plus the walkway.')}
+if(!dbl){tips.push('Double hang shirts and trousers on two rods to fit almost twice as much on the same wall. Keep one section for long dresses and coats.')}
+tips.push('Plan about 24 in of depth wherever clothes hang and 12 to 16 in for shelves of folded clothes.');
+$('vz').innerHTML=plan(lay,shown[0],shown[1],D,lay==='isl'?Math.max(36,A):A);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('')}
+R.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){lay=b.getAttribute('data-l');pick('data-l',lay);calc()})});
+R.querySelectorAll('[data-w]').forEach(function(b){b.addEventListener('click',function(){need=parseFloat(b.getAttribute('data-w'));pick('data-w',b.getAttribute('data-w'));calc()})});
+['cw','cl','ai','dp','dh'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my closet size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your closet size:',summary)})}catch(e){window.prompt('Copy your closet size:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
