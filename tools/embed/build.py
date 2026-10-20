@@ -3,6 +3,7 @@ S = 'https://dailyspacehacks.com/'
 # (main slug, page id, embed slug, title, short line, tool file, height)
 T = [
  ('moving-checklist-printable', 0, 'moving-checklist', 'Printable Moving Checklist', 'A week-by-week moving checklist that readers can tick off and print.', '../moving-checklist/tool.html'),
+ ('wainscoting-calculator', 3178, 'wainscoting', 'Wainscoting Calculator', 'Picture frame box or panel sizes, gaps and the moulding to buy for any wall.', '../wainscot/tool.html'),
  ('board-and-batten-calculator', 3160, 'board-and-batten', 'Board and Batten Calculator', 'How many battens, the exact gap between them and the boards to buy for any wall.', '../board-batten/tool.html'),
  ('recessed-lighting-calculator', 3143, 'recessed-lighting', 'Recessed Lighting Calculator', 'How many recessed lights a room needs, how far apart and how far from the walls.', '../recessed-light/tool.html'),
  ('desk-height-calculator', 3088, 'desk-height', 'Desk Height Calculator', 'The right sitting or standing desk height for any height, in inches or cm.', '../desk-height/tool.html'),

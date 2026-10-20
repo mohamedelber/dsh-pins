@@ -83,7 +83,7 @@
 <label>Wainscot height<select id="hs"><option value="a" selected>Suggest (1/3 of the wall, 2/3 for two rows)</option><option value="36">36 in (91 cm)</option><option value="42">42 in (107 cm)</option><option value="t">Two-thirds of the wall</option></select></label>
 <label><span id="lC">Or exact height (in)</span><input type="number" id="hc" min="20" max="200" step="0.5" placeholder="top of the chair rail"></label>
 <label>Box or panel width<select id="tg"><option value="a" selected>Suggest (24 in boxes, 20 in panels)</option><option value="18">About 18 in (46 cm)</option><option value="24">About 24 in (61 cm)</option><option value="30">About 30 in (76 cm)</option><option value="36">About 36 in (91 cm)</option></select></label>
-<label>Gap around boxes<select id="gp"><option value="3" selected>3 in (7.5 cm)</option><option value="3.5">3 1/2 in (9 cm)</option><option value="4">4 in (10 cm)</option><option value="6">6 in (15 cm)</option></select></label>
+<label>Gap around boxes<select id="gp"><option value="3" selected>3 in (7.6 cm)</option><option value="3.5">3 1/2 in (9 cm)</option><option value="4">4 in (10 cm)</option><option value="6">6 in (15 cm)</option></select></label>
 <label>Moulding length<select id="sl"><option value="96" selected>8 ft (2.4 m)</option><option value="144">12 ft (3.6 m)</option><option value="192">16 ft (4.8 m)</option></select></label>
 </div>
 <p class="hint">Measure each wall, or each flat run between a corner, door or window, on its own. Heights are from the floor to the top of the chair rail or cap. We assume a 5 1/2 in (14 cm) baseboard and a 2 1/2 in (6 cm) chair rail.</p>
@@ -134,8 +134,8 @@ return s+'</svg>'}
 function clear(){['k1','k1e','k2','k2e','k3','k3e'].forEach(function(i){$(i).textContent=''});$('vz').innerHTML='';$('tp').innerHTML=''}
 function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='cm'?1/2.54:1;
 var W=W0,tw=num('ww')*f,typed=false;if(tw>=24){if(600>=tw){W=tw;typed=true}}if(tw>0){if(!typed){tips.push('That wall width is outside 2 to 50 ft (0.6 to 15 m), so this shows the '+FT(W)+' button instead.')}}pick('data-w',typed?'':String(W0));
-var H=96,th=num('wh')*f;if(th>=72){if(240>=th){H=th}}
-var hs=$('hs').value,Ht;if(hs==='a'){Ht=st==='tw'?Math.round(H*2/3):Math.round(H/3)}else if(hs==='t'){Ht=Math.round(H*2/3)}else{Ht=parseFloat(hs)}var hc=num('hc')*f;if(hc>0){Ht=Math.min(H,hc)}
+var H=96,th=num('wh')*f;if(th>=72){if(240>=th){H=th}}if(th>0){if(H!==th){tips.push('That ceiling height is outside 6 to 20 ft (1.8 to 6.1 m), so this uses '+FT(96)+'.')}}
+var hs=$('hs').value,Ht;if(hs==='a'){Ht=st==='tw'?Math.round(H*2/3):Math.round(H/3)}else if(hs==='t'){Ht=Math.round(H*2/3)}else{Ht=parseFloat(hs)}var hc=num('hc')*f;if(hc>0){Ht=Math.min(H,hc);if(hc>H){tips.push('That height is above the '+FT(H)+' ceiling (change it under Ceiling height), so this uses the full wall height.')}}
 var g=parseFloat($('gp').value),tg=$('tg').value,L=parseFloat($('sl').value);if(u==='cm'){L=[94.49,141.73,188.98][[96,144,192].indexOf(L)]}
 var area=W*Ht/144,ll=u==='cm'?['2.4 m','3.6 m','4.8 m'][[94.49,141.73,188.98].indexOf(L)]:FT(L).replace(' 0 in','');
 var cr=sp(Math.ceil(W/L)),parts=[],tot=0,lf=0,n=1,rows=1,a=0,b=0,ph=0;
@@ -144,32 +144,32 @@ if(6>b){vv.className='verdict bad';vv.textContent='The wainscot is too low for b
 n=Math.max(1,Math.round((W-g)/(t+g)));a=(W-(n+1)*g)/n;var pcs=[];for(var i=0;i!==n*rows;i++){pcs.push(a,a,b,b)}var mb=sp(pack(pcs,L));lf=n*rows*2*(a+b);tot=mb+cr;parts=[mb+' of box moulding',cr+' of chair rail'];
 $('k1t').textContent='Boxes';$('k1').textContent=(n*rows)+(n*rows===1?' box':' boxes');$('k1e').textContent=rows===2?'2 rows of '+n:'in one row';
 $('k2t').textContent='Box size';$('k2').textContent=DD(a,b);$('k2e').textContent=D(g)+' gaps, 45° corners';
-vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wall with wainscoting '+FT(Ht)+' high, use '+(rows===2?'2 rows of '+n+' boxes':n+(n===1?' box':' boxes'))+', each '+DD(a,b)+', with '+D(g)+' gaps between the boxes, the corners, the chair rail and the baseboard.';
+vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wall with wainscoting '+FT(Ht)+' high, use '+(rows===2?'2 rows of '+n+(n===1?' box':' boxes'):n+(n===1?' box':' boxes'))+(n*rows===1?', ':', each ')+DD(a,b)+', with '+D(g)+' gaps '+(n===1?'at':'between the boxes,')+' the corners, the chair rail and the baseboard.';
 var mk=[];for(var q=0;q!==n;q++){mk.push(D(g+q*(a+g)))}tips.push('Mark the left edge of each box from the left corner: '+mk.join(', ')+'. A scrap block '+D(g)+' wide makes a quick spacer.');
 if(n>1){tips.push('Want a different look? '+(n-1)+' boxes are '+D((W-n*g)/(n-1))+' wide; '+(n+1)+' boxes are '+D((W-(n+2)*g)/(n+1))+' wide.')}
 tips.push('Cut list: '+(n*rows*2)+' pieces at '+D(a)+' and '+(n*rows*2)+' at '+D(b)+', long point to long point, with 45° mitres. About '+(u==='cm'?(lf*0.0254).toFixed(1)+' m':Math.ceil(lf/12)+' linear ft')+' of moulding before the 10% extra.');
-if(a>40){tips.push('Boxes wider than about 40 in (100 cm) can look empty. Add a box or split the wall at a door or window.')}if(14>a){tips.push('Boxes narrower than about 14 in (35 cm) can look busy. Try fewer boxes.')}}
+if(a>40){tips.push('Boxes wider than about 40 in (100 cm) can look empty. Add a box or split the wall at a door or window.')}if(14>a){tips.push('Boxes narrower than about 14 in (35 cm) can look busy. Try fewer boxes.')}if(12>b){tips.push('Boxes under about 12 in (30 cm) tall look squashed. Raise the wainscot'+(rows===2?' or use one row':'')+'.')}}
 if(st==='pn'){var t2=tg==='a'?20:parseFloat(tg);ph=Ht-BASE-RB-RT-CAP;if(6>ph){vv.className='verdict bad';vv.textContent='The wainscot is too low for panels. Make it at least '+D(BASE+RB+RT+CAP+6)+' tall.';clear();return}
 n=Math.max(1,Math.round((W-S)/(t2+S)));a=(W-(n+1)*S)/n;var p4=[];for(var j=0;j!==n+1;j++){p4.push(ph)}var b4=pack(p4,L)+Math.ceil(W/L),b6=Math.ceil(W/L);var c4=sp(b4),c6=sp(b6);tot=c4+c6+cr;parts=[c4+' of 1x4',c6+' of 1x6',cr+' of cap'];lf=(n+1)*ph+3*W;
 $('k1t').textContent='Panels';$('k1').textContent=n+(n===1?' panel':' panels');$('k1e').textContent=(n+1)+' stiles, 1x4 ('+D(S)+')';
 $('k2t').textContent='Panel size';$('k2').textContent=DD(a,ph);$('k2e').textContent='between the stiles and rails';
-vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wall with wainscoting '+FT(Ht)+' high, use '+n+(n===1?' panel':' panels')+' about '+DD(a,ph)+', with '+(n+1)+' stiles '+D(S)+' wide, a '+D(RB)+' bottom rail, a '+D(RT)+' top rail and a cap on top.';
-var r=a/ph;if(r>1.75){tips.push('Your panels are much wider than tall. Fine Homebuilding keeps them no wider than 1.75 times their height, so try a narrower panel width.')}
+vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wall with wainscoting '+FT(Ht)+' high, use '+n+(n===1?' panel':' panels')+' about '+DD(a,ph)+', with '+(n+1)+' stiles '+D(S)+' wide, a 1x6 bottom rail ('+D(RB)+'), a 1x4 top rail ('+D(RT)+') and a cap on top.';
+var r=a/ph;if(r>1.75){tips.push('Your panels are much wider than tall. Fine Homebuilding’s stair wainscot guide keeps them no wider than 1.75 times their height, so try a narrower panel width.')}
 tips.push('Cut list: '+(n+1)+' stiles at '+D(ph)+', a top rail (1x4) and a bottom rail (1x6) the full wall width, and a cap the same length.');
 if(n>1){tips.push('Want a different look? '+(n-1)+' panels are '+D((W-n*S)/(n-1))+' wide; '+(n+1)+' panels are '+D((W-(n+2)*S)/(n+1))+' wide. Many carpenters prefer an odd number of panels.')}
 tips.push('Make the stile that is overlapped in an inside corner 3/4 in (2 cm) wider, so both corner stiles look the same.');
 if(u==='in'){tips.push('Hiring a pro? Installed flat panel wainscoting costs about $7 to $15 per sq ft and raised panel about $10 to $33, so this '+Math.round(area)+' sq ft wall would be about $'+Math.round(area*7/10)*10+' to $'+Math.round(area*33/10)*10+'.')}}
-if(st==='bb'){var bh=Ht-CAP,sh=Math.ceil(W*bh/144*1.1/32),kits=Math.ceil(W/96);tot=cr;parts=[cr+' of cap'];a=bh;
-$('k1t').textContent='Beadboard';$('k1').textContent=sh+(sh===1?' sheet':' sheets');$('k1e').textContent='4 x 8 ft, incl. 10% extra';
+if(st==='bb'){var bh=Ht-CAP,per=Math.floor(96/bh),sh=Math.max(Math.ceil(W*bh/144*1.1/32),per?Math.ceil(Math.ceil(W/48)/per):0),kits=Math.ceil(W/96);tot=cr;parts=[cr+' of cap'];a=bh;
+$('k1t').textContent='Beadboard';$('k1').textContent=sh+(sh===1?' sheet':' sheets');$('k1e').textContent=(u==='cm'?'2.4 x 1.2 m':'4 x 8 ft')+', cut to height, with extra';
 $('k2t').textContent='Panel height';$('k2').textContent=D(bh);$('k2e').textContent='from the floor, under the cap';
-vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wall with wainscoting '+FT(Ht)+' high, you need about '+Math.round(W*bh/144)+' sq ft of beadboard: '+sh+(sh===1?' sheet':' sheets')+' of 4 x 8 ft or '+kits+(kits===1?' kit':' kits')+' of 8 ft, plus a cap and baseboard.';
+vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wall with wainscoting '+FT(Ht)+' high, you need about '+(u==='cm'?(W*bh*0.00064516).toFixed(1)+' m²':Math.round(W*bh/144)+' sq ft')+' of beadboard: '+sh+(sh===1?' sheet':' sheets')+(u==='cm'?' of 2.4 x 1.2 m':' of 4 x 8 ft')+' or '+kits+(kits===1?' kit':' kits')+(u==='cm'?' of 2.4 m':' of 8 ft')+', plus a cap and baseboard.';
 tips.push('Beadboard comes in 4 x 8 ft sheets (32 sq ft), 32 x 48 in wainscot panels and 8 ft kits. Traditional planks are about 3 1/2 in (9 cm) wide.');
 tips.push('Start in a corner with the grooved edge, and plane the last board to fit. Thick panels leave outlets recessed, so you may need a box extender.');
 if(u==='in'){tips.push('Hiring a pro? Installed beadboard costs about $7 to $23 per sq ft, so this '+Math.round(area)+' sq ft wall would be about $'+Math.round(area*7/10)*10+' to $'+Math.round(area*23/10)*10+'.')}}
 $('k3').textContent=tot+' lengths';$('k3e').textContent=parts.join(' + ')+', '+ll+', incl. 10% extra';
-if(Math.abs(Ht-H/2)>4){}else{vv.className='verdict amb';tips.unshift('Your wainscot splits the wall almost in half. Designers avoid that: go a little lower (about a third) or higher (about two-thirds).')}
+if(Math.abs(Ht-H/2)>4){}else{vv.className='verdict amb';tips.unshift('Your wainscot splits the wall almost in half. Designers avoid that: go lower (about a third) or higher (about two-thirds).')}
 if(st!=='tw'){tips.push('Classic wainscoting is about a third of the wall: 32 in (81 cm) on an 8 ft ceiling and 36 in (91 cm) on a 9 ft ceiling. If a windowsill is close to that height, line the chair rail up with it.')}
-tips.push('Plan so outlets fall inside a box or panel, or in the middle of a stile, never on a moulding edge. If you move or extend an outlet box, turn off the power first or hire an electrician.');
+tips.push('Plan so outlets fall inside a box or panel, or in the middle of a stile, never on a moulding edge. If an outlet ends up behind thick trim, fit a box extender so it sits flush: switch off the breaker and check the outlet is dead with a tester first. To move an outlet, hire an electrician.');
 $('vz').innerHTML=viz(W,H,Ht,st,n,rows,a,b,g,ph);
 $('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
 summary='Wainscoting for my '+FT(W)+' wall, '+FT(Ht)+' high: '+$('k1').textContent+', '+$('k2').textContent+'. Trim: '+parts.join(' + ')+' ('+ll+'). dailyspacehacks.com/wainscoting-calculator/'}
@@ -218,7 +218,7 @@ calc();
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p>Sources disagree on going higher. This Old House says <a href="https://www.thisoldhouse.com/walls/how-to-install-wainscoting" target="_blank" rel="noopener">Classic wainscotting is between 36 and 42 inches from the ground, while modern wainscotting might be taller.</a> Others prefer lower: Fine Homebuilding's trim writer advises <a href="https://finehomebuilding.com/?p=107443" target="_blank" rel="noopener">err on the side of too low rather than too high</a>. Everyone agrees on one thing. Laurel Bern warns: <a href="https://laurelberninteriors.com/wainscoting-one-thing-you-must-never-do/" target="_blank" rel="noopener">But the one thing you must never do with your wainscoting is apply it halfway up the wall.</a> If a windowsill sits close to a third of the wall, line the chair rail up with it.</p>
+<p>Sources disagree on going higher. This Old House says <a href="https://www.thisoldhouse.com/walls/how-to-install-wainscoting" target="_blank" rel="noopener">Classic wainscotting is between 36 and 42 inches from the ground, while modern wainscotting might be taller.</a> Others prefer lower: in Fine Homebuilding, millwork expert Brent Hull says to <a href="https://finehomebuilding.com/?p=107443" target="_blank" rel="noopener">err on the side of too low rather than too high</a>. Many designers agree on one thing. Laurel Bern warns: <a href="https://laurelberninteriors.com/wainscoting-one-thing-you-must-never-do/" target="_blank" rel="noopener">But the one thing you must never do with your wainscoting is apply it halfway up the wall.</a> If a windowsill sits close to a third of the wall, line the chair rail up with it.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -248,7 +248,7 @@ calc();
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Thrifty Decor Chick's 14 ft wall shows how it works: <a href="https://thriftydecorchick.com/2009/11/squares-on-my-walls.html" target="_blank" rel="noopener">Take the remaining 147 inches and divide it by six boxes -- each box will be 24.5 inches wide.</a> For the gap, she says, <a href="https://thriftydecorchick.com/2009/11/squares-on-my-walls.html" target="_blank" rel="noopener">I do a standard three inches all the way around.</a> Miss Mustard Seed <a href="https://missmustardseed.com/picture-frame-molding-tutorial/" target="_blank" rel="noopener">played with 2-4″ and landed on a 3″ space on all sides of each box</a>.</p>
+<p>Thrifty Decor Chick's 14 ft example shows how it works: <a href="https://thriftydecorchick.com/2009/11/squares-on-my-walls.html" target="_blank" rel="noopener">Take the remaining 147 inches and divide it by six boxes -- each box will be 24.5 inches wide.</a> For the gap, she says, <a href="https://thriftydecorchick.com/2009/11/squares-on-my-walls.html" target="_blank" rel="noopener">I do a standard three inches all the way around</a>. Miss Mustard Seed <a href="https://missmustardseed.com/picture-frame-molding-tutorial/" target="_blank" rel="noopener">played with 2-4″ and landed on a 3″ space on all sides of each box</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":3175,"sizeSlug":"full","linkDestination":"none"} -->
@@ -288,7 +288,7 @@ calc();
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>Beadboard is the quickest style to install in sheets. Home Depot sells beadboard panels where <a href="https://homedepot.com/p/EUCATILE-32-sq-ft-3-16-in-x-48-in-x-96-in-Beadboard-White-True-Bead-Panel-975-759/205669196" target="_blank" rel="noopener">Each sheet is 48 in. x 96 in. to cover 32 sq. ft.</a> Traditional planks are narrower: Bob Vila notes that <a href="https://www.bobvila.com/articles/how-to-install-beadboard/" target="_blank" rel="noopener">each board is about 3 1⁄2 inches wide</a>. Home Depot's tip for the last piece: <a href="https://www.homedepot.com/c/ah/how-to-install-beadboard-wainscoting/9ba683603be9fa5395fab90d81eec51" target="_blank" rel="noopener">Cut or plane as much of the last panel or board as needed to make it fit.</a></p>
+<p>Beadboard is the quickest style to install in sheets. Home Depot's beadboard sheet listing reads: <a href="https://homedepot.com/p/EUCATILE-32-sq-ft-3-16-in-x-48-in-x-96-in-Beadboard-White-True-Bead-Panel-975-759/205669196" target="_blank" rel="noopener">Each sheet is 48 in. x 96 in. to cover 32 sq. ft.</a> Traditional planks are narrower: Bob Vila notes that <a href="https://www.bobvila.com/articles/how-to-install-beadboard/" target="_blank" rel="noopener">each board is about 3 1⁄2 inches wide</a>. Home Depot's tip for the last piece: <a href="https://www.homedepot.com/c/ah/how-to-install-beadboard-wainscoting/9ba683603be9fa5395fab90d81eec51" target="_blank" rel="noopener">Cut or plane as much of the last panel or board as needed to make it fit.</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -316,7 +316,7 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Wainscoting costs vary a lot by style. HomeGuide says <a href="https://homeguide.com/costs/wainscoting-cost" target="_blank" rel="noopener">Flat panel wainscoting costs $10 to $15 per square foot and is the simplest option.</a> and raised panel costs $12 to $30 per square foot installed. Fixr puts beadboard at $9 to $23 per square foot. Picture frame moulding is the cheapest DIY option, because you only buy moulding and paint.</p>
+<p>Wainscoting costs vary a lot by style. HomeGuide says <a href="https://homeguide.com/costs/wainscoting-cost" target="_blank" rel="noopener">Flat panel wainscoting costs $10 to $15 per square foot and is the simplest option.</a> It puts raised panel at $12 to $30 per square foot installed. Fixr puts beadboard at $9 to $23 per square foot. Picture frame moulding is the cheapest DIY option, because you only buy moulding and paint.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
@@ -328,7 +328,7 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Plan the layout around what is already on the wall. For outlets, JLC says <a href="https://www.jlconline.com/how-to/interiors/an-introduction-to-wainscotting_o" target="_blank" rel="noopener">ideally, these should be inside a panel or in the middle of a stile.</a> Under windows, Family Handyman suggests you <a href="https://www.familyhandyman.com/project/how-to-build-a-wainscoted-wall/" target="_blank" rel="noopener">Divide the panel under the windows with a stile in the middle.</a> At outside corners, mitre the trim. If you need to move or extend an outlet box, turn off the power first or hire an electrician.</p>
+<p>Plan the layout around what is already on the wall. For outlets, JLC says <a href="https://www.jlconline.com/how-to/interiors/an-introduction-to-wainscotting_o" target="_blank" rel="noopener">ideally, these should be inside a panel or in the middle of a stile.</a> Under windows, Family Handyman suggests you <a href="https://www.familyhandyman.com/project/how-to-build-a-wainscoted-wall/" target="_blank" rel="noopener">Divide the panel under the windows with a stile in the middle.</a> At outside corners, mitre the trim. If the trim covers an outlet, fit a box extender so the box sits flush with the new surface. Switch off the breaker and check the outlet is dead with a tester before you start, and hire an electrician to move an outlet.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":3174,"sizeSlug":"full","linkDestination":"none"} -->
@@ -366,7 +366,7 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In the UK, wainscoting is usually called panelling under a dado rail. Ideal Home says <a href="https://www.idealhome.co.uk/all-rooms/hallway/hallway-dado-rail-trend" target="_blank" rel="noopener">A dado rail in a hallway is generally best placed at about one third of the wall height</a> and <a href="https://www.idealhome.co.uk/all-rooms/hallway/hallway-dado-rail-trend" target="_blank" rel="noopener">which typically works out around 85 to 100 centimetres from the floor</a>. UK fitting guides use wider gaps than US blogs: Howdens' example uses 150 mm, and the same formula gives <a href="https://www.howdens.com/-/media/howdens/assets/clh_asset_products/clh_asset_levela_108973/clh_asset_levelb_110625/ass_25504875.pdf" target="_blank" rel="noopener">Divide 2850mm by 4 panels = 713mm panel width</a>. Choose <em>Centimeters</em> in More options to get every result in cm.</p>
+<p>In the UK, wainscoting is usually called panelling under a dado rail. Ideal Home says <a href="https://www.idealhome.co.uk/all-rooms/hallway/hallway-dado-rail-trend" target="_blank" rel="noopener">A dado rail in a hallway is generally best placed at about one third of the wall height</a>, <a href="https://www.idealhome.co.uk/all-rooms/hallway/hallway-dado-rail-trend" target="_blank" rel="noopener">which typically works out around 85 to 100 centimetres from the floor</a>. UK fitting guides use wider gaps than US blogs: Howdens' example uses 150 mm, and the same formula gives <a href="https://www.howdens.com/-/media/howdens/assets/clh_asset_products/clh_asset_levela_108973/clh_asset_levelb_110625/ass_25504875.pdf" target="_blank" rel="noopener">Divide 2850mm by 4 panels = 713mm panel width</a>. Choose <em>Centimeters</em> in More options to get the sizes in cm.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
@@ -406,7 +406,7 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Add up the perimeter of every box (twice the width plus twice the height), add about 10% for mitres, then add the chair rail along the full wall. A 10 ft wall with four boxes takes about 30 linear ft of box moulding before the extra.</p>
+<p>Add up the perimeter of every box (twice the width plus twice the height), add about 10% for mitres, then add the chair rail along the full wall. A 10 ft wall with four boxes and the chair rail at 32 in takes about 30 linear ft of box moulding before the extra.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->

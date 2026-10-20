@@ -47,7 +47,7 @@ table(["Ceiling height","Classic (one third)","Tall (about two-thirds)"],[
 ["8 ft (2.4 m)","32 in (81 cm)","64 in (163 cm)"],
 ["9 ft (2.7 m)","36 in (91 cm)","72 in (183 cm)"],
 ["10 ft (3.0 m)","40 in (102 cm)","80 in (203 cm)"]])
-p(f"Sources disagree on going higher. This Old House says {ext(TOHI,'Classic wainscotting is between 36 and 42 inches from the ground, while modern wainscotting might be taller.')} Others prefer lower: Fine Homebuilding's trim writer advises {ext(FHBCR,'err on the side of too low rather than too high')}. Everyone agrees on one thing. Laurel Bern warns: {ext(LB,'But the one thing you must never do with your wainscoting is apply it halfway up the wall.')} If a windowsill sits close to a third of the wall, line the chair rail up with it.")
+p(f"Sources disagree on going higher. This Old House says {ext(TOHI,'Classic wainscotting is between 36 and 42 inches from the ground, while modern wainscotting might be taller.')} Others prefer lower: in Fine Homebuilding, millwork expert Brent Hull says to {ext(FHBCR,'err on the side of too low rather than too high')}. Many designers agree on one thing. Laurel Bern warns: {ext(LB,'But the one thing you must never do with your wainscoting is apply it halfway up the wall.')} If a windowsill sits close to a third of the wall, line the chair rail up with it.")
 h2("How to Lay Out Picture Frame Wainscoting")
 p(f"Picture frame moulding, also called shadow boxes, is the easiest style: mitred boxes of thin moulding on a flat wall. This Old House explains the math: {ext(TOHE,'Add 1 to the number of frames on a given wall and multiply by your chosen spacing between frames.')} {ext(TOHE,'Subtract that sum from the total wall length, then divide the remainder by the number of frames.')}")
 lst(["<strong>Measure the wall</strong> between corners, or between a corner and a door or window.",
@@ -55,7 +55,7 @@ lst(["<strong>Measure the wall</strong> between corners, or between a corner and
 "<strong>Pick a rough box width,</strong> about 20 to 30 in, and round the number of boxes to a whole number.",
 "<strong>Work out the exact width:</strong> wall − (boxes + 1) × gap, divided by the number of boxes.",
 "<strong>Box height</strong> = chair rail height − chair rail − baseboard − two gaps."],ordered=True)
-p(f"Thrifty Decor Chick's 14 ft wall shows how it works: {ext(TDC,'Take the remaining 147 inches and divide it by six boxes -- each box will be 24.5 inches wide.')} For the gap, she says, {ext(TDC,'I do a standard three inches all the way around.')} Miss Mustard Seed {ext(MMSP,'played with 2-4″ and landed on a 3″ space on all sides of each box')}.")
+p(f"Thrifty Decor Chick's 14 ft example shows how it works: {ext(TDC,'Take the remaining 147 inches and divide it by six boxes -- each box will be 24.5 inches wide.')} For the gap, she says, {ext(TDC,'I do a standard three inches all the way around')}. Miss Mustard Seed {ext(MMSP,'played with 2-4″ and landed on a 3″ space on all sides of each box')}.")
 img(6)
 p(f"Cut every corner at 45 degrees; HGTV notes the angle {ext(HGTV,'is a standard setting on a miter saw (or miter box if a hand saw is being used)')}. Boxes on one wall should match, though JLC says boxes don't need to be identical across the room: {ext(JLC,'similar is better')}.")
 h2("Raised and Flat Panel Wainscoting")
@@ -65,21 +65,21 @@ p(f"Most stiles and top rails are 1x4 boards, 3 1/2 in wide, with a wider bottom
 img(3)
 h2("Beadboard Wainscoting")
 img(4)
-p(f"Beadboard is the quickest style to install in sheets. Home Depot sells beadboard panels where {ext(HD48,'Each sheet is 48 in. x 96 in. to cover 32 sq. ft.')} Traditional planks are narrower: Bob Vila notes that {ext(BVB,'each board is about 3 1⁄2 inches wide')}. Home Depot's tip for the last piece: {ext(HDBB,'Cut or plane as much of the last panel or board as needed to make it fit.')}")
+p(f"Beadboard is the quickest style to install in sheets. Home Depot's beadboard sheet listing reads: {ext(HD48,'Each sheet is 48 in. x 96 in. to cover 32 sq. ft.')} Traditional planks are narrower: Bob Vila notes that {ext(BVB,'each board is about 3 1⁄2 inches wide')}. Home Depot's tip for the last piece: {ext(HDBB,'Cut or plane as much of the last panel or board as needed to make it fit.')}")
 h2("How Much Moulding Do You Need?")
 p("Each picture frame box takes four pieces, two at its width and two at its height, so the moulding you need is the total perimeter of all the boxes. The calculator packs those pieces into 8, 12 or 16 ft lengths so you buy whole lengths, then adds the chair rail. For a 10 ft wall with four boxes, that is 8 pieces at 26 1/4 in and 8 at 18 in: 6 lengths of 8 ft box moulding and 3 of chair rail, including about 10% extra.")
 lst([f"<strong>Extra:</strong> Lowe's says {ext(LOW,'Remember to add 10% to the total length for mitering.')}",
 "<strong>Nails:</strong> 18-gauge brad nails, about 1 1/4 in long for thin moulding.",
 "<strong>Finish:</strong> caulk the joints, fill the nail holes and paint. Painting the boxes and wall the same color gives the classic built-in look."])
 h2("Wainscoting Cost")
-p(f"Wainscoting costs vary a lot by style. HomeGuide says {ext(HG,'Flat panel wainscoting costs $10 to $15 per square foot and is the simplest option.')} and raised panel costs $12 to $30 per square foot installed. Fixr puts beadboard at $9 to $23 per square foot. Picture frame moulding is the cheapest DIY option, because you only buy moulding and paint.")
+p(f"Wainscoting costs vary a lot by style. HomeGuide says {ext(HG,'Flat panel wainscoting costs $10 to $15 per square foot and is the simplest option.')} It puts raised panel at $12 to $30 per square foot installed. Fixr puts beadboard at $9 to $23 per square foot. Picture frame moulding is the cheapest DIY option, because you only buy moulding and paint.")
 table(["Style","Installed cost per sq ft","DIY difficulty"],[
 ["Picture frame","not priced by these sources","easiest"],
 ["Beadboard","about $9 to $23 (Fixr)","easy"],
 ["Flat panel","about $10 to $15 (HomeGuide)","moderate"],
 ["Raised panel","about $12 to $30 (HomeGuide)","hardest"]])
 h2("Outlets, Windows and Corners")
-p(f"Plan the layout around what is already on the wall. For outlets, JLC says {ext(JLC,'ideally, these should be inside a panel or in the middle of a stile.')} Under windows, Family Handyman suggests you {ext(FH,'Divide the panel under the windows with a stile in the middle.')} At outside corners, mitre the trim. If you need to move or extend an outlet box, turn off the power first or hire an electrician.")
+p(f"Plan the layout around what is already on the wall. For outlets, JLC says {ext(JLC,'ideally, these should be inside a panel or in the middle of a stile.')} Under windows, Family Handyman suggests you {ext(FH,'Divide the panel under the windows with a stile in the middle.')} At outside corners, mitre the trim. If the trim covers an outlet, fit a box extender so the box sits flush with the new surface. Switch off the breaker and check the outlet is dead with a tester before you start, and hire an electrician to move an outlet.")
 img(5)
 p("On stairs, keep the boxes parallel to the stair slope and the same width along each flight. Measure each run of stairs separately.")
 h2("How the Wainscoting Calculator Works")
@@ -89,7 +89,7 @@ lst(["<strong>Height:</strong> a third of the ceiling height (32 in on an 8 ft c
 "<strong>Moulding:</strong> all pieces packed into the length you choose, plus about 10% extra (at least one spare).",
 "<strong>Estimates:</strong> your moulding and rail sizes may differ. Check the numbers with your own boards before you cut."])
 h2("Dado Rail and Box Panelling in the UK")
-p(f"In the UK, wainscoting is usually called panelling under a dado rail. Ideal Home says {ext(IHD,'A dado rail in a hallway is generally best placed at about one third of the wall height')} and {ext(IHD,'which typically works out around 85 to 100 centimetres from the floor')}. UK fitting guides use wider gaps than US blogs: Howdens' example uses 150 mm, and the same formula gives {ext(HOW,'Divide 2850mm by 4 panels = 713mm panel width')}. Choose <em>Centimeters</em> in More options to get every result in cm.")
+p(f"In the UK, wainscoting is usually called panelling under a dado rail. Ideal Home says {ext(IHD,'A dado rail in a hallway is generally best placed at about one third of the wall height')}, {ext(IHD,'which typically works out around 85 to 100 centimetres from the floor')}. UK fitting guides use wider gaps than US blogs: Howdens' example uses 150 mm, and the same formula gives {ext(HOW,'Divide 2850mm by 4 panels = 713mm panel width')}. Choose <em>Centimeters</em> in More options to get the sizes in cm.")
 add(open('savebox.html').read())
 h2("Wainscoting FAQ")
 h3("How high should wainscoting be?")
@@ -99,7 +99,7 @@ p("Choose a gap, usually 3 in. Multiply it by the number of boxes plus one, subt
 h3("How far apart should picture frame moulding be?")
 p("Most DIYers use 3 in between boxes, with the same gap at the corners and above and below the boxes. Gaps of 2 3/4 to 4 in are common in the US; UK guides often use 100 to 150 mm.")
 h3("How much moulding do I need for wainscoting?")
-p("Add up the perimeter of every box (twice the width plus twice the height), add about 10% for mitres, then add the chair rail along the full wall. A 10 ft wall with four boxes takes about 30 linear ft of box moulding before the extra.")
+p("Add up the perimeter of every box (twice the width plus twice the height), add about 10% for mitres, then add the chair rail along the full wall. A 10 ft wall with four boxes and the chair rail at 32 in takes about 30 linear ft of box moulding before the extra.")
 h2("More Free Home Tools")
 p(f"Prefer vertical battens? Our {a('board-and-batten-calculator','board and batten calculator')} works out the spacing and boards. Use the {a('baseboard-calculator','baseboard calculator')} for the trim below, and our {a('picture-hanging-height-calculator','picture hanging height calculator')} for art above the chair rail.")
 ai_note()
