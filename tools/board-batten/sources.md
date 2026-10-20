@@ -1,0 +1,388 @@
+# Board and batten calculator: sources
+
+Researched 2026-10-20. Every quote below came from fetching the page with WebFetch. Quotes were pulled out by WebFetch's text extractor, so search the live page with Ctrl+F before you publish a quote. Competitor calculators (inchcalculator, omnicalculator, calconic, wallpanelplanner) were left out on purpose.
+
+Key: **[2+]** = backed by 2 or more sources. **[1]** = single source.
+
+Blocked or not reached: Angi (angi.com/articles/board-and-batten-cost.htm) and Family Handyman (familyhandyman.com) timed out on permission and were not checked. B&Q's "how to create feature wall panelling" page returned only navigation, with no steps. The searches found no usable page from The Spruce, Better Homes & Gardens, House Beautiful, This Old House (interior) or Ideal Home.
+
+## Source list
+- HD = Home Depot: https://homedepot.com/c/ah/how-to-make-a-board-and-batten-wall-accent/9ba683603be9fa5395fab90118469a03
+- LOW = Lowe's, moulding buying guide: https://www.lowes.com/n/buying-guide/moulding-buying-guide
+- BV-101 = Bob Vila, board and batten 101: https://www.bobvila.com/articles/board-and-batten-101/
+- BV-DIY = Bob Vila, DIY wall (full boards + battens over plywood/studs): https://www.bobvila.com/articles/diy-board-and-batten-wall/
+- BV-STUD = Bob Vila, find a stud: https://www.bobvila.com/articles/how-to-find-a-wall-stud/
+- HGTV = HGTV: https://www.hgtv.com/design/decorating/design-101/how-to-install-board-and-batten-accent-wall
+- HG = HomeGuide, wainscoting cost: https://homeguide.com/costs/wainscoting-cost
+- FX = Fixr, wainscoting cost: https://www.fixr.com/costs/wainscoting-installation
+- AMM = Angela Marie Made, DIY wall: https://angelamariemade.com/diy-board-and-batten-wall/
+- AMM-A = Angela Marie Made, accent wall (grid top/bottom boxes): https://angelamariemade.com/diy-board-and-batten-accent-wall/
+- THD = The Handyman's Daughter, wainscoting vs board and batten: https://www.thehandymansdaughter.com/wainscoting-vs-board-and-batten/
+- RMH-S = Remodelaholic, spacing tutorial: https://www.remodelaholic.com/board-and-batten-spacing-tutorial/
+- RMH-F = Remodelaholic, floor-to-ceiling: https://www.remodelaholic.com/diy-floor-to-ceiling-board-batten/
+- YHL = Young House Love: https://www.younghouselove.com/how-to-install-board-and-batten/
+- BLH = Bless'er House: https://www.blesserhouse.com/the-cheapest-and-easiest-diy-board-and-batten-part-one
+- JSD = Jenna Sue Design: https://www.jennasuedesign.com/diy-board-and-batten-tutorial/
+- LR = Love & Renovations: https://www.loveandrenovations.com/board-batten-wall/
+- MDL = Megan Dauphinee Living: https://www.megandauphineeliving.com/board-and-batten-wall-everything-you-need-to-know/
+- S2C = Shanty 2 Chic: https://www.shanty-2-chic.com/diy-board-and-batten-wall/
+- CCL = The Crazy Craft Lady: https://thecrazycraftlady.com/choosing-your-board-and-batten-style/
+- FMB = Fresh Mommy Blog, grid wall: https://freshmommyblog.com/board-and-batten-grid-wall/
+- RH = Real Homes (US): https://www.realhomes.com/advice/how-to-diy-a-board-and-batten-wall
+- MET = Metrie (trim maker), wainscoting height: https://www.metrie.com/the-finished-space/en-blog-how-high-should-wainscoting-be
+- AT = Apartment Therapy, wainscoting height: https://www.apartmenttherapy.com/wainscoting-height-260241
+- DI = Designing Idea: https://designingidea.com/board-and-batten-dimensions/
+- ATB = Archtoolbox, lumber sizes: https://www.archtoolbox.com/lumber-dimensions/
+- PTR = Pro Tool Reviews, find a stud: https://www.protoolreviews.com/how-to-find-a-wall-stud
+- WW = WOODWEB, estimating trim: https://woodweb.com/knowledge_base/Measuring_and_Estimating_Trim_Quantities.html
+- NEC = Sonic Electric, NEC 314.20 box extenders: https://sonicelectric.com/blogs/news/nec-314-20-box-extenders
+- UK:
+  - HBR = Homebuilding & Renovating: https://www.homebuilding.co.uk/advice/diy-wall-panelling
+  - HBR-H = Homebuilding & Renovating, half wall panelling: https://www.homebuilding.co.uk/ideas/half-wall-panelling-ideas
+  - WK-KIT = Wickes MDF wall kit fitting PDF: https://media.wickes.co.uk/is/content/wickes/GPID_5000070015_TECH_0
+  - WK-18 = Wickes PSE timber 18x44: https://www.wickes.co.uk/Wickes-Whitewood-PSE-Timber---18mm-x-44mm-x-2-4m/p/9000036441
+  - WK-12 = Wickes primed stripwood 12x68: https://www.wickes.co.uk/Cheshire-Mouldings-Primed-Stripwood---12-x-68-x-2400mm/p/273209
+  - BQ-12 = B&Q MDF stripwood 12x46: https://www.diy.com/departments/cheshire-mouldings-smooth-mdf-stripwood-l-2-4m-w-46mm-t-12mm/1793594_BQ.prd
+  - RON = Ronseal: https://www.ronseal.com/how-to-guides/how-to-panel-a-wall/
+  - D2F = Doors2Floors: https://doors2floors.co.uk/blogs/advice/wall-panelling-guide
+  - BAB = Book a Builder UK: https://www.bookabuilderuk.com/blog/board-batten-wall-ideas
+  - CUT = CutMy (MDF strip retailer): https://www.cutmy.co.uk/wall-panelling/mdf-strips/
+  - WPW = Wall Panels World (retailer): https://wallpanelsworld.co.uk/blog/wall-panelling-height/
+  - MDR = My Daily Renovation: https://www.mydailyrenovation.co.uk/diy-wall-panelling/
+  - LS = Lily Sawyer: https://layered.home.lilysawyer.com/diy-wall-panelling-tutorial-using-mdf-battens/
+  - VE = The Victorian Emporium panelling guide PDF: https://www.thevictorianemporium.com/images/uploads/site/Wall-Panelling-Guide-web.pdf
+
+## 1. Spacing formula
+- **gap = (wall width - battens x batten width) / (battens - 1), with a batten at each end [2+]**
+  - HBR: "Width of wall — (width of slat x number of slats)] / (number of slats — 1)"
+  - MDR: "Number of battens (A) x Width of battens (B) = C" then "Wall length (D)- Total width of all battens (C)= E" then "E/Number of spaces (A-1)= Spacing width! (F)"
+  - RMH-S: "Now in order to have 5 spaces you will need 6 battens, so 5 spaces + 1 equals the number of battens you will need."
+  - RMH-S: "You cannot forget the thickness of your batten's themselves."
+  - RON: "Then, subtract the previous figure from the width of your wall." and "Take that figure (440cm) and divide it by the number of gaps between vertical battens."
+  - JSD: "Subtract the width of all the battens from the width of the entire wall (58 – 12.5 = 45.5)."
+- **Worked example: 123.5 in wall, seven 1x4s, 16.5 in gaps [2+, but HD reuses AMM's exact numbers]**
+  - AMM: "I took our total wall length of 123.5" and divided by 17", which equaled roughly 7 boards."
+  - AMM: "7 batten boards x 3.5" (actual width of 1x4 boards) = 24.5""
+  - AMM: "123.5" (length of wall) - 24.5" = 99""
+  - AMM: "99" / 6 (the # of spaces between 7 boards) = 16.5""
+  - HD: "Divide 99 by 6 (the number of spaces between 7 boards), for a total of 16.5 inches."
+  - Our formula gives the same answer: round((123.5 - 3.5) / (16 + 3.5)) + 1 = round(6.15) + 1 = 7 battens, gap 16.5 in.
+- **Rough count first, then the exact gap [2+]**
+  - D2F: "Divide the wall length by a target panel width to get a rough count," and "then round to a whole number and recalculate the exact width."
+  - HD: "Divide by 17 inches, the rough equivalent of 7 boards."
+- **Battens at both ends is the norm, but not universal [2+]**
+  - RMH-S: "This is probably just preference here — but we always start and end the wall with a batten."
+  - AMM: "want to have a batten board starting and ending on both corners of the wall"
+  - RH: "Start by installing a piece of vertical trim at each of the far edges (or in the corners) of the wall"
+  - LR (it is a choice): "First, decide if you want the wall to begin with a batten, or begin with open space."
+  - S2C (no corner battens): "I decided to start 9 inches from the sides of the wall."
+- **Gap vs on-center spacing**
+  - YHL: "Since my 2.5″ wide battens are 18″ apart from center to center, my spacer is cut to 15.5″ wide." So "18 in apart" can mean on center (15.5 in clear gap). Most sources mean the clear gap. The calculator should say "gap between battens" plainly. [1]
+- **Odd-count note [1]**
+  - HBR: "If you have an odd number of slats, it's a good idea to start in the middle" and "while if you have an even number, it may be better to start at one side or the other."
+
+## 2. Common spacing
+- **12-24 in is the common range; 16-20 in is the sweet spot [2+]. Range: 8 in (HGTV) to 28 in (AMM-A).**
+  - CCL: "Most vertical battens are spaced between 16 and 20 inches apart."
+  - HD: "For an average-size room, about 16-18 inches of spacing separates each board."
+  - AMM: "Common spacing includes anywhere between 12" - 20"."
+  - YHL: "We suggest spacing your vertical battens between 12″ and 20″ apart."
+  - MDL: "Most tutorials recommend spacing boards 12-24 inches apart."
+  - LR: "I'd recommend anywhere from 12″-24″ depending on the look you want – my battens have a spacing of 18″ between them."
+  - RH: "A good rule of thumb is to space them roughly 18" apart, give or take a few inches" and "(Experts recommend anywhere from 12"-24".)"
+  - DI: "Each batten should have at least a space of 12 to 24 inches or 30 to 61 centimeters from each other."
+  - Narrower outlier. HGTV: "Most traditional batten is placed between 8” to 12” apart."
+  - Wider outlier. AMM-A: "I knew I wanted around 24-28 inches of spacing between each board so it would like right visually."
+- **Style and material trade-off [1]**
+  - THD: "Wider spacing is more modern and creates a bold statement." and "Narrower spacing often gives a more cottagey feel."
+  - THD: "Keep in mind that the narrower your spacing, the more material you will need."
+- **Studs are 16 in on center (sometimes 24) [2+]**
+  - BV-STUD: "Standard stud spacing is 16 inches on center and is rarely greater than 24 inches, even on center in older houses."
+  - PTR: "Wall studs are usually placed 16 inches apart on-center"
+  - RMH-F: "I decided to space by battens 16 inches apart, so always hitting a stud may not be possible"
+  - Note: a 16 in gap with 3.5 in battens puts them 19.5 in on center, so battens will not line up with 16 in studs. That is why sources glue them (see section 5).
+
+## 3. Board sizes
+- **Nominal vs actual: 1x2 = 1.5 in, 1x3 = 2.5 in, 1x4 = 3.5 in, 1x6 = 5.5 in, all 3/4 in thick [2+]**
+  - ATB table: "1 x 2 | 3/4 x 1 1/2 | 19 x 38"
+  - ATB table: "1 x 3 | 3/4 x 2 1/2 | 19 x 64"
+  - ATB table: "1 x 4 | 3/4 x 3 1/2 | 19 x 89"
+  - ATB table: "1 x 6 | 3/4 x 5 1/2 | 19 x 140"
+  - ATB table: "1 x 8 | 3/4 x 7 1/4 | 19 x 184"
+  - AMM: "7 batten boards x 3.5" (actual width of 1x4 boards) = 24.5""
+  - AMM-A: "Or even 1x3 boards (which measure 2.5" wide) instead of 1x4s for a smaller wall." and "use 1x6 boards (which measure 5.5" wide) instead of 1x4s."
+  - FMB: "Each 1×2 board is actually 1.5″ wide"
+  - Note: MDF "1x" boards are often thinner than 3/4 in. MDL lists "3.5" x 8' x ½" MDF boards". Width matches the pine size; thickness may not.
+- **Which size for battens: 1x3 or 1x4 most common; 1x2 for grids [2+]**
+  - RH: "you'll want to use something in the 2.5" to 3.5" width range for the trim work" and for big rooms "you may want to move up to the 4.5" to 5.5" range or wood width."
+  - YHL battens: "1″ x 3″ x 8′ primed boards"; AMM battens: 1x4 MDF; HGTV: "The battens will be cut from 1x4s."; RMH-F: "For this project I used 1 by 3 inch strips."
+  - FMB (grid): "We used 1×2’s on our grid wall, and I wouldn’t go larger than 1×3’s, purely based on aesthetics."
+- **MDF, primed pine and lattice [2+]**
+  - HD: "MDF boards (pre-primed), in different sizes, including 1-inch x 3- or 4-inches and 1-inch x 8-inches"
+  - AMM: "MDF can be a less expensive alternative to wood though." and "Also, wood boards may be used instead of MDF, especially for rooms with a high water exposure."
+  - THD: "Though MDF is cheap, it dents easily and sucks up paint like a sponge!"
+  - THD: "Avoid cutting the battens from plywood strips, because the exposed edges will be difficult to hide."
+  - YHL: "We like to use pre-primed pine or lattice strips for our battens because it saves time."
+  - RH: "Vertical batten trim (I used 1 3/8" pine lattice molding from Home Depot)"
+  - BLH (furring strips): "A 1x4x8 furring strip costs about $2.00 at most hardware stores (at the time of this post’s publishing)."
+  - LOW: "Primed finger-joint products are available in pine and poplar wood."
+- **Board lengths: 8 ft, 10 ft, 12 ft [2+]**
+  - AMM: "1x4 @ 8ft or 12ft (We used these pre-primed MDF boards)"
+  - RH: "Trim is sold in 8-12' lengths, so you'll need to cut it to fit in your car."
+
+## 4. Height, top rail, baseboard and grid
+- **Wainscot height: one third of the wall is the classic rule [2+]**
+  - HG: "The standard height of wainscoting is one-third of the wall’s height."
+  - MET: "Traditionally, wainscoting runs about one-third of the wall’s height."
+  - AT: "A good general rule for the height of a wainscot is that it be a third of the way up the wall."
+  - AT: "In a room that's nine feet tall, for example, this would put the height of the wainscoting at three feet."
+- **In inches: about 32-42 in [2+]**
+  - BV-101: "Board and batten is usually installed about 32 inches up from the floor"
+  - DI: "Wainscoting is usually done at least 32 inches or about 81 centimeters from the floor up to the walls."
+  - HG: "The most popular wainscoting panel sizes are 3 to 3.5 feet tall." (36-42 in)
+- **Taller board and batten (half to two-thirds, about 4-6 ft) is very common in DIY blogs [2+]. Sources disagree: classic wainscot rules say 1/3, board and batten blogs say 1/2 to 2/3.**
+  - YHL: "Board & batten typically looks the best between 1/2 and 2/3 up your wall."
+  - CCL: "Paneling on the bottom 2/3 of the wall (usually painted white) with an accent color painted on the top 1/3 of wall."
+  - AT: "Want to shake things up with a much taller wainscot? Try one that covers the bottom two-thirds of the wall."
+  - RH: "(we did ours about 2/3 of the way up)."
+  - HGTV: "For our eight-foot wall, we are installing board and batten at a height of five feet."
+  - HGTV: "a good rule of thumb is to place the height either above or below the center of the wall."
+  - LR: "My battens are 5 feet tall – no particular reason other than that's what felt right."
+  - AMM: "So, that meant our middle 1x4 board should be installed with the bottom of it 48" above the top of the baseboard."
+  - BLH: "It should be at least 4′ high." and "Ours was approximately 6′ high (with 9′ ceilings)."
+  - HD: "In this project, the accent wall is 4 feet tall measured from the baseboard."
+- **Full height (floor to ceiling) [2+]**
+  - YHL: it "can even go all the way to the ceiling!"
+  - THD: "You can find board and batten that goes all the way to the ceiling or just a short section of the wall."
+  - RMH-F: "The first piece you want to install is a trim piece at the top"
+- **Windowsill alignment [1]**
+  - AT: "in many classically inspired homes, the height of the wainscot is the same as the height of the windowsills."
+- **Top rail: 1x4 rail plus a 1x2 (or 1x3) ledge on top [2+]**
+  - YHL: "The first step is hanging the top rail (the 1 x 4″ board) horizontally around the room."
+  - YHL: "To add it, we used a 1 x 2″ board just nailed along the top." and "A flat ledge looks more substantial and creates a spot to lean artwork or something on top."
+  - AMM: "install it on top of the middle 1x4 board with 1 ¼" brad nails" "to create a top ledge." (the ledge is the 1x2 on AMM's supply list)
+  - HGTV: "Attach the 1x4 trim piece horizontally on top of the vertical slats." and "Finally, create a ledge by nailing the 1x3 board to the top of the completed board and batten."
+  - BLH: "To finish it off, we nailed a 1×2 board flat on top like a little shelf."
+  - Wider option. LR: "I also added a larger, 1×6 piece of wood along the top, complete with a little picture ledge."
+  - HD: "This will create a ledge on the top of installed wall."
+- **Batten length = panel height - baseboard - top rail [2+]**
+  - HGTV: "To determine the length of the battens for our 5’ tall wall, we subtracted 5-1/2” for the baseboard and 3-1/2” for the top trim."
+  - LS (metric): "I got the 183cm by subtracting the 7cm top batten width from the total height of 190cm"
+- **Baseboard: 1x6 (or 1x4), same thickness as the battens [2+]**
+  - HGTV: "For our baseboard, we used a 1x6."
+  - JSD: "We opted to use 1×6″ for our baseboards, but you can also use a 1×4″ (personally, I think taller looks nicer!)"
+  - BV-101: "Standard baseboards are usually thinner than the boards you'll want to use as battens."
+  - BV-101: "For a uniform look, remove the baseboard and install a new base, using a board the same thickness as your battens."
+- **Grid (square) board and batten: horizontal rails, squares about 24 in or less [2+]**
+  - FMB: "The key to creating a gorgeous grid wall is to create squares with the grids."
+  - FMB: "Ideally, the squares should be 24″ or less." and "We decided on approx 24” square openings in our grid."
+  - FMB: "Then repeat the process for the wall height, too, making sure to take into account the height of the baseboard as well."
+  - FMB: "Our wall is 75″ wide, and we have divided it into 3 squares." and "We divide that 69″ into our 3 squares (so 69 divided by 3) to get 23″ between each vertical board!"
+  - CCL: "Full wall paneling, in a grid pattern" and "You also have to decide the spacing of your horizontal boards."
+  - RMH-F: "adding another set of horizontal pieces to create small squares at the top of the wall"
+  - AMM-A: "I chose 16.5" for the spacing in the top box and bottom box."
+  - Note: the vertical gap rule is the same formula, run a second time on the height (between baseboard and top rail) with the rail width.
+
+## 5. Materials: footage, waste, fasteners, finishing
+- **Waste: add 10% [2+]. No reputable source found for 15%.**
+  - LOW: "Remember to add 10% to the total length for mitering."
+  - WW: "I have been using a measuring wheel, getting total linear feet by rolling without stopping for doors, and then adding 10%."
+  - LR (round up): "Now, keep in mind that the number you get will likely be *more* than you need"
+  - RMH-F (cheap strips are not always straight): "Its worth it to comb through the pile though and find ones that you can use."
+- **Measure each wall separately [2+]**
+  - HD: "You'll calculate your measurements by wall, not by room."
+  - JSD: "Aim for consistent spacing, but calculate your measurements by wall, not by room!"
+  - BV-DIY: "Don't assume they're all the same size; measure the length needed for each one."
+- **Nails: 18-gauge (or 16-gauge) brad nails [2+]. Length sources disagree: 1 in to 2 in.**
+  - HD: "with either 16-gauge or 18-gauge nail guns" and "The nails should be about 2 inches long."
+  - JSD: "grab your nail gun (either 16ga or 18ga)" and "Your nails should be long enough to go through the MDF, drywall and into the studs (2″ is plenty)."
+  - LR: "I recommend using at least 2″ long 18-gauge nails"
+  - MDL (shorter): "I began nailing the boards in place with an 18-gauge nail gun and 1-inch nails."
+  - AMM (battens): "Use construction adhesive (we used Liquid Nails) and 1 ¼" brad nails to attach the battens to the wall."
+  - AMM (baseboard into studs): "Install the baseboard along the bottom of the wall with a brad nailer and 2" brad nails going into the wall studs."
+  - LOW: "The most common size used in moulding is 1-1/4 inches (3d) or 1-1/2 inches (4d)."
+  - BV-DIY (heavier, full boards): "Pneumatic nailer (15-gauge finish nailer)."
+- **How many nails [2+, but no single standard]**
+  - JSD: "I used 3-4 nails per batten and they went up so easy."
+  - HD: "Place a nail every 10 inches or so on the top and bottom of the board."
+  - RMH-F: "Continue to nail every 6-8 inches all along the board to ensure it is fastened to the wall."
+  - YHL: "I've found that they stay in place plenty well with a few nails up and down the board."
+  - THD: "Too many nails will create ugly little dots in the wood." and "Instead, use a few nails and aim them into the studs."
+  - Denser (thin trim). RH: "use a brad nailer to secure it to the wall, adding a nail every 3-4"."
+- **Construction adhesive: most use it; some skip it [2+]. Sources disagree.**
+  - AMM: "Use construction adhesive (we used Liquid Nails) and 1 ¼" brad nails to attach the battens to the wall."
+  - JSD: "I like to use liquid nails for reinforcement, since the boards don't usually end up in studs."
+  - BV-101: "you'll need to use construction adhesive to attach the battens" and "Apply a zigzag bead of glue to the back of a batten"
+  - Skip it. LR: "I chose to skip the construction adhesive out here because I want Parisa to easily be able to change this if she wants."
+  - Skip it. MDL: "So I opted not to use wood glue, and my boards held up just fine with nails alone."
+  - Skip it. S2C: "I decided to not use any form of adhesive like liquid nails on the wall."
+- **Caulk every seam [2+]**
+  - AMM: "Next, caulk all seams and corners with a paintable caulk."
+  - YHL: "Next, caulk any seam where your boards meet the wall or one another."
+  - BLH: "To fill gaps, run a bead of caulk along each edge where the wood boards meet the wall."
+  - FMB (grid): "You will need to caulk inside and outside every square in the grid"
+  - JSD: "And caulk allllll the seams (the most time consuming and my least favorite part)…"
+- **Wood filler or spackle for nail holes and joints [2+]**
+  - AMM: "fill the seams between boards with wood filler, spackle, or caulk."
+  - AMM: "Fill all nail holes with a lightweight spackle, allow it to dry, then lightly hand sand any excess if needed."
+  - MDL: "For nail holes and seams where you want a seamless finish, use wood filler."
+  - LR: "You'll also want to use wood filler or spackle on the nail holes and seams"
+- **Paint: prime bare wood; two coats; eggshell or semi-gloss [2+]**
+  - RH: "If you're using bare wood as I did, you'll want to prime your wood first." and "If you're using pre-primed MDF, you can skip this step and go straight to the paint."
+  - YHL: "But we always think it's the safest bet to do one coat of primer over areas where you've caulked or spackled."
+  - HD: "Apply two coats of your paint of choice, using both the paintbrush and roller."
+  - BV-101: "it's best to use an enamel that matches the other trim in the room"
+  - AMM: "We used Sherwin Williams Mindful Gray in eggshell for our paint color."
+  - AMM (paint estimate): "That price includes the boards, caulk, and 1 gallon of paint." (for a 10 ft wall)
+
+## 6. Cost and time
+- **Pro install: about $7-23 per sq ft [2+]. Range differs slightly by source.**
+  - HG: "Board and batten paneling costs $10 and $23 per square foot and is also called Shaker paneling."
+  - FX: "Expect to pay between $9 and $23 per sq.ft. of paneling." (table row "Board and Batten | $9 - $23")
+  - BV-101: "For professional board-and-batten wainscoting you can expect to pay somewhere between $7 to $20 per square foot."
+  - Note: Angi's board and batten page was blocked, so Angi is not included.
+- **Labor rates [2+]**
+  - HG: "The labor cost to install wainscoting is about $70 to $100 per hour."
+  - FX: "it normally costs about $90 per hour." and "Others install wainscoting for $2 to $3 per sq.ft."
+- **DIY: usually under $100-$300 per wall or room [2+]. No source gives DIY $/sq ft.**
+  - BV-101: "DIYers will spend much less, even when accounting for the necessary paint, nails, and glue."
+  - AMM: "This project cost us only $84 total to complete a 10ft. wall."
+  - YHL: "We once installed it for a little as $57" and "The project we’re showing you today was about $195."
+  - BLH: "we still ended up staying under our $100 budget."
+  - AMM-A: "The cost of our DIY board and batten wall, for a full 15 foot wall, was less than $200."
+  - JSD: "Total materials cost including paint: under $300 for the whole room."
+  - S2C: "I did the entire thing for under $80!"
+  - Outlier, full boards over plywood. BV-DIY: "Estimated Cost: $900 to $2000 (for those who need to buy everything on the list)"
+- **Time: a few hours to a weekend for one wall; 10-15 hours for a room [2+]**
+  - HD: Duration "2-4 hours", Difficulty "Beginner."
+  - YHL: "It only took us half a day to install ours," and "Maybe six solid hours of work broken up across two days."
+  - LR: "From start to finish this entire wall took me less than two hours to install"
+  - RH: "Overall, the project took my husband and I a day to complete," and "then a few extra hours over the course of the next week to finish caulking and painting."
+  - HG: "It takes about 10 to 15 hours to install wainscoting in one 10’ x 10’ room."
+  - FMB (grid wall): "Time needed: 12-18 hours"
+  - BV-DIY (full boards): "Working Time: 16 hours" and "Total Time: 22 hours."
+
+## 7. Practical tips
+- **Outlets and switches: plan the spacing to miss them, or notch and extend the box [2+]**
+  - JSD: "We worked out our spacing to avoid the main outlet near the door"
+  - RMH-S: "We notched the board and framed out the light switch."
+  - AMM: "You can also use these tools to cut around any wall objects, like wall outlets, if needed."
+  - AMM-A: "used our Dremel to notch out the wood at that spot about a ½" deep." and "you can add wall plate spacers to bring the electrical outlets flush with the cover plate."
+  - BLH: "We had to work around some tricky areas like our security system keypad, outlets, and light switches."
+  - Code. NEC: "For installations in combustible surfaces such as wood paneling, the box must be flush with the finished surface."
+  - Code. NEC: "a listed box extender must be installed to bring the box opening flush with the finished wall surface."
+- **Windows: shorter battens below, and the odd gap can go under the window [2+]**
+  - HD: "You may have to cut a few smaller boards to place under the window."
+  - JSD: "Our largest spacing was underneath the window, but I promise you'll never notice the difference"
+  - YHL: "We were also mindful of where it intersected with our doors and windows,"
+  - RMH-S: "I did a wall for my parents and it had a window that was off centered."
+- **Center vs corners: sources disagree [2+]**
+  - From center. HD: "Starting from the exact middle of the wall, place a vertical batten board."
+  - From center. BV-DIY: "Measure and mark the center of your feature wall."
+  - From center. YHL: "We generally tried to center one batten in the room"
+  - From center (UK). VE: "First establish the centre of each run and work out from there towards the ends"
+  - From corners. AMM: "want to have a batten board starting and ending on both corners of the wall"
+  - From corners. MDL: "Start with the outermost boards and work your way inward, making sure to maintain consistent spacing."
+  - Both. HD: "you may want it to start and end on the wall's corners."
+  - Note: with battens at both ends and equal gaps, the result is symmetric either way. "Start in the middle" matters only for an odd count (HBR, section 1).
+- **Textured walls: add a 1/8 in hardboard or plywood backer, or smooth the wall [2+]. Sources disagree on whether it is needed.**
+  - AMM: "then I would attach a ⅛″ panel board (such as hardboard or plywood) cut to size on the wall."
+  - AMM-A: "If you have heavily textured walls, an easy solution would be to cover it with either ⅛" hardboard panels"
+  - BLH: "You cannot use this exact method on textured walls."
+  - YHL: "Yes, but you won’t be able to use your existing drywall as the “boards” like we do in this tutorial."
+  - JSD: "Personally, I think it's absolutely worth the extra effort to smooth your walls so the installation looks professional."
+  - Backer optional. AMM-A: "You can definitely do board and batten on textured walls."
+  - Backer optional. LR: "I'm a big believer that you can do a board and batten wall treatment even with textured walls!"
+  - HD: "Attach a 1/8-inch panel board, like plywood, cut to size, on the wall."
+- **Uneven walls [1]**
+  - THD: "If your wall is uneven, you may need to place some shims behind your battens."
+- **Paint the wall first? Optional; saves time, but expect touch-ups [2+]**
+  - MDL: "In hindsight, I would have painted the wall before installing the boards to save time, but either method works!"
+  - LR: "A quick note: You absolutely can paint everything *before* installing the boards." and "Just know you'll have to go back and touch up after caulking."
+  - Painted after. S2C: "At this point I painted the wall and all of the bender boards in place."
+- **Mock it up first [2+]**
+  - BV-101: "Doing a layout on paper will let you adjust the spacing of the battens for a uniform look."
+  - RMH-S: "I first taped off the battens to get a quick visual."
+  - THD: "You don't want to end up with uneven spacing or an awkward corner layout!"
+
+## 8. UK: batten wall panelling (metric)
+- **Same formula [2+]**
+  - HBR: "Width of wall — (width of slat x number of slats)] / (number of slats — 1)"
+  - WK-KIT: "To work out how many panels you require, measure wall length and subtract width of 1 panel strip." (example: "634mm centres" and "537mm between strips" on a 2000mm wall)
+  - MDR: "E/Number of spaces (A-1)= Spacing width! (F)"
+- **Strip sizes: MDF 9-12 mm thick is typical; widths roughly 44-120 mm [2+]**
+  - BAB: "MDF thickness is typically 9mm to 12mm for battens."
+  - WK-18: "Wickes Whitewood PSE Timber - 18mm x 44mm x 2.4m"
+  - WK-12: "Cheshire Mouldings Primed Stripwood - 12 x 68 x 2400mm"
+  - BQ-12: "Cheshire Mouldings Smooth MDF Stripwood (L)2.4m (W)46mm (T)12mm"
+  - WK-KIT: "6x 1.2m MDF Strips (97mm x 9mm)"
+  - MDR: "Width of battens (B) = 60mm" and "My battens were also 9mm thick (protruding from the wall)."
+  - LS: "I went for 7cm wide and 9mm thickness"
+  - CUT: thicknesses "6mm, 9mm, 12mm"; widths "50mm, 80mm, 100mm, 120mm"; "Wider strips (100-120mm) create a classic board and batten look"
+  - Note: a 12 x 69 mm stock size was not found. Wickes sells 12 x 68 mm. A 1x3 (19 x 64 mm actual per ATB) is the nearest US match. 18 x 44 mm is close to a US 1x2 (19 x 38 mm).
+- **Spacing: about 300-650 mm. Sources disagree [2+]. 400-500 mm sits in the middle but no source states it exactly.**
+  - BAB: "Spacing typically sits between 300mm and 600mm centres."
+  - CUT: "Panel gaps of 500–650mm between the verticals tend to give the most balanced look."
+  - WK-KIT example: "537mm between strips"
+  - Real walls, narrower: MDR "Spacing width (F) = 355mm"; LS "6 battens would give me 27.6cm gaps in between battens whilst 5 battens 36.2cm gaps."
+  - BAB: "Narrower spacing creates a more decorative, traditional look."
+  - US equivalent: 12-24 in = 305-610 mm; 16 in = 406 mm; 20 in = 508 mm.
+- **Height: about a third of the wall (800-1000 mm) for dado; about 1.2 m for half height [2+]**
+  - D2F: "Dado panelling looks right at roughly a third of the wall height."
+  - D2F: "On a standard UK ceiling of about 2.4m that puts the capping rail near 800mm to 900mm."
+  - D2F: "On a Victorian wall of 3m it moves up towards 1000mm."
+  - WPW: "Half height panelling sits approximately 1.2m from the floor, creating a balanced division of wall space."
+  - WPW: "Dado height panelling sits around 0.9-1m from the floor, aligning with traditional dado rails."
+  - WPW: "Full height panelling extends from floor to ceiling, typically 2.4-2.7m in standard UK homes."
+  - BAB: "It usually runs between 900mm and 1200mm high, often capped with a dado rail or a simple MDF top strip."
+  - VE: "Available in two heights, 800mm and 1200mm, but remember to allow for dado and skirting to calculate overall height."
+  - HBR-H: "a 2/3 design can also work best in a living room or dining area" and "taking the panelling to the 3/4 mark will make the room feel cosier"
+  - D2F (headboard wall): "A panelled headboard height of roughly 1200mm reads as intentional and gives you something to lean against."
+  - WPW, skirting: "For example, with 15cm skirting, the panel itself would need to be 1.05m tall."
+- **Fixing: grab adhesive plus pins [2+]**
+  - HBR: "Apply your instant grab adhesive to the back of the base board, press onto wall above the skirting board."
+  - D2F: "Pins hold the moulding while the adhesive cures. They are not the structural fixing."
+  - BAB: "On flat plasterboard walls, battens are often fixed with adhesive only."
+  - RON: "apply the adhesive to the MDF, 10cm from the edges and no more than 30cm between blobs."
+- **Finishing [2+]**
+  - WK-KIT: "Fill all gaps and joints with decorators caulk."
+  - HBR: "do a first coat using MDF primer as this will help a better adhesion of the next coat."
+- **Sockets: use an electrician; Part P applies [2+]**
+  - HBR: "We recommend always using a qualified electrician to remove sockets or switch"
+  - BAB: "Any alteration to sockets, switches or wiring must comply with Part P."
+  - D2F: "The usual solution is a plasterboard or timber pattress behind the faceplate to bring it forward flush with the panelling."
+  - D2F: "Plan the panel joints so no socket falls on a joint."
+- **UK cost and time [1 for pro cost, 2+ for DIY]**
+  - BAB: "Typical installed costs fall between £40 and £120 per m²."
+  - BAB: "Expect installation to take one to two days for a single wall, depending on preparation and drying times."
+  - MDR: "With a standard wall costing less than £70, it will give you that fabulous feature wall without breaking the bank!"
+  - LS: "Including delivery, everything came to a total of £51."
+- Not used: wallpanelsworld.co.uk's board and batten calculator page gives spacing of "2-3 inches (5-8 cm)" to "8-12 inches (20-30 cm)". This conflicts with every other source, so it was left out.
+
+## Calculator defaults
+- **Batten size options (actual width / thickness)**
+  - 1x2: 1.5 in (38 mm) / 0.75 in
+  - 1x3: 2.5 in (64 mm) / 0.75 in
+  - 1x4: 3.5 in (89 mm) / 0.75 in (default)
+  - 1x6: 5.5 in (140 mm) / 0.75 in
+  - Custom width field (MDF and lattice vary; lattice about 1 3/8 in per RH)
+  - Metric presets: 44 mm, 68 mm, 97 mm, custom
+- **Target gap**: default 16 in; options 12, 20, 24 in (metric: 300, 400, 500, 600 mm). Label it "gap between battens", not on center.
+- **Battens across width W (battens at both ends):**
+  - n = round((W - b) / (target + b)) + 1, minimum 2
+  - exact gap = (W - n x b) / (n - 1)
+  - Check: W 123.5, b 3.5, target 16 gives n 7, gap 16.5 in (matches AMM and HD).
+  - Optional: show n-1 and n+1 with their gaps so users can pick, and flag any gap that lands on an outlet.
+- **Height options**
+  - Full wall: 96 in (8 ft); let users enter 9 or 10 ft
+  - Two-thirds: about 60 in (HGTV 5 ft on an 8 ft wall)
+  - One-third: about 36 in (HG 3-3.5 ft; BV-101 32 in; AT one third)
+  - Custom
+  - Batten length = height - baseboard height - top rail height (HGTV)
+- **Top rail**: yes/no, default yes for partial heights. Rail = 1x4 (3.5 in) plus an optional 1x2 ledge on top (YHL, AMM). Rail and ledge run the full wall width. Default baseboard 1x6 (5.5 in), with a "keep existing baseboard" option.
+- **Grid option**: add horizontal rails (default 1x2, so FMB's 1x2-1x3 is respected). Rows = round((H_open - r) / (target + r)) + 1 using the same formula on the open height; rails run between battens, so rail length per row = W - n x b. Default target square 24 in or less (FMB).
+- **Linear feet** = n x batten length + top rail + ledge + baseboard + grid rails. Add 10% waste (LOW, WW). Boards = ceil(total with waste / board length), default board 8 ft (options 10, 12 ft). Better: count pieces per board (floor(96 / batten length)), so short cuts don't get wasted.
+- **Nails**: 18-gauge brads (HD, JSD, LR, MDL); 1 1/4 in for battens on drywall, 2 in into studs (AMM, JSD, HD). Rule of thumb: 3-4 nails per batten (JSD), or one about every 10 in (HD 10 in; RMH-F 6-8 in). Suggested formula: max(3, ceil(batten length in / 12)) per batten, and 1 per 16 in along each rail. This is our derived rule; no source gives one exact count.
+- **Adhesive**: optional toggle, default on (AMM, JSD, BV-101 use it; LR, MDL, S2C skip it). Estimate 1 tube per 6-8 battens. No source gives a coverage rate, so label it an estimate.
+- **Caulk, filler, paint**: list as items. 1 gallon covers a 10 ft wall plus battens (AMM). Do not give tube counts unless they are labelled as estimates.
+- **Cost display**: DIY materials usually under $100-300 per wall; pro $7-23 per sq ft (BV-101, FX, HG). UK pro £40-120 per m² (BAB, single source).

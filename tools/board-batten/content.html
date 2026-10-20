@@ -1,0 +1,448 @@
+<!-- wp:paragraph -->
+<p>How far apart should board and batten be? Most walls look best with gaps of about 12 to 24 in between battens, and 16 to 20 in is the most popular. Put a batten in each corner, then use this formula: gap = (wall width − number of battens × batten width) ÷ (number of battens − 1). This free <strong>board and batten calculator</strong> does the math, the cut lengths and the shopping list in two taps.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pick your wall width and the style: classic (about 5 ft high with a ledge), wainscot, full wall or grid. You get the number of battens, the exact gap, how long to cut each batten and how many boards to buy, with a drawing of your wall. Open <em>More options</em> to type your exact wall width, choose 1x2 to 1x6 boards, change the gap or switch to centimeters.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-bn" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How far apart should your battens be?</h3>
+<p class="sub">Two taps: pick your wall width, then the style. You get how many battens, the exact gap, the cut length and how many boards to buy.</p>
+<fieldset><legend>1. How wide is the wall?</legend>
+<div class="opts hts" role="group" aria-label="Wall width">
+<button type="button" data-w="96"><b>8 ft</b><span>2.4 m</span></button>
+<button type="button" data-w="120" class="on"><b>10 ft</b><span>3.0 m</span></button>
+<button type="button" data-w="144"><b>12 ft</b><span>3.7 m</span></button>
+<button type="button" data-w="168"><b>14 ft</b><span>4.3 m</span></button>
+<button type="button" data-w="192"><b>16 ft</b><span>4.9 m</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. Which style?</legend>
+<div class="opts" role="group" aria-label="Board and batten style">
+<button type="button" data-t="tall" class="on"><b>Classic</b><span>about 5 ft high, with a ledge</span></button>
+<button type="button" data-t="wain"><b>Wainscot</b><span>about 3 ft high</span></button>
+<button type="button" data-t="full"><b>Full wall</b><span>floor to ceiling</span></button>
+<button type="button" data-t="grid"><b>Grid</b><span>squares, floor to ceiling</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: exact size, board size, gap, top rail, cm</summary>
+<div class="grid">
+<label>Units<select id="un"><option value="in" selected>Inches (US)</option><option value="cm">Centimeters (UK)</option></select></label>
+<label><span id="lW">Wall width (in)</span><input type="number" id="ww" min="24" max="600" step="0.25" placeholder="e.g. 123.5"></label>
+<label><span id="lH">Ceiling height (in)</span><input type="number" id="wh" min="72" max="240" step="0.5" placeholder="96 = 8 ft"></label>
+<label><span id="lP">Panel height (in)</span><input type="number" id="ph" min="20" max="240" step="0.5" placeholder="optional"></label>
+<label>Batten board<select id="bd"><option value="a" selected>Suggest (1x4, or 1x2 for grid)</option><option value="2">1x2 (1 1/2 in, 38 mm)</option><option value="3">1x3 (2 1/2 in, 64 mm)</option><option value="4">1x4 (3 1/2 in, 89 mm)</option><option value="6">1x6 (5 1/2 in, 140 mm)</option></select></label>
+<label>Gap you want<select id="gp"><option value="12">About 12 in (30 cm)</option><option value="16" selected>About 16 in (40 cm)</option><option value="20">About 20 in (50 cm)</option><option value="24">About 24 in (60 cm)</option></select></label>
+<label>Top<select id="tr"><option value="rl" selected>1x4 top rail + 1x2 ledge</option><option value="r">1x4 top rail only</option><option value="n">No top rail</option></select></label>
+<label>Board length<select id="bl"><option value="0" selected>8 ft (2.4 m)</option><option value="1">10 ft (3.0 m)</option><option value="2">12 ft (3.6 m)</option></select></label>
+</div>
+<p class="hint">Measure the wall at the height of the panelling, corner to corner. The calculator puts a batten at each end and keeps your existing baseboard (about 5 1/2 in tall).</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Battens</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small>Gap between</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small>Boards to buy</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my cut list</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-bn');if(!R)return;
+var W0=120,st='tall',summary='',unit='';
+var BW={'2':1.5,'3':2.5,'4':3.5,'6':5.5},BASE=5.5,RAIL=3.5,LEDGE=1.5;
+var FR=['','1/8','1/4','3/8','1/2','5/8','3/4','7/8'];
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function D(x){if(unit==='cm'){return (x*2.54).toFixed(1)+' cm'}var t=Math.round(x*8),w=Math.floor(t/8),e=t-w*8;return (w?w+(e?' ':''):'')+FR[e]+' in'}
+function FT(x){if(unit==='cm'){return (x*0.0254).toFixed(2)+' m'}var t=Math.round(x),f=Math.floor(t/12),i=t-f*12;return f+' ft'+(i?' '+i+' in':'')}
+function BN(k){return unit==='cm'?Math.round(BW[k]*25.4)+' mm':'1x'+k}
+function setUnit(u){if(u===unit)return;var old=unit;unit=u;var n=u==='cm'?'cm':'in';$('lW').textContent='Wall width ('+n+')';$('lH').textContent='Ceiling height ('+n+')';$('lP').textContent='Panel height ('+n+')';$('ww').placeholder=u==='cm'?'e.g. 314':'e.g. 123.5';$('wh').placeholder=u==='cm'?'244 = 2.44 m':'96 = 8 ft';
+if(old){var k=u==='cm'?2.54:1/2.54;['ww','wh','ph'].forEach(function(id){var v=parseFloat($(id).value);if(!isNaN(v)){$(id).value=Math.round(v*k*10)/10}})}}
+function viz(W,H,P,n,b,gap,rail,ledge,m,box,full){var S=Math.min(300/W,180/H),w=W*S,h=H*S,x=(360-w)/2,y=24,fl=y+h;
+var s='<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Front view of the wall with the batten layout">';
+s+='<rect width="360" height="240" fill="#FBF6EF"/><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#F3EEE6" stroke="#342E2A" stroke-width="1.5"/>';
+var top=fl-P*S;s+='<rect x="'+x+'" y="'+top+'" width="'+w+'" height="'+(P*S)+'" fill="#DCE6D8"/>';
+s+='<rect x="'+x+'" y="'+(fl-BASE*S)+'" width="'+w+'" height="'+(BASE*S)+'" fill="#B9CBB3"/>';
+if(rail){s+='<rect x="'+x+'" y="'+top+'" width="'+w+'" height="'+(RAIL*S)+'" fill="#B9CBB3"/>'}
+if(ledge){s+='<rect x="'+(x-2)+'" y="'+(top-3)+'" width="'+(w+4)+'" height="3" fill="#8FA689"/>'}
+var y1=top+(rail?RAIL*S:0),y2=fl-BASE*S;
+for(var i=0;i!==n;i++){var bx=x+(i*(b+gap))*S;s+='<rect x="'+bx+'" y="'+y1+'" width="'+Math.max(1.5,b*S)+'" height="'+(y2-y1)+'" fill="#B9CBB3" stroke="#8FA689" stroke-width="0.6"/>'}
+for(var j=1;j!==m+1;j++){var ry=y2-(j*box+(j-1)*b+b)*S;s+='<rect x="'+x+'" y="'+ry+'" width="'+w+'" height="'+Math.max(1.5,b*S)+'" fill="#B9CBB3" stroke="#8FA689" stroke-width="0.6"/>'}
+var gx1=x+b*S,gx2=x+(b+gap)*S,gy=fl+7;
+s+='<line x1="'+gx1+'" y1="'+gy+'" x2="'+gx2+'" y2="'+gy+'" stroke="#C85A32" stroke-width="1.5"/><line x1="'+gx1+'" y1="'+(gy-4)+'" x2="'+gx1+'" y2="'+(gy+4)+'" stroke="#C85A32" stroke-width="1.5"/><line x1="'+gx2+'" y1="'+(gy-4)+'" x2="'+gx2+'" y2="'+(gy+4)+'" stroke="#C85A32" stroke-width="1.5"/><text x="'+gx1+'" y="'+(gy+14)+'" font-size="10" font-weight="700" fill="#C85A32">gap '+D(gap)+'</text>';
+s+='<text x="'+(x+w/2)+'" y="16" font-size="11" font-weight="700" text-anchor="middle" fill="#342E2A">'+FT(W)+' wall, '+n+' battens</text>';
+if(!full){s+='<line x1="'+(x+w+8)+'" y1="'+top+'" x2="'+(x+w+8)+'" y2="'+fl+'" stroke="#3F5E39" stroke-width="1.5"/><text x="'+(x+w+12)+'" y="'+((top+fl)/2+4)+'" font-size="10" font-weight="700" fill="#3F5E39">'+FT(P)+'</text>'}
+return s+'</svg>'}
+function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='cm'?1/2.54:1;
+var W=W0,tw=num('ww')*f,typed=false;if(tw>=24){if(600>=tw){W=tw;typed=true}}pick('data-w',typed?'':String(W0));
+var H=96,th=num('wh')*f;if(th>=72){if(240>=th){H=th}}
+var bk=$('bd').value;if(bk==='a'){bk=st==='grid'?'2':'4'}var b=BW[bk],t=parseFloat($('gp').value),tr=$('tr').value;
+var full=st==='full'||st==='grid';var P=st==='wain'?Math.round(H*0.375):(st==='tall'?Math.round(H*0.625):H);var tp=num('ph')*f;if(tp>=20){P=Math.min(H,tp)}
+var rail=tr==='n'?0:RAIL,ledge=(tr==='rl'?(full?0:LEDGE):0);
+var Lb=P-BASE-rail;if(12>Lb){vv.className='verdict bad';vv.textContent='The panel is too short for battens. Make it taller than about 2 ft (60 cm).';$('k1').textContent='';$('k1e').textContent='';$('k2').textContent='';$('k2e').textContent='';$('k3').textContent='';$('k3e').textContent='';$('vz').innerHTML='';$('tp').innerHTML='';return}
+var n=Math.max(2,Math.round((W-b)/(t+b))+1),gap=(W-n*b)/(n-1);if(gap>0){}else{n=2;gap=W-2*b}
+var m=0,box=0,k=1;if(st==='grid'){k=Math.max(1,Math.round((Lb+b)/(gap+b)));m=k-1;box=(Lb-m*b)/k}
+var BLs=u==='cm'?[94.49,118.11,141.73]:[96,120,144],bi=parseInt($('bl').value,10),BL=BLs[bi],bump=false;while(Lb>BL){if(bi===2)break;bi+=1;BL=BLs[bi];bump=true}
+var per=Math.max(1,Math.floor(BL/Lb)),bb=Math.ceil(n/per);var gc=m*(n-1),gb=gc?Math.ceil(gc/Math.max(1,Math.floor(BL/gap))):0;
+var rb=rail?Math.ceil(W/BL):0,lb=ledge?Math.ceil(W/BL):0;
+function sp(x){return x?x+Math.ceil(x*0.1):0}
+var cnt={};function addc(q,x){cnt[q]=(cnt[q]||0)+x}addc(bk,bb+gb);if(rail){addc('4',rb)}if(ledge){addc('2',lb)}
+var tot=0,parts=[];[bk,'4','2','3','6'].forEach(function(q,i){if(i){if(q===bk)return}if(cnt[q]){var c=sp(cnt[q]);tot+=c;parts.push(c+' of '+BN(q));cnt[q]=0}});var bl=u==='cm'?['2.4 m','3.0 m','3.6 m'][bi]:['8 ft','10 ft','12 ft'][bi];
+var lf=n*Lb+m*(W-n*b)+(rail?W:0)+(ledge?W:0);
+$('k1').textContent=n+' battens';$('k1e').textContent=BN(bk)+', each '+D(Lb)+' long';
+$('k2').textContent=D(gap);$('k2e').textContent='with a batten at each end';
+$('k3').textContent=tot+' boards';$('k3e').textContent=parts.join(' + ')+', '+bl+' long, incl. 10% extra';
+vv.textContent='On '+(FT(W).charAt(0)==='8'?'an ':'a ')+FT(W)+' wide wall, use '+n+' battens ('+BN(bk)+') with '+D(gap)+' gaps, starting and ending with a batten in the corners. Cut each batten '+D(Lb)+' long'+(rail?', to fit between the baseboard and a top rail ('+BN('4')+')'+(full?' at the ceiling.':' at '+FT(P)+' from the floor.'):'.')+(m?' Add '+m+' rows of horizontal rails for boxes about '+D(gap)+' wide and '+D(box)+' tall.':'');
+tips.push('Cut a scrap block exactly '+D(gap)+' wide and use it as a spacer between battens, checking each one with a level.');
+if(n>2){tips.push('Want a different look? '+(n-1)+' battens give '+D((W-(n-1)*b)/(n-2))+' gaps; '+(n+1)+' battens give '+D((W-(n+1)*b)/n)+' gaps.')}
+tips.push('Shopping list: '+parts.join(' + ')+' boards, '+bl+' long, about '+(u==='cm'?(lf*0.0254).toFixed(1)+' m':Math.ceil(lf/12)+' linear ft')+' of trim before the 10% extra.'+(bump?' Your battens are longer than the board you picked, so we switched to '+bl+' boards.':'')+(Lb>BL?' Your battens are longer than 12 ft boards, so plan a joint or a horizontal rail.':''));
+if(m){tips.push('Grid: cut '+gc+' short rails, each '+D(gap)+' long, to fit between the battens. Squares of about 24 in (60 cm) or less look best.')}
+tips.push('Fix the battens with 18-gauge brad nails, 1 1/4 in (32 mm) into drywall or 2 in (50 mm) into studs, and construction adhesive. About '+(n*Math.max(3,Math.ceil(Lb/12))+(rail?Math.ceil(W/16):0)+(ledge?Math.ceil(W/16):0)+gc*2)+' nails and '+(Math.ceil(n/7)+(gc?Math.ceil(gc/20):0))+' tube(s) of adhesive (our estimate).');
+tips.push('Plan the gaps so no batten lands on an outlet or switch. If one does, the box needs an extender so it sits flush with the boards.');
+if(st==='tall'){tips.push('Board and batten usually looks best between half and two-thirds up the wall. You can also line the top up with your windowsills.')}
+if(st==='wain'){tips.push('Classic wainscot covers about a third of the wall, about 32 to 42 in (80 to 105 cm) high.')}
+tips.push('Caulk every seam, fill the nail holes, then paint two coats. Pre-primed MDF can go straight to paint.');
+if(u==='in'){var a=W*P/144;tips.push('Hiring a pro? At about $7 to $23 per sq ft, this '+Math.round(a)+' sq ft wall would cost about $'+Math.round(a*7/10)*10+' to $'+Math.round(a*23/10)*10+'. DIY materials usually cost far less.')}
+$('vz').innerHTML=viz(W,H,P,n,b,gap,rail,ledge,m,box,full);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+summary='Board and batten for my '+FT(W)+' wall: '+n+' battens ('+BN(bk)+'), '+D(gap)+' gaps, each batten '+D(Lb)+' long. Buy '+parts.join(' + ')+' boards ('+bl+'). dailyspacehacks.com/board-and-batten-calculator/'}
+R.querySelectorAll('[data-w]').forEach(function(x){x.addEventListener('click',function(){W0=parseFloat(x.getAttribute('data-w'));$('ww').value='';calc()})});
+R.querySelectorAll('[data-t]').forEach(function(x){x.addEventListener('click',function(){st=x.getAttribute('data-t');pick('data-t',st);calc()})});
+['un','ww','wh','ph','bd','gp','tr','bl'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var x=$('cp');function ok(){x.textContent='Copied!';setTimeout(function(){x.textContent='Copy my cut list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your cut list:',summary)})}catch(e){window.prompt('Copy your cut list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Board and Batten Spacing Chart</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Wall width</th><th>1x3 battens</th><th>1x4 battens</th><th>1x2 battens (grid)</th></tr></thead><tbody><tr><td>8 ft (96 in)</td><td>6 battens, 16 1/4 in gaps</td><td>6 battens, 15 in gaps</td><td>6 battens, 17 3/8 in gaps</td></tr><tr><td>10 ft (120 in)</td><td>7 battens, 17 1/8 in gaps</td><td>7 battens, 15 7/8 in gaps</td><td>8 battens, 15 3/8 in gaps</td></tr><tr><td>12 ft (144 in)</td><td>9 battens, 15 1/4 in gaps</td><td>8 battens, 16 5/8 in gaps</td><td>9 battens, 16 3/8 in gaps</td></tr><tr><td>14 ft (168 in)</td><td>10 battens, 15 7/8 in gaps</td><td>9 battens, 17 1/8 in gaps</td><td>11 battens, 15 1/8 in gaps</td></tr><tr><td>16 ft (192 in)</td><td>11 battens, 16 1/2 in gaps</td><td>11 battens, 15 3/8 in gaps</td><td>12 battens, 15 7/8 in gaps</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The chart aims for about 16 in gaps, with a batten in each corner. Walls are rarely an exact number of feet, so measure yours and type the width into the calculator for gaps to the nearest 1/8 in.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<figure class="dsh-diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="bb-t bb-d"><title id="bb-t">Board and batten spacing guide</title><desc id="bb-d">Front view of a 123 1/2 in wide wall with board and batten 60 in high: seven 1x4 battens, 3 1/2 in wide, with a batten in each corner and 16 1/2 in gaps between them, under a 1x4 top rail with a 1x2 ledge, above the baseboard. The formula box shows gap = (wall width minus battens times batten width) divided by (battens minus 1), the actual widths of 1x2 to 1x6 boards and the common 12 to 24 in gap.</desc><rect width="1200" height="900" fill="#F7F1E9"/><text x="60" y="84" font-size="44" font-weight="700" fill="#342E2A">Board and Batten Spacing</text><text x="60" y="124" font-size="22" fill="#6E645C">Battens in both corners, equal gaps in between</text><text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text><rect x="70" y="211.20" width="654.5" height="508.79" fill="#FBF8F3" stroke="#342E2A" stroke-width="3"/><rect x="70" y="402.0" width="654.5" height="318.0" fill="#DCE6D8"/><rect x="70" y="690.8" width="654.5" height="29.1" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="70" y="402.0" width="654.5" height="18.5" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="64" y="394.0" width="666.5" height="8" fill="#8FA689"/><rect x="70.0" y="420.5" width="18.5" height="270.3" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="176.0" y="420.5" width="18.5" height="270.3" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="282.0" y="420.5" width="18.5" height="270.3" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="388.0" y="420.5" width="18.5" height="270.3" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="494.0" y="420.5" width="18.5" height="270.3" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="600.0" y="420.5" width="18.5" height="270.3" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><rect x="706.0" y="420.5" width="18.5" height="270.3" fill="#B9CBB3" stroke="#8FA689" stroke-width="1.5"/><line x1="50" y1="720" x2="744.5" y2="720" stroke="#B98A5E" stroke-width="6"/><line x1="88.5" y1="561.0" x2="176.0" y2="561.0" stroke="#C85A32" stroke-width="3"/><line x1="88.5" y1="551.0" x2="88.5" y2="571.0" stroke="#C85A32" stroke-width="3"/><line x1="176.0" y1="551.0" x2="176.0" y2="571.0" stroke="#C85A32" stroke-width="3"/><text x="132.27" y="523.0" font-size="20" font-weight="700" fill="#C85A32" text-anchor="middle">16 1/2 in</text><text x="132.27" y="545.0" font-size="18" font-weight="700" fill="#C85A32" text-anchor="middle">gap</text><line x1="406.5" y1="491.4" x2="416.5" y2="491.4" stroke="#3F5E39" stroke-width="2"/><text x="420.5" y="497.4" font-size="16" font-weight="700" fill="#3F5E39">1x4</text><text x="420.5" y="517.4" font-size="14" fill="#3F5E39">3 1/2 in</text><line x1="70" y1="754" x2="724.5" y2="754" stroke="#342E2A" stroke-width="3"/><line x1="70" y1="744" x2="70" y2="764" stroke="#342E2A" stroke-width="3"/><line x1="724.5" y1="744" x2="724.5" y2="764" stroke="#342E2A" stroke-width="3"/><text x="397.27" y="786" font-size="20" font-weight="700" fill="#342E2A" text-anchor="middle">Wall 123 1/2 in: 7 battens, 6 gaps</text><text x="397.27" y="380.0" font-size="18" font-weight="700" fill="#3F5E39" text-anchor="middle">1x4 top rail + 1x2 ledge at 60 in</text><text x="397.27" y="714.4" font-size="15" font-weight="700" fill="#3F5E39" text-anchor="middle">baseboard</text><rect x="790" y="170" width="360" height="640" rx="18" fill="#fff" stroke="#E6DCCF" stroke-width="2"/><text x="814" y="214" font-size="22" font-weight="700" fill="#342E2A">The gap formula</text><text x="814" y="252" font-size="18" font-weight="700" fill="#C85A32" xml:space="preserve">Gap = (wall width</text><text x="814" y="280" font-size="18" font-weight="700" fill="#C85A32" xml:space="preserve">  − battens × batten width)</text><text x="814" y="308" font-size="18" font-weight="700" fill="#C85A32" xml:space="preserve">  ÷ (battens − 1)</text><text x="814" y="350" font-size="16" fill="#342E2A">(123.5 − 7 × 3.5) ÷ 6</text><text x="814" y="376" font-size="16" font-weight="700" fill="#342E2A">= 99 ÷ 6 = 16.5 in</text><text x="814" y="432" font-size="22" font-weight="700" fill="#342E2A">Actual board widths</text><rect x="802" y="446" width="336" height="38" rx="9" fill="#CFDDCB" fill-opacity="0.5"/><text x="814" y="472" font-size="17" font-weight="700" fill="#342E2A">1x2</text><text x="1126" y="472" font-size="17" font-weight="700" fill="#3F5E39" text-anchor="end">1 1/2 in (38 mm)</text><text x="814" y="512" font-size="17" font-weight="700" fill="#342E2A">1x3</text><text x="1126" y="512" font-size="17" font-weight="700" fill="#3F5E39" text-anchor="end">2 1/2 in (64 mm)</text><rect x="802" y="526" width="336" height="38" rx="9" fill="#CFDDCB" fill-opacity="0.5"/><text x="814" y="552" font-size="17" font-weight="700" fill="#342E2A">1x4</text><text x="1126" y="552" font-size="17" font-weight="700" fill="#3F5E39" text-anchor="end">3 1/2 in (89 mm)</text><text x="814" y="592" font-size="17" font-weight="700" fill="#342E2A">1x6</text><text x="1126" y="592" font-size="17" font-weight="700" fill="#3F5E39" text-anchor="end">5 1/2 in (140 mm)</text><text x="814" y="660" font-size="22" font-weight="700" fill="#342E2A">Common gaps</text><text x="814" y="696" font-size="17" fill="#342E2A">12 to 24 in (30 to 60 cm)</text><text x="814" y="726" font-size="17" fill="#342E2A">most popular: 16 to 20 in</text><text x="814" y="774" font-size="14" fill="#6E645C">Add 10% extra boards for cuts</text></svg><figcaption>Board and batten spacing: on a 123 1/2 in wall, seven 1x4 battens (3 1/2 in wide) with one in each corner leave six gaps of 16 1/2 in, under a 1x4 top rail and 1x2 ledge at 60 in. The formula: gap = (wall width − battens × batten width) ÷ (battens − 1).</figcaption></figure>
+<!-- /wp:html -->
+
+<!-- wp:image {"id":9001,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/x1.jpg" alt="alt" class="wp-image-9001"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Calculate Board and Batten Spacing</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Measure the wall</strong> from corner to corner at the height of the panelling. Home Depot's tip: <a href="https://homedepot.com/c/ah/how-to-make-a-board-and-batten-wall-accent/9ba683603be9fa5395fab90118469a03" target="_blank" rel="noopener">You'll calculate your measurements by wall, not by room.</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Pick a batten size and a rough gap,</strong> for example 1x4 boards (3 1/2 in actual width) and about 16 in.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Count the battens:</strong> wall width minus one batten, divided by (gap + batten width), rounded, plus one.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Find the exact gap:</strong> subtract the width of all the battens from the wall width, then divide by the number of gaps (battens − 1).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Cut a spacer block</strong> to that exact gap and use it between battens as you install them.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Here is a real example from Angela Marie Made, repeated in Home Depot's guide: a 123.5 in wall with seven 1x4 battens (24.5 in of boards) leaves 99 in of open wall, and Home Depot says to <a href="https://homedepot.com/c/ah/how-to-make-a-board-and-batten-wall-accent/9ba683603be9fa5395fab90118469a03" target="_blank" rel="noopener">Divide 99 by 6 (the number of spaces between 7 boards), for a total of 16.5 inches.</a> If your count is odd, Homebuilding &amp; Renovating notes that <a href="https://www.homebuilding.co.uk/advice/diy-wall-panelling" target="_blank" rel="noopener">If you have an odd number of slats, it’s a good idea to start in the middle</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How Far Apart Should Board and Batten Be?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>There is no single rule, but most designers stay in a narrow range. The Crazy Craft Lady says <a href="https://thecrazycraftlady.com/choosing-your-board-and-batten-style/" target="_blank" rel="noopener">Most vertical battens are spaced between 16 and 20 inches apart.</a>, and Megan Dauphinee Living notes that <a href="https://www.megandauphineeliving.com/board-and-batten-wall-everything-you-need-to-know/" target="_blank" rel="noopener">Most tutorials recommend spacing boards 12-24 inches apart.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>12 to 14 in:</strong> a busy, traditional look. The Handyman's Daughter says <a href="https://www.thehandymansdaughter.com/wainscoting-vs-board-and-batten/" target="_blank" rel="noopener">Narrower spacing often gives a more cottagey feel.</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>16 to 20 in:</strong> the most popular choice for bedrooms, living rooms and hallways.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>20 to 24 in:</strong> a calmer, more modern wall. <a href="https://www.thehandymansdaughter.com/wainscoting-vs-board-and-batten/" target="_blank" rel="noopener">Wider spacing is more modern and creates a bold statement.</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Narrow gaps also cost more: <a href="https://www.thehandymansdaughter.com/wainscoting-vs-board-and-batten/" target="_blank" rel="noopener">Keep in mind that the narrower your spacing, the more material you will need.</a> Battens rarely line up with studs, because <a href="https://www.bobvila.com/articles/how-to-find-a-wall-stud/" target="_blank" rel="noopener">Standard stud spacing is 16 inches on center</a> and your battens sit at the gap plus their own width. That is why many DIYers glue them; Jenna Sue Design uses adhesive <a href="https://www.jennasuedesign.com/diy-board-and-batten-tutorial/" target="_blank" rel="noopener">for reinforcement, since the boards don’t usually end up in studs</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Board Sizes: 1x2, 1x3, 1x4 or 1x6?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Board</th><th>Actual width</th><th>Best for</th></tr></thead><tbody><tr><td>1x2</td><td>1 1/2 in (38 mm)</td><td>grid walls, ledges on top of the rail</td></tr><tr><td>1x3</td><td>2 1/2 in (64 mm)</td><td>small walls, a lighter look</td></tr><tr><td>1x4</td><td>3 1/2 in (89 mm)</td><td>classic battens and top rails</td></tr><tr><td>1x6</td><td>5 1/2 in (140 mm)</td><td>baseboards and big rooms</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Lumber is named by its rough size, so a 1x4 is really about 3/4 x 3 1/2 in (<a href="https://www.archtoolbox.com/lumber-dimensions/" target="_blank" rel="noopener">Archtoolbox lumber table</a>). Always use the actual width in the formula. Most battens are pre-primed MDF or pine; The Handyman's Daughter warns that <a href="https://www.thehandymansdaughter.com/wainscoting-vs-board-and-batten/" target="_blank" rel="noopener">Though MDF is cheap, it dents easily and sucks up paint like a sponge!</a>, and Angela Marie Made suggests wood <a href="https://angelamariemade.com/diy-board-and-batten-wall/" target="_blank" rel="noopener">especially for rooms with a high water exposure</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How High Should Board and Batten Be?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":9002,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/x2.jpg" alt="alt" class="wp-image-9002"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Style</th><th>Height on an 8 ft wall</th><th>Notes</th></tr></thead><tbody><tr><td>Wainscot</td><td>about 32 to 42 in (one third)</td><td>classic dining rooms and hallways</td></tr><tr><td>Classic</td><td>about 4 to 6 ft (half to two thirds)</td><td>the most common DIY height</td></tr><tr><td>Full wall</td><td>floor to ceiling</td><td>feature walls behind a bed or sofa</td></tr><tr><td>Grid</td><td>floor to ceiling</td><td>squares of about 24 in or less</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>For traditional wainscot, HomeGuide says <a href="https://homeguide.com/costs/wainscoting-cost" target="_blank" rel="noopener">The standard height of wainscoting is one-third of the wall’s height.</a> Board and batten usually goes taller: Young House Love says it <a href="https://www.younghouselove.com/how-to-install-board-and-batten/" target="_blank" rel="noopener">typically looks the best between 1/2 and 2/3 up your wall</a>, and HGTV notes, <a href="https://www.hgtv.com/design/decorating/design-101/how-to-install-board-and-batten-accent-wall" target="_blank" rel="noopener">For our eight-foot wall, we are installing board and batten at a height of five feet.</a> Apartment Therapy adds that <a href="https://www.apartmenttherapy.com/wainscoting-height-260241" target="_blank" rel="noopener">in many classically inspired homes, the height of the wainscot is the same as the height of the windowsills</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>To find the batten length, subtract the baseboard and top rail from the panel height. HGTV's example: <a href="https://www.hgtv.com/design/decorating/design-101/how-to-install-board-and-batten-accent-wall" target="_blank" rel="noopener">To determine the length of the battens for our 5’ tall wall, we subtracted 5-1/2” for the baseboard and 3-1/2” for the top trim.</a> That leaves 51 in battens, the same number the calculator gives for its classic style.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Top Rail, Ledge and Baseboard</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":9003,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/x3.jpg" alt="alt" class="wp-image-9003"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Most board and batten walls finish with a 1x4 top rail and a 1x2 laid flat on top as a ledge. Young House Love says <a href="https://www.younghouselove.com/how-to-install-board-and-batten/" target="_blank" rel="noopener">A flat ledge looks more substantial and creates a spot to lean artwork or something on top.</a> At the bottom, you can keep your baseboard, but Bob Vila suggests that <a href="https://www.bobvila.com/articles/board-and-batten-101/" target="_blank" rel="noopener">For a uniform look, remove the baseboard and install a new base, using a board the same thickness as your battens.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Grid Board and Batten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":9004,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/x4.jpg" alt="alt" class="wp-image-9004"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>A grid wall adds horizontal rails between the battens to make squares or rectangles. Fresh Mommy Blog says <a href="https://freshmommyblog.com/board-and-batten-grid-wall/" target="_blank" rel="noopener">The key to creating a gorgeous grid wall is to create squares with the grids.</a>, and suggests thin boards: <a href="https://freshmommyblog.com/board-and-batten-grid-wall/" target="_blank" rel="noopener">We used 1×2’s on our grid wall, and I wouldn’t go larger than 1×3’s, purely based on aesthetics.</a> Choose <em>Grid</em> in the calculator to get the rows and the number of short rails to cut.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How Much Material Do You Need?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The calculator counts every piece: battens, top rail, ledge and grid rails, then rounds up to whole boards. For a 10 ft wall in the classic style with 1x4 battens, that is 7 battens cut to 51 in, a 1x4 top rail and a 1x2 ledge: 10 boards of 1x4 and 3 of 1x2, 8 ft long, including about 10% extra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Extra:</strong> Lowe's says <a href="https://www.lowes.com/n/buying-guide/moulding-buying-guide" target="_blank" rel="noopener">Remember to add 10% to the total length for mitering.</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Nails:</strong> 16 or 18-gauge brad nails. For nails that reach the studs, Home Depot says <a href="https://homedepot.com/c/ah/how-to-make-a-board-and-batten-wall-accent/9ba683603be9fa5395fab90118469a03" target="_blank" rel="noopener">The nails should be about 2 inches long.</a> Shorter 1 1/4 in nails hold battens on drywall together with adhesive. Jenna Sue Design: <a href="https://www.jennasuedesign.com/diy-board-and-batten-tutorial/" target="_blank" rel="noopener">I used 3-4 nails per batten and they went up so easy.</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Adhesive:</strong> construction adhesive on the back of each batten, unless you want to remove the wall later.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Caulk and filler:</strong> Angela Marie Made says <a href="https://angelamariemade.com/diy-board-and-batten-wall/" target="_blank" rel="noopener">Next, caulk all seams and corners with a paintable caulk.</a> Fill the nail holes with spackle or wood filler.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Paint:</strong> two coats. Real Homes notes, <a href="https://www.realhomes.com/advice/how-to-diy-a-board-and-batten-wall" target="_blank" rel="noopener">If you’re using pre-primed MDF, you can skip this step and go straight to the paint.</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Board and Batten Cost</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>DIY is cheap: Angela Marie Made says <a href="https://angelamariemade.com/diy-board-and-batten-wall/" target="_blank" rel="noopener">This project cost us only $84 total to complete a 10ft. wall.</a> Hiring a pro costs more. Bob Vila says <a href="https://www.bobvila.com/articles/board-and-batten-101/" target="_blank" rel="noopener">For professional board-and-batten wainscoting you can expect to pay somewhere between $7 to $20 per square foot.</a>, and HomeGuide puts it at $10 to $23 per square foot. The calculator shows a rough pro price for your wall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to Install Board and Batten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":9006,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/x6.jpg" alt="alt" class="wp-image-9006"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Plan the layout</strong> with the calculator and mark each batten with a pencil and a level. Move the layout if a batten lands on an outlet.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Fix the top rail</strong> level across the wall, then the corner battens.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Add the battens</strong> with adhesive and brad nails, using your spacer block for every gap.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Add the ledge</strong> on top of the rail.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Caulk, fill and paint.</strong></li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>On heavily textured walls, Home Depot suggests you <a href="https://homedepot.com/c/ah/how-to-make-a-board-and-batten-wall-accent/9ba683603be9fa5395fab90118469a03" target="_blank" rel="noopener">Attach a 1/8-inch panel board, like plywood, cut to size, on the wall.</a> first. Outlets and switches need care: when a box sits in wood paneling, <a href="https://sonicelectric.com/blogs/news/nec-314-20-box-extenders" target="_blank" rel="noopener">a listed box extender must be installed to bring the box opening flush with the finished wall surface</a>. If you are not sure, hire an electrician.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":9005,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/x5.jpg" alt="alt" class="wp-image-9005"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How the Board and Batten Calculator Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Battens:</strong> one in each corner. Number = round((wall width − batten width) ÷ (target gap + batten width)) + 1.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Gap:</strong> (wall width − battens × batten width) ÷ (battens − 1), rounded to the nearest 1/8 in.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Heights:</strong> classic about 62% of the ceiling height (60 in on an 8 ft wall), wainscot about 37.5% (36 in), full and grid to the ceiling. You can type your own panel height.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Cut length:</strong> panel height − baseboard (5 1/2 in) − top rail (3 1/2 in).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Boards:</strong> pieces per board for each size, plus about 10% extra (at least one spare). Nail and adhesive counts are our own estimates.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Batten Wall Panelling in the UK</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In the UK, board and batten is usually called batten wall panelling, and it is measured in millimetres. Book a Builder notes that <a href="https://www.bookabuilderuk.com/blog/board-batten-wall-ideas" target="_blank" rel="noopener">MDF thickness is typically 9mm to 12mm for battens.</a> and that <a href="https://www.bookabuilderuk.com/blog/board-batten-wall-ideas" target="_blank" rel="noopener">Spacing typically sits between 300mm and 600mm centres.</a> For height, Doors2Floors says <a href="https://doors2floors.co.uk/blogs/advice/wall-panelling-guide" target="_blank" rel="noopener">Dado panelling looks right at roughly a third of the wall height.</a>, while Wall Panels World says <a href="https://wallpanelsworld.co.uk/blog/wall-panelling-height/" target="_blank" rel="noopener">Half height panelling sits approximately 1.2m from the floor, creating a balanced division of wall space.</a> Homebuilding &amp; Renovating adds: <a href="https://www.homebuilding.co.uk/advice/diy-wall-panelling" target="_blank" rel="noopener">We recommend always using a qualified electrician to remove sockets or switch</a>. Choose <em>Centimeters</em> in More options to get every result in cm.</p>
+<!-- /wp:paragraph -->
+
+<!-- savebox -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Board and Batten FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How far apart should board and batten be?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Most walls use gaps of 12 to 24 in (30 to 60 cm), and 16 to 20 in is the most popular. Pick a rough gap, then adjust it so every gap is equal and there is a batten in each corner.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How do you calculate board and batten spacing?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Subtract the total width of all your battens from the wall width, then divide by the number of gaps, which is one less than the number of battens. For example, (123.5 − 7 × 3.5) ÷ 6 = 16.5 in.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How many battens do I need for a 10 ft wall?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>With 1x4 battens and gaps of about 16 in, you need 7 battens with gaps of 15 7/8 in. With 1x3 battens, 7 battens give gaps of about 17 1/8 in.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What size boards are used for board and batten?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1x3 or 1x4 boards are the most common battens, with a 1x4 top rail and a 1x2 ledge. Grid walls usually use 1x2 boards. Remember that a 1x4 is really 3 1/2 in wide.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Free Home Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Finishing the room? Our <a href="https://dailyspacehacks.com/baseboard-calculator/">baseboard calculator</a> works out how much baseboard to buy, the <a href="https://dailyspacehacks.com/wallpaper-calculator/">wallpaper calculator</a> covers the wall above the panelling, and our <a href="https://dailyspacehacks.com/picture-hanging-height-calculator/">picture hanging height calculator</a> shows where to hang art on your new ledge wall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->
