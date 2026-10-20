@@ -1,6 +1,6 @@
-== https://dailyspacehacks.com/embed-calculators/walk-in-closet/
+== https://dailyspacehacks.com/embed-calculators/baseboard/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests
-== https://dailyspacehacks.com/walk-in-closet-size/
+== https://dailyspacehacks.com/baseboard-calculator/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests

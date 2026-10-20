@@ -1,2 +1,2 @@
-host.html d walk-in-closet:1364px:1450 walk-in-closet-size::2400
-host.html m walk-in-closet:2048px:1450 walk-in-closet-size::2400
+host.html d baseboard:1333px:1250 baseboard-calculator::2400
+host.html m baseboard:1840px:1250 baseboard-calculator::2400
