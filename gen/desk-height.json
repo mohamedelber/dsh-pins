@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A calm home office corner: a white oak desk at a normal height with an ergonomic sage green office chair tucked in, a monitor on a simple stand with the top of the screen at eye level for a seated person, a separate keyboard and mouse on the desk, a desk lamp, a plant, a window with daylight. The screen shows a soft abstract wallpaper, no text."
+  },
+  {
+   "name": "02-standing",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A white oak sit-stand desk raised to standing height in a bright home office, a monitor on an arm, a keyboard, a small anti-fatigue mat on the floor in front, a plant, no chair at the desk. Screen shows a plain soft gradient, no text."
+  },
+  {
+   "name": "03-side-view",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. Side view of a home office desk setup: an ergonomic chair at a white oak desk, a monitor on a riser, keyboard near the front edge of the desk, a footrest under the desk, clean simple composition so the heights of chair, desk and monitor are easy to read. Screen shows a soft abstract image, no text."
+  },
+  {
+   "name": "04-small-space",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A compact home office nook in a bedroom corner: a small floating white oak desk mounted to the wall at desk height, a cream upholstered desk chair, a laptop on a stand with a separate keyboard, a shelf above with books and a plant. Screen shows a plain soft image."
+  },
+  {
+   "name": "05-kids",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A child's study corner with a smaller height-adjustable white desk and a matching adjustable chair, a desk lamp, a pencil cup, a pinboard with plain colored paper, a window. Calm and tidy, no text."
+  },
+  {
+   "name": "06-monitor",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. Close view of a white oak desk with a monitor on an adjustable arm set so the top of the screen sits at eye level, a keyboard and mouse at the front edge of the desk, a mug and a small plant. Screen shows a soft abstract wallpaper, no text."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. Vertical photo of a cozy bright home office: a white oak desk with a monitor, a keyboard, a lamp and a plant, a sage green ergonomic chair, a window with daylight, all in the lower half. The top third is a calm plain warm white wall. One clear focal point. Screen shows a soft abstract image, no text."
+  }
+ ]
+}

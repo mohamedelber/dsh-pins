@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A bright kitchen with a large white oak kitchen island with a quartz top, three woven counter stools along one long side with knee space under the overhang, sage green perimeter cabinets, three glass pendant lights over the island, generous walkways all around the island."
+  },
+  {
+   "name": "02-small-island",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A small kitchen with a compact white oak kitchen island about 4 feet long with two counter stools, cream cabinets, a window, clear walkways around the island. Realistic proportions for a small kitchen."
+  },
+  {
+   "name": "03-seating",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. Side view of a kitchen island with a stone countertop overhang and four upholstered counter stools spaced evenly, each with knee room under the overhang, white oak island base, sage cabinets behind, pendant lights."
+  },
+  {
+   "name": "04-walkway",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A kitchen viewed down the aisle between a long kitchen island and the perimeter cabinets with the range, showing a wide clear work aisle about 4 feet wide on a light oak floor, cream and sage cabinets, brass hardware."
+  },
+  {
+   "name": "05-sink-island",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A large kitchen island with an undermount sink and faucet on the working side and two stools on the other side, a stone countertop, white oak base, open shelves in the background, daylight."
+  },
+  {
+   "name": "06-cart",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. A small kitchen with a movable white oak kitchen cart used as an island on locking casters, a butcher block top with a bowl of lemons, cream cabinets, enough space to walk around it."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, no readable screens, high detail. Palette: white oak, cream, warm white walls, sage green accents, brass, soft natural daylight. Vertical photo of a bright kitchen with a white oak island, counter stools and pendant lights in the lower half, cream and sage cabinets. The top third of the image is a calm plain warm ceiling and wall area. One clear focal point."
+  }
+ ]
+}
