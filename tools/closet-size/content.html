@@ -1,0 +1,381 @@
+<!-- wp:paragraph -->
+<p>What is the right walk-in closet size? Most walk-in closets need at least 5 x 5 ft, a closet with clothes on two facing walls needs about 7 ft of width, and a typical walk-in for one or two people is about 6.5 to 7 ft wide by 10 ft deep. This free <strong>walk-in closet size</strong> calculator works out the size for your layout and wardrobe in two taps.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pick a layout, then how much you hang. You get a comfortable size, the tight minimum, the length of hanging rod and a simple floor plan, in feet and meters. Open <em>More options</em> to enter your own closet measurements and see which layout fits.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-wc" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How big should your walk-in closet be?</h3>
+<p class="sub">Two taps: pick a layout, then how much you hang. You get the comfortable size, the tight minimum and a floor plan.</p>
+<fieldset><legend>1. Which layout?</legend>
+<div class="opts" role="group" aria-label="Layout">
+<button type="button" data-l="one"><b>One wall</b><span>storage on one side</span></button>
+<button type="button" data-l="two" class="on"><b>Two walls</b><span>facing sides</span></button>
+<button type="button" data-l="L"><b>L-shape</b><span>two walls in a corner</span></button>
+<button type="button" data-l="U"><b>U-shape</b><span>three walls</span></button>
+<button type="button" data-l="isl"><b>With island</b><span>U-shape + center island</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. How much do you hang?</legend>
+<div class="opts" role="group" aria-label="Wardrobe">
+<button type="button" data-w="5" data-x="2"><b>Small</b><span>about 25 hanging items</span></button>
+<button type="button" data-w="8" data-x="3" class="on"><b>Average</b><span>about 40 items, 1 person</span></button>
+<button type="button" data-w="12" data-x="4"><b>Large</b><span>about 60 items</span></button>
+<button type="button" data-w="16" data-x="4"><b>Two people</b><span>about 75 items, shared</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: check your closet, aisle, double hang</summary>
+<div class="grid">
+<label>Your closet width (ft)<input type="number" id="cw" min="3" max="30" step="0.5" placeholder="e.g. 7"></label>
+<label>Your closet length (ft)<input type="number" id="cl" min="3" max="30" step="0.5" placeholder="e.g. 9"></label>
+<label>Walkway<select id="ai"><option value="24">24 in (tight)</option><option value="30">30 in</option><option value="36" selected>36 in (comfortable)</option><option value="42">42 in (roomy)</option></select></label>
+<label>Hanging depth<select id="dp"><option value="22">22 in</option><option value="24" selected>24 in (standard)</option></select></label>
+</div>
+<label class="chk"><input type="checkbox" id="dh">Double hang shirts and trousers (two rods, one above the other)</label>
+<p class="hint">Enter both closet sizes to check your own space. Width is the wall with the door; length goes from the door to the back wall.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small id="k1t">Comfortable size</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small id="k2t">Tight minimum</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small id="k3t">Hanging rod</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my closet size</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-wc');if(!R)return;
+var lay='two',need=8,extra=3,summary='';
+var NM={one:'a one-wall',two:'a two-wall',L:'an L-shaped',U:'a U-shaped',isl:'an island'};
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function up6(x){return Math.ceil(x/6)*6}
+function ft(x){var f=Math.floor(x/12),i=Math.round(x-f*12);if(i===12){f+=1;i=0}return f+' ft'+(i?' '+i+' in':'')}
+function m(x){return (x*0.0254).toFixed(2)}
+function dims(w,l){return ft(w)+' x '+ft(l)}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function rodOf(t,W,L,D){if(t==='one')return L;if(t==='two')return 2*L;if(t==='L')return L+W-D;return 2*L+W-2*D}
+function minWL(t,D,A){if(t==='one')return [D+A,D+A];if(t==='two')return [2*D+A,D+A];if(t==='L')return [D+A,D+A];if(t==='U')return [2*D+A,D+A];return [2*D+2*A+24,D+2*A+48]}
+function size(t,wall,D,A){var mn=minWL(t,D,A),W=mn[0],L=mn[1];
+if(t==='one'){L=Math.max(48,wall)}
+else if(t==='two'){L=Math.max(48,wall/2)}
+else if(t==='L'){var s=wall+D;W=Math.max(W,s/2);L=Math.max(L,s-W)}
+else{L=Math.max(L,(wall-(W-2*D))/2)}
+return [up6(W),up6(L)]}
+function plan(t,W,L,D,A){var S=Math.min(300/W,190/L),ox=(360-W*S)/2,oy=14,w=W*S,h=L*S,d=D*S;
+var s='<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Floor plan of the walk-in closet">';
+s+='<rect width="360" height="240" fill="#FBF6EF"/>';
+s+='<rect x="'+ox+'" y="'+oy+'" width="'+w+'" height="'+h+'" fill="#fff" stroke="#342E2A" stroke-width="3"/>';
+function band(x,y,bw,bh){s+='<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+bh+'" fill="#CFDDCB" stroke="#8FA689" stroke-width="1.5"/>'}
+if(t==='one'){band(ox,oy,d,h)}
+if(t==='two'){band(ox,oy,d,h);band(ox+w-d,oy,d,h)}
+if(t==='L'){band(ox,oy,d,h);band(ox+d,oy,w-d,d)}
+if(t==='U'||t==='isl'){band(ox,oy,d,h);band(ox+w-d,oy,d,h);band(ox+d,oy,w-2*d,d)}
+if(t==='isl'){var iw=24*S,il=48*S;s+='<rect x="'+(ox+w/2-iw/2)+'" y="'+(oy+d+A*S)+'" width="'+iw+'" height="'+il+'" rx="3" fill="#E9D8BE" stroke="#B98A5E" stroke-width="1.5"/>'}
+var dw=Math.min(30*S,w-2*d-4);if(t==='one'||t==='L'){dw=Math.min(30*S,w-d-4)}var dx=(t==='one'||t==='L')?ox+d+(w-d-dw)/2:ox+(w-dw)/2;
+s+='<line x1="'+dx+'" y1="'+(oy+h)+'" x2="'+(dx+dw)+'" y2="'+(oy+h)+'" stroke="#fff" stroke-width="5"/><text x="'+(dx+dw/2)+'" y="'+(oy+h+13)+'" font-size="10" text-anchor="middle" fill="#6E645C">door</text>';
+s+='<text x="'+(ox+w/2)+'" y="'+(oy+h+28)+'" font-size="12" font-weight="700" text-anchor="middle" fill="#C85A32">'+ft(W)+' wide</text>';
+s+='<text x="'+(ox+w+8)+'" y="'+(oy+h/2)+'" font-size="12" font-weight="700" fill="#C85A32" transform="rotate(90 '+(ox+w+8)+' '+(oy+h/2)+')" text-anchor="middle">'+ft(L)+' long</text>';
+s+='<text x="'+(ox+d/2)+'" y="'+(oy+h/2)+'" font-size="9" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 '+(ox+d/2)+' '+(oy+h/2)+')">clothes '+D+' in</text>';
+return s+'</svg>'}
+function calc(){var vv=$('vv');vv.className='verdict';var tips=[];
+var D=parseFloat($('dp').value),A=parseFloat($('ai').value),dbl=$('dh').checked,f=dbl?0.6:1,rw=need*12*f,wall=rw+extra*12;
+var cW=num('cw')*12,cL=num('cl')*12;
+var c=size(lay,wall,D,A),t=size(lay,wall,D,24);
+var rod=rodOf(lay,c[0],c[1],D);
+$('k1t').textContent=A>=36?'Comfortable size':'Your size';$('k1').textContent=dims(c[0],c[1]);$('k1e').textContent=m(c[0])+' x '+m(c[1])+' m, '+Math.round(c[0]*c[1]/144)+' sq ft';
+$('k2t').textContent='Tight minimum';$('k2').textContent=dims(t[0],t[1]);$('k2e').textContent='with a 24 in walkway';
+$('k3t').textContent='Hanging rod';$('k3').textContent='about '+Math.round(need)+' ft';$('k3e').textContent=(dbl?'double hang on about '+Math.round(rw/12)+' ft of wall':'single hang')+', plus '+extra+' ft of wall for drawers and shoes';
+var shown=c;
+if(cW>0){if(cL>0){var mn=minWL(lay,D,24),okW=cW>=mn[0],okL=cL>=mn[1];var have=rodOf(lay,cW,cL,D);
+var aisle=lay==='one'?cW-D:(lay==='L'?Math.min(cW,cL)-D:(lay==='isl'?(cW-2*D-24)/2:cW-2*D));
+shown=[cW,cL];
+$('k1t').textContent='Your closet';$('k1').textContent=dims(cW,cL);$('k1e').textContent=m(cW)+' x '+m(cL)+' m';
+$('k3t').textContent='Rod that fits';$('k3').textContent='about '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft';$('k3e').textContent='after '+extra+' ft for drawers; you need about '+Math.round(need)+' ft';
+if(!(okW)||!(okL)){vv.className='verdict bad';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' closet does not fit in '+dims(cW,cL)+': it needs at least '+dims(mn[0],mn[1])+'. Try a layout with fewer walls of storage.'}
+else if(wall>have){vv.className='verdict amb';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' layout fits in '+dims(cW,cL)+' with a walkway of about '+Math.round(aisle)+' in, but after drawers there is only room for about '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft of rod. Add double hang, or try another layout.'}
+else{vv.textContent='Good news: '+NM[lay]+' layout fits in '+dims(cW,cL)+', with a walkway of about '+Math.round(aisle)+' in and room for all '+Math.round(need)+' ft of hanging.'}
+if(!(okW)||!(okL)){$('k3').textContent='does not fit';$('k3e').textContent='try another layout'}
+if(lay==='one'){if(cW>=2*D+30){tips.push('Your closet is wide enough for clothes on both long walls: try the two-wall layout for about twice the hanging space.')}}
+if(aisle>0){if(36>aisle){tips.push('Your walkway is under 36 in: it works, but use shallow shelves or drawers on one side to gain a few inches.')}}
+summary='My '+dims(cW,cL)+' walk-in closet: '+NM[lay].replace(/^an? /,'')+' layout, '+Math.round(have/12)+' ft of rod. dailyspacehacks.com/walk-in-closet-size/'}}
+if(shown===c){vv.textContent='For '+NM[lay]+' walk-in closet with about '+Math.round(need)+' ft of hanging, plan on '+dims(c[0],c[1])+' ('+m(c[0])+' x '+m(c[1])+' m). The smallest that works is '+dims(t[0],t[1])+'.';
+summary='Walk-in closet, '+NM[lay].replace(/^an? /,'')+' layout, '+Math.round(need)+' ft of hanging: comfortable '+dims(c[0],c[1])+', minimum '+dims(t[0],t[1])+'. dailyspacehacks.com/walk-in-closet-size/'}
+if(lay==='isl'){tips.push('Keep at least 36 in of floor all around the island so drawers can open and two people can pass.')}
+if(lay==='L'||lay==='U'||lay==='isl'){tips.push('Corners waste space: use a corner shelf unit or turn the rods so they do not overlap.')}
+if(lay==='one'){tips.push('A one-wall walk-in is the easiest fit for a small room or a deep reach-in closet: just 24 in for clothes plus the walkway.')}
+if(!dbl){tips.push('Double hang shirts and trousers on two rods to fit almost twice as much on the same wall. Keep one section for long dresses and coats.')}
+tips.push('Plan about 24 in of depth wherever clothes hang and 12 to 16 in for shelves of folded clothes.');
+tips.push('Add a center support to any rod longer than 48 in so it does not sag.');
+$('vz').innerHTML=plan(lay,shown[0],shown[1],D,lay==='isl'?Math.max(36,A):A);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('')}
+R.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){lay=b.getAttribute('data-l');pick('data-l',lay);calc()})});
+R.querySelectorAll('[data-w]').forEach(function(b){b.addEventListener('click',function(){need=parseFloat(b.getAttribute('data-w'));extra=parseFloat(b.getAttribute('data-x'));pick('data-w',b.getAttribute('data-w'));calc()})});
+['cw','cl','ai','dp','dh'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my closet size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your closet size:',summary)})}catch(e){window.prompt('Copy your closet size:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Walk-In Closet Size Chart</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Closet</th><th>Size</th><th>Area</th><th>What fits</th></tr></thead><tbody><tr><td>Absolute minimum</td><td>4 x 4 ft</td><td>16 sq ft</td><td>One short rod, tight to use</td></tr><tr><td>Small</td><td>5 x 5 ft</td><td>25 sq ft</td><td>Clothes on one wall with a walkway</td></tr><tr><td>Average, one person</td><td>6.5 x 8 ft</td><td>52 sq ft</td><td>Clothes on two walls</td></tr><tr><td>Average, two people</td><td>7 x 10 ft</td><td>70 sq ft</td><td>Two walls or a U-shape</td></tr><tr><td>Large</td><td>10 x 10 ft</td><td>100 sq ft</td><td>U-shape, room for a small island</td></tr><tr><td>Luxury</td><td>10 x 12 ft and up</td><td>120+ sq ft</td><td>Island, seating, full-length mirror</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>California Closets says <a href="https://www.californiaclosets.com/blog/ideal-walk-in-closet-size/" target="_blank" rel="noopener">the minimum viable size for a walk-in closet is about 4’ x 4’</a>, but HomeGuide notes that <a href="https://homeguide.com/articles/walk-in-closet-dimensions" target="_blank" rel="noopener">most designers recommend no smaller than 5 by 5 feet (25 square feet) for practical daily use</a>. For a typical home, HomeGuide puts the standard walk-in at <a href="https://homeguide.com/articles/walk-in-closet-dimensions" target="_blank" rel="noopener">approximately 6.5 to 7 feet wide by 10 feet deep</a>. These are industry rules of thumb, not official averages.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3008,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/walk-in-closet-size-01-double-sided-closet.jpg" alt="Double-sided walk-in closet with white built-ins, clothes on wooden hangers on both walls and a 3 ft aisle with a runner rug" class="wp-image-3008"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Minimum Walk-In Closet Size by Layout</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The width of a walk-in closet comes from two numbers: about 24 in of depth for each wall of hanging clothes, and a walkway of 24 in (tight) to 36 in (comfortable). Add them up and you get the width each layout needs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<figure class="dsh-diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="wc-t wc-d"><title id="wc-t">Walk-in closet sizes by layout</title><desc id="wc-d">Five top-down walk-in closet plans with their smallest comfortable sizes. Each side of hanging clothes needs about 24 inches of depth and the walkway needs about 36 inches, or 24 inches if tight. One wall: 5 feet wide. Two facing walls: 7 feet wide. L-shape: about 5 by 5 feet. U-shape: 7 feet wide. U-shape with a center island: about 12 by 12 feet.</desc><rect width="1200" height="900" fill="#F7F1E9"/><text x="60" y="84" font-size="44" font-weight="700" fill="#342E2A">Walk-In Closet Sizes by Layout</text><text x="60" y="124" font-size="22" fill="#6E645C">24 in for hanging clothes on each side + a 36 in walkway</text><text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text><rect x="130.0" y="185" width="120.0" height="164.0" fill="#B98A5E"/><rect x="135.0" y="190" width="110.0" height="154.0" fill="#FBF8F3"/><rect x="135.0" y="190" width="44.0" height="154.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="184.5" y="343.0" width="55.0" height="7" fill="#F7F1E9"/><text x="212.0" y="366.0" font-size="14" fill="#6E645C" text-anchor="middle">door</text><line x1="182.0" y1="285.4" x2="242.0" y2="285.4" stroke="#C85A32" stroke-width="2.5"/><path d="M182.0 285.4 l9 -6 v12 z M242.0 285.4 l-9 -6 v12 z" fill="#C85A32"/><text x="212.0" y="276.4" font-size="14" font-weight="700" fill="#C85A32" text-anchor="middle">36 in</text><text x="157.0" y="236.2" font-size="12" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 157.0 236.2)">24 in</text><text x="190" y="396.0" font-size="22" font-weight="700" fill="#342E2A" text-anchor="middle">One wall</text><text x="190" y="424.0" font-size="19" fill="#C85A32" font-weight="700" text-anchor="middle">5 ft wide</text><rect x="438.0" y="185" width="164.0" height="164.0" fill="#B98A5E"/><rect x="443.0" y="190" width="154.0" height="154.0" fill="#FBF8F3"/><rect x="443.0" y="190" width="44.0" height="154.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="553.0" y="190" width="44.0" height="154.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="492.5" y="343.0" width="55.0" height="7" fill="#F7F1E9"/><text x="520.0" y="366.0" font-size="14" fill="#6E645C" text-anchor="middle">door</text><line x1="490.0" y1="285.4" x2="550.0" y2="285.4" stroke="#C85A32" stroke-width="2.5"/><path d="M490.0 285.4 l9 -6 v12 z M550.0 285.4 l-9 -6 v12 z" fill="#C85A32"/><text x="520.0" y="276.4" font-size="14" font-weight="700" fill="#C85A32" text-anchor="middle">36 in</text><text x="465.0" y="236.2" font-size="12" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 465.0 236.2)">24 in</text><text x="520" y="396.0" font-size="22" font-weight="700" fill="#342E2A" text-anchor="middle">Two walls</text><text x="520" y="424.0" font-size="19" fill="#C85A32" font-weight="700" text-anchor="middle">7 ft wide</text><rect x="810.0" y="185" width="120.0" height="120.0" fill="#B98A5E"/><rect x="815.0" y="190" width="110.0" height="110.0" fill="#FBF8F3"/><rect x="815.0" y="190" width="44.0" height="110.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="859.0" y="190" width="66.0" height="44.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="864.5" y="299.0" width="55.0" height="7" fill="#F7F1E9"/><text x="892.0" y="322.0" font-size="14" fill="#6E645C" text-anchor="middle">door</text><line x1="862.0" y1="258.2" x2="922.0" y2="258.2" stroke="#C85A32" stroke-width="2.5"/><path d="M862.0 258.2 l9 -6 v12 z M922.0 258.2 l-9 -6 v12 z" fill="#C85A32"/><text x="892.0" y="249.2" font-size="14" font-weight="700" fill="#C85A32" text-anchor="middle">36 in</text><text x="837.0" y="223.0" font-size="12" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 837.0 223.0)">24 in</text><text x="870" y="352.0" font-size="22" font-weight="700" fill="#342E2A" text-anchor="middle">L-shape</text><text x="870" y="380.0" font-size="19" fill="#C85A32" font-weight="700" text-anchor="middle">from 5 x 5 ft</text><rect x="218.0" y="495" width="164.0" height="186.0" fill="#B98A5E"/><rect x="223.0" y="500" width="154.0" height="176.0" fill="#FBF8F3"/><rect x="223.0" y="500" width="44.0" height="176.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="333.0" y="500" width="44.0" height="176.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="267.0" y="500" width="66.0" height="44.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="272.5" y="675.0" width="55.0" height="7" fill="#F7F1E9"/><text x="300.0" y="698.0" font-size="14" fill="#6E645C" text-anchor="middle">door</text><line x1="270.0" y1="609.1" x2="330.0" y2="609.1" stroke="#C85A32" stroke-width="2.5"/><path d="M270.0 609.1 l9 -6 v12 z M330.0 609.1 l-9 -6 v12 z" fill="#C85A32"/><text x="300.0" y="600.1" font-size="14" font-weight="700" fill="#C85A32" text-anchor="middle">36 in</text><text x="245.0" y="552.8" font-size="12" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 245.0 552.8)">24 in</text><text x="300" y="728.0" font-size="22" font-weight="700" fill="#342E2A" text-anchor="middle">U-shape</text><text x="300" y="756.0" font-size="19" fill="#C85A32" font-weight="700" text-anchor="middle">7 ft wide</text><rect x="563.0" y="465" width="274.0" height="274.0" fill="#B98A5E"/><rect x="568.0" y="470" width="264.0" height="264.0" fill="#FBF8F3"/><rect x="568.0" y="470" width="44.0" height="264.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="788.0" y="470" width="44.0" height="264.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="612.0" y="470" width="176.0" height="44.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="678.0" y="580.0" width="44.0" height="88.0" rx="4" fill="#E9D8BE" stroke="#B98A5E" stroke-width="2"/><text x="700" y="629.0" font-size="13" fill="#6E645C" text-anchor="middle" transform="rotate(-90 700 624.0)">island</text><rect x="672.5" y="733.0" width="55.0" height="7" fill="#F7F1E9"/><text x="700.0" y="756.0" font-size="14" fill="#6E645C" text-anchor="middle">door</text><line x1="615.0" y1="624.0" x2="675.0" y2="624.0" stroke="#C85A32" stroke-width="2.5"/><path d="M615.0 624.0 l9 -6 v12 z M675.0 624.0 l-9 -6 v12 z" fill="#C85A32"/><text x="645.0" y="615.0" font-size="14" font-weight="700" fill="#C85A32" text-anchor="middle">36 in</text><text x="590.0" y="549.2" font-size="12" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 590.0 549.2)">24 in</text><text x="700" y="786.0" font-size="22" font-weight="700" fill="#342E2A" text-anchor="middle">With an island</text><text x="700" y="814.0" font-size="19" fill="#C85A32" font-weight="700" text-anchor="middle">about 12 x 12 ft</text><rect x="1000" y="560" width="26" height="18" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><text x="1036" y="575" font-size="17" fill="#342E2A">clothes, 24 in</text><line x1="1000" y1="612" x2="1026" y2="612" stroke="#C85A32" stroke-width="3"/><text x="1036" y="618" font-size="17" fill="#342E2A">walkway</text><text x="1000" y="660" font-size="15" fill="#6E645C">Tight fit: a 24 in</text><text x="1000" y="682" font-size="15" fill="#6E645C">walkway makes each</text><text x="1000" y="704" font-size="15" fill="#6E645C">plan 1 ft narrower</text><text x="1000" y="726" font-size="15" fill="#6E645C">(2 ft with an island).</text></svg><figcaption>Walk-in closet sizes by layout: 24 in for each wall of clothes plus a 36 in walkway. One wall needs 5 ft, two walls or a U-shape need 7 ft, an L-shape starts at 5 x 5 ft and a closet with an island needs about 12 x 12 ft.</figcaption></figure>
+<!-- /wp:html -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Layout</th><th>Tight minimum</th><th>Comfortable</th><th>How it adds up</th></tr></thead><tbody><tr><td>One wall</td><td>4 ft wide</td><td>5 ft wide</td><td>24 in clothes + walkway</td></tr><tr><td>Two walls</td><td>6 ft wide</td><td>7 ft wide</td><td>24 in + walkway + 24 in</td></tr><tr><td>L-shape</td><td>4 x 4 ft</td><td>5 x 5 ft</td><td>walkway in front of both walls</td></tr><tr><td>U-shape</td><td>6 ft wide</td><td>7 ft wide</td><td>same width as two walls, plus a back wall</td></tr><tr><td>With an island</td><td>10 x 10 ft</td><td>12 x 12 ft</td><td>walkway on every side of the island</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>This Old House says walk-ins <a href="https://www.thisoldhouse.com/closets/closet-organization-guide" target="_blank" rel="noopener">should be at least 6 feet wide to allow for a 2-foot aisle and 2 feet of hanging space on either side</a>, and Dimensions.com gives <a href="https://www.dimensions.com/element/double-sided-walk-in-closets" target="_blank" rel="noopener">7’ (213 cm) for two sets of comfortable hanger rods</a>. For a U-shape, HomeGuide says such closets <a href="https://homeguide.com/articles/walk-in-closet-dimensions" target="_blank" rel="noopener">require at least 7 feet wide and 10 feet deep</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">One-Wall Walk-In Closet</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3009,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/walk-in-closet-size-02-small-one-wall.jpg" alt="Small walk-in closet about 5 by 5 ft with one hanging rod, baskets on a shelf above and a short dresser on one wall" class="wp-image-3009"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>A one-wall closet keeps every rod, shelf and drawer on a single wall. It is the best choice for a narrow space, a deep reach-in closet you want to walk into, or a corner of a bedroom. At 5 ft wide you get 24 in for clothes and a comfortable 36 in walkway.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Two-Wall (Double-Sided) Walk-In Closet</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3010,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/walk-in-closet-size-03-two-wall-closet.jpg" alt="Two-wall walk-in closet with hanging clothes on both facing sides, drawers, shoe shelves and a jute runner down the middle" class="wp-image-3010"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Clothes on two facing walls give you twice the hanging space in the same length. Plan on 7 ft of width; at 6 ft the walkway shrinks to 24 in, which works for one person but feels tight. A 7 x 10 ft two-wall closet holds about 20 ft of single rod.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">L-Shaped Walk-In Closet</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3011,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/walk-in-closet-size-04-l-shaped-closet.jpg" alt="L-shaped walk-in closet with double hanging rods on the long wall, shelves and drawers on the short wall and a round jute rug" class="wp-image-3011"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>An L-shape uses two walls that meet in a corner and leaves open floor for a stool or a small rug. Corners are hard to reach, so put shelves or a corner unit there instead of two rods that run into each other.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Walk-In Closet With an Island</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3012,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/walk-in-closet-size-05-closet-with-island.jpg" alt="Large U-shaped walk-in closet with a white oak center island, storage on three walls and plenty of room to walk around" class="wp-image-3012"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>An island adds drawers and a folding surface, but it needs space on every side. California Closets says that with a center island <a href="https://www.californiaclosets.com/blog/ideal-walk-in-closet-size/" target="_blank" rel="noopener">you’ll want at least 36” of clearance on all sides</a>, and suggests an island layout in <a href="https://www.californiaclosets.com/blog/ideal-walk-in-closet-size/" target="_blank" rel="noopener">larger areas (10’ x 10’ or more)</a>. With 36 in walkways all around, plan about 12 x 12 ft.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Average Walk-In Closet Size</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>There is no official national figure, but closet companies agree on a range. Architect Matthew Coates, quoted by Livingetc, says <a href="https://www.livingetc.com/advice/closet-dimensions" target="_blank" rel="noopener">a medium walk-in closet usually ranges from 40-70 square feet</a> and <a href="https://www.livingetc.com/advice/closet-dimensions" target="_blank" rel="noopener">a large walk-in closet can be 100 square feet or more</a>. In practice, a closet for one person is often about 6.5 x 8 ft, and a shared main-bedroom closet about 7 x 10 ft.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Walk-In Closet Dimensions: Depth, Walkway and Rod Height</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>What</th><th>Standard size</th><th>Notes</th></tr></thead><tbody><tr><td>Hanging depth</td><td>24 in (61 cm)</td><td>20 in works at a squeeze</td></tr><tr><td>Shelves</td><td>12 to 16 in deep</td><td>12 to 14 in for shoes</td></tr><tr><td>Drawers</td><td>18 to 24 in deep</td><td>for folded clothes</td></tr><tr><td>Walkway</td><td>24 in minimum</td><td>30 to 36 in is comfortable</td></tr><tr><td>Around an island</td><td>36 in</td><td>on every side</td></tr><tr><td>Single rod</td><td>66 in high</td><td>for shirts, dresses and coats</td></tr><tr><td>Double hang</td><td>about 80 to 82 in and 40 in</td><td>two rods, one above the other</td></tr><tr><td>Long hang</td><td>50 to 60 in of clear drop</td><td>dresses and long coats</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>HomeGuide says <a href="https://homeguide.com/articles/walk-in-closet-dimensions" target="_blank" rel="noopener">walkway clearance should be at least 24 inches, though 30 to 36 inches is more comfortable</a>. For double hang, Bob Vila suggests you <a href="https://www.bobvila.com/articles/closet-rod-height/" target="_blank" rel="noopener">mount the top rod 81¾ inches above the floor and the lower rod 40½ inches above the floor</a>, and This Old House notes that <a href="https://www.thisoldhouse.com/closets/cut-the-clutter-with-proper-closet-organization" target="_blank" rel="noopener">long dresses and coats require 50 to 60 inches of hanging space</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3013,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/walk-in-closet-size-06-double-hang-rods.jpg" alt="Closet wall with double hang rods for shirts and trousers next to a tall long-hang section for dresses and coats" class="wp-image-3013"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How Much Hanging Space Do You Need?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A common rule is to <a href="https://www.hunker.com/13413647/what-is-the-proper-height-for-closet-rods-shelves/" target="_blank" rel="noopener">provide 4 feet of closet rod space per person using the closet</a>, but that is a bare minimum. Hunker suggests <a href="https://www.hunker.com/13413647/what-is-the-proper-height-for-closet-rods-shelves/" target="_blank" rel="noopener">about 2 1/2 inches of rod space per apparel item</a>, so 40 shirts, trousers and dresses need about 8 ft of rod, and coats need more. Count what you hang today, add some room to grow, and use double hang for shorter clothes to fit almost twice as much on the same wall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How the Walk-In Closet Size Calculator Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Width:</strong> 24 in for each wall of hanging clothes (22 in if you choose it) plus your walkway. The comfortable size uses a 36 in walkway, the tight minimum 24 in.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Length:</strong> long enough for the hanging rod you need, and at least 4 ft. Corners in L-shaped and U-shaped closets lose about 24 in of rod each.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Hanging rod:</strong> about 2.5 in per hanging item, so Small is about 25 items (5 ft), Average about 40 (8 ft), Large about 60 (12 ft) and Two people about 75 (16 ft). These groups are our own estimates.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Drawers and shoes:</strong> we add 2 to 4 ft of wall for drawers and shoe shelves, depending on your wardrobe. Shelves above the rods need no extra wall. This is our own estimate.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Double hang:</strong> we assume most clothes can go on two rods and a few need long hang, so the wall needed drops to about 60 percent. This is our own estimate.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Island:</strong> a 24 x 48 in island with your walkway on every side.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>The sizes are planning guides from closet designers, not building codes. Check door swings, windows and light switches before you build.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Walk-In Wardrobe Size in Meters</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In the UK, the same rules apply in metric. FCI London says <a href="https://fcilondon.co.uk/blog/minimum-size-for-walk-in-wardrobe" target="_blank" rel="noopener">the minimum depth for wardrobe carcassing with a standard hanging rail is 60cm internally</a>, and suggests a walk-in wardrobe of <a href="https://fcilondon.co.uk/blog/minimum-size-for-walk-in-wardrobe" target="_blank" rel="noopener">at least 1.5m x 1.5m for one person, or 2m x 3m for a shared space</a>. For layouts, it says <a href="https://fcilondon.co.uk/blog/average-width-walk-in-wardrobe" target="_blank" rel="noopener">double-sided walk-in wardrobes require a minimum width of 1.8 to 2.6m</a>, and that <a href="https://fcilondon.co.uk/blog/average-width-walk-in-wardrobe" target="_blank" rel="noopener">U-shaped layouts are slightly larger at a minimum width of 2.1m</a>. Our calculator shows every result in meters too.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwalk-in-closet-size%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwalk-in-closet-size-checklist.jpg&description=Walk-in%20closet%20size%20cheat%20sheet%3A%20one%20wall%20needs%205%20ft%20%2824%20in%20for%20clothes%20plus%20a%2036%20in%20walkway%29%2C%20two%20walls%20need%207%20ft%2C%20hang%20clothes%2024%20in%20deep%20and%20keep%20a%2036%20in%20walkway%2C%20or%2024%20in%20if%20tight.%20With%20an%20island%2C%20plan%20about%2012%20x%2012%20ft." target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/walk-in-closet-size-checklist.jpg" alt="Walk-in closet size cheat sheet" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/walk-in-closet-size-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the cheat sheet for when you plan or measure your closet.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fwalk-in-closet-size%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fwalk-in-closet-size-checklist.jpg&description=Walk-in%20closet%20size%20cheat%20sheet%3A%20one%20wall%20needs%205%20ft%20%2824%20in%20for%20clothes%20plus%20a%2036%20in%20walkway%29%2C%20two%20walls%20need%207%20ft%2C%20hang%20clothes%2024%20in%20deep%20and%20keep%20a%2036%20in%20walkway%2C%20or%2024%20in%20if%20tight.%20With%20an%20island%2C%20plan%20about%2012%20x%2012%20ft." target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Walk-In Closet Size FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What is the minimum size for a walk-in closet?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>About 4 x 4 ft is the smallest walk-in closet, but 5 x 5 ft is more practical: it gives you 24 in for clothes on one wall plus a 36 in walkway. With clothes on two facing walls, you need at least 6 ft of width, and 7 ft is comfortable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What is the average size of a walk-in closet?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Most walk-in closets are about 6.5 to 7 ft wide and 8 to 10 ft long, or about 50 to 70 sq ft. A large primary closet is 100 sq ft or more.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Is a 5 x 5 walk-in closet too small?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No, not for one person with a modest wardrobe. In an L-shape, a 5 x 5 ft closet gives about 8 ft of wall for rods and drawers, and double hang fits almost twice as many shirts and trousers on the same wall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How wide should a walk-in closet be for two sides?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Plan on 7 ft: 24 in of hanging depth on each side and a 36 in walkway. At 6 ft the walkway is only 24 in, which works but feels tight.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Closet Planning Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Planning a reach-in instead? Our <a href="https://dailyspacehacks.com/wardrobe-depth/">wardrobe depth calculator</a> checks how deep it needs to be. For layouts and storage tricks, see our <a href="https://dailyspacehacks.com/small-walk-in-closet-ideas/">small walk-in closet ideas</a> and <a href="https://dailyspacehacks.com/small-closet-organization-ideas/">small closet organization ideas</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->

@@ -11,10 +11,10 @@
 </fieldset>
 <fieldset><legend>2. How much do you hang?</legend>
 <div class="opts" role="group" aria-label="Wardrobe">
-<button type="button" data-w="5"><b>Small</b><span>1 person, light wardrobe</span></button>
-<button type="button" data-w="8" class="on"><b>Average</b><span>1 person</span></button>
-<button type="button" data-w="12"><b>Large</b><span>1 person, lots of clothes</span></button>
-<button type="button" data-w="16"><b>Two people</b><span>shared closet</span></button>
+<button type="button" data-w="5" data-x="2"><b>Small</b><span>about 25 hanging items</span></button>
+<button type="button" data-w="8" data-x="3" class="on"><b>Average</b><span>about 40 items, 1 person</span></button>
+<button type="button" data-w="12" data-x="4"><b>Large</b><span>about 60 items</span></button>
+<button type="button" data-w="16" data-x="4"><b>Two people</b><span>about 75 items, shared</span></button>
 </div>
 </fieldset>
 <details class="more"><summary>More options: check your closet, aisle, double hang</summary>
@@ -41,7 +41,7 @@
 <script>
 (function(){
 var R=document.getElementById('dsh-wc');if(!R)return;
-var lay='two',need=8,summary='';
+var lay='two',need=8,extra=3,summary='';
 var NM={one:'a one-wall',two:'a two-wall',L:'an L-shaped',U:'a U-shaped',isl:'an island'};
 function $(i){return document.getElementById(i)}
 function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
@@ -75,21 +75,21 @@ s+='<text x="'+(ox+w+8)+'" y="'+(oy+h/2)+'" font-size="12" font-weight="700" fil
 s+='<text x="'+(ox+d/2)+'" y="'+(oy+h/2)+'" font-size="9" fill="#3F5E39" text-anchor="middle" transform="rotate(-90 '+(ox+d/2)+' '+(oy+h/2)+')">clothes '+D+' in</text>';
 return s+'</svg>'}
 function calc(){var vv=$('vv');vv.className='verdict';var tips=[];
-var D=parseFloat($('dp').value),A=parseFloat($('ai').value),dbl=$('dh').checked,f=dbl?0.6:1,wall=need*12*f;
+var D=parseFloat($('dp').value),A=parseFloat($('ai').value),dbl=$('dh').checked,f=dbl?0.6:1,rw=need*12*f,wall=rw+extra*12;
 var cW=num('cw')*12,cL=num('cl')*12;
 var c=size(lay,wall,D,A),t=size(lay,wall,D,24);
 var rod=rodOf(lay,c[0],c[1],D);
 $('k1t').textContent=A>=36?'Comfortable size':'Your size';$('k1').textContent=dims(c[0],c[1]);$('k1e').textContent=m(c[0])+' x '+m(c[1])+' m, '+Math.round(c[0]*c[1]/144)+' sq ft';
 $('k2t').textContent='Tight minimum';$('k2').textContent=dims(t[0],t[1]);$('k2e').textContent='with a 24 in walkway';
-$('k3t').textContent='Hanging rod';$('k3').textContent='about '+Math.round(need)+' ft';$('k3e').textContent=dbl?'on about '+Math.round(wall/12)+' ft of wall (double hang)':'single hang, on '+Math.round(wall/12)+' ft of wall';
+$('k3t').textContent='Hanging rod';$('k3').textContent='about '+Math.round(need)+' ft';$('k3e').textContent=(dbl?'double hang on about '+Math.round(rw/12)+' ft of wall':'single hang')+', plus '+extra+' ft of wall for drawers and shoes';
 var shown=c;
 if(cW>0){if(cL>0){var mn=minWL(lay,D,24),okW=cW>=mn[0],okL=cL>=mn[1];var have=rodOf(lay,cW,cL,D);
 var aisle=lay==='one'?cW-D:(lay==='L'?Math.min(cW,cL)-D:(lay==='isl'?(cW-2*D-24)/2:cW-2*D));
 shown=[cW,cL];
 $('k1t').textContent='Your closet';$('k1').textContent=dims(cW,cL);$('k1e').textContent=m(cW)+' x '+m(cL)+' m';
-$('k3t').textContent='Rod that fits';$('k3').textContent='about '+Math.round(have/12*(dbl?1/f:1))+' ft';$('k3e').textContent='you need about '+Math.round(need)+' ft';
+$('k3t').textContent='Rod that fits';$('k3').textContent='about '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft';$('k3e').textContent='after '+extra+' ft for drawers; you need about '+Math.round(need)+' ft';
 if(!(okW)||!(okL)){vv.className='verdict bad';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' closet does not fit in '+dims(cW,cL)+': it needs at least '+dims(mn[0],mn[1])+'. Try a layout with fewer walls of storage.'}
-else if(wall>have){vv.className='verdict amb';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' layout fits in '+dims(cW,cL)+' with a walkway of about '+Math.round(aisle)+' in, but there is only room for about '+Math.round(have/12*(dbl?1/f:1))+' ft of rod. Add double hang or shelves, or try another layout.'}
+else if(wall>have){vv.className='verdict amb';vv.textContent=NM[lay].charAt(0).toUpperCase()+NM[lay].slice(1)+' layout fits in '+dims(cW,cL)+' with a walkway of about '+Math.round(aisle)+' in, but after drawers there is only room for about '+Math.round(Math.max(0,have-extra*12)/12*(dbl?1/f:1))+' ft of rod. Add double hang, or try another layout.'}
 else{vv.textContent='Good news: '+NM[lay]+' layout fits in '+dims(cW,cL)+', with a walkway of about '+Math.round(aisle)+' in and room for all '+Math.round(need)+' ft of hanging.'}
 if(!(okW)||!(okL)){$('k3').textContent='does not fit';$('k3e').textContent='try another layout'}
 if(lay==='one'){if(cW>=2*D+30){tips.push('Your closet is wide enough for clothes on both long walls: try the two-wall layout for about twice the hanging space.')}}
@@ -102,10 +102,11 @@ if(lay==='L'||lay==='U'||lay==='isl'){tips.push('Corners waste space: use a corn
 if(lay==='one'){tips.push('A one-wall walk-in is the easiest fit for a small room or a deep reach-in closet: just 24 in for clothes plus the walkway.')}
 if(!dbl){tips.push('Double hang shirts and trousers on two rods to fit almost twice as much on the same wall. Keep one section for long dresses and coats.')}
 tips.push('Plan about 24 in of depth wherever clothes hang and 12 to 16 in for shelves of folded clothes.');
+tips.push('Add a center support to any rod longer than 48 in so it does not sag.');
 $('vz').innerHTML=plan(lay,shown[0],shown[1],D,lay==='isl'?Math.max(36,A):A);
 $('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('')}
 R.querySelectorAll('[data-l]').forEach(function(b){b.addEventListener('click',function(){lay=b.getAttribute('data-l');pick('data-l',lay);calc()})});
-R.querySelectorAll('[data-w]').forEach(function(b){b.addEventListener('click',function(){need=parseFloat(b.getAttribute('data-w'));pick('data-w',b.getAttribute('data-w'));calc()})});
+R.querySelectorAll('[data-w]').forEach(function(b){b.addEventListener('click',function(){need=parseFloat(b.getAttribute('data-w'));extra=parseFloat(b.getAttribute('data-x'));pick('data-w',b.getAttribute('data-w'));calc()})});
 ['cw','cl','ai','dp','dh'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
 $('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my closet size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your closet size:',summary)})}catch(e){window.prompt('Copy your closet size:',summary)}});
 $('pr').addEventListener('click',function(){window.print()});
