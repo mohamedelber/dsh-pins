@@ -22,7 +22,7 @@ table(["Room size","Chandelier width","Room size","Chandelier width"],[
 p(f"The rule is used across the lighting industry. Visual Comfort puts it simply: {ext(VC,'the width and length in feet equals the ideal chandelier diameter in inches')}, and Lamps Plus and Kohler give the same method. Golden Lighting treats the result as {ext(GL,'the fixture’s minimum diameter in inches')}, so in a room with tall ceilings you can go a little bigger.")
 img(1)
 h2("Chandelier Size for a Dining Table")
-p(f"Over a table, the table matters more than the room. Visual Comfort suggests {ext(VC,'a fixture with a diameter that’s one half to two thirds the width of your table')}, while Kohler says {ext(KO,'the ideal diameter for the chandelier is 12\" less than the width of the table')}. Our calculator uses whichever is smaller, so the chandelier never overhangs the edges.")
+p(f"Over a table, the table matters more than the room. Visual Comfort suggests {ext(VC,'a fixture with a diameter that’s one half to two thirds the width of your table')}, while, for a square table, Kohler says {ext(KO,'the ideal diameter for the chandelier is 12\" less than the width of the table')}. Our calculator uses whichever is smaller, so the chandelier never overhangs the edges.")
 table(["Table","Chandelier width","Bottom above the table (8 ft ceiling)"],[
 ["36 in wide (4 seats)","18 to 24 in","30 to 36 in"],
 ["40 in wide (6 seats)","20 to 27 in","30 to 36 in"],
@@ -54,7 +54,7 @@ p("In a living room, center the chandelier in the room or over the main seating 
 img(5)
 h2("Kitchen Island Pendant Spacing")
 img(4)
-p(f"Lightopia's guide says to {ext(LT,'hang pendants 30 to 36 inches above the countertop')} and to {ext(LT,'space pendants 24 to 30 inches apart, measured from the center of one fixture to the center of the next')}, leaving at least 6 in from the end of the island to the center of the first pendant. As a rough guide, a 6 ft island takes 3 pendants and an 8 ft island takes 3 to 4.")
+p(f"Lightopia's guide says to {ext(LT,'hang pendants 30 to 36 inches above the countertop')} and to {ext(LT,'space pendants 24 to 30 inches apart, measured from the center of one fixture to the center of the next')}, leaving at least 6 in from the end of the island to the center of the first pendant. As a rough guide, a 6 ft island takes 2 to 3 pendants and an 8 ft island takes 3.")
 h2("Chandelier Safety and Installation")
 lst([f"<strong>Weight:</strong> under the National Electrical Code, as explained by EC&amp;M, {ext(EC,'outlet boxes for luminaires can support a luminaire that weighs up to 50 lb')}; a heavier fixture needs a box listed for its weight or separate support.",
 f"<strong>Box rating:</strong> Home Depot notes that {ext(HD,'most ceiling boxes can hold 50 pounds to 75 pounds')}, so check the box before you buy a heavy chandelier.",

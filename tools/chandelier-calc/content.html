@@ -143,32 +143,32 @@ R.querySelectorAll('.xr').forEach(function(x){x.classList.toggle('hide',room==='
 var bLo=Math.round(ceil*2.5),bHi=Math.round(ceil*3);
 if(room==='dining'){var p=tb.split('x'),tw=parseFloat(p[0]),tl=parseFloat(p[1]);if(num('tw')){tw=num('tw')}if(num('tl')){tl=num('tl')}if(tw>tl){var t=tl;tl=tw;tw=t}
 var dLo=Math.round(tw/2),dHi=Math.round(Math.min(tw*2/3,tw-12));if(dLo>dHi){dHi=dLo}
-var hLo=30+3*Math.max(0,ceil-8),hHi=36+3*Math.max(0,ceil-8);var longT=tl>=tw*1.6;
+var hLo=30+3*Math.min(4,Math.max(0,ceil-8)),hHi=36+3*Math.min(4,Math.max(0,ceil-8));var longT=tl>=tw*1.6;
 $('k1t').textContent='Chandelier width';$('k1').textContent=dLo+' to '+dHi+' in';$('k1e').textContent=cm(dLo)+' to '+cm(dHi)+' across';
 $('k2t').textContent='Fixture height';$('k2').textContent=bLo+' to '+bHi+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling';
-$('k3t').textContent='Bottom above the table';$('k3').textContent=hLo+' to '+hHi+' in';$('k3e').textContent=ceil>8?'+3 in for each foot over 8 ft':'standard 8 ft ceiling';
+$('k3t').textContent='Bottom above the table';$('k3').textContent=hLo+' to '+hHi+' in';$('k3e').textContent=ceil>12?'+3 in per foot over 8 ft, up to 12 ft':ceil>8?'+3 in for each foot over 8 ft':'standard 8 ft ceiling';
 vv.textContent='For a '+tw+' x '+tl+' in table, choose a chandelier about '+dLo+' to '+dHi+' in wide and hang its bottom '+hLo+' to '+hHi+' in above the tabletop.';
-if(longT){tips.push('Your table is long: a linear chandelier about '+Math.round(tl/3)+' to '+Math.round(tl*2/3)+' in long, or two smaller fixtures, lights it more evenly than one round chandelier.')}
+if(longT){tips.push('Your table is long: a linear chandelier about '+Math.round(tl/2)+' to '+Math.round(tl*2/3)+' in long, or two smaller fixtures, lights it more evenly than one round chandelier.')}
 tips.push('Keep the edge of the chandelier at least 6 in inside the table edge so nobody bumps it when they stand up.');
 tips.push('Center it over the table, not the room, if the table is off-center.');
 $('vz').innerHTML=viz(ceil,(dLo+dHi)/2,(bLo+bHi)/2,30+(hLo+hHi)/2,'table',tw);
 summary='Dining chandelier for a '+tw+' x '+tl+' in table: '+dLo+'-'+dHi+' in wide, '+bLo+'-'+bHi+' in tall, bottom '+hLo+'-'+hHi+' in above the table. dailyspacehacks.com/chandelier-size-calculator/'}
 else if(room==='island'){var L=num('il')?num('il'):isl;var n=Math.max(1,Math.min(6,Math.floor((L-12)/30)+1));
 var gap=n>1?Math.round(Math.min(30,(L-12)/(n-1))):0;var endo=Math.round((L-(n-1)*gap)/2);
-var maxW=n>1?Math.max(8,gap-12):Math.round(Math.min(24,L/3));var hLo2=30+3*Math.max(0,ceil-8),hHi2=36+3*Math.max(0,ceil-8);
+var maxW=n>1?Math.max(8,Math.min(gap-12,2*endo)):Math.round(Math.min(24,L/3));var hLo2=30,hHi2=36;
 $('k1t').textContent='Pendants';$('k1').textContent=n+(n===1?' pendant':' pendants');$('k1e').textContent=n>1?'about '+gap+' in apart, center to center':'centered over the island';
 $('k2t').textContent='Each pendant';$('k2').textContent='up to about '+maxW+' in wide';$('k2e').textContent='our estimate, leaves a gap between shades';
-$('k3t').textContent='Bottom above the counter';$('k3').textContent=hLo2+' to '+hHi2+' in';$('k3e').textContent=ceil>8?'+3 in for each foot over 8 ft':'standard 8 ft ceiling';
+$('k3t').textContent='Bottom above the counter';$('k3').textContent=hLo2+' to '+hHi2+' in';$('k3e').textContent='the usual range for task light';
 vv.textContent='For a '+ftin(L)+' island, hang '+n+(n===1?' pendant':' pendants')+(n>1?' about '+gap+' in apart':'')+', with the end pendants about '+endo+' in in from each end and the bottoms '+hLo2+' to '+hHi2+' in above the counter.';
 tips.push('Measure center to center, and keep the center of each end pendant at least 6 in in from the end of the island.');
 tips.push('Clear glass or open shades keep the view across the kitchen open; solid shades give more focused task light.');
-$('vz').innerHTML=viz(ceil,Math.min(maxW,18),12,36+(hLo2+hHi2)/2,'table',L);
+$('vz').innerHTML=viz(ceil,Math.min(maxW,18),12,30+(hLo2+hHi2)/2,'table',L);
 summary='Kitchen island '+Math.round(L)+' in: '+n+' pendants'+(n>1?' about '+gap+' in apart':'')+', bottoms '+hLo2+'-'+hHi2+' in above the counter. dailyspacehacks.com/chandelier-size-calculator/'}
 else{var q=rs.split('x'),rl=parseFloat(q[0]),rw=parseFloat(q[1]);if(num('rl')){rl=num('rl')}if(num('rw')){rw=num('rw')}
 var d=Math.round(rl+rw);var minB=84;var maxBody=H-minB;var two=ceil>=16;
 $('k1t').textContent='Chandelier width';$('k1').textContent='about '+d+' in';$('k1e').textContent=cm(d)+' across ('+rl+' + '+rw+' ft = '+d+' in)';
 $('k2t').textContent='Fixture height';
-if(bLo>maxBody){$('k2').textContent='up to '+Math.max(0,maxBody)+' in';$('k2e').textContent='low ceiling: choose a flush or semi-flush fixture'}else{$('k2').textContent=bLo+' to '+bHi+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling'}
+if(bLo>maxBody){$('k2').textContent='up to '+Math.max(0,maxBody)+' in';$('k2e').textContent='low ceiling: choose a flush or semi-flush fixture'}else{$('k2').textContent=bLo+' to '+Math.min(bHi,maxBody)+' in';$('k2e').textContent='2.5 to 3 in per foot of ceiling'}
 $('k3t').textContent='Bottom of the fixture';$('k3').textContent=two?'at the 2nd floor level':'at least 7 ft up';$('k3e').textContent=two?'and at least 7 ft above the floor':'84 in above the floor where people walk';
 var nm={living:'living room',bedroom:'bedroom',foyer:'foyer'}[room];
 vv.textContent='For a '+rl+' x '+rw+' ft '+nm+', choose a chandelier about '+d+' in wide'+(bLo>maxBody?' that sits close to the ceiling,':',')+' with its bottom at least 7 ft above the floor.';
@@ -176,9 +176,9 @@ if(bLo>maxBody){tips.push('With a ceiling of '+ceil+' ft there are only '+maxBod
 if(room==='foyer'){tips.push(two?'In a two-story foyer, line the chandelier up with the second-floor landing so it looks right from upstairs too.':'In a one-story entry, keep the bottom at least 7 ft above the floor and clear of the door swing.')}
 if(room==='bedroom'){tips.push('Many people center a bedroom chandelier over the foot of the bed or the middle of the room, so it is not right above their head.')}
 tips.push('The room rule gives a starting point: go a little bigger for a room with tall ceilings or a strong style, a little smaller for a busy room.');
-$('vz').innerHTML=viz(ceil,d,bLo>maxBody?Math.max(6,maxBody):(bLo+bHi)/2,two?H-36:Math.max(84,H-((bLo>maxBody?Math.max(6,maxBody):(bLo+bHi)/2))-12),'room',0);
+$('vz').innerHTML=viz(ceil,d,bLo>maxBody?Math.max(6,maxBody):(bLo+bHi)/2,two?H-(bLo+bHi)/2-24:Math.max(84,H-((bLo>maxBody?Math.max(6,maxBody):(bLo+bHi)/2))-12),'room',0);
 summary=nm.charAt(0).toUpperCase()+nm.slice(1)+' '+rl+' x '+rw+' ft: chandelier about '+d+' in wide, bottom at least 7 ft above the floor (ceiling '+ceil+' ft). dailyspacehacks.com/chandelier-size-calculator/'}
-tips.push('Check the weight: a standard ceiling box supports a fixture up to 50 lb, so a heavier one needs a box listed for its weight. Have an electrician install it if you are unsure.');
+tips.push('Check the weight: a ceiling box made for light fixtures can hold a fixture up to 50 lb, so a heavier one needs a box listed for its weight or separate support. Have an electrician install it if you are unsure.');
 $('tp').innerHTML=tips.map(function(t){return '<li>'+t+'</li>'}).join('')}
 R.querySelectorAll('[data-r]').forEach(function(b){b.addEventListener('click',function(){room=b.getAttribute('data-r');pick('data-r',room);calc()})});
 R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){rs=b.getAttribute('data-s');pick('data-s',rs);$('rl').value='';$('rw').value='';calc()})});
@@ -215,7 +215,7 @@ calc();
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Over a table, the table matters more than the room. Visual Comfort suggests <a href="https://www.visualcomfort.com/inspiration/how-to-pick-the-right-chandelier-size-for-your-room/" target="_blank" rel="noopener">a fixture with a diameter that’s one half to two thirds the width of your table</a>, while Kohler says <a href="https://resources.kohler.com/webassets/kpna/brochures/KohlerLighting_QuickTipsGuide.pdf" target="_blank" rel="noopener">the ideal diameter for the chandelier is 12" less than the width of the table</a>. Our calculator uses whichever is smaller, so the chandelier never overhangs the edges.</p>
+<p>Over a table, the table matters more than the room. Visual Comfort suggests <a href="https://www.visualcomfort.com/inspiration/how-to-pick-the-right-chandelier-size-for-your-room/" target="_blank" rel="noopener">a fixture with a diameter that’s one half to two thirds the width of your table</a>, while, for a square table, Kohler says <a href="https://resources.kohler.com/webassets/kpna/brochures/KohlerLighting_QuickTipsGuide.pdf" target="_blank" rel="noopener">the ideal diameter for the chandelier is 12" less than the width of the table</a>. Our calculator uses whichever is smaller, so the chandelier never overhangs the edges.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
@@ -306,7 +306,7 @@ calc();
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>Lightopia's guide says to <a href="https://www.lightopia.com/kitchen-island-pendant-lighting-guide" target="_blank" rel="noopener">hang pendants 30 to 36 inches above the countertop</a> and to <a href="https://www.lightopia.com/kitchen-island-pendant-lighting-guide" target="_blank" rel="noopener">space pendants 24 to 30 inches apart, measured from the center of one fixture to the center of the next</a>, leaving at least 6 in from the end of the island to the center of the first pendant. As a rough guide, a 6 ft island takes 3 pendants and an 8 ft island takes 3 to 4.</p>
+<p>Lightopia's guide says to <a href="https://www.lightopia.com/kitchen-island-pendant-lighting-guide" target="_blank" rel="noopener">hang pendants 30 to 36 inches above the countertop</a> and to <a href="https://www.lightopia.com/kitchen-island-pendant-lighting-guide" target="_blank" rel="noopener">space pendants 24 to 30 inches apart, measured from the center of one fixture to the center of the next</a>, leaving at least 6 in from the end of the island to the center of the first pendant. As a rough guide, a 6 ft island takes 2 to 3 pendants and an 8 ft island takes 3.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
