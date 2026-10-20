@@ -99,7 +99,7 @@ p("About half the spacing between the lights, which is usually 2 to 3 ft. For wa
 h3("Should I use 4 inch or 6 inch recessed lights?")
 p("Use 6 in lights for general light in most rooms and 4 in lights for small rooms, bathrooms, hallways and task or accent lighting. What matters most is the lumens: about 600 to 650 for a typical 4 in light and about 900 for a 6 in light.")
 h2("More Free Home Tools")
-p(f"Lighting over a table or island? Our {a('chandelier-size-calculator','chandelier size calculator')} sizes the fixture and the hanging height. Planning a kitchen, try our {a('kitchen-island-size-calculator','kitchen island size calculator')}, and use our {a('picture-hanging-height-calculator','picture hanging height calculator')} for the art you want to light.")
+p(f"Lighting over a table or island? Our {a('chandelier-size-calculator','chandelier size calculator')} sizes the fixture and the hanging height. Planning a kitchen? Try our {a('kitchen-island-size-calculator','kitchen island size calculator')}, and use our {a('picture-hanging-height-calculator','picture hanging height calculator')} for the art you want to light.")
 ai_note()
 html='\n\n'.join(out)
 open('content.html','w').write(html)

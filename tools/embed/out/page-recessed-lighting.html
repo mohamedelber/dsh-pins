@@ -1,0 +1,183 @@
+<!-- wp:html -->
+<style>
+body.dsh-embed{background:#fff!important}
+body.dsh-embed .site-header,body.dsh-embed .site-footer,body.dsh-embed .entry-header,body.dsh-embed .entry-footer,body.dsh-embed .comments-area,body.dsh-embed #kt-scroll-up,body.dsh-embed .kadence-scroll-up,body.dsh-embed .post-navigation{display:none!important}
+body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed .content-area,body.dsh-embed .content-wrap,body.dsh-embed .entry-content-wrap,body.dsh-embed .site-main,body.dsh-embed article.entry{margin:0!important;padding:0!important;max-width:none!important;box-shadow:none!important;background:transparent!important;border:0!important}
+body.dsh-embed .entry-content{margin:0!important}
+body.dsh-embed .entry-content>*{max-width:none!important}
+body.dsh-embed .dsh-calc{margin:0!important}
+body.dsh-embed .dsh-calc .viz svg{max-height:340px}
+.dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
+.dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
+.dsh-ef a:hover{text-decoration:underline}
+</style>
+<div id="dsh-ew">
+<div id="dsh-rl" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How many recessed lights do you need?</h3>
+<p class="sub">Two taps: pick the room, then its size. You get how many lights, how far apart, how far from the walls and how bright each one should be.</p>
+<fieldset><legend>1. Which room?</legend>
+<div class="opts" role="group" aria-label="Room type">
+<button type="button" data-r="liv" class="on"><b>Living room</b><span>family room, den</span></button>
+<button type="button" data-r="kit"><b>Kitchen</b><span>general lighting</span></button>
+<button type="button" data-r="bed"><b>Bedroom</b><span>soft and warm</span></button>
+<button type="button" data-r="bath"><b>Bathroom</b><span>bright and clear</span></button>
+<button type="button" data-r="din"><b>Dining room</b><span>or eat-in area</span></button>
+<button type="button" data-r="off"><b>Home office</b><span>for reading and work</span></button>
+<button type="button" data-r="hall"><b>Hallway</b><span>or entry</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. How big is it?</legend>
+<div class="opts" role="group" aria-label="Room size">
+<button type="button" data-s="0"><b>Small</b><span id="s0"></span></button>
+<button type="button" data-s="1" class="on"><b>Medium</b><span id="s1"></span></button>
+<button type="button" data-s="2"><b>Large</b><span id="s2"></span></button>
+<button type="button" data-s="3"><b>Extra large</b><span id="s3"></span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: exact size, ceiling height, light size, meters</summary>
+<div class="grid">
+<label>Units<select id="un"><option value="ft" selected>Feet (US)</option><option value="m">Meters (UK)</option></select></label>
+<label><span id="lL">Room length (ft)</span><input type="number" id="rl" min="2" max="80" step="0.5" placeholder="e.g. 14"></label>
+<label><span id="lW">Room width (ft)</span><input type="number" id="rw" min="2" max="80" step="0.5" placeholder="e.g. 12"></label>
+<label>Ceiling height<select id="ch"><option value="8" selected>8 ft (2.4 m)</option><option value="9">9 ft (2.7 m)</option><option value="10">10 ft (3.0 m)</option><option value="12">12 ft (3.7 m)</option><option value="14">14 ft (4.3 m)</option></select></label>
+<label>Light size<select id="ls"><option value="a" selected>Suggest for me</option><option value="4">4 in (10 cm)</option><option value="6">6 in (15 cm)</option></select></label>
+<label>Brightness<select id="br"><option value="1" selected>Normal</option><option value="0">Softer</option><option value="2">Brighter</option></select></label>
+</div>
+<p class="hint">Measure the floor wall to wall. For an open-plan space, plan each zone (kitchen, dining, living) on its own.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Recessed lights</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small>Spacing</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small>Each light</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my lighting plan</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-rl');if(!R)return;
+var rm='liv',si=1,summary='',unit='';
+var RM={liv:{n:'living room',lm:[10,15,20],sz:[[10,12],[12,14],[14,16],[16,20]],k:'2700K to 3000K'},
+kit:{n:'kitchen',lm:[30,35,40],sz:[[8,10],[10,12],[12,14],[14,18]],k:'3000K to 4000K'},
+bed:{n:'bedroom',lm:[10,15,20],sz:[[10,10],[12,12],[12,14],[14,16]],k:'2700K'},
+bath:{n:'bathroom',lm:[20,50,75],sz:[[5,8],[8,10],[10,12],[12,14]],k:'3000K to 4000K'},
+din:{n:'dining room',lm:[30,35,40],sz:[[10,10],[10,12],[12,14],[14,16]],k:'2700K to 3000K'},
+off:{n:'home office',lm:[20,40,50],sz:[[8,10],[10,10],[10,12],[12,14]],k:'3000K to 4000K'},
+hall:{n:'hallway',lm:[5,7.5,10],sz:[[3,10],[4,12],[4,16],[5,20]],k:'2700K to 3000K'}};
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function D(x){if(unit==='m'){return (x*0.3048).toFixed(2)+' m'}var t=Math.round(x*12),f=Math.floor(t/12),i=t-f*12;return f?f+' ft'+(i?' '+i+' in':''):i+' in'}
+function A(x){return unit==='m'?Math.round(x*0.0929)+' m²':Math.round(x)+' sq ft'}
+function rg(a,b){return Math.abs(a-b)>0.25?D(Math.min(a,b))+' to '+D(Math.max(a,b)):D(a)}
+function dim(a,b){return unit==='m'?(a*0.3048).toFixed(1)+' x '+(b*0.3048).toFixed(1)+' m':a+' x '+b+' ft'}
+function lum(x){return (Math.round(x/10)*10).toLocaleString('en-US')}
+function labels(){var z=RM[rm].sz;for(var i=0;i!==4;i++){$('s'+i).textContent=dim(Math.max(z[i][0],z[i][1]),Math.min(z[i][0],z[i][1]))}}
+function setUnit(u){if(u===unit)return;var old=unit;unit=u;var n=u==='m'?'m':'ft';$('lL').textContent='Room length ('+n+')';$('lW').textContent='Room width ('+n+')';$('rl').step=$('rw').step=u==='m'?'0.1':'0.5';$('rl').placeholder=u==='m'?'e.g. 4.3':'e.g. 14';$('rw').placeholder=u==='m'?'e.g. 3.7':'e.g. 12';
+if(old){var k=u==='m'?0.3048:1/0.3048;['rl','rw'].forEach(function(id){var v=parseFloat($(id).value);if(!isNaN(v)){$(id).value=Math.round(v*k*10)/10}})}labels()}
+function plan(Lg,Ws,nx,ny){var S=Math.min(320/Lg,170/Ws),w=Lg*S,h=Ws*S,x=(360-w)/2,y=24,sx=Lg/nx,sy=Ws/ny;
+var s='<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ceiling plan with the recessed light layout">';
+s+='<rect width="360" height="240" fill="#FBF6EF"/><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#fff" stroke="#342E2A" stroke-width="2"/>';
+var g=Math.max(6,Math.min(16,Math.min(sx,sy)*S*0.28));
+for(var j=0;j!==ny;j++){for(var i=0;i!==nx;i++){var cx=x+(sx/2+i*sx)*S,cy=y+(sy/2+j*sy)*S;s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+g+'" fill="#FCEFC7"/><circle cx="'+cx+'" cy="'+cy+'" r="4.5" fill="#E9C46A" stroke="#B98A5E" stroke-width="1.5"/>'}}
+var ry=y+(sy/2)*S,c1=x+(sx/2)*S;
+s+='<line x1="'+x+'" y1="'+ry+'" x2="'+(c1-6)+'" y2="'+ry+'" stroke="#3F5E39" stroke-width="2" stroke-dasharray="3 2"/>';
+if(nx>1){var c2=c1+sx*S;s+='<line x1="'+(c1+6)+'" y1="'+ry+'" x2="'+(c2-6)+'" y2="'+ry+'" stroke="#C85A32" stroke-width="2"/>'}
+s+='<text x="'+(x+w/2)+'" y="16" font-size="11" font-weight="700" text-anchor="middle" fill="#342E2A">'+D(Lg)+' x '+D(Ws)+' ceiling</text>';
+var ly=y+h+20;s+='<circle cx="40" cy="'+(ly-4)+'" r="4.5" fill="#E9C46A" stroke="#B98A5E" stroke-width="1.5"/><text x="50" y="'+ly+'" font-size="11" fill="#342E2A">light</text>';
+if(nx>1){s+='<line x1="88" y1="'+(ly-4)+'" x2="108" y2="'+(ly-4)+'" stroke="#C85A32" stroke-width="2"/><text x="112" y="'+ly+'" font-size="11" font-weight="700" fill="#C85A32">'+D(sx)+' apart</text>'}
+s+='<line x1="210" y1="'+(ly-4)+'" x2="230" y2="'+(ly-4)+'" stroke="#3F5E39" stroke-width="2" stroke-dasharray="3 2"/><text x="234" y="'+ly+'" font-size="11" font-weight="700" fill="#3F5E39">'+D(sx/2)+' to wall</text>';
+return s+'</svg>'}
+function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='m'?1/0.3048:1;var r=RM[rm];
+var L=r.sz[si][0],W=r.sz[si][1];var tl=num('rl')*f,tw=num('rw')*f;var typed=false;if(tl>=2){if(tw>=2){if(tl>80){}else if(tw>80){}else{L=tl;W=tw;typed=true}}}pick('data-s',typed?'':String(si));
+var H=parseFloat($('ch').value),bi=parseInt($('br').value,10),lmf=r.lm[bi],ls=$('ls').value;
+var S=Math.min(6,Math.max(3,H/2));var Lg=Math.max(L,W),Ws=Math.min(L,W);
+var nx=Math.max(1,Math.round(Lg/S-0.01)),ny=Math.max(1,Math.round(Ws/S-0.01));if(Lg/nx>6){nx=Math.ceil(Lg/6)}if(Ws/ny>6){ny=Math.ceil(Ws/6)}var n=nx*ny;var sx=Lg/nx,sy=Ws/ny;
+var area=L*W,target=area*lmf,per=target/n,tall=H>10,fx,size,need=0;
+if(ls==='4'){fx=(per>650||tall)?1100:650;size='4 in';if(per>1100){need=Math.ceil(target/1100)}}
+else if(ls==='6'){fx=(per>900||tall)?1300:900;size='6 in';if(per>1300){need=Math.ceil(target/1300)}}
+else{if(650>=per){fx=tall?1100:650;size=tall?'6 in':'4 in'}else if(900>=per){fx=tall?1100:900;size='6 in'}else if(1100>=per){fx=1100;size='6 in'}else{fx=1300;size='6 in'}if(per>1300){need=Math.ceil(target/1300)}}
+var hi=fx>=1100;var deliv=n*fx;var one=ny===1;var sp=one?D(sx):rg(sx,sy),wo=one?D(sx/2)+' from the end walls, centered across the width':rg(sx/2,sy/2)+' from the walls';var hs=u==='m'?(H*0.3048).toFixed(1)+' m':H+' ft';
+$('k1').textContent=n+(n===1?' light':' lights');$('k1e').textContent=ny===1?(nx===1?'one light in the center':'one row of '+nx):ny+' rows of '+nx;
+$('k2').textContent=n===1?'centered':'about '+sp+' apart';$('k2e').textContent=n===1?'in the middle of the ceiling':'about '+wo;
+$('k3').textContent=size+(u==='m'?(size==='4 in'?' (10 cm)':' (15 cm)'):'');$('k3e').textContent=(hi?'high output, about ':'about ')+fx.toLocaleString('en-US')+' lumens'+(hi?' or more':'');
+var dl=dim(Lg,Ws),an=(dl.charAt(0)==='8'||dl.indexOf('11')===0||dl.indexOf('18')===0)?'an ':'a ';vv.textContent='For '+an+dl+' '+r.n+' with '+(hs.charAt(0)==='8'?'an ':'a ')+hs+' ceiling, use about '+n+' recessed '+(n===1?'light in the middle of the ceiling.':'lights'+(one?' in one row':' in '+ny+' rows of '+nx)+', about '+sp+' apart and about '+wo+'.');
+tips.push('Rule used: space the lights about half the ceiling height apart ('+D(H/2)+' for your ceiling'+(H/2>6?', capped at '+D(6):'')+') and half that from the walls, so the light overlaps evenly.');
+tips.push('A '+r.n+' needs about '+(u==='m'?Math.round(lmf*10.764)+' lumens per m²':lmf+' lumens per sq ft')+', so about '+lum(target)+' lumens for '+A(area)+'. That is about '+lum(per)+' lumens per light.');
+if(need){vv.className='verdict amb';tips.unshift('Even at about '+fx.toLocaleString('en-US')+' lumens each, '+n+(n===1?' light gives':' lights give')+' less than the '+lum(target)+' lumens this room needs. Add lights for about '+need+' in total with closer spacing, or add a ceiling fixture or lamps.')}
+if(deliv>target*1.6){tips.push('These lights give about '+lum(deliv)+' lumens in total, more than the room needs. Put them on a dimmer so you can turn them down for the evening.')}else{tips.push('Put the lights on a dimmer so you can turn them down for the evening.')}
+if(tall){tips.push('For ceilings over 10 ft, choose lights of about 1,000 lumens or more so enough light reaches the floor.')}
+tips.push('Choose '+r.k+' light for a '+r.n+'.');
+if(rm==='kit'){tips.push('Over the counters, set a row about 12 to 18 in (30 to 45 cm) out from the upper cabinets, so you do not work in your own shadow.')}
+if(rm==='bath'){tips.push('Over a shower or tub, use a light listed for wet locations (shower trim). In the UK, check the IP rating for each bathroom zone.')}
+if(rm==='hall'){tips.push('In a narrow hallway one centered row is enough. Add a light over any doorway or turn.')}
+if(rm==='liv'){tips.push('To light art or a feature wall, aim an adjustable light about 30 degrees from straight down and keep it at least 1.5 ft (45 cm) from the wall.')}
+if(rm==='off'){tips.push('Recessed lights give general light. Add a desk lamp for close reading and work.')}
+tips.push('Above an insulated ceiling, use IC-rated lights. Non-IC lights need at least 3 in (7.5 cm) of clearance from insulation.');
+$('vz').innerHTML=plan(Lg,Ws,nx,ny);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+summary='Recessed lights for my '+dim(Lg,Ws)+' '+r.n+': '+n+(n===1?' light':' lights, about '+sp+' apart and '+wo)+', '+size+' at about '+fx+' lumens each. dailyspacehacks.com/recessed-lighting-calculator/'}
+R.querySelectorAll('[data-r]').forEach(function(b){b.addEventListener('click',function(){rm=b.getAttribute('data-r');pick('data-r',rm);labels();calc()})});
+R.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){si=parseInt(b.getAttribute('data-s'),10);$('rl').value='';$('rw').value='';calc()})});
+['un','rl','rw','ch','ls','br'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my lighting plan'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your lighting plan:',summary)})}catch(e){window.prompt('Copy your lighting plan:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+<div class="dsh-ef"><span>Free tool by <a href="https://dailyspacehacks.com/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span><a href="https://dailyspacehacks.com/recessed-lighting-calculator/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>
+</div>
+<script>(function(){var w=document.getElementById('dsh-ew'),last=0;function s(){if(!w)return;var h=Math.ceil(w.getBoundingClientRect().height)+4;if(h!==last){last=h;try{parent.postMessage({dshEmbed:1,h:h},'*')}catch(e){}}}if(window.ResizeObserver){new ResizeObserver(s).observe(w)}window.addEventListener('load',s);setInterval(s,1000);s()})();</script>
+<!-- /wp:html -->
