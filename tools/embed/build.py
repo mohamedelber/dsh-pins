@@ -3,6 +3,7 @@ S = 'https://dailyspacehacks.com/'
 # (main slug, page id, embed slug, title, short line, tool file, height)
 T = [
  ('moving-checklist-printable', 0, 'moving-checklist', 'Printable Moving Checklist', 'A week-by-week moving checklist that readers can tick off and print.', '../moving-checklist/tool.html'),
+ ('desk-height-calculator', 3088, 'desk-height', 'Desk Height Calculator', 'The right sitting or standing desk height for any height, in inches or cm.', '../desk-height/tool.html'),
  ('kitchen-island-size-calculator', 3074, 'kitchen-island', 'Kitchen Island Size Calculator', 'The biggest kitchen island that fits, with safe walkways and stools.', '../island-size/tool.html'),
  ('baseboard-calculator', 3043, 'baseboard', 'Baseboard Calculator', 'How much baseboard or skirting board to buy, in feet or meters.', '../baseboard-calc/tool.html'),
  ('walk-in-closet-size', 3016, 'walk-in-closet', 'Walk-In Closet Size Calculator', 'The right walk-in closet size for any layout, with a simple floor plan.', '../closet-size/tool.html'),

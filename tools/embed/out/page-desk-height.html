@@ -1,0 +1,160 @@
+<!-- wp:html -->
+<style>
+body.dsh-embed{background:#fff!important}
+body.dsh-embed .site-header,body.dsh-embed .site-footer,body.dsh-embed .entry-header,body.dsh-embed .entry-footer,body.dsh-embed .comments-area,body.dsh-embed #kt-scroll-up,body.dsh-embed .kadence-scroll-up,body.dsh-embed .post-navigation{display:none!important}
+body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed .content-area,body.dsh-embed .content-wrap,body.dsh-embed .entry-content-wrap,body.dsh-embed .site-main,body.dsh-embed article.entry{margin:0!important;padding:0!important;max-width:none!important;box-shadow:none!important;background:transparent!important;border:0!important}
+body.dsh-embed .entry-content{margin:0!important}
+body.dsh-embed .entry-content>*{max-width:none!important}
+body.dsh-embed .dsh-calc{margin:0!important}
+body.dsh-embed .dsh-calc .viz svg{max-height:340px}
+.dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
+.dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
+.dsh-ef a:hover{text-decoration:underline}
+</style>
+<div id="dsh-ew">
+<div id="dsh-dh" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>What desk height is right for you?</h3>
+<p class="sub">Two taps: pick your height, then sitting or standing. You get the desk height, chair height and where the top of your screen should be.</p>
+<fieldset><legend>1. How tall are you?</legend>
+<div class="opts" role="group" aria-label="Your height">
+<button type="button" data-h="60"><b>5 ft 0 in</b><span>152 cm</span></button>
+<button type="button" data-h="64"><b>5 ft 4 in</b><span>163 cm</span></button>
+<button type="button" data-h="68" class="on"><b>5 ft 8 in</b><span>173 cm</span></button>
+<button type="button" data-h="72"><b>6 ft 0 in</b><span>183 cm</span></button>
+<button type="button" data-h="76"><b>6 ft 4 in</b><span>193 cm</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. Sitting or standing?</legend>
+<div class="opts" role="group" aria-label="Desk type">
+<button type="button" data-m="sit" class="on"><b>Sitting desk</b><span>with an office chair</span></button>
+<button type="button" data-m="stand"><b>Standing desk</b><span>sit-stand or fixed</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: exact height, cm, elbow height</summary>
+<div class="grid">
+<label>Units<select id="un"><option value="in" selected>Inches (US)</option><option value="cm">Centimeters (UK)</option></select></label>
+<label><span id="lH">Your height (in)</span><input type="number" id="hh" min="40" max="230" step="0.5" placeholder="e.g. 66 or 168"></label>
+<label><span id="lE">Or your elbow height (in)</span><input type="number" id="eh" min="15" max="140" step="0.5" placeholder="measure it"></label>
+<label>Shoes<select id="sh"><option value="1" selected>Normal shoes (+1 in)</option><option value="0">Barefoot or socks</option><option value="2">Heels or boots (+2 in)</option></select></label>
+</div>
+<p class="hint">Most accurate: sit with your feet flat and shoulders relaxed, bend your elbows to 90 degrees and measure from the floor to the underside of your forearm. For standing, do the same standing up.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small id="k1t">Desk height</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small id="k2t">Chair seat height</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small>Top of screen</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my desk setup</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-dh');if(!R)return;
+var H=68,mode='sit',summary='',unit='';
+var DS=[[60,23],[64,24],[68,26],[72,27],[76,29]],CH=[[60,14],[64,16],[68,17],[72,18],[76,20]],ST=[[60,36],[62,37],[64,38],[66,39],[68,40.5],[70,42],[72,43.5],[74,44.5],[76,46],[78,47]];
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function lerp(t,h){if(t[0][0]>=h){return t[0][1]+(h-t[0][0])*(t[1][1]-t[0][1])/(t[1][0]-t[0][0])}for(var i=1;i!==t.length;i++){if(t[i][0]>=h){var a=t[i-1],b=t[i];return a[1]+(h-a[0])*(b[1]-a[1])/(b[0]-a[0])}}var n=t.length,c=t[n-2],d=t[n-1];return d[1]+(h-d[0])*(d[1]-c[1])/(d[0]-c[0])}
+function L(x){return unit==='cm'?Math.round(x*2.54)+' cm':(Math.round(x*2)/2)+' in'}
+function rg(a,b){return unit==='cm'?Math.round(a*2.54)+' to '+Math.round(b*2.54)+' cm':(Math.round(a*2)/2)+' to '+(Math.round(b*2)/2)+' in'}
+function hs(h){var f=Math.floor(h/12),i=Math.round(h-f*12);if(i===12){f+=1;i=0}return unit==='cm'?Math.round(h*2.54)+' cm':f+' ft '+i+' in'}
+function setUnit(u){if(u===unit)return;var old=unit;unit=u;var n=u==='cm'?'cm':'in';$('lH').textContent='Your height ('+n+')';$('hh').placeholder=u==='cm'?'e.g. 168':'e.g. 66';if(old){var k=u==='cm'?2.54:1/2.54;['hh','eh'].forEach(function(id){var v=parseFloat($(id).value);if(!isNaN(v)){$(id).value=Math.round(v*k*2)/2}})}}
+function viz(desk,chair,eye,stand){var sc=200/90,fl=214,x0=60;
+var s='<svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side view of desk, chair and monitor heights">';
+s+='<rect width="360" height="230" fill="#FBF6EF"/><line x1="10" y1="'+fl+'" x2="350" y2="'+fl+'" stroke="#B98A5E" stroke-width="3"/>';
+var dy=fl-desk*sc;s+='<rect x="150" y="'+dy+'" width="170" height="6" fill="#D9B48A"/><line x1="160" y1="'+(dy+6)+'" x2="160" y2="'+fl+'" stroke="#B98A5E" stroke-width="4"/><line x1="310" y1="'+(dy+6)+'" x2="310" y2="'+fl+'" stroke="#B98A5E" stroke-width="4"/>';
+var ey=fl-eye*sc;s+='<rect x="268" y="'+(ey)+'" width="8" height="'+(30*sc*0.45)+'" fill="#342E2A"/><line x1="272" y1="'+(ey+30*sc*0.45)+'" x2="272" y2="'+dy+'" stroke="#6E645C" stroke-width="3"/>';
+s+='<line x1="120" y1="'+ey+'" x2="268" y2="'+ey+'" stroke="#8FA689" stroke-width="2" stroke-dasharray="5 4"/><text x="196" y="'+(ey-6)+'" font-size="11" text-anchor="middle" fill="#3F5E39">eye level = top of screen</text>';
+if(!stand){var cy=fl-chair*sc;s+='<rect x="'+(x0+20)+'" y="'+cy+'" width="60" height="7" rx="3" fill="#8FA689"/><rect x="'+(x0+20)+'" y="'+(cy-60)+'" width="8" height="60" rx="3" fill="#8FA689"/><line x1="'+(x0+50)+'" y1="'+(cy+7)+'" x2="'+(x0+50)+'" y2="'+(fl-8)+'" stroke="#6E645C" stroke-width="4"/><line x1="'+(x0+30)+'" y1="'+(fl-4)+'" x2="'+(x0+70)+'" y2="'+(fl-4)+'" stroke="#6E645C" stroke-width="4"/>';
+s+='<text x="'+(x0+14)+'" y="'+(cy+4)+'" font-size="10" text-anchor="end" fill="#342E2A">seat '+L(chair)+'</text>'}
+else{s+='<rect x="40" y="'+(fl-6)+'" width="90" height="6" rx="2" fill="#8FA689"/><text x="85" y="'+(fl-12)+'" font-size="10" text-anchor="middle" fill="#3F5E39">mat</text>'}
+s+='<line x1="335" y1="'+dy+'" x2="335" y2="'+fl+'" stroke="#C85A32" stroke-width="2"/><text x="302" y="'+((dy+fl)/2+4)+'" font-size="12" font-weight="700" text-anchor="end" fill="#C85A32">desk '+L(desk)+'</text>';
+return s+'</svg>'}
+function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='cm'?1/2.54:1;
+$('lE').textContent='Or your '+(mode==='stand'?'standing':'seated')+' elbow height ('+(u==='cm'?'cm':'in')+')';var hx=num('hh')*f;var bad=hx?(48>hx||hx>90):false;var h=hx?(bad?H:hx):H;pick('data-h',hx?(bad?String(H):''):String(H));var sh=parseFloat($('sh').value);var eh=num('eh')*f;var hs0=h+sh;
+var stand=mode==='stand';var desk,lo,hi,chair=0,eye;
+if(!stand){var dm=lerp(DS,hs0);if(eh){dm=eh}lo=dm-1;hi=eh?dm:dm+1;desk=dm;chair=lerp(CH,hs0);eye=chair+0.45*h;
+$('k1t').textContent='Sitting desk height';$('k1').textContent=rg(lo,hi);$('k1e').textContent=eh?'from your elbow height':'at your seated elbow height';
+$('k2t').textContent='Chair seat height';$('k2').textContent=rg(chair-1,chair+1);$('k2e').textContent='feet flat, thighs about level';
+vv.textContent='At '+hs(h)+', a sitting desk (or keyboard) about '+rg(lo,hi)+' high lets your elbows rest at about 90 degrees, with your chair seat at about '+rg(chair-1,chair+1)+'.';
+if(lo>=30.25){tips.push('A standard 29 to 30 in (74 to 76 cm) desk is about '+L(Math.ceil(lo-30))+' too low for you. Raise it on sturdy blocks or risers, or choose a taller or height-adjustable desk.')}else if(desk+0.5>=29){tips.push('A standard 29 to 30 in (74 to 76 cm) desk should suit you. Fine-tune with the chair height.')}
+else{var gap=Math.round(29.5-desk);tips.push('A standard 29 to 30 in (74 to 76 cm) desk is about '+L(gap)+' too high for you. Raise your chair until your elbows are level with the desk and use a footrest, or use a keyboard tray.')}
+tips.push('Keep the keyboard close, with your wrists straight and your shoulders relaxed.');
+summary='Desk setup for '+hs(h)+': sitting desk '+rg(lo,hi)+', chair seat '+rg(chair-1,chair+1)+', top of screen about '+L(eye)+' from the floor. dailyspacehacks.com/desk-height-calculator/'}
+else{var sm=lerp(ST,hs0);if(eh){sm=eh}lo=sm-1;hi=eh?sm:sm+1;desk=sm;eye=0.936*h+sh;
+$('k1t').textContent='Standing desk height';$('k1').textContent=rg(lo,hi);$('k1e').textContent=eh?'from your elbow height':'at your standing elbow height';
+$('k2t').textContent='Sitting height';$('k2').textContent=rg(lerp(DS,hs0)-1,lerp(DS,hs0)+1);$('k2e').textContent='for a sit-stand desk';
+vv.textContent='At '+hs(h)+', set your standing desk to about '+rg(lo,hi)+', so your elbows bend at about 90 degrees with your shoulders relaxed.';
+tips.push('On a sit-stand desk, save both heights as presets. Cornell suggests about 20 minutes sitting, 8 minutes standing and 2 minutes moving.');
+tips.push('Wear the shoes you usually work in when you set the height, and use an anti-fatigue mat on hard floors.');
+summary='Standing desk for '+hs(h)+': '+rg(lo,hi)+', top of screen about '+L(eye)+' from the floor. dailyspacehacks.com/desk-height-calculator/'}
+$('k3').textContent='about '+L(eye);$('k3e').textContent='from the floor, about an arm’s length away';
+tips.push('Put the top of the screen at or slightly below eye level, about an arm’s length away (at least 20 in or 50 cm). Lower it 1 to 2 in (2 to 5 cm) if you wear bifocals.');
+tips.push('These are estimates for an average body. Your own elbow height is the best guide: enter it in More options.');
+if(eh){var est=stand?lerp(ST,hs0):lerp(DS,hs0);if(Math.abs(eh-est)>6){tips.unshift('Your elbow height is far from the usual '+L(est)+' for your height. Check that you measured '+(stand?'standing up':'sitting down')+' and picked the right units.')}}if(bad){tips.unshift('Your typed height is outside 4 ft to 7 ft 6 in (122 to 229 cm), so this uses the height button instead. Check the units.')}$('vz').innerHTML=viz(desk,chair,eye,stand);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('')}
+R.querySelectorAll('[data-h]').forEach(function(b){b.addEventListener('click',function(){H=parseFloat(b.getAttribute('data-h'));pick('data-h',b.getAttribute('data-h'));$('hh').value='';calc()})});
+R.querySelectorAll('[data-m]').forEach(function(b){b.addEventListener('click',function(){mode=b.getAttribute('data-m');pick('data-m',mode);calc()})});
+['un','hh','eh','sh'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my desk setup'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your desk setup:',summary)})}catch(e){window.prompt('Copy your desk setup:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+<div class="dsh-ef"><span>Free tool by <a href="https://dailyspacehacks.com/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span><a href="https://dailyspacehacks.com/desk-height-calculator/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>
+</div>
+<script>(function(){var w=document.getElementById('dsh-ew'),last=0;function s(){if(!w)return;var h=Math.ceil(w.getBoundingClientRect().height)+4;if(h!==last){last=h;try{parent.postMessage({dshEmbed:1,h:h},'*')}catch(e){}}}if(window.ResizeObserver){new ResizeObserver(s).observe(w)}window.addEventListener('load',s);setInterval(s,1000);s()})();</script>
+<!-- /wp:html -->
