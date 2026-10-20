@@ -1,0 +1,20 @@
+name: Scout photos
+on:
+  push:
+    paths:
+      - 'scout/scan.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scout/scan.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add scout/out || true
+          git diff --cached --quiet || git commit -m "Scout results"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
