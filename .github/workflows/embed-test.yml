@@ -18,7 +18,7 @@ jobs:
           : > tools/embed/test/out/headers.txt
           while read -r u; do [ -z "$u" ] && continue; case "$u" in \#*) continue;; esac
             echo "== $u" >> tools/embed/test/out/headers.txt
-            curl -sSIL -A "Mozilla/5.0" "$u" | grep -iE '^(HTTP|x-frame|content-security|x-robots|location|cache)' >> tools/embed/test/out/headers.txt || true
+            curl -sSIL -A "Mozilla/5.0" "$u" | grep -iE '^(HTTP|x-frame|content-security|x-robots|location|cache|link)' >> tools/embed/test/out/headers.txt || true
           done < tools/embed/test/urls.txt
       - name: Screenshots
         run: |
