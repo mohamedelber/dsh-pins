@@ -1,3 +1,6 @@
-== https://dailyspacehacks.com/embed-calculators/moving-checklist/
+== https://dailyspacehacks.com/embed-calculators/chandelier-size/
+HTTP/2 200 
+content-security-policy: upgrade-insecure-requests
+== https://dailyspacehacks.com/chandelier-size-calculator/
 HTTP/2 200 
 content-security-policy: upgrade-insecure-requests

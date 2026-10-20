@@ -1,2 +1,2 @@
-host.html d moving-checklist:2887px:2400
-host.html m moving-checklist:4744px:2400
+host.html d chandelier-size:1436px:1500 chandelier-size-calculator::2400
+host.html m chandelier-size:2115px:1500 chandelier-size-calculator::2400
