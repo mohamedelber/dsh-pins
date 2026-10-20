@@ -1,0 +1,165 @@
+<!-- wp:html -->
+<style>
+body.dsh-embed{background:#fff!important}
+body.dsh-embed .site-header,body.dsh-embed .site-footer,body.dsh-embed .entry-header,body.dsh-embed .entry-footer,body.dsh-embed .comments-area,body.dsh-embed #kt-scroll-up,body.dsh-embed .kadence-scroll-up,body.dsh-embed .post-navigation{display:none!important}
+body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed .content-area,body.dsh-embed .content-wrap,body.dsh-embed .entry-content-wrap,body.dsh-embed .site-main,body.dsh-embed article.entry{margin:0!important;padding:0!important;max-width:none!important;box-shadow:none!important;background:transparent!important;border:0!important}
+body.dsh-embed .entry-content{margin:0!important}
+body.dsh-embed .entry-content>*{max-width:none!important}
+body.dsh-embed .dsh-calc{margin:0!important}
+body.dsh-embed .dsh-calc .viz svg{max-height:340px}
+.dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
+.dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
+.dsh-ef a:hover{text-decoration:underline}
+</style>
+<div id="dsh-ew">
+<div id="dsh-bb" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How much baseboard do you need?</h3>
+<p class="sub">Two taps: pick the room size, then the number of doors. You get the linear feet to buy, the number of boards and a cost estimate.</p>
+<fieldset><legend>1. How big is the room?</legend>
+<div class="opts" role="group" aria-label="Room size">
+<button type="button" data-s="10x10"><b>Small</b><span>about 10 x 10 ft</span></button>
+<button type="button" data-s="12x12" class="on"><b>Bedroom</b><span>about 12 x 12 ft</span></button>
+<button type="button" data-s="12x16"><b>Living room</b><span>about 12 x 16 ft</span></button>
+<button type="button" data-s="16x20"><b>Large room</b><span>about 16 x 20 ft</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. How many doorways?</legend>
+<div class="opts hts" role="group" aria-label="Doorways">
+<button type="button" data-d="0"><b>0</b></button>
+<button type="button" data-d="1" class="on"><b>1</b></button>
+<button type="button" data-d="2"><b>2</b></button>
+<button type="button" data-d="3"><b>3</b></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: exact size, meters, board length, waste</summary>
+<div class="grid">
+<label>Units<select id="un"><option value="ft" selected>Feet (US)</option><option value="m">Meters (UK)</option></select></label>
+<label><span id="lL">Room length (ft)</span><input type="number" id="rl" min="1" max="200" step="0.5" placeholder="e.g. 13"></label>
+<label><span id="lW">Room width (ft)</span><input type="number" id="rw" min="1" max="200" step="0.5" placeholder="e.g. 11"></label>
+<label><span id="lP">Or total wall length (ft)</span><input type="number" id="pe" min="1" max="2000" step="0.5" placeholder="whole floor"></label>
+<label><span id="lD">Width of each doorway (ft)</span><input type="number" id="dw" min="0" max="20" step="0.1" placeholder="3"></label>
+<label>Board length<select id="bl"></select></label>
+<label>Extra for waste<select id="wa"><option value="10" selected>10% (most rooms)</option><option value="15">15% (many corners)</option><option value="20">20% (first DIY job)</option></select></label>
+<label>Ceiling height<select id="ce"><option value="8" selected>8 ft (2.4 m)</option><option value="9">9 ft (2.7 m)</option><option value="10">10 ft (3 m) or more</option></select></label>
+</div>
+<label class="chk"><input type="checkbox" id="sh">Add shoe molding or quarter round (same length)</label>
+<p class="hint">Measure each wall at floor level. Use total wall length for an open plan or a whole floor; it replaces the room size.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small id="k1t">Baseboard to buy</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small>Boards</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small id="k3t">Cost estimate</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my baseboard list</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-bb');if(!R)return;
+var rs='12x12',doors=1,summary='',unit='';
+var BL={ft:[['8','8 ft'],['12','12 ft'],['16','16 ft']],m:[['2.4','2.4 m'],['3.05','3.05 m'],['4.2','4.2 m']]};
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function r1(x){return Math.round(x*10)/10}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function setUnit(u){if(u===unit)return;unit=u;var o=BL[u],s=$('bl');s.innerHTML=o.map(function(x,i){return '<option value="'+x[0]+'"'+(i===1?' selected':'')+'>'+x[1]+'</option>'}).join('');
+var n=u==='m'?'m':'ft';$('lL').textContent='Room length ('+n+')';$('lW').textContent='Room width ('+n+')';$('lP').textContent='Or total wall length ('+n+')';$('lD').textContent='Width of each doorway ('+n+')';$('dw').placeholder=u==='m'?'0.9':'3';}
+function plan(L,W,d,u){var S=Math.min(280/L,150/W),w=L*S,h=W*S,x=(360-w)/2,y=18;
+var s='<svg viewBox="0 0 360 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Room outline with baseboard along the walls and gaps at the doorways">';
+s+='<rect width="360" height="210" fill="#FBF6EF"/><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#fff" stroke="#8FA689" stroke-width="7"/>';
+var dg=Math.min((u==='m'?0.9:3)*S,w/5);
+for(var i=0;i!==d;i++){var gx=x+w*(i+1)/(d+1)-dg/2;s+='<rect x="'+gx+'" y="'+(y+h-5)+'" width="'+dg+'" height="10" fill="#FBF6EF"/><text x="'+(gx+dg/2)+'" y="'+(y+h+20)+'" font-size="10" text-anchor="middle" fill="#6E645C">door</text>'}
+var n=u==='m'?' m':' ft';
+s+='<text x="'+(x+w/2)+'" y="'+(y-5)+'" font-size="11" font-weight="700" text-anchor="middle" fill="#C85A32">'+r1(L)+n+'</text>';
+s+='<text x="'+(x-8)+'" y="'+(y+h/2)+'" font-size="11" font-weight="700" fill="#C85A32" text-anchor="middle" transform="rotate(-90 '+(x-8)+' '+(y+h/2)+')">'+r1(W)+n+'</text>';
+s+='<text x="'+(x+w/2)+'" y="'+(y+h/2+4)+'" font-size="12" text-anchor="middle" fill="#3F5E39">'+(u==='m'?'skirting':'baseboard')+' on every wall</text>';
+return s+'</svg>'}
+function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];
+var q=rs.split('x'),L=parseFloat(q[1]),W=parseFloat(q[0]);if(u==='m'){L=r1(L*0.3048);W=r1(W*0.3048)}
+if(num('rl')){L=num('rl')}if(num('rw')){W=num('rw')}
+var per=2*(L+W),usedPer=num('pe')>0;if(usedPer){per=num('pe')}
+var dwid=$('dw').value===''?(u==='m'?0.9:3):num('dw');
+var net=Math.max(0,per-doors*dwid),wp=parseFloat($('wa').value),tot=net*(1+wp/100);
+var b=parseFloat($('bl').value),nb=Math.ceil(tot/b-0.0001),n=u==='m'?' m':' ft',lf=u==='m'?net/0.3048:net;
+var shoe=$('sh').checked,cau=Math.max(1,Math.ceil(lf/55)),uk=u==='m',bw=uk?'skirting board':'baseboard',buy=uk?Math.min(Math.ceil(tot*10-0.001)/10,Math.round(nb*b*100)/100):Math.ceil(tot-0.001);
+$('k1t').textContent=uk?'Skirting to buy':'Baseboard to buy';
+$('k1').textContent=buy+n;$('k1e').textContent=r1(net)+n+' of wall + '+wp+'% extra';
+$('k2').textContent=nb+' x '+(u==='m'?b+' m':b+' ft');$('k2e').textContent=Math.round(nb*b*100)/100+n+' in total'+(shoe?', same again for shoe molding':'');
+if(u==='ft'){var tf=nb*b;$('k3t').textContent='Cost estimate';$('k3').textContent='$'+Math.round(tf*1)+' to $'+Math.round(tf*1.4)+' MDF';$('k3e').textContent='about $'+Math.round(net*5.7)+' to $'+Math.round(net*9)+' installed by a pro'}
+else{$('k3t').textContent='Caulk';$('k3').textContent=cau+(cau===1?' tube':' tubes');$('k3e').textContent='310 ml tubes, for the top edge'}
+if(net===0)vv.className='verdict bad';vv.textContent=net===0?'The doorways take up all the wall. Check the room size and the number of doorways.':'For '+r1(net)+n+' of wall'+(doors?' ('+doors+(doors===1?' doorway':' doorways')+' taken off)':'')+', buy about '+buy+n+' of '+bw+': '+nb+(nb===1?' board of ':' boards of ')+(u==='m'?b+' m':b+' ft')+'.';
+var longest=usedPer?0:Math.max(L,W);
+if(longest>b){tips.push('Your longest wall ('+r1(longest)+n+') is longer than one board, so join two boards with a scarf joint: both ends cut at 45 degrees and glued over a stud.')}
+else if(!usedPer){tips.push('Buy boards at least as long as your longest wall ('+r1(longest)+n+') so each wall has no seam.')}
+if(u==='ft'){tips.push('Caulk: about '+cau+(cau===1?' tube':' tubes')+' (10.1 oz) for the top edge; one tube covers about 55 ft with a 3/16 in bead.')}
+var ce=$('ce').value;if(uk){tips.push(ce==='8'?'For a 2.4 m ceiling, 119 to 144 mm skirting looks right.':(ce==='9'?'For a 2.7 m ceiling, choose 144 to 169 mm skirting.':'For a ceiling of 3 m or more, choose 169 mm skirting or taller.'))}else{tips.push(ce==='8'?'For an 8 ft ceiling, 3-1/4 to 5-1/4 in baseboard looks right.':(ce==='9'?'For a 9 ft ceiling, choose 4-1/4 to 5-1/4 in baseboard, or taller for a bold look.':'For a ceiling of 10 ft or more, choose 5-1/4 to 7-1/4 in baseboard so it does not look thin.'))}
+tips.push('Cope the inside corners and miter the outside corners at 45 degrees; cut boards that meet an outside corner '+(uk?'50 to 100 mm':'a few inches')+' longer than the wall.');
+tips.push(uk?'Fix the skirting to the wall studs or use grab adhesive on masonry walls, then caulk the top edge.':'Nail into the studs about every 16 in with 2 to 2-1/2 in finish nails (15 or 16 gauge).');
+if(shoe){tips.push('Shoe molding or quarter round: buy another '+buy+n+' and nail it to the '+bw+', not the floor.')}
+$('vz').innerHTML=usedPer?'':plan(L,W,doors,u);$('vz').style.display=usedPer?'none':'block';
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+summary=(uk?'Skirting board: ':'Baseboard: ')+r1(net)+n+' of wall, buy '+buy+n+' ('+nb+' x '+(u==='m'?b+' m':b+' ft')+' boards, '+wp+'% waste)'+(shoe?' + the same in shoe molding':'')+'. dailyspacehacks.com/baseboard-calculator/'}
+R.querySelectorAll('[data-s]').forEach(function(x){x.addEventListener('click',function(){rs=x.getAttribute('data-s');pick('data-s',rs);$('rl').value='';$('rw').value='';$('pe').value='';calc()})});
+R.querySelectorAll('[data-d]').forEach(function(x){x.addEventListener('click',function(){doors=parseInt(x.getAttribute('data-d'),10);pick('data-d',x.getAttribute('data-d'));calc()})});
+['un','rl','rw','pe','dw','bl','wa','ce','sh'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my baseboard list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your baseboard list:',summary)})}catch(e){window.prompt('Copy your baseboard list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+<div class="dsh-ef"><span>Free tool by <a href="https://dailyspacehacks.com/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span><a href="https://dailyspacehacks.com/baseboard-calculator/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>
+</div>
+<script>(function(){var w=document.getElementById('dsh-ew'),last=0;function s(){if(!w)return;var h=Math.ceil(w.getBoundingClientRect().height)+4;if(h!==last){last=h;try{parent.postMessage({dshEmbed:1,h:h},'*')}catch(e){}}}if(window.ResizeObserver){new ResizeObserver(s).observe(w)}window.addEventListener('load',s);setInterval(s,1000);s()})();</script>
+<!-- /wp:html -->

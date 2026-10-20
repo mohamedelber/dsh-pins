@@ -26,7 +26,7 @@ for i,(n,t1,t2) in enumerate(steps):
     a(f'<circle cx="{sx+48}" cy="{y+48}" r="26" fill="{T}"/><text x="{sx+48}" y="{y+57}" font-size="24" font-weight="700" fill="#fff" text-anchor="middle">{n}</text>')
     a(f'<text x="{sx+92}" y="{y+42}" font-size="22" font-weight="700" fill="{T}">{t1}</text><text x="{sx+92}" y="{y+74}" font-size="20" fill="{A}" font-weight="700">{t2}</text>')
 a(f'<rect x="110" y="700" width="1030" height="110" rx="16" fill="{SGL}"/>')
-a(f'<text x="140" y="744" font-size="21" fill="{T}" font-weight="700">Tip: buy boards as long as your longest wall.</text>')
+a(f'<text x="140" y="744" font-size="21" fill="{T}" font-weight="700">Tip: buy boards as long as your longest wall, or join two with a scarf joint.</text>')
 a(f'<text x="140" y="780" font-size="19" fill="{G}">Cope inside corners, miter outside corners at 45 degrees, and nail into studs about every 16 in.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))

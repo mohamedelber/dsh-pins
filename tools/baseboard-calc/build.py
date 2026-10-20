@@ -14,7 +14,7 @@ HP="https://www.houseplans.com/blog/interior-trim-scale-proportion"
 BE="https://images.thdstatic.com/catalog/pdfImages/35/3579c54d-a385-4155-9c15-a555d615d4eb.pdf"
 PG="https://images.thdstatic.com/catalog/pdfImages/27/27182e9f-21f8-436a-9def-9e127a172672.pdf"
 HB="https://www.homebuilding.co.uk/advice/skirting-board-sizes"
-p("How much baseboard do you need? Add up the length of every wall, take off about 3 ft for each doorway and add 10% for waste. A 12 x 12 ft bedroom with one door has 45 ft of wall, so you buy about 50 ft of baseboard, or five 12 ft boards. This free <strong>baseboard calculator</strong> does the math in two taps.")
+p("How much baseboard do you need? Add up the length of every wall, take off about 3 ft for each doorway and add 10% for waste. A 12 x 12 ft bedroom has 48 ft of wall, or 45 ft once you take off one door, so you buy about 50 ft of baseboard, or five 12 ft boards. This free <strong>baseboard calculator</strong> does the math in two taps.")
 p("Pick the room size and the number of doorways. You get the linear feet to buy, how many boards, a cost estimate and how much caulk you need. Open <em>More options</em> to type exact measurements, switch to meters for skirting board, or change the board length and waste.")
 add('<!-- wp:html -->\n'+open('tool.html').read()+'\n<!-- /wp:html -->')
 h2("How to Measure for Baseboard")
@@ -38,7 +38,7 @@ p("Take off another 3 ft for each extra doorway or open closet. For an open plan
 h2("Baseboard Lengths: 8, 12 or 16 Feet?")
 img(5)
 p(f"Bob Vila notes that home stores {ext(BV,'sell baseboard and crown molding in 8-foot and 12-foot lengths')}, and many stores also carry 16 ft boards. Lowe's advises: {ext(LW,'use longer lengths of moulding in large rooms so that fewer cuts will be required')}. If a wall is longer than one board, This Old House explains that {ext(TOH,'scarf joints are used to join two pieces of baseboard along a long wall where a single piece isn’t long enough')}.")
-p("Longer boards also mean less waste. A 10 ft wall cut from 8 ft boards leaves a seam and two short offcuts; one 12 ft board covers it in one piece.")
+p("Longer boards also mean fewer seams. A 10 ft wall cut from 8 ft boards needs a seam and leaves a 6 ft offcut; one 12 ft board covers it in one piece.")
 h2("How Much Extra Baseboard for Waste?")
 img(3)
 p(f"Most guides say to add 10%; Lowe's says to {ext(LW,'add 10% to the total length for mitering')}. Bob Vila suggests more, {ext(BV,'about 20 percent extra material to account for mistakes, offcuts, and overlapping joints')}, which makes sense for a first DIY job. Rooms with many outside corners, like a bay window or a chimney breast, need more too: Home Depot says that for outside corners you should {ext(HD,'cut them a few inches longer than the wall to allow for miter cuts')}.")
@@ -48,9 +48,9 @@ table(["Type","Material cost per linear foot","Good for"],[
 ["MDF","$1 to $1.40","painted rooms, dry areas"],
 ["Pine","$1.40 to $1.85","paint or stain"],
 ["PVC","$0.90 to $1.40","bathrooms, basements, damp areas"],
-["Hardwood","$1.40 to $5, up to $10 for cherry or mahogany","stained wood looks"],
+["Solid wood","$1.40 to $5, up to $10 for cherry or mahogany","stained wood looks"],
 ["Installed by a pro","$5.70 to $9","materials and labor"]])
-p(f"Material prices are from {ext(AY,'Angi’s guide to baseboard types')}. For installation, HomeAdvisor says {ext(HA,'contractors charge between $5.70 and $9.00 per linear foot for baseboard installation')}, and HomeServe gives a similar {ext(HS,'$6 to $9 per linear foot')}. Taller and more detailed profiles cost more.")
+p(f"Material prices are from Angi’s guides to {ext(AY,'baseboard types')} and {ext('https://www.angi.com/articles/mdf-vs-pine-baseboard.htm','MDF vs. pine')}. For installation, HomeAdvisor says {ext(HA,'contractors charge between $5.70 and $9.00 per linear foot for baseboard installation')}, and HomeServe gives a similar {ext(HS,'$6 to $9 per linear foot')}. Taller and more detailed profiles cost more.")
 h2("What Height Baseboard Should You Use?")
 img(4)
 table(["Ceiling height","Baseboard height"],[
