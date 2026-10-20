@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A dining room with a round oak dining table for six and cream upholstered chairs, a brass and frosted glass chandelier hanging centered above the table at a sensible height with the bottom well above head height of seated people, a large window with sheer curtains, a sideboard with a plant. Wide view, the chandelier is clearly in proportion to the table, about half to two thirds of the table width."
+  },
+  {
+   "name": "02-foyer",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A bright two-story entry foyer with a staircase, a large round black metal and glass chandelier hanging high in the open space with plenty of headroom underneath, a round console table with a vase below on a runner, a tall window. No people."
+  },
+  {
+   "name": "03-living",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A living room with a modest-size drum chandelier with a linen shade centered on the ceiling, a cream sofa, a round coffee table, a jute rug, plenty of headroom under the fixture, warm lamp light and daylight."
+  },
+  {
+   "name": "04-island",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A kitchen with a white oak island and three matching glass dome pendant lights evenly spaced in a row above it, bottoms of the pendants clearly above head height and about 30 to 36 inches above the countertop, sage cabinets, two bar stools. Pendants hang straight from ceiling canopies on rods."
+  },
+  {
+   "name": "05-bedroom",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. A calm bedroom with a small brass beaded chandelier hanging from the ceiling at the foot side of a bed (not directly over the pillows), linen bedding, oak nightstands with lamps. The chandelier is small and in proportion to the room."
+  },
+  {
+   "name": "06-too-small-right",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. Split image, left and right halves of the same dining room from the same camera angle, separated by a thin white vertical line down the middle. Left half: a tiny chandelier that is far too small over a long oak dining table. Right half: the same room with a correctly sized linear chandelier spanning about two thirds of the table length."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, warm white walls, sage green, brass and black metal accents, soft natural daylight. Vertical photo of a cozy dining nook in warm evening light: a round oak table with two chairs in the lower half, a glowing brass and glass chandelier above the table in the middle of the image, a window with sheer curtains. The top third of the image is a calm, plain, warm wall and ceiling. One clear focal point, no candles, no text."
+  }
+ ]
+}
