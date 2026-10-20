@@ -1,0 +1,181 @@
+<!-- wp:html -->
+<style>
+body.dsh-embed{background:#fff!important}
+body.dsh-embed .site-header,body.dsh-embed .site-footer,body.dsh-embed .entry-header,body.dsh-embed .entry-footer,body.dsh-embed .comments-area,body.dsh-embed #kt-scroll-up,body.dsh-embed .kadence-scroll-up,body.dsh-embed .post-navigation{display:none!important}
+body.dsh-embed .content-container,body.dsh-embed .site-container,body.dsh-embed .content-area,body.dsh-embed .content-wrap,body.dsh-embed .entry-content-wrap,body.dsh-embed .site-main,body.dsh-embed article.entry{margin:0!important;padding:0!important;max-width:none!important;box-shadow:none!important;background:transparent!important;border:0!important}
+body.dsh-embed .entry-content{margin:0!important}
+body.dsh-embed .entry-content>*{max-width:none!important}
+body.dsh-embed .dsh-calc{margin:0!important}
+body.dsh-embed .dsh-calc .viz svg{max-height:340px}
+.dsh-ef{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;font-size:13px;color:#6E645C;padding:8px 4px 2px;line-height:1.4}
+.dsh-ef a{color:#C85A32;font-weight:700;text-decoration:none}
+.dsh-ef a:hover{text-decoration:underline}
+</style>
+<div id="dsh-ew">
+<div id="dsh-bn" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>How far apart should your battens be?</h3>
+<p class="sub">Two taps: pick your wall width, then the style. You get how many battens, the exact gap, the cut length and how many boards to buy.</p>
+<fieldset><legend>1. How wide is the wall?</legend>
+<div class="opts hts" role="group" aria-label="Wall width">
+<button type="button" data-w="96"><b>8 ft</b><span>2.4 m</span></button>
+<button type="button" data-w="120" class="on"><b>10 ft</b><span>3.0 m</span></button>
+<button type="button" data-w="144"><b>12 ft</b><span>3.7 m</span></button>
+<button type="button" data-w="168"><b>14 ft</b><span>4.3 m</span></button>
+<button type="button" data-w="192"><b>16 ft</b><span>4.9 m</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. Which style?</legend>
+<div class="opts" role="group" aria-label="Board and batten style">
+<button type="button" data-t="tall" class="on"><b>Classic</b><span>about 5 ft high, with a ledge</span></button>
+<button type="button" data-t="wain"><b>Wainscot</b><span>about 3 ft high</span></button>
+<button type="button" data-t="full"><b>Full wall</b><span>floor to ceiling</span></button>
+<button type="button" data-t="grid"><b>Grid</b><span>squares, floor to ceiling</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: exact size, board size, gap, top rail, cm</summary>
+<div class="grid">
+<label>Units<select id="un"><option value="in" selected>Inches (US)</option><option value="cm">Centimeters (UK)</option></select></label>
+<label><span id="lW">Wall width (in)</span><input type="number" id="ww" min="24" max="600" step="0.25" placeholder="e.g. 123.5"></label>
+<label><span id="lH">Ceiling height (in)</span><input type="number" id="wh" min="72" max="240" step="0.5" placeholder="96 = 8 ft"></label>
+<label><span id="lP">Panel height (in)</span><input type="number" id="ph" min="20" max="240" step="0.5" placeholder="optional"></label>
+<label>Batten board<select id="bd"><option value="a" selected>Suggest (1x4, or 1x2 for grid)</option><option value="2">1x2 (1 1/2 in, 38 mm)</option><option value="3">1x3 (2 1/2 in, 64 mm)</option><option value="4">1x4 (3 1/2 in, 89 mm)</option><option value="6">1x6 (5 1/2 in, 140 mm)</option></select></label>
+<label>Gap you want<select id="gp"><option value="12">About 12 in (30 cm)</option><option value="16" selected>About 16 in (40 cm)</option><option value="20">About 20 in (50 cm)</option><option value="24">About 24 in (60 cm)</option></select></label>
+<label>Top<select id="tr"><option value="rl" selected>1x4 top rail + 1x2 ledge</option><option value="r">1x4 top rail only</option><option value="n">No top rail</option></select></label>
+<label>Board length<select id="bl"><option value="0" selected>8 ft (2.4 m)</option><option value="1">10 ft (3.0 m)</option><option value="2">12 ft (3.6 m)</option></select></label>
+</div>
+<p class="hint">Measure the wall at the height of the panelling, corner to corner. The calculator puts a batten at each end and keeps your existing baseboard (about 5 1/2 in or 14 cm tall).</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Battens</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small>Gap between</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small>Boards to buy</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my cut list</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-bn');if(!R)return;
+var W0=120,st='tall',summary='',unit='';
+var BW={'2':1.5,'3':2.5,'4':3.5,'6':5.5},BASE=5.5,RAIL=3.5,LEDGE=1.5;
+var FR=['','1/8','1/4','3/8','1/2','5/8','3/4','7/8'];
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function D(x){if(unit==='cm'){return (x*2.54).toFixed(1)+' cm'}var t=Math.round(x*8),w=Math.floor(t/8),e=t-w*8;return (w?w+(e?' ':''):'')+FR[e]+' in'}
+function FT(x){if(unit==='cm'){return (x*0.0254).toFixed(2)+' m'}var t=Math.round(x),f=Math.floor(t/12),i=t-f*12;return f+' ft'+(i?' '+i+' in':'')}
+function BN(k){return unit==='cm'?Math.round(BW[k]*25.4)+' mm':'1x'+k}
+function setUnit(u){if(u===unit)return;var old=unit;unit=u;var n=u==='cm'?'cm':'in';$('lW').textContent='Wall width ('+n+')';$('lH').textContent='Ceiling height ('+n+')';$('lP').textContent='Panel height ('+n+')';$('ww').placeholder=u==='cm'?'e.g. 314':'e.g. 123.5';$('wh').placeholder=u==='cm'?'244 = 2.44 m':'96 = 8 ft';var c=u==='cm';$('ww').min=c?61:24;$('ww').max=c?1524:600;$('wh').min=c?183:72;$('wh').max=c?610:240;$('ph').min=c?51:20;$('ph').max=c?610:240;
+if(old){var k=u==='cm'?2.54:1/2.54;['ww','wh','ph'].forEach(function(id){var v=parseFloat($(id).value);if(!isNaN(v)){$(id).value=Math.round(v*k*10)/10}})}}
+function viz(W,H,P,n,b,gap,rail,ledge,m,box,full){var S=Math.min(300/W,180/H),w=W*S,h=H*S,x=(360-w)/2,y=24,fl=y+h;
+var s='<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Front view of the wall with the batten layout">';
+s+='<rect width="360" height="240" fill="#FBF6EF"/><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#F3EEE6" stroke="#342E2A" stroke-width="1.5"/>';
+var top=fl-P*S;s+='<rect x="'+x+'" y="'+top+'" width="'+w+'" height="'+(P*S)+'" fill="#DCE6D8"/>';
+s+='<rect x="'+x+'" y="'+(fl-BASE*S)+'" width="'+w+'" height="'+(BASE*S)+'" fill="#B9CBB3"/>';
+if(rail){s+='<rect x="'+x+'" y="'+top+'" width="'+w+'" height="'+(RAIL*S)+'" fill="#B9CBB3"/>'}
+if(ledge){s+='<rect x="'+(x-2)+'" y="'+(top-3)+'" width="'+(w+4)+'" height="3" fill="#8FA689"/>'}
+var y1=top+(rail?RAIL*S:0),y2=fl-BASE*S;
+for(var i=0;i!==n;i++){var bx=x+(i*(b+gap))*S;s+='<rect x="'+bx+'" y="'+y1+'" width="'+Math.max(1.5,b*S)+'" height="'+(y2-y1)+'" fill="#B9CBB3" stroke="#8FA689" stroke-width="0.6"/>'}
+for(var j=1;j!==m+1;j++){var ry=y2-(j*box+(j-1)*b+b)*S;s+='<rect x="'+x+'" y="'+ry+'" width="'+w+'" height="'+Math.max(1.5,b*S)+'" fill="#B9CBB3" stroke="#8FA689" stroke-width="0.6"/>'}
+var gx1=x+b*S,gx2=x+(b+gap)*S,gy=fl+7;
+s+='<line x1="'+gx1+'" y1="'+gy+'" x2="'+gx2+'" y2="'+gy+'" stroke="#C85A32" stroke-width="1.5"/><line x1="'+gx1+'" y1="'+(gy-4)+'" x2="'+gx1+'" y2="'+(gy+4)+'" stroke="#C85A32" stroke-width="1.5"/><line x1="'+gx2+'" y1="'+(gy-4)+'" x2="'+gx2+'" y2="'+(gy+4)+'" stroke="#C85A32" stroke-width="1.5"/><text x="'+gx1+'" y="'+(gy+14)+'" font-size="10" font-weight="700" fill="#C85A32">gap '+D(gap)+'</text>';
+s+='<text x="'+(x+w/2)+'" y="16" font-size="11" font-weight="700" text-anchor="middle" fill="#342E2A">'+FT(W)+' wall, '+n+' battens</text>';
+if(!full){s+='<line x1="'+(x+w+8)+'" y1="'+top+'" x2="'+(x+w+8)+'" y2="'+fl+'" stroke="#3F5E39" stroke-width="1.5"/><text x="'+(x+w+12)+'" y="'+((top+fl)/2+4)+'" font-size="10" font-weight="700" fill="#3F5E39">'+FT(P)+'</text>'}
+return s+'</svg>'}
+function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='cm'?1/2.54:1;
+var W=W0,tw=num('ww')*f,typed=false;if(tw>=24){if(600>=tw){W=tw;typed=true}}if(tw>0){if(!typed){tips.push('That wall width is outside 2 to 50 ft (0.6 to 15 m), so this shows the '+FT(W)+' button instead.')}}pick('data-w',typed?'':String(W0));
+var H=96,th=num('wh')*f;if(th>=72){if(240>=th){H=th}}
+var bk=$('bd').value;if(bk==='a'){bk=st==='grid'?'2':'4'}var b=BW[bk],t=parseFloat($('gp').value),tr=$('tr').value;
+var full=st==='full'||st==='grid';var P=st==='wain'?Math.round(H*0.375):(st==='tall'?Math.round(H*0.625):H);var tp=num('ph')*f;if(tp>0){P=Math.min(H,tp)}
+var rail=tr==='n'?0:RAIL,ledge=(tr==='rl'?(P>=H?0:LEDGE):0);
+var Lb=P-BASE-rail;if(12>Lb){vv.className='verdict bad';vv.textContent='The panel is too short for battens. Make it at least '+D(12+BASE+rail)+' tall.';$('k1').textContent='';$('k1e').textContent='';$('k2').textContent='';$('k2e').textContent='';$('k3').textContent='';$('k3e').textContent='';$('vz').innerHTML='';$('tp').innerHTML='';return}
+var n=Math.max(2,Math.round((W-b)/(t+b))+1),gap=(W-n*b)/(n-1);if(gap>0){}else{n=2;gap=W-2*b}
+var m=0,box=0,k=1;if(st==='grid'){k=Math.max(1,Math.round((Lb+b)/(gap+b)));m=k-1;box=(Lb-m*b)/k}
+var BLs=u==='cm'?[94.49,118.11,141.73]:[96,120,144],bi=parseInt($('bl').value,10),BL=BLs[bi],bump=false;while(Lb>BL){if(bi===2)break;bi+=1;BL=BLs[bi];bump=true}
+var per=Math.max(1,Math.floor(BL/Lb)),bb=Lb>BL?n*Math.ceil(Lb/BL):Math.ceil(n/per);var gc=m*(n-1),gb=gc?Math.ceil(gc/Math.max(1,Math.floor(BL/gap))):0;
+var rb=rail?Math.ceil(W/BL):0,lb=ledge?Math.ceil(W/BL):0;
+function sp(x){return x?x+Math.ceil(x*0.1):0}
+var cnt={};function addc(q,x){cnt[q]=(cnt[q]||0)+x}addc(bk,bb+gb);if(rail){addc('4',rb)}if(ledge){addc('2',lb)}
+var tot=0,parts=[];[bk,'4','2','3','6'].forEach(function(q,i){if(i){if(q===bk)return}if(cnt[q]){var c=sp(cnt[q]);tot+=c;parts.push(c+' of '+BN(q));cnt[q]=0}});var bl=u==='cm'?['2.4 m','3.0 m','3.6 m'][bi]:['8 ft','10 ft','12 ft'][bi];
+var lf=n*Lb+m*(W-n*b)+(rail?W:0)+(ledge?W:0);
+$('k1').textContent=n+' battens';$('k1e').textContent=BN(bk)+', each '+D(Lb)+' long';
+$('k2').textContent=D(gap);$('k2e').textContent='with a batten at each end';
+$('k3').textContent=tot+' boards';$('k3e').textContent=parts.join(' + ')+', '+bl+' long, incl. 10% extra';
+vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wide wall, use '+n+' battens ('+BN(bk)+') with '+D(gap)+' gaps, starting and ending with a batten in the corners. Cut each batten '+D(Lb)+' long'+(rail?', to fit between the baseboard and a top rail ('+BN('4')+')'+(P>=H?' at the ceiling.':' at '+FT(P)+' from the floor.'):'.')+(m?' Add '+m+' rows of horizontal rails for boxes about '+D(gap)+' wide and '+D(box)+' tall.':'');
+var mk=[];for(var q=1;q!==n-1;q++){mk.push(D(q*(b+gap)))}tips.push('Cut a scrap block exactly '+D(gap)+' wide to check the gaps'+(n>2?', but mark each batten from the left corner so rounding does not add up. Left edge of battens 2 to '+(n-1)+': '+mk.join(', ')+'.':'.')+' Check each batten with a level.');
+if(n>2){tips.push('Want a different look? '+(n-1)+' battens give '+D((W-(n-1)*b)/(n-2))+' gaps; '+(n+1)+' battens give '+D((W-(n+1)*b)/n)+' gaps.')}
+tips.push('Shopping list: '+parts.join(' + ')+' boards, '+bl+' long, about '+(u==='cm'?(lf*0.0254).toFixed(1)+' m':Math.ceil(lf/12)+' linear ft')+' of trim before the 10% extra.'+(Lb>BL?' Your battens are longer than the longest boards ('+bl+'), so each batten needs a joint or a horizontal rail. We counted '+Math.ceil(Lb/BL)+' boards per batten.':(bump?' Your battens are longer than the board you picked, so we switched to '+bl+' boards.':'')));
+if(m){tips.push('Grid: cut '+gc+' short rails, about '+D(gap)+' long, and trim each one to fit between the battens. Squares of about 24 in (60 cm) or less look best.')}
+var ad=Math.ceil(n/7)+(gc?Math.ceil(gc/20):0);tips.push('Fix the battens with construction adhesive and 18-gauge brad nails: 2 in (50 mm) wherever you hit a stud, and 1 1/4 in (32 mm) elsewhere just to hold the batten while the adhesive sets. About '+(n*Math.max(3,Math.ceil(Lb/12))+(rail?Math.ceil(W/16):0)+(ledge?Math.ceil(W/16):0)+gc*2)+' nails and '+ad+(ad>1?' tubes':' tube')+' of adhesive (our estimate).');
+tips.push('Plan the gaps so no batten lands on an outlet or switch. If one does, turn off the power at the breaker first; the box then needs a listed box extender so it sits flush with the wood. If you are not sure, hire an electrician.');
+if(st==='tall'){tips.push('Board and batten usually looks best between half and two-thirds up the wall. You can also line the top up with your windowsills.')}
+if(st==='wain'){tips.push('Classic wainscot covers about a third of the wall: about 32 to 42 in (80 to 105 cm) on an 8 ft (2.4 m) ceiling, a little more on taller walls.')}
+tips.push('Caulk every seam, fill the nail holes, then paint two coats. Pre-primed MDF can go straight to paint.');
+if(u==='in'){var a=W*P/144;tips.push('Hiring a pro? At about $7 to $23 per sq ft, this '+Math.round(a)+' sq ft wall would cost about $'+Math.round(a*7/10)*10+' to $'+Math.round(a*23/10)*10+'. DIY materials usually cost far less.')}
+$('vz').innerHTML=viz(W,H,P,n,b,gap,rail,ledge,m,box,full);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+summary='Board and batten for my '+FT(W)+' wall: '+n+' battens ('+BN(bk)+'), '+D(gap)+' gaps, each batten '+D(Lb)+' long. Buy '+parts.join(' + ')+' boards ('+bl+'). dailyspacehacks.com/board-and-batten-calculator/'}
+R.querySelectorAll('[data-w]').forEach(function(x){x.addEventListener('click',function(){W0=parseFloat(x.getAttribute('data-w'));$('ww').value='';calc()})});
+R.querySelectorAll('[data-t]').forEach(function(x){x.addEventListener('click',function(){st=x.getAttribute('data-t');pick('data-t',st);calc()})});
+['un','ww','wh','ph','bd','gp','tr','bl'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var x=$('cp');function ok(){x.textContent='Copied!';setTimeout(function(){x.textContent='Copy my cut list'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your cut list:',summary)})}catch(e){window.prompt('Copy your cut list:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+<div class="dsh-ef"><span>Free tool by <a href="https://dailyspacehacks.com/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Daily Space Hacks</a></span><a href="https://dailyspacehacks.com/board-and-batten-calculator/?utm_source=embed&amp;utm_medium=referral" target="_blank" rel="noopener">Full guide and charts &rarr;</a></div>
+</div>
+<script>(function(){var w=document.getElementById('dsh-ew'),last=0;function s(){if(!w)return;var h=Math.ceil(w.getBoundingClientRect().height)+4;if(h!==last){last=h;try{parent.postMessage({dshEmbed:1,h:h},'*')}catch(e){}}}if(window.ResizeObserver){new ResizeObserver(s).observe(w)}window.addEventListener('load',s);setInterval(s,1000);s()})();</script>
+<!-- /wp:html -->

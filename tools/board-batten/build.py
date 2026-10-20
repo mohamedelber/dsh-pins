@@ -36,14 +36,14 @@ p("The chart aims for about 16 in gaps, with a batten in each corner. Walls are 
 diagram(re.sub(r'(\d+\.\d{1,2})\d+',r'\1',open('z.svg').read()),"Board and batten spacing: on a 123 1/2 in wall, seven 1x4 battens (3 1/2 in wide) with one in each corner leave six gaps of 16 1/2 in, under a 1x4 top rail and 1x2 ledge at 60 in. The formula: gap = (wall width − battens × batten width) ÷ (battens − 1).")
 img(1)
 h2("How to Calculate Board and Batten Spacing")
-lst(["<strong>Measure the wall</strong> from corner to corner at the height of the panelling. Home Depot's tip: "+ext(HD,"You'll calculate your measurements by wall, not by room.")+"",
+lst(["<strong>Measure the wall</strong> from corner to corner at the height of the panelling. Home Depot's tip: "+ext(HD,"You’ll calculate your measurements by wall, not by room.")+"",
 "<strong>Pick a batten size and a rough gap,</strong> for example 1x4 boards (3 1/2 in actual width) and about 16 in.",
 "<strong>Count the battens:</strong> wall width minus one batten, divided by (gap + batten width), rounded, plus one.",
 "<strong>Find the exact gap:</strong> subtract the width of all the battens from the wall width, then divide by the number of gaps (battens − 1).",
 "<strong>Cut a spacer block</strong> to that exact gap and use it between battens as you install them."],ordered=True)
-p(f"Here is a real example from Angela Marie Made, repeated in Home Depot's guide: a 123.5 in wall with seven 1x4 battens (24.5 in of boards) leaves 99 in of open wall, and Home Depot says to {ext(HD,'Divide 99 by 6 (the number of spaces between 7 boards), for a total of 16.5 inches.')} If your count is odd, Homebuilding &amp; Renovating notes that {ext(HBR,'If you have an odd number of slats, it’s a good idea to start in the middle')}.")
+p(f"Here is a real example from Angela Marie Made, and Home Depot's guide uses the same numbers: a 123.5 in wall with seven 1x4 battens (24.5 in of boards) leaves 99 in of open wall, and Home Depot says to {ext(HD,'Divide 99 by 6 (the number of spaces between 7 boards), for a total of 16.5 inches.')} If your count is odd, Homebuilding &amp; Renovating notes that {ext(HBR,"If you have an odd number of slats, it's a good idea to start in the middle")}.")
 h2("How Far Apart Should Board and Batten Be?")
-p(f"There is no single rule, but most designers stay in a narrow range. The Crazy Craft Lady says {ext(CCL,'Most vertical battens are spaced between 16 and 20 inches apart.')}, and Megan Dauphinee Living notes that {ext(MDL,'Most tutorials recommend spacing boards 12-24 inches apart.')}")
+p(f"There is no single rule, but most designers stay in a narrow range. The Crazy Craft Lady says {ext(CCL,'Most vertical battens are spaced between 16 and 20 inches apart')}, and Megan Dauphinee Living notes that {ext(MDL,'Most tutorials recommend spacing boards 12-24 inches apart.')}")
 lst([f"<strong>12 to 14 in:</strong> a busy, traditional look. The Handyman's Daughter says {ext(THD,'Narrower spacing often gives a more cottagey feel.')}",
 "<strong>16 to 20 in:</strong> the most popular choice for bedrooms, living rooms and hallways.",
 f"<strong>20 to 24 in:</strong> a calmer, more modern wall. {ext(THD,'Wider spacing is more modern and creates a bold statement.')}"])
@@ -59,7 +59,7 @@ h2("How High Should Board and Batten Be?")
 img(2)
 table(["Style","Height on an 8 ft wall","Notes"],[
 ["Wainscot","about 32 to 42 in (one third)","classic dining rooms and hallways"],
-["Classic","about 4 to 6 ft (half to two thirds)","the most common DIY height"],
+["Classic","about 48 to 64 in (half to two thirds)","the most common DIY height"],
 ["Full wall","floor to ceiling","feature walls behind a bed or sofa"],
 ["Grid","floor to ceiling","squares of about 24 in or less"]])
 p(f"For traditional wainscot, HomeGuide says {ext(HG,'The standard height of wainscoting is one-third of the wall’s height.')} Board and batten usually goes taller: Young House Love says it {ext(YHL,'typically looks the best between 1/2 and 2/3 up your wall')}, and HGTV notes, {ext(HGTV,'For our eight-foot wall, we are installing board and batten at a height of five feet.')} Apartment Therapy adds that {ext(AT,'in many classically inspired homes, the height of the wainscot is the same as the height of the windowsills')}.")
@@ -69,16 +69,16 @@ img(3)
 p(f"Most board and batten walls finish with a 1x4 top rail and a 1x2 laid flat on top as a ledge. Young House Love says {ext(YHL,'A flat ledge looks more substantial and creates a spot to lean artwork or something on top.')} At the bottom, you can keep your baseboard, but Bob Vila suggests that {ext(BV,'For a uniform look, remove the baseboard and install a new base, using a board the same thickness as your battens.')}")
 h2("Grid Board and Batten")
 img(4)
-p(f"A grid wall adds horizontal rails between the battens to make squares or rectangles. Fresh Mommy Blog says {ext(FMB,'The key to creating a gorgeous grid wall is to create squares with the grids.')}, and suggests thin boards: {ext(FMB,'We used 1×2’s on our grid wall, and I wouldn’t go larger than 1×3’s, purely based on aesthetics.')} Choose <em>Grid</em> in the calculator to get the rows and the number of short rails to cut.")
+p(f"A grid wall adds horizontal rails between the battens to make squares or rectangles. Fresh Mommy Blog says {ext(FMB,'The key to creating a gorgeous grid wall is to create squares with the grids')}, and suggests thin boards: {ext(FMB,'We used 1×2’s on our grid wall, and I wouldn’t go larger than 1×3’s, purely based on aesthetics.')} Choose <em>Grid</em> in the calculator to get the rows and the number of short rails to cut.")
 h2("How Much Material Do You Need?")
 p("The calculator counts every piece: battens, top rail, ledge and grid rails, then rounds up to whole boards. For a 10 ft wall in the classic style with 1x4 battens, that is 7 battens cut to 51 in, a 1x4 top rail and a 1x2 ledge: 10 boards of 1x4 and 3 of 1x2, 8 ft long, including about 10% extra.")
 lst([f"<strong>Extra:</strong> Lowe's says {ext(LOW,'Remember to add 10% to the total length for mitering.')}",
-f"<strong>Nails:</strong> 16 or 18-gauge brad nails. For nails that reach the studs, Home Depot says {ext(HD,'The nails should be about 2 inches long.')} Shorter 1 1/4 in nails hold battens on drywall together with adhesive. Jenna Sue Design: {ext(JSD,'I used 3-4 nails per batten and they went up so easy.')}",
-"<strong>Adhesive:</strong> construction adhesive on the back of each batten, unless you want to remove the wall later.",
+f"<strong>Nails:</strong> 18-gauge brad nails (or 16-gauge finish nails). For nails that reach the studs, Home Depot says {ext(HD,'The nails should be about 2 inches long.')} Between studs, shorter 1 1/4 in brads only hold the batten while the construction adhesive sets. Jenna Sue Design: {ext(JSD,'I used 3-4 nails per batten and they went up so easy.')}",
+"<strong>Adhesive:</strong> construction adhesive on the back of each batten. Skip it only if every batten is nailed into studs or you want to remove the wall later.",
 f"<strong>Caulk and filler:</strong> Angela Marie Made says {ext(AMM,'Next, caulk all seams and corners with a paintable caulk.')} Fill the nail holes with spackle or wood filler.",
-f"<strong>Paint:</strong> two coats. Real Homes notes, {ext(RH,'If you’re using pre-primed MDF, you can skip this step and go straight to the paint.')}"])
+f"<strong>Paint:</strong> two coats. Real Homes notes, {ext(RH,"If you're using pre-primed MDF, you can skip this step and go straight to the paint.")}"])
 h2("Board and Batten Cost")
-p(f"DIY is cheap: Angela Marie Made says {ext(AMM,'This project cost us only $84 total to complete a 10ft. wall.')} Hiring a pro costs more. Bob Vila says {ext(BV,'For professional board-and-batten wainscoting you can expect to pay somewhere between $7 to $20 per square foot.')}, and HomeGuide puts it at $10 to $23 per square foot. The calculator shows a rough pro price for your wall.")
+p(f"DIY is cheap: Angela Marie Made says {ext(AMM,'This project cost us only $84 total to complete a 10ft. wall.')} Hiring a pro costs more. Bob Vila says {ext(BV,'For professional board-and-batten wainscoting you can expect to pay somewhere between $7 to $20 per square foot')}, and HomeGuide puts it at $10 to $23 per square foot. The calculator shows a rough pro price for your wall.")
 h2("How to Install Board and Batten")
 img(6)
 lst(["<strong>Plan the layout</strong> with the calculator and mark each batten with a pencil and a level. Move the layout if a batten lands on an outlet.",
@@ -86,16 +86,16 @@ lst(["<strong>Plan the layout</strong> with the calculator and mark each batten 
 "<strong>Add the battens</strong> with adhesive and brad nails, using your spacer block for every gap.",
 "<strong>Add the ledge</strong> on top of the rail.",
 "<strong>Caulk, fill and paint.</strong>"],ordered=True)
-p(f"On heavily textured walls, Home Depot suggests you {ext(HD,'Attach a 1/8-inch panel board, like plywood, cut to size, on the wall.')} first. Outlets and switches need care: when a box sits in wood paneling, {ext(NEC,'a listed box extender must be installed to bring the box opening flush with the finished wall surface')}. If you are not sure, hire an electrician.")
+p(f"On heavily textured walls, Home Depot suggests a backer first: {ext(HD,'Attach a 1/8-inch panel board, like plywood, cut to size, on the wall.')} Outlets and switches need care. If a batten covers part of a box, the box must end up flush with the wood; when a box is recessed too far, {ext(NEC,'a listed box extender must be installed to bring the box opening flush with the finished wall surface')}. Turn off the power at the breaker before removing a cover plate, and if you are not sure, hire an electrician.")
 img(5)
 h2("How the Board and Batten Calculator Works")
 lst(["<strong>Battens:</strong> one in each corner. Number = round((wall width − batten width) ÷ (target gap + batten width)) + 1.",
 "<strong>Gap:</strong> (wall width − battens × batten width) ÷ (battens − 1), rounded to the nearest 1/8 in.",
-"<strong>Heights:</strong> classic about 62% of the ceiling height (60 in on an 8 ft wall), wainscot about 37.5% (36 in), full and grid to the ceiling. You can type your own panel height.",
+"<strong>Heights:</strong> classic 62.5% of the ceiling height (60 in on an 8 ft wall), wainscot about 37.5% (36 in), full and grid to the ceiling. You can type your own panel height.",
 "<strong>Cut length:</strong> panel height − baseboard (5 1/2 in) − top rail (3 1/2 in).",
 "<strong>Boards:</strong> pieces per board for each size, plus about 10% extra (at least one spare). Nail and adhesive counts are our own estimates."])
 h2("Batten Wall Panelling in the UK")
-p(f"In the UK, board and batten is usually called batten wall panelling, and it is measured in millimetres. Book a Builder notes that {ext(BAB,'MDF thickness is typically 9mm to 12mm for battens.')} and that {ext(BAB,'Spacing typically sits between 300mm and 600mm centres.')} For height, Doors2Floors says {ext(D2F,'Dado panelling looks right at roughly a third of the wall height.')}, while Wall Panels World says {ext(WPW,'Half height panelling sits approximately 1.2m from the floor, creating a balanced division of wall space.')} Homebuilding &amp; Renovating adds: {ext(HBR,'We recommend always using a qualified electrician to remove sockets or switch')}. Choose <em>Centimeters</em> in More options to get every result in cm.")
+p(f"In the UK, board and batten is usually called batten wall panelling, and it is measured in millimetres. Book a Builder notes that {ext(BAB,'MDF thickness is typically 9mm to 12mm for battens')} and that {ext(BAB,'Spacing typically sits between 300mm and 600mm centres.')} For height, Doors2Floors says {ext(D2F,'Dado panelling looks right at roughly a third of the wall height')}, while Wall Panels World says {ext(WPW,'Half height panelling sits approximately 1.2m from the floor, creating a balanced division of wall space.')} Homebuilding &amp; Renovating adds: {ext(HBR,'We recommend always using a qualified electrician to remove sockets or switch')}. Choose <em>Centimeters</em> in More options to get every result in cm.")
 add(open('savebox.html').read())
 h2("Board and Batten FAQ")
 h3("How far apart should board and batten be?")

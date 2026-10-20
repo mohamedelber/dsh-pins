@@ -28,7 +28,7 @@
 <label>Top<select id="tr"><option value="rl" selected>1x4 top rail + 1x2 ledge</option><option value="r">1x4 top rail only</option><option value="n">No top rail</option></select></label>
 <label>Board length<select id="bl"><option value="0" selected>8 ft (2.4 m)</option><option value="1">10 ft (3.0 m)</option><option value="2">12 ft (3.6 m)</option></select></label>
 </div>
-<p class="hint">Measure the wall at the height of the panelling, corner to corner. The calculator puts a batten at each end and keeps your existing baseboard (about 5 1/2 in tall).</p>
+<p class="hint">Measure the wall at the height of the panelling, corner to corner. The calculator puts a batten at each end and keeps your existing baseboard (about 5 1/2 in or 14 cm tall).</p>
 </details>
 <div class="res" aria-live="polite">
 <div id="vv" class="verdict"></div>
@@ -53,7 +53,7 @@ function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.c
 function D(x){if(unit==='cm'){return (x*2.54).toFixed(1)+' cm'}var t=Math.round(x*8),w=Math.floor(t/8),e=t-w*8;return (w?w+(e?' ':''):'')+FR[e]+' in'}
 function FT(x){if(unit==='cm'){return (x*0.0254).toFixed(2)+' m'}var t=Math.round(x),f=Math.floor(t/12),i=t-f*12;return f+' ft'+(i?' '+i+' in':'')}
 function BN(k){return unit==='cm'?Math.round(BW[k]*25.4)+' mm':'1x'+k}
-function setUnit(u){if(u===unit)return;var old=unit;unit=u;var n=u==='cm'?'cm':'in';$('lW').textContent='Wall width ('+n+')';$('lH').textContent='Ceiling height ('+n+')';$('lP').textContent='Panel height ('+n+')';$('ww').placeholder=u==='cm'?'e.g. 314':'e.g. 123.5';$('wh').placeholder=u==='cm'?'244 = 2.44 m':'96 = 8 ft';
+function setUnit(u){if(u===unit)return;var old=unit;unit=u;var n=u==='cm'?'cm':'in';$('lW').textContent='Wall width ('+n+')';$('lH').textContent='Ceiling height ('+n+')';$('lP').textContent='Panel height ('+n+')';$('ww').placeholder=u==='cm'?'e.g. 314':'e.g. 123.5';$('wh').placeholder=u==='cm'?'244 = 2.44 m':'96 = 8 ft';var c=u==='cm';$('ww').min=c?61:24;$('ww').max=c?1524:600;$('wh').min=c?183:72;$('wh').max=c?610:240;$('ph').min=c?51:20;$('ph').max=c?610:240;
 if(old){var k=u==='cm'?2.54:1/2.54;['ww','wh','ph'].forEach(function(id){var v=parseFloat($(id).value);if(!isNaN(v)){$(id).value=Math.round(v*k*10)/10}})}}
 function viz(W,H,P,n,b,gap,rail,ledge,m,box,full){var S=Math.min(300/W,180/H),w=W*S,h=H*S,x=(360-w)/2,y=24,fl=y+h;
 var s='<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Front view of the wall with the batten layout">';
@@ -71,16 +71,16 @@ s+='<text x="'+(x+w/2)+'" y="16" font-size="11" font-weight="700" text-anchor="m
 if(!full){s+='<line x1="'+(x+w+8)+'" y1="'+top+'" x2="'+(x+w+8)+'" y2="'+fl+'" stroke="#3F5E39" stroke-width="1.5"/><text x="'+(x+w+12)+'" y="'+((top+fl)/2+4)+'" font-size="10" font-weight="700" fill="#3F5E39">'+FT(P)+'</text>'}
 return s+'</svg>'}
 function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];var f=u==='cm'?1/2.54:1;
-var W=W0,tw=num('ww')*f,typed=false;if(tw>=24){if(600>=tw){W=tw;typed=true}}pick('data-w',typed?'':String(W0));
+var W=W0,tw=num('ww')*f,typed=false;if(tw>=24){if(600>=tw){W=tw;typed=true}}if(tw>0){if(!typed){tips.push('That wall width is outside 2 to 50 ft (0.6 to 15 m), so this shows the '+FT(W)+' button instead.')}}pick('data-w',typed?'':String(W0));
 var H=96,th=num('wh')*f;if(th>=72){if(240>=th){H=th}}
 var bk=$('bd').value;if(bk==='a'){bk=st==='grid'?'2':'4'}var b=BW[bk],t=parseFloat($('gp').value),tr=$('tr').value;
-var full=st==='full'||st==='grid';var P=st==='wain'?Math.round(H*0.375):(st==='tall'?Math.round(H*0.625):H);var tp=num('ph')*f;if(tp>=20){P=Math.min(H,tp)}
-var rail=tr==='n'?0:RAIL,ledge=(tr==='rl'?(full?0:LEDGE):0);
-var Lb=P-BASE-rail;if(12>Lb){vv.className='verdict bad';vv.textContent='The panel is too short for battens. Make it taller than about 2 ft (60 cm).';$('k1').textContent='';$('k1e').textContent='';$('k2').textContent='';$('k2e').textContent='';$('k3').textContent='';$('k3e').textContent='';$('vz').innerHTML='';$('tp').innerHTML='';return}
+var full=st==='full'||st==='grid';var P=st==='wain'?Math.round(H*0.375):(st==='tall'?Math.round(H*0.625):H);var tp=num('ph')*f;if(tp>0){P=Math.min(H,tp)}
+var rail=tr==='n'?0:RAIL,ledge=(tr==='rl'?(P>=H?0:LEDGE):0);
+var Lb=P-BASE-rail;if(12>Lb){vv.className='verdict bad';vv.textContent='The panel is too short for battens. Make it at least '+D(12+BASE+rail)+' tall.';$('k1').textContent='';$('k1e').textContent='';$('k2').textContent='';$('k2e').textContent='';$('k3').textContent='';$('k3e').textContent='';$('vz').innerHTML='';$('tp').innerHTML='';return}
 var n=Math.max(2,Math.round((W-b)/(t+b))+1),gap=(W-n*b)/(n-1);if(gap>0){}else{n=2;gap=W-2*b}
 var m=0,box=0,k=1;if(st==='grid'){k=Math.max(1,Math.round((Lb+b)/(gap+b)));m=k-1;box=(Lb-m*b)/k}
 var BLs=u==='cm'?[94.49,118.11,141.73]:[96,120,144],bi=parseInt($('bl').value,10),BL=BLs[bi],bump=false;while(Lb>BL){if(bi===2)break;bi+=1;BL=BLs[bi];bump=true}
-var per=Math.max(1,Math.floor(BL/Lb)),bb=Math.ceil(n/per);var gc=m*(n-1),gb=gc?Math.ceil(gc/Math.max(1,Math.floor(BL/gap))):0;
+var per=Math.max(1,Math.floor(BL/Lb)),bb=Lb>BL?n*Math.ceil(Lb/BL):Math.ceil(n/per);var gc=m*(n-1),gb=gc?Math.ceil(gc/Math.max(1,Math.floor(BL/gap))):0;
 var rb=rail?Math.ceil(W/BL):0,lb=ledge?Math.ceil(W/BL):0;
 function sp(x){return x?x+Math.ceil(x*0.1):0}
 var cnt={};function addc(q,x){cnt[q]=(cnt[q]||0)+x}addc(bk,bb+gb);if(rail){addc('4',rb)}if(ledge){addc('2',lb)}
@@ -89,15 +89,15 @@ var lf=n*Lb+m*(W-n*b)+(rail?W:0)+(ledge?W:0);
 $('k1').textContent=n+' battens';$('k1e').textContent=BN(bk)+', each '+D(Lb)+' long';
 $('k2').textContent=D(gap);$('k2e').textContent='with a batten at each end';
 $('k3').textContent=tot+' boards';$('k3e').textContent=parts.join(' + ')+', '+bl+' long, incl. 10% extra';
-vv.textContent='On '+(FT(W).charAt(0)==='8'?'an ':'a ')+FT(W)+' wide wall, use '+n+' battens ('+BN(bk)+') with '+D(gap)+' gaps, starting and ending with a batten in the corners. Cut each batten '+D(Lb)+' long'+(rail?', to fit between the baseboard and a top rail ('+BN('4')+')'+(full?' at the ceiling.':' at '+FT(P)+' from the floor.'):'.')+(m?' Add '+m+' rows of horizontal rails for boxes about '+D(gap)+' wide and '+D(box)+' tall.':'');
-tips.push('Cut a scrap block exactly '+D(gap)+' wide and use it as a spacer between battens, checking each one with a level.');
+vv.textContent='On '+(/^(8|11|18)\D/.test(FT(W))?'an ':'a ')+FT(W)+' wide wall, use '+n+' battens ('+BN(bk)+') with '+D(gap)+' gaps, starting and ending with a batten in the corners. Cut each batten '+D(Lb)+' long'+(rail?', to fit between the baseboard and a top rail ('+BN('4')+')'+(P>=H?' at the ceiling.':' at '+FT(P)+' from the floor.'):'.')+(m?' Add '+m+' rows of horizontal rails for boxes about '+D(gap)+' wide and '+D(box)+' tall.':'');
+var mk=[];for(var q=1;q!==n-1;q++){mk.push(D(q*(b+gap)))}tips.push('Cut a scrap block exactly '+D(gap)+' wide to check the gaps'+(n>2?', but mark each batten from the left corner so rounding does not add up. Left edge of battens 2 to '+(n-1)+': '+mk.join(', ')+'.':'.')+' Check each batten with a level.');
 if(n>2){tips.push('Want a different look? '+(n-1)+' battens give '+D((W-(n-1)*b)/(n-2))+' gaps; '+(n+1)+' battens give '+D((W-(n+1)*b)/n)+' gaps.')}
-tips.push('Shopping list: '+parts.join(' + ')+' boards, '+bl+' long, about '+(u==='cm'?(lf*0.0254).toFixed(1)+' m':Math.ceil(lf/12)+' linear ft')+' of trim before the 10% extra.'+(bump?' Your battens are longer than the board you picked, so we switched to '+bl+' boards.':'')+(Lb>BL?' Your battens are longer than 12 ft boards, so plan a joint or a horizontal rail.':''));
-if(m){tips.push('Grid: cut '+gc+' short rails, each '+D(gap)+' long, to fit between the battens. Squares of about 24 in (60 cm) or less look best.')}
-tips.push('Fix the battens with 18-gauge brad nails, 1 1/4 in (32 mm) into drywall or 2 in (50 mm) into studs, and construction adhesive. About '+(n*Math.max(3,Math.ceil(Lb/12))+(rail?Math.ceil(W/16):0)+(ledge?Math.ceil(W/16):0)+gc*2)+' nails and '+(Math.ceil(n/7)+(gc?Math.ceil(gc/20):0))+' tube(s) of adhesive (our estimate).');
-tips.push('Plan the gaps so no batten lands on an outlet or switch. If one does, the box needs an extender so it sits flush with the boards.');
+tips.push('Shopping list: '+parts.join(' + ')+' boards, '+bl+' long, about '+(u==='cm'?(lf*0.0254).toFixed(1)+' m':Math.ceil(lf/12)+' linear ft')+' of trim before the 10% extra.'+(Lb>BL?' Your battens are longer than the longest boards ('+bl+'), so each batten needs a joint or a horizontal rail. We counted '+Math.ceil(Lb/BL)+' boards per batten.':(bump?' Your battens are longer than the board you picked, so we switched to '+bl+' boards.':'')));
+if(m){tips.push('Grid: cut '+gc+' short rails, about '+D(gap)+' long, and trim each one to fit between the battens. Squares of about 24 in (60 cm) or less look best.')}
+var ad=Math.ceil(n/7)+(gc?Math.ceil(gc/20):0);tips.push('Fix the battens with construction adhesive and 18-gauge brad nails: 2 in (50 mm) wherever you hit a stud, and 1 1/4 in (32 mm) elsewhere just to hold the batten while the adhesive sets. About '+(n*Math.max(3,Math.ceil(Lb/12))+(rail?Math.ceil(W/16):0)+(ledge?Math.ceil(W/16):0)+gc*2)+' nails and '+ad+(ad>1?' tubes':' tube')+' of adhesive (our estimate).');
+tips.push('Plan the gaps so no batten lands on an outlet or switch. If one does, turn off the power at the breaker first; the box then needs a listed box extender so it sits flush with the wood. If you are not sure, hire an electrician.');
 if(st==='tall'){tips.push('Board and batten usually looks best between half and two-thirds up the wall. You can also line the top up with your windowsills.')}
-if(st==='wain'){tips.push('Classic wainscot covers about a third of the wall, about 32 to 42 in (80 to 105 cm) high.')}
+if(st==='wain'){tips.push('Classic wainscot covers about a third of the wall: about 32 to 42 in (80 to 105 cm) on an 8 ft (2.4 m) ceiling, a little more on taller walls.')}
 tips.push('Caulk every seam, fill the nail holes, then paint two coats. Pre-primed MDF can go straight to paint.');
 if(u==='in'){var a=W*P/144;tips.push('Hiring a pro? At about $7 to $23 per sq ft, this '+Math.round(a)+' sq ft wall would cost about $'+Math.round(a*7/10)*10+' to $'+Math.round(a*23/10)*10+'. DIY materials usually cost far less.')}
 $('vz').innerHTML=viz(W,H,P,n,b,gap,rail,ledge,m,box,full);
