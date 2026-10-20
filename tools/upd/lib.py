@@ -1,6 +1,10 @@
 import helpers as h, json, os
 IMGJ='img.json'
 h.IMG={k:tuple(v) for k,v in (json.load(open(IMGJ)).items() if os.path.exists(IMGJ) else [])}
+def _img(n):
+    i,f,al=h.IMG[n]
+    h.add(f'<!-- wp:image {{"id":{i},"sizeSlug":"large","linkDestination":"none"}} -->\n<figure class="wp-block-image size-large"><img src="{f}" alt="{al}" class="wp-image-{i}"/></figure>\n<!-- /wp:image -->')
+h.img=_img
 def grab(fn):
     h.out.clear(); fn(); r='\n\n'.join(h.out); h.out.clear(); return r
 OPS=[]

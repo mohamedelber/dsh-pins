@@ -36,4 +36,5 @@ a(f'<text x="88" y="696" font-size="19" fill="{T}"><tspan font-weight="700">Aisl
 a(f'<text x="88" y="728" font-size="19" fill="{T}"><tspan font-weight="700">Reach:</tspan> keep everyday food below about 69–76 in; the top shelf (~84 in) is for backups.</text>')
 a(f'<text x="60" y="795" font-size="15" fill="{G}">Aisle and reach figures: dimensions.com. Room widths are our estimates: aisle + shelf depth on each shelved side.</text>')
 a('</svg>')
-open('z.svg','w').write(''.join(s))
+import re
+open('z.svg','w').write(re.sub(r'\d+\.\d{2,}',lambda m:('%.1f'%float(m.group())).rstrip('0').rstrip('.'),''.join(s)))

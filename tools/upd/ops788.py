@@ -1,6 +1,8 @@
 from lib import *
-import helpers as h
-from helpers import p,h2,h3,lst,table,img,diagram,a,ext
+import helpers
+img=lambda n: helpers.img(n)
+
+from helpers import p,h2,h3,lst,table,diagram,a,ext
 P=788
 rep(P,'These numbers come from a professional closet builder interviewed by','These numbers come from Scott Davis of storage maker ClosetMaid, interviewed by')
 rep(P,'18 to 20 inches between shelves for small appliances and big items','18 to 20 inches between shelves for large items such as bags of potatoes')

@@ -1,5 +1,7 @@
 from lib import *
-from helpers import p,h2,h3,lst,table,img,a,ext
+import helpers
+img=lambda n: helpers.img(n)
+from helpers import p,h2,h3,lst,table,a,ext
 P=1286
 WP=ext('https://www.whirlpool.com/blog/washers-and-dryers/laundry-sizing-guide.html','Whirlpool')
 RTA=ext('https://blog.rtacabinetstore.com/cabinets-for-laundry/','RTA Cabinet Store&#8217;s laundry cabinet guide')

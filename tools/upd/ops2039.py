@@ -1,5 +1,7 @@
 from lib import *
-from helpers import p,h2,h3,lst,table,img,a,ext
+import helpers
+img=lambda n: helpers.img(n)
+from helpers import p,h2,h3,lst,table,a,ext
 P=2039
 IH=ext('https://www.idealhome.co.uk/utility-room/utility-room-ideas/small-utility-room-ideas-35169','Ideal Home')
 HB=ext('https://www.heritagebuildgroup.co.uk/post/utility-room-ideas','Heritage Build Group')
