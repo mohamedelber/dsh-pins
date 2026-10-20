@@ -1,0 +1,359 @@
+<!-- wp:paragraph -->
+<p>What size kitchen island do you need? Start with the space around it: keep a 42 in work aisle between the island and your counters (48 in if two people cook) and at least 36 in walkways elsewhere. Most kitchens need about 13 ft of width before an island fits, and the average island is about 40 x 80 in. This free <strong>kitchen island size calculator</strong> finds the biggest island that fits your kitchen in two taps.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pick your kitchen size and where the cabinets are. You get the largest island that keeps safe walkways, how many stools fit and a top view of the layout. Open <em>More options</em> to type your exact measurements, plan for two cooks, switch to bar height or use meters.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div id="dsh-is" class="dsh-calc">
+<style>
+.dsh-calc{--bg:#F7F1E9;--card:#fff;--ink:#342E2A;--mut:#6E645C;--ac:#C85A32;--sg:#8FA689;--sgl:#EEF3EC;--bd:#E6DCCF;--bad:#B3432A;--badl:#FBEAE4;--amb:#8A5A00;--ambl:#FDF3DC;font-family:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:22px;margin:1.5em 0}
+.dsh-calc *{box-sizing:border-box}
+.dsh-calc h3{margin:0 0 4px;font-size:1.25rem}
+.dsh-calc .sub{margin:0 0 16px;color:var(--mut);font-size:.95rem}
+.dsh-calc .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.dsh-calc .seg{display:inline-flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden;background:var(--card)}
+.dsh-calc .seg button{border:0;background:transparent;padding:8px 14px;font:inherit;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .seg button.on{background:var(--sg);color:#fff;font-weight:600}
+.dsh-calc .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:0 0 10px}
+.dsh-calc .opts.hts{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}
+.dsh-calc .opts.hts button{text-align:center;padding:8px 6px}
+.dsh-calc .opts button{background:var(--card);border:2px solid var(--bd);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink)}
+.dsh-calc .opts button b{display:block;font-size:.92rem}
+.dsh-calc .opts button span{font-size:.78rem;color:var(--mut)}
+.dsh-calc .opts button.on{border-color:var(--ac);box-shadow:0 0 0 3px rgba(200,90,50,.12)}
+.dsh-calc fieldset{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:12px 14px 6px;margin:0 0 12px}
+.dsh-calc legend{float:left;width:100%;font-weight:700;font-size:1rem;padding:0;margin:0 0 8px}
+.dsh-calc legend+*{clear:both}
+.dsh-calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.dsh-calc label{display:block;font-size:.82rem;color:var(--mut);margin-bottom:8px}
+.dsh-calc input,.dsh-calc select{display:block;width:100%;margin-top:4px;padding:9px 10px;font:inherit;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--ink)}
+.dsh-calc input[type=checkbox]{display:inline-block;width:auto;margin:0 8px 0 0;vertical-align:middle}
+.dsh-calc .chk{display:flex;align-items:center;font-size:.95rem;color:var(--ink);margin:4px 0 10px}
+.dsh-calc input:focus,.dsh-calc select:focus{outline:2px solid var(--sg);outline-offset:1px}
+.dsh-calc .hint{font-size:.8rem;color:var(--mut);margin:0 0 8px}
+.dsh-calc .res{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-top:6px}
+.dsh-calc .verdict{font-size:1.08rem;font-weight:700;padding:12px 14px;border-radius:10px;margin-bottom:12px;background:var(--sgl);color:#3F5E39}
+.dsh-calc .verdict.amb{background:var(--ambl);color:var(--amb)}
+.dsh-calc .verdict.bad{background:var(--badl);color:var(--bad)}
+.dsh-calc .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:12px}
+.dsh-calc .kpi{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:#FFFDF9}
+.dsh-calc .kpi small{display:block;font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.dsh-calc .kpi strong{display:block;font-size:1.2rem;margin-top:2px}
+.dsh-calc .kpi em{display:block;font-style:normal;font-size:.8rem;color:var(--mut);margin-top:2px}
+.dsh-calc .kpi.main{border-color:var(--ac);background:#FFF7F2}
+.dsh-calc .viz{background:#FBF6EF;border:1px solid var(--bd);border-radius:10px;padding:6px;margin:0 0 12px}
+.dsh-calc .viz svg{display:block;width:100%;height:auto}
+.dsh-calc .tips{margin:8px 0 0;padding-left:20px;font-size:.9rem}
+.dsh-calc .tips li{margin-bottom:4px}
+.dsh-calc .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.dsh-calc .acts button{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink)}
+.dsh-calc .hide{display:none}
+.dsh-calc details.more{border:1px solid var(--bd);border-radius:12px;background:var(--card);padding:10px 14px;margin:0 0 12px}
+.dsh-calc details.more summary{cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ac)}
+.dsh-calc details.more[open] summary{margin-bottom:10px}
+@media print{.dsh-calc .acts{display:none}}
+</style>
+<h3>What size kitchen island fits your kitchen?</h3>
+<p class="sub">Two taps: pick your kitchen size, then where the cabinets are. You get the biggest island that keeps safe walkways, and how many stools fit.</p>
+<fieldset><legend>1. How big is the kitchen?</legend>
+<div class="opts" role="group" aria-label="Kitchen size">
+<button type="button" data-k="12x10"><b>Small</b><span>about 10 x 12 ft</span></button>
+<button type="button" data-k="14x12"><b>Medium</b><span>about 12 x 14 ft</span></button>
+<button type="button" data-k="16x14" class="on"><b>Large</b><span>about 14 x 16 ft</span></button>
+<button type="button" data-k="20x16"><b>Open plan</b><span>about 16 x 20 ft</span></button>
+</div>
+</fieldset>
+<fieldset><legend>2. Where are the cabinets?</legend>
+<div class="opts" role="group" aria-label="Cabinet layout">
+<button type="button" data-c="one"><b>One wall</b><span>open on three sides</span></button>
+<button type="button" data-c="L" class="on"><b>L-shaped</b><span>two walls</span></button>
+<button type="button" data-c="U"><b>U-shaped</b><span>three walls</span></button>
+</div>
+</fieldset>
+<details class="more"><summary>More options: exact size, cooks, seating, meters</summary>
+<div class="grid">
+<label>Units<select id="un"><option value="ft" selected>Feet (US)</option><option value="m">Meters (UK)</option></select></label>
+<label><span id="lL">Kitchen length (ft)</span><input type="number" id="kl" min="5" max="60" step="0.5" placeholder="along the main cabinets"></label>
+<label><span id="lW">Kitchen width (ft)</span><input type="number" id="kw" min="5" max="60" step="0.5" placeholder="cabinets to opposite wall"></label>
+<label>Work aisle<select id="ai"><option value="42" selected>One cook (42 in / 1.07 m)</option><option value="48">Two cooks (48 in / 1.22 m)</option><option value="36">Tight (36 in / 0.9 m)</option></select></label>
+<label>Seating<select id="se"><option value="side" selected>Stools on one long side</option><option value="none">No seating</option></select></label>
+<label>Counter height<select id="ch"><option value="36" selected>Counter, 36 in (15 in knee space)</option><option value="42">Bar, 42 in (12 in knee space)</option></select></label>
+</div>
+<p class="hint">Measure wall to wall. Length runs along your main run of cabinets; width goes from those cabinets to the opposite wall or open side.</p>
+</details>
+<div class="res" aria-live="polite">
+<div id="vv" class="verdict"></div>
+<div class="kpis">
+<div class="kpi main"><small>Biggest island</small><strong id="k1"></strong><em id="k1e"></em></div>
+<div class="kpi"><small>Stools</small><strong id="k2"></strong><em id="k2e"></em></div>
+<div class="kpi"><small>Walkways</small><strong id="k3"></strong><em id="k3e"></em></div>
+</div>
+<div class="viz" id="vz"></div>
+<ul class="tips" id="tp"></ul>
+<div class="acts"><button type="button" id="cp">Copy my island size</button><button type="button" id="pr">Print</button></div>
+</div>
+<script>
+(function(){
+var R=document.getElementById('dsh-is');if(!R)return;
+var ks='16x14',lay='L',summary='',unit='';
+var CD=25;
+function $(i){return document.getElementById(i)}
+function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v}
+function pick(attr,val){R.querySelectorAll('['+attr+']').forEach(function(x){x.classList.toggle('on',x.getAttribute(attr)===val)})}
+function ft(x){var f=Math.floor(x/12),i=Math.round(x-f*12);if(i===12){f+=1;i=0}return f+' ft'+(i?' '+i+' in':'')}
+function sz(x){return unit==='m'?(x*0.0254).toFixed(2)+' m':(x>=48?ft(x):Math.round(x)+' in')}
+function dims(a,b){return unit==='m'?(a*0.0254).toFixed(2)+' x '+(b*0.0254).toFixed(2)+' m':ft(a)+' x '+Math.round(b)+' in'}
+function inch(x){return unit==='m'?(x*0.0254).toFixed(2)+' m':Math.round(x)+' in'}
+function setUnit(u){if(u===unit)return;unit=u;var n=u==='m'?'m':'ft';$('lL').textContent='Kitchen length ('+n+')';$('lW').textContent='Kitchen width ('+n+')'}
+function plan(L,W,t,Li,Di,ix,iy,seats,seat){var S=Math.min(320/L,170/W),w=L*S,h=W*S,x=(360-w)/2,y=14,d=CD*S;
+var s='<svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top view of the kitchen with cabinets, island and walkways">';
+s+='<rect width="360" height="220" fill="#FBF6EF"/><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="#fff" stroke="#342E2A" stroke-width="2"/>';
+function cab(a,b,c,e){s+='<rect x="'+a+'" y="'+b+'" width="'+c+'" height="'+e+'" fill="#CFDDCB" stroke="#8FA689" stroke-width="1.5"/>'}
+cab(x,y,w,d);if(t==='L'||t==='U'){cab(x,y+d,d,h-d)}if(t==='U'){cab(x+w-d,y+d,d,h-d)}
+if(Li>0){s+='<rect x="'+(x+ix*S)+'" y="'+(y+iy*S)+'" width="'+(Li*S)+'" height="'+(Di*S)+'" rx="3" fill="#E9D8BE" stroke="#B98A5E" stroke-width="1.5"/>';
+s+='<text x="'+(x+(ix+Li/2)*S)+'" y="'+(y+(iy+Di/2)*S+4)+'" font-size="11" font-weight="700" text-anchor="middle" fill="#342E2A">island</text>';
+if(seat){for(var k=0;k!==seats;k++){s+='<circle cx="'+(x+(ix+12+24*k+(Li-24*seats)/2)*S)+'" cy="'+(y+(iy+Di+9)*S)+'" r="'+(7*S)+'" fill="#fff" stroke="#B98A5E" stroke-width="1.5"/>'}}}
+s+='<text x="'+(x+w/2)+'" y="'+(y+d/2+4)+'" font-size="10" text-anchor="middle" fill="#3F5E39">cabinets</text>';
+s+='<text x="'+(x+w/2)+'" y="'+(y+h+14)+'" font-size="11" font-weight="700" text-anchor="middle" fill="#C85A32">'+sz(L)+' kitchen</text>';
+return s+'</svg>'}
+function calc(){setUnit($('un').value);var u=unit,vv=$('vv');vv.className='verdict';var tips=[];
+var q=ks.split('x'),L=parseFloat(q[0])*12,W=parseFloat(q[1])*12;var f=u==='m'?39.37:12;
+if(num('kl')){L=num('kl')*f}if(num('kw')){W=num('kw')*f}if(W>L){var t0=L;L=W;W=t0}
+var A=parseFloat($('ai').value),seat=$('se').value==='side',knee=$('ch').value==='42'?12:15;
+var ends=lay==='one'?72:(lay==='L'?A+36+CD:2*(A+CD));
+var Li=Math.min(120,Math.floor((L-ends)/6)*6);
+var back=36,Di=0,hasSeat=false;
+if(seat){var dS=W-CD-A-44;if(dS>=24+knee){Di=Math.min(48,dS);hasSeat=true}}
+if(!hasSeat){Di=Math.min(48,W-CD-A-back)}
+Di=Math.floor(Di/2)*2;
+var fits=Li>=48;if(Di>=24){}else{fits=false}
+var seats=hasSeat?Math.floor(Li/24):0;
+var ix=lay==='one'?(L-Li)/2:(lay==='L'?CD+A+((L-CD-A-36)-Li)/2:(L-Li)/2),iy=CD+A;
+if(fits){
+$('k1').textContent=dims(Li,Di);$('k1e').textContent=(u==='m'?(Li*Di*0.00064516).toFixed(1)+' m2':Math.round(Li*Di/144)+' sq ft')+' of top'+(hasSeat?', incl. '+inch(knee)+' overhang':'');
+$('k2').textContent=seats?seats+(seats===1?' stool':' stools'):'none on the side';$('k2e').textContent=seats?inch(24)+' per stool, on one long side':'not enough depth for knee space';
+$('k3').textContent=inch(A)+' work aisle';$('k3e').textContent=hasSeat?inch(44)+' behind the stools':inch(back)+' walkway behind';
+vv.textContent='The biggest island that fits is about '+dims(Li,Di)+(seats?', with '+seats+(seats===1?' stool':' stools'):'')+'. That keeps a '+inch(A)+' work aisle in front of the cabinets.';
+var ratio=Li*Di/(L*W)*100;tips.push('Your island would cover about '+Math.round(ratio)+'% of the kitchen floor. Designers often aim for about 10%, so '+(ratio>12?'a slightly smaller island may feel roomier.':'this is a balanced size.'));
+if(!hasSeat){if(seat){tips.push('For stools on the side you need about '+inch(24+knee)+' of island depth plus '+inch(44)+' behind the stools. Try one or two stools at the end instead.')}}
+if(Li>=120){tips.push('We cap the length at 10 ft: longer tops often need a seam or a second slab. A longer island also makes people walk further around it.')}
+}else{vv.className='verdict amb';$('k1').textContent='too tight';$('k1e').textContent='for a fixed island with these walkways';$('k2').textContent='0';$('k2e').textContent='';$('k3').textContent=inch(A)+' work aisle';$('k3e').textContent='plus 36 in walkways';
+vv.textContent='A fixed island does not fit with safe walkways in this kitchen. Try a rolling cart, a peninsula or a narrow table instead.';
+tips.push('A rolling cart about 2 x 3 ft can work as a mini island if you can still keep about '+inch(36)+' around it.')}
+tips.push('Allow '+inch(24)+' of counter per stool, and '+inch(knee)+' of knee space under a '+inch(parseFloat($('ch').value))+' high counter.');
+tips.push('Overhangs past about 10 to 12 in usually need brackets or corbels. Check the limit with your countertop maker.');
+$('vz').innerHTML=plan(L,W,lay,fits?Li:0,Di,ix,iy,seats,hasSeat);
+$('tp').innerHTML=tips.map(function(x){return '<li>'+x+'</li>'}).join('');
+summary=fits?'Kitchen island for my '+sz(L)+' x '+sz(W)+' kitchen: about '+dims(Li,Di)+', '+seats+' stools, '+inch(A)+' work aisle. dailyspacehacks.com/kitchen-island-size-calculator/':'My kitchen is too tight for a fixed island; a cart or peninsula works better. dailyspacehacks.com/kitchen-island-size-calculator/'}
+R.querySelectorAll('[data-k]').forEach(function(b){b.addEventListener('click',function(){ks=b.getAttribute('data-k');pick('data-k',ks);$('kl').value='';$('kw').value='';calc()})});
+R.querySelectorAll('[data-c]').forEach(function(b){b.addEventListener('click',function(){lay=b.getAttribute('data-c');pick('data-c',lay);calc()})});
+['un','kl','kw','ai','se','ch'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});
+$('cp').addEventListener('click',function(){var b=$('cp');function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy my island size'},1800)}try{navigator.clipboard.writeText(summary).then(ok,function(){window.prompt('Copy your island size:',summary)})}catch(e){window.prompt('Copy your island size:',summary)}});
+$('pr').addEventListener('click',function(){window.print()});
+calc();
+})();
+</script>
+</div>
+
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Kitchen Island Size Chart</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Kitchen</th><th>Cabinets on one wall</th><th>L-shaped cabinets</th><th>U-shaped cabinets</th></tr></thead><tbody><tr><td>10 x 12 ft</td><td>no island, try a cart</td><td>no island, try a cart</td><td>no island, try a cart</td></tr><tr><td>12 x 14 ft</td><td>8 ft x 40 in, no side seats</td><td>5 ft x 40 in, no side seats</td><td>no island</td></tr><tr><td>14 x 16 ft</td><td>10 ft x 48 in, 5 stools</td><td>7 ft x 48 in, 3 stools</td><td>4 ft 6 in x 48 in, 2 stools</td></tr><tr><td>16 x 20 ft</td><td>10 ft x 48 in, 5 stools</td><td>10 ft x 48 in, 5 stools</td><td>8 ft 6 in x 48 in, 4 stools</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The chart uses a 42 in work aisle, 25 in deep cabinets, 36 in walkways at open ends and 44 in behind the stools. Your own walls, doors and windows may change the result, so use the calculator with your exact measurements.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3066,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/kitchen-island-size-calculator-01-island-with-seating.jpg" alt="Large white oak kitchen island with a quartz top, three woven counter stools, sage green cabinets and glass pendant lights" class="wp-image-3066"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Kitchen Island Clearance: Aisles and Walkways</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<figure class="dsh-diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="ki-t ki-d"><title id="ki-t">Kitchen island clearances</title><desc id="ki-d">Top view of a 16 by 14 foot kitchen with an L-shaped run of cabinets and an island. The work aisle between the cabinets and the island is 42 inches for one cook or 48 inches for two. The island is 48 inches deep including a 15 inch overhang, with stools 24 inches apart on the far side and 44 inches behind the stools so people can walk past. A 36 inch walkway runs around the open end.</desc><rect width="1200" height="900" fill="#F7F1E9"/><text x="60" y="84" font-size="44" font-weight="700" fill="#342E2A">Kitchen Island Clearances</text><text x="60" y="124" font-size="22" fill="#6E645C">The spacing that makes an island work, from the NKBA guidelines</text><text x="1140" y="60" font-size="18" fill="#6E645C" text-anchor="end">dailyspacehacks.com</text><rect x="110" y="170" width="691.2" height="604.80" fill="#FBF8F3" stroke="#342E2A" stroke-width="3"/><rect x="110" y="170" width="691.2" height="90.0" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><rect x="110" y="260.0" width="90.0" height="514.80" fill="#CFDDCB" stroke="#8FA689" stroke-width="2"/><text x="455.6" y="222.0" font-size="18" fill="#3F5E39" text-anchor="middle">cabinets and counter, 25 in deep</text><rect x="351.20" y="411.20" width="302.40" height="172.8" rx="6" fill="#E9D8BE" stroke="#B98A5E" stroke-width="2.5"/><line x1="351.20" y1="530.0" x2="653.6" y2="530.0" stroke="#B98A5E" stroke-width="2" stroke-dasharray="7 6"/><text x="502.40" y="475.8" font-size="19" font-weight="700" fill="#342E2A" text-anchor="middle">island 7 ft x 48 in</text><text x="502.40" y="564.8" font-size="15" fill="#6E645C" text-anchor="middle">15 in overhang</text><circle cx="416.0" cy="616.40" r="28.8" fill="#fff" stroke="#B98A5E" stroke-width="2.5"/><circle cx="502.40" cy="616.40" r="28.8" fill="#fff" stroke="#B98A5E" stroke-width="2.5"/><circle cx="588.8" cy="616.40" r="28.8" fill="#fff" stroke="#B98A5E" stroke-width="2.5"/><text x="358.4" y="674.0" font-size="16" fill="#6E645C">24 in per stool</text><line x1="639.2" y1="260.0" x2="639.2" y2="411.20" stroke="#C85A32" stroke-width="3"/><circle cx="639.2" cy="260.0" r="4" fill="#C85A32"/><circle cx="639.2" cy="411.20" r="4" fill="#C85A32"/><text x="627.2" y="346.4" font-size="18" font-weight="700" fill="#C85A32" text-anchor="end">42 to 48 in work aisle</text><line x1="639.2" y1="584.0" x2="639.2" y2="774.80" stroke="#C85A32" stroke-width="3"/><circle cx="639.2" cy="584.0" r="4" fill="#C85A32"/><circle cx="639.2" cy="774.80" r="4" fill="#C85A32"/><text x="627.2" y="735.2" font-size="18" font-weight="700" fill="#C85A32" text-anchor="end">44 in behind stools</text><line x1="200.0" y1="483.2" x2="351.20" y2="483.2" stroke="#C85A32" stroke-width="3"/><circle cx="200.0" cy="483.2" r="4" fill="#C85A32"/><circle cx="351.20" cy="483.2" r="4" fill="#C85A32"/><text x="275.6" y="473.2" font-size="18" font-weight="700" fill="#C85A32" text-anchor="middle">42 in</text><line x1="653.6" y1="483.2" x2="801.2" y2="483.2" stroke="#C85A32" stroke-width="3"/><circle cx="653.6" cy="483.2" r="4" fill="#C85A32"/><circle cx="801.2" cy="483.2" r="4" fill="#C85A32"/><text x="727.4" y="473.2" font-size="18" font-weight="700" fill="#C85A32" text-anchor="middle">36 in+</text><rect x="841.2" y="190" width="298.79" height="96" rx="14" fill="#fff" stroke="#E6DCCF" stroke-width="2"/><text x="863.2" y="230" font-size="21" font-weight="700" fill="#342E2A">Work aisle</text><text x="863.2" y="262" font-size="17" fill="#C85A32" font-weight="700">42 in for one cook, 48 in for two</text><rect x="841.2" y="302" width="298.79" height="96" rx="14" fill="#fff" stroke="#E6DCCF" stroke-width="2"/><text x="863.2" y="342" font-size="21" font-weight="700" fill="#342E2A">Walkway</text><text x="863.2" y="374" font-size="17" fill="#C85A32" font-weight="700">at least 36 in</text><rect x="841.2" y="414" width="298.79" height="96" rx="14" fill="#fff" stroke="#E6DCCF" stroke-width="2"/><text x="863.2" y="454" font-size="21" font-weight="700" fill="#342E2A">Behind stools</text><text x="863.2" y="486" font-size="17" fill="#C85A32" font-weight="700">44 in to walk past</text><rect x="841.2" y="526" width="298.79" height="96" rx="14" fill="#fff" stroke="#E6DCCF" stroke-width="2"/><text x="863.2" y="566" font-size="21" font-weight="700" fill="#342E2A">Each stool</text><text x="863.2" y="598" font-size="17" fill="#C85A32" font-weight="700">24 in of counter</text><rect x="841.2" y="638" width="298.79" height="96" rx="14" fill="#fff" stroke="#E6DCCF" stroke-width="2"/><text x="863.2" y="678" font-size="21" font-weight="700" fill="#342E2A">Knee space</text><text x="863.2" y="710" font-size="17" fill="#C85A32" font-weight="700">15 in at 36 in high</text><text x="110" y="818.80" font-size="18" fill="#6E645C">Example: a 16 x 14 ft kitchen with L-shaped cabinets. Sizes are minimums; more space feels better.</text></svg><figcaption>Kitchen island clearances: a 42 to 48 in work aisle between the island and the cabinets, 36 in walkways, 24 in of counter per stool, a 15 in overhang for knee space and 44 in behind the stools so people can walk past.</figcaption></figure>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>The National Kitchen &amp; Bath Association (NKBA) says <a href="https://kb.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf" target="_blank" rel="noopener">the width of a work aisle should be at least 42″ (1067 mm) for one cook and at least 48″ (1219 mm) for multiple cooks</a>, and that <a href="https://kb.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf" target="_blank" rel="noopener">the width of a walkway should be at least 36″ (914 mm)</a>. A work aisle is the space in front of the sink, range or fridge; a walkway is where people only pass through.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3069,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/kitchen-island-size-calculator-04-work-aisle.jpg" alt="Wide work aisle between a long kitchen island and the perimeter cabinets with the range, on a light oak floor" class="wp-image-3069"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Minimum Kitchen Island Size</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3067,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/kitchen-island-size-calculator-02-small-island.jpg" alt="Compact white oak kitchen island with two counter stools in a small kitchen with cream cabinets" class="wp-image-3067"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Bob Vila says that <a href="https://www.bobvila.com/articles/kitchen-island-size.md" target="_blank" rel="noopener">at a minimum, your built-in kitchen island size will need to be four feet by two feet</a>, and warns that <a href="https://www.bobvila.com/articles/kitchen-island-size.md" target="_blank" rel="noopener">if your kitchen is less than 13 feet wide, it is unlikely that a built-in island will be possible</a>. Fixr gives a floor-area check: <a href="https://fixr.com/articles/kitchen-island-dimensions" target="_blank" rel="noopener">if your kitchen is at least 150 square feet, you should be able to fit an island</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A 2 x 4 ft island works as an extra prep surface, but it is too narrow for seating. If you want stools on one side, plan on about 36 to 42 in of depth.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Average Kitchen Island Size</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Fixr notes that <a href="https://fixr.com/articles/kitchen-island-dimensions" target="_blank" rel="noopener">the typical kitchen island dimensions are 40 inches wide by 80 inches long</a>, or about 1 x 2 m. Designers also use a simple rule of thumb: Fixr says <a href="https://fixr.com/articles/kitchen-island-dimensions" target="_blank" rel="noopener">most islands look best when they take up around 10% of the total kitchen square footage</a>. This is a style guide, not an NKBA rule, and the calculator shows your percentage so you can judge for yourself.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Island</th><th>Size</th><th>Good for</th></tr></thead><tbody><tr><td>Small</td><td>24 x 48 in (2 x 4 ft)</td><td>extra prep space, no seating</td></tr><tr><td>Medium</td><td>36 x 72 in (3 x 6 ft)</td><td>prep and 2 stools on the end or side</td></tr><tr><td>Average</td><td>40 x 80 in</td><td>prep and 3 stools</td></tr><tr><td>Large</td><td>48 x 96 in (4 x 8 ft) and up</td><td>prep, a sink or cooktop and 4 stools</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Kitchen Island Seating: How Much Space per Stool?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3068,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/kitchen-island-size-calculator-03-island-seating.jpg" alt="Side view of a kitchen island with a stone overhang and four evenly spaced upholstered counter stools with knee room" class="wp-image-3068"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The NKBA recommends a knee space 24 in wide for each seat, and JLC confirms that <a href="https://www.jlconline.com/remodeling/guidlines-for-kitchen-island-functionality" target="_blank" rel="noopener">the NKBA guidelines recommend that each seat be 24 inches wide</a>. How deep the knee space should be depends on the counter height:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Counter height</th><th>Width per seat</th><th>Knee space</th></tr></thead><tbody><tr><td>30 in (table)</td><td>24 in</td><td>18 in</td></tr><tr><td>36 in (counter)</td><td>24 in</td><td>15 in</td></tr><tr><td>42 in (bar)</td><td>24 in</td><td>12 in</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>Behind the stools, NKBA says to <a href="https://kb.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf" target="_blank" rel="noopener">allow 32″ (813 mm) of clearance from the counter/table edge to any wall or other obstruction behind the seating area</a>, at least 36 in for someone to edge past and at least 44 in for someone to walk past. Our calculator uses 44 in so the kitchen still works when the stools are full.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How Much Overhang for Island Seating?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This Old House recommends <a href="https://www.thisoldhouse.com/kitchens/21016275/how-to-size-a-kitchen-island" target="_blank" rel="noopener">a minimum overhang of 15 inches for standard-height counters and a 12-inch overhang for bar-height counters</a>. Overhangs past about 10 to 12 in usually need brackets or corbels; the limit depends on the countertop material and thickness, so check with your countertop maker.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Island With a Sink or Cooktop</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3070,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/kitchen-island-size-calculator-05-sink-island.jpg" alt="Large kitchen island with an undermount sink on the working side and two stools on the other side" class="wp-image-3070"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>An island with a sink or cooktop needs more length and depth. Bob Vila suggests about 7 ft for an island with either one, and <a href="https://www.bobvila.com/articles/kitchen-island-size.md" target="_blank" rel="noopener">at least nine feet long</a> for both. For a cooktop, NKBA says <a href="https://kb.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf" target="_blank" rel="noopener">the countertop should also extend a minimum of 9″ (229 mm) behind the cooking surface</a>, so nobody at the stools sits right next to a hot pan.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Small Kitchen? Try a Cart or a Peninsula</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":3071,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/kitchen-island-size-calculator-06-kitchen-cart.jpg" alt="White oak rolling kitchen cart with a butcher block top used as a small island in a compact kitchen" class="wp-image-3071"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>If the calculator says a fixed island will not fit, a rolling cart about 2 x 3 ft gives you extra prep space and moves out of the way when you need the floor. A peninsula, joined to the end of your counters, needs a walkway on only three sides and often fits where an island does not.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How the Kitchen Island Size Calculator Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Cabinets:</strong> 25 in deep (24 in base cabinets plus the countertop edge), along one, two or three walls.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Work aisle:</strong> 42 in for one cook or 48 in for two in front of every run of cabinets, and 36 in at open ends.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Seating:</strong> stools on one long side when the island can be at least 24 in plus the knee space deep and still leave 44 in behind the stools.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Size:</strong> the biggest island that fits, up to 48 in deep and 10 ft long. The 10 ft cap is our own choice, because longer tops often need a seam.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Rule of thumb:</strong> we show how much of the floor the island covers, compared with the 10% guide.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>These are planning guidelines, not building codes. Check door swings, appliance doors and windows before you build.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Kitchen Island Size in the UK</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>UK designers work in metres but use similar numbers. Wren says that <a href="https://www.wrenkitchens.com/blog/do-you-have-room-for-a-kitchen-island" target="_blank" rel="noopener">generally the rule of thumb is a 1 metre clearance zone</a> around the island, and Homebuilding &amp; Renovating notes that <a href="https://www.homebuilding.co.uk/advice/kitchen-island-sizes" target="_blank" rel="noopener">the practical minimum size for an island is 1m x 1m</a>. For the average, Wren says <a href="https://www.wrenkitchens.com/blog/do-you-have-room-for-a-kitchen-island" target="_blank" rel="noopener">the average size of an island is 1 by 2 metres</a>. UK sources disagree on room width: some say a 4.2 m wide room is enough, others say 4.5 to 5 m. Choose <em>Meters</em> in More options to use the calculator in metric.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="dsh-save" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:#F7F1E9;border:1px solid #E6DCCF;border-radius:16px;padding:24px;margin:2em 0;"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fkitchen-island-size-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fkitchen-island-size-checklist.jpg&description=Kitchen%20island%20size%20cheat%20sheet%3A%20keep%20a%2042%20in%20work%20aisle%20%2848%20in%20for%20two%20cooks%29%2C%20at%20least%2036%20in%20walkways%2C%2024%20in%20of%20counter%20per%20stool%20and%2044%20in%20behind%20the%20stools.%20Most%20kitchens%20need%20about%2013%20ft%20of%20width%20for%20an%20island." target="_blank" rel="noopener" style="flex:0 0 200px;max-width:200px;margin:0 auto;"><img src="https://dailyspacehacks.com/wp-content/uploads/2026/10/kitchen-island-size-checklist.jpg" alt="Kitchen island size cheat sheet" width="200" data-pin-media="https://cdn.jsdelivr.net/gh/mohamedelber/dsh-pins@main/pins-N/kitchen-island-size-checklist.jpg" style="width:200px;height:auto;border-radius:10px;display:block;"></a><div style="flex:1 1 260px;"><p style="font-weight:700;font-size:1.25em;margin:0 0 .4em;">Save the cheat sheet</p><p style="margin:0 0 1em;">Pin the cheat sheet for when you plan your kitchen.</p><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fdailyspacehacks.com%2Fkitchen-island-size-calculator%2F&media=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmohamedelber%2Fdsh-pins%40main%2Fpins-N%2Fkitchen-island-size-checklist.jpg&description=Kitchen%20island%20size%20cheat%20sheet%3A%20keep%20a%2042%20in%20work%20aisle%20%2848%20in%20for%20two%20cooks%29%2C%20at%20least%2036%20in%20walkways%2C%2024%20in%20of%20counter%20per%20stool%20and%2044%20in%20behind%20the%20stools.%20Most%20kitchens%20need%20about%2013%20ft%20of%20width%20for%20an%20island." target="_blank" rel="noopener" style="display:inline-block;background:#E60023;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:999px;white-space:nowrap;line-height:1.2;">Save to Pinterest</a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Kitchen Island Size FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How much space do you need around a kitchen island?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Leave at least 42 in between the island and the counters for one cook, 48 in for two, and at least 36 in anywhere people only walk past. Behind island stools, allow about 44 in so people can walk behind someone sitting down.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What is the minimum kitchen size for an island?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Most guides say a kitchen should be at least about 13 ft wide, or about 150 sq ft, for a built-in island. In a narrower kitchen, a cart or a peninsula usually works better.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How big should a kitchen island be for 4 stools?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Allow 24 in of counter per stool, so 4 stools need an island about 8 ft long. With a 15 in overhang for knee space, plan on about 42 to 48 in of depth.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What is a good size for a kitchen island?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>About 40 x 80 in is the average, and 36 x 72 in suits many medium kitchens. The best size is the biggest one that still leaves 42 to 48 in work aisles and 36 in walkways.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Kitchen and Dining Tools</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lighting the island? Our <a href="https://dailyspacehacks.com/chandelier-size-calculator/">chandelier size calculator</a> shows how many pendants to hang and how far apart. For the dining area, try our <a href="https://dailyspacehacks.com/dining-table-size-calculator/">dining table size calculator</a>, and see our <a href="https://dailyspacehacks.com/kitchen-storage-ideas/">kitchen storage ideas</a> for the cabinets around your island.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"dsh-ai-note","fontSize":"small"} -->
+<p class="dsh-ai-note has-small-font-size"><em>How this guide was made: researched and written with the help of AI tools, fact-checked against trusted sources and published by Mohamed Elber. Images are AI-generated illustrations. See our <a href="https://dailyspacehacks.com/editorial-policy/">Editorial Policy</a>.</em></p>
+<!-- /wp:paragraph -->
