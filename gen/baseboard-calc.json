@@ -1,0 +1,47 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak floors, warm white walls, cream, sage green accents, soft natural daylight. A bright, empty living room corner with freshly painted crisp white baseboards about 5 inches tall running along two walls and meeting neatly in the corner, light oak floor, a sage green armchair and a plant, a window with daylight. The baseboards are the clear focus, clean straight lines and tight joints."
+  },
+  {
+   "name": "02-measure",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak floors, warm white walls, cream, sage green accents, soft natural daylight. Close, low view along a wall: a yellow retractable tape measure lying on a light oak floor stretched along a white wall where new white baseboard will go, a pencil and a small notepad on the floor, a long piece of primed white baseboard trim leaning nearby. Calm DIY scene, tidy."
+  },
+  {
+   "name": "03-corner",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak floors, warm white walls, cream, sage green accents, soft natural daylight. Close-up of an inside corner of a room where two white painted baseboards meet in a tight, clean coped joint, with a matching white quarter round shoe molding at the floor, light oak floor, warm white walls. Sharp detail, realistic trim profile."
+  },
+  {
+   "name": "04-tall-baseboard",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak floors, warm white walls, cream, sage green accents, soft natural daylight. A dining room with a high 10 foot ceiling and tall white baseboards about 7 inches high, a round oak table, linen chairs, a large window. The tall baseboards look in proportion to the high walls."
+  },
+  {
+   "name": "05-stock-lengths",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak floors, warm white walls, cream, sage green accents, soft natural daylight. Several long pieces of primed white MDF baseboard trim, about 8 to 16 feet long, stacked neatly on two sawhorses in a bright, clean garage workshop, a miter saw on a workbench behind them, a box of finishing nails and a caulk tube on the bench."
+  },
+  {
+   "name": "06-door-casing",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak floors, warm white walls, cream, sage green accents, soft natural daylight. A white baseboard running along a warm white wall and stopping neatly against the side casing of an open interior doorway, showing how the baseboard ends at the door trim, light oak floor, a runner rug in the hallway beyond."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Scandinavian modern farmhouse style, realistic proportions, clean and calm, no people, no hands, no text, no labels, no logos, no brand names, high detail. Palette: white oak floors, warm white walls, cream, sage green accents, soft natural daylight. Vertical photo of a calm bright living room wall with crisp white baseboards along the bottom, a light oak floor, a sage green armchair and a floor lamp in the lower half. The top third of the image is a plain, warm white wall area. One clear focal point."
+  }
+ ]
+}
