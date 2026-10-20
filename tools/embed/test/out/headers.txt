@@ -2,3 +2,4 @@
 HTTP/2 200 
 cache-control: public, max-age=31557600
 content-security-policy: upgrade-insecure-requests
+link: <https://dailyspacehacks.com/moving-checklist-printable/>; rel=\"canonical\"
