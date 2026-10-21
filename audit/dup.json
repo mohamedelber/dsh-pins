@@ -1,0 +1,33 @@
+{
+ "rep": [
+  [
+   3,
+   "we do not currently use affiliate links",
+   [
+    "affiliate-disclosure",
+    "disclaimer",
+    "privacy-policy"
+   ]
+  ],
+  [
+   3,
+   "save this guide to pinterest for your next kitchen reset",
+   [
+    "how-to-organize-kitchen-drawers",
+    "kitchen-counter-organization",
+    "spice-cabinet-organization"
+   ]
+  ]
+ ],
+ "pairs": [],
+ "feat": {
+  "Key Takeaways box": 70,
+  "Quick Pick": 59,
+  "Time/Cost/Difficulty line": 70,
+  "Final Thoughts": 70,
+  "FAQ": 88,
+  "Mistakes h2": 69,
+  "N Steps h2": 62,
+  "Quick answer": 70
+ }
+}
