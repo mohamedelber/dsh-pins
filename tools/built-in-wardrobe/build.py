@@ -22,7 +22,7 @@ p("Below are 10 built in wardrobe ideas for UK homes, each with the measurement 
 img(1)
 
 h2("1. Run It Floor to Ceiling, Wall to Wall")
-p(f"Of all the built in wardrobe ideas here, a single run from wall to wall and floor to ceiling gives you the most storage for the floor space it takes, and it looks like part of the room rather than a piece of furniture. Fill the gap at the top with a filler panel so there is no dusty ledge. Keep hinged doors to about 600 mm wide each: FCI London warns that a hinged door {SR('fci','should not be wider than 60cm, or the hinges will be overloaded')}, so a 2 m run usually needs four doors.")
+p(f"Of all the built in wardrobe ideas here, a single run from wall to wall and floor to ceiling usually gives the most storage for the floor space it takes, and it looks like part of the room rather than a piece of furniture. Fill the gap at the top with a filler panel so there is no dusty ledge. Keep hinged doors to about 600 mm wide each: FCI London warns that a hinged door {SR('fci','should not be wider than 60cm, or the hinges will be overloaded')}, so a 2 m run usually needs four doors.")
 
 h2("2. Fit Alcove Wardrobes Either Side of the Chimney Breast")
 img(2)
@@ -40,10 +40,10 @@ p(f"In a box room, every centimetre counts. If you only need shelves for folded 
 
 h2("6. Turn the Eaves Into Wardrobe Space")
 img(4)
-p(f"In a loft conversion, the low wall under the slope is often wasted. Ideal Home quotes Sharps saying that {SR('ih','eaves can be turned into storage spaces')}: low drawers and cupboards fit under the slope, and a tall hanging section goes where the ceiling is highest. Made-to-measure eaves units cost more because every panel is cut to the angle, so get quotes early. For the rest of the loft, see our {a('loft-storage-ideas','loft storage ideas')}.")
+p(f"In a loft conversion, the low wall under the slope is often wasted. Ideal Home quotes Natalie Price of Sharps saying that {SR('ih','eaves can be turned into storage spaces')}. Low drawers and cupboards can fit under the slope, with a tall hanging section where the ceiling is highest. Made-to-measure eaves units can cost more because the panels are cut to the angle, so get quotes early. For the rest of the loft, see our {a('loft-storage-ideas','loft storage ideas')}.")
 
 h2("7. Light the Inside")
-p(f"A deep fitted wardrobe can be dark, especially in an alcove. Real Homes suggests adding LED strip lighting to alcove wardrobes so you can see what you own. A strip under the top shelf or along the side panels, switched by the door, makes dark clothes much easier to find and works well on a timer or a door sensor.")
+p(f"A deep fitted wardrobe can be dark, especially in an alcove. Real Homes notes that built-in wardrobes are often {SR('rh','tucked away in an alcove which means they can be dark')} and suggests strip lights. A battery or plug-in LED strip on a door or motion sensor needs no new wiring; anything wired into the mains should be fitted by a qualified electrician.")
 
 h2("8. Hack IKEA PAX Into a Built-In Look")
 p(f"IKEA PAX frames are a popular base for a budget fitted wardrobe. At the time of writing, a {SR('pax1','100x58x236 cm PAX frame costs £90')}, and the 236 cm frame needs a ceiling of at least 237 cm to stand it up, or 240 cm with sliding doors. A {SR('pax2','50x58x201 cm frame costs £70')} and suits lower ceilings. Doors and interiors are sold separately, and IKEA says the frame must be fixed to the wall. Add filler panels to the walls and ceiling and paint them to match for a built-in finish. If you like making things yourself, our {a('diy-closet-shelves','DIY shelving guide')} covers the basics.")
@@ -51,7 +51,7 @@ p(f"IKEA PAX frames are a popular base for a budget fitted wardrobe. At the time
 h2("9. Plan the Interior: Long Hang, Double Hang and Drawers")
 p("Most built in wardrobe ideas succeed or fail on the interior, so plan it inside out: decide what you hang and fold, then choose the doors. The diagram shows a typical 2 m layout with three bays.")
 diagram(open('z.svg').read(),"Built-in wardrobe interior heights: a long-hanging bay, a double-hanging bay and a drawer and shelf bay, with typical heights in mm.")
-p(f"Allow {SR('ldc','about 1900mm (H) for long hanging space')} and about 950 mm for short hanging, according to The Little Design Corner. FCI London recommends a single rail at about 1,800 mm (up to 1,900 mm), a lower rail at about 900 mm for double hanging, and 350 to 400 mm between shelves. A drawer bank finished at around 900 to 1,100 mm high doubles as a shelf for a watch tray. Keep shelves adjustable so the layout can change with you.")
+p(f"Allow {SR('ldc','about 1900mm (H) for long hanging space')} and about 950 mm for short hanging, according to The Little Design Corner. FCI London recommends a single rail at about 1,800 mm (up to 1,900 mm), a lower rail at about 900 mm for double hanging, and 350 to 400 mm between shelves. The Little Design Corner suggests finishing a drawer bank at around 900 to 1,100 mm high, so you can still see into the top drawer. Keep shelves adjustable so the layout can change with you.")
 img(3)
 p(f"Fold knitwear rather than hanging it, using our guide to {a('how-to-fold-clothes-to-save-space','folding clothes to save space')}, and give small things a home with our {a('belt-storage-ideas','belt storage ideas')} and {a('shoe-storage-ideas','shoe storage ideas')}.")
 
@@ -67,15 +67,15 @@ table(["Option","Typical price","Source"],[
 ["Mid-range fitted, per linear metre","£400 to £800 a metre",SR('mb','MyBuilder, October 2026')],
 ["Fitted with shelves and rails","£1,400 (2 doors), £2,100 (3 doors), £2,800 (4 doors)",SR('mjq','MyJobQuote, October 2026')],
 ["Sliding doors with shelves and rails","about £2,350","MyJobQuote, October 2026"]])
-p("MyJobQuote puts a joiner at about £20 to £25 an hour and says a fitted wardrobe takes between one and nine days to install. Moving sockets or lights inside the wardrobe space adds to the cost, so plan the electrics before the joiner arrives.")
+p("MyJobQuote says a fitted wardrobe takes between one and nine days to install, and a joiner quoted on the site charges about £20 to £25 an hour. If sockets or lights need moving, MyJobQuote says you may need a qualified electrician, so plan the electrics before the joiner arrives.")
 
 h2("Built In Wardrobe FAQ")
 h3("How deep should a built-in wardrobe be?")
 p("Allow at least 600 mm from the wall for a hanging rail. Online Bedrooms recommends 600 mm because the back panel and the doors each take about 18 mm. Sliding doors need more room: Häfele recommends at least 650 mm. Shelves-only wardrobes can be shallower, from about 55 cm.")
 h3("Is it cheaper to build a wardrobe or buy one?")
-p("Building one yourself is usually cheapest. Which? lists DIY flatpack three-door wardrobes from about £500, against about £2,900 for a modular one professionally installed. MyJobQuote says a joiner typically charges £20 to £25 an hour. IKEA PAX frames start at £70, but doors and interiors cost extra.")
+p("Building one yourself is usually cheapest. Which? lists DIY flatpack three-door wardrobes from about £500, against about £2,900 for a modular one professionally installed. A joiner quoted on MyJobQuote charges about £20 to £25 an hour. A 50 cm IKEA PAX frame costs £70, but doors and interiors cost extra.")
 h3("What height should a wardrobe rail be?")
-p("For long dresses and coats, a rail at about 1,800 to 1,900 mm works for most people. For double hanging, FCI London puts the lower rail at about 900 mm, which leaves roughly 1,000 mm for each row of shirts. Keep the top rail within easy reach of the shortest person using it.")
+p("For long dresses and coats, a rail at about 1,800 to 1,900 mm works for most people. For double hanging, FCI London puts the lower rail at about 900 mm, which leaves about 1,000 mm for the top row and about 900 mm for the lower row. Keep the top rail within easy reach of the shortest person using it.")
 h3("How do I measure an alcove for a fitted wardrobe?")
 p("Measure the height in three places and use the tallest, and the width at three heights and use the smallest. Round down to the nearest 50 mm, then take off 100 mm for scribe panels, which are trimmed to fit uneven walls. Ignore skirting boards and coving when you measure.")
 

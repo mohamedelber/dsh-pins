@@ -6,12 +6,12 @@ def Y(mm): return FL-mm*k
 desc=("Front view of an example built-in wardrobe 2,000 mm wide and 2,360 mm high, 600 mm deep, with the doors removed. "
 "Bay A, 800 mm wide, is long hanging with a rail at about 1,900 mm and a storage shelf above. "
 "Bay B, 600 mm wide, is double hanging with an upper rail at about 1,900 mm and a lower rail at about 900 mm. "
-"Bay C, 600 mm wide, has a drawer bank up to about 900 mm and adjustable shelves about 350 mm apart above it. "
+"Bay C, 600 mm wide, has a drawer bank up to about 900 mm and adjustable shelves about 350 to 400 mm apart above it. "
 "Hinged doors should be no wider than about 600 mm each; allow at least 600 mm depth for hanging, or about 650 mm with sliding doors.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="bw-t bw-d"><title id="bw-t">Built-in wardrobe interior heights</title><desc id="bw-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="80" font-size="44" font-weight="700" fill="{T}">Built-In Wardrobe Interior Heights</text>')
-a(f'<text x="60" y="118" font-size="22" fill="{G}">A 2 m wardrobe, doors removed, typical UK sizes in mm</text>')
+a(f'<text x="60" y="118" font-size="22" fill="{G}">A 2 m wardrobe, doors removed, typical sizes in mm</text>')
 a(f'<text x="1140" y="50" font-size="18" fill="{G}" text-anchor="end">dailyspacehacks.com</text>')
 W=2000;H=2360
 # carcass
