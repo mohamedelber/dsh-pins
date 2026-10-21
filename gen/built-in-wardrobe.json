@@ -1,0 +1,41 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no candles, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A bright bedroom with a floor-to-ceiling built-in wardrobe filling one whole wall, seen straight on: five tall cream shaker-panel hinged doors, all closed, each door about 50 cm wide, simple brass knobs, the wardrobe runs wall to wall and meets the ceiling with a neat filler panel, a white oak floor, a low upholstered bench in front, a linen bed partly visible at the edge of the frame, soft morning daylight from a side window."
+  },
+  {
+   "name": "02-alcove",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no candles, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A traditional British bedroom with a white painted chimney breast in the centre and an unlit cast-iron fireplace with an empty grate, nothing in or on the fireplace. On each side of the chimney breast, in the recess, a fitted sage green alcove wardrobe with two tall shaker doors, closed, from floor to ceiling, flush with the front of the chimney breast. Symmetrical front-on view, oak floorboards, a small rug, no candles."
+  },
+  {
+   "name": "03-interior",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no candles, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Close-up view inside an open built-in wardrobe carcass, camera inside the opening so no doors are visible: a left bay with one high chrome hanging rail holding evenly spaced long dresses and coats on wooden hangers; a middle bay with two hanging rails one above the other, shirts on the top rail and trousers folded over hangers on the lower rail, all garments hang freely without touching the floor; a right bay with a stack of three white oak drawers at the bottom and adjustable shelves above holding neatly folded jumpers. Plain white interior panels, warm LED strip light under the top shelf, plain unbranded garments with no prints."
+  },
+  {
+   "name": "04-eaves",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no candles, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. An attic bedroom in a loft conversion with a sloping ceiling and a roof window. Along the low eaves wall under the slope, a row of built-in white low drawers and cupboards fitted into the knee wall, closed, with simple round knobs, following the slope neatly. A neutral double bed in front, oak floor, soft daylight from the roof window, calm and uncluttered."
+  },
+  {
+   "name": "05-sliding",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no candles, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A small British double bedroom with a built-in wardrobe with two wide sliding doors on a top and bottom track, closed: the left door is a full-length mirror panel, the right door is a pale oak panel. The bed sits close to the wardrobe with a narrow walkway between, showing why sliding doors save space. Cream walls, a bedside lamp switched off, soft daylight."
+  },
+  {
+   "name": "06-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no candles, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Vertical photo of a cosy bedroom corner at golden hour: tall built-in wardrobe with cream shaker doors, one door fully open showing a neat hanging rail of plain shirts on wooden hangers and folded jumpers on a shelf, warm evening light from a window, an oak floor, a woven basket at the base. The upper third of the image is calm plain wall space. Exactly one focal point, no candles."
+  }
+ ]
+}
