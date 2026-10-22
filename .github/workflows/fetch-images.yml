@@ -18,7 +18,7 @@ jobs:
             while read -r u; do
               [ -z "$u" ] && continue
               n=$(basename "$u")
-              [ -f "fetch/out/$n" ] || curl -sSfL -A "Mozilla/5.0" -o "fetch/out/$n" "$u" || echo "fail $u"
+              [ -f "fetch/out/$n" ] || curl -sSfL --max-time 40 --retry 2 -A "Mozilla/5.0" -o "fetch/out/$n" "$u" || echo "fail $u"
             done < "$f"
           done
       - name: Commit
