@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scout/probe.py
+      - run: python3 scout/dl.py
       - run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add scout/out scout/site || true
+          git add scout/out scout/site scout/real || true
           git diff --cached --quiet || git commit -m "Scout results"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
