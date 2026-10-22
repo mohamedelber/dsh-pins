@@ -1,0 +1,35 @@
+{
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Australian home, light and airy coastal Scandinavian style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, high detail. Palette: white, light oak, soft sage green, warm daylight. A small single-wall Australian laundry room about 1.6 metres wide, seen straight on at eye level: on the left a white front-loading washing machine with a round glass porthole door standing on the floor, with a white tumble dryer stacked directly on top of it on a stacking frame, the dryer has a plain solid white square-ish door with no glass window, so the two machines look clearly different; to the right a stainless steel laundry tub set into a slim white cabinet with a chrome mixer tap over the tub; a light oak open shelf above the tub with two woven baskets and folded towels; white wall tiles behind the tub, light grey floor tiles."
+  },
+  {
+   "name": "02-side-by-side",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Australian home, light and airy coastal Scandinavian style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, high detail. Palette: white, light oak, soft sage green, warm daylight. A wider Australian laundry: a white front-loading washing machine with a round glass porthole door and a white tumble dryer with a plain solid door and no glass window sit side by side on the floor under one continuous light oak benchtop with a small gap above the machines; at the right end of the same benchtop a square stainless steel tub is set flush into the benchtop over a white cupboard, with a chrome gooseneck tap over the tub; nothing sits above the machines except plain white overhead cupboards high on the wall."
+  },
+  {
+   "name": "03-galley",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Australian home, light and airy coastal Scandinavian style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, high detail. Palette: white, light oak, soft sage green, warm daylight. A narrow galley laundry seen from the doorway: on the left wall a white front-loading washing machine with a round porthole door under a white benchtop with a stainless tub at the far end and white overhead cupboards; on the right wall shallow open light oak shelves holding folded towels and woven baskets; a clear walkway down the middle with light grey floor tiles; a small window at the far end."
+  },
+  {
+   "name": "04-bathroom",
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, real estate photo, Australian home, light and airy coastal Scandinavian style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, high detail. Palette: white, light oak, soft sage green, warm daylight. A small modern Australian bathroom with a laundry: a white front-loading washing machine with a round porthole door tucked under a white stone benchtop at one end of the vanity, and next to it a separate small stainless steel laundry tub set into the benchtop with its own chrome tap over the tub, white subway tiles, a round mirror, soft daylight, tidy and simple, no shower spray or water on the floor."
+  },
+  {
+   "name": "05-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, Australian home, light and airy coastal Scandinavian style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, high detail. Palette: white, light oak, soft sage green, warm daylight. Vertical photo of a calm small laundry at golden hour: a white front-loading washing machine with a round porthole door under a light oak benchtop, a woven basket of folded white towels on the benchtop, a stainless tub set into the benchtop at the side, a sage green wall, warm evening light from a window. The upper third of the image is calm plain wall space. One focal point, no candles."
+  }
+ ]
+}
