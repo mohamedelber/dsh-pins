@@ -1,0 +1,1 @@
+Real-photo test pins (Oct 22, 2026). All photos are free Unsplash photos (Unsplash License, commercial use allowed, no attribution required), uploaded Nov 2025 or later. Full list with photographers: scout/unsplash-recent.md
