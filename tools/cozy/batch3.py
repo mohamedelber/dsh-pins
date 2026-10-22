@@ -30,8 +30,8 @@ k=F+'walkin-0'
 mk('walk-in-cozy48','18','Small','Walk-In Closet','Ideas',"make every\ninch count",k+'1-small-walk-in-closet.jpg',cr(k+'3-double-hanging-rods.jpg',(0.2,0,0.8,1),'wk-mid.png'),
  [(k+'2-narrow-walk-in-closet.jpg','Narrow layout'),(k+'3-double-hanging-rods.jpg','Double rods'),(k+'4-corner-shelves.jpg','Corner shelves'),(k+'5-shoe-storage.jpg','Shoe shelves'),(k+'6-accessory-drawer.jpg','Accessory drawer'),(after(k+'7-before-after.jpg','wk-after.png'),'Neat and calm')],113)
 t=F+'over-toilet-0'
-mk('over-toilet-cozy48','18','Over the Toilet','Storage','Ideas',"for small\nbathrooms",F+'a-slim-white-over-the-toilet-storage-cabinet-wit-1.jpg',cr(t+'5-ladder-shelf.jpg',(0.2,0,0.8,1),'ot-mid.png'),
- [(t+'2-etagere.jpg','Etagere'),(t+'3-wall-cabinet.jpg','Wall cabinet'),(t+'4-floating-shelves.jpg','Floating shelves'),(t+'5-ladder-shelf.jpg','Ladder shelf'),(F+'a-slim-white-over-the-toilet-storage-cabinet-wit-1.jpg','Slim cabinet'),(after(t+'6-before-after.jpg','ot-after.png'),'Clear counter')],127)
+mk('over-toilet-cozy48','18','Over the','Toilet Storage','Ideas',"for small\nbathrooms",F+'a-slim-white-over-the-toilet-storage-cabinet-wit-1.jpg',cr(t+'5-ladder-shelf.jpg',(0.2,0,0.8,1),'ot-mid.png'),
+ [(t+'2-etagere.jpg','Etagere'),(t+'3-wall-cabinet.jpg','Wall cabinet'),(t+'4-floating-shelves.jpg','Floating shelves'),(t+'5-ladder-shelf.jpg','Ladder shelf'),(F+'a-slim-white-over-the-toilet-storage-cabinet-wit-1.jpg','Slim cabinet'),(after(t+'6-before-after.jpg','ot-after.png'),'Calm and tidy')],127)
 s='src/purse/purse-storage-0'
 mk('purse-cozy48','18','Purse','Storage','Ideas',"keep every bag\nin shape",s+'1-handbag-shelves-dividers.jpg',cr(s+'7-entryway-everyday-bag.jpg',(0.2,0,0.8,1),'pu-mid.png'),
  [(s+'6-clear-handbag-boxes.jpg','Clear boxes'),(s+'7-entryway-everyday-bag.jpg','Everyday bag hook'),(s+'2-acrylic-shelf-dividers.jpg','Acrylic dividers'),(s+'5-clutches-in-drawer.jpg','Clutch drawer'),(s+'3-hanging-purse-organizer.jpg','Hanging organizer'),(after(s+'8-before-after.jpg','pu-after.png'),'Tidy shelf')],131)
@@ -46,7 +46,7 @@ mk('christmas-storage-cozy48','18','Christmas','Decoration','Storage',"ornaments
  [(y+'5-wreath-closet.jpg','Wreath storage'),(y+'4-string-lights-basket.jpg','Tangle-free lights'),(y+'2-ornament-box-dividers.jpg','Ornament dividers'),(y+'6-tree-storage-bag.jpg','Tree bag'),(y+'1-labeled-bins-shelves.jpg','Labeled bins'),(after(y+'8-before-after.jpg','cs-after.png'),'Tidy shelf')],149)
 m='src/christmas-mantel/christmas-mantel-0'
 mk('christmas-mantel-cozy48','16','Christmas','Mantel','Ideas',"simple, cozy\nand natural",m+'7-natural-tones.jpg',cr('src/christmas-mantel/pin-christmas-mantel-night-glow.jpg',(0,0.3,1,1),'cm-mid.png'),
- [(m+'3-mirror-wreath.jpg','Mirror and wreath'),(m+'6-knit-stockings.jpg','Knit stockings'),(m+'4-mini-trees.jpg','Mini trees'),(m+'2-houses-oranges.jpg','Dried oranges'),(m+'5-faux-mantel-shelf.jpg','No-fireplace shelf'),(after(m+'8-before-after.jpg','cm-after.png'),'Finished mantel')],151)
+ [(cr(m+'3-mirror-wreath.jpg',(0,0,1,0.52),'cm-mw.png'),'Mirror and wreath'),(m+'6-knit-stockings.jpg','Knit stockings'),(m+'4-mini-trees.jpg','Mini trees'),(cr(m+'2-houses-oranges.jpg',(0.3,0.25,1,1),'cm-or.png'),'Dried oranges'),(m+'5-faux-mantel-shelf.jpg','No-fireplace shelf'),(after(m+'8-before-after.jpg','cm-after.png'),'Finished mantel')],151)
 g='src/gift-wrap/gift-wrap-storage-ideas-0'
 mk('gift-wrap-cozy48','16','Gift Wrap','Storage','Ideas',"ready for\nthe holidays",g+'1-gift-wrap-station.jpg',cr(g+'5-rolling-cart.jpg',(0.2,0,0.8,1),'gw-mid.png'),
  [(g+'2-under-bed-box.jpg','Under-bed box'),(g+'3-gift-bags-filed.jpg','Gift bags filed'),(g+'4-ribbon-drawer.jpg','Ribbon drawer'),(g+'5-rolling-cart.jpg','Rolling cart'),(g+'1-gift-wrap-station.jpg','Wrap station'),(after(g+'6-before-after.jpg','gw-after.png'),'Tidy closet')],157)
