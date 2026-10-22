@@ -54,7 +54,7 @@ def card(x,y,w,title,lines):
     a(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/><text x="{x+18}" y="{y+28}" font-size="17" font-weight="700" fill="{T}">{title}</text>')
     for i,l in enumerate(lines): a(f'<text x="{x+18}" y="{y+52+i*22}" font-size="14" fill="{G}">{l}</text>')
 card(60,680,520,'Typical sizes used',['Front loader and dryer: about 600 mm wide','Space for a machine: allow about 625 mm','45 L tub cabinet: about 499 mm wide','Slim tubs: 300–310 mm wide'])
-card(620,680,520,'Before you build',['Every laundry needs a tub and washer space','Vented dryers must be ducted outside','Floor and wall behind taps: water resistant','Plumbing and power: licensed trades only'])
+card(620,680,520,'Before you build',['New houses need a tub and washer space','Vented dryers must be ducted outside','Floor and wall behind taps: water resistant','Plumbing and power: licensed trades only'])
 a(f'<text x="60" y="880" font-size="13" fill="{G}">Planning guide from typical appliance sizes (Fisher &amp; Paykel, Haier, Clark) and NCC Housing Provisions; not building rules. Measure your own machines.</text>')
 a('</svg>')
 import re
