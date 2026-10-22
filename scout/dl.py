@@ -11,3 +11,4 @@ for u in open('scout/urls.txt'):
         r=urllib.request.urlopen(urllib.request.Request('https://images.unsplash.com/'+m.group(1)+'?w=1600&q=85&fm=jpg',headers={'User-Agent':'Mozilla/5.0'}),timeout=40)
         open(p,'wb').write(r.read()); print('ok',p)
     except Exception as e: print('fail',u,e)
+# run 1792679120
