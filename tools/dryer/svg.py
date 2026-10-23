@@ -37,7 +37,7 @@ for i in range(6): l(X+300,Y+110+i*14,X+330,Y+110+i*14,SG,3)
 t(X+300,Y+100,'vents',14,SG,'bold')
 o.append(f'<path d="M{X+240} {Y+290} C{X+300} {Y+300},{X+300} {Y+250},{X+330} {Y+250}" fill="none" stroke="{A}" stroke-width="3"/>')
 t(X+340,Y+246,'drain hose to waste',15,A,'bold'); t(X+340,Y+266,'(no tank to empty)',13,G)
-t(X+350,Y+150,'Airflow in and out',15,T); t(X+350,Y+170,'Room 5–35°C for most',15,T); t(X+350,Y+190,'Not behind a',15,T); t(X+350,Y+210,'lockable door',15,T)
+t(X+350,Y+150,'Airflow in and out',15,T); t(X+350,Y+170,'Room temp: see manual',15,T); t(X+350,Y+190,'Not behind a',15,T); t(X+350,Y+210,'lockable door',15,T)
 # D vented
 X,Y=620,490; panel(X,Y,'D. Vented dryer','Needs an outside wall or window')
 r(X+440,Y+80,40,250,'#E9DFD3',G,2); t(X+460,Y+76,'OUTSIDE',13,G,'bold','middle'); t(X+460,Y+92,'WALL',13,G,'bold','middle')
