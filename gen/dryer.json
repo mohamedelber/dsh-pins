@@ -1,0 +1,47 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{
+"name": "01-hero",
+"size": "1536x1024",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no buttons with symbols, plain unbranded white appliances, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A small British utility room: a white oak worktop runs along one wall; under the worktop on the left stands a plain white front-loading washing machine with a round glass door; on the right, clearly different, stands a plain white tumble dryer with a solid white round door with no glass window and a slim water container drawer at the top left of its front panel. Sage green shaker cupboards above, a folded stack of cream towels and a woven basket on the worktop, a small window with daylight. Nothing on top of the appliances except the worktop."
+},
+{
+"name": "02-stacked",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no buttons with symbols, plain unbranded white appliances, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A tall built-in alcove in a British hallway with the cupboard doors removed out of frame: a plain white front-loading washing machine with a round glass door on the floor, and a plain white tumble dryer with a solid white door and no glass stacked directly on top of it on a simple white stacking frame. A clear gap of air around the sides and above the dryer, a wall shelf high above with two woven baskets. Sage green painted walls, oak floor."
+},
+{
+"name": "03-filter",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no buttons with symbols, plain unbranded white appliances, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Close-up of the open round door of a plain white tumble dryer: the fine mesh fluff filter has been pulled up out of the door rim and is held flat on the open door, covered in a thin even layer of grey lint fluff. Neat laundry room in the background, soft daylight. No hands, no people."
+},
+{
+"name": "04-tank",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no buttons with symbols, plain unbranded white appliances, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Close-up of the top left of the front of a plain white tumble dryer: a slim white plastic water container drawer is pulled out halfway from the top left of the front panel, showing it is a removable water tank, a little clear water visible through its side. Wooden worktop above, cream wall. No people, no text."
+},
+{
+"name": "05-vented",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no buttons with symbols, plain unbranded white appliances, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A plain white vented tumble dryer standing on a tiled floor in a British utility room next to an outside wall, a white flexible vent hose leads from the back of the dryer to a round white plastic wall vent cover set into the outside wall at low level. Solid white dryer door, no glass. Simple and realistic, cream walls, a sage green cupboard beside it."
+},
+{
+"name": "06-folded",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no buttons with symbols, plain unbranded white appliances, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A white oak worktop in a calm utility room with neatly folded warm towels and cream bedding in two neat piles and a woven laundry basket, a plain white tumble dryer with a solid door partly visible below the worktop. Soft afternoon daylight, sage green wall."
+},
+{
+"name": "07-pin",
+"size": "1024x1536",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, British home, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, no buttons with symbols, plain unbranded white appliances, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Vertical photo of a cosy British utility room in warm evening light: a plain white tumble dryer with a solid round white door and no glass sits under a white oak worktop beside a sage green cupboard, a woven basket of folded cream towels on the worktop, a warm wall light. Calm empty wall space in the top third of the image. No candles, no fire, no text."
+}
+]
+}
