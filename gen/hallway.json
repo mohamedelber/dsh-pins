@@ -1,0 +1,47 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{
+"name": "01-hero",
+"size": "1536x1024",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A narrow British terraced house entrance hallway, about one metre wide, seen from just inside the front door looking down the hall towards a staircase at the back. Along the left wall: a very slim white oak shoe cabinet only knee height and very shallow, with closed flat fronts, a small ceramic dish on top, above it a round mirror with a thin oak frame, and further along a wall-mounted white oak peg rail at shoulder height holding two plain wool coats and one canvas bag. The right wall is plain warm white with a framed botanical print. Patterned encaustic-style floor tiles in cream and terracotta with a natural jute runner. The walkway is completely clear. Soft daylight from a glazed panel above the door."
+},
+{
+"name": "02-pegrail",
+"size": "1024x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A sage green painted wall in a small hallway with a long white oak Shaker peg rail screwed to the wall at shoulder height. Hanging from separate pegs, one item per peg: a plain camel wool coat, a plain navy raincoat, a canvas tote bag, a child's small plain backpack hung from a lower second peg rail at child height. Below, a low white oak bench with two woven seagrass baskets underneath it on the floor. Every item hangs clearly from its own peg. Straight-on view."
+},
+{
+"name": "03-bench",
+"size": "1024x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A white oak hallway storage bench against a warm white wall, seat height at knee level with a thin cream linen cushion on top. Under the seat are three open cubby compartments: two hold pairs of plain leather ankle boots and plain trainers standing upright on the shelf, one holds a woven basket. The bench legs stand firmly on a terracotta tiled floor. Above the bench, three simple brass wall hooks with one plain scarf and one plain umbrella hanging. Straight-on view."
+},
+{
+"name": "04-understairs",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A painted white staircase in a British hallway, seen from the side. The triangular space under the stairs is filled with built-in sage green painted pull-out drawers of different heights that follow the slope of the stairs: tall drawers at the high end, short drawers at the low end, all fully closed, each with one small brass knob, all fronts flush and perfectly fitted to the angled stair stringer. White oak stair treads, a plain runner on the stairs, oak floorboards. Straight-on side view, everything neatly aligned."
+},
+{
+"name": "05-cupboard",
+"size": "1024x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. A tall built-in hallway cupboard fitted into an alcove beside a front door, floor to ceiling, two sage green Shaker style doors, both closed and fitting the opening exactly, simple brass knobs. Next to it a narrow strip of wall with a small oak shelf holding a ceramic key dish and a small plant. Oak floorboards and a cream doormat. Straight-on view."
+},
+{
+"name": "06-before-after",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, a before and after split image of the SAME narrow British terraced hallway photographed from the same angle and same position, divided down the middle by a thin white vertical line. No text, no labels, no logos, no people. Left half BEFORE: a pile of many shoes and trainers scattered on the tiled floor by the door, coats piled over the newel post of the stairs, bags dumped on the floor, cluttered. Right half AFTER: the same hallway tidy, a slim knee-height white oak shoe cabinet with closed fronts against the left wall, a white oak peg rail above it with two coats each on its own peg, clear floor, a jute runner. Same walls, same cream and terracotta floor tiles, same stairs, same daylight in both halves."
+},
+{
+"name": "07-pin",
+"size": "1024x1536",
+"quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents. A cosy narrow British hallway in warm evening light from a small table lamp, no candles, no fireplace. A slim white oak console table against a sage green wall with a ceramic lamp glowing, a key dish and a woven basket underneath; above it a round mirror with a thin oak frame. A white oak peg rail to one side with one plain wool coat. Cream and terracotta patterned floor tiles with a jute runner. The top third of the image is calm plain wall and ceiling with nothing on it. One clear focal point."
+}
+]
+}
