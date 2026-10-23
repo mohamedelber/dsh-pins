@@ -1,0 +1,18 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{
+"name": "04-understairs-v2",
+"size": "1536x1024",
+"quality": "medium",
+"prompt": "Photorealistic interior photography, real estate photo, Scandinavian farmhouse style, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: white oak, cream, sage green, terracotta accents, natural daylight. Side view of a British hallway staircase that is fully enclosed: the side of the staircase is a smooth painted white wall panel with a white oak handrail on top following the slope, so no individual stair treads are visible from this side. Built into the triangular space under the slope is a neat row of five sage green pull-out drawers set side by side, each drawer front a tall narrow rectangle with its top edge cut at the stair angle, tallest drawer at the high end and shortest at the low end, all closed, all flush, each drawer with one small round brass knob. Oak floorboards, plain warm white walls. Straight-on side view, everything neatly aligned."
+},
+{
+"name": "06-before",
+"size": "1536x1024",
+"quality": "medium",
+"edit_from": "gen/out/hallway/01-hero.png",
+"prompt": "Edit this photo: keep exactly the same hallway, same camera angle, same walls, same mirror, same floor tiles, same staircase, same front door and same light. Remove the slim shoe cabinet so that part of the left wall is bare. Make the hallway messy: many shoes, trainers and wellies scattered across the tiled floor and the runner near the door, a schoolbag and a shopping bag dumped on the floor, and several coats piled untidily on the peg rail with some coats slipping off. No people, no text, no logos."
+}
+]
+}
