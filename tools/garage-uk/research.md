@@ -1,0 +1,41 @@
+# Research: Garage Storage Ideas (UK) — verified 24 Oct 2026
+
+| # | Fact | Number | Exact short quote (<15 words) | URL |
+|---|---|---|---|---|
+| 1 | Typical UK single garage (Homebuilding FAQ) | 2.4 m x 4.9 m | "Most single garages in the UK measure around 2.4m wide by 4.9m long" | https://www.homebuilding.co.uk/advice/garage-size |
+| 2 | Single garage range (GarageLux expert in Homebuilding) | 2.5 x 4.8 m to 3.5 x 6 m | "around 2.5m x 4.8m up to approximately 3.5m x 6m" | https://www.homebuilding.co.uk/advice/garage-size |
+| 3 | Double garage range / target width | 5x5 m to 6x6 m; at least 5.5 m wide | "5m x 5m to about 6m x 6m" | https://www.homebuilding.co.uk/advice/garage-size |
+| 4 | Council-recommended minimum internal garage size (Mid Devon report; recommended for planning, not explicitly "counts as parking space") | Single 3 m x 6 m; double 6 m x 6 m; earlier Devon highways min 2.8 x 6 m | Single garage "6 metres long x 3 metres wide" (minimum, between piers) | https://www.middevon.gov.uk/media/179463/garage-widths.pdf |
+| 5 | Standard UK garage door width [UNSURE – 2011 trade blog] | 2,135 mm (7 ft) | "seven feet (2135mm) wide" | https://blog.doorindustryjournal.co.uk/2011/10/size-really-does-matter-uk-garages-are.html |
+| 6 | Average car width growth (RAC Foundation research) | 1.5 m (1965) to 1.8 m (2020); 4.3 m long | "1.8 metres wide and 4.3 metres long" | https://hub.1stcentralinsurance.com/?p=4455 |
+| 7 | Share of garage owners never parking in it (RAC) | 53% | "53% of UK motorists with a garage have never parked" (paraphrase of figure) [UNSURE wording] | https://hub.1stcentralinsurance.com/?p=4455 |
+| 8 | Family car width incl. mirrors; door-opening clearance | ~2 m; 80–100 cm each side | "a Ford Focus measures approximately 2 metres wide, including mirrors" / "80 to 100 cm of clearance on each side" | https://www.homebuilding.co.uk/advice/garage-size |
+| 9 | Petrol at home without notifying PEA (HSE) | Up to 30 L; 30–275 L notify; >275 L licence | "up to 30 litres of petrol at home or at non-workplace premises" | https://www.hse.gov.uk/fireandexplosion/petrol-storage-club-association.htm |
+| 10 | Petrol container size limits (HSE) — NOTE: brief's 10 L metal / 5 L plastic is outdated | Plastic up to 10 L; metal up to 20 L; demountable tank 30 L | "plastic containers storing up to 10 litres" / "metal containers storing up to 20 litres" | https://www.hse.gov.uk/fireandexplosion/petrol-storage-club-association.htm |
+| 11 | Petrol not in living accommodation; store needs ventilation to open air (HSE) | — | "a direct exit to the open air and ventilation to this exit" | https://www.hse.gov.uk/fireandexplosion/petrol-storage-club-association.htm |
+| 12 | Integral garage separation & door (Harrow guidance, from Approved Doc B) | 30-min construction; FD30S self-closing door; door sill 100 mm above floor (or floor falls away) | "FD30S (E30Sa) self-closing fire door fitted with smoke seals" | https://www.harrow.gov.uk/downloads/file/32472/Guidance_Notes_fire_safety_in_dwelling_houses.pdf |
+| 13 | E-bike/e-scooter in garage: fit heat alarm (NFCC) | — | "we recommend heat alarms rather smoke detectors for these areas" | https://nfcc.org.uk/wp-content/uploads/2023/09/NFCC_Guidance_E-bikes_and_Scooters_.pdf |
+| 14 | Don't charge while asleep/away; keep from flammables (NFCC) | — | "Don't leave batteries to charge while you are asleep or away" | https://nfcc.org.uk/wp-content/uploads/2023/09/NFCC_Guidance_E-bikes_and_Scooters_.pdf |
+| 15 | LFB charging advice: alarm where charging, hard flat surface, correct charger | — | "Fit a smoke alarm in the area where you charge your batteries." | https://www.london-fire.gov.uk/safety/e-bikes-and-e-scooters/how-to-charge-e-bikes-and-e-scooters-safely/ |
+| 16 | IKEA BROR shelving unit 85x55x110 cm price; shelf load; must anchor | £80 (was £95); widest/deepest shelves 130 kg, smallest 70 kg [UNSURE which applies] | "must be securely anchored" | https://www.ikea.com/gb/en/p/bror-shelving-unit-black-s39272655/ |
+| 17 | Screwfix Essentials 5-tier plastic unit 1200x400x1850 mm | £49.99; 60 kg/shelf; 300 kg bay | (spec table) 60 kg per shelf, 300 kg max per bay | https://www.screwfix.com/p/essentials-5-tier-plastic-garage-shelving-unit-1200mm-x-400mm-x-1850mm/740VM |
+| 18 | Screwfix Rb Boss Fastlok galv. steel 5-tier 1200x450x1800 mm; wall fixing required | £102.49; 450 kg/shelf; 2,250 kg bay | "must be securely attached to the wall" | https://www.screwfix.com/p/rb-boss-fastlok-udl-galv-5-tier-metal-garage-shelving-unit-1200mm-x-450mm-x-1800mm/773tw |
+| 19 | Overhead rack load ratings; clearance; fix to joists not plasterboard [retailer blog] | 100–250 kg total; 2.1 m min clearance | "Overhead racks must be fixed into the ceiling joists" | https://www.garagepride.co.uk/blog/post/overhead-garage-storage |
+| 20 | Overhead brackets price example (Megamaxx UK, no load stated) [UNSURE] | £26.25 | (price only; no kg rating given) | https://www.indooroutdoors.co.uk/a/s/products/megamaxx-uk-overhead-garage-ceiling-mount-storage-brackets |
+| 21 | Roof trusses not designed for storage loads (MiTek – Australian, AS4440) [UNSURE – non-UK] | — | "designed to support only the weight of roof and ceiling materials" | https://www.mitek.com.au/wp-content/uploads/2021/05/GN-Guideline-203.pdf |
+| 22 | Garage damp is normal; store only damp-tolerant items (Barratt Homes) | — | "only used for things that would be unaffected by wet conditions" | https://www.barratthomes.co.uk/Help--support/Outside-your-home/Your-garage/ |
+| 23 | Condensation fixes: shelving off floor, silica gel in boxes, airing [paint retailer] | 10–15 min airing daily | "Store items off the floor on shelving to improve air circulation." | https://www.specialistpaintsonline.co.uk/blogs/news/garage-condensation-problems-complete-guide-uk-homeowners |
+| 24 | Paint: store frost-free, above 5 °C; garage/shed not advised | 5–20 °C ideal; freezes ~0 °C | "somewhere dry, frost-free and temperature-stable, ideally between 5 and 20°C" | https://www.homebuilding.co.uk/paint/does-paint-freeze |
+| 25 | Paint: avoid garage below 0 °C; seal lids; insulate tins (Community RePaint) | 0 °C | "avoid storing paint in places, such as your shed or garage" | https://communityrepaint.org.uk/news_and_stories/how-should-i-store-my-leftover-paint/ |
+| 26 | Chemicals: original containers, high up, padlock garage (nidirect – NI gov; RoSPA not found) | — | "Keep all chemicals in their original, labelled containers." | https://nidirect.gov.uk/articles/keeping-children-safe-poisonous-substances |
+| 27 | Police: use ground anchor for bikes in garage (Avon & Somerset Police) | — | "Use a ground anchor to stop motorcycles or bicycles from being easily removed." | https://www.avonandsomerset.police.uk/crime-prevention-advice/home-protection/garage-or-shed-security/ |
+| 28 | Ground anchor example price (Kryptonite Stronghold, Sold Secure Gold) [UNSURE rating – page inconsistent] | £81 | (spec) "Sold Secure Gold" | https://www.sigmasports.com/item/Kryptonite/Stronghold-Ground-Anchor-for-Bikes-Sold-Secure-Gold/1B79 |
+| 29 | Vertical bike rack space; e-bike rack rating [retailer blog] | ~30 cm wall width per bike; e-bikes 20–30 kg, rack ≥40 kg | "takes about 30cm of wall width per bike" | https://www.garagepride.co.uk/blog/post/garage-bike-rack |
+| 30 | Cost to fit shelves (tradesperson answers, MyJobQuote) [UNSURE – anecdotal] | £20/item to £50–£75; day rate ~£100–£300 | "£50 - £75 depends on how much work is on." | https://www.myjobquote.co.uk/questions/how-much-does-it-cost-to-put-up-shelves |
+| 31 | Typical load ranges by system [retailer blog] | Shelving 150–800 kg/shelf; slatwall 40–50 kg/m²; overhead ~113 kg | "a properly stud-fixed panel holds around 40-50kg per square metre" | https://uk.garadry.com/blogs/news/garage-storage-systems-uk-guide |
+
+## Gaps / not verified
+- LABC/Planning Portal "3 x 6 m counts as parking space": not found; Mid Devon report recommends 3 x 6 m minimum only.
+- "2.4 x 4.8 m older single": closest verified = Homebuilding 2.4 x 4.9 m (typical) and 2.5 x 4.8 m (low end).
+- RoSPA chemicals page, Checkatrade/MyBuilder garage storage costs, Which?/EST damp advice, UK-specific truss warning (TRA/LABC), B&Q load ratings: not found/verified.
+- promain.co.uk paint page blocked (permission timeout).
