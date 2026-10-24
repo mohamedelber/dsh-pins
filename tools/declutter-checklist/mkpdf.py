@@ -43,7 +43,7 @@ def box(c,x,y,w,title,items):
         yy-=len(l)*12.4+7
     return h
 def legend(c,x,y,w):
-    items=[("Donate","charity shop, shelter or a friend"),("Recycle","curbside or a drop-off point"),("Trash","regular garbage"),("Take-back","pharmacy kiosk or take-back site"),("Hazardous","hazardous waste or battery drop-off"),("Shred","shred, then recycle the paper"),("Keep","file it safely"),("Replace","swap for a new one")]
+    items=[("Donate","thrift store, shelter or a friend"),("Recycle","curbside or a drop-off point"),("Trash","regular garbage"),("Take-back","pharmacy, store or e-waste site"),("Hazardous","hazardous waste or battery drop-off"),("Shred","shred, then recycle the paper"),("Keep","file it safely"),("Replace","swap for a new one")]
     h=30+len(items)*15+6
     c.setStrokeColor(BD); c.setFillColor(HexColor('#FFFDF9')); c.roundRect(x,y-h,w,h,8,stroke=1,fill=1)
     c.setFillColor(HexColor('#FBEFE6')); c.roundRect(x,y-26,w,26,8,stroke=0,fill=1); c.rect(x,y-26,w,10,stroke=0,fill=1)
