@@ -36,7 +36,7 @@ p(f"Work in the reverse order you put it up. King of Christmas says to remove ea
 
 h2("Step 4: Fold the Branches Up and Tie Each Section")
 img(2)
-p(f"Branches fold up toward the pole, the way the tree arrived. Balsam Hill's method is to compress each section's foliage with both hands while it is still on the tree, then lift it off and {SR('bh','tie a ribbon or cord around the section')} so it stays compact. Don't overdo it. Treetime warns that {SR('tt','over-compressing branches')} makes next year's shaping harder. On a pre-lit tree, Balsam Hill says to {SR('bh','take extra care when compressing the branches')} so the bulbs don't get damaged. On a pre-lit tree, Public Storage advises: {SR('ps','avoid wrapping cords tightly around branches')}. If your lights are separate strings, take them off and wind them loosely around a piece of cardboard.")
+p(f"Branches fold up toward the pole, the way the tree arrived. Balsam Hill's method is to compress each section's foliage with both hands while it is still on the tree, then lift it off and {SR('bh','tie a ribbon or cord around the section')} so it stays compact. Don't overdo it. Treetime warns that {SR('tt','over-compressing branches')} makes next year's shaping harder. On a pre-lit tree, Balsam Hill says to {SR('bh','take extra care when compressing the branches')} so the bulbs don't get damaged. Public Storage also advises: {SR('ps','avoid wrapping cords tightly around branches')}. If your lights are separate strings, take them off and wind them loosely around a piece of cardboard.")
 
 h2("Step 5: Pack It in a Bag, Not the Old Box")
 p(f"The cardboard box the tree came in is often hard to close again, and Balsam Hill says such boxes are {SR('bh2','bound to deteriorate over time')}. Balsam Hill says storage bags {SR('bh','offer superior protection against heat, humidity, and damage from pests')}, and a bag with wheels is easier to move. Before you buy, check the bag against your tree and your closet:")
@@ -44,7 +44,7 @@ lst([f"<strong>Rolling duffel bags</strong> hold a tree taken apart. A Home Depo
 f"<strong>Upright bags</strong> zip over the tree while it is still assembled, but they are big: a TreeKeeper bag for trees up to 7.5 feet measures {SR('hd2','H 89 in, W 50 in, D 30 in')}.",
 "<strong>Big trees</strong> can go in two bags. Balsam Hill suggests putting the odd-numbered sections in one and the even-numbered sections in the other."])
 diagram(open('z.svg').read(),"A duffel bag on end needs the least floor space; an upright bag keeps the tree assembled but needs about 89 inches of height.")
-p(f"Put the largest section in first, as King of Christmas suggests, and don't force the zipper. Balsam Hill's CEO told Scripps News: {SR('scr','don\'t smash it in so tight that it puts stress on the wires')}. Keep the stand and its bolt in a separate small bag so the metal doesn't crush the branches.")
+p(f"Put the largest section in first, as King of Christmas suggests, and don't force the zipper. Harman told Scripps News: {SR('scr','don\'t smash it in so tight that it puts stress on the wires')}. Keep the stand and its bolt in a separate small bag so the metal doesn't crush the branches.")
 
 h2("Step 6: Choose a Cool, Dry Spot")
 img(3)
