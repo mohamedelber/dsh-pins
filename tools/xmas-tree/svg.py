@@ -7,7 +7,7 @@ desc=("Side view, to scale, of three ways to store a 7.5 foot artificial tree in
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="xt-t xt-d"><title id="xt-t">Will your Christmas tree bag fit the closet?</title><desc id="xt-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="80" font-size="42" font-weight="700" fill="{T}">Will the Tree Bag Fit Your Closet?</text>')
-a(f'<text x="60" y="116" font-size="21" fill="{G}">A 7.5 ft tree, three ways, drawn to scale against an 8 ft ceiling</text>')
+a(f'<text x="60" y="116" font-size="21" fill="{G}">Bag sizes for a 7.5 ft tree, drawn to scale against an 8 ft ceiling</text>')
 a(f'<text x="1140" y="30" font-size="18" fill="{G}" text-anchor="end">dailyspacehacks.com</text>')
 k=5.2; floor=700; ceil=floor-96*k
 a(f'<rect x="60" y="{ceil-6:.0f}" width="1080" height="6" fill="{BR}"/>')
@@ -33,7 +33,7 @@ a(f'<line x1="{800+50*k+14:.0f}" y1="{floor}" x2="{800+50*k+14:.0f}" y2="{floor-
 a(f'<text x="{800+50*k+20:.0f}" y="{floor-45*k:.0f}" font-size="16" font-weight="700" fill="{A}" transform="rotate(-90 {800+50*k+28:.0f} {floor-45*k:.0f})">89 in</text>')
 # sections box
 a(f'<rect x="90" y="250" width="330" height="150" rx="14" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
-a(f'<text x="110" y="284" font-size="18" font-weight="700" fill="{T}">Sections by tree height</text>')
+a(f'<text x="110" y="284" font-size="18" font-weight="700" fill="{T}">Typical sections by tree height</text>')
 for j,t in enumerate(("5 ft and under: 2 sections","6 to 8 ft: 3 sections","9 ft and up: 4 to 5 sections")):
     a(f'<text x="110" y="{318+j*28}" font-size="16" fill="{T}">{t}</text>')
 a(f'<text x="60" y="820" font-size="14" fill="{G}">Bag sizes from Home Depot listings (Simple Living Solutions rolling bag; TreeKeeper upright bag with rolling stand). Sections: Treetime.</text>')
