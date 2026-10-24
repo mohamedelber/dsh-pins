@@ -6,7 +6,7 @@ CAR_W,CAR_L=2000,4300
 door=800
 left=GW-CAR_W
 desc=(f"Top-down plan of a typical UK single garage, about 2.4 m wide by 4.9 m long, with a family car about 2 m wide including mirrors and 4.3 m long parked inside. "
-f"That leaves only about {left} mm of width in total, far less than the 800 to 1000 mm needed on each side to open the doors, so a car and side shelving rarely fit together in an older single garage. "
+f"That leaves only about {left} mm of width in total, far less than the 800 to 1000 mm needed on each side to open the doors, so a car and side shelving rarely fit together in a typical single garage. "
 f"The car also leaves about {GL-CAR_L} mm of length, enough for a shallow shelf or wall rack across the back wall. "
 "With no car, the whole garage can be used: deep shelving down one side, a workbench at the back and bikes and tools on the other wall, keeping a clear path down the middle.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="gg-t gg-d"><title id="gg-t">How much room a UK single garage really has</title><desc id="gg-d">{desc}</desc>')
@@ -22,12 +22,12 @@ def garage(ox,oy,title):
 # left: car inside
 ox,oy=120,190
 garage(ox,oy,'With a car')
-cx=ox+(GW-CAR_W)/2*k; cy=oy+(GL-CAR_L)*k-10
+cx=ox+(GW-CAR_W)/2*k; cy=oy+(GL-CAR_L)*k
 a(f'<rect x="{cx}" y="{cy}" width="{CAR_W*k}" height="{CAR_L*k}" rx="18" fill="{SA}" stroke="{W2}" stroke-width="2"/>')
 a(f'<text x="{cx+CAR_W*k/2}" y="{cy+CAR_L*k/2}" font-size="17" font-weight="700" fill="{T}" text-anchor="middle">Car</text>')
 a(f'<text x="{cx+CAR_W*k/2}" y="{cy+CAR_L*k/2+22}" font-size="14" fill="{T}" text-anchor="middle">~2,000 wide</text>')
 a(f'<text x="{cx+CAR_W*k/2}" y="{cy+CAR_L*k/2+40}" font-size="14" fill="{T}" text-anchor="middle">with mirrors</text>')
-a(f'<rect x="{ox+4}" y="{oy+4}" width="{GW*k-8}" height="{(GL-CAR_L)*k-18}" fill="{SGL}" stroke="{SG}" stroke-width="2" stroke-dasharray="5 4"/>')
+a(f'<rect x="{ox+4}" y="{oy+4}" width="{GW*k-8}" height="{(GL-CAR_L)*k-8}" fill="{SGL}" stroke="{SG}" stroke-width="2" stroke-dasharray="5 4"/>')
 # door swing arcs
 r=door*k
 a(f'<text x="{cx-60}" y="{cy+150}" font-size="13" fill="{A}">doors</text>')
@@ -53,7 +53,7 @@ a(f'<text x="{ox2+4+450*k+(GW*k-8-450*k)/2}" y="{oy2+4+600*k/2+5}" font-size="13
 # right wall bikes/tools 300
 a(f'<rect x="{ox2+GW*k-4-300*k}" y="{oy2+4+600*k}" width="{300*k}" height="{GL*k-8-600*k}" fill="{SGL}" stroke="{SG}" stroke-width="2"/>')
 a(f'<text x="{ox2+GW*k-4-300*k/2}" y="{oy2+GL*k/2+60}" font-size="13" fill="{T}" text-anchor="middle" transform="rotate(-90 {ox2+GW*k-4-300*k/2} {oy2+GL*k/2+60})">bikes and tools ~300</text>')
-mid=GW-450-300
+mid=1600
 a(f'<text x="{ox2+4+450*k+mid*k/2}" y="{oy2+GL*k/2+80}" font-size="14" font-weight="700" fill="{A}" text-anchor="middle">~{mid:,}</text>')
 a(f'<text x="{ox2+4+450*k+mid*k/2}" y="{oy2+GL*k/2+98}" font-size="13" fill="{A}" text-anchor="middle">clear path</text>')
 note(ox2-330-30,560,'No car? Use all of it',['Deep shelving one side,','bikes and tools on the','other, bench at the back'],SG)
