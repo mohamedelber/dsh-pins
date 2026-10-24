@@ -1,0 +1,15 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, clean and calm, no people, no text, no logos, no brand names, no readable album art: every record sleeve is a plain solid colour or simple abstract colour block with no words or faces. Palette: warm white walls, light oak, sage green, mustard, rust. A small American living room corner: a white 4x4 cube storage shelf against an inside wall, with vinyl records standing straight upright in several cubes, snugly filled but not crammed, a few cubes holding plain storage boxes and a plant. A simple turntable on top of the shelf next to a small speaker. Soft daylight from the side, the shelf is well away from the window and there is no radiator nearby. Straight-on eye-level view."},
+{"name": "02-upright-dividers","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no logos, no readable album art: all record jackets are plain solid colours. Close view of one square cube of a white shelf holding about 60 vinyl record jackets standing perfectly upright, tightly enough that none lean, with two plain wooden alphabet-style divider cards that have no letters on them. Light oak floor below, soft daylight."},
+{"name": "03-inner-sleeve","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no hands, no text, no logos, no readable labels: the record centre label is a plain solid colour circle with no writing. On a clean light oak table: a black 12-inch vinyl record half slid into a clear-windowed white anti-static inner sleeve, next to a plain matte card record jacket in sage green inside a clear plastic outer protective sleeve, and a small carbon fibre record brush. Soft daylight, minimal styling."},
+{"name": "04-crate","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable album art: all record jackets are plain solid colours. A sturdy wooden record crate on a low oak sideboard in a small apartment, holding about 50 vinyl records upright facing forward, beside a simple turntable with its dust cover closed. Warm white wall, a framed abstract print with no text, soft lamp light."},
+{"name": "05-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable album art: every record sleeve is a plain solid colour. A cosy American living room wall with a white cube shelf full of vinyl records standing upright in neat rows, a turntable on top, a trailing plant, a mustard armchair at the side, light oak floor, warm afternoon light. The top third of the image is calm plain warm white wall with nothing on it."}
+]
+}
