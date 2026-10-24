@@ -36,7 +36,7 @@ a(f'<line x1="{x0}" y1="{yb+22}" x2="{x0+W*k:.0f}" y2="{yb+22}" stroke="{T}" str
 a(f'<text x="{x0+W*k/2:.0f}" y="{yb+46}" font-size="15" font-weight="700" fill="{T}" text-anchor="middle">example: 100 cm wide</text>')
 a(f'<text x="{x0+W*k/2:.0f}" y="{yb-ch*k/2:.0f}" font-size="14" fill="#FFFFFF" text-anchor="middle">cupboard</text>')
 nx=x0+W*k+100
-for j,(t1,t2,c) in enumerate((("Cable zone: 150 mm from","ceiling and corners",A),("Shelves 20 to 30 cm","apart for books",OAK),("18 mm MDF sags at","about 600-700 mm",T),("Over 800 mm span?","25 mm board or a support",T))):
+for j,(t1,t2,c) in enumerate((("Cables may run within","150 mm of ceiling, corners",A),("Shelves 20 to 30 cm","apart for books",OAK),("18 mm MDF sags at","about 600-700 mm",T),("Over 800 mm span?","25 mm board + support",T))):
     yy=top+40+j*92
     a(f'<rect x="{nx}" y="{yy-18}" width="8" height="48" rx="3" fill="{c}"/>')
     a(f'<text x="{nx+18}" y="{yy}" font-size="15" font-weight="700" fill="{T}">{t1}</text>')

@@ -35,7 +35,7 @@ for k in range(6):
     a(f'<rect x="{x0+230}" y="{yb2-12-k*13}" width="170" height="12" fill="{cols[k%6]}" stroke="#FFFFFF" stroke-width="1"/>')
 a(f'<text x="{x0+430}" y="{yb2-60}" font-size="40" font-weight="700" fill="{A}" text-anchor="middle">✗</text>')
 a(f'<text x="84" y="{yb2+50}" font-size="15" fill="{G}">Both put uneven weight on the discs and can warp them</text>')
-a(f'<text x="84" y="{yb2+74}" font-size="15" fill="{G}">(Library of Congress, National Archives)</text>')
+a(f'<text x="84" y="{yb2+74}" font-size="15" fill="{G}">(Library of Congress; U.S. and Australian National Archives)</text>')
 # right panel
 a(f'<rect x="620" y="150" width="520" height="380" rx="16" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
 a(f'<text x="644" y="190" font-size="21" font-weight="700" fill="{T}">How much LPs weigh</text>')
@@ -50,15 +50,15 @@ for n,l,h,c in rows:
     a(f'<text x="{BX+BW*h/MX+12:.1f}" y="{yy+36}" font-size="19" font-weight="700" fill="{T}">{l:.0f}-{h:.0f} lb</text>')
     yy+=86
 x29=BX+BW*29/MX
-a(f'<line x1="{x29:.1f}" y1="268" x2="{x29:.1f}" y2="{yy-30}" stroke="{T}" stroke-width="2" stroke-dasharray="6 4"/>')
-a(f'<text x="{x29+6:.1f}" y="{yy-8}" font-size="14" fill="{T}">29 lb: IKEA max load per KALLAX shelf</text>')
+a(f'<line x1="{x29:.1f}" y1="268" x2="{x29:.1f}" y2="{268+46}" stroke="{T}" stroke-width="2" stroke-dasharray="6 4"/>')
+a(f'<text x="{x29+6:.1f}" y="{268+66}" font-size="14" fill="{T}">29 lb: IKEA max load per KALLAX shelf</text>')
 a(f'<text x="644" y="{yy+30}" font-size="14" fill="{G}">Cube and shelf totals: our estimate from the LoC figure.</text>')
 # conditions
 a(f'<rect x="620" y="550" width="520" height="220" rx="16" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
 a(f'<text x="644" y="590" font-size="21" font-weight="700" fill="{T}">Where to keep them</text>')
 for j,(t1,c) in enumerate((("Steady 65 to 70°F, 45 to 50% humidity",SG),("Out of sunlight, away from heat",'#E8B04A'),("Not in the attic or garage",A),("Off the floor, never in a hot car",'#B98A5E'))):
     a(f'<rect x="644" y="{612+j*38}" width="8" height="26" rx="3" fill="{c}"/><text x="664" y="{631+j*38}" font-size="17" fill="{T}">{t1}</text>')
-a(f'<text x="60" y="820" font-size="14" fill="{G}">Sources: Library of Congress "Cylinder, Disc and Tape Care in a Nutshell"; National Archives; IKEA KALLAX product page.</text>')
+a(f'<text x="60" y="820" font-size="14" fill="{G}">Sources: Library of Congress; U.S. National Archives; National Archives of Australia; IKEA KALLAX product page.</text>')
 a(f'<text x="60" y="842" font-size="14" fill="{G}">Example only: check the rated load of your own shelf before filling it.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
