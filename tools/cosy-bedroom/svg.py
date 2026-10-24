@@ -22,7 +22,7 @@ for cx in (800,2300): a(f'<rect x="{X(cx)}" y="{Y(RL)-14}" width="{100*k*1.3}" h
 # rug centred on bed, bed against top wall
 bx=(RW-BW)/2
 rx=(RW-RUGW)/2
-a(f'<rect x="{X(rx)}" y="{Y(900)}" width="{RUGW*k}" height="{(RUGL-900)*k}" fill="{SA}" opacity="0.7" stroke="{W2}" stroke-width="2" stroke-dasharray="6 4"/>')
+a(f'<rect x="{X(rx)}" y="{Y(0)}" width="{RUGW*k}" height="{RUGL*k}" fill="{SA}" opacity="0.7" stroke="{W2}" stroke-width="2" stroke-dasharray="6 4"/>')
 a(f'<rect x="{X(bx)}" y="{Y(0)}" width="{BW*k}" height="{BL*k}" rx="8" fill="#F3ECE2" stroke="{T}" stroke-width="2"/>')
 a(f'<rect x="{X(bx)+8}" y="{Y(0)+8}" width="{BW*k-16}" height="34" rx="6" fill="#FFFFFF" stroke="{BR}"/>')
 a(f'<text x="{X(RW/2)}" y="{Y(BL/2)+8}" font-size="15" font-weight="700" fill="{T}" text-anchor="middle">Bed 135 x 190</text>')
