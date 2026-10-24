@@ -1,0 +1,14 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"disabled": true,
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain garments with no prints, high detail. Palette: white, warm cream, sage green, white oak, natural daylight. A small British bathroom used to dry laundry: a white folding clothes airer standing on the tiled floor with plain towels and t-shirts hung neatly with gaps between them, the sash window above the bath opened slightly at the top, a white extractor fan on the wall, the bathroom door closed. The airer stands away from the radiator. Soft daylight, calm and fresh."},
+{"name": "02-airer","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no labels, no logos, plain garments with no prints, high detail. Palette: warm cream, sage green, white oak. A freestanding winged clothes airer standing on wooden floorboards about half a metre in front of a white radiator under a window, NOT touching the radiator, with plain shirts on hangers hooked on its top rail and towels folded once over single bars with gaps between items. Daylight."},
+{"name": "03-dehumidifier","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no labels, no logos, no brand names, plain unbranded appliance with blank control panel, high detail. Palette: white, cream, sage green. A compact plain white dehumidifier on the floor of a small utility room beside a clothes airer full of plain drying towels and shirts, the door closed, a small window with condensation-free glass. Calm, soft light."},
+{"name": "04-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no labels, no logos, plain garments with no prints, high detail. Palette: white, cream, sage, white oak. A bright British utility room with a white ceiling pulley clothes airer raised near the ceiling holding plain towels and shirts, a slightly open window, a white oak worktop below with a folded stack of dry laundry. The top third of the image shows the airer and calm ceiling with plenty of empty plain wall space around it."}
+]
+}
