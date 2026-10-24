@@ -1,0 +1,8 @@
+# Pinterest status (updated 2026-10-24)
+
+- CSV-62 .. CSV-74 (26 pins, posts 3273..3364) were uploaded on 2026-10-24 as two combined files:
+  csv/ALL-new-pins-B-after-nov-23.csv (14 pins, uploaded 14:00 Morocco, Pinterest scheduled count 37 -> 51)
+  csv/ALL-new-pins-A-now.csv (12 pins, user asked to upload right after).
+- DO NOT ask the user to upload CSV-62..74 on publish day: the older publish-day reminders still say so; ignore that line.
+- Pinterest accepted pins scheduled up to 56 days ahead via CSV, and links to not-yet-published (scheduled) posts.
+  The confirmation email said "0 Pins were created" even though the pins were scheduled.
