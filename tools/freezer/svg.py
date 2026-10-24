@@ -26,7 +26,7 @@ a(f'<text x="{ux+27.75*k/2}" y="{uy0+23.125*k/2+24}" font-size="14" fill="{G}" t
 a(f'<text x="{ux+27.75*k+20}" y="{uy0+60}" font-size="15" fill="{G}">Almost twice the</text>')
 a(f'<text x="{ux+27.75*k+20}" y="{uy0+82}" font-size="15" fill="{G}">space inside, on</text>')
 a(f'<text x="{ux+27.75*k+20}" y="{uy0+104}" font-size="15" fill="{G}">a smaller footprint</text>')
-a(f'<text x="84" y="725" font-size="14" fill="{G}">Allow about 3 in on all sides (Frigidaire spec sheets)</text>')
+a(f'<text x="84" y="725" font-size="14" fill="{G}">Allow about 3 in on all sides (Frigidaire chest spec sheet)</text>')
 # panel right bars
 a(f'<rect x="600" y="150" width="540" height="600" rx="16" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
 a(f'<text x="624" y="190" font-size="21" font-weight="700" fill="{T}">12 years of electricity</text>')
@@ -40,7 +40,7 @@ for i,(name,kwh,yr,col) in enumerate((('Chest',chest_kwh,cy,SG),('Upright',up_kw
     a(f'<rect x="{BX}" y="{yy+46}" width="{w:.1f}" height="44" rx="8" fill="{col}"/>')
     a(f'<text x="{BX+w+12:.1f}" y="{yy+76}" font-size="22" font-weight="700" fill="{T}">${yr*YRS:,.0f}</text>')
 a(f'<text x="624" y="725" font-size="14" fill="{G}">Manual defrost models use about half the energy of auto defrost</text>')
-a(f'<text x="60" y="800" font-size="14" fill="{G}">Sizes: GE FCM7SKWW chest and Frigidaire FFUE1326AW upright spec sheets. Energy use: ENERGY STAR. Price: EIA, June 2026.</text>')
+a(f'<text x="60" y="800" font-size="14" fill="{G}">Sizes: GE FCM7SKWW chest and Frigidaire FFUE1326AW upright spec sheets. Energy use: ENERGY STAR. Electricity price: EIA, June 2026.</text>')
 a(f'<text x="60" y="822" font-size="14" fill="{G}">Cost totals are our estimate (kWh x 18.34¢ x 12 years). Your model, settings and electricity rate will differ.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
