@@ -1,6 +1,6 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';SA='#ECCDA0'
 LOADS=3*52; YRS=5
-opts=[('Heat pump tumble dryer',350,54.32,'£350 to buy (Which?), £54.32 a year'),
+opts=[('Heat pump tumble dryer',350,54.32,'£350 to buy (cheapest good models, Which?), £54.32 a year'),
 ('Dehumidifier + airer',234.90,0.26*2*LOADS,'£234.90 (20L compressor), 26p a litre x 2 L a load'),
 ('Condenser tumble dryer',220,138.91,'£220 to buy (Which?), £138.91 a year')]
 rows=[(n,b,r,b+r*YRS,note) for n,b,r,note in opts]
@@ -25,7 +25,7 @@ for n,b,r,t,note in rows:
 a(f'<rect x="60" y="{y+10}" width="26" height="20" fill="{SA}"/><text x="96" y="{y+26}" font-size="16" fill="{T}">Price to buy</text>')
 a(f'<rect x="260" y="{y+10}" width="26" height="20" fill="{SG}"/><text x="296" y="{y+26}" font-size="16" fill="{T}">Five years of running costs</text>')
 a(f'<text x="60" y="830" font-size="14" fill="{G}">Our estimate from Which? running costs at 26.32p per kWh (dryers) and 26p per litre extracted (dehumidifier), and October 2026 prices.</text>')
-a(f'<text x="60" y="852" font-size="14" fill="{G}">New condenser dryers cannot be placed on the GB market from 19 January 2027. Prices and energy rates change.</text>')
+a(f'<text x="60" y="852" font-size="14" fill="{G}">New vented and condenser dryers will not be allowed onto the GB market from 19 January 2027. Prices and energy rates change.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
 for n,b,r,t,_ in rows: print(n,round(b),round(r,2),round(t))
