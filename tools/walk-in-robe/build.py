@@ -29,7 +29,7 @@ p(f"Silva Wardrobe Co describes 900 to 1000 mm of walkway as {SR('silva','everyd
 
 h2("Walk In Robe Layout Ideas")
 h3("1. Run Robes Down Both Sides in a Galley")
-p(f"A galley, with hanging on both long walls, gives the most storage for a narrow room. TNT Wardrobes says two opposing hanging runs {SR('tnt','need a room width of roughly 2,100 mm')}. Put long hanging on one side and double hanging with shelves and drawers on the other, as in the robe above, so each side does a different job.")
+p(f"A galley, with hanging on both long walls, gives the most storage for a narrow room. TNT Wardrobes says two opposing hanging runs {SR('tnt','need a room width of roughly 2,100 mm')}. Put long hanging on one side and double hanging with shelves and drawers on the other, as in the galley robe pictured at the top, so each side does a different job.")
 h3("2. Go Single-Sided in a Narrow Space")
 p(f"If the room is only about 1.5 metres wide, put everything on one wall and keep the other wall clear, perhaps for a full-length mirror. A single-sided robe is also the easiest to fit with flat-pack units, because every unit sits against the same wall. Our {a('walk-in-closet-size','walk-in closet size guide')} works through the maths for other room sizes.")
 h3("3. Use an L-Shape for a Corner")
@@ -40,11 +40,11 @@ p(f"A walk-through robe is one where the robe {SR('kf','forms a corridor between
 
 h2("Inside the Robe")
 h3("5. Make Some Sections Shallow")
-p(f"Not everything needs a full 600 mm. Hanging needs about {SR('silva','520 to 550 mm of internal depth')}, but a designer quoted by Houzz Australia says shoe and drawer units {SR('hz1','work perfectly fine between 300 to 380 millimetres deep')}. In a tight galley, using shallow shelves on one side can turn an uncomfortable walkway into a usable one. Houzz notes shelving is commonly 450 mm deep.")
+p(f"Not everything needs a full 600 mm. Hanging needs about {SR('silva','520 to 550 mm of internal depth')}, but Houzz Australia says shoes, underwear drawers and shelves {SR('hz1','work perfectly fine between 300 to 380 millimetres deep')}. In a tight galley, using shallow shelves on one side can turn an uncomfortable walkway into a usable one. Another Houzz guide notes {SR('hz2','shelving is commonly 450 millimetres deep')}.")
 h3("6. Double Up the Hanging")
-p(f"Most shirts, skirts and folded trousers are less than a metre long, so two rails stacked in one bay hold twice as much as one. Kitchenfox suggests {SR('kf','top at 1,800mm, bottom at 900mm')} for double hanging, and a single rail at about 1,800 mm for long dresses and coats. Keep one bay of long hanging and make the rest double. Folding knitwear instead of hanging it saves more space; see our guide to {a('how-to-fold-clothes-to-save-space','folding clothes to save space')}.")
+p(f"Most shirts, skirts and folded trousers hang shorter than about 900 mm, so two rails stacked in one bay hold twice as much as one. Kitchenfox suggests {SR('kf','top at 1,800mm, bottom at 900mm')} for double hanging, and a single rail at about 1,800 mm for long dresses and coats. Keep one bay of long hanging and make the rest double. Folding knitwear instead of hanging it saves more space; see our guide to {a('how-to-fold-clothes-to-save-space','folding clothes to save space')}.")
 img(6)
-p("This before and after illustration shows the same robe crammed and then sorted: clothes off the floor, one style of hanger and folded stacks on the shelves. Most of the change comes from clearing out first, which our "+a('closet-clean-out','wardrobe clean-out guide')+" walks through.")
+p("This before and after illustration shows how a crammed robe can look once it is sorted, with clothes off the floor and a clear walkway. Most of the change comes from clearing out first, which our "+a('closet-clean-out','wardrobe clean-out guide')+" walks through.")
 h3("7. Build a Shoe Tower")
 img(3)
 p(f"Shoes waste space when they are piled on the robe floor. A tower of shallow shelves, one pair per shelf, keeps them visible and off the walkway. Houzz Australia suggests spacing shoe shelves {SR('hz2','220 to 260 mm')} apart, which suits most flat shoes; leave a few taller gaps for ankle boots. More ideas are in our {a('shoe-storage-ideas','shoe storage ideas')}.")
@@ -55,12 +55,12 @@ p(f"Belts, scarves, sunglasses and jewellery get lost on shelves. One shallow dr
 h2("Finishing Touches")
 h3("9. Light It With LED Strips")
 img(4)
-p(f"A walk-in robe often has no window, and a single ceiling light leaves the shelves in shadow. LED strips under each shelf and above each rail make colours easier to see, and Kitchenfox recommends warm 3,000K light. Battery or plug-in sensor strips need no wiring. Anything hard-wired must be done by a licensed electrician: NSW Government advice says {SR('nsw','by law any electrical installation work must be done by a licensed electrician')}, and Energy Safe Victoria warns that unqualified electrical work is {SR('esv','illegal')}.")
+p(f"A walk-in robe often has no window, and a single ceiling light leaves the shelves in shadow. LED strips under each shelf and above each rail make colours easier to see, and Kitchenfox specifies warm white 3,000K for both strips and downlights. Battery or plug-in sensor strips need no wiring. Anything hard-wired must be done by a licensed electrician: NSW Government advice says {SR('nsw','by law any electrical installation work must be done by a licensed electrician')}, and Energy Safe Victoria warns that unqualified electrical work is {SR('esv','illegal')}.")
 h3("10. Start With Flat-Pack and Upgrade Later")
 p(f"Custom joinery looks best but costs the most. Flat-pack systems let you start smaller and add pieces later. At the time of writing, IKEA Australia lists two PAX frames 200 x 58 x 201 cm for {SR('pax1','A$460')}, or {SR('pax2','A$480')} in the 236 cm height, with doors and interiors extra. Bunnings sells a Flexi Storage walk-in unit with one rail and two shelves, 606 x 2000 x 480 mm, for {SR('bun','A$199')}. Keep damp gear out of any robe: WA Government guidance on mould says to make sure {SR('wa','damp footwear and clothes are not put away in wardrobes')}.")
 
 h2("What Does a Walk-In Robe Cost in Australia?")
-p("Whichever walk in robe ideas you choose, prices vary a lot with size, finish and city, so treat these as rough guides and get several quotes.")
+p("Prices vary a lot with size, finish and city, so treat these as rough guides and get several quotes.")
 table(["Option","Typical price","Source"],[
 ["Flat-pack frames (IKEA PAX, 2 frames)","A$460 to A$480 before doors and interiors",SR('pax1','IKEA Australia')],
 ["Flat-pack walk-in unit (Bunnings Flexi Storage)","A$199 per unit",SR('bun','Bunnings')],
@@ -68,14 +68,14 @@ table(["Option","Typical price","Source"],[
 ["Custom single-wall walk-in robe","A$4,000 to A$9,000 (Adelaide)",SR('kf','Kitchenfox')],
 ["Custom galley walk-in robe","A$9,000 to A$16,000 (Adelaide)","Kitchenfox"],
 ["Custom walk-through robe","A$14,000 to A$25,000 (Adelaide)","Kitchenfox"]])
-p("Airtasker quotes higher figures for fully custom walk-in robes, from about A$20,000 and sometimes over A$30,000, so the gap between quotes can be large.")
+p("Airtasker quotes higher figures for walk-in robes, from about A$20,000 for simple designs and sometimes over A$30,000, so the gap between quotes can be large.")
 
 h2("Mix and Match")
-p("Most walk in robe ideas work best in combination. Three that suit common Australian homes:")
+p("Most of these ideas work best in combination. Three that suit common Australian homes:")
 lst(["<strong>Small budget, narrow room:</strong> single-sided flat-pack units, double hanging, a shoe tower at the end and plug-in LED strips.",
 "<strong>Family robe for two:</strong> a galley with 1100 to 1200 mm between sides, his-and-hers halves and one shared drawer bank.",
 "<strong>Walk-through to the ensuite:</strong> shallow shelves on one side to keep the corridor wide, closed drawers rather than open shelves, and a strong exhaust fan in the bathroom."])
-p(f"If you are in the UK or US, our {a('built-in-wardrobe-ideas','built-in wardrobe ideas')} and {a('small-walk-in-closet-ideas','small walk-in closet ideas')} cover the same ground with local sizes.")
+p(f"If you are in the UK or US, our {a('built-in-wardrobe-ideas','built-in wardrobe ideas')} and {a('small-walk-in-closet-ideas','small walk-in closet ideas')} cover similar ideas with UK and US sizes.")
 ai_note()
 html='\n\n'.join(out)
 html=re.sub(r'(\d+\.\d{2})\d+',r'\1',html)
