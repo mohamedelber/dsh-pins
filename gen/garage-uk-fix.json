@@ -1,0 +1,7 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero-v2","size": "1536x1024","quality": "medium","edit_from": "gen/out/garage-uk/01-hero.png",
+"prompt": "Edit this photo: keep the same garage, same camera angle, same walls, same door frame, same floor, same pegboard and workbench and same light. Change only two things. 1) On the right wall, replace the two bicycles with two bicycles hanging VERTICALLY, each hung by its front wheel from a sturdy metal hook screwed into the wall, front wheel at the top and rear wheel near the floor resting against the wall, frames intact. 2) On the left wall, make the metal shelving unit shorter so its top shelf stays well below the metal rail of the up-and-over garage door at the top left, with the boxes on the shelves fully clear of the door rail. No text, no logos, no people."}
+]
+}
