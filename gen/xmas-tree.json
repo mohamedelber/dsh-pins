@@ -1,0 +1,15 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, calm and tidy, no people, no text, no logos, no brand names, plain unbranded fabric bags with no prints. An American living room in early January: a 7.5 ft artificial green Christmas tree with no ornaments and no lights switched on stands in the corner, and on the oak floor in front of it lie a long plain dark green zippered rolling tree storage bag, open, and the tree's metal stand. A plain lidded storage box of wrapped ornaments sits beside it. Soft winter daylight, warm white walls, a grey sofa edge visible."},
+{"name": "02-folded-sections","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no hands, no text, no logos. On a clean oak floor: three sections of an artificial green Christmas tree laid side by side, each with its branches folded up toward the central metal pole so it is compact, and each tied around the middle with a soft red fabric ribbon. A small clear zip bag holding a metal tree stand bolt sits next to them. Soft daylight, top-down angled view."},
+{"name": "03-bag-closet","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no brand names. Inside a tidy hall closet in an American home with the door open: a long plain dark green zippered rolling Christmas tree storage bag standing on its end against the back wall on a low wooden platform off the floor, next to plain lidded storage boxes on a shelf and a few coats hanging. Warm light, clean and organised."},
+{"name": "04-upright-bag","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no brand names. A tall plain dark green fabric upright Christmas tree storage cover zipped over a fully assembled artificial tree that stands on a low wheeled base, parked in a clean basement storage room with a dry sealed concrete floor, white painted walls, and metal shelving with plain lidded boxes. A dehumidifier is not needed, the room looks dry. Soft even light."},
+{"name": "05-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no brand names, plain unbranded bags. A cosy American living room corner after the holidays: an undecorated artificial Christmas tree with branches partly folded, a plain dark green rolling tree storage bag lying open on the oak floor, a plain box of wrapped ornaments, warm winter light. The top third of the image is calm plain warm white wall with nothing on it."}
+]
+}
