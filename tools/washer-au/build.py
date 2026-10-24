@@ -25,7 +25,7 @@ W=5*52
 fw,tw=56*W,119*W
 kwh=229; c=0.321; cost=kwh*c
 
-p(f"Front loader vs top loader comes down to running costs against speed and price. A front loader uses far less water and spins clothes drier, and it fits under a benchtop, but it costs more and takes about twice as long per wash. A top loader is cheaper to buy, washes faster and suits a laundry with space above it, but it uses more water and energy over its life.")
+p(f"Choosing between a front loader and a top loader comes down to running costs against speed and purchase price. A front loader uses far less water and spins clothes drier, and it fits under a benchtop, but it costs more and takes about twice as long per wash. A top loader is cheaper to buy, washes faster and suits a laundry with space above it, but it uses more water and energy over its life.")
 lst(["<strong>Pick a front loader</strong> if you pay for water, wash often, want to stack a dryer or need the benchtop space.",
 "<strong>Pick a top loader</strong> if your budget is tight, you want quick cycles, or bending to load is hard for you.",
 "<strong>Either works</strong> for a household of one or two in a laundry with room for both."])
@@ -41,28 +41,28 @@ table(["","Front loader","Top loader"],[
 ["Under a benchtop or stacked","Yes","No, needs clear space above"],
 ["Loading","Bend down (a pedestal helps)","From above"],
 ["Care","Leave the door open, dry the seal","Fewer seal problems"]])
-diagram(open('z.svg').read(),"Front loader vs top loader in numbers: water, cycle time, spin speed and the space each one needs.")
+diagram(open('z.svg').read(),"Water use, cycle time, spin speed and the space each type of washer needs.")
 
 h2("Front Loaders: Best for Running Costs and Small Laundries")
 img(2)
 p(f"<strong>Best for:</strong> families who wash most days, households on water tanks or meters, small laundries where the machine must go under a benchtop, and anyone planning a stacked dryer.")
 p(f"Water is the big win. CHOICE says front loaders can use {SR('ch1','up to 70% less water')} than an equivalent top loader, and the government's Energy Rating calculator says they use {SR('calc','about half the water of top loaders')}. Over a year of five washes a week, CHOICE's test averages of about 56 litres per front-loader wash and 119 litres per top-loader wash add up to roughly {fw:,} litres against {tw:,} litres, a difference of about {tw-fw:,} litres. Faster spinning also helps: CHOICE notes {SR('ch4','higher spin speeds extract more water from your clothes')}, so clothes dry sooner on the line or in a dryer.")
-p(f"<strong>Avoid if:</strong> you need clothes washed in an hour, or bending is difficult. CHOICE says front loaders average a bit over two hours a cycle and some take up to five. A pedestal raises the machine about 30 to 40 cm, which Appliances Online lists from about {SR('aop','A$249')}. Use front-loader detergent, which CHOICE says contains a suds inhibitor.")
-p(f"Planning a stacked pair? A condenser or heat pump dryer must sit on the washer itself, not on a wall bracket, and some only stack on the same brand, so check before you buy. Our {a('washer-dryer-space-calculator','washer and dryer space calculator')} shows the space a stacked pair needs.")
+p(f"<strong>Avoid if:</strong> you need clothes washed in an hour, or bending is difficult. CHOICE says front loaders average a bit over two hours a cycle and some take up to five. Most pedestals raise the machine about 30 to 40 cm, and Appliances Online lists them from about {SR('aop','A$249')}. Use front-loader detergent, which CHOICE says contains a suds inhibitor.")
+p(f"Planning a stacked pair? A condenser or heat pump dryer must be stacked on the washer itself (only vented dryers can be wall mounted), and some only stack on the same brand, so check before you buy. Our {a('washer-dryer-space-calculator','washer and dryer space calculator')} shows the space a stacked pair needs.")
 
 h2("Top Loaders: Best for Budget and Speed")
 img(3)
 p(f"<strong>Best for:</strong> tight budgets, busy households that want a quick wash, and laundries with open space above the machine.")
-p(f"Top loaders are cheaper up front. Canstar Blue puts budget top loaders at about A$400 to A$800, and the cheapest top loader in a CHOICE review cost A$399, while CHOICE says top loaders {SR('ch3','tend to top out at around $1500')} and front loaders can pass A$3,000. They are also quicker: Energy Rating notes top loaders {SR('er','tend to have shorter cycle times and can be more reliable')}. If you choose one, an impeller model is usually {SR('aoi','gentler on your clothes than agitators')} and leaves more room in the drum.")
+p(f"Top loaders are cheaper up front. Canstar Blue puts budget top loaders at about A$400 to A$800, and the cheapest top loader in a CHOICE review cost A$399 (though CHOICE did not recommend it), while CHOICE says top loaders {SR('ch3','tend to top out at around $1500')} and front loaders can pass A$3,000. They are also quicker: Energy Rating notes top loaders {SR('er','tend to have shorter cycle times')}. If you choose one, an impeller model is usually {SR('aoi','gentler on your clothes than agitators')} and leaves more room in the drum.")
 p(f"<strong>Avoid if:</strong> the machine has to go under a benchtop or you want to stack a dryer. The lid needs clear space above it: one Fisher &amp; Paykel top loader stands {SR('lid','1440 - 1470 mm')} high with the lid open. Running costs are higher too, as the next section shows.")
 
 h2("What Each One Costs to Run")
-p(f"The energy label shows estimated kWh per year, and the more stars, the cheaper it is to run. Compare machines of the same capacity. The figure on Australian and New Zealand labels assumes a warm wash seven times a week, {SR('eeca','calculated on a warm wash')} using the manufacturer's settings, so washing in cold water costs much less. The water label shows a star rating and {SR('wels','litres per wash')}.")
-p(f"To estimate a running cost, multiply the kWh figure by your electricity price. For example, a 9 kg Fisher &amp; Paykel top loader is labelled at {SR('fp','229 kWh a year')}; at Canstar Blue's average of 32.1c per kWh (2024 data), that is about A${cost:.0f} a year on warm washes. Canstar Blue's own comparison found yearly energy costs for washing machines {SR('cb','anywhere from $32 to $97')}, with front loaders at the cheaper end.")
+p(f"The energy label shows estimated kWh per year, and the more stars, the cheaper it is to run. Compare machines of the same capacity. The figure on Australian and New Zealand labels assumes seven washes a week, {SR('eeca','calculated on a warm wash')} using the manufacturer's recommended settings, so washing in cold water costs much less. The water label shows a star rating and {SR('wels','litres per wash')}.")
+p(f"To estimate a running cost, multiply the kWh figure by your electricity price. For example, a 9 kg Fisher &amp; Paykel top loader is labelled at {SR('fp','229 kWh a year')}; at Canstar Blue's average of 32.1c per kWh (2024 data), that is about A${cost:.0f} a year on warm washes. Canstar Blue's own comparison found yearly energy costs for washing machines {SR('cb','anywhere from $32 to $97')} based on three warm washes a week, with front loaders at the cheaper end.")
 
 h2("Keep a Front Loader Fresh")
 img(4)
-p(f"The most common front-loader complaint is a musty smell. LG Australia advises that after each wash you {SR('lg','open the washing machine door and the detergent dispenser')} so the inside can dry, and wipe the door seal with a towel. CHOICE says manufacturers recommend keeping front loaders partly open for the same reason. If small children are around, keep the laundry door closed instead.")
+p(f"The most common front-loader complaint is a musty smell. LG Australia advises that after each wash you {SR('lg','open the washing machine door and the detergent dispenser')} so the inside can dry, and wipe the door seal with a towel. CHOICE says manufacturers recommend keeping front loaders partly open for the same reason. If you have small children, keep the laundry door shut while the machine airs, and check the drum is empty before every wash.")
 
 h2("Our Pick")
 lst(["<strong>Family of four in a house:</strong> a front loader with a high water star rating. The water and energy savings add up fastest when you wash every day.",
