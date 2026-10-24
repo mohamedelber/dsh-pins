@@ -1,0 +1,9 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, calm and bright, no people, no text, no logos, no brand names, no writing on any box or label. A tidy American living room floor mid-declutter: four sturdy open cardboard boxes in a neat row, each with a plain colored paper tag with no writing (sage green, terracotta, mustard, grey), one holding folded clothes and shoes, one holding books and a few kitchen items, one holding tangled old cables and an old phone, one holding paper to shred. A clipboard with a blank printed checklist page and a pen lies on the oak floor beside them. Soft daylight, white walls, a sofa edge visible."},
+{"name": "02-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no writing anywhere. A calm, freshly decluttered American bedroom closet with the doors open: a few clothes evenly spaced on wooden hangers, folded sweaters on a shelf, two plain lidded boxes, and on the floor in front a single open cardboard box of folded clothes ready to donate. Warm daylight, light oak floor. The top third of the image is calm plain warm white wall with nothing on it."}
+]
+}
