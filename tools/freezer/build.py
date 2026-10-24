@@ -32,7 +32,7 @@ table(["","Chest freezer","Upright freezer"],[
 ["Organization","Baskets and bins; items get buried","Shelves, drawers, door bins"],
 ["Defrosting","Most are manual","Many are frost-free"]])
 diagram(open('z.svg').read(),f"A 7 cu ft chest takes more floor than a 13 cu ft upright, but an ENERGY STAR chest uses about ${c_yr*12:,.0f} of electricity over 12 years against about ${u_yr*12:,.0f} for an upright.")
-p(f"The running cost estimates use ENERGY STAR's example energy figures and the June 2026 US average residential electricity price from the Energy Information Administration, {SR('eia','18.34 cents per kWh')} in June 2026. ENERGY STAR's own figures of about $30 and $60 a year assume a lower electricity rate. Over the 12-year lifetime ENERGY STAR uses in its calculations, ENERGY STAR's example chest freezer saves roughly $400.")
+p(f"The running cost estimates use ENERGY STAR's example energy figures and the June 2026 US average residential electricity price from the Energy Information Administration: {SR('eia','18.34 cents per kWh')}. ENERGY STAR's own figures of about $30 and $60 a year assume a lower electricity rate. Over the 12-year lifetime ENERGY STAR uses in its calculations, its example chest freezer saves roughly $400.")
 
 h2("Chest Freezers: Best for Bulk Buying and Low Bills")
 img(2)
