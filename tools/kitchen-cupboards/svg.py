@@ -6,7 +6,7 @@ def Y(mm): return FL-mm*k
 desc=(f"Side view of a standard UK kitchen wall with typical sizes. Worktop at about 900 mm. Base units about 560 mm deep below it. "
 f"Wall units start about 450 to 500 mm above the worktop, so their bottom shelf sits at about {WB} to {WT+500} mm, and a 720 mm wall unit reaches about {WTOP} mm. "
 "Zone 1, everyday items: top drawers, the worktop and the lowest wall shelf, roughly between waist and shoulder height. "
-"Zone 2, heavy and bulky items: base cupboards and deep drawers. Zone 3, rarely used light items: the top wall shelf and above. Cleaning products in a high or locked cupboard away from food.")
+"Zone 2, heavy and bulky items: base cupboards and deep drawers. Zone 3, rarely used light items: the top wall shelf and above. Cleaning products high up and locked if children visit, away from food.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="kc-t kc-d"><title id="kc-t">Kitchen cupboard zones by height</title><desc id="kc-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="80" font-size="40" font-weight="700" fill="{T}">What Goes Where in Kitchen Cupboards</text>')
@@ -51,12 +51,12 @@ a(f'<text x="{WALL+WD/2}" y="{Y(WTOP)-12}" font-size="15" fill="{G}" text-anchor
 cx=ZX+ZW+30
 a(f'<rect x="{cx}" y="{Y(WTOP+250)}" width="250" height="230" rx="12" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
 a(f'<rect x="{cx}" y="{Y(WTOP+250)}" width="8" height="230" rx="4" fill="{A}"/>')
-for i,l in enumerate(['Cleaning products','','Keep them away from','food, in their original','containers, and high up','or locked if children','visit (RoSPA).']):
-    a(f'<text x="{cx+24}" y="{Y(WTOP+250)+36+i*25}" font-size="{19 if i==0 else 16}" font-weight="{700 if i==0 else 400}" fill="{T}">{l}</text>')
+for i,l in enumerate(['Cleaning products','Keep them away from','food, in their original','containers, and high up','and locked if children','visit (RoSPA).']):
+    a(f'<text x="{cx+24}" y="{Y(WTOP+250)+36+i*25+(14 if i else 0)}" font-size="{19 if i==0 else 16}" font-weight="{700 if i==0 else 400}" fill="{T}">{l}</text>')
 a(f'<rect x="{cx}" y="{Y(WTOP+250)+250}" width="250" height="170" rx="12" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
 a(f'<rect x="{cx}" y="{Y(WTOP+250)+250}" width="8" height="170" rx="4" fill="{SG}"/>')
-for i,l in enumerate(['Near where you use it','','Mugs by the kettle,','plates by the dishwasher,','spices by the hob.']):
-    a(f'<text x="{cx+24}" y="{Y(WTOP+250)+286+i*25}" font-size="{19 if i==0 else 16}" font-weight="{700 if i==0 else 400}" fill="{T}">{l}</text>')
-a(f'<text x="60" y="878" font-size="14" fill="{G}">Typical UK sizes from cutmy.co.uk and Worktop Express; your kitchen may differ. Zones follow NHS advice to keep everyday items at waist or worktop level.</text>')
+for i,l in enumerate(['Near where you use it','Mugs by the kettle,','plates by the dishwasher,','spices by the hob.']):
+    a(f'<text x="{cx+24}" y="{Y(WTOP+250)+286+i*25+(14 if i else 0)}" font-size="{19 if i==0 else 16}" font-weight="{700 if i==0 else 400}" fill="{T}">{l}</text>')
+a(f'<text x="60" y="878" font-size="14" fill="{G}">Typical UK sizes from cutmy.co.uk and Worktop Express; your kitchen may differ. Zone 1 builds on NHS advice to keep everyday items at waist or worktop level.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
