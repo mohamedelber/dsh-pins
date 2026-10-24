@@ -1,9 +1,20 @@
 {
-"model": "gpt-image-2.5-sunburst",
-"items": [
-{"name": "drying-01-hero-v2","size": "1536x1024","quality": "medium","edit_from": "gen/out/drying/01-hero.png",
-"prompt": "Edit this photo: keep the same bathroom, camera angle, window, extractor fan, bath and light. Move the white folding clothes airer with its towels and t-shirts to the left so there is a clear gap of at least half a metre between the airer and the chrome towel radiator on the right; nothing touches the radiator and the radiator is empty. Remove any open door in the foreground so the room looks closed. No text, no logos, no people."},
-{"name": "cosy-04-curtains-v2","size": "1024x1024","quality": "medium","edit_from": "gen/out/cosy-bedroom/04-curtains.png",
-"prompt": "Edit this photo: keep everything the same but make both curtains end beside the window frame so that neither curtain touches or overlaps the white radiator below the window; the radiator is fully visible with a clear gap of floor and wall on each side between it and the curtains. No text, no logos."}
-]
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "drying-01-hero-v2",
+   "size": "1536x1024",
+   "quality": "medium",
+   "edit_from": "gen/out/drying/01-hero.png",
+   "prompt": "Edit this photo: keep the same bathroom, camera angle, window, extractor fan, bath and light. Move the white folding clothes airer with its towels and t-shirts to the left so there is a clear gap of at least half a metre between the airer and the chrome towel radiator on the right; nothing touches the radiator and the radiator is empty. Remove any open door in the foreground so the room looks closed. No text, no logos, no people."
+  },
+  {
+   "name": "cosy-04-curtains-v2",
+   "size": "1024x1024",
+   "quality": "medium",
+   "edit_from": "gen/out/cosy-bedroom/04-curtains.png",
+   "prompt": "Edit this photo: keep everything the same but make both curtains end beside the window frame so that neither curtain touches or overlaps the white radiator below the window; the radiator is fully visible with a clear gap of floor and wall on each side between it and the curtains. No text, no logos."
+  }
+ ],
+ "retry": 1
 }
