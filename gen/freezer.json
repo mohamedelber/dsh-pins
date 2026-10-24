@@ -1,0 +1,13 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with no badges and blank control panels, high detail. Palette: white, warm grey, light oak, natural daylight. A tidy American basement storage area with two clearly different white freezers side by side on a sealed concrete floor: on the LEFT a low white CHEST freezer with a lid that opens upward, closed; on the RIGHT a tall white UPRIGHT freezer with a single front door, closed. A small gap between them and from the wall. Simple wooden shelving with storage bins on the wall behind. Straight-on view."},
+{"name": "02-chest","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no labels, no logos, no brand names, plain unbranded packaging with no prints, high detail. Looking down into an open white chest freezer with its lid propped up: the inside is organized with two hanging wire baskets across the top holding small items, and below them plain labelled-style bins with no readable text holding frozen vegetables in clear bags, frozen bread and plain wrapped meat packages, neat and tidy, light frost-free walls."},
+{"name": "03-upright","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no labels, no logos, no brand names, plain unbranded packaging with no prints, high detail. A tall white upright freezer with its door wide open, showing wire shelves and clear plastic drawers neatly organized with frozen food in plain clear containers and freezer bags, door bins holding small items, interior light on. In a clean laundry room."},
+{"name": "04-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no labels, no logos, no brand names, plain unbranded appliances, high detail. Palette: white, light oak, warm grey. A tidy American garage storage corner: a tall white upright freezer on the left and a low white chest freezer on the right with a wooden shelf of plain storage bins above it, sealed concrete floor, warm light. The top third of the image is calm plain painted wall with nothing on it."}
+]
+}
