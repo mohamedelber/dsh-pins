@@ -1,19 +1,49 @@
 {
-"model": "gpt-image-2.5-sunburst",
-"items": [
-{"name": "01-hero","size": "1536x1024","quality": "high",
-"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, cosy and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: warm terracotta, cream, sage green, white oak, soft caramel. A small British double bedroom on a winter afternoon: walls painted a warm muted terracotta, an upholstered cream headboard, layered bedding in cream linen with a chunky knitted throw and sage cushions, a white oak bedside table with a ceramic lamp glowing warm, thick lined curtains half drawn at a sash window with soft grey sky outside, a large textured wool rug under the bed extending well past both sides. No candles, no fireplace. Eye-level view."},
-{"name": "02-lighting","size": "1024x1024","quality": "medium",
-"prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm cream, terracotta, white oak. A bedside corner in the evening lit only by a small fabric-shaded table lamp with a warm glow and a dimmable wall-mounted reading light above the bed, a stack of books and a glass of water on a white oak bedside table, linen bedding. No candles, no fairy lights."},
-{"name": "03-layers","size": "1024x1024","quality": "medium",
-"prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: cream, oatmeal, sage green, caramel. Close view of a made double bed with layered textiles: a thick white duvet in a cream linen cover, a waffle blanket folded across the foot of the bed, a chunky knitted throw, and four cushions in sage, oatmeal and caramel against an upholstered headboard. Soft daylight."},
-{"name": "04-curtains","size": "1024x1024","quality": "medium",
-"prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm cream, sage green, white oak. A bedroom window with heavy lined sage green curtains hung from a pole fixed well above and wider than the window frame, falling to just touch the floor, closed most of the way at dusk, with a white radiator under the window left completely uncovered and the curtains ending above it on the sides, not draped over it. Warm lamp light in the room."},
-{"name": "05-nook","size": "1024x1024","quality": "medium",
-"prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm cream, terracotta, white oak, sage green. A small reading corner in a British bedroom: a compact upholstered armchair in caramel bouclé with a knitted throw, a small round white oak side table with a mug, a floor lamp glowing warm, a wall shelf with a few books and a trailing plant. Soft evening light. No candles."},
-{"name": "06-before","size": "1536x1024","quality": "medium","edit_from": "gen/out/cosy-bedroom/01-hero.png",
-"prompt": "Edit this photo: keep exactly the same bedroom, same camera angle, same window, same bed position and same size. Make it feel cold and bare: plain cool white walls instead of terracotta, a thin plain white duvet with no throw and one flat pillow, no rug on bare floorboards, a bare overhead light bulb look with cool light, thin unlined curtains pushed to one side, nothing on the bedside table. No people, no text, no logos."},
-{"name": "07-pin","size": "1024x1536","quality": "high",
-"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm terracotta, cream, sage, white oak. A cosy small bedroom at night lit by a warm bedside lamp: layered cream bedding with a chunky knitted throw, an upholstered headboard against a warm terracotta wall, a textured wool rug, lined curtains drawn. No candles, no fairy lights, no fireplace. The top third of the image is calm plain warm wall with nothing on it."}
-]
+ "model": "gpt-image-2.5-sunburst",
+ "items": [
+  {
+   "name": "01-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, realistic proportions, cosy and calm, no people, no text, no labels, no logos, no brand names, high detail. Palette: warm terracotta, cream, sage green, white oak, soft caramel. A small British double bedroom on a winter afternoon: walls painted a warm muted terracotta, an upholstered cream headboard, layered bedding in cream linen with a chunky knitted throw and sage cushions, a white oak bedside table with a ceramic lamp glowing warm, thick lined curtains half drawn at a sash window with soft grey sky outside, a large textured wool rug under the bed extending well past both sides. No candles, no fireplace. Eye-level view."
+  },
+  {
+   "name": "02-lighting",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm cream, terracotta, white oak. A bedside corner in the evening lit only by a small fabric-shaded table lamp with a warm glow and a dimmable wall-mounted reading light above the bed, a stack of books and a glass of water on a white oak bedside table, linen bedding. No candles, no fairy lights."
+  },
+  {
+   "name": "03-layers",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: cream, oatmeal, sage green, caramel. Close view of a made double bed with layered textiles: a thick white duvet in a cream linen cover, a waffle blanket folded across the foot of the bed, a chunky knitted throw, and four cushions in sage, oatmeal and caramel against an upholstered headboard. Soft daylight."
+  },
+  {
+   "name": "04-curtains",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm cream, sage green, white oak. A bedroom window with heavy lined sage green curtains hung from a pole fixed well above and wider than the window frame, falling to just touch the floor, closed most of the way at dusk, with a white radiator under the window left completely uncovered and the curtains ending above it on the sides, not draped over it. Warm lamp light in the room."
+  },
+  {
+   "name": "05-nook",
+   "size": "1024x1024",
+   "quality": "medium",
+   "prompt": "Photorealistic interior photography, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm cream, terracotta, white oak, sage green. A small reading corner in a British bedroom: a compact upholstered armchair in caramel boucl\u00e9 with a knitted throw, a small round white oak side table with a mug, a floor lamp glowing warm, a wall shelf with a few books and a trailing plant. Soft evening light. No candles."
+  },
+  {
+   "name": "06-before",
+   "size": "1536x1024",
+   "quality": "medium",
+   "edit_from": "gen/out/cosy-bedroom/01-hero.png",
+   "prompt": "Edit this photo: keep exactly the same bedroom, same camera angle, same window, same bed position and same size. Make it feel cold and bare: plain cool white walls instead of terracotta, a thin plain white duvet with no throw and one flat pillow, no rug on bare floorboards, a bare overhead light bulb look with cool light, thin unlined curtains pushed to one side, nothing on the bedside table. No people, no text, no logos."
+  },
+  {
+   "name": "07-pin",
+   "size": "1024x1536",
+   "quality": "high",
+   "prompt": "Photorealistic interior photography, real estate photo, realistic proportions, cosy and calm, no people, no text, no labels, no logos, high detail. Palette: warm terracotta, cream, sage, white oak. A cosy small bedroom at night lit by a warm bedside lamp: layered cream bedding with a chunky knitted throw, an upholstered headboard against a warm terracotta wall, a textured wool rug, lined curtains drawn. No candles, no fairy lights, no fireplace. The top third of the image is calm plain warm wall with nothing on it."
+  }
+ ],
+ "retry": 1
 }
