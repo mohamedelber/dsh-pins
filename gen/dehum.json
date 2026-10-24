@@ -1,0 +1,13 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, clean and calm, no people, no text, no labels, no logos, no brand names, plain unbranded appliances with blank control panels, plain garments with no prints, high detail. Palette: white, warm cream, sage green, white oak, natural daylight. A British utility room split into two clear halves by layout: on the LEFT a compact plain white dehumidifier standing on the floor next to a white folding clothes airer full of plain towels and shirts; on the RIGHT a white front-loading tumble dryer with a solid door (no glass window) under a white oak worktop, with a basket of dry folded laundry on the worktop. Sage green cabinets, a small window. Straight-on view."},
+{"name": "02-dehum","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no labels, no logos, no brand names, plain unbranded appliance with blank control panel, high detail. Palette: cream, sage, white oak. Close view of a compact plain white dehumidifier with a small clear water tank partly full, standing on a wooden floor with its air outlet pointing at a clothes airer of plain drying shirts and towels, in a small room with the door closed. Soft light."},
+{"name": "03-dryer","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no labels, no logos, no brand names, plain unbranded appliance with blank control panel, high detail. Palette: white, cream, sage. A white tumble dryer with a solid door (no glass window) standing open, and a hand holding nothing; instead show the fluff filter pulled out of the door rim and resting on top of the dryer, clean, next to a small brush. Under a white oak worktop in a bright utility room."},
+{"name": "04-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no labels, no logos, no brand names, plain unbranded appliances, high detail. Palette: white, cream, sage green, white oak. A calm British utility room in soft evening light: a white tumble dryer with a solid door under a white oak worktop on the right, and on the left a plain white dehumidifier beside a clothes airer of plain towels. The top third of the image is plain calm wall with nothing on it."}
+]
+}
