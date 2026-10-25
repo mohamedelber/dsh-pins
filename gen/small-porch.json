@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, no people, no text, no logos, no readable house numbers. The inside of a small enclosed brick and glass entrance porch on a British 1930s semi-detached house, seen from the inner front door looking out: a slim oak storage bench with shoes neatly underneath, a row of black peg hooks with two coats, black and white chequerboard floor tiles, a large coir doormat inside the glazed outer door, a potted olive tree, a woven basket, white painted brick walls and a warm pendant light. Daylight through the glazing, tidy and calm."},
+{"name": "02-exterior","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic exterior photography, realistic proportions, no people, no text, no logos, no readable house numbers. The front of a British red brick 1930s semi-detached house with a small single-storey brick and glass entrance porch with a tiled lean-to roof and a white composite door with glass panels, a black wall lantern beside the door, two potted bay trees either side, a neat path of grey paving. Soft overcast daylight, realistic suburban street."},
+{"name": "03-shoe-bench","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. Close view of a narrow white painted built-in shoe bench with a cushioned top and cubbies of shoes and wellington boots underneath, inside a small British porch, with wall-mounted hooks for a dog lead and a tote bag above, a terracotta tiled floor. Even daylight."},
+{"name": "04-canopy","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic exterior photography, realistic proportions, no people, no text, no logos, no readable house numbers. A British Victorian terraced house front door painted deep sage green, sheltered by a small open timber canopy porch with a pitched slate roof on two black brackets, a black and white geometric tiled step, a brass door knocker, a coir doormat, a potted lavender and a small bench beside the door. Soft daylight."},
+{"name": "05-plants-light","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. The inside of a small glazed British porch used as a light-filled entrance: a narrow shelf under the window with potted geraniums and herbs, a wicker basket for umbrellas, a slim wall mirror, grey hexagon floor tiles, a ceiling light, a glazed front door with frosted glass. Bright daylight, tidy."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos. A beautifully styled small enclosed British entrance porch: white painted brick walls, a slim oak bench with a sheepskin and shoes neatly under it, black hooks with a coat and a straw bag, black and white chequerboard floor tiles, a large potted olive tree, a glazed front door letting in warm morning light, a round mirror above the bench."}
+]
+}
