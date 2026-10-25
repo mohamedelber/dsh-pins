@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. A neatly organised fitted wardrobe in a British bedroom with both white shaker doors open: clothes on matching slim wooden hangers grouped by type and colour on a hanging rail, a lower double-hanging section with shirts and folded trousers, folded jumpers in neat stacks on shelves with clear acrylic shelf dividers, two fabric storage boxes on the top shelf, a row of shoes on a low shelf. Soft daylight, calm and tidy."},
+{"name": "02-double-rail","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. Close view inside a wardrobe with two hanging rails one above the other (double hanging): shirts and blouses on the top rail, trousers folded over hangers and skirts on the bottom rail, all on matching slim velvet hangers facing the same way, sorted by colour. Even soft light."},
+{"name": "03-file-fold","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. Top-down view of an open wardrobe drawer with T-shirts and jumpers file-folded and standing upright in rows so every item is visible, separated by fabric drawer dividers, in soft neutral colours. Natural light."},
+{"name": "04-shelves","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. Wardrobe shelves with neatly folded jumpers in short stacks of four or five held by clear acrylic shelf dividers, a woven basket of scarves, and lidded fabric boxes for out-of-season clothes on the top shelf. Soft daylight."},
+{"name": "05-seasonal","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. Out-of-season clothes being stored: a breathable zip-up fabric storage bag with folded summer clothes, a lidded under-bed storage box sliding under a bed with a linen valance, and a few cedar wood blocks beside them. Bright, calm British bedroom."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos, no readable labels. A beautifully organised open wardrobe: matching wooden hangers with clothes grouped by colour from light to dark, a double-hanging section, folded knitwear on shelves with acrylic dividers, woven baskets, shoes neatly lined up below, warm soft light, calm neutral palette."}
+]
+}
