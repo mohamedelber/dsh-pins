@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, no people, no text, no logos, no readable labels. A small American full bathroom about 5 by 8 feet, freshly renovated: a white alcove tub with a glass panel instead of a curtain, white subway tile to the ceiling, a floating light oak vanity with a white top and a round mirror, a wall sconce on each side, a small hexagon mosaic floor, a recessed shelf above the toilet with folded towels, a plant. Bright daylight, airy and calm."},
+{"name": "02-curbless-shower","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. A small bathroom with a curbless walk-in shower behind a single fixed glass panel, the same large light grey porcelain tile running across the whole floor and into the shower, a linear drain, a built-in shower niche, a floating vanity in the foreground. Soft daylight."},
+{"name": "03-pedestal","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. A tiny powder-sized bathroom with a corner wall-mounted sink, a medicine cabinet with a mirror door recessed into the wall, a slim over-the-toilet shelf with baskets, vertical shiplap painted soft blue, a brass towel ring. Bright light."},
+{"name": "04-wallpaper","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small bathroom with bold botanical wallpaper above white beadboard wainscoting, a vintage-style pedestal sink, a brass mirror, a black and white checkerboard floor, a narrow window with a café curtain. Cheerful daylight."},
+{"name": "05-pocket-door","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small bathroom seen from the hallway through an open white pocket door, with a light grey tiled floor, a white vanity, a large frameless mirror reflecting a window and a glass shower screen. Calm daylight."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos, no readable labels. A beautifully styled small bathroom: a floating oak vanity with a white vessel sink and round mirror, warm sconces, green zellige-style tile on the shower wall behind a frameless glass panel, a recessed niche, a matte black towel ladder with white towels, a plant, soft daylight."}
+]
+}
