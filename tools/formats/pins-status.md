@@ -10,3 +10,4 @@
 ## Oct 25 2026
 - CSV-75-hallway-ideas.csv (Dec 14 + Dec 21) and CSV-76-feng-shui-bedroom.csv (Dec 17 + Dec 24) are NEW and NOT yet uploaded. Ask the user to upload each once (any time; Pinterest accepts links to scheduled posts).
 - CSV-77-small-porch.csv (Dec 21 + Dec 28) NEW, sent to user Oct 25 together with CSV-75-76? NO — sent separately; confirm upload.
+- CSV-78-organise-wardrobe.csv (Dec 28 + Jan 4) NEW, sent to user Oct 25; confirm upload.
