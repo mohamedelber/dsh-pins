@@ -1,0 +1,15 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. A bright, small American first apartment on move-in day: a simple sofa, a few unopened moving boxes, a rolled rug, a floor lamp, a small dining table with two chairs, a basic toolkit and a cleaning caddy on the kitchen counter in the background, large window with daylight, wooden floor. Calm, hopeful, tidy."},
+{"name": "02-kitchen","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. Basic kitchen starter set laid out neatly on a small apartment kitchen counter: a nonstick skillet, a saucepan, a chef's knife on a cutting board, mixing bowl, measuring cups, wooden spoons, a colander, four plates, bowls and mugs, a dish rack. Soft daylight."},
+{"name": "03-bathroom","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. Small apartment bathroom essentials neatly arranged: a shower curtain with liner and rings, folded towels on a shelf, a bath mat, a plunger and toilet brush beside the toilet, a small trash can, a first aid kit box, and a shower caddy. Clean and bright."},
+{"name": "04-tools","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no logos, no readable labels. A basic home toolkit and safety items laid out on a wooden floor of an apartment: a hammer, screwdriver set, tape measure, adjustable wrench, picture hanging hooks, a flashlight, extension cord with surge protector, a small fire extinguisher and spare light bulbs. Top-down, even light."},
+{"name": "05-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos, no readable labels. A cozy, freshly set-up small first apartment: a neutral sofa with cushions, a jute rug, a floor lamp, a small round dining table, plants, a few framed abstract prints, a couple of neatly stacked moving boxes in the corner, warm afternoon light."}
+]
+}
