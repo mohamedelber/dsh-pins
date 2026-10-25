@@ -1,7 +1,7 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';BG='#F7F1E9';BR='#D8CBBB';CR='#FFFFFF'
 s=[];a=s.append
 desc=("Four cards show how window direction changes bedroom paint colours in the UK. North-facing: cool, bluish light makes colours look darker, so warm shades such as plaster pink, terracotta and warm white work, or go dark on purpose with a deep blue. "
-"South-facing: warm, bright light for most of the day, so cool shades such as mint, pale blue and cool white stay fresh. East-facing: bright morning light that turns cooler later. West-facing: cooler mornings and warm evening light; for both, judge colours at the times you use the room. "
+"South-facing: warm, bright light for most of the day, so cool shades such as mint, pale blue and cool white stay fresh. East-facing: the most sun in the morning, then cooler, muted light. West-facing: cooler mornings and warm evening light; for both, judge colours at the times you use the room. "
 "Below, a light reflectance value scale from 0 (black, absorbs light) to 100 (white, reflects light), and the 60-30-10 rule: 60 percent main colour on the walls, 30 percent secondary colour on bedding, curtains or furniture, 10 percent accent in cushions, throws and art.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="bc-t bc-d"><title id="bc-t">Pick a bedroom colour by the light</title><desc id="bc-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
@@ -10,7 +10,7 @@ a(f'<text x="60" y="114" font-size="21" fill="{G}">Which way your window faces c
 a(f'<text x="1140" y="30" font-size="18" fill="{G}" text-anchor="end">dailyspacehacks.com</text>')
 cards=[("N","North-facing window",["Cool, bluish light all day:","colours look darker and greyer"],"Go warm",[("#D9B6A2","plaster pink"),("#B0624A","terracotta"),("#EFE5D8","warm white")],"or go dark on purpose: deep blue"),
 ("S","South-facing window",["Warm, bright light most of","the day: colours look warmer"],"Cool shades stay fresh",[("#C4DCCB","mint"),("#C4D3DF","pale blue"),("#F2F4F1","cool white")],"strong sun can wash out pale tones"),
-("E","East-facing window",["Bright, warm light in the","morning, cooler after midday"],"Test at the hours you use it",[("#A9B59B","sage"),("#CDBDA6","stone"),("#AFC0CC","soft blue")],"in a bedroom, mornings and night"),
+("E","East-facing window",["Most sun in the morning, then","cooler, muted light later"],"Test at the hours you use it",[("#A9B59B","sage"),("#CDBDA6","stone"),("#AFC0CC","soft blue")],"in a bedroom, mornings and night"),
 ("W","West-facing window",["Cooler mornings, then warm","golden light in the evening"],"Test at the hours you use it",[("#EDE2D2","warm white"),("#D9B6A2","plaster pink"),("#7E8457","olive")],"check under your lamps too")]
 for i,(d,ttl,lines,lead,sw,note) in enumerate(cards):
     x=60+(i%2)*550; y=150+(i//2)*255; w=530; h=235

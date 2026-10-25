@@ -5,7 +5,6 @@ SRC={"hgfb":"https://www.homesandgardens.com/interior-design/best-farrow-and-bal
 "hgsage":"https://www.homesandgardens.com/interior-design/best-sage-green-paints",
 "sofa":"https://blog.sofasandstuff.com/2025/03/11/curated-bedroom-colours-with-ruth-mottershead-of-little-greene/",
 "ihgreen":"https://www.idealhome.co.uk/bedroom/bedroom-decor/best-green-paint-shades-for-a-bedroom",
-"dbed":"https://www.dulux.co.uk/en/bedrooms",
 "crown":"https://www.crownpaints.com/ie/inspiration-bedroom",
 "hgolive":"https://www.homesandgardens.com/interior-design/best-olive-green-paint",
 "liv25":"https://www.livingetc.com/spaces/interior-inspiration/bedroom-colour-ideas-25-paint-colours-with-impact-233940",
@@ -21,7 +20,7 @@ SRC={"hgfb":"https://www.homesandgardens.com/interior-design/best-farrow-and-bal
 "dasp":"https://www.dulux.co.uk/en/expert-help/dr-dulux-how-decorate-north-south-facing-rooms",
 "dher":"https://duluxheritage.co.uk/en/inspiration/article/31/how-to-pick-the-right-heritage-shade",
 "lrv":"https://www.homesandgardens.com/interior-design/what-is-light-reflective-value",
-"fbs":"https://www.farrow-ball.com/ie/how-to-guide/how-to-sample",
+"fbs":"https://www.farrow-ball.com/how-to-guide/how-to-sample",
 "pshed":"https://www.thepaintshed.com/tips-advice/the-correct-way-to-test-and-use-paint-samples",
 "drench":"https://www.idealhome.co.uk/all-rooms/colour-drenching-paint-trend",
 "ceil":"https://www.livingetc.com/advice/paint-ceilings-and-walls-the-same-color",
@@ -34,11 +33,11 @@ SRC={"hgfb":"https://www.homesandgardens.com/interior-design/best-farrow-and-bal
 "travel":"https://www.travelodge.co.uk/blog/featured/bedroom-wall-colours",
 "rest":"https://www.idealhome.co.uk/news/worst-colour-to-paint-a-bedroom-218092",
 "nhs":"https://111.wales.nhs.uk/Insomnia/",
-"sleepch":"https://thesleepcharity.org.uk/information-support/adults/sleep-hub/blue-light-and-sleep/",
 "coty":"https://www.homesandgardens.com/decor/paint/dulux-colour-of-the-year-2027-soulful-sage",
 "rhythm":"https://www.idealhome.co.uk/all-rooms/rhythm-of-blues-dulux-colours-of-the-year-2026",
 "fbpop":"https://www.idealhome.co.uk/all-rooms/farrow-and-ball-most-popular-paint-colours-2026",
-"lg26":"https://www.idealhome.co.uk/all-rooms/little-greene-26-new-paint-shades-2026-first-look"}
+"joa25":"https://www.farrow-ball.com/the-chromologist/inside-our-colour-curators-newly-renovated-somerset-home",
+"gb27":"https://www.idealhome.co.uk/all-rooms/graham-and-brown-colour-of-the-year-2027-rose-earth"}
 def SR(k,t): return ext(SRC[k],t)
 
 p(f"The best bedroom colour ideas start with the light, not the paint chart. In a north-facing bedroom, warm shades such as plaster pink, terracotta and warm white stop the room feeling cold; in a south-facing one, cooler greens and blues stay fresh. Soft sage green is the safest all-rounder, and Farrow &amp; Ball's Patrick O'Donnell says {SR('hgfb','green is the most natural colour family for the bedroom')}. Below are 14 bedroom colour ideas from paint-brand colour experts and designers, with named shades, plus how to test them before you commit.")
@@ -51,41 +50,41 @@ p(f"A paint's light reflectance value (LRV) tells you how much light it bounces 
 
 h2("Greens")
 h3("1. Soft Sage Green")
-p(f"Sage is the colour most bedroom colour ideas come back to. Dulux named Soulful Sage its Colour of the Year 2027, and creative director Marianne Shillingford says {SR('coty','its soft, silvery quality brings a sense of lightness')}. O'Donnell suggests Farrow &amp; Ball Lichen {SR('hgsage','for a relaxing bedroom across both walls and woodwork')}, and Little Greene's Ruth Mottershead calls Little Greene Sage Green {SR('hgsage','a calming and sophisticated shade of green with a very soothing effect')}. On a budget, Crown's Mellow Sage is {SR('crown','a restorative pale sage green paint')}. Farrow &amp; Ball colour curator Joa Studholme painted her own main bedroom in French Gray, a soft green, to link it to the garden outside. Pair sage with white linen, oak and a rust-coloured throw, as in the illustration above.")
+p(f"Sage is the colour most bedroom colour ideas come back to. Dulux named Soulful Sage its Colour of the Year 2027, and creative director Marianne Shillingford says {SR('coty','its soft, silvery quality brings a sense of lightness')}. O'Donnell suggests Farrow &amp; Ball Lichen {SR('hgsage','for a relaxing bedroom across both walls and woodwork')}, and Little Greene's Ruth Mottershead calls Little Greene Sage Green {SR('hgsage','a calming and sophisticated shade of green with a very soothing effect')}. On a budget, Crown's Mellow Sage is {SR('crown','a restorative pale sage green paint')}. In her {SR('joa25','renovated Somerset home')}, Farrow &amp; Ball colour curator Joa Studholme painted the walls and woodwork of one bedroom in Sap Green. Pair sage with white linen, oak and a rust-coloured throw, as in the illustration above.")
 h3("2. Deep Forest or Olive Green")
 p(f"Darker greens make a bedroom feel enclosed and calm rather than bright. Chelsea Clark of Lust Home says dark, rich greens {SR('ihgreen','bring depth to a room')}; Ideal Home suggests Dulux Everglade Forest, and Crown's Woodland Wanderer is {SR('crown','a rich, deep and calming green')}. For olive, designer Julia Baum says Farrow &amp; Ball Bancha {SR('hgolive','has a deep feel that creates a sense of calm in any space')}. Green also works in a {a('box-room-bedroom-ideas','box room bedroom')}, where a dark shade blurs the corners.")
 
 h2("Blues")
 h3("3. Soft, Changeable Blue")
-p(f"Valspar's Lucy Steele says {SR('ihsch','blue is one of the colours most associated with calm')}. Pale blues shift with the light: Studholme says Farrow &amp; Ball Light Blue in her triple-aspect spare bedroom is {SR('sheer','positively blue in strong morning light')} and greyer later. Farrow &amp; Ball Lulworth Blue No. 89 and Dulux's 2026 colour Mellow Flow, {SR('rhythm','the perfect muted blue that calms and soothes')}, are softer options. In a south-facing room, Dulux also suggests the pale Nordic Sky.")
+p(f"Valspar's Lucy Steele says {SR('ihsch','blue is one of the colours most associated with calm')}. Pale blues shift with the light: when SheerLuxe visited Studholme's home in 2021, it found Farrow &amp; Ball Light Blue in her triple-aspect second bedroom was {SR('sheer','positively blue in strong morning light')} but greyer by evening. Farrow &amp; Ball Lulworth Blue No. 89 and Mellow Flow, one of Dulux's three 2026 Colours of the Year, which Ideal Home calls {SR('rhythm','the perfect muted blue that calms and soothes')}, are softer options. In a south-facing room, Dulux also suggests the pale Nordic Sky.")
 h3("4. Navy and Inky Blue")
 p(f"Designer Alice Bettington says {SR('liv25','darker blues are a wonderful choice for bedrooms as they evoke the night sky')}. O'Donnell says Farrow &amp; Ball Hague Blue {SR('hague','works a treat in north-facing rooms')} because of its green undertone. Mottershead recommends Little Greene Royal Navy, saying deep shades {SR('sofa','create depth and intimacy')}, and Crown's Midnight Navy is the high-street version. Navy looks best painted everywhere, which is idea 13.")
 
 h2("Pinks, Whites and Warm Neutrals")
 h3("5. Plaster Pink")
 img(3)
-p(f"O'Donnell's advice is direct: {SR('hgfb','pink is a colour for those poorly lit north-facing bedrooms')}. His pick, Farrow &amp; Ball Setting Plaster, is one Studholme uses in her own small third bedroom. Charlotte Cosby, Farrow &amp; Ball's creative director, calls it {SR('livn','perfect for enveloping north-facing spaces')}. Little Greene's earthier Split Pink and Lick Pink 02 are close alternatives; Bradley says Pink 02 {SR('livsleep','offers exactly what a bedroom should feel like')}.")
+p(f"O'Donnell's advice is direct: {SR('hgfb','pink is a colour for those poorly lit north-facing bedrooms')}. His pick, Farrow &amp; Ball Setting Plaster, was the colour of Studholme's small third bedroom when SheerLuxe visited in 2021. Charlotte Cosby, Farrow &amp; Ball's head of creative, calls it {SR('livn','perfect for enveloping north-facing spaces')}. Little Greene's earthier Split Pink and Lick Pink 02 are close alternatives; Bradley says Pink 02 {SR('livsleep','offers exactly what a bedroom should feel like')}. Graham &amp; Brown's Colour of the Year 2027, Rose Earth, is {SR('gb27','a warm, earthy pink shade with subtle brown undertones')}.")
 h3("6. Warm White")
-p(f"White is not one colour. Mottershead says {SR('livw','warm whites work particularly well in north-facing rooms')}, while {SR('livw','cool whites can work well in south-facing rooms')}. For a bedroom she suggests the pink-tinged Little Greene China Clay or Rolling Fog – Pale. Crown's Fresh Coconut is {SR('crown','a delicate neutral, warm off white')}. Designer Katie Miller says Farrow &amp; Ball Shaded White {SR('hgfb','always looks different throughout the day')}, so sample it first.")
+p(f"White is not one colour. Mottershead says {SR('livw','warm whites work particularly well in north-facing rooms')}, while {SR('livw','cool whites can work well in south-facing rooms')}. She adds that {SR('livw','a tinge of pink can also make whites feel warmer')}, naming Little Greene China Clay and Rolling Fog – Pale. Crown's Fresh Coconut is {SR('crown','a delicate neutral, warm off white')}. Designer Katie Miller says Farrow &amp; Ball Shaded White {SR('hgfb','always looks different throughout the day')}, so sample it first.")
 h3("7. Taupe, Stone and Mushroom")
-p(f"If you are moving away from grey, warm neutrals are the obvious replacement. Ideal Home reports that {SR('fbpop','warm, characterful colours are driving sales in 2026')} at Farrow &amp; Ball, with Wimborne White its best seller and Mouse's Back among the risers. Designer Adam Knight chose the darker Oxford Stone for a bedroom, saying it promotes {SR('hgfb','rest, comfort, and calm')}. Little Greene's Masquerade is a lighter warm neutral Mottershead suggests for bedrooms.")
+p(f"If you are moving away from grey, warm neutrals are the obvious replacement. Ideal Home reports that {SR('fbpop','warm, characterful colours are driving sales in 2026')} at Farrow &amp; Ball, with Wimborne White its best seller and the brown Mouse's Back also topping the charts. Designer Adam Knight chose the darker Oxford Stone for a bedroom, saying it promotes {SR('hgfb','rest, comfort, and calm')}. Little Greene's Masquerade is a lighter warm neutral Mottershead suggests for bedrooms.")
 
 h2("Deep and Earthy Colours")
 h3("8. Terracotta and Clay")
-p(f"Cosby says Farrow &amp; Ball Red Earth is {SR('livn','the perfect shade for embracing a warmer color palette')} in a north-facing room. James Sirett of Fired Earth says {SR('ihterra','terracotta has a reassuring earthiness')}, but Annie Sloan warns that deep terracotta can look muddy in a dark north-facing room, so test a sample there. Terracotta also works lower down the wall (idea 14).")
+p(f"Cosby says Farrow &amp; Ball Red Earth is {SR('livn','the perfect shade for embracing a warmer color palette')} in a north-facing living room, and the same logic applies to a bedroom. James Sirett of Fired Earth says {SR('ihterra','terracotta has a reassuring earthiness')}, but Annie Sloan warns that deep terracotta can look muddy in a dark north-facing room, so test a sample there. Terracotta also works lower down the wall (idea 14).")
 h3("9. Aubergine and Plum")
-p(f"Farrow &amp; Ball says {SR('brinjal','in bedrooms, Brinjal feels dramatic yet grounding')}; Brinjal No. 222 is a deep, wine-coloured purple. Mylands suggests its Plum Tree No. 283 behind the bed, saying {SR('myl','it\'s comforting and reassuring')}, and the paler, grey-lilac Lavender Garden No. 30 if a dark purple feels too much. Graham &amp; Brown's 2026 colour, Divine Damson, sits in the same family.")
+p(f"Farrow &amp; Ball says {SR('brinjal','in bedrooms, Brinjal feels dramatic yet grounding')}; Brinjal No. 222 is a deep, wine-coloured purple. Mylands suggests its Plum Tree No. 283 behind the bed, saying {SR('myl','it\'s comforting and reassuring')}, and the paler, grey-lilac Lavender Garden No. 30, which Mylands says {SR('myl','makes a wonderfully serene ambience in a bedroom')}, if a dark purple feels too much.")
 h3("10. Deep Red")
 p(f"Red sounds stimulating, but a dark, brown-based red can feel enclosing. Mottershead suggests Little Greene Baked Cherry for all-over bedroom schemes, {SR('sofa','creating that cosy, cocooning quality')}. Keep it to walls you see from bed, not the wall you face when you wake, if you find it too strong.")
 h3("11. Soft Black")
 p(f"O'Donnell says Farrow &amp; Ball Railings can be {SR('hgfb','a surprisingly successful option in a naturally poorly lit or small room')}. Andy Greenall of Paint &amp; Paper Library says {SR('liv25','black helps to create a calm, intimate ambience')}. Warm it up with wood, brass and soft white bedding.")
 h3("12. Ochre Yellow, Used Carefully")
-p(f"Yellow divides opinion. Mottershead suggests Little Greene Bassoon, an ochre, to {SR('sofa','help us feel uplifted, happy and energised')}. Colour psychologist Karen Haller, working with bed maker Rest Assured, told Ideal Home to {SR('rest','avoid yellow in the bedroom')}. If you love it, choose a muted ochre over a bright lemon, and try it on a headboard wall first.")
+p(f"Yellow divides opinion. Mottershead suggests Little Greene Bassoon, an ochre, to {SR('sofa','help us feel uplifted, happy and energised')}. Colour expert Karen Haller, who worked with bed maker Rest Assured on its 2019 research, says to {SR('rest','avoid yellow in the bedroom')}. If you love it, choose a muted ochre over a bright lemon, and try it on a headboard wall first.")
 
 h2("Ways to Use Colour in a Bedroom")
 h3("13. Colour Drench the Whole Room")
 img(2)
-p(f"Colour drenching means you {SR('drench','take one colour and paint everything in that room in the same one colour')}: walls, ceiling, skirting, doors and window frames. Bradley says the result is that {SR('drench','you don\'t notice the edges of the room')}. Studholme uses one colour per bedroom at home because most of them are so small. Use a flat or low-sheen eggshell on the woodwork so it reads as one colour. Designer Lizzie Green says drenching is {SR('ceil','hugely effective in making a space feel bigger')}.")
+p(f"Colour drenching means you {SR('drench','take one colour and paint everything in that room in the same one colour')}: walls, ceiling, skirting, doors and window frames. Bradley says the result is that {SR('drench','you don\'t notice the edges of the room')}. Studholme takes Farrow &amp; Ball Stirabout over the walls and ceiling of her own {SR('joa25','main bedroom')}. Use a flat or low-sheen eggshell on the woodwork so it reads as one colour. Designer Lizzie Green says drenching is {SR('ceil','hugely effective in making a space feel bigger')}.")
 h3("14. Two-Tone Walls")
 img(4)
 p(f"Painting the lower part of the wall in a deeper colour grounds the bed and makes the ceiling feel higher. One Dulux example shown by Ideal Home paints roughly the bottom two-thirds of the wall in Mellow Flow and the top third off-white. Keep the line straight with low-tack masking tape, and set it just above the headboard or at picture-rail height. Panelling does the same job: our {a('wainscoting-calculator','wainscoting calculator')} and {a('board-and-batten-calculator','board and batten calculator')} work out the spacing.")
@@ -93,14 +92,14 @@ p(f"To pull a bedroom colour scheme together, use the 60-30-10 rule. Ben Thomson
 
 h2("How to Test and Paint")
 img(5)
-lst([f"<strong>Sample big.</strong> Farrow &amp; Ball says to paint two coats of sample pot on card, {SR('fbs','the bigger the better')}, and {SR('fbs','check your samples over the course of a day or two')}. For a bedroom, close the curtains and look at them under a lamp too. The Paint Shed suggests A5 or bigger and moving the card around the room.",
-f"<strong>Pick a finish.</strong> Matt or flat emulsion hides uneven walls. Farrow &amp; Ball Estate Emulsion has a 2% sheen and is {SR('estate','wipeable but not washable')}; Modern Emulsion (7%) is tougher. Designer Claire Garner says {SR('finish','my go-to paint finish for walls and ceilings is always matt')}.",
-f"<strong>Buy enough.</strong> Dulux Matt covers {SR('dmatt','up to 14m2/litre')} per coat, and most colour changes need two coats. So a 5-litre tin gives two coats on up to about 35 m², roughly the walls of a 3.5 m square bedroom with a 2.4 m ceiling once the door and window are taken off. Measure yours.",
+lst([f"<strong>Sample big.</strong> Farrow &amp; Ball says to paint two coats of sample pot on card, {SR('fbs','the bigger the better')}, and {SR('fbs','check your samples over the course of a day or two')}. For a bedroom, close the curtains and look at them under a lamp too. The Paint Shed suggests {SR('pshed','ideally A5 or bigger')} and moving the card around the room.",
+f"<strong>Pick a finish.</strong> Matt or flat emulsion is more forgiving of uneven walls than a sheen finish. Farrow &amp; Ball Estate Emulsion has a 2% sheen and is {SR('estate','wipeable but not washable')}; Modern Emulsion (7%) is tougher. Designer Claire Garner says {SR('finish','my go-to paint finish for walls and ceilings is always matt')}.",
+f"<strong>Buy enough.</strong> Dulux Matt covers {SR('dmatt','up to 14m2/litre')} per coat, and most colour changes need two coats. So a 5-litre tin gives two coats on up to about 35 m² at best-case coverage, enough for the roughly 31 m² of wall in a 3.5 m square bedroom with a 2.4 m ceiling once a door and window are taken off. Measure yours.",
 f"<strong>Ventilate.</strong> UK rules limit matt interior wall paint to {SR('netregs','30 g/l')} of VOCs (solvents) when ready to use. The HSE's advice is simple: {SR('hse','if indoors open doors and windows')}. Paint early in the day so the room can air before you sleep in it.",
 f"<strong>Wallpaper instead?</strong> Our {a('wallpaper-calculator','wallpaper calculator')} works out how many rolls a feature wall needs."])
 
 h2("What Is the Best Bedroom Colour for Sleep?")
-p(f"There is no proven sleep colour. The most quoted figures come from commercial surveys, not trials: a Travelodge survey of 2,000 British homes found {SR('travel','58% of Britons with a blue wall colour reported waking up feeling happy')}, and Rest Assured's research put soft green as the most restful. Treat them as opinion polls. NHS advice for better sleep is to {SR('nhs','make sure your bedroom is dark and quiet')} and to avoid screens before bed, because {SR('nhs','the bright light makes you more awake')}. So choose a colour you find calming, add blackout lining and warm bedside lamps, and the paint will do its part. Our {a('small-bedroom-storage-ideas','small bedroom storage ideas')} help with the clutter that keeps many of us awake.")
+p(f"There is no proven sleep colour. The most quoted figures come from commercial surveys, not trials: an undated Travelodge survey of 2,000 British homes (reported in 2017) found {SR('travel','58% of Britons with a blue wall colour reported waking up feeling happy')}, and Rest Assured's 2019 research put soft green as the most restful. Treat them as opinion polls. NHS advice for better sleep is to {SR('nhs','make sure your bedroom is dark and quiet')} and to avoid screens before bed, because {SR('nhs','the bright light makes you more awake')}. So choose a colour you find calming, add blackout lining and warm bedside lamps, and the paint will do its part. Our {a('small-bedroom-storage-ideas','small bedroom storage ideas')} help with the clutter that keeps many of us awake.")
 
 h2("If You Only Do One Thing")
 p("Buy three sample pots before you buy any paint: one warm, one cool and one deep shade from the ideas above. Paint each on a large card, look at them first thing in the morning and again at night under your lamps, and choose the one you still like on day two.")
