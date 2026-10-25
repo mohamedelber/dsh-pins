@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A calm British bedroom painted in a soft sage green with the skirting and window frame in the same colour, white linen bedding with a rust-coloured throw, an oak bedside table with a ceramic lamp, a jute rug on wooden floorboards, a sash window with soft daylight. Warm, restful, realistic."},
+{"name": "02-colour-drench","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small British bedroom colour-drenched in a deep navy blue: walls, ceiling, skirting and door all painted the same navy, a bed with crisp white bedding and a mustard velvet cushion, a brass wall light glowing, cosy evening light."},
+{"name": "03-warm-neutral","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A bedroom painted in a warm plaster pink neutral, with an upholstered headboard in oatmeal linen, terracotta and cream bedding, a rattan pendant light, a small dresser with a vase of dried flowers. Soft afternoon light."},
+{"name": "04-two-tone","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A bedroom wall painted two-tone: a deep terracotta lower half below a painted line at about one third of the wall height and warm white above, a simple wooden bed with white and terracotta linen, a framed print, a small bedside table. Daylight."},
+{"name": "05-swatches","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no logos, no readable labels. Large painted sample boards in sage green, soft blue-grey, warm white and terracotta taped to a bedroom wall beside a window, a paintbrush and a small open tester pot on the windowsill, natural daylight showing how colours change."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos. A beautifully styled British bedroom painted in a calming soft green from wall to ceiling with a white ceiling rose, layered linen bedding in cream and rust, a wooden headboard, a ceramic bedside lamp, a jute rug and a sash window with linen curtains, warm light."}
+]
+}
