@@ -1,8 +1,8 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';OAK='#C9A06B';CR='#FBF7F0';BLU='#BFD9E6'
 s=[];a=s.append
 desc=("Plan of an example small ensuite 1.8 by 2.0 metres (3.6 square metres). A 900 by 900 mm shower with a frameless screen sits in one corner, a 600 mm wide by 460 mm deep wall-hung vanity beside it, and the toilet on the side wall. "
-"Because there is less than 1.2 m between the toilet pan and the doorway, the door is a 720 mm cavity slider, as the NCC requires a sliding, outward-opening or lift-off door in that case. "
-"Right: the rules that apply in Australia: shower walls waterproofed to at least 1800 mm, the whole shower floor waterproofed, the wall behind a vanity water resistant 150 mm above the basin, a 25 litre per second exhaust fan ducted outside, no switches in the electrical zones closest to water, and licensed trades for plumbing, electrical and, in some states, waterproofing.")
+"Because there is less than 1.2 m between the toilet pan and the doorway, the door is a 720 mm cavity slider, as the NCC requires a sliding, outward-opening or readily removable door in that case. "
+"Right: the rules that apply in Australia: shower walls waterproofed to at least 1800 mm, the whole shower floor waterproofed, the wall behind a vanity water resistant 150 mm above the basin where the basin is within 75 mm of the wall, a 25 litre per second exhaust fan ducted outside, no switches in the electrical zones closest to water, and licensed trades for plumbing, electrical and, in some states, waterproofing.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="se-t se-d"><title id="se-t">A small ensuite, measured</title><desc id="se-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="80" font-size="42" font-weight="700" fill="{T}">A Small Ensuite, Measured</text>')
@@ -45,14 +45,14 @@ def head(t):
 def line(t):
     global y; a(f'<text x="{RX+22}" y="{y}" font-size="14.5" fill="{T}" xml:space="preserve">{t}</text>'); y+=25
 head('Waterproofing (NCC Part 10.2)')
-for l in ['• Shower walls: at least 1800 mm up','• The whole shower floor, including any hob','• No screen? Waterstop 1500 mm from the rose','• Vanity wall: 150 mm above the basin']: line(l)
+for l in ['• Shower walls: at least 1800 mm up','• The whole shower floor, including any hob','• No screen? Waterstop 1500 mm from the rose','• Basin near a wall: 150 mm above it']: line(l)
 y+=14; head('Air and electrics')
-for l in ['• Exhaust fan: 25 L/s, ducted outside','• No window? 10-minute fan run-on','• No switches in zones 0 and 1;','   zone 2 runs 0.6 m out from the shower']: line(l)
+for l in ['• Exhaust fan: 25 L/s, ducted outside','• Not naturally ventilated? 10-min run-on','• No switches in zones 0 and 1;','   zone 2 runs 0.6 m out from the shower']: line(l)
 y+=14; head('Who does the work')
 for l in ['• Licensed plumber and electrician','• NSW: licensed waterproofer over $5,000','• QLD: QBCC waterproofing licence class']: line(l)
 y+=14; head('Toilet door (NCC 10.4.2)')
-for l in ['• Under 1.2 m from pan to doorway:','   door slides, opens out or lifts off']: line(l)
-a(f'<text x="60" y="858" font-size="14" fill="{G}">Example only. Sources: NCC 2022 Housing Provisions, VBA, NSW Government (AS/NZS 3000 zones, waterproofing licence), QBCC, Blueleaf (sizes).</text>')
+for l in ['• Under 1.2 m from pan to doorway:','   door slides, opens out or is removable']: line(l)
+a(f'<text x="60" y="858" font-size="14" fill="{G}">Example only. Sources: NCC 2022 Housing Provisions, NSW Government (AS/NZS 3000 zones, waterproofing licence), QBCC, Blueleaf (sizes).</text>')
 a(f'<text x="60" y="880" font-size="14" fill="{G}">Layout and fixture positions: our worked example. Check your state’s rules and your certifier before you build.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
