@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, no people, no text, no logos. A small modern Australian ensuite bathroom off a master bedroom: a frameless glass shower screen with a niche in the tiled wall, a wall-hung timber vanity with a single basin and a round mirror, large-format pale terrazzo-look floor tiles continuing into the shower, white vertical stacked wall tiles, a heated towel rail, a skylight bringing in daylight, a small plant. Bright, airy, realistic."},
+{"name": "02-shower-niche","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. Close view of a tiled recessed shower niche in a small Australian ensuite holding plain unlabelled bottles, with a fixed glass shower screen, a rail shower with a hand-held head and a floor-level linear drain along the wall, soft daylight."},
+{"name": "03-vanity","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable labels. A slim wall-hung timber vanity 600 mm wide with two drawers and a white basin in a small ensuite, a recessed shaving cabinet with a mirror door above, an LED strip under the vanity lighting the floor, a toilet beside it. Soft daylight."},
+{"name": "04-pocket-door","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. View from a bedroom into a small ensuite through a half-open white cavity sliding (pocket) door, showing the ensuite's light tiles, a glass shower screen and a small window. Calm Australian bedroom with timber floor in the foreground."},
+{"name": "05-tiles","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A compact ensuite with soft sage green vertical stacked tiles on the shower wall, large-format light grey floor tiles, a brushed brass shower mixer and rail, a frameless glass panel and a wall-hung toilet. Bright natural light."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos. A beautifully styled small ensuite: frameless glass walk-in shower with a recessed niche, a wall-hung oak vanity with a round mirror and warm wall light, pale terrazzo floor tiles, a heated towel rail with a folded white towel, a plant, daylight from a skylight."}
+]
+}
