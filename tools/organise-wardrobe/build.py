@@ -29,7 +29,7 @@ SRC={"fci":"https://www.fcilondon.co.uk/blog/how-deep-should-built-in-wardrobes-
 "hgd":"https://www.homesandgardens.com/solved/new-years-closet-decluttering-rules"}
 def SR(k,t): return ext(SRC[k],t)
 
-p(f"To organise clothes in a wardrobe, take everything out, keep only what you wear, then put it back by zone: the clothes you wear most at eye level, longer items on a high rail, shirts and folded trousers on a double rail, and knitwear folded on shelves. Swap to matching slim hangers, group each category by colour, and move out-of-season clothes into clean, breathable storage. The seven steps below work for any size of wardrobe, and the diagram shows how much height each type of clothing needs.")
+p(f"To organise clothes in a wardrobe, take everything out, keep only what you wear, then put it back by zone: the clothes you wear most at eye level, longer items on a high rail, shirts and folded trousers on a double rail, and knitwear folded on shelves. Swap to matching slim hangers, group each category by colour, and pack out-of-season clothes away clean, in sealed boxes or bags. The seven steps below work for any size of wardrobe, and the diagram shows how much height each type of clothing needs.")
 img(1)
 
 h2("A Wardrobe, Organised by Height")
