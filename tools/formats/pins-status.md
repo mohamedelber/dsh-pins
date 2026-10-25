@@ -14,3 +14,4 @@
 - CSV-79-first-apartment.csv (Jan 4 + Jan 11) NEW, sent Oct 25; confirm upload.
 - CSV-80-small-ensuite.csv (Jan 7 + Jan 14) NEW, sent Oct 25; confirm upload.
 - CSV-81-small-bathroom.csv (Jan 18 + Jan 25) NEW, sent Oct 26; confirm upload.
+- CSV-82-bedroom-colour.csv (Jan 25 + Feb 1) NEW, sent Oct 26; confirm upload.
