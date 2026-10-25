@@ -63,7 +63,7 @@ p(f"For the finishing touches, HGTV suggests hanging calm, uplifting art opposit
 h2("If Your Bedroom Is Different")
 lst([f"<strong>Small room or box room.</strong> If the bed has to go against a side wall, keep the headboard on the solid wall and add a lamp on the open side; Cho prefers space on both sides, so treat this as a compromise. Our {a('box-room-bedroom-ideas','box room bedroom ideas')} cover layouts for very small rooms.",
 "<strong>The door is right beside the bed.</strong> Following Deflorian's advice, turn the bed so the door is diagonal from it, even if that means a smaller nightstand on one side.",
-"<strong>The only solid wall faces the door.</strong> Put a bench or a solid footboard at the end of the bed, or follow Deflorian's other fixes: a screen, a heavy curtain, or closing the door at night.",
+"<strong>The only solid wall faces the door.</strong> Put a bench or a high footboard at the end of the bed, or follow Deflorian's other fixes: a screen, a heavy curtain, or closing the door at night.",
 f"<strong>A guest room.</strong> The same rules work for visitors; see our {a('guest-bedroom-ideas','guest bedroom ideas')} for the essentials."])
 
 h2("Do This First")

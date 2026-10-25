@@ -6,3 +6,6 @@
 - DO NOT ask the user to upload CSV-62..74 on publish day: the older publish-day reminders still say so; ignore that line.
 - Pinterest accepted pins scheduled up to 56 days ahead via CSV, and links to not-yet-published (scheduled) posts.
   The confirmation email said "0 Pins were created" even though the pins were scheduled.
+
+## Oct 25 2026
+- CSV-75-hallway-ideas.csv (Dec 14 + Dec 21) and CSV-76-feng-shui-bedroom.csv (Dec 17 + Dec 24) are NEW and NOT yet uploaded. Ask the user to upload each once (any time; Pinterest accepts links to scheduled posts).
