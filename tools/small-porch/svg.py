@@ -1,7 +1,7 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';OAK='#C9A06B';CR='#FBF7F0';BRK='#B5654A'
 s=[];a=s.append
 desc=("Left: plan of an example small porch measuring 2.0 by 1.5 metres externally, which is 3 square metres, the most a porch can have under permitted development in England. "
-"With single-skin walls about 10 cm thick, the inside is about 1.8 by 1.4 metres, or 2.5 square metres. A bench 40 cm deep sits on one side, coat hooks on the other, and a 60 by 85 cm doormat inside the outer door. "
+"With single-skin walls about 10 cm thick, the inside is about 1.8 by 1.4 metres, or 2.5 square metres. A bench 40 cm deep sits on one side, coat hooks on the other, and a thin 60 by 85 cm doormat inside the outer door, which is hinged on the bench side so it clears the coats. "
 "Right: the permitted development checks for a porch in England (3 square metres measured externally, no more than 3 metres high, at least 2 metres from a boundary next to a highway, not for flats, maisonettes or where an Article 4 direction or condition applies), "
 "when a porch is normally exempt from Building Regulations (ground level, under 30 square metres, front door kept, heating not extended into it, glazing and electrics still comply), and where safety glass is needed.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="po-t po-d"><title id="po-t">A 3 square metre porch, measured</title><desc id="po-d">{desc}</desc>')
@@ -28,6 +28,8 @@ a(f'<text x="{ox+42*k}" y="{oy+t*k+22}" font-size="14" fill="{T}" text-anchor="m
 mx=X+(W/2-42.5)*k; my=oy-60*k
 a(f'<rect x="{mx}" y="{my}" width="{85*k}" height="{60*k}" fill="#D9B98A" stroke="#A9895A" stroke-width="2"/>')
 a(f'<text x="{mx+42.5*k}" y="{my+30*k+5}" font-size="14" fill="{T}" text-anchor="middle">mat 60 x 85 cm</text>')
+# door swing, hinged on bench side
+a(f'<path d="M{ox} {oy} L{ox} {oy-84*k} A{84*k} {84*k} 0 0 1 {ox+84*k} {oy}" fill="none" stroke="{G}" stroke-width="2" stroke-dasharray="5 4"/>')
 # bench left
 bx=X+t*k; by=Y+20*k
 a(f'<rect x="{bx}" y="{by}" width="{40*k}" height="{100*k}" fill="{OAK}"/>')
@@ -64,7 +66,7 @@ for l in ['✓ 3 m² or less, measured outside','✓ no part higher than 3 m','�
 y+=22; head('Building Regs: normally exempt if:')
 for l in ['✓ at ground level and under 30 m²','✓ the front door stays in place','✓ house heating not extended into it','Glazing and fixed wiring must still comply.']: line(l)
 y+=22; head('Safety glass needed:')
-for l in ['• in doors, below 1500 mm','• within 300 mm of a door edge','• other glazing below 800 mm']: line(l)
+for l in ['• in doors, below 1500 mm','• within 300 mm of a door edge, below 1500 mm','• other glazing below 800 mm']: line(l)
 a(f'<text x="60" y="850" font-size="14" fill="{G}">Example only. Sources: Planning Portal and legislation.gov.uk (Class D), Planning Portal (Building Regulations), gov.uk circular on porches,</text>')
 a(f'<text x="60" y="872" font-size="14" fill="{G}">Lancaster City Council (safety glass), First Mats (mat size). Wall thickness and inside size: our worked example. Wales has the same limits.</text>')
 a('</svg>')
