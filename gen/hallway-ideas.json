@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, real estate photo, realistic proportions, no people, no text, no logos, no readable house numbers. A British Victorian terraced house entrance hallway seen from the front door looking down the hall: walls painted in muted sage green with picture-frame panelling below a dado rail, warm white above, a patterned black and white geometric encaustic-style tiled floor, a narrow oak console table with a lamp and a round mirror above it, a staircase with a natural sisal stair runner on the right, warm brass wall lights. Correct perspective, realistic proportions, daylight from a glazed front door."},
+{"name": "02-panelling","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. Close view of a British hallway wall with painted picture-frame panelling (rectangular moulding boxes) below a dado rail at about one third of the wall height, panelling and lower wall in deep navy blue, upper wall in soft warm white, a slim radiator painted the same navy, oak floorboards. Even daylight."},
+{"name": "03-dark-hall","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small British hallway painted in a rich dark green colour-drenched style (walls, skirting, door frames and radiator all the same green), with two warm brass wall lights glowing, a gilt round mirror, a slim console with a ceramic vase, a natural jute runner on oak floorboards. Cosy evening light."},
+{"name": "04-stair-runner","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A British hallway staircase with white painted spindles and a dark wood handrail, a striped wool stair runner fitted with brass stair rods leaving painted tread edges visible on both sides, a gallery wall of plain framed abstract prints and photos with no faces or text going up the stairs, warm light."},
+{"name": "05-wallpaper","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A narrow British hallway with a botanical patterned wallpaper above white tongue and groove panelling, a row of brass coat hooks with one coat, a woven basket, a terracotta tiled floor and a pendant light. Bright daylight from the front door glass."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A tall view of an elegant British period hallway: sage green picture-frame panelling below a dado rail, warm white upper walls, black and white geometric tiled floor, oak console with a lamp and round mirror, stair runner on the stairs, brass wall light. The top third of the image is calm plain warm white wall with nothing on it."}
+]
+}

@@ -1,0 +1,15 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, calm and serene, no people, no text, no logos. A tidy American bedroom arranged with feng shui principles: a queen bed with a solid upholstered headboard placed against a solid wall (no window behind it), positioned so the bedroom door is visible from the bed but not directly in line with the foot of the bed, equal walking space on both sides, two matching oak nightstands with matching warm lamps, linen bedding in soft earth tones (sand, sage, warm white), a jute rug, a single calm landscape print above the bed with no text, nothing stored under the bed. Soft natural daylight from a side window with linen curtains. The door is partly visible at the side."},
+{"name": "02-bed-position","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. View from the bed's side showing a bedroom door diagonally across the room: a bed with a solid wooden headboard against a solid wall, the open bedroom door visible on the opposite side of the room, not in line with the bed, a small bench at the foot of the bed. Warm neutral walls, oak floor, soft light."},
+{"name": "03-nightstands","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos, no readable book titles. Close view of one side of a calm bedroom: a matching oak nightstand with a small drawer, a ceramic lamp with a linen shade glowing warmly, a small potted plant with rounded leaves, one book with a plain spine, beside a bed with layered sand and sage linen bedding and a solid upholstered headboard. Soft evening light."},
+{"name": "04-mirror","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A calm bedroom corner with a tall wooden-framed floor mirror leaning on a side wall next to a wardrobe, angled so it reflects the window and a plant, not the bed (the bed edge is visible at the side, not reflected in the mirror). Warm white walls, oak floor, linen curtains, daylight."},
+{"name": "05-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A serene feng shui style bedroom: a bed with a solid upholstered headboard centered on a solid wall, two matching nightstands and lamps, soft earth-tone linen bedding, a jute rug, a plant in the corner, clear floor under the bed, warm natural light. The top third of the image is calm plain warm white wall with nothing on it."}
+]
+}
