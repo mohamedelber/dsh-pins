@@ -1,7 +1,7 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';OAK='#C9A06B';CR='#FBF7F0';OKL='#E9D8BE'
 s=[];a=s.append
-desc=("Elevation of an example fitted wardrobe 2.2 metres high and 2 metres wide, in three bays. Left: double hanging, with the lower rail at 90 cm and the upper rail at about 2 m, so each tier has room for shirts and folded trousers, which need about 90 cm. "
-"Middle: one rail at 180 cm for dresses and coats, which need 100 to 150 cm of drop. Right: shelves 30 to 40 cm apart, enough for a stack of about 10 jumpers (about 30 cm), with drawers below and boxes for out-of-season clothes on top. "
+desc=("Elevation of an example fitted wardrobe 2.2 metres high and 2 metres wide, in three bays. Left: double hanging, with the lower rail at 90 cm and the upper rail at about 2 m, giving shirts on the upper rail about 90 cm of drop and trousers on the lower rail 60 to 70 cm. "
+"Middle: one rail at 180 cm for dresses and coats, which need 100 to 150 cm of drop. Right: shelves 35 to 40 cm apart, enough for a stack of about 10 jumpers (about 30 cm), with drawers below and boxes for out-of-season clothes on top. "
 "Hanging needs an internal depth of at least 60 cm. Most-worn clothes go in the middle zone, between knee and head height.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="ow-t ow-d"><title id="ow-t">A wardrobe organised by height</title><desc id="ow-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
@@ -47,7 +47,7 @@ def dim(h,lab,xx,col=A):
     a(f'<text x="{xx-10}" y="{fl-h*k+5}" font-size="15" font-weight="700" fill="{col}" text-anchor="end">{lab}</text>')
 dim(90,'90 cm',X-20); dim(198,'~2 m',X-60)
 # labels under bays
-for i,(t1,t2) in enumerate([("Double hanging","shirts, folded trousers"),("Long hanging","rail at 180 cm"),("Shelves 30-40 cm apart","drawers below")]):
+for i,(t1,t2) in enumerate([("Double hanging","shirts above, trousers below"),("Long hanging","rail at 180 cm"),("Shelves 35-40 cm apart","drawers below")]):
     cx=X+bw*i+bw/2
     a(f'<text x="{cx}" y="{fl+34}" font-size="16" font-weight="700" fill="{T}" text-anchor="middle">{t1}</text><text x="{cx}" y="{fl+54}" font-size="14" fill="{G}" text-anchor="middle">{t2}</text>')
 # right info panel
