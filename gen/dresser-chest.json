@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. An American bedroom wall showing two pieces of furniture side by side for comparison: on the left a long low six-drawer dresser in warm white oak (about 60 inches wide, 30 inches tall) with a round mirror hung above it, on the right a tall narrow five-drawer chest of drawers in the same oak (about 32 inches wide, 48 inches tall). Simple brass knobs, a lamp and a small plant on the dresser, light wood floor, soft daylight. Clean and calm."},
+{"name": "02-dresser","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A wide low dresser with two columns of three drawers in a soft white finish against a pale wall in an American primary bedroom, a large mirror leaning above it, a ceramic lamp and a tray with a perfume bottle on top, the corner of a bed with linen bedding at the edge of the frame. Daylight."},
+{"name": "03-chest","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A tall narrow chest of drawers with five stacked drawers in walnut, standing on a narrow wall between a window and a closet door in a small American bedroom, a small framed print above it and a basket beside it, wood floor, soft light. The chest takes little floor space."},
+{"name": "04-anchor","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic close-up photography, realistic proportions, no people, no text, no logos. The back top corner of a wooden dresser pulled slightly away from a painted bedroom wall, showing a white furniture anti-tip strap screwed to the back of the dresser and to the wall, a screwdriver resting on top of the dresser. Clear daylight, clean detail."},
+{"name": "05-drawers","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography from above at an angle, realistic proportions, no people, no text, no logos. An open dresser drawer neatly organised with fabric drawer dividers holding file-folded T-shirts standing upright in rows, rolled socks in a small divider, light wood drawer, soft daylight. Tidy and practical."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos. A cosy American bedroom corner with a tall oak chest of drawers next to a low wide oak dresser with a mirror above it, styled with a lamp, books and a plant, a linen-covered bed at the edge of the frame, warm daylight."}
+]
+}
