@@ -34,7 +34,7 @@ y=232
 for l,v in rows:
     a(f'<text x="{RX+24}" y="{y}" font-size="15" font-weight="700" fill="{T}">{l}</text><text x="{RX+180}" y="{y}" font-size="15" fill="{T}">{v}</text><line x1="{RX+24}" y1="{y+16}" x2="{RX+436}" y2="{y+16}" stroke="{BR}"/>')
     y+=56
-a(f'<text x="60" y="852" font-size="14" fill="{G}">Example widths are our own sums with 60 cm units. Sources: Wren, Harvey Jones, Magnet, Wickes, Homebuilding, DFS, Tala, NICEIC.</text>')
+a(f'<text x="60" y="852" font-size="14" fill="{G}">Example widths are our own sums. Sources: Wren, Harvey Jones, Magnet, Wickes, Homebuilding, Naked Kitchens, DFS, Tala, NICEIC.</text>')
 a(f'<text x="60" y="874" font-size="14" fill="{G}">Use our kitchen island size calculator for your own room.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
