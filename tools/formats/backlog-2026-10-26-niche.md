@@ -47,3 +47,5 @@ Still unchecked in Semrush: small bedroom ideas (DataForSEO US 9.9K KD15), small
 
 ## Schedule (Oct 26, user priority: strong + in-niche + no duplicates > format alternation)
 Mon Jan 11 dresser vs chest of drawers (US F3) SCHEDULED 3435 · Thu Jan 14 small dining room ideas (UK F2) SCHEDULED 3442 · Thu Jan 21 blanket storage ideas (US F2) SCHEDULED 3449 · Thu Jan 28 kitchen island ideas (UK F2) SCHEDULED 3456. Feb 1/4/8/11/18 open until more strong keywords pass.
+
+Oct 26 (user): small bedroom ideas and small home office ideas DEFERRED (not rejected); revisit later with Semrush. Feb 15 "what colour goes with grey" still approved.
