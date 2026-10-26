@@ -17,3 +17,4 @@
 - CSV-82-bedroom-colour.csv (Jan 25 + Feb 1) NEW, sent Oct 26; confirm upload.
 - CSV-83-dresser-chest.csv (Jan 11 + Jan 18) NEW, sent Oct 26; confirm upload.
 - CSV-84-small-dining.csv (Jan 14 + Jan 21) NEW, sent Oct 26; confirm upload.
+- CSV-85-blanket-storage.csv (Jan 21 + Jan 28) NEW, sent Oct 26; confirm upload.
