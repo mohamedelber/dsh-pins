@@ -2,7 +2,7 @@ T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='
 s=[];a=s.append
 desc=("Two floor plans of the same 120 by 80 cm table for four. With chairs on both long sides and 75 cm clear on every side, the dining area needs 270 by 230 cm. "
 "With a built-in banquette on one long side, 50 cm deep with the table overlapping the seat by 10 cm, the table edge sits 40 cm from the wall and the area needs 270 by 195 cm, saving 35 cm of room depth. "
-"Planning numbers: 60 cm of table edge per diner; a 90 to 100 cm round table seats four and 70 to 80 cm seats two; 60 cm from table to wall is a tight minimum, 75 cm comfortable, 100 to 110 cm to walk behind; banquette seat about 45 cm high and 45 to 50 cm deep; pendant 70 to 90 cm above the table, half to two thirds of the table width; rug at least 60 cm bigger than the table on each side; sideboard 30 to 40 cm deep.")
+"Planning numbers: 60 cm of table edge per diner; a 90 to 100 cm round table seats four and 70 to 80 cm seats two; 60 cm from table to wall is a tight minimum, 75 cm comfortable, 100 to 110 cm to walk behind; banquette seat about 45 cm high and 45 to 50 cm deep; pendant 75 to 90 cm above the table, half to two thirds of the table width; rug at least 60 cm bigger than the table on each side; sideboard 30 to 40 cm deep.")
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="sd-t sd-d"><title id="sd-t">Small dining room planning numbers</title><desc id="sd-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
 a(f'<text x="60" y="78" font-size="40" font-weight="700" fill="{T}">Small Dining Room: The Numbers</text>')
@@ -42,14 +42,14 @@ a(f'<text x="420" y="740" font-size="15" font-weight="700" fill="{A}">2.7 x 1.95
 RX=600
 a(f'<rect x="{RX}" y="150" width="560" height="660" rx="16" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
 a(f'<text x="{RX+26}" y="192" font-size="21" font-weight="700" fill="{A}">Planning numbers</text>')
-rows=[("Per diner","60 cm of table edge"),("Table for four","120 cm long, at least 90 wide"),("Round table","70–80 cm seats 2, 90–100 cm seats 4"),
-("Table to wall","60 tight, 75 comfortable"),("To walk behind","100–110 cm"),("Banquette seat","about 45 cm high, 45–50 deep"),("Pendant height","70–90 cm above the table top"),
+rows=[("Per diner","60 cm of table edge"),("Table for four","120 cm long, 80–90 cm wide"),("Round table","70–80 cm seats 2, 90–100 cm seats 4"),
+("Table to wall","60 tight, 75 comfortable"),("To walk behind","100–110 cm"),("Banquette seat","about 45 cm high, 45–50 deep"),("Pendant height","75–90 cm above the table top"),
 ("Pendant width","1/2 to 2/3 of the table width"),("Rug","table + at least 60 cm each side"),("Sideboard depth","30–40 cm, not 42+")]
 y=236
 for l,v in rows:
     a(f'<text x="{RX+26}" y="{y}" font-size="16" font-weight="700" fill="{T}">{l}</text><text x="{RX+220}" y="{y}" font-size="16" fill="{T}">{v}</text><line x1="{RX+26}" y1="{y+16}" x2="{RX+534}" y2="{y+16}" stroke="{BR}"/>')
     y+=54
 a(f'<text x="60" y="852" font-size="14" fill="{G}">Example plans use 75 cm clear and 42 cm chairs. Sources: IKEA GB, Oak Furnitureland, La Redoute, a UK builders\' guide (Bookabuilder), Tala,</text>')
-a(f'<text x="60" y="874" font-size="14" fill="{G}">Blakes London via Homes &amp; Gardens. Check your own room and chairs before you buy.</text>')
+a(f'<text x="60" y="874" font-size="14" fill="{G}">Homes &amp; Gardens. Check your own room and chairs before you buy.</text>')
 a('</svg>')
 open('z.svg','w').write(''.join(s))
