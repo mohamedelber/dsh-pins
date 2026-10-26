@@ -35,7 +35,7 @@ SRC={"cpsc14":"https://www.cpsc.gov/Newsroom/News-Releases/2014/CPSC-Warns-Consu
 "ih":"https://www.idealhome.co.uk/house-manual/storage-organisation/should-you-use-vacuum-storage-bags-for-duvets",
 "ls":"https://www.livingspaces.com/inspiration/ideas-advice/how-tos/how-to-store-comforters",
 "mn":"https://www.mattressnerd.com/how-to-store-a-comforter/",
-"ufl":"https://edis.ifas.ufl.edu/publication/IG090/pdf",
+"ufl":"https://journals.flvc.org/edis/article/download/138152/143332/271967",
 "clem":"https://hgic.clemson.edu/factsheet/controlling-fabric-pests/",
 "umd":"https://extension.umd.edu/resource/clothes-moths",
 "pend":"https://www.pendleton-usa.com/blog/caring-for-pendleton-wool-washing-dry-cleaning-and-more/",
