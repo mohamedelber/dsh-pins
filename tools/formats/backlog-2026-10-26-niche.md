@@ -26,3 +26,24 @@ DROPPED as duplicates: garage organization ideas (= 3307 garage storage ideas), 
 CLEAN (no focus keyword overlap): small kitchen ideas, dresser vs chest of drawers, konmari method (related 1061 declutter), small home office ideas (related 1048 desk org), small dining room ideas, blanket storage ideas (related 871), kitchen island ideas.
 MEDIUM risk: small bedroom ideas (881 storage, 2229 box room → layout/design angle only), how to fold a fitted sheet (1191 has a sheets method → dedicated step-by-step).
 RULE: before proposing any keyword, run wp_list_posts meta_key=rank_math_focus_keyword LIKE <word> (status any). Do not fire dozens of parallel wp_get_post_meta calls: the site returned 502s.
+
+## Semrush results (user screenshots, Oct 26 14:12–14:39)
+| keyword | db | vol | KD | SERP | verdict |
+|---|---|---|---|---|---|
+| dresser vs chest of drawers (+ chest of drawers vs dresser 1.3K KD15) | US | 1.3K | 15 | weak: ojcommerce, Reddit, dutchcrafters, Wikipedia, tiptopfurniture, Lowe's, Wayfair, Quora | ACCEPT F3 |
+| blanket storage ideas (+ couch blanket storage ideas 720 KD21) | US | 1.9K | 39 | weak: Reddit x2, Amazon, mamaandmore, Lowe's, Apartment Therapy, Pinterest | ACCEPT F2 |
+| small dining room ideas | UK | 1.0K | 25 | H&G, Pinterest, Dulux, IKEA, Barker & Stonehouse | ACCEPT F2 (UK) |
+| small dining room ideas | US | 3.6K | 39 | AD, Houzz, House Beautiful, Elle Decor, GH (strong) | UK first |
+| kitchen island ideas (+ small kitchen island ideas 1.0K KD18, for small kitchens 720 KD23) | UK | 3.6K | 36 | Wren, Pinterest, H&G, DIY.com, Howdens, IKEA, Magnet | ACCEPT F2 (UK, storage/small-kitchen angle) |
+| kitchen island ideas | US | 8.1K | 43 | | |
+| small kitchen ideas (+ small kitchen design ideas 2.9K KD42, small kitchen layout 2.4K KD48) | US | 12.1K | 51 | KitchenAid, Pinterest, Emily Henderson, Houzz | HOLD: KD too high |
+| konmari method (+ decluttering step by step 720 KD23) | US | 2.9K | 54 | konmari.com dominates | REJECT: KD high, brand SERP, near 1061 |
+| how to fold towels | US | 2.9K | 27 | | REJECT: duplicate (inside 1191) |
+| how to fold a fitted sheet | US | 60.5K | 49 | YouTube/HGTV video SERP | REJECT as new post: duplicate (sheets in 1191). After Nov 3, consider expanding 1191 with a fitted-sheet section |
+| how to organize a closet (+ small closet 90.5K KD46) | US | 5.4K | 35 | | REJECT: duplicate (798, 688) |
+| full vs queen bed | US | 2.9K | 27 | mattress brands | REJECT: off-niche |
+| how to hang curtains | US | 9.9K | 23 | | REJECT: off-niche |
+Still unchecked in Semrush: small bedroom ideas (DataForSEO US 9.9K KD15), small home office ideas.
+
+## Schedule (Oct 26, user priority: strong + in-niche + no duplicates > format alternation)
+Mon Jan 11 dresser vs chest of drawers (US F3) · Thu Jan 14 small dining room ideas (UK F2) · Thu Jan 21 blanket storage ideas (US F2) · Thu Jan 28 kitchen island ideas (UK F2). Feb 1/4/8/11/18 open until more strong keywords pass.
