@@ -48,4 +48,19 @@ Still unchecked in Semrush: small bedroom ideas (DataForSEO US 9.9K KD15), small
 ## Schedule (Oct 26, user priority: strong + in-niche + no duplicates > format alternation)
 Mon Jan 11 dresser vs chest of drawers (US F3) SCHEDULED 3435 · Thu Jan 14 small dining room ideas (UK F2) SCHEDULED 3442 · Thu Jan 21 blanket storage ideas (US F2) SCHEDULED 3449 · Thu Jan 28 kitchen island ideas (UK F2) SCHEDULED 3456. Feb 1/4/8/11/18 open until more strong keywords pass.
 
-Oct 26 (user): small bedroom ideas and small home office ideas DEFERRED (not rejected); revisit later with Semrush. Feb 15 "what colour goes with grey" still approved.
+Oct 26 (user): small bedroom ideas and small home office ideas DEFERRED (not rejected); revisit later with Semrush. Feb 15 "what colour goes with grey" DROPPED (out of niche, user Oct 26).
+
+## Replacement candidates for Feb (Oct 26 evening): storage/organisation only, duplicate-checked
+Volumes: Google Ads via DataForSEO Oct 26. Dup check: focus-keyword LIKE (pan, sink, shed, bike, clean, book, tool, towel) + all 107 slugs.
+| keyword | db | vol | overlap |
+|---|---|---|---|
+| pots and pans organization | US | 8,100 | medium: no focus kw; 861 cabinets / 892 drawers may touch pans → dedicated angle |
+| under kitchen sink organization | US | 5,400 | low: 619 is bathroom sink only |
+| shed storage ideas / shed organization ideas | UK 1,600 / US 1,900 | clean |
+| cleaning supplies organization | US | 1,300 | clean |
+| book storage ideas | US 1,300 / UK 880 | low: 1747 is bookshelf decor |
+| towel storage ideas | UK 1,000 / US 720 | low: 871 linen closet, 613 bathroom storage |
+| tool storage ideas | US | 1,300 | medium: 3307 garage covers tool rails |
+DROPPED as duplicates: bike storage ideas (3307 focus has bike), bathroom storage ideas (613), bathroom cabinet organization (619/1669), closet organization ideas (798), garage shelving ideas (3307), bedroom organization ideas (1463).
+Too small: makeup storage, cable management, plastic bag, nursery, dorm, vertical storage, wine storage, small apartment organization.
+Awaiting user's Semrush KD.
