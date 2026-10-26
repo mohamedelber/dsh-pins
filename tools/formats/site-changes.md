@@ -6,3 +6,8 @@
 - LiteSpeed 7.1.3 has no "JS Delayed Includes" field; do not set Load JS Deferred=Delayed (would delay calculators).
 - Verified: old tag gone, loader present, calculator inputs render. User PSI mobile after fix: 91.
 - Next ideas: drop Bilbo Swash Caps preload (logo font), disable WP emoji, smaller card images on home, preload home hero bg, WebP.
+
+## 2026-10-26 Speed 2 + homepage SEO
+- WPCode PHP snippet "Speed 2" (user added): preload home hero webp (fetchpriority high, front page only) + remove WP emoji. Verified: 1 image preload, 0 emoji scripts on home.
+- Home page 105: Rank Math title "Small Space Organization Ideas That Work - Daily Space Hacks" (was "Home - Daily Space Hacks"); OG/Twitter image = hero 1480 webp 1200x675 (was 2021/04/Home-712x1024.jpeg); featured_media 1480 (not displayed on page, checked).
+- Skipped on purpose: Kadence font preload (would drop Merriweather preload too), home room images (below fold, lazy), WebP via QUIC.cloud (later).
