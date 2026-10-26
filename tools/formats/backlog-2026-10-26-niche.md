@@ -20,3 +20,9 @@ Reserves (in niche): garage organization ideas US 14.8K; kitchen island ideas US
 ## Already checked earlier (from SKILL notes; user says the whole list was checked before, results not saved here)
 - small bedroom ideas US 9.9K KD15 (Oct 15), garage organization ideas US 14.8K KD19 (Oct 15), garage storage ideas US 18.1K KD16, fold towels 590 KD28 (Oct 17), small living room ideas UK 5.4K KD33 / US 14.8K KD45, built in closet ideas US 1.0K KD39.
 - LESSON: every Semrush result the user sends must be written into this file the same day, so we never ask him to check a keyword twice.
+
+## Duplicate check vs site focus keywords (Oct 26, 103 posts: rank_math_focus_keyword LIKE queries + all titles/slugs)
+DROPPED as duplicates: garage organization ideas (= 3307 garage storage ideas), how to organize a closet (= 798 small closet organization + 688 closet clean out), bedroom storage ideas (= 881), how to fold towels (inside 1191; Semrush 590 KD28).
+CLEAN (no focus keyword overlap): small kitchen ideas, dresser vs chest of drawers, konmari method (related 1061 declutter), small home office ideas (related 1048 desk org), small dining room ideas, blanket storage ideas (related 871), kitchen island ideas.
+MEDIUM risk: small bedroom ideas (881 storage, 2229 box room → layout/design angle only), how to fold a fitted sheet (1191 has a sheets method → dedicated step-by-step).
+RULE: before proposing any keyword, run wp_list_posts meta_key=rank_math_focus_keyword LIKE <word> (status any). Do not fire dozens of parallel wp_get_post_meta calls: the site returned 502s.
