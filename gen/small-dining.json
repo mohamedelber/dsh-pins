@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small British dining room in a Victorian terrace: a round oak pedestal table about one metre across with four simple wooden chairs, a large paper pendant light hanging low over the table, walls painted soft warm white, a slim sideboard against one wall, a round rug under the table, a sash window with daylight. Compact but calm and uncluttered."},
+{"name": "02-banquette","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A built-in banquette bench with a green upholstered seat cushion and wooden drawers underneath, fixed along the wall of a small British kitchen-diner, a rectangular oak table in front with two chairs on the other side, a pendant light above, plain painted wall. Space-saving and neat."},
+{"name": "03-drop-leaf","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small white drop-leaf dining table with one leaf raised and one folded down, pushed against the wall of a compact British flat, two folding wooden chairs, a small wall shelf above with a plant and a few plates, wooden floor, soft daylight."},
+{"name": "04-sideboard","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A slim, shallow wooden sideboard about 30 centimetres deep against the wall of a small dining area, holding neatly stacked plates and a fruit bowl on top, two floating shelves above with glasses and cookbooks, a round mirror on the wall, warm light. Tidy, shallow storage."},
+{"name": "05-living-dining","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small open-plan British living and dining room: a compact rectangular dining table with four chairs on its own rug, defined by a pendant light above it, with the back of a sofa and a coffee table visible in the living area beyond, light neutral walls, wooden floor, daylight from a window. Clear zones in one room."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos. A cosy small dining nook in a British home: a round pedestal table with three chairs and a corner bench, a low-hanging woven pendant light, a large mirror on the wall reflecting a window, light warm walls, a small rug, plants, evening warm light."}
+]
+}
