@@ -46,4 +46,4 @@ RULE: before proposing any keyword, run wp_list_posts meta_key=rank_math_focus_k
 Still unchecked in Semrush: small bedroom ideas (DataForSEO US 9.9K KD15), small home office ideas.
 
 ## Schedule (Oct 26, user priority: strong + in-niche + no duplicates > format alternation)
-Mon Jan 11 dresser vs chest of drawers (US F3) SCHEDULED 3435 · Thu Jan 14 small dining room ideas (UK F2) SCHEDULED 3442 · Thu Jan 21 blanket storage ideas (US F2) SCHEDULED 3449 · Thu Jan 28 kitchen island ideas (UK F2). Feb 1/4/8/11/18 open until more strong keywords pass.
+Mon Jan 11 dresser vs chest of drawers (US F3) SCHEDULED 3435 · Thu Jan 14 small dining room ideas (UK F2) SCHEDULED 3442 · Thu Jan 21 blanket storage ideas (US F2) SCHEDULED 3449 · Thu Jan 28 kitchen island ideas (UK F2) SCHEDULED 3456. Feb 1/4/8/11/18 open until more strong keywords pass.
