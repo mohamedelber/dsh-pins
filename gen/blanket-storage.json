@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A cosy American living room corner: a light grey sofa, a large round coiled rope basket on the floor beside it holding three rolled throw blankets, a wooden blanket ladder leaning against the wall with two folded throws draped over the rungs, a rug and soft afternoon light. Tidy and inviting."},
+{"name": "02-ladder","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A slim wooden blanket ladder with five rungs leaning against a white wall in a living room, three soft knit and woven throws folded over the rungs, a plant beside it, wood floor, daylight."},
+{"name": "03-ottoman","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. An upholstered storage bench at the foot of a bed with its hinged lid open, neatly folded blankets and a quilt stacked inside, a bedroom with neutral linen bedding, daylight."},
+{"name": "04-under-bed","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no logos. A low clear plastic under-bed storage box on wheels being partly pulled out from under a wooden bed frame, holding a folded comforter and a folded wool blanket, the bed's edge and a rug visible, soft daylight."},
+{"name": "05-linen-shelf","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no logos, no readable labels. An open linen closet with white wooden shelves: folded comforters and duvets in breathable white cotton storage bags on the top shelf, neatly folded blankets and sheet sets stacked on the shelves below, a woven basket on the floor. Organized and calm."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos. A warm living room scene with a leaning wooden blanket ladder draped with cream and rust throws next to a sofa, a large woven basket of rolled blankets on the floor, a wall rail with a folded throw above a bench, cosy evening light."}
+]
+}
