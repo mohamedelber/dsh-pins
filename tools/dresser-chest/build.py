@@ -13,9 +13,10 @@ SRC={"mw":"https://www.merriam-webster.com/dictionary/dresser",
 "col":"https://colemanfurniture.com/resources/buying-guides/dresser-dimensions-guide",
 "ash":"https://blog.ashleyfurniture.com/?p=20289",
 "skw":"https://www.ikea.com/us/en/p/-60561248",
-"skt":"https://www.ikea.com/us/en/p/storklinta-6-drawer-dresser-dark-brown-oak-effect-anchor-unlock-function-70559278/",
+"skt":"https://www.ikea.com/us/en/p/-10559281/",
 "fgw":"https://www.ikea.com/us/en/p/-90627993/",
-"fgt":"https://www.ikea.com/us/en/p/fagelfjaellet-6-drawer-dresser-black-oak-effect-30611645/",
+"fgt":"https://www.ikea.com/us/en/p/-70627994/",
+"mwh":"https://www.merriam-webster.com/dictionary/highboy",
 "ikcat":"https://www.ikea.com/us/en/cat/dressers-storage-drawers-st004/",
 "dims":"https://www.dimensions.com/element/dresser-chest-bedroom-clearances",
 "hunk":"https://www.hunker.com/13412472/how-much-walking-space-should-be-around-bedroom-furniture",
@@ -33,61 +34,61 @@ SRC={"mw":"https://www.merriam-webster.com/dictionary/dresser",
 "atd":"https://www.apartmenttherapy.com/expert-hacks-organizing-dresser-drawers-36976577"}
 def SR(k,t): return ext(SRC[k],t)
 
-p(f"A dresser is wide and low, with two or three columns of drawers and room for a mirror on top; a chest of drawers is tall and narrow, with one stacked column. Pick a dresser if you have a long wall and want a surface; pick a chest if floor space is tight. In a matched IKEA pair with the same six drawers and the same price, the tall chest uses half the floor for about 81% of the storage. Whichever you choose, anchor it to the wall: the CPSC says a chest, bureau or dresser was involved in {SR('cpsc23','36 percent (79 out of 217')} tip-over deaths it recorded from 2013 to mid-2023.")
+p(f"A dresser is wide and low, with two or three columns of drawers and room for a mirror on top; a chest of drawers is tall and narrow, with one stacked column. Pick a dresser if you have a long wall and want a surface; pick a chest if floor space is tight. In a matched IKEA pair with six drawers each, the tall chest uses half the floor for about 81% of the storage, and costs $20 less. Whichever you choose, anchor it to the wall: the CPSC says a chest, bureau or dresser was involved in {SR('cpsc23','79 out of 217')} tip-over deaths it recorded from 2013 to mid-2023 (36 percent).")
 img(1)
 
 h2("Dresser vs Chest of Drawers at a Glance")
 table(["","Dresser","Chest of drawers"],[
 ["Shape","Wide and low, 2–3 drawer columns","Tall and narrow, 1 column"],
 ["Typical height",f"30–36 in ({SR('col','Coleman')})",f"44–60 in ({SR('lowes','Lowe\'s')})"],
-["Typical width","50–70 in","24–38 in"],
-["Depth","18–22 in","16–22 in"],
-["Drawers","6–9","4–6"],
+["Typical width","50–70 in (Coleman)","24–38 in (Lowe's)"],
+["Depth","18–22 in (Coleman)","16–22 in (Coleman)"],
+["Drawers",f"6–9 ({SR('wf','Wayfair')})","4–6 (Lowe's)"],
 ["Top surface","Large: mirror, lamp, tray","Small: lamp or plant"],
 ["Best for","Long walls, primary bedrooms","Small rooms, narrow walls, corners"],
-["IKEA US price range","$69.99–$649.99 across both types",""]])
-p("Ranges come from Coleman Furniture, Lowe's and Wayfair buying guides. Real products sit at both ends, so measure the piece you are buying, not the category.")
+["IKEA US examples (Oct 2026)",f"{SR('ikcat','$129.99–$649.99')} for 6- to 8-drawer wide units","$179.99–$399.99 for 4- to 6-drawer tall units"]])
+p("Ranges come from the Coleman Furniture, Lowe's and Wayfair buying guides, which do not agree exactly (Wayfair, for example, gives chests as 30–40 in wide). Real products sit at both ends, so measure the piece you are buying, not the category.")
 
-h2("Same Drawers, Different Shape: The Floor-Space Math")
-diagram(open('z.svg').read(),"The same six drawers as a wide dresser and a tall chest: the chest takes half the floor and gives 81% of the storage.")
-p(f"Buying guides give ranges, so we compared two real products that differ only in shape. IKEA's STORKLINTA 6-drawer comes as a wide unit, {SR('skw','55 1/8 x 18 7/8 x 29 1/2 inches')} with a listed {SR('skw','storage capacity 8.4 cu.ft')}, and as a tall unit of 27 1/2 x 18 7/8 x 47 1/4 inches with {SR('skt','storage capacity 6.8 cu.ft')}. Both cost $249.99 and use the same 24 x 15 3/4 inch drawers. Multiply width by depth and the wide one covers 7.2 square feet of floor, the tall one 3.6. That is 1.16 cubic feet of storage per square foot of floor for the dresser and 1.89 for the chest.")
-p(f"A second pair says the same. IKEA's FÅGELFJÄLLET 6-drawer is {SR('fgw','63 x 20 1/8 x 30 3/4 inches')} and 9.1 cubic feet as a dresser, and 32 1/4 x 20 1/8 x 48 3/8 inches and {SR('fgt','7.6 cu.ft')} as a chest, so the chest uses 51% of the floor for 84% of the storage, and costs $70 less. Floor area is only half the story: you also need room to open the drawers. Wayfair recommends {SR('wf','36\" of clearance')} in front of a dresser, which turns the STORKLINTA pair into about 21 and 10.5 square feet of floor in use.")
+h2("Six Drawers, Two Shapes: The Floor-Space Math")
+diagram(open('z.svg').read(),"Six drawers as a wide dresser and as a tall chest: the chest takes half the floor and gives 81% of the storage.")
+p(f"Buying guides give ranges, so we compared two real products from the same IKEA series, in the same white finish. IKEA's STORKLINTA 6-drawer comes as a wide unit, {SR('skw','55 1/8 x 18 7/8 x 29 1/2 inches')} with a listed {SR('skw','storage capacity 8.4 cu.ft')}, and as a tall unit of 27 1/2 x 18 7/8 x 47 1/4 inches with {SR('skt','storage capacity 6.8 cu.ft')}. The wide one costs $249.99 and the tall one $229.99. Both have six drawers with the same 24 x 15 3/4 inch inner footprint, but the tall unit's drawers are shallower from top to bottom. Multiply width by depth and the wide one covers 7.2 square feet of floor, the tall one 3.6. That is 1.16 cubic feet of storage per square foot of floor for the dresser and 1.89 for the chest.")
+p(f"A second pair says the same. IKEA's FÅGELFJÄLLET 6-drawer is {SR('fgw','63 x 20 1/8 x 30 3/4 inches')} and 9.1 cubic feet as a dresser, and 32 1/4 x 20 1/8 x 48 3/8 inches and {SR('fgt','7.6 cu.ft')} as a chest, so the chest uses 51% of the floor for 84% of the storage, and costs $70 less. Floor area is only half the story: you also need room to open the drawers. Coleman Furniture says to {SR('col','leave at least 36 inches of clearance in front of a dresser')}, and Wayfair gives the same figure. That turns the STORKLINTA pair into about 21 and 10.5 square feet of floor in use.")
 
 h2("The Dresser: Best For, Avoid If")
 img(2)
 p(f"Merriam-Webster defines a dresser as {SR('mw','a chest of drawers or bureau with a mirror')}, and Ashley says its drawers are {SR('ash','organized horizontally into two or three columns')}. The wide top is the main reason to buy one: it holds a lamp, a tray and a mirror, and at 30 to 36 inches it sits at a comfortable height to stand at. Lowe's adds that a low piece suits a room with a low ceiling, because {SR('lowes','a dresser will help create the illusion of a larger room')}.")
 lst(["<strong>Best for:</strong> a primary bedroom with a long, unbroken wall; couples who want one drawer column each; anyone who wants a dressing surface with a mirror.",
-"<strong>Avoid if:</strong> the only free wall is under 5 feet, the room is narrow (a 20-inch-deep dresser plus 36 inches to open it needs almost 5 feet from the wall), or you planned to put a TV on top (see the safety section)."])
+"<strong>Avoid if:</strong> the only free wall is under 5 feet, the room is narrow (a 20-inch-deep dresser plus 36 inches to open it needs about 4 feet 8 inches from the wall), or you planned to put a TV on top (see the safety section)."])
 
 h2("The Chest of Drawers: Best For, Avoid If")
 img(3)
-p(f"A chest stacks its drawers in one column. Lowe's puts a typical chest {SR('lowes','between 44 and 60 inches tall and between 24 and 38 inches wide')}, and calls chests {SR('lowes','perfect for corners and small rooms')}. Very narrow ones exist: IKEA's STORKLINTA 5-drawer is {SR('ikcat','15 3/4 inches wide')}, small enough for the gap beside a door or window. A chest also fits inside many closets; Apartment Therapy notes that {SR('atc','closets are usually about 24 inches deep')}, while most chests and dressers are under 20.")
+p(f"A chest stacks its drawers in one column. Lowe's puts a typical chest {SR('lowes','between 44 and 60 inches tall and between 24 and 38 inches wide')}, and calls chests {SR('lowes','perfect for corners and small rooms')}. Very narrow ones exist: IKEA's STORKLINTA 5-drawer is {SR('ikcat','15 3/4 inches wide')}, small enough for the gap beside a door or window. A chest also fits inside many closets; Apartment Therapy notes that {SR('atc','closets are usually about 24 inches deep')}, while dressers usually measure less than 20; both STORKLINTA units are 18 7/8.")
 lst(["<strong>Best for:</strong> small bedrooms, a narrow wall between a window and a door, a closet, kids' rooms, and a second storage piece next to a dresser.",
-"<strong>Avoid if:</strong> you want a surface to get ready at, or the top drawers would sit above a short person's eye level. The tallest chests reach 60 inches."])
+"<strong>Avoid if:</strong> you want a surface to get ready at, or the top drawers would sit above a short person's eye level. Typical chests reach up to 60 inches."])
 
 h2("Bureau, Highboy, Lowboy, Tallboy: What the Names Mean")
-p(f"The names overlap, and US and UK English use them differently. In North American English a bureau is simply a chest of drawers, but in British English it is {SR('oxb','a desk with drawers')}. A highboy is a tall chest on legs, the same piece Britannica says was {SR('brit','once known as tallboys in England and highboys in America')}. A lowboy is {SR('lowboy','a low chest of drawers on short legs')}. And a British \"dresser\" is something else again: a cupboard with open shelves on top for plates. Retailers blur the terms too: IKEA US calls its 47-inch-tall single-column STORKLINTA a \"dresser\" in the title and a \"chest of drawers\" in the description, so go by the measurements.")
+p(f"The names overlap, and US and UK English use them differently. In North American English a bureau is simply a chest of drawers, but in British English it is {SR('oxb','a desk with drawers')}. Merriam-Webster defines a highboy as {SR('mwh','a tall chest of drawers with a legged base')}; Britannica notes that double chests, or chest-on-chests, were {SR('brit','once known as tallboys in England and highboys in America')}. A lowboy is {SR('lowboy','a low chest of drawers on short legs')}. And a British \"dresser\" is something else again: {SR('oxd','a large piece of wooden furniture with shelves in the top part and cupboards below')}, traditionally used for dishes. Retailers blur the terms too: IKEA US titles both STORKLINTA 6-drawer units, the wide one and the 47-inch-tall single column, \"dresser\", yet its product copy calls each one a \"chest of drawers\", so go by the measurements.")
 
 h2("Whichever You Pick, Anchor It")
 img(4)
-p(f"Tall or wide, drawer units can tip when a child climbs the open drawers. The CPSC recorded {SR('cpsc23','217 reports of product instability or tip-over-related fatalities')} from January 2013 to July 2023; 71% of the victims were children, and a chest, bureau or dresser was involved in 79 of them. The agency says a child is treated in an emergency department {SR('cpscnr','every 53 minutes')} for a tip-over injury.")
-p(f"Since September 1, 2023, new clothing storage units sold in the US must meet a federal stability standard under the STURDY Act. It covers units {SR('fr','27 in. (686 mm) or greater in height')} that weigh 30 pounds or more and hold at least 3.2 cubic feet, so both of our STORKLINTA examples are covered. Covered units must pass stability tests and come with an anti-tip device. Older furniture is not covered, so anchor it too.")
+p(f"Tall or wide, drawer units can tip when a child climbs the open drawers. The CPSC recorded {SR('cpsc23','217 reports of product instability or tip-over-related fatalities')} from January 2013 to July 2023; 71% of the victims were children under 18, and a chest, bureau or dresser was involved in 79 of the deaths. The agency says a child is treated in an emergency department {SR('cpscnr','every 53 minutes')} for a tip-over injury.")
+p(f"Clothing storage units manufactured after September 1, 2023 must meet a federal stability standard under the STURDY Act. It covers units {SR('fr','27 in. (686 mm) or greater in height')} that weigh 30 pounds or more and hold at least 3.2 cubic feet, so both of our STORKLINTA examples are covered. Covered units must pass stability tests and {SR('itk','must also include an anti-tip device')}. Older furniture is not covered, so anchor it too.")
 lst([f"<strong>Use the kit.</strong> The CPSC says to {SR('cpsc22','anchor TVs and furniture, such as bookcases and dressers, securely to the wall')}. It adds that most kits cost less than $20.",
 f"<strong>Load it low.</strong> CPSC advice: {SR('cpsc22','store heavier items on lower shelves, or in lower drawers')}.",
 f"<strong>No TV on top.</strong> Consumer Reports' advice is to {SR('cr','avoid placing TVs on dressers and chests')}; use a TV stand or wall mount instead.",
 "<strong>Keep toys and remotes off the top</strong>, so children are not tempted to climb."])
 
 h2("Our Pick for Each Room")
-lst([f"<strong>Small bedroom:</strong> a chest. Under the International Residential Code, a habitable room can be as small as {SR('irc','70 square feet')} and 7 feet across; in a room like that, saving 10 square feet of floor matters. Our {a('box-room-bedroom-ideas','box room bedroom ideas')} show what else fits.",
+lst([f"<strong>Small bedroom:</strong> a chest. Under the International Residential Code, a habitable room can be as small as {SR('irc','70 square feet')} and 7 feet across; in a room like that, saving about 10 square feet of floor, counting the space to open the drawers, matters. Our {a('box-room-bedroom-ideas','box room bedroom ideas')} show what else fits.",
 "<strong>Primary bedroom with a long wall:</strong> a dresser, with a mirror above, opposite or beside the bed.",
-f"<strong>Closet:</strong> a low chest or narrow dresser. Real Homes quotes interior designer Alessia Lamonaca: {SR('rh','a low-profile dresser fits nicely in most closets directly underneath a clothing rod')}. See our {a('small-closet-organization-ideas','small closet organization ideas')}.",
+f"<strong>Closet:</strong> a low chest or narrow dresser. Real Homes quotes Alessia Lamonaca, a design expert and the owner of New Mode Home: {SR('rh','a low-profile dresser fits nicely in most closets directly underneath a clothing rod')}. See our {a('small-closet-organization-ideas','small closet organization ideas')}.",
 f"<strong>Nursery:</strong> a dresser can double as a changing table only with a proper changing topper. The AAP recommends {SR('aap','a 2-inch (5 cm) guardrail around all four sides')}, and says never to leave a baby on it, even for a moment. Anchor the dresser first.",
 "<strong>Shared kids' room:</strong> one chest per child saves floor space and avoids arguments about whose drawer is whose.",
 f"<strong>Studio or first apartment:</strong> a chest by the closet and the bed as your seat. Our {a('studio-apartment-ideas','studio apartment ideas')} cover the rest of the layout."])
 
 h2("How to Organize the Drawers")
 img(5)
-p(f"Professional organizer Katrina Hassan's rule, in Apartment Therapy: {SR('atd','fill the top drawers with items you put on first')}, so underwear and socks go up top and jeans lower down, which also keeps heavier things low. Sangita Evans suggests you {SR('atd','eliminate layers and file your clothing instead')}, standing folded clothes on edge so you can see everything. In a wide dresser drawer, Rashelle Isip recommends {SR('atd','creating at least three to four sections')} with dividers. Our guide to {a('how-to-fold-clothes-to-save-space','folding clothes to save space')} shows the folds, and our {a('small-bedroom-storage-ideas','small bedroom storage ideas')} cover what goes where else.")
+p(f"Katrina Hassan of Spark Joy London, a KonMari consultant and professional organizer, gives this rule in Apartment Therapy: {SR('atd','fill the top drawers with items you put on first')}, such as underwear and socks, and keep the bottom drawers for what you put on last. That usually puts heavier things low. Sangita Evans suggests you {SR('atd','eliminate layers and file your clothing instead')}, standing folded clothes on edge so you can see everything. In a wide dresser drawer, Rashelle Isip recommends {SR('atd','creating at least three to four sections')} with dividers. Our guide to {a('how-to-fold-clothes-to-save-space','folding clothes to save space')} shows the folds, and our {a('small-bedroom-storage-ideas','small bedroom storage ideas')} cover what goes where else.")
 
 h2("Decision Checklist")
 lst(["Is there a free wall at least 5 feet long, with about 3 feet clear in front? If yes, a dresser fits.",

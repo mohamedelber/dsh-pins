@@ -1,12 +1,12 @@
 T='#342E2A';A='#C85A32';G='#6E645C';SG='#8FA689';SGL='#DCE5D6';BG='#F7F1E9';BR='#D8CBBB';OAK='#C9A06B';OAKD='#A97F4C';CR='#FBF7F0'
 s=[];a=s.append
-desc=("Two IKEA STORKLINTA 6-drawer units with the same drawers and price, drawn to scale. The wide, low dresser is 55 1/8 inches wide, 18 7/8 deep and 29 1/2 tall; the tall chest of drawers is 27 1/2 wide, 18 7/8 deep and 47 1/4 tall. Both are taller than 27 inches, so the federal tip-over standard applies and both should be anchored to the wall. "
+desc=("Two white IKEA STORKLINTA 6-drawer units, drawn to scale: the wide one costs $249.99 and the tall one $229.99. The wide, low dresser is 55 1/8 inches wide, 18 7/8 deep and 29 1/2 tall; the tall chest of drawers is 27 1/2 wide, 18 7/8 deep and 47 1/4 tall. Both are taller than 27 inches, heavier than 30 pounds and hold more than 3.2 cubic feet, so the federal tip-over standard applies and both should be anchored to the wall. "
 "In plan, the dresser covers 7.2 square feet and the chest 3.6 square feet; with 36 inches clear in front to open drawers, they need about 21 and 10.5 square feet. "
 "The dresser holds 8.4 cubic feet and the chest 6.8 cubic feet, so the chest uses half the floor for 81 percent of the storage: 1.89 cubic feet per square foot of floor against 1.16.")
-a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="dc-t dc-d"><title id="dc-t">Dresser vs chest of drawers: same drawers, different shape</title><desc id="dc-d">{desc}</desc>')
+a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Poppins, sans-serif" role="img" aria-labelledby="dc-t dc-d"><title id="dc-t">Dresser vs chest of drawers: six drawers, two shapes</title><desc id="dc-d">{desc}</desc>')
 a(f'<rect width="1200" height="900" fill="{BG}"/>')
-a(f'<text x="60" y="78" font-size="40" font-weight="700" fill="{T}">Dresser vs Chest: Same Drawers, Different Shape</text>')
-a(f'<text x="60" y="114" font-size="20" fill="{G}">IKEA STORKLINTA 6-drawer, wide and tall versions, same price, drawn to scale</text>')
+a(f'<text x="60" y="78" font-size="40" font-weight="700" fill="{T}">Dresser vs Chest: Six Drawers, Two Shapes</text>')
+a(f'<text x="60" y="114" font-size="20" fill="{G}">IKEA STORKLINTA 6-drawer in white, wide and tall versions, drawn to scale</text>')
 a(f'<text x="1140" y="30" font-size="18" fill="{G}" text-anchor="end">dailyspacehacks.com</text>')
 # left panel elevation
 a(f'<rect x="40" y="140" width="600" height="470" rx="16" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
@@ -29,7 +29,7 @@ a(f'<text x="{x2+W2/2}" y="{y2-34}" font-size="16" font-weight="700" fill="{T}" 
 y27=FL-27*k
 a(f'<line x1="60" y1="{y27}" x2="620" y2="{y27}" stroke="{A}" stroke-width="2" stroke-dasharray="8 6"/>')
 a(f'<text x="64" y="{y27-8}" font-size="14" font-weight="700" fill="{A}">27 in</text>')
-a(f'<text x="64" y="590" font-size="14" fill="{T}">Both are over 27 in tall: the federal tip-over standard applies. Anchor both.</text>')
+a(f'<text x="64" y="590" font-size="14" fill="{T}">Both are over 27 in, 30 lb and 3.2 cu ft: the federal standard applies. Anchor both.</text>')
 # right panel plan
 RX=660
 a(f'<rect x="{RX}" y="140" width="500" height="470" rx="16" fill="#FFFFFF" stroke="{BR}" stroke-width="2"/>')
@@ -53,7 +53,7 @@ a(f'<rect x="40" y="{TY}" width="1120" height="170" rx="16" fill="#FFFFFF" strok
 cols=[(64,'start','',''),(430,'middle','Floor area','sq ft'),(600,'middle','Storage','cu ft'),(770,'middle','Storage per','sq ft of floor'),(950,'middle','Price','Oct 2026')]
 for x,anc,h1,h2 in cols[1:]:
     a(f'<text x="{x}" y="{TY+34}" font-size="15" font-weight="700" fill="{G}" text-anchor="{anc}">{h1}</text><text x="{x}" y="{TY+52}" font-size="12" fill="{G}" text-anchor="{anc}">{h2}</text>')
-rows=[('Wide dresser (6 drawers)','7.2','8.4','1.16','$249.99',T),('Tall chest (6 drawers)','3.6','6.8','1.89','$249.99',A)]
+rows=[('Wide dresser (6 drawers)','7.2','8.4','1.16','$249.99',T),('Tall chest (6 drawers)','3.6','6.8','1.89','$229.99',A)]
 for i,(n,f,v,r,pr,c) in enumerate(rows):
     y=TY+88+i*36
     a(f'<text x="64" y="{y}" font-size="17" font-weight="700" fill="{c}">{n}</text>')
