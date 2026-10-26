@@ -1,0 +1,17 @@
+{
+"model": "gpt-image-2.5-sunburst",
+"items": [
+{"name": "01-hero","size": "1536x1024","quality": "high",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A compact British kitchen with a small painted sage-green island about 120 cm long in the middle, deep drawers on the working side and an overhanging oak worktop on the other side with two stools tucked under, cream shaker units around the walls, two small pendant lights above the island, a clear walkway around it, daylight from a window."},
+{"name": "02-trolley","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A wooden kitchen trolley island on lockable castors in a small British galley kitchen, solid wood top, an open shelf below holding baskets and mixing bowls, rails on the side with tea towels, white units behind, daylight."},
+{"name": "03-drawers","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic photography, realistic proportions, no people, no text, no logos. Close view of a kitchen island with a deep pan drawer pulled open, holding saucepans and lids neatly, a second slim drawer above with utensils, painted navy blue island with brass handles, quartz worktop, warm light."},
+{"name": "04-seating-side","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. The seating side of a small kitchen island: an oak worktop overhanging by about 30 cm, two simple stools tucked underneath, and open shelves in the island end panel holding cookbooks and a few bowls, light kitchen behind, daylight."},
+{"name": "05-peninsula","size": "1024x1024","quality": "medium",
+"prompt": "Photorealistic interior photography, realistic proportions, no people, no text, no logos. A small British kitchen with a peninsula extending from the run of white units instead of a full island, a worktop overhang with two stools on one side and cupboards underneath, a pendant above, a clear path to the back door, daylight."},
+{"name": "06-pin","size": "1024x1536","quality": "high",
+"prompt": "Photorealistic interior photography, vertical composition, realistic proportions, no people, no text, no logos. A bright small kitchen with a compact island painted soft green, oak worktop with two stools, deep drawers, a fruit bowl and herbs on top, two glass pendant lights, cream units behind, daylight."}
+]
+}
