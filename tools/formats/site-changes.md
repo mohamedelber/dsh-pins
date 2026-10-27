@@ -30,3 +30,7 @@
   Top AI pages: laundry-closet-ideas 227, diy-closet-shelves 171, under-stairs-storage-ideas 162, hat-storage-ideas 138, airing-cupboard-shelves 124, under-stairs-cupboard-doors 119, purse-storage-ideas 70, wardrobe-depth 55, how-to-fold-clothes 52, toy-storage-ideas 33.
   Note: laundry-closet, under-stairs-storage, diy-closet-shelves rank ~25-35 organically but are cited often by AI.
   Nov 3 measurement: report AI impressions separately from total (export this report for Oct 27–Nov 2 vs previous 7 days).
+
+## 2026-10-27 'Home images' WPCode snippet live
+- wp_calculate_image_sizes filter for the 9 homepage room images → sizes '(max-width: 600px) 45vw, 230px'. Verified in the browser: the first 3 now download the 300x300 files (11–14 KB instead of 60–120 KB).
+- PSI (user screenshots): homepage mobile 95, desktop 100. Before the speed work: mobile 81.
