@@ -11,3 +11,7 @@
 - WPCode PHP snippet "Speed 2" (user added): preload home hero webp (fetchpriority high, front page only) + remove WP emoji. Verified: 1 image preload, 0 emoji scripts on home.
 - Home page 105: Rank Math title "Small Space Organization Ideas That Work - Daily Space Hacks" (was "Home - Daily Space Hacks"); OG/Twitter image = hero 1480 webp 1200x675 (was 2021/04/Home-712x1024.jpeg); featured_media 1480 (not displayed on page, checked).
 - Skipped on purpose: Kadence font preload (would drop Merriweather preload too), home room images (below fold, lazy), WebP via QUIC.cloud (later).
+
+## 2026-10-27 Google docs review
+- Oct 26 UGC spam guidance: embed pages /embed-calculators/*/ are noindex, search pages noindex, robots.txt blocks only /wp-admin/ → compliant. Minor: embed pages appear in on-site search results.
+- Oct 1 gen-AI guidance (using-gen-ai-content): fact-check now also covers metadata (SEO title, meta description, alt text, schema). New article images get IPTC DigitalSourceType=trainedAlgorithmicMedia XMP via tools/blurfix.py fix(ai=True). Pins NOT tagged (Pinterest "AI modified" label). WP resized sub-sizes may drop XMP; original keeps it. Old images unchanged.
