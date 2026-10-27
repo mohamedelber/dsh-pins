@@ -64,3 +64,16 @@ Volumes: Google Ads via DataForSEO Oct 26. Dup check: focus-keyword LIKE (pan, s
 DROPPED as duplicates: bike storage ideas (3307 focus has bike), bathroom storage ideas (613), bathroom cabinet organization (619/1669), closet organization ideas (798), garage shelving ideas (3307), bedroom organization ideas (1463).
 Too small: makeup storage, cable management, plastic bag, nursery, dorm, vertical storage, wine storage, small apartment organization.
 Awaiting user's Semrush KD.
+
+## Semrush (user screenshot, Oct 27 10:41): existing post 2186 under-stairs-cupboard-doors
+| keyword | db | vol | KD |
+|---|---|---|---|
+| under stairs cupboard doors | UK | 720 (global 880) | 15 (easy), intent informational, trend steady, peaks winter |
+| under stair cupboard doors | UK | 210 | 14 |
+| under stairs cupboard door | UK | 210 | 7 |
+| doors for under stairs cupboard | UK | 170 | 13 |
+| cupboard doors for under stairs | UK | 110 | 16 |
+Variations 80 kw / 2.0K total. Questions: how to make a cupboard door under the stairs (20).
+SERP (188 results): image pack first, then doors-sincerelyonline (product), Pinterest, video carousel, doorsgalore (product), Screwfix forum, dreamztime blog, Etsy, wittswood (product), short videos. Mostly shops: buyer intent.
+GSC: ~529 impr/week, pos ~9.5, CTR 0.4%.
+PLAN after Nov 3: title/meta toward buyer intent (ready-made, sizes, where to buy, prices) + "under stairs door" (DFS UK 1,900); strengthen first image for image pack.
