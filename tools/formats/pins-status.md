@@ -19,3 +19,7 @@
 - CSV-84-small-dining.csv (Jan 14 + Jan 21) NEW, sent Oct 26; confirm upload.
 - CSV-85-blanket-storage.csv (Jan 21 + Jan 28) NEW, sent Oct 26; confirm upload.
 - CSV-86-kitchen-island.csv (Jan 28 + Feb 4) NEW, sent Oct 26; confirm upload.
+
+## Oct 27 2026
+- User thought Pinterest "collapsed": last 3 days (Oct 25-27) are dotted "estimated real-time data" in Pinterest Analytics, not final. Same dip on Oct 21 recovered by Oct 24. 30 days to Oct 27: 9.08k impressions, 50 outbound clicks, trend up. Recheck Thu Oct 29.
+- Upload CSV-75..86 at most 2-3 files per day (no more single big batches like Oct 24).
