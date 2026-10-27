@@ -26,3 +26,7 @@
 - airing-cupboard-shelves, 28 days: 124 AI-feature impressions (AI Overviews + AI Mode) vs 872 total Web impressions in Performance (15 clicks) → ~14%. AI impressions started ~Oct 14, peak 22/day Oct 19.
 - Earlier estimate "~1% AI" (conversational queries only) was too low: AI Overview impressions on normal queries are not visible in query text. Use this report for the real share; site-wide figure still needed (remove the page filter).
 - 15 clicks vs 3 visible in query table: the rest are anonymized queries (privacy); page totals are complete.
+- Site-wide AI report (28 days to ~Oct 25): 1,680 AI-feature impressions, 82 pages. Total Web impressions same window ≈ 10,556 (GSC daily sums Sep 28–Oct 25) → AI ≈ 16%, regular ≈ 84%. AI daily: ~50/day early Oct → 110–130/day late Oct.
+  Top AI pages: laundry-closet-ideas 227, diy-closet-shelves 171, under-stairs-storage-ideas 162, hat-storage-ideas 138, airing-cupboard-shelves 124, under-stairs-cupboard-doors 119, purse-storage-ideas 70, wardrobe-depth 55, how-to-fold-clothes 52, toy-storage-ideas 33.
+  Note: laundry-closet, under-stairs-storage, diy-closet-shelves rank ~25-35 organically but are cited often by AI.
+  Nov 3 measurement: report AI impressions separately from total (export this report for Oct 27–Nov 2 vs previous 7 days).
