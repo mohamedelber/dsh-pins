@@ -15,3 +15,8 @@
 ## 2026-10-27 Google docs review
 - Oct 26 UGC spam guidance: embed pages /embed-calculators/*/ are noindex, search pages noindex, robots.txt blocks only /wp-admin/ → compliant. Minor: embed pages appear in on-site search results.
 - Oct 1 gen-AI guidance (using-gen-ai-content): fact-check now also covers metadata (SEO title, meta description, alt text, schema). New article images get IPTC DigitalSourceType=trainedAlgorithmicMedia XMP via tools/blurfix.py fix(ai=True). Pins NOT tagged (Pinterest "AI modified" label). WP resized sub-sizes may drop XMP; original keeps it. Old images unchanged.
+
+## 2026-10-27 Post 2186 under-stairs-cupboard-doors (user-approved exception to the Nov 3 no-edit rule)
+- Replaced the short "Can You Buy Ready-Made…" section with "Where to Buy Under Stairs Cupboard Doors (and What They Cost)": 4 UK suppliers table (Wittswood £234.49, Doors Sincerely MDF 12-14 days, Doors Galore flush £425.46 / panelled ~£1,020-£1,970 / FD30 £671.34, Jewson up to 1050x2150) + 5 buyer checks (measurements, finish, ironmongery, no cooling-off for made to measure, fitting £80-£160 / carpenter £180-£320/day). Fact-checked: 26 claims, 2 fixes applied (tools/under-stairs-doors-buy/factcheck.md).
+- Rank Math title "Under Stairs Cupboard Doors: 12 Ideas, Prices & Where to Buy"; new meta description. H1, slug, rest of article unchanged. Live page verified.
+- Nov 3 measurement: treat 2186 as edited on Oct 27 (separate from the untouched pages). Recheck prices on monthly price sweeps.
