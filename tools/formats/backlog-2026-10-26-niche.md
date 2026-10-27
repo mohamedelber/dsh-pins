@@ -86,3 +86,4 @@ PLAN after Nov 3: title/meta toward buyer intent (ready-made, sizes, where to bu
 | pots and pans organization | US | 90 | 35 | AI Overview, Amazon, Reddit, Pinterest, IKEA, cliqstudios, CNN, Lowe's. Cluster: pots and pans organizer 4.4K KD32 (product), how to organize pots and pans 390 KD33, pot and pan cabinet organizer 1.0K KD13 | REJECT head term (DFS/Google Ads 8,100 was grouped variants). Maybe later as "how to organize pots and pans" |
 | pots and pans organization | UK | 20 | n/a | no SERP data | REJECT |
 LESSON: Google Ads volume (DataForSEO) groups close variants; always trust Semrush exact-match volume before choosing.
+Oct 27 19:08 (user): STOP writing new articles for now ("we have enough"). Schedule ends Thu Jan 28 (3456). under kitchen sink organization (UK, KD19) kept as the first candidate if writing resumes; do not start it without the user's go-ahead.
