@@ -21,3 +21,8 @@
 - Rank Math title "Under Stairs Cupboard Doors: 12 Ideas, Prices & Where to Buy"; new meta description. H1, slug, rest of article unchanged. Live page verified.
 - Nov 3 measurement: treat 2186 as edited on Oct 27 (separate from the untouched pages). Recheck prices on monthly price sweeps.
 - Same day: added Key Takeaways bullet "Buying one: … about £235 for a solid oak ledged door; see where to buy…" linking to #where-to-buy (anchor added to the buying H2). Verified live. No other edits planned on 2186 before Nov 3.
+
+## 2026-10-27 GSC "Fonctionnalités d'IA générative" (beta) report is available for the site
+- airing-cupboard-shelves, 28 days: 124 AI-feature impressions (AI Overviews + AI Mode) vs 872 total Web impressions in Performance (15 clicks) → ~14%. AI impressions started ~Oct 14, peak 22/day Oct 19.
+- Earlier estimate "~1% AI" (conversational queries only) was too low: AI Overview impressions on normal queries are not visible in query text. Use this report for the real share; site-wide figure still needed (remove the page filter).
+- 15 clicks vs 3 visible in query table: the rest are anonymized queries (privacy); page totals are complete.
