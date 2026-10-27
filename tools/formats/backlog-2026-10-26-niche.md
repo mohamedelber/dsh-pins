@@ -77,3 +77,12 @@ Variations 80 kw / 2.0K total. Questions: how to make a cupboard door under the 
 SERP (188 results): image pack first, then doors-sincerelyonline (product), Pinterest, video carousel, doorsgalore (product), Screwfix forum, dreamztime blog, Etsy, wittswood (product), short videos. Mostly shops: buyer intent.
 GSC: ~529 impr/week, pos ~9.5, CTR 0.4%.
 PLAN after Nov 3: title/meta toward buyer intent (ready-made, sizes, where to buy, prices) + "under stairs door" (DFS UK 1,900); strengthen first image for image pack.
+
+## Semrush (user screenshots, Oct 27 19:06)
+| keyword | db | vol | KD | SERP / notes | verdict |
+|---|---|---|---|---|---|
+| under kitchen sink organization | UK | 390 | 19 easy | IKEA, designthusiasm, Pinterest; image pack, video carousel. Variations 82 / 3.6K: under kitchen sink organizer 590 KD22, kitchen organizer under sink 390 KD26, kitchen under sink organization 390 KD20, kitchen under the sink organizer 390 KD19, organization under kitchen sink 390 KD24 | ACCEPT (UK) → Mon Feb 1 |
+| under kitchen sink organization | US | 480 | 37 | containerstore, Amazon, designthusiasm; under kitchen sink organizer 2.9K KD34, under sink organizer kitchen 1.0K KD44 | UK first |
+| pots and pans organization | US | 90 | 35 | AI Overview, Amazon, Reddit, Pinterest, IKEA, cliqstudios, CNN, Lowe's. Cluster: pots and pans organizer 4.4K KD32 (product), how to organize pots and pans 390 KD33, pot and pan cabinet organizer 1.0K KD13 | REJECT head term (DFS/Google Ads 8,100 was grouped variants). Maybe later as "how to organize pots and pans" |
+| pots and pans organization | UK | 20 | n/a | no SERP data | REJECT |
+LESSON: Google Ads volume (DataForSEO) groups close variants; always trust Semrush exact-match volume before choosing.
