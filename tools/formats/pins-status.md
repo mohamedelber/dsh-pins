@@ -23,3 +23,6 @@
 ## Oct 27 2026
 - User thought Pinterest "collapsed": last 3 days (Oct 25-27) are dotted "estimated real-time data" in Pinterest Analytics, not final. Same dip on Oct 21 recovered by Oct 24. 30 days to Oct 27: 9.08k impressions, 50 outbound clicks, trend up. Recheck Thu Oct 29.
 - Upload CSV-75..86 at most 2-3 files per day (no more single big batches like Oct 24).
+- Oct 27 evening (read in the browser, chart points converted): daily impressions Sep27..Oct25 = 30,38,64,47,121,188,148,230,208,230,216,355,266,289,499,369,417,261,609,466,791,899,930,606,144,205,275,812,179.
+  CORRECTION: Oct 21-23 are now final and low (144/205/275); Oct 24 spike 812 (day of the 26-pin upload); Oct 25 179. Oct 17-20 averaged ~800/day, Oct 21-25 ~320/day → a real drop of ~60% since Oct 21, not only estimate lag. 30 days: 9,105 impressions, 50 outbound clicks.
+  Possible causes (unproven): many CSVs Oct 18-21 (CSV-48 "fresh pins for winners", CSV-56..59), bulk upload Oct 24, Pinterest-wide reports. Recheck Oct 29.
