@@ -38,3 +38,8 @@
 ## 2026-10-28 GSC week check (Oct 26-27 complete-ish)
 - Oct 26: 5 clicks / 1,035 impr / pos 18.6. Oct 27: 5 clicks / 1,559 impr / pos 12.3, BUT 821 of them = query "how to organize toilet" on bathroom-organization-ideas (Brazil 611, Russia 184, pos 3.5-8.5, 0 clicks) → anomaly (bot/rank-tracker or AI-mode noise); real Oct 27 ≈ 738. Exclude from the Nov 3 comparison.
 - Pages Oct 26-28: airing-cupboard 3 clicks pos 8.0; under-stairs-cupboard-doors 180 impr pos 8.9 1 click (new title from Oct 27 not yet visible); color-coded-closet 65 impr pos 8.3 1 click; diy-closet-shelves pos 17.3 (was 25); wallpaper calc 55 impr pos 9.4 0 clicks.
+
+## 2026-10-28 Accessibility contrast fixes (PSI flagged)
+- Home 105: 'Start Here' Kadence button background #c85a32 → #a6481f (white text ~5.9:1; was ~4.2:1).
+- Additional CSS (append, revision 3465): `.entry-content p a:not([class]), .entry-content li a:not([class]) {color:#A6481F}` hover #7E3415 — body text links sitewide (≥4.5:1 on white and #F7F1E9). Revert = remove those 2 lines.
+- Site cache purged; LiteSpeed combined CSS hash changed. Verify with PSI accessibility (user).
