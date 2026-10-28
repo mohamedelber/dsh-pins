@@ -43,3 +43,4 @@
 - Home 105: 'Start Here' Kadence button background #c85a32 → #a6481f (white text ~5.9:1; was ~4.2:1).
 - Additional CSS (append, revision 3465): `.entry-content p a:not([class]), .entry-content li a:not([class]) {color:#A6481F}` hover #7E3415 — body text links sitewide (≥4.5:1 on white and #F7F1E9). Revert = remove those 2 lines.
 - Site cache purged; LiteSpeed combined CSS hash changed. Verify with PSI accessibility (user).
+- Round 2 (PSI still flagged the Free Tools grid): home 105 inline CSS .dsh-tools .tg #C85A32 → #A6481F, .tg.s #5E7D57 → #4F6B49, span.go #C85A32 → #A6481F; Additional CSS: latest-post dates #999 → #6E645C (rev 3469). Still #C85A32 as text elsewhere: .dsh-emb .epv/.eal on tool pages (check later).
