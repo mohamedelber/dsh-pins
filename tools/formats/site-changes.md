@@ -34,3 +34,7 @@
 ## 2026-10-27 'Home images' WPCode snippet live
 - wp_calculate_image_sizes filter for the 9 homepage room images → sizes '(max-width: 600px) 45vw, 230px'. Verified in the browser: the first 3 now download the 300x300 files (11–14 KB instead of 60–120 KB).
 - PSI (user screenshots): homepage mobile 95, desktop 100. Before the speed work: mobile 81.
+
+## 2026-10-28 GSC week check (Oct 26-27 complete-ish)
+- Oct 26: 5 clicks / 1,035 impr / pos 18.6. Oct 27: 5 clicks / 1,559 impr / pos 12.3, BUT 821 of them = query "how to organize toilet" on bathroom-organization-ideas (Brazil 611, Russia 184, pos 3.5-8.5, 0 clicks) → anomaly (bot/rank-tracker or AI-mode noise); real Oct 27 ≈ 738. Exclude from the Nov 3 comparison.
+- Pages Oct 26-28: airing-cupboard 3 clicks pos 8.0; under-stairs-cupboard-doors 180 impr pos 8.9 1 click (new title from Oct 27 not yet visible); color-coded-closet 65 impr pos 8.3 1 click; diy-closet-shelves pos 17.3 (was 25); wallpaper calc 55 impr pos 9.4 0 clicks.
