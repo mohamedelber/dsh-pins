@@ -33,3 +33,11 @@
 - Anomaly continues: bathroom-organization-ideas, query "how to organize toilet", DESKTOP only, 1324 impr / 0 clicks at pos 7.4 on Oct 27–28 (956 + 378). Treated as bot/rank-tracker noise → excluded.
 - Clean impressions: Oct 26 1032, Oct 27 864, Oct 28 798 (partial) vs Oct 23–25 870/901/946 → flat. Clicks Oct 26–28 = 15 vs Oct 23–25 = 21 (Oct 28 incomplete).
 - Top clicks Oct 26–28: airing-cupboard-shelves 6 (pos 8.9); under-stairs-cupboard-doors 1 click / 232 impr / pos 8.6 (buyer section added Oct 27, too early to judge).
+- UPDATE 2026-10-29 ~14:50 Paris (read live in user's Chrome):
+  Daily impressions Sep 29–Oct 26 (chart, same scale as Oct 27 fit): 65,48,122,188,148,230,208,230,216,355,266,289,499,370,417,261,609,466,791,899,930,606,144,205,275,812,179,126
+  Last 30d total 9,209 impr / 50 outbound / 3 saves. Last 7d (Oct 22–29) 1,580 (~225/day) vs ~800/day Oct 17–20.
+  Per-pin split: OLD top pins collapsed too → Entryway 850(30d) → 22(7d); LEGO 515 → 53; Kitchen counter decor 454, Pantry shelving 318, Christmas table pins 300/272 → not in 7d top list (<19). Now leading: Tiny toilet room 209, Airing cupboard checklist 131.
+  VERDICT: account/platform-wide drop, not only new pins. Same week another member of the user's Pinterest course WhatsApp group reported a new (Oct) account "completely down in the last 2 days"; Pinterest support told him no restriction/violation.
+  Group practices (only today's 15 msgs synced): ~80% seasonal (Halloween/Christmas), 1 pin per article, ~3 pins/day steady, topics via Pinterest Trends + Pin Inspector.
+  NOTE: CSV-75..86 all have publish dates Dec 14 → Feb 4 (future), so uploading them does not add to today's pin pace.
+  RECOMMENDATION: resume uploads 2 files/day (CSV-75..86). Keep live pin pace steady (2–3/day, no batches). Prioritise Christmas pins going live NOW (Christmas table pins were our 2nd-best performers). No edits/deletes of existing pins.
