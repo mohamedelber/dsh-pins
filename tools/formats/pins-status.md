@@ -45,3 +45,8 @@
   10-15:9 10-16:7 10-17:12 10-18:11 10-19:14 10-20:13 10-21:15 10-22:11 10-23:13 10-24:14 10-25:14 10-26:14 10-27:13 10-28:10 10-29:10 10-30:11 10-31:10 11-01:8 11-02:7 11-03:4 then 1-5/day.
   → live pace ~10-15 pins/day since Oct 17, 3-5x our own 5/day rule and the course's ~3/day; drop began Oct 21 after 4 such days. Plus many pins per same URL (studio-apartment, gift-wrap, walk-in-closet-size repeated within days).
   RULE GOING FORWARD: never schedule more than 5 pins on any single day (check ALL CSVs by publish date before sending a new one); max 1 pin per URL per 7 days. Existing scheduled pins: leave as is (no deletes); pace falls under 5/day from Nov 3.
+- VERIFIED LIVE 2026-10-29 16:45 Paris (Pinterest internal API, user's Chrome): 189 published pins on 68 URLs (avg 2.8/URL). User confirms not all CSVs were uploaded → CSV-based counts above overstate.
+  Real published per day: 09-28..30: 1,1,1 | 10-01..16: 4,3,4,5,6,5,4,6,4,8,7,5,6,6,7,7 | 10-17:10 10-18:16 10-19:13 10-20:9 10-21:10 10-22:9 10-23:8 | 10-24..28: 5,5,5,4,4 | 10-29 (morning): 1
+  → real peak 10–16/day on Oct 17–21, drop started Oct 21. Since Oct 24 pace is OK (4–5/day).
+  Real repeats: 26 URLs got 2+ pins within Oct 15–24. Worst: boot-room 6 pins every 2 days Oct 13–23; airing-cupboard 5 (every 2 days Oct 14–22); small-utility-room 5 (Oct 11–19); downstairs-toilet 6 (Oct 10–18); over-the-toilet 7, small-entryway 7, fridge 6, bathroom-org 6, pantry-org 6 overall.
+  Scheduled queue now: 40 pins (next: 0d,1d,1d,1d,2d, +34). Newest live pins show only 1–8 impressions each.
