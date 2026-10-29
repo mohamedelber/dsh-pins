@@ -44,3 +44,33 @@
 - Additional CSS (append, revision 3465): `.entry-content p a:not([class]), .entry-content li a:not([class]) {color:#A6481F}` hover #7E3415 — body text links sitewide (≥4.5:1 on white and #F7F1E9). Revert = remove those 2 lines.
 - Site cache purged; LiteSpeed combined CSS hash changed. Verify with PSI accessibility (user).
 - Round 2 (PSI still flagged the Free Tools grid): home 105 inline CSS .dsh-tools .tg #C85A32 → #A6481F, .tg.s #5E7D57 → #4F6B49, span.go #C85A32 → #A6481F; Additional CSS: latest-post dates #999 → #6E645C (rev 3469). Still #C85A32 as text elsewhere: .dsh-emb .epv/.eal on tool pages (check later).
+
+## 2026-10-28 — Site rendered unstyled (fixed)
+- Cause: after contrast edits + purges, cached HTML referenced LiteSpeed combined CSS `80142d78...css?ver=a1b13` which returned 404 → no styles.
+- Fix: wp_clear_cache scope=site include_cdn=true → new ver=3e556 returns 200 on /, /under-stairs-cupboard-doors/, /wallpaper-calculator/. Verified Merriweather font, bg rgb(239,239,245), links #A6481F.
+- Lesson: after any CSS change (Additional CSS / inline CSS), do ONE site purge with include_cdn, then verify the litespeed/css link returns 200. Don't purge URLs separately right after.
+
+## 2026-10-28 — Full index check (GSC URL Inspection, 106 URLs)
+- 103/106 indexed (all tools pages + homepage + 79 posts). Canonicals all match.
+- Not yet: boho-bedroom-ideas (pub Oct 27, unknown), guest-bedroom-ideas (Oct 26, unknown), studio-apartment-ideas (Oct 25, discovered-not-indexed). All linked from home + /blog/ + in sitemap → normal for 1–3 day old posts. User to request indexing manually.
+- wallpaper-calculator confirmed in page-sitemap.xml and indexed (pending item closed).
+- 27 posts scheduled through 2027-01-28.
+
+## 2026-10-28 — Link audit
+- Broken internal links: 0 (111 pages, 146 internal URLs checked). External (737) not checked (CORS).
+- Weak inbound (in-content links from other pages):
+  0 stuffed-animal-storage-ideas | 1 boho-bedroom-ideas, studio-apartment-ideas, heat-pump-vs-condenser-dryer, small-laundry-ideas, built-in-wardrobe-ideas, bookshelf-decor-ideas, laundry-room-decor-ideas, medicine-cabinet-organization | 2 guest-bedroom-ideas, fridge-organization
+- Proposed (awaiting approval): add 1 contextual link per source page.
+- Watch for cannibalization on Nov 3: small-laundry-ideas vs small-laundry-room-ideas.
+- APPLIED 2026-10-28 11:10 (user approved "ابدا"): 10 contextual links, 1 per source, via wp_replace_in_post max 1. URL purge only. All verified live, CSS 200.
+  1006 toy-storage → stuffed-animal-storage ("stuffed animals")
+  881 small-bedroom-storage → boho-bedroom (appended sentence)
+  1084 storage-ideas-for-small-spaces → studio-apartment ("studio apartment")
+  2039 small-utility-room → heat-pump-vs-condenser-dryer (appended sentence)
+  1384 laundry-closet → small-laundry-ideas (appended sentence)
+  745 small-walk-in-closet → built-in-wardrobe ("built-in look")
+  1614 coffee-table-decor → bookshelf-decor (appended sentence)
+  705 how-to-organize-a-laundry-room → laundry-room-decor (appended sentence)
+  613 small-bathroom-storage → medicine-cabinet-organization (appended sentence)
+  2229 box-room-bedroom → guest-bedroom ("guest room")
+  Nov 3 note: these 10 source pages had a tiny edit on Oct 28 — not a content change.
