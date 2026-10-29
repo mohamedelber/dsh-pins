@@ -41,3 +41,7 @@
   Group practices (only today's 15 msgs synced): ~80% seasonal (Halloween/Christmas), 1 pin per article, ~3 pins/day steady, topics via Pinterest Trends + Pin Inspector.
   NOTE: CSV-75..86 all have publish dates Dec 14 → Feb 4 (future), so uploading them does not add to today's pin pace.
   RECOMMENDATION: resume uploads 2 files/day (CSV-75..86). Keep live pin pace steady (2–3/day, no batches). Prioritise Christmas pins going live NOW (Christmas table pins were our 2nd-best performers). No edits/deletes of existing pins.
+  LIKELY OWN MISTAKE (from our CSV files, unique pins by publish date; assumes all files were uploaded — not verified):
+  10-15:9 10-16:7 10-17:12 10-18:11 10-19:14 10-20:13 10-21:15 10-22:11 10-23:13 10-24:14 10-25:14 10-26:14 10-27:13 10-28:10 10-29:10 10-30:11 10-31:10 11-01:8 11-02:7 11-03:4 then 1-5/day.
+  → live pace ~10-15 pins/day since Oct 17, 3-5x our own 5/day rule and the course's ~3/day; drop began Oct 21 after 4 such days. Plus many pins per same URL (studio-apartment, gift-wrap, walk-in-closet-size repeated within days).
+  RULE GOING FORWARD: never schedule more than 5 pins on any single day (check ALL CSVs by publish date before sending a new one); max 1 pin per URL per 7 days. Existing scheduled pins: leave as is (no deletes); pace falls under 5/day from Nov 3.
