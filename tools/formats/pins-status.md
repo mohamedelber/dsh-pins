@@ -50,3 +50,9 @@
   → real peak 10–16/day on Oct 17–21, drop started Oct 21. Since Oct 24 pace is OK (4–5/day).
   Real repeats: 26 URLs got 2+ pins within Oct 15–24. Worst: boot-room 6 pins every 2 days Oct 13–23; airing-cupboard 5 (every 2 days Oct 14–22); small-utility-room 5 (Oct 11–19); downstairs-toilet 6 (Oct 10–18); over-the-toilet 7, small-entryway 7, fridge 6, bathroom-org 6, pantry-org 6 overall.
   Scheduled queue now: 40 pins (next: 0d,1d,1d,1d,2d, +34). Newest live pins show only 1–8 impressions each.
+
+## 2026-10-30 12:45 Paris — first sign of recovery
+- Chart (same scale): Oct 27 ≈ 66, Oct 28 ≈ 95 (lowest days).
+- Last 24h (real-time estimate): 353 impressions, 20 engagements, 5 outbound clicks → ~4x Oct 27–28.
+- Old pins reviving: Small Entryway 37, Studio curtain divider 33, Purse storage 28, Box room office 28, Room divider 27, Entryway (2nd pin) 21, Loft 20.
+- One day only; real-time numbers can be revised. Keep plan: 3–5 pins/day, no repeats, CSV-75..86 at 2 files/day. Recheck Thursday Nov 5.
