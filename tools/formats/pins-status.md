@@ -56,3 +56,8 @@
 - Last 24h (real-time estimate): 353 impressions, 20 engagements, 5 outbound clicks → ~4x Oct 27–28.
 - Old pins reviving: Small Entryway 37, Studio curtain divider 33, Purse storage 28, Box room office 28, Room divider 27, Entryway (2nd pin) 21, Loft 20.
 - One day only; real-time numbers can be revised. Keep plan: 3–5 pins/day, no repeats, CSV-75..86 at 2 files/day. Recheck Thursday Nov 5.
+
+## 2026-11-02 22:45 — CSV-87 (user approved "نعم" + "3 pins on empty days")
+- Real schedule (user screenshots): 32 pins Nov 3–Dec 19; after Nov 9 only Wed+Sat (2 each). Empty days filled 3/day.
+- CSV-87-fill-nov10-16.csv: 15 pin_cozy pins from article images, Nov 10/12/13/15/16 at 19:00, 21:00, 23:00. 6 seasonal (xmas table, mantel, storage, gift wrap, tree lights, coffee table xmas) + Google-strong (airing, stair doors, hat, euro laundry, box room, boot room, color closet, guest, loft). Each URL once; none in the existing schedule.
+- Next: CSV-88 for Nov 17–23 empty days (Mon 23? check), same rules.
