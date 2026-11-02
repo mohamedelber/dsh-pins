@@ -74,3 +74,8 @@
   613 small-bathroom-storage → medicine-cabinet-organization (appended sentence)
   2229 box-room-bedroom → guest-bedroom ("guest room")
   Nov 3 note: these 10 source pages had a tiny edit on Oct 28 — not a content change.
+
+## 2026-11-02 21:55 (user "نعم")
+- Re-saved 3273 hallway-storage-ideas and 3282 how-to-organise-kitchen-cupboards (status publish, modified 2026-11-02 16:55).
+- 1890 shelf-spacing-calculator: "More Shelf Guides" now also links hallway-storage-ideas. URL purge only.
+- PENDING after Nov 3 measurement: links to 3282 from 861 how-to-organize-kitchen-cabinets ("In the UK?" line) and 892 kitchen drawers.
