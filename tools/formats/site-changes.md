@@ -79,3 +79,8 @@
 - Re-saved 3273 hallway-storage-ideas and 3282 how-to-organise-kitchen-cupboards (status publish, modified 2026-11-02 16:55).
 - 1890 shelf-spacing-calculator: "More Shelf Guides" now also links hallway-storage-ideas. URL purge only.
 - PENDING after Nov 3 measurement: links to 3282 from 861 how-to-organize-kitchen-cabinets ("In the UK?" line) and 892 kitchen drawers.
+
+## 2026-11-03 19:35 — 2127 airing-cupboard-shelves (user "نعم")
+- Intro: + "In Ireland, an airing cupboard is usually called a hot press, and the same shelving ideas apply." (IRL clicks + "hot press shelving" pos 35).
+- FAQ: + "What are the best storage ideas for a small or deep airing cupboard?" + "Can you have an airing cupboard without a hot water tank?" (AI Mode follow-ups + long queries). Title/meta unchanged. URL purge only.
+- Measure from Nov 17 (2 weeks): GSC queries airing/hot press, IRL + GBR.
