@@ -61,3 +61,9 @@
 - Real schedule (user screenshots): 32 pins Nov 3–Dec 19; after Nov 9 only Wed+Sat (2 each). Empty days filled 3/day.
 - CSV-87-fill-nov10-16.csv: 15 pin_cozy pins from article images, Nov 10/12/13/15/16 at 19:00, 21:00, 23:00. 6 seasonal (xmas table, mantel, storage, gift wrap, tree lights, coffee table xmas) + Google-strong (airing, stair doors, hat, euro laundry, box room, boot room, color closet, guest, loft). Each URL once; none in the existing schedule.
 - Next: CSV-88 for Nov 17–23 empty days (Mon 23? check), same rules.
+
+## 2026-11-04 11:55 Paris (user's Chrome)
+- Scheduled queue = 45 → CSV-87 uploaded (32 − 2 published + 15).
+- Daily impressions (chart, same calibration): Oct 26 126, Oct 27 66, Oct 28 95, Oct 29 142, Oct 30 800, Oct 31 579, Nov 1 99.
+- Last 7d: 1.69k impr (+6.1%), 85 engagements (+34%), 9 outbound (−40%), 2 saves.
+- Read: spikes on Oct 30–31, then back to ~100. Recovery not yet stable. Keep plan; next CSV-88 for Nov 17–23 empty days.
