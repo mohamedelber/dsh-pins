@@ -84,3 +84,13 @@
 - Intro: + "In Ireland, an airing cupboard is usually called a hot press, and the same shelving ideas apply." (IRL clicks + "hot press shelving" pos 35).
 - FAQ: + "What are the best storage ideas for a small or deep airing cupboard?" + "Can you have an airing cupboard without a hot water tank?" (AI Mode follow-ups + long queries). Title/meta unchanged. URL purge only.
 - Measure from Nov 17 (2 weeks): GSC queries airing/hot press, IRL + GBR.
+
+## 2026-11-04 — Edited pages: before (Oct 6–19) vs after (Oct 20–Nov 3), GSC clicks/impr/pos
+- 2186 under-stairs-cupboard-doors (Oct 27): 6/196/10.1 → 6/1151/8.6 (impr ×6, CTR 3.1%→0.5%)
+- 771 under-stairs-storage-ideas (Oct 13): 2/189/26.6 → 2/286/25.9
+- 1384 laundry-closet-ideas (Oct 13): 3/394/21.1 → 3/507/22.6
+- 788 pantry-shelving-ideas (Oct 20): 0/296/36.9 → 1/274/35.2
+- 1286 laundry-room-cabinet-ideas (Oct 20): 2/207/39.8 → 0/323/40.6
+- 2039 small-utility-room-ideas (Oct 20): 0/160/55.2 → 0/144/54.8
+- 2127 airing-cupboard-shelves (Nov 3, too early): 10/402/9.2 → 20/1706/8.7
+- Verdict: edits on pages ranked 35–55 did nothing measurable; only pages already ~8–10 respond. Focus future edits on pos 5–20 pages.
