@@ -94,3 +94,7 @@
 - 2039 small-utility-room-ideas (Oct 20): 0/160/55.2 → 0/144/54.8
 - 2127 airing-cupboard-shelves (Nov 3, too early): 10/402/9.2 → 20/1706/8.7
 - Verdict: edits on pages ranked 35–55 did nothing measurable; only pages already ~8–10 respond. Focus future edits on pos 5–20 pages.
+
+## 2026-11-05 15:45 UTC — publish day 3291 walk-in-robe-ideas (AU)
+- Re-saved (modified 2026-11-05 10:42). Reverse link from tool page 3016 walk-in-closet-size ("In Australia, see our walk in robe ideas with metric sizes."). URL purge.
+- CSV-64 already uploaded Oct 24 (pins Nov 7 + Nov 14 visible in schedule) → not re-uploaded.
