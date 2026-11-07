@@ -98,3 +98,9 @@
 ## 2026-11-05 15:45 UTC — publish day 3291 walk-in-robe-ideas (AU)
 - Re-saved (modified 2026-11-05 10:42). Reverse link from tool page 3016 walk-in-closet-size ("In Australia, see our walk in robe ideas with metric sizes."). URL purge.
 - CSV-64 already uploaded Oct 24 (pins Nov 7 + Nov 14 visible in schedule) → not re-uploaded.
+
+## 2026-11-07 20:50 — 2493 gift-wrap-storage-ideas (user "نعم")
+- Why: 28d GSC: gift bag storage 40 impr pos 17, gift bag storage ideas 38 pos 14, gift bag organizer ideas 19 pos 19, gift wrap storage 31 pos 21, gift bag and tissue paper storage 6 pos 8; 0 clicks on most.
+- Rank Math SEO title: "Gift Wrap and Gift Bag Storage Ideas: 16 Smart Ways" (H1 unchanged).
+- FAQ +2: "How do you store gift bags and tissue paper together?", "What can I use as a gift bag organizer?". URL purge.
+- Measure ~Nov 21 (seasonal: compare to site-wide growth).
