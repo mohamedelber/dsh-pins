@@ -104,3 +104,9 @@
 - Rank Math SEO title: "Gift Wrap and Gift Bag Storage Ideas: 16 Smart Ways" (H1 unchanged).
 - FAQ +2: "How do you store gift bags and tissue paper together?", "What can I use as a gift bag organizer?". URL purge.
 - Measure ~Nov 21 (seasonal: compare to site-wide growth).
+
+## 2026-11-09 فحص الأرشفة (آخر 10 مقالات)
+- Indexed: walk-in-robe-ideas (crawl Nov 6), how-to-organise-kitchen-cupboards, hallway-storage-ideas, small-apartment-living-room-ideas, stuffed-animal-storage-ideas, heat-pump-vs-condenser-dryer.
+- Crawled - not indexed (crawl Oct 28): studio-apartment-ideas, guest-bedroom-ideas.
+- Discovered - not indexed: garage-man-cave-ideas, boho-bedroom-ideas.
+- Action: user requests indexing in GSC for these 4.
