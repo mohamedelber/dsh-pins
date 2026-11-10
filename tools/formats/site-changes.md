@@ -110,3 +110,9 @@
 - Crawled - not indexed (crawl Oct 28): studio-apartment-ideas, guest-bedroom-ideas.
 - Discovered - not indexed: garage-man-cave-ideas, boho-bedroom-ideas.
 - Action: user requests indexing in GSC for these 4.
+
+## 2026-11-10 publish day 3298 front-loader-vs-top-loader (AU)
+- Re-saved 3298 (approved).
+- Link 1295 washer-dryer-space-calculator -> 3298, appended to AU paragraph: "Still choosing the washer itself? Compare a front loader vs top loader for Australian laundries."
+- No links from 3250/2312 (article edits not approved).
+- User: GSC indexing + CSV-65 (Nov 11, Nov 18 17:00) if <5 pins/day.
