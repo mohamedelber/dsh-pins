@@ -116,3 +116,8 @@
 - Link 1295 washer-dryer-space-calculator -> 3298, appended to AU paragraph: "Still choosing the washer itself? Compare a front loader vs top loader for Australian laundries."
 - No links from 3250/2312 (article edits not approved).
 - User: GSC indexing + CSV-65 (Nov 11, Nov 18 17:00) if <5 pins/day.
+
+## 2026-11-12 publish day 3307 garage-storage-ideas (UK) + 2617 xmas lights edit (user: «نعم قم باي شيء ينفع الموقع»)
+- Re-saved 3307. Link 2659 storage-unit-size-calculator -> 3307 appended to man-cave paragraph: "Keeping the garage for storage instead? Our garage storage ideas show how to get everything off the floor."
+- No link from 2937 (article edits not approved).
+- 2617 christmas-tree-lights-calculator (before: 1,012 impr/wk, pos 7.6, 2 clicks Nov 4-10): Rank Math title -> "Christmas Tree Lights Calculator: Lights Per Foot Chart" (was default). FAQ added before ornaments FAQ: "How many lights for a 4 ft tree?" (400/600/800, + 3 ft 300/450) and "How many lights for a 9 ft Christmas tree?" (900/1,350/1,800). H1/URL unchanged. Measure ~Nov 26.
