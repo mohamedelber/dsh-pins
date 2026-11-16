@@ -121,3 +121,8 @@
 - Re-saved 3307. Link 2659 storage-unit-size-calculator -> 3307 appended to man-cave paragraph: "Keeping the garage for storage instead? Our garage storage ideas show how to get everything off the floor."
 - No link from 2937 (article edits not approved).
 - 2617 christmas-tree-lights-calculator (before: 1,012 impr/wk, pos 7.6, 2 clicks Nov 4-10): Rank Math title -> "Christmas Tree Lights Calculator: Lights Per Foot Chart" (was default). FAQ added before ornaments FAQ: "How many lights for a 4 ft tree?" (400/600/800, + 3 ft 300/450) and "How many lights for a 9 ft Christmas tree?" (900/1,350/1,800). H1/URL unchanged. Measure ~Nov 26.
+
+## 2026-11-16 About + Editorial Policy honesty edits (user: «عدل ما تراه مناسب»)
+- 109 About: replaced "He researches and reviews every guide before it goes live, checks facts against trusted sources, and updates articles when better solutions come along." with "He chooses the topics, sets the standards each guide has to meet and is responsible for everything published on the site. He is not a professional organizer or builder, so for safety points and measurements we rely on official and expert sources and link to them."
+- 1196 Editorial Policy: "every factual claim is checked" -> "safety points, measurements and figures are checked against the sources we link to"; "written and reviewed by hand" -> "written to describe the page accurately, not to bait clicks".
+- Author bio (user 1) left as is (already honest about AI).
