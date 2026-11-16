@@ -16,3 +16,6 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 - Total AI-feature impressions 958 (~half of daily total ~2,000).
 - xmas-tree-lights-calc 521, curtain-size-calc 163, hat-storage 100, airing-cupboard 36, downstairs-toilet 13, under-stairs-doors 13, wardrobe-depth 9, diy-closet-shelves 8, built-in-wardrobe 6.
 - Insight: calculators with one-number answers feed AI (high impr, ~0 clicks); "ideas" pages (airing cupboard) get few AI impr but most clicks. After update: consider what AI cannot give on calc pages (interactive result, printable list) rather than more plain answers.
+
+## 2026-11-16 AI features report 28 days (user screenshot)
+- Total 7.39k AI-feature impressions Oct 18-Nov 15. ~60/day mid-Oct -> ~200 end Oct -> ~500 Nov 7-8 -> dip ~230 Nov 11 (update start, marker 1 on Nov 10) -> ~1,150 latest day (record, ~4x in 3 days).
