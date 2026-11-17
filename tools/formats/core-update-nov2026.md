@@ -10,7 +10,7 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 | Nov 12 | 2 | 1431 | 17.9 | 2 |
 | Nov 13 | 5 | 1913 | 17.9 | 9 |
 | Nov 14 | 9 | 2592 | 12.1 | 18 |
-| Nov 15 | 14 (record) | 2128 | 11.0 | n/a |
+| Nov 15 | 18 (record) | 2425 | 11.6 | 24 (record) |
 
 ## 2026-11-16 GSC Generative AI features report (24h, user screenshot)
 - Total AI-feature impressions 958 (~half of daily total ~2,000).
@@ -19,3 +19,4 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 
 ## 2026-11-16 AI features report 28 days (user screenshot)
 - Total 7.39k AI-feature impressions Oct 18-Nov 15. ~60/day mid-Oct -> ~200 end Oct -> ~500 Nov 7-8 -> dip ~230 Nov 11 (update start, marker 1 on Nov 10) -> ~1,150 latest day (record, ~4x in 3 days).
+| Nov 16 | 11 (partial?) | 1990 | 18.0 | 16 |
