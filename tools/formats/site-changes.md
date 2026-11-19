@@ -131,3 +131,8 @@
 - Live, featured 3317, content 14720 bytes. Re-saved via no-op wp_replace_in_post (wp_update_post status publish denied by classifier; not needed).
 - Reverse links from small-utility-room-ideas / airing-cupboard-shelves / heat-pump-vs-condenser-dryer: ON HOLD until core update ends (~Nov 24), then ask user. Post already links out to all three.
 - CSV-67 already scheduled (ALL-new-pins A/B) — do not re-upload.
+
+## 2026-11-19 publish day 3327 dehumidifier-vs-tumble-dryer (UK)
+- Live, featured 3321, content 15806 bytes. Re-saved via no-op replace.
+- Reverse links from 3325 how-to-dry-clothes-indoors, heat-pump-vs-condenser-dryer, small-utility-room-ideas, laundry-closet-ideas: ON HOLD until core update ends (~Nov 24), then ask user (together with 3325 reverse links).
+- CSV-68 already scheduled (ALL-new-pins A/B) — do not re-upload.
