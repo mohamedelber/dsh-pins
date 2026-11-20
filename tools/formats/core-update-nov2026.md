@@ -20,3 +20,8 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 ## 2026-11-16 AI features report 28 days (user screenshot)
 - Total 7.39k AI-feature impressions Oct 18-Nov 15. ~60/day mid-Oct -> ~200 end Oct -> ~500 Nov 7-8 -> dip ~230 Nov 11 (update start, marker 1 on Nov 10) -> ~1,150 latest day (record, ~4x in 3 days).
 | Nov 16 | 11 (partial?) | 1990 | 18.0 | 16 |
+| Nov 16 (final) | 11 | 2049 | 17.6 | 16 |
+| Nov 17 | 8 | 1958 | 15.8 | 21 |
+| Nov 18 | 7 | 1878 | 16.4 | 12 |
+| Nov 19 | 3 (partial) | 1792 | 16.3 | 8 |
+- Nov 20 note: clicks softening Nov 18-19 while impressions hold ~1,800-1,900 (above pre-update ~1,600). Under-stairs doors, curtain calc, downstairs toilet dropped out of click list Nov 17-19. Possible second wave. No action until update ends.
