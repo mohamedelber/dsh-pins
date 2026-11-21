@@ -136,3 +136,8 @@
 - Live, featured 3321, content 15806 bytes. Re-saved via no-op replace.
 - Reverse links from 3325 how-to-dry-clothes-indoors, heat-pump-vs-condenser-dryer, small-utility-room-ideas, laundry-closet-ideas: ON HOLD until core update ends (~Nov 24), then ask user (together with 3325 reverse links).
 - CSV-68 already scheduled (ALL-new-pins A/B) — do not re-upload.
+
+## 2026-11-21 AdSense decision
+- User has NOT applied yet. Decision: do not apply now (core update volatility, ~100 visits/week, 2-month-old site, only spam backlinks).
+- New AdSense low-value wording requires: substantial unique value + consistent presence on the web + user interest.
+- Apply when organic traffic stable at >=200-300 visits/week for 2-3 weeks after the update (likely January). Pre-check: About/Contact/Privacy/Editorial OK, no thin pages, all posts indexed.
