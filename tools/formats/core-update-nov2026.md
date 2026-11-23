@@ -29,3 +29,7 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 | Nov 19 (final) | 3 | 1818 | 16.1 | 8 |
 | Nov 20 | 4 (partial) | 1529 | 17.4 | 8 |
 - Nov 21: clear drop since Nov 18-19. under-stairs-cupboard-doors pos ~7 -> 14.1/13.0 (Nov 19-20); curtain-size-calc pos ~6.6 -> 13.6-14.7 since Nov 18 (impr 390 -> 72). airing cupboard holds 7.2. xmas calc 3.9.
+| Nov 20 (final) | 5 | 1658 | 16.9 | 8 |
+| Nov 21 | 10 | 1863 | 14.7 | 14 |
+| Nov 22 | 13 | 1704 | 13.7 | 20 |
+- Nov 23: recovery. under-stairs-doors back to 11.1 (Nov 20-22), airing 6.5, loft 7.9, under-stairs-shoe 9.1. No completion announcement found yet.
