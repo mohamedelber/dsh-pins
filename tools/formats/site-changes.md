@@ -141,3 +141,8 @@
 - User has NOT applied yet. Decision: do not apply now (core update volatility, ~100 visits/week, 2-month-old site, only spam backlinks).
 - New AdSense low-value wording requires: substantial unique value + consistent presence on the web + user interest.
 - Apply when organic traffic stable at >=200-300 visits/week for 2-3 weeks after the update (likely January). Pre-check: About/Contact/Privacy/Editorial OK, no thin pages, all posts indexed.
+
+## 2026-11-23 publish day 3328 cosy-bedroom-ideas (UK)
+- Live, featured 3310, content 19171 bytes. Re-saved via no-op replace.
+- Reverse links from rug-size-calc, curtain-size-calc, small-bedroom-storage-ideas, box-room-bedroom-ideas, guest-bedroom-ideas, boho-bedroom-ideas: ON HOLD until core update completion announced.
+- CSV-69 pins (both) are inside ALL-new-pins-B (uploaded Oct 24 per earlier notes) -> do NOT re-upload; user to confirm Nov 25 20:00 pin is in the schedule.
