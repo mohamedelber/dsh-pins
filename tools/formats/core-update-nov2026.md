@@ -33,3 +33,6 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 | Nov 21 | 10 | 1863 | 14.7 | 14 |
 | Nov 22 | 13 | 1704 | 13.7 | 20 |
 - Nov 23: recovery. under-stairs-doors back to 11.1 (Nov 20-22), airing 6.5, loft 7.9, under-stairs-shoe 9.1. No completion announcement found yet.
+| Nov 22 (final) | 15 | 1917 | 13.4 | 20 |
+| Nov 23 | 8 | 1699 | 14.4 | 13 |
+- Nov 24: no completion announcement yet.
