@@ -159,3 +159,10 @@ One new paragraph inserted just before the dsh-ai-note paragraph in each:
 - 2897 guest-bedroom -> cosy-bedroom-ideas
 - 2917 boho-bedroom -> cosy-bedroom-ideas
 Skipped: airing-cupboard (top page), curtain-size-calc (hit by update, evaluate Dec 1). Cache cleared.
+
+## 2026-11-24 Human review step agreed (user «Ok»)
+- Reason: Google AI-content guidance (Oct 1 2026): "manually factcheck and review all AI-generated content ... before publishing".
+- Process: 1-2 days before each publish day, send user a short review sheet (numbers, safety claims, images) + 24h preview link. User reviews ~10 min and replies OK or flags issues.
+- Only after reviews are actually happening: update Editorial Policy to say each guide is reviewed by a person before publishing.
+- First sheet: 3335 chest-freezer-vs-upright (Nov 26). Arithmetic checked OK (215x18.34c=$39, x12=$473; 395 -> $72, $869; diff ~$396). Internal links exist.
+- Queue: 17 scheduled posts to Jan 28 2027.
