@@ -146,3 +146,16 @@
 - Live, featured 3310, content 19171 bytes. Re-saved via no-op replace.
 - Reverse links from rug-size-calc, curtain-size-calc, small-bedroom-storage-ideas, box-room-bedroom-ideas, guest-bedroom-ideas, boho-bedroom-ideas: ON HOLD until core update completion announced.
 - CSV-69 pins (both) are inside ALL-new-pins-B (uploaded Oct 24 per earlier notes) -> do NOT re-upload; user to confirm Nov 25 20:00 pin is in the schedule.
+
+## 2026-11-24 deferred reverse links (user approved «نعم», after core update completion)
+One new paragraph inserted just before the dsh-ai-note paragraph in each:
+- 2039 small-utility-room -> dry-clothes-indoors + dehumidifier-vs-tumble-dryer
+- 3260 heat-pump-vs-condenser -> dry-clothes-indoors + dehumidifier-vs-tumble-dryer
+- 1384 laundry-closet -> dehumidifier-vs-tumble-dryer
+- 3325 dry-clothes-indoors -> dehumidifier-vs-tumble-dryer
+- 2403 rug-size-calculator -> cosy-bedroom-ideas
+- 881 small-bedroom-storage -> cosy-bedroom-ideas
+- 2229 box-room-bedroom -> cosy-bedroom-ideas
+- 2897 guest-bedroom -> cosy-bedroom-ideas
+- 2917 boho-bedroom -> cosy-bedroom-ideas
+Skipped: airing-cupboard (top page), curtain-size-calc (hit by update, evaluate Dec 1). Cache cleared.
