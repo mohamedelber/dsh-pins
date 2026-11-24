@@ -36,3 +36,4 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 | Nov 22 (final) | 15 | 1917 | 13.4 | 20 |
 | Nov 23 | 8 | 1699 | 14.4 | 13 |
 - Nov 24: no completion announcement yet.
+- Nov 24: Google dashboard: rollout complete Nov 24, 06:03 PST (13 days 19 h). Freeze lifted for links; full comparison after Dec 1.
