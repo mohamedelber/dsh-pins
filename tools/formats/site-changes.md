@@ -166,3 +166,7 @@ Skipped: airing-cupboard (top page), curtain-size-calc (hit by update, evaluate 
 - Only after reviews are actually happening: update Editorial Policy to say each guide is reviewed by a person before publishing.
 - First sheet: 3335 chest-freezer-vs-upright (Nov 26). Arithmetic checked OK (215x18.34c=$39, x12=$473; 395 -> $72, $869; diff ~$396). Internal links exist.
 - Queue: 17 scheduled posts to Jan 28 2027.
+
+## 2026-11-25 First human review: 3335 chest-freezer (user approved images, chart; asked stronger intro)
+- Intro rewritten (direct answer with $170 vs $450, 215 vs 395 kWh, ~$33/yr, decision by situation). Content length now 16300 bytes (was 15943) — publish-day check should expect 16300.
+- Review status: APPROVED by user Nov 25.
