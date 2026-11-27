@@ -170,3 +170,8 @@ Skipped: airing-cupboard (top page), curtain-size-calc (hit by update, evaluate 
 ## 2026-11-25 First human review: 3335 chest-freezer (user approved images, chart; asked stronger intro)
 - Intro rewritten (direct answer with $170 vs $450, 215 vs 395 kWh, ~$33/yr, decision by situation). Content length now 16300 bytes (was 15943) — publish-day check should expect 16300.
 - Review status: APPROVED by user Nov 25.
+
+## 2026-11-27 publish day 3335 chest-freezer (US) — published Nov 26
+- Live, featured 3331, content 16300 (after reviewed intro). Re-saved via no-op.
+- CSV-70 inside ALL-new-pins-B -> do not re-upload.
+- Reverse links proposed (await approval): kitchen-storage-ideas, pantry-organization-ideas, small-laundry-room-ideas, garage-storage-ideas.

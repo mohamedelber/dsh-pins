@@ -40,3 +40,6 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 | Nov 23 (final) | 12 | 1909 | 14.4 | 13 |
 | Nov 24 (update complete) | 8 (partial?) | 2145 | 12.9 | 17 |
 - Nov 25: under-stairs-doors back to 8.8 (2 clicks Nov 24); walk-in-closet-size 5.8.
+| Nov 24 (final) | 9 | 2576 | 12.4 | 17 |
+| Nov 25 | 15 | 4045 (record) | 8.5 (record) | 18 |
+| Nov 26 (US Thanksgiving) | 5 (partial) | 3063 | 9.8 | n/a |
