@@ -43,3 +43,4 @@ No page edits until ~Nov 24; real evaluation ~Dec 1.
 | Nov 24 (final) | 9 | 2576 | 12.4 | 17 |
 | Nov 25 | 15 | 4045 (record) | 8.5 (record) | 18 |
 | Nov 26 (US Thanksgiving) | 5 (partial) | 3063 | 9.8 | n/a |
+- CORRECTION Nov 27: butlers-pantry-ideas got bot impressions from Nov 24: 240, 1343, 1433, 510 (partial) — 99.8% DESKTOP, pos ~1-2, 0 clicks, Brazil 1,818 of ~3,500 + dozens of odd countries at pos 1.0. Same pattern as "how to organize toilet" bot. Real impressions: Nov 25 ~2,700, Nov 26 ~2,540. Avg position 8.5/9.7 also artificially lowered. RULE: exclude butlers-pantry-ideas desktop/BR spike from comparisons.
