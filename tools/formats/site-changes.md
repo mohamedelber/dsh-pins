@@ -175,3 +175,4 @@ Skipped: airing-cupboard (top page), curtain-size-calc (hit by update, evaluate 
 - Live, featured 3331, content 16300 (after reviewed intro). Re-saved via no-op.
 - CSV-70 inside ALL-new-pins-B -> do not re-upload.
 - Reverse links proposed (await approval): kitchen-storage-ideas, pantry-organization-ideas, small-laundry-room-ideas, garage-storage-ideas.
+- Nov 27: user approved («نعم»). Added one paragraph before dsh-ai-note linking to 3335 in 1073 kitchen-storage, 651 pantry-organization, 1179 small-laundry-room, 3307 garage-storage. Cache cleared.
