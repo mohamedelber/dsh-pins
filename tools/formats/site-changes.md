@@ -176,3 +176,5 @@ Skipped: airing-cupboard (top page), curtain-size-calc (hit by update, evaluate 
 - CSV-70 inside ALL-new-pins-B -> do not re-upload.
 - Reverse links proposed (await approval): kitchen-storage-ideas, pantry-organization-ideas, small-laundry-room-ideas, garage-storage-ideas.
 - Nov 27: user approved («نعم»). Added one paragraph before dsh-ai-note linking to 3335 in 1073 kitchen-storage, 651 pantry-organization, 1179 small-laundry-room, 3307 garage-storage. Cache cleared.
+
+## 2026-11-28 Review sheet sent: 3354 vinyl (publish Nov 30). Math OK (35-45 lb/ft x 13in = 38-49 lb; 3 ft = 105-135). All 7 internal links exist. Intro already direct with numbers.
